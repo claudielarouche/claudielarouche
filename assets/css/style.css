@@ -8,6 +8,9 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+/*Custom from Claudie */
+html, body, iframe, #main { height: 100%; }
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
