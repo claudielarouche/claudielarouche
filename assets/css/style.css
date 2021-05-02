@@ -8,8 +8,6 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-/*Custom from Claudie */
-html, body, iframe, #main { height: 100%; }
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -1271,3 +1269,7 @@ section {
 #footer .credits a {
   color: #34b7a7;
 }
+
+/*Custom from Claudie */
+html, body, iframe, #main { height: 100%; }
+/*End custom from Claudie*/
