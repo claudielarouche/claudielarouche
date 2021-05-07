@@ -406,7 +406,7 @@ h1, h2, h3, h4, h5, h6 {
 # Hero Section
 --------------------------------------------------------------*/
 .hero-data{
-	background: url("..assets/img/header.jpg") top right;
+	background: url("../img/header.jpg") top right;
 }
 
 #hero {
