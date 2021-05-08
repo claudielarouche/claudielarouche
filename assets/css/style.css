@@ -405,9 +405,12 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+/*CL Customization*/
 .hero-data{
-	background: url("../img/header.jpg") /*top right*/;
+	background: url("../img/header.jpg")/;
+	height: 200px; 
 }
+/*End CL Customization*/
 
 /*#hero {
   width: 100%;
