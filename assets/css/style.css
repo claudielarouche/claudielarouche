@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #main {
-  margin-top: 50px;
+  /*margin-top: 50px;*/
 }
 
 @media (max-width: 992px) {
@@ -494,7 +494,7 @@ h1, h2, h3, h4, h5, h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 60px 0 0 0; /*CL Customization*/
 }
 
 .section-bg {
@@ -1279,5 +1279,5 @@ section {
 }
 
 /*Custom from CL */
-html, body, iframe, #main, #container { height: 100%; }
+html, body, iframe, #main, .container { height: 100%; }
 /*End custom from CL*/
