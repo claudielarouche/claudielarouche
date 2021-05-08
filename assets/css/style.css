@@ -407,7 +407,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 /*CL Customization*/
 .hero-data{
-	background: url("../img/header.jpg")/;
+	background: url("../img/header.jpg");
 	height: 200px; 
 }
 /*End CL Customization*/
@@ -1278,6 +1278,6 @@ section {
   color: #34b7a7;
 }
 
-/*Custom from Claudie */
+/*Custom from CL */
 html, body, iframe, #main { height: 100%; }
-/*End custom from Claudie*/
+/*End custom from CL*/
