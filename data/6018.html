@@ -30,7 +30,7 @@
 	$.ajax({ url: "../header.html",
         context: document.body,
         success: function(result){
-           $("#header").html(result);
+           $("#page-header").html(result);
         }});
 		
 	$.ajax({ url: "data-header.html",
@@ -48,7 +48,7 @@
 	$.ajax({ url: "../footer.html",
         context: document.body,
         success: function(result){
-           $("#footer").html(result);
+           $("#page-footer").html(result);
         }});
 	
 });
@@ -58,7 +58,7 @@
 
 <body>
 
-<div id="header"></div>
+<div id="page-header"></div>
 <div id="data-header">
 </div>
 
@@ -71,7 +71,7 @@
 </main>
 
 <div id="data-footer"></div>
-<div id="footer">
+<div id="page-footer">
 
 </body>
 </html>
