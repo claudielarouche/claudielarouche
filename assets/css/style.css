@@ -408,10 +408,13 @@ h1, h2, h3, h4, h5, h6 {
 /*CL Customization*/
 .hero-data{
 	background: url("../img/header.jpg");
-	height: 300px; 
-	width: auto;
 	background-size: cover;
 }
+
+#hero {
+	height: 300px; 
+}
+
 /*End CL Customization*/
 
 /*#hero {
