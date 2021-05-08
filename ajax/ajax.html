@@ -5,7 +5,7 @@
 </head>
 <body>
 
-11:43 
+11:52
 <div id="demo">
 <h2>The XMLHttpRequest Object</h2>
 <button type="button" onclick="loadDoc()">Change Content</button>
@@ -27,7 +27,7 @@
 $(document).ready(function(){
 $.ajax({ url: "ajax_info.html",
         context: document.body,
-        success: function(){
+        success: function(result){
            $("#demo").html(result);
         }});
 });
