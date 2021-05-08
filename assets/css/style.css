@@ -1279,5 +1279,5 @@ section {
 }
 
 /*Custom from CL */
-html, body, iframe, #main { height: 100%; }
+html, body, iframe, #main, #container { height: 100%; }
 /*End custom from CL*/
