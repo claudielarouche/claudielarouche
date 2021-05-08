@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<script src="../jquery.js"></script> 
+</head>
 <body>
 
 <div id="demo">
@@ -8,7 +11,7 @@
 </div>
 
 <script>
-function loadDoc() {
+/*function loadDoc() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -18,8 +21,21 @@ function loadDoc() {
   };
   xhttp.open("GET", "ajax_info.html", true);
   xhttp.send();
-}
+}*/
+
+$(document).ready(function(){
+$.ajax({ url: "ajax_info.html",
+        context: document.body,
+        success: function(){
+           $("#demo").html(result);
+        }});
+});
+
+
+
 </script>
 
 </body>
 </html>
+
+
