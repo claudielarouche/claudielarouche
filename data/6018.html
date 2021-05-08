@@ -25,12 +25,6 @@
   
 	<script src="../jquery.js"></script> 
     <script> 
-    /*$(function(){
-      $("#header").load("../header.html"); 
-    });
-	$(function(){
-      $("#data-header").load("data-header.html"); 
-    });*/
 	
 	$(document).ready(function(){
 	$.ajax({ url: "../header.html",
@@ -44,6 +38,19 @@
         success: function(result){
            $("#data-header").html(result);
         }});
+		
+	$.ajax({ url: "data-footer.html",
+        context: document.body,
+        success: function(result){
+           $("#data-footer").html(result);
+        }});
+		
+	$.ajax({ url: "../footer.html",
+        context: document.body,
+        success: function(result){
+           $("#footer").html(result);
+        }});
+	
 });
 	
     </script> 
@@ -62,6 +69,9 @@
 <iframe class="airtable-embed" src="https://airtable.com/embed/shr9emmjYd2ROZLEa?backgroundColor=purple&viewControls=on" width="100%"></iframe>
 </div>
 </main>
+
+<div id="data-footer"></div>
+<div id="footer">
 
 </body>
 </html>
