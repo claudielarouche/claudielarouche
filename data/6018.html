@@ -25,12 +25,27 @@
   
 	<script src="../jquery.js"></script> 
     <script> 
-    $(function(){
+    /*$(function(){
       $("#header").load("../header.html"); 
     });
 	$(function(){
       $("#data-header").load("data-header.html"); 
-    });
+    });*/
+	
+	$(document).ready(function(){
+	$.ajax({ url: "../header.html",
+        context: document.body,
+        success: function(result){
+           $("#header").html(result);
+        }});
+		
+	$.ajax({ url: "data-header.html",
+        context: document.body,
+        success: function(result){
+           $("#data-header").html(result);
+        }});
+});
+	
     </script> 
 </head>
 
