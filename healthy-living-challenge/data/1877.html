@@ -7,26 +7,24 @@
 		<meta name=viewport content="width=device-width, initial-scale=1">
 		
 		<!-- Vendor CSS Files -->
-		<link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-		<link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+		<link href="https://claudielarouche.com/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://claudielarouche.com/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 		
 		<!-- Favicons -->
-		<link href="../assets/img/favicon.png" rel="icon">
-		<link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+		<link href="https://claudielarouche.com/assets/img/favicon.png" rel="icon">
+		<link href="https://claudielarouche.com/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 		
 		<!-- Google Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 		
 		<!-- Template Main CSS File -->
-		<link href="../assets/css/style.css" rel="stylesheet">
+		<link href="https://claudielarouche.com/assets/css/style.css" rel="stylesheet">
 		
 		<!-- Load page content via Ajax - CL -->
-		<!--<script src="../jquery.js"></script> -->
-		<script	src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
-		</script>
+		<script src="https://claudielarouche.com/jquery.js"></script> 
 		<script>
 			$(document).ready(function(){
-			$.ajax({ url: "../header.html",
+			$.ajax({ url: "https://claudielarouche.com/header.html",
 			       context: document.body,
 			       success: function(result){
 			          $("#page-header").html(result);
@@ -44,7 +42,7 @@
 			          $("#data-footer").html(result);
 			       }});
 				
-			$.ajax({ url: "../footer.html",
+			$.ajax({ url: "https://claudielarouche.com/footer.html",
 			       context: document.body,
 			       success: function(result){
 			          $("#page-footer").html(result);
@@ -62,6 +60,7 @@
 		<div id="data-header"></div>
 		<main id="main">
 			<div class="container">
+				<h3>ID: 1877</h3>
 				<iframe class="airtable-embed" 
 				src="https://airtable.com/embed/shr9emmjYd2ROZLEa?backgroundColor=purple&viewControls=on" 
 				width="100%">
