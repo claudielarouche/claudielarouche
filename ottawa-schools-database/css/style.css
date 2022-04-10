@@ -67,6 +67,7 @@ body{
     font-weight: bold;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
+	margin-bottom: 20px;
 }
 
 .myInput{
@@ -1098,11 +1099,10 @@ section#section5 {
     width: 100%;
 }
 
-
-
-
-
-
 .marginTop{
     margin-top: 10px;
 }
+
+/*Custom from CL */
+html, body, iframe, .airtable, #section2 { height: 96%; }
+/*End custom from CL*/
