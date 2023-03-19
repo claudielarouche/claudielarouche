@@ -66,44 +66,59 @@
       <div id="result"></div>
     </div>
     <script>
-      // Get references to HTML elements
-		const prefixInput = document.getElementById("prefix");
-		const suffixInput = document.getElementById("suffix");
-		const generateBtn = document.getElementById("generateBtn");
-		const resultDiv = document.getElementById("result");
+// Get references to HTML elements
+const prefixInput = document.getElementById("prefix");
+const suffixInput = document.getElementById("suffix");
+const generateBtn = document.getElementById("generateBtn");
+const resultDiv = document.getElementById("result");
 
-		// Add click event listener to Generate button
-		generateBtn.addEventListener("click", function() {
-		  // Create an array to hold the JSON objects
-		  let jsonArray = [];
+// Add click event listener to Generate button
+generateBtn.addEventListener("click", function() {
+  // Create an array to hold the JSON objects
+  let jsonArray = [];
 
-		  // Get the current year
-		  const currentYear = new Date().getFullYear();
+  // Get the current year
+  const currentYear = new Date().getFullYear();
 
-		  // Loop through each month of the year
-		  for (let i = 0; i < 12; i++) {
-			// Create a Date object for the current month
-			const currentDate = new Date(currentYear, i, 1);
+  // Loop through each month of the year
+  for (let i = 0; i < 12; i++) {
+    // Create a Date object for the current month
+    const currentDate = new Date(currentYear, i, 1);
 
-			// Get the month name in MMM format
-			const monthName = currentDate.toLocaleString('default', { month: 'short' });
+    // Get the month name in MMM format
+    const monthName = currentDate.toLocaleString('default', { month: 'short' });
 
-			// Construct the JSON object for the current month
-			const jsonObject = {
-			  "values": [prefixInput.value + monthName],
-			  "with": monthName
-			};
+    // Get an array of prefix values from the prefix input
+    const prefixArray = prefixInput.value.split(",");
 
-			// Add the JSON object to the array
-			jsonArray.push(jsonObject);
-		  }
+    // Construct the JSON object for the current month
+    let jsonObject = {};
 
-		  // Convert the array to a JSON string
-		  const jsonString = JSON.stringify(jsonArray, null, 2);
+    if (suffixInput.value !== '') {
+      jsonObject = {
+        "values": [monthName + suffixInput.value],
+        "with": monthName + "-" + suffixInput.value
+      };
+    } else {
+      jsonObject = {
+        "values": prefixArray.flatMap(prefix => [
+          prefix.trim() + "-" + monthName,
+          prefix.trim() + monthName
+        ]),
+        "with": "5-" + monthName
+      };
+    }
 
-		  // Display the JSON string in the result div
-		  resultDiv.innerText = jsonString;
-		});
+    // Add the JSON object to the array
+    jsonArray.push(jsonObject);
+  }
+
+  // Convert the array to a JSON string
+  const jsonString = JSON.stringify(jsonArray, null, 2);
+
+  // Display the JSON string in the result div
+  resultDiv.innerText = jsonString;
+});
     </script>
   </body>
 </html>
