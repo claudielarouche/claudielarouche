@@ -180,3 +180,33 @@ footer {
 }
 
 /*Efficient public servant testimonial end*/
+
+/*efficient public servant videos start*/
+.video-item {
+	margin-bottom: 30px;
+}
+
+.video-item h3 {
+	margin-top: 0;
+	font-size: 24px;
+}
+
+.video-item p {
+	margin-bottom: 10px;
+	font-size: 14px;
+	color: #999;
+}
+
+.video-item iframe {
+	display: block;
+	margin: 0 auto;
+}
+
+.btn-secondary[disabled] {
+	color: #6c757d;
+	background-color: #e9ecef;
+	border-color: #e9ecef;
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+/*efficient public servant videos end*/
