@@ -160,7 +160,27 @@ footer {
 }
 
 
+/*Efficient public servant faq start*/
 
+
+
+.faq-item {
+  background-color: #333;
+  padding: 40px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.15);
+}
+
+.faq-item h4 {
+  margin-top: 0;
+}
+
+.faq-item p {
+  margin-bottom: 0;
+}
+
+/*faq end*/
 
 /*Efficient public servant testimonial start*/
 
