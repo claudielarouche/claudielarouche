@@ -29,7 +29,7 @@
         for (let i = 0; i < matches.length; i++) {
           const name = matches[i].replace(/"/g, '').trim();
 		  
-          fields.push({name: name, type: "TBD", column: i+1});
+          fields.push({name: name, type: "text", column: i+1});
 		  
         }
         const output = JSON.stringify({fields: fields}, null, 2);
