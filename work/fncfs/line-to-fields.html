@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>FNCFS String Converter</title>
+  </head>
+  <body>
+    <h1>String Converter</h1>
+	<p>Welcome! Please use a format similar to this for the tool to work: "No","Surname Given Name","Registry Number (123-45678-90)"
+	
+	
+	
+	
+    <form onsubmit="convertString(); return false;">
+      <label for="inputString">Enter string:</label><br>
+      <input type="text" id="inputString" name="inputString" size="100"><br>
+      <input type="submit" value="Submit">
+    </form>
+    <br>
+    <h2>Output:</h2>
+    <textarea id="output" rows="40" cols="100"></textarea>
+    
+    <script>
+      function convertString() {
+        const inputString = document.getElementById("inputString").value.trim();
+        const regex = /"([^"]+)"/g;
+        const matches = inputString.match(regex);
+        const fields = [];
+        for (let i = 0; i < matches.length; i++) {
+          const name = matches[i].replace(/"/g, '').trim();
+          fields.push({name: name, type: "TBD"});
+        }
+        const output = JSON.stringify({fields: fields}, null, 2);
+        document.getElementById("output").value = output;
+      }
+    </script>
+  </body>
+</html>
