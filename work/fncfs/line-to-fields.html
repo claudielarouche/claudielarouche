@@ -28,7 +28,9 @@
         const fields = [];
         for (let i = 0; i < matches.length; i++) {
           const name = matches[i].replace(/"/g, '').trim();
-          fields.push({name: name, type: "TBD"});
+		  
+          fields.push({name: name, type: "TBD", column: i+1});
+		  
         }
         const output = JSON.stringify({fields: fields}, null, 2);
         document.getElementById("output").value = output;
