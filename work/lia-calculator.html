@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Leave with Income Averaging Calculator</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#result {
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.faq {
+  margin-top: 30px;
+}
+
+.faq h2 {
+  margin-bottom: 10px;
+}
+
+.faq h3 {
+  margin-bottom: 5px;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Leave with Income Averaging Calculator</h1>
+    <label for="salary">Yearly Salary:</label>
+    <input type="number" id="salary" placeholder="Enter yearly salary">
+  
+    <label for="days">Number of Work Days during your leave period (do not include statutory holidays or weekends):</label>
+    <input type="number" id="days" placeholder="Enter number of days">
+  
+    <button onclick="calculate()">Calculate</button>
+  
+    <div id="result"></div>
+  
+    <div class="faq">
+      <h2>Frequently Asked Questions</h2>
+      <h3>Q: Is this tool official?</h3>
+      <p>A: Not at all, so please don't make financial decisions based on this tool! This tool was built using answers about pay impact I received from Public Works when they processed my own leave with income averaging.</p>
+  
+      <h3>Q: What is the calculation used by this tool?</h3>
+      <p>A: The calculator takes your yearly salary and divides it by 260.88 in order to get your daily salary. We then take this amount and multiply it by the number of days of leave, which gives us the entire "cost" of the leave. That cost is then divided by 26, to give you the impact on your pay every 2 weeks. The amount is gross, not net, and there might be other factors at play in your specific case (bilingual bonus, acting pay, etc.) This tool is simply meant to help you in your decision making process and the true impact on your paycheck will not be identical to the amount provided here.</p>
+  
+      <h3>Q: How long did it take to build this tool?</h3>
+      <p>A: 5 minutes to ask ChatGPT to write the HTML, Javascript and CSS code. 10 minutes to write this FAQ. 5 minutes to publish it online ;) </p>
+    </div>
+  </div>
+  
+  <script>
+    function calculate() {
+      var salary = parseFloat(document.getElementById("salary").value);
+      var days = parseFloat(document.getElementById("days").value);
+  
+      var result = (salary * days) / 260.88 / 26;
+  
+      document.getElementById("result").innerHTML = "Impact on pay: You will be paid $" + result.toFixed(2) + " less every two weeks";
+    }
+  </script>
+</body>
+</html>
