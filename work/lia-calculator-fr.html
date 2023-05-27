@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculateur de Congé avec Moyenne de Revenus</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#result {
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.faq {
+  margin-top: 30px;
+}
+
+.faq h2 {
+  margin-bottom: 10px;
+}
+
+.faq h3 {
+  margin-bottom: 5px;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Calculateur de Congé avec Moyenne de Revenus</h1>
+    <label for="salary">Salaire Annuel :</label>
+    <input type="number" id="salary" placeholder="Entrez le salaire annuel">
+  
+    <label for="days">Nombre de jours de congé (inclus les jours fériés, exclut les week-ends) :</label>
+    <input type="number" id="days" placeholder="Entrez le nombre de jours">
+  
+    <button onclick="calculate()">Calculer</button>
+  
+    <div id="result"></div>
+  
+    <div class="faq">
+      <h2>Questions Fréquemment Posées</h2>
+      <h3>Q: Est-ce que cet outil est officiel ?</h3>
+      <p>R: Pas du tout, veuillez ne pas prendre de décisions financières basées sur cet outil ! Cet outil a été créé en utilisant des informations reçues d'un employé très aimable de Travaux publics lorsqu'ils ont traité mon propre congé avec moyenne de revenus.</p>
+	  	    
+      <h3>Q: Quel est le calcul utilisé par cet outil ?</h3>
+      <p>R: Le calculateur prend votre salaire annuel et le divise par 260.88 pour obtenir votre salaire quotidien. Nous prenons ensuite cette somme et la multiplions par le nombre de jours de congé, ce qui nous donne le "coût" total du congé. Ce coût est ensuite divisé par 26, pour vous donner l'impact sur votre salaire tous les 2 semaines. Le montant est brut, pas net, et il peut y avoir d'autres facteurs en jeu dans votre cas spécifique (prime de bilinguisme, prime d'intérim, etc.). Cet outil est simplement destiné à vous aider dans votre processus de prise de décision et le véritable impact sur votre paie ne sera pas identique au montant fourni ici.</p>
+	  
+	  <h3>Q: Pourquoi devrais-je inclure les jours fériés ?</h3>
+      <p>R: Les jours fériés qui tombent pendant le congé doivent être inclus, car si nous ne travaillons pas le jour précédent ou suivant ledit jour férié, nous n'avons pas droit à une rémunération pour celui-ci.</p>
+	  
+  
+      <h3>Q: Combien de temps a-t-il fallu pour créer cet outil ?</h3>
+      <p>R: 5 minutes pour demander à ChatGPT d'écrire le code HTML, JavaScript et CSS (voici ma <a href="https://docs.google.com/document/d/1sz9yac5InRktp9m2QwTKSSW51gREkNAgNHQT4FeMteQ/edit?usp=sharing" target="_blank">conversation avec ChatGPT</a> au cas où cela vous intéresse). 10 minutes pour rédiger cette FAQ. 5 minutes pour le publier en ligne ;) </p>
+	  
+	  <h3>Q: Puis-je partager cet outil avec mes collègues ?</h3>
+      <p>R: Absolument ! </p>
+	  
+	  <h3>Q: Qui a créé cet outil ?</h3>
+      <p>R: Il a été créé avec amour par <a href="https://www.linkedin.com/in/claudie-larouche/" target="_blank">Claudie Larouche</a> avec l'aide de ChatGPT. Je serais ravie de faire connaissance ! </p>
+    </div>
+  </div>
+  
+  <script>
+    function calculate() {
+      var salary = parseFloat(document.getElementById("salary").value);
+      var days = parseFloat(document.getElementById("days").value);
+  
+      var result = (salary * days) / 260.88 / 26;
+  
+      document.getElementById("result").innerHTML = "Impact sur la paie : Votre salaire bihebdomadaire sera réduit de " + result.toFixed(2) + " $ pendant toute l'année";
+    }
+  </script>
+</body>
+</html>
