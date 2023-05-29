@@ -6,12 +6,13 @@
   </head>
   <body>
     <h1>String Converter</h1>
-	<p>Welcome! Please use a format similar to this for the tool to work: "No","Surname Given Name","Registry Number (123-45678-90)"
-	
-	
-	
-	
-    <form onsubmit="convertString(); return false;">
+    <p>Welcome! You can use either one of the formats below for this tool to work: </p>
+	<ul>
+	<li>With quotes: "No","Surname Given Name","Registry Number (123-45678-90)"</li>
+	<li>Without quotes: No, Surname Given Name, Registry Number (123-45678-90)</li>
+	</ul>
+
+     <form onsubmit="convertString(); return false;">
       <label for="inputString">Enter string:</label><br>
       <input type="text" id="inputString" name="inputString" size="100"><br>
       <input type="submit" value="Submit">
@@ -23,15 +24,14 @@
     <script>
       function convertString() {
         const inputString = document.getElementById("inputString").value.trim();
-        const regex = /"([^"]+)"/g;
-        const matches = inputString.match(regex);
+        const values = inputString.split(",");
         const fields = [];
-        for (let i = 0; i < matches.length; i++) {
-          const name = matches[i].replace(/"/g, '').trim();
-		  
+        
+        for (let i = 0; i < values.length; i++) {
+          const name = values[i].replace(/"/g, '').trim();
           fields.push({name: name, type: "text", column: i+1});
-		  
         }
+        
         const output = JSON.stringify({fields: fields}, null, 2);
         document.getElementById("output").value = output;
       }
