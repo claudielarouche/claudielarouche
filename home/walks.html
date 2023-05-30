@@ -5,7 +5,18 @@
 </head>
 <body>
     <h1>Weekly Walk Responses</h1>
+	<p>Please wait a few seconds for the answers to load.</p>
+	<p>The walk this week will take place on Friday, <script>document.write(calculateNextFridayDate());</script></p>
 	<p>If you said you would attend but you can no longer make it, <a href="https://airtable.com/shrCqz5xegu5zobue">please submit another answer here</a>.</p>
     <iframe class="airtable-embed" src="https://airtable.com/embed/shrnOowIyqJvf9JM2?backgroundColor=red&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>    
+	
+	<script>
+		function calculateNextFridayDate() {
+			var today = new Date();
+			var nextFriday = new Date(today);
+			nextFriday.setDate(today.getDate() + (5 + 7 - today.getDay()) % 7);
+			return nextFriday.toLocaleDateString();
+		}
+	</script>
 </body>
 </html>
