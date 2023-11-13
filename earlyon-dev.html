@@ -29,41 +29,48 @@
             // Update the path to your CSV file
             const csvFilePath = 'https://claudielarouche.com/earlyON/data.csv';
 
-            Papa.parse(csvFilePath, {
-                header: true,
-                dynamicTyping: true,
-                delimiter: ',', // Explicitly specify the delimiter
-                complete: function (results) {
-                    const data = results.data;
+            fetch(csvFilePath)
+                .then(response => response.text())
+                .then(csvData => {
+                    Papa.parse(csvData, {
+                        header: true,
+                        dynamicTyping: true,
+                        delimiter: ',', // Explicitly specify the delimiter
+                        complete: function (results) {
+                            const data = results.data;
 
-                    if (data.length > 0) {
-                        const headers = Object.keys(data[0]);
+                            if (data.length > 0) {
+                                const headers = Object.keys(data[0]);
 
-                        let tableHtml = '<table><thead><tr>';
-                        headers.forEach(header => {
-                            tableHtml += `<th>${header}</th>`;
-                        });
-                        tableHtml += '</tr></thead><tbody>';
+                                let tableHtml = '<table><thead><tr>';
+                                headers.forEach(header => {
+                                    tableHtml += `<th>${header}</th>`;
+                                });
+                                tableHtml += '</tr></thead><tbody>';
 
-                        data.forEach(row => {
-                            tableHtml += '<tr>';
-                            headers.forEach(header => {
-                                tableHtml += `<td>${row[header]}</td>`;
-                            });
-                            tableHtml += '</tr>';
-                        });
+                                data.forEach(row => {
+                                    tableHtml += '<tr>';
+                                    headers.forEach(header => {
+                                        tableHtml += `<td>${row[header]}</td>`;
+                                    });
+                                    tableHtml += '</tr>';
+                                });
 
-                        tableHtml += '</tbody></table>';
+                                tableHtml += '</tbody></table>';
 
-                        document.getElementById('csvData').innerHTML = tableHtml;
-                    } else {
-                        console.error('CSV file is empty or has invalid format:', results.errors);
-                    }
-                },
-                error: function (error) {
-                    console.error('Error parsing CSV file:', error);
-                }
-            });
+                                document.getElementById('csvData').innerHTML = tableHtml;
+                            } else {
+                                console.error('CSV file is empty or has invalid format:', results.errors);
+                            }
+                        },
+                        error: function (error) {
+                            console.error('Error parsing CSV file:', error);
+                        }
+                    });
+                })
+                .catch(error => {
+                    console.error('Error fetching CSV file:', error);
+                });
         };
     </script>
 
