@@ -25,46 +25,46 @@
     <div id="csvData"></div>
 
     <script>
-        const csvData = `
-        Date,Hours,Location Name,Location Address,URL
-        2023-11-06,9:30 to 11:30,Western Ottawa Community Resource Centre,2 MacNeil Court,https://wocrc.ca/wp-content/uploads/2023/11/EarlyON-Calendar-Fall-Nov-update2.pdf
-        `;
+        window.onload = function () {
+            // Update the path to your CSV file
+            const csvFilePath = 'https://claudielarouche.com/earlyON/data.csv';
 
-        Papa.parse(csvData, {
-            header: true,
-            dynamicTyping: true,
-            delimiter: ',',
-            complete: function (results) {
-                const data = results.data;
+            Papa.parse(csvFilePath, {
+                header: true,
+                dynamicTyping: true,
+                delimiter: ',', // Explicitly specify the delimiter
+                complete: function (results) {
+                    const data = results.data;
 
-                if (data.length > 0) {
-                    const headers = Object.keys(data[0]);
+                    if (data.length > 0) {
+                        const headers = Object.keys(data[0]);
 
-                    let tableHtml = '<table><thead><tr>';
-                    headers.forEach(header => {
-                        tableHtml += `<th>${header}</th>`;
-                    });
-                    tableHtml += '</tr></thead><tbody>';
-
-                    data.forEach(row => {
-                        tableHtml += '<tr>';
+                        let tableHtml = '<table><thead><tr>';
                         headers.forEach(header => {
-                            tableHtml += `<td>${row[header]}</td>`;
+                            tableHtml += `<th>${header}</th>`;
                         });
-                        tableHtml += '</tr>';
-                    });
+                        tableHtml += '</tr></thead><tbody>';
 
-                    tableHtml += '</tbody></table>';
+                        data.forEach(row => {
+                            tableHtml += '<tr>';
+                            headers.forEach(header => {
+                                tableHtml += `<td>${row[header]}</td>`;
+                            });
+                            tableHtml += '</tr>';
+                        });
 
-                    document.getElementById('csvData').innerHTML = tableHtml;
-                } else {
-                    console.error('CSV data is empty or has invalid format:', results.errors);
+                        tableHtml += '</tbody></table>';
+
+                        document.getElementById('csvData').innerHTML = tableHtml;
+                    } else {
+                        console.error('CSV file is empty or has invalid format:', results.errors);
+                    }
+                },
+                error: function (error) {
+                    console.error('Error parsing CSV file:', error);
                 }
-            },
-            error: function (error) {
-                console.error('Error parsing CSV data:', error);
-            }
-        });
+            });
+        };
     </script>
 
 </body>
