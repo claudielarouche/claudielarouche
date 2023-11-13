@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSV Reader</title>
+    <title>CSV Reader with Filtering</title>
     <style>
         table {
             border-collapse: collapse;
@@ -22,9 +22,19 @@
 <body>
 
     <h1>CSV Data</h1>
+    
+    <!-- Filter inputs -->
+    <label for="filterDate">Filter Date:</label>
+    <input type="text" id="filterDate" oninput="filterTable()">
+    
+    <label for="filterLocation">Filter Location:</label>
+    <input type="text" id="filterLocation" oninput="filterTable()">
+
     <div id="csvData"></div>
 
     <script>
+        let originalData; // To store the original CSV data
+
         window.onload = function () {
             // Update the path to your CSV file
             const csvFilePath = 'https://claudielarouche.com/earlyON/data.csv';
@@ -32,46 +42,47 @@
             fetch(csvFilePath)
                 .then(response => response.text())
                 .then(csvData => {
-                    Papa.parse(csvData, {
-                        header: true,
-                        dynamicTyping: true,
-                        delimiter: ',', // Explicitly specify the delimiter
-                        complete: function (results) {
-                            const data = results.data;
-
-                            if (data.length > 0) {
-                                const headers = Object.keys(data[0]);
-
-                                let tableHtml = '<table><thead><tr>';
-                                headers.forEach(header => {
-                                    tableHtml += `<th>${header}</th>`;
-                                });
-                                tableHtml += '</tr></thead><tbody>';
-
-                                data.forEach(row => {
-                                    tableHtml += '<tr>';
-                                    headers.forEach(header => {
-                                        tableHtml += `<td>${row[header]}</td>`;
-                                    });
-                                    tableHtml += '</tr>';
-                                });
-
-                                tableHtml += '</tbody></table>';
-
-                                document.getElementById('csvData').innerHTML = tableHtml;
-                            } else {
-                                console.error('CSV file is empty or has invalid format:', results.errors);
-                            }
-                        },
-                        error: function (error) {
-                            console.error('Error parsing CSV file:', error);
-                        }
-                    });
+                    originalData = Papa.parse(csvData, { header: true }).data;
+                    renderTable(originalData);
                 })
                 .catch(error => {
                     console.error('Error fetching CSV file:', error);
                 });
         };
+
+        function renderTable(data) {
+            const headers = Object.keys(data[0]);
+
+            let tableHtml = '<table id="dataTable"><thead><tr>';
+            headers.forEach(header => {
+                tableHtml += `<th>${header}</th>`;
+            });
+            tableHtml += '</tr></thead><tbody>';
+
+            data.forEach(row => {
+                tableHtml += '<tr>';
+                headers.forEach(header => {
+                    tableHtml += `<td>${row[header]}</td>`;
+                });
+                tableHtml += '</tr>';
+            });
+
+            tableHtml += '</tbody></table>';
+
+            document.getElementById('csvData').innerHTML = tableHtml;
+        }
+
+        function filterTable() {
+            const filterDate = document.getElementById('filterDate').value.toLowerCase();
+            const filterLocation = document.getElementById('filterLocation').value.toLowerCase();
+
+            const filteredData = originalData.filter(row =>
+                row['Date'].toLowerCase().includes(filterDate) &&
+                row['Location Name'].toLowerCase().includes(filterLocation)
+            );
+
+            renderTable(filteredData);
+        }
     </script>
 
 </body>
