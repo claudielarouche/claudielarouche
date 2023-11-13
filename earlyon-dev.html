@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSV Reader with Filtering</title>
+    <title>CSV Reader</title>
     <style>
         table {
             border-collapse: collapse;
@@ -21,14 +21,7 @@
 </head>
 <body>
 
-    <h1>CSV Data</h1>
-    
-    <!-- Filter inputs -->
-    <label for="filterDate">Filter Date:</label>
-    <input type="text" id="filterDate" oninput="filterTable()">
-    
-    <label for="filterLocation">Filter Location:</label>
-    <input type="text" id="filterLocation" oninput="filterTable()">
+    <h1>CSV Data <small>Version 1.0</small></h1>
 
     <div id="csvData"></div>
 
@@ -70,18 +63,6 @@
             tableHtml += '</tbody></table>';
 
             document.getElementById('csvData').innerHTML = tableHtml;
-        }
-
-        function filterTable() {
-            const filterDate = document.getElementById('filterDate').value.toLowerCase();
-            const filterLocation = document.getElementById('filterLocation').value.toLowerCase();
-
-            const filteredData = originalData.filter(row =>
-                row['Date'].toLowerCase().includes(filterDate) &&
-                row['Location Name'].toLowerCase().includes(filterLocation)
-            );
-
-            renderTable(filteredData);
         }
     </script>
 
