@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EarlyON Ottawa</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
     <style>
         table {
             border-collapse: collapse;
@@ -18,13 +21,20 @@
         h2 {
             margin-top: 20px;
         }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
     </style>
     <!-- Include PapaParse library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
 </head>
 <body>
 
-    <h1>EarlyON Ottawa <small>Version 1.0</small></h1>
+    <h1>EarlyON Ottawa <small>Version 1.1</small></h1>
+
+    <label for="selectedDate">Select Date:</label>
+    <input type="date" id="selectedDate">
 
     <p>Welcome to the central repository of all the EarlyON groups in Ottawa! Finally a place where parents can see details for all the playgroups in the city. Please note that it is highly recommended to visit the source URL to ensure that the playgroup you are planning to attend is still running. Some playgroups also require registration.</p>
 
@@ -33,34 +43,69 @@
     <p>The data from this table was taken from the various Ottawa EarlyON playgroups posted on the <a href="https://ottawa.ca/en/family-and-social-services/childrens-services/earlyon" target="_blank">Ottawa.ca website</a>.</p>
 
     <h2>Next Steps</h2>
-    <ul>
-        <li>Lots of data entry needed! Unfortunately, most calendars are published as PDFs so it is not possible to automate a Python script to read data off of the individual websites</li>
-        <li>Add ability to filter (by date, by area, by language)</li>
-        <li>Add ability to sort</li>
-        <li>Ensure header is always visible even when we scroll</li>
-        <li>Ensure dates that are past don't appear</li>
-        <li>Get the word out! :)</li>
-    </ul>
+<ul style="list-style-type: none; padding-left: 0;">
+    <li><input type="checkbox" disabled> Lots of data entry needed! Unfortunately, most calendars are published as PDFs so it is not possible to automate a Python script to read data off of the individual websites</li>
+    <li>
+        <input type="checkbox" disabled> Add ability to filter (by date, by area, by language)
+        <ul style="list-style-type: none; padding-left: 20px;">
+            <li><input type="checkbox" disabled checked> By Date</li>
+            <li><input type="checkbox" disabled> By Area</li>
+            <li><input type="checkbox" disabled> By Language</li>
+        </ul>
+    </li>
+    <li><input type="checkbox" disabled> Add ability to sort</li>
+    <li><input type="checkbox" disabled> Ensure header is always visible even when we scroll</li>
+    <li><input type="checkbox" disabled> Ensure dates that are past don't appear</li>
+    <li><input type="checkbox" disabled> Contact EarlyON employees to see if they can help with data entry</li>
+    <li><input type="checkbox" disabled checked> Improve the look of the website</li>
+    <li><input type="checkbox" disabled> Get the word out! :)</li>
+</ul>
 
     <script>
-        let originalData; // To store the original CSV data
+        let originalData = []; // Initialize as an empty array
 
         window.onload = function () {
             // Update the path to your CSV file
             const csvFilePath = 'https://claudielarouche.com/earlyON/data.csv';
 
-            fetch(csvFilePath)
-                .then(response => response.text())
-                .then(csvData => {
-                    originalData = Papa.parse(csvData, { header: true }).data;
-                    renderTable(originalData);
-                })
-                .catch(error => {
-                    console.error('Error fetching CSV file:', error);
-                });
+            Papa.parse(csvFilePath, {
+                header: true,
+                download: true,
+                skipEmptyLines: true,
+                complete: function(results) {
+                    if (results.errors.length > 0) {
+                        console.error('Error parsing CSV:', results.errors);
+                        document.getElementById('csvData').innerHTML = 'Error loading data.';
+                    } else if (Array.isArray(results.data)) {
+                        originalData = results.data;
+                        renderTable(originalData);
+                    } else {
+                        console.error('Error loading data: Data is not an array.');
+                        document.getElementById('csvData').innerHTML = 'Error loading data.';
+                    }
+                },
+                error: function(error) {
+                    console.error('Error fetching or parsing CSV:', error);
+                    document.getElementById('csvData').innerHTML = 'Error loading data.';
+                }
+            });
         };
 
         function renderTable(data) {
+            // Ensure data is an array
+            if (!Array.isArray(data)) {
+                console.error('Error loading data: Data is not an array.');
+                document.getElementById('csvData').innerHTML = 'Error loading data.';
+                return;
+            }
+
+            // Check if data is empty
+            if (data.length === 0) {
+                console.warn('No data available.');
+                document.getElementById('csvData').innerHTML = 'No data available.';
+                return;
+            }
+
             const headers = Object.keys(data[0]);
 
             let tableHtml = '<table id="dataTable"><thead><tr>';
@@ -69,7 +114,17 @@
             });
             tableHtml += '</tr></thead><tbody>';
 
-            data.forEach(row => {
+            const selectedDate = document.getElementById('selectedDate').value;
+
+            const filteredData = filterDataByDate(data, selectedDate);
+
+            if (!Array.isArray(filteredData)) {
+                console.error('Error loading data: Filtered data is not an array.');
+                document.getElementById('csvData').innerHTML = 'Error loading data.';
+                return;
+            }
+
+            filteredData.forEach(row => {
                 tableHtml += '<tr>';
                 headers.forEach(header => {
                     if (header === 'URL') {
@@ -86,6 +141,28 @@
 
             document.getElementById('csvData').innerHTML = tableHtml;
         }
+
+        function filterDataByDate(data, selectedDate) {
+            // If no date is selected, return the original data
+            if (!selectedDate) {
+                return data;
+            }
+
+            // Ensure data is an array before filtering
+            if (Array.isArray(data)) {
+                return data.filter(row => {
+                    const currentDate = row['Date'] ? row['Date'] : '';
+                    return currentDate === selectedDate;
+                });
+            } else {
+                return [];
+            }
+        }
+
+        // Listen for changes in date input
+        document.getElementById('selectedDate').addEventListener('change', function() {
+            renderTable(originalData);
+        });
     </script>
 
 </body>
