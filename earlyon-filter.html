@@ -28,7 +28,7 @@
 </head>
 <body>
 
-    <h1>EarlyON Ottawa <small>Version 1.0</small></h1>
+    <h1>EarlyON Ottawa <small>Version 1.1</small></h1>
 
     <label for="selectedDate">Select Date:</label>
     <input type="date" id="selectedDate">
@@ -75,6 +75,9 @@
         };
 
         function renderTable(data) {
+            // Log the data received
+            console.log('Data received:', data);
+
             // Ensure data is an array
             if (!Array.isArray(data)) {
                 console.error('Error loading data: Data is not an array.');
@@ -100,6 +103,9 @@
             const selectedDate = document.getElementById('selectedDate').value;
 
             const filteredData = filterDataByDate(data, selectedDate);
+
+            // Log the filtered data
+            console.log('Filtered Data:', filteredData);
 
             if (!Array.isArray(filteredData)) {
                 console.error('Error loading data: Filtered data is not an array.');
