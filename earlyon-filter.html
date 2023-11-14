@@ -28,7 +28,7 @@
 </head>
 <body>
 
-    <h1>EarlyON Ottawa <small>Version 1.0</small></h1>
+    <h1>EarlyON Ottawa <small>Version 1.2</small></h1>
 
     <label for="selectedDate">Select Date:</label>
     <input type="date" id="selectedDate">
@@ -55,19 +55,25 @@
         let originalData = []; // Initialize as an empty array
 
         window.onload = function () {
-            // Update the path to your CSV file
-            const csvFilePath = 'https://claudielarouche.com/earlyON/data.csv';
+		// Update the path to your CSV file
+		const csvFilePath = 'https://claudielarouche.com/earlyON/data.csv';
 
-            fetch(csvFilePath)
-                .then(response => response.text())
-                .then(csvData => {
-                    originalData = Papa.parse(csvData, { header: true }).data || [];
-                    renderTable(originalData);
-                })
-                .catch(error => {
-                    console.error('Error fetching CSV file:', error);
-                });
-        };
+		fetch(csvFilePath)
+			.then(response => response.text())
+			.then(csvData => {
+				// Parse the CSV data and ensure it is an array
+				originalData = Papa.parse(csvData, { header: true }).data || [];
+				
+				// Ensure originalData is always an array
+				originalData = Array.isArray(originalData) ? originalData : [];
+
+				renderTable(originalData);
+			})
+			.catch(error => {
+				console.error('Error fetching CSV file:', error);
+			});
+	};
+
 
         function renderTable(data) {
             // Ensure data is an array
