@@ -28,7 +28,7 @@
 </head>
 <body>
 
-    <h1>EarlyON Ottawa <small>Version 1.2</small></h1>
+    <h1>EarlyON Ottawa <small>Version 1.0</small></h1>
 
     <label for="selectedDate">Select Date:</label>
     <input type="date" id="selectedDate">
@@ -70,7 +70,6 @@
                         originalData = results.data;
                         renderTable(originalData);
                     } else {
-						console.log(results.data);
                         console.error('Error loading data: Data is not an array.');
                         document.getElementById('csvData').innerHTML = 'Error loading data.';
                     }
@@ -151,7 +150,9 @@
         }
 
         // Listen for changes in date input
-        document.getElementById('selectedDate').addEventListener('change', renderTable);
+        document.getElementById('selectedDate').addEventListener('change', function() {
+            renderTable(originalData);
+        });
     </script>
 
 </body>
