@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weekly Walk Responses</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="bg-image"></div>
+	<div class="container">
+		
+		  <h1>Weekly Walk Responses</h1>
+		<p>Please wait a few seconds for the answers to load.</p>
+		<p>The walk this week will take place on Friday <span id="nextFridayDate"></span> at 12 PM, starting at Claudie's house.</p>
+		<p>If you said you would attend but you can no longer make it, <a href="https://airtable.com/shrCqz5xegu5zobue">please submit another answer here</a>.</p>
+		<iframe class="airtable-embed" src="https://airtable.com/embed/shrnOowIyqJvf9JM2?backgroundColor=red&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>    
+			
+	</div>
+
+
+  
+	
+	<script>
+		function calculateNextFridayDate() {
+			var today = new Date();
+			var nextFriday = new Date(today);
+			
+			// Adjust nextFriday to the upcoming Friday if today is not a Friday
+			if (today.getDay() !== 5) { // 5 represents Friday (0 is Sunday, 6 is Saturday)
+				nextFriday.setDate(today.getDate() + ((5 + 7 - today.getDay()) % 7) ); // Adding 1 to get the following Friday
+			}
+			
+			// Format the date as "Month Day, Year"
+			var options = { month: 'long', day: 'numeric', year: 'numeric' };
+			var formattedDate = nextFriday.toLocaleDateString('en-US', options);
+			
+			// Add the appropriate ordinal suffix to the day
+			formattedDate = addOrdinalSuffix(formattedDate);
+			
+			return formattedDate;
+		}
+		
+		function addOrdinalSuffix(dateString) {
+			var day = parseInt(dateString.match(/\d+/)[0]);
+			var suffix;
+			
+			if (day === 1 || day === 21 || day === 31) {
+				suffix = "st";
+			} else if (day === 2 || day === 22) {
+				suffix = "nd";
+			} else if (day === 3 || day === 23) {
+				suffix = "rd";
+			} else {
+				suffix = "th";
+			}
+			
+			return dateString.replace(/\d+/, day + suffix);
+		}
+
+		document.getElementById("nextFridayDate").textContent = calculateNextFridayDate();
+	</script>
+</body>
+</html>
