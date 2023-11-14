@@ -28,7 +28,7 @@
 </head>
 <body>
 
-    <h1>EarlyON Ottawa <small>Version 1.0</small></h1>
+    <h1>EarlyON Ottawa <small>Version 1.1</small></h1>
 
     <label for="startDate">Start Date:</label>
     <input type="date" id="startDate">
@@ -55,7 +55,7 @@
     </ul>
 
     <script>
-        let originalData; // To store the original CSV data
+        let originalData = []; // Initialize as an empty array
 
         window.onload = function () {
             // Update the path to your CSV file
@@ -64,7 +64,7 @@
             fetch(csvFilePath)
                 .then(response => response.text())
                 .then(csvData => {
-                    originalData = Papa.parse(csvData, { header: true }).data;
+                    originalData = Papa.parse(csvData, { header: true }).data || [];
                     renderTable(originalData);
                 })
                 .catch(error => {
@@ -73,6 +73,12 @@
         };
 
         function renderTable(data) {
+            // Check if data is empty or undefined
+            if (!data || data.length === 0) {
+                document.getElementById('csvData').innerHTML = 'No data available.';
+                return;
+            }
+
             const headers = Object.keys(data[0]);
 
             let tableHtml = '<table id="dataTable"><thead><tr>';
@@ -106,8 +112,8 @@
 
         function filterDataByDate(data, startDate, endDate) {
             return data.filter(row => {
-                const currentDate = new Date(row['Date']);
-                return currentDate >= new Date(startDate) && currentDate <= new Date(endDate);
+                const currentDate = new Date(row['Date']).toISOString().split('T')[0]; // Extract date without time
+                return currentDate >= startDate && currentDate <= endDate;
             });
         }
 
