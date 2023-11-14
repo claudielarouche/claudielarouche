@@ -28,7 +28,7 @@
 </head>
 <body>
 
-    <h1>EarlyON Ottawa <small>Version 1.1</small></h1>
+    <h1>EarlyON Ottawa <small>Version 1.0</small></h1>
 
     <label for="selectedDate">Select Date:</label>
     <input type="date" id="selectedDate">
@@ -58,26 +58,28 @@
             // Update the path to your CSV file
             const csvFilePath = 'https://claudielarouche.com/earlyON/data.csv';
 
-            fetch(csvFilePath)
-                .then(response => response.text())
-                .then(csvData => {
-                    // Parse the CSV data using PapaParse
-                    originalData = Papa.parse(csvData, { header: true }).data || [];
-                    
-                    // Ensure originalData is always an array
-                    originalData = Array.isArray(originalData) ? originalData : [];
-
-                    renderTable(originalData);
-                })
-                .catch(error => {
-                    console.error('Error fetching CSV file:', error);
-                });
+            Papa.parse(csvFilePath, {
+                header: true,
+                download: true,
+                skipEmptyLines: true,
+                complete: function(results) {
+                    // Check if the data is an array
+                    if (Array.isArray(results.data)) {
+                        originalData = results.data;
+                        renderTable(originalData);
+                    } else {
+                        console.error('Error loading data: Data is not an array.');
+                        document.getElementById('csvData').innerHTML = 'Error loading data.';
+                    }
+                },
+                error: function(error) {
+                    console.error('Error parsing CSV:', error);
+                    document.getElementById('csvData').innerHTML = 'Error loading data.';
+                }
+            });
         };
 
         function renderTable(data) {
-            // Log the data received
-            console.log('Data received:', data);
-
             // Ensure data is an array
             if (!Array.isArray(data)) {
                 console.error('Error loading data: Data is not an array.');
@@ -103,9 +105,6 @@
             const selectedDate = document.getElementById('selectedDate').value;
 
             const filteredData = filterDataByDate(data, selectedDate);
-
-            // Log the filtered data
-            console.log('Filtered Data:', filteredData);
 
             if (!Array.isArray(filteredData)) {
                 console.error('Error loading data: Filtered data is not an array.');
