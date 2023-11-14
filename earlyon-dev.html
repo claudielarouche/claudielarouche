@@ -15,6 +15,9 @@
             text-align: left;
             padding: 8px;
         }
+        h2 {
+            margin-top: 20px;
+        }
     </style>
     <!-- Include PapaParse library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
@@ -28,6 +31,16 @@
     <div id="csvData"></div>
 
     <p>The data from this table was taken from the various Ottawa EarlyON playgroups posted on the <a href="https://ottawa.ca/en/family-and-social-services/childrens-services/earlyon" target="_blank">Ottawa.ca website</a>.</p>
+
+    <h2>Next Steps</h2>
+    <ul>
+        <li>Lots of data entry needed! Unfortunately, most calendars are published as PDFs so it is not possible to automate a Python script to read data off of the individual websites</li>
+        <li>Add ability to filter (by date, by area, by language)</li>
+        <li>Add ability to sort</li>
+        <li>Ensure header is always visible even when we scroll</li>
+        <li>Ensure dates that are past don't appear</li>
+        <li>Get the word out! :)</li>
+    </ul>
 
     <script>
         let originalData; // To store the original CSV data
