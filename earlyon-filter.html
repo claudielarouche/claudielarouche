@@ -28,7 +28,7 @@
 </head>
 <body>
 
-    <h1>EarlyON Ottawa <small>Version 1.0</small></h1>
+    <h1>EarlyON Ottawa <small>Version 1.1</small></h1>
 
     <label for="selectedDate">Select Date:</label>
     <input type="date" id="selectedDate">
@@ -63,8 +63,10 @@
                 download: true,
                 skipEmptyLines: true,
                 complete: function(results) {
-                    // Check if the data is an array
-                    if (Array.isArray(results.data)) {
+                    if (results.errors.length > 0) {
+                        console.error('Error parsing CSV:', results.errors);
+                        document.getElementById('csvData').innerHTML = 'Error loading data.';
+                    } else if (Array.isArray(results.data)) {
                         originalData = results.data;
                         renderTable(originalData);
                     } else {
@@ -73,7 +75,7 @@
                     }
                 },
                 error: function(error) {
-                    console.error('Error parsing CSV:', error);
+                    console.error('Error fetching or parsing CSV:', error);
                     document.getElementById('csvData').innerHTML = 'Error loading data.';
                 }
             });
