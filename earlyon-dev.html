@@ -61,7 +61,7 @@
                 headers.forEach(header => {
                     if (header === 'URL') {
                         // Make the URL clickable as a link
-                        tableHtml += `<td><a href="${row[header]}" target="_blank">${row[header]}</a></td>`;
+                        tableHtml += `<td><a href="${row[header]}" target="_blank">URL</a></td>`;
                     } else {
                         tableHtml += `<td>${row[header]}</td>`;
                     }
