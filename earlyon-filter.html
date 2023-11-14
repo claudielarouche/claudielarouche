@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EarlyON Ottawa</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
     <style>
         table {
             border-collapse: collapse;
@@ -28,28 +32,31 @@
 </head>
 <body>
 
-    <h1>EarlyON Ottawa <small>Version 1.0</small></h1>
+<div class="bg-image"></div>
+	<div class="container">
+		<h1>EarlyON Ottawa <small>Version 1.0</small></h1>
 
-    <label for="selectedDate">Select Date:</label>
-    <input type="date" id="selectedDate">
+		<p>Welcome to the central repository of all the EarlyON groups in Ottawa! Finally a place where parents can see details for all the playgroups in the city. Please note that it is highly recommended to visit the source URL to ensure that the playgroup you are planning to attend is still running. Some playgroups also require registration.</p>
 
-    <p>Welcome to the central repository of all the EarlyON groups in Ottawa! Finally a place where parents can see details for all the playgroups in the city. Please note that it is highly recommended to visit the source URL to ensure that the playgroup you are planning to attend is still running. Some playgroups also require registration.</p>
+		<div id="csvData"></div>
 
-    <div id="csvData"></div>
+		<p>The data from this table was taken from the various Ottawa EarlyON playgroups posted on the <a href="https://ottawa.ca/en/family-and-social-services/childrens-services/earlyon" target="_blank">Ottawa.ca website</a>.</p>
 
-    <p>The data from this table was taken from the various Ottawa EarlyON playgroups posted on the <a href="https://ottawa.ca/en/family-and-social-services/childrens-services/earlyon" target="_blank">Ottawa.ca website</a>.</p>
+		<h2>Next Steps</h2>
+		<ul style="list-style-type: none; padding-left: 0;">
+			<li><input type="checkbox" disabled> Lots of data entry needed! Unfortunately, most calendars are published as PDFs so it is not possible to automate a Python script to read data off of the individual websites</li>
+			<li><input type="checkbox" disabled> Add ability to filter (by date, by area, by language)</li>
+			<li><input type="checkbox" disabled> Add ability to sort</li>
+			<li><input type="checkbox" disabled> Ensure header is always visible even when we scroll</li>
+			<li><input type="checkbox" disabled> Ensure dates that are past don't appear</li>
+			<li><input type="checkbox" disabled> Contact EarlyON employees to see if they can help with data entry</li>
+			<li><input type="checkbox" disabled> Improve the look of the website</li>
+			<li><input type="checkbox" disabled> Get the word out! :)</li>
+		</ul>
+				
+	</div>
+</div>
 
-    <h2>Next Steps</h2>
-    <ul>
-        <li>Lots of data entry needed! Unfortunately, most calendars are published as PDFs so it is not possible to automate a Python script to read data off of the individual websites</li>
-        <li>Add ability to filter (by date, by area, by language)</li>
-        <li>Add ability to sort</li>
-        <li>Ensure header is always visible even when we scroll</li>
-        <li>Ensure dates that are past don't appear</li>
-        <li>Contact EarlyON employees to see if they can help with data entry</li>
-        <li>Improve the look of the website</li>
-        <li>Get the word out! :)</li>
-    </ul>
 
     <script>
         let originalData = []; // Initialize as an empty array
