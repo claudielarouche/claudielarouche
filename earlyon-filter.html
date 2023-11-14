@@ -76,7 +76,7 @@
                 return;
             }
 
-            const headers = Object.keys(data[0]);
+            const headers = data[0] ? Object.keys(data[0]) : [];
 
             let tableHtml = '<table id="dataTable"><thead><tr>';
             headers.forEach(header => {
