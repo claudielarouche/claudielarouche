@@ -28,7 +28,7 @@
 </head>
 <body>
 
-    <h1>EarlyON Ottawa <small>Version 1.0</small></h1>
+    <h1>EarlyON Ottawa <small>Version 1.1</small></h1>
 
     <label for="selectedDate">Select Date:</label>
     <input type="date" id="selectedDate">
@@ -70,13 +70,19 @@
         };
 
         function renderTable(data) {
-            // Check if data is empty or undefined
-            if (!data || data.length === 0) {
+            // Ensure data is an array
+            if (!Array.isArray(data)) {
+                document.getElementById('csvData').innerHTML = 'Error loading data.';
+                return;
+            }
+
+            // Check if data is empty
+            if (data.length === 0) {
                 document.getElementById('csvData').innerHTML = 'No data available.';
                 return;
             }
 
-            const headers = data[0] ? Object.keys(data[0]) : [];
+            const headers = Object.keys(data[0]);
 
             let tableHtml = '<table id="dataTable"><thead><tr>';
             headers.forEach(header => {
@@ -112,10 +118,15 @@
                 return data;
             }
 
-            return data.filter(row => {
-                const currentDate = row['Date'] ? new Date(row['Date']).toISOString().split('T')[0] : '';
-                return currentDate === selectedDate;
-            });
+            // Ensure data is an array before filtering
+            if (Array.isArray(data)) {
+                return data.filter(row => {
+                    const currentDate = row['Date'] ? new Date(row['Date']).toISOString().split('T')[0] : '';
+                    return currentDate === selectedDate;
+                });
+            } else {
+                return [];
+            }
         }
 
         // Listen for changes in date input
