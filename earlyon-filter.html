@@ -28,7 +28,7 @@
 </head>
 <body>
 
-    <h1>EarlyON Ottawa <small>Version 1.1</small></h1>
+    <h1>EarlyON Ottawa <small>Version 1.0</small></h1>
 
     <label for="selectedDate">Select Date:</label>
     <input type="date" id="selectedDate">
@@ -72,12 +72,14 @@
         function renderTable(data) {
             // Ensure data is an array
             if (!Array.isArray(data)) {
+                console.error('Error loading data: Data is not an array.');
                 document.getElementById('csvData').innerHTML = 'Error loading data.';
                 return;
             }
 
             // Check if data is empty
             if (data.length === 0) {
+                console.warn('No data available.');
                 document.getElementById('csvData').innerHTML = 'No data available.';
                 return;
             }
@@ -93,6 +95,12 @@
             const selectedDate = document.getElementById('selectedDate').value;
 
             const filteredData = filterDataByDate(data, selectedDate);
+
+            if (!Array.isArray(filteredData)) {
+                console.error('Error loading data: Filtered data is not an array.');
+                document.getElementById('csvData').innerHTML = 'Error loading data.';
+                return;
+            }
 
             filteredData.forEach(row => {
                 tableHtml += '<tr>';
@@ -121,7 +129,7 @@
             // Ensure data is an array before filtering
             if (Array.isArray(data)) {
                 return data.filter(row => {
-                    const currentDate = row['Date'] ? new Date(row['Date']).toISOString().split('T')[0] : '';
+                    const currentDate = row['Date'] ? row['Date'] : '';
                     return currentDate === selectedDate;
                 });
             } else {
