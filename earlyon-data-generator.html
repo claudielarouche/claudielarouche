@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        label {
+            font-size: 18px;
+            margin-right: 10px;
+        }
+        select {
+            font-size: 16px;
+            padding: 5px;
+        }
+        button {
+            font-size: 16px;
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        #downloadLink {
+            margin-top: 20px;
+            display: none;
+        }
+        #logicContents {
+            margin-top: 20px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Data Generator</h1>
+
+    <label for="month">Select Month:</label>
+    <select id="month">
+        <option value="01">January</option>
+        <option value="02">February</option>
+        <option value="03">March</option>
+        <option value="04">April</option>
+        <option value="05">May</option>
+        <option value="06">June</option>
+        <option value="07">July</option>
+        <option value="08">August</option>
+        <option value="09">September</option>
+        <option value="10">October</option>
+        <option value="11">November</option>
+        <option value="12">December</option>
+    </select>
+
+    <button onclick="generateData()">Generate Data</button>
+
+    <div id="logicContents"></div>
+
+    <script>
+        function generateData() {
+            readLogicFile();
+        }
+
+        function readLogicFile() {
+            const logicFilePath = 'earlyON/logic.csv';
+
+            const fileInput = document.createElement('input');
+            fileInput.type = 'file';
+            fileInput.accept = '.csv';
+
+            fileInput.addEventListener('change', function(event) {
+                const file = event.target.files[0];
+
+                if (file) {
+                    const reader = new FileReader();
+
+                    reader.onload = function(e) {
+                        const logicContents = e.target.result;
+                        document.getElementById('logicContents').innerHTML = `<pre>${logicContents}</pre>`;
+                    };
+
+                    reader.readAsText(file);
+                }
+            });
+
+            document.body.appendChild(fileInput);
+        }
+    </script>
+
+</body>
+</html>
