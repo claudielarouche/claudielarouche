@@ -25,12 +25,39 @@
             display: block;
             margin-top: 10px;
         }
+		
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 20px;
+        color: black;
+        background-color: white;
+    }
+
+    th, td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    h2 {
+        margin-top: 20px;
+    }
+
+    label {
+        display: block;
+        margin-top: 10px;
+    }
+
+
     </style>
     <!-- Include PapaParse library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
 </head>
 <body>
 
+<div class="bg-image"></div>
+	<div class="container">
     <h1>EarlyON Ottawa <small>Version 1.1</small></h1>
 
     <label for="selectedDate">Select Date:</label>
@@ -66,7 +93,7 @@
 <ul style="list-style-type: none; padding-left: 0;">
     <li><input type="checkbox" disabled> Get the word out! :)</li>
 </ul>
-
+</div>
     <script>
         let originalData = []; // Initialize as an empty array
 
