@@ -1,5 +1,4 @@
-
-        let originalData = []; // Initialize as an empty array
+let originalData = []; // Initialize as an empty array
 
         window.onload = function () {
             // Update the path to your CSV file
@@ -62,19 +61,16 @@
             }
 
             filteredData.forEach(row => {
-                const currentDate = row['Date'] ? row['Date'] : '';
-                if (!isPastDate(currentDate)) {
-                    tableHtml += '<tr>';
-                    headers.forEach(header => {
-                        if (header === 'URL') {
-                            // Make the URL clickable as a link
-                            tableHtml += `<td><a href="${row[header]}" target="_blank">URL</a></td>`;
-                        } else {
-                            tableHtml += `<td>${row[header]}</td>`;
-                        }
-                    });
-                    tableHtml += '</tr>';
-                }
+                tableHtml += '<tr>';
+                headers.forEach(header => {
+                    if (header === 'URL') {
+                        // Make the URL clickable as a link
+                        tableHtml += `<td><a href="${row[header]}" target="_blank">URL</a></td>`;
+                    } else {
+                        tableHtml += `<td>${row[header]}</td>`;
+                    }
+                });
+                tableHtml += '</tr>';
             });
 
             tableHtml += '</tbody></table>';
@@ -97,12 +93,6 @@
             } else {
                 return [];
             }
-        }
-
-        function isPastDate(dateString) {
-            const currentDate = new Date();
-            const selectedDate = new Date(dateString);
-            return selectedDate < currentDate;
         }
 
         // Listen for changes in date input
