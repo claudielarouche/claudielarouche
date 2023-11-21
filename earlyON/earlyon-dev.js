@@ -109,6 +109,7 @@
 
         function isPastDate(dateString) {
             const currentDate = new Date();
+			console.log(currentDate);
             const selectedDate = new Date(dateString);
             return selectedDate < currentDate;
         }
