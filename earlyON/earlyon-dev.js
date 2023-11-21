@@ -111,12 +111,10 @@
     const currentDate = new Date();
     currentDate.setHours(0, 0, 0, 0); // Set time to midnight
 
-    const selectedDate = new Date(dateString);
+    // Parse the date string in "YYYY-MM-DD" format
+    const dateParts = dateString.split('-');
+    const selectedDate = new Date(dateParts[0], dateParts[1] - 1, dateParts[2]);
     selectedDate.setHours(0, 0, 0, 0); // Set time to midnight
-
-	console.log('currentDate:', currentDate);
-console.log('selectedDate:', selectedDate);
-console.log(selectedDate < currentDate);
 
     return selectedDate < currentDate;
 }
