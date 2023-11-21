@@ -114,7 +114,7 @@
     const selectedDate = new Date(dateString);
     selectedDate.setHours(0, 0, 0, 0); // Set time to midnight
 
-    return selectedDate < currentDate;
+    return selectedDate <= currentDate;
 }
 
 
