@@ -60,11 +60,14 @@
                 document.getElementById('csvData').innerHTML = 'Error loading data.';
                 return;
             }
-
+			
+			
+//let totalData = 0;
             filteredData.forEach(row => {
                 const currentDate = row['Date'] ? row['Date'] : '';
                 if (!isPastDate(currentDate)) {
-                    tableHtml += '<tr>';
+                    //totalData++;
+					tableHtml += '<tr>';
                     headers.forEach(header => {
                         if (header === 'URL') {
                             // Make the URL clickable as a link
@@ -80,6 +83,11 @@
             tableHtml += '</tbody></table>';
 
             document.getElementById('csvData').innerHTML = tableHtml;
+			
+			/*if (totalData > 0) {
+            document.getElementById('csvData').innerHTML = 'No playgroups found for the selected day.';
+            return;
+			}*/
         }
 
         function filterDataByDate(data, selectedDate) {
@@ -100,10 +108,17 @@
         }
 
         function isPastDate(dateString) {
-            const currentDate = new Date();
-            const selectedDate = new Date(dateString);
-            return selectedDate < currentDate;
-        }
+    const currentDate = new Date();
+    currentDate.setHours(0, 0, 0, 0); // Set time to midnight
+
+    // Parse the date string in "YYYY-MM-DD" format
+    const dateParts = dateString.split('-');
+    const selectedDate = new Date(dateParts[0], dateParts[1] - 1, dateParts[2]);
+    selectedDate.setHours(0, 0, 0, 0); // Set time to midnight
+
+    return selectedDate < currentDate;
+}
+
 
         // Listen for changes in date input
         document.getElementById('selectedDate').addEventListener('change', function() {
