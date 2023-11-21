@@ -64,18 +64,24 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
-        filteredData.forEach(row => {
-            tableHtml += '<tr>';
-            headers.forEach(header => {
-                if (header === 'URL') {
-                    // Make the URL clickable as a link
-                    tableHtml += `<td><a href="${row[header]}" target="_blank">URL</a></td>`;
-                } else {
-                    tableHtml += `<td>${row[header]}</td>`;
+
+		filteredData.forEach(row => {
+                const currentDate = row['Date'] ? row['Date'] : '';
+                if (!isPastDate(currentDate)) {
+                    tableHtml += '<tr>';
+                    headers.forEach(header => {
+                        if (header === 'URL') {
+                            // Make the URL clickable as a link
+                            tableHtml += `<td><a href="${row[header]}" target="_blank">URL</a></td>`;
+                        } else {
+                            tableHtml += `<td>${row[header]}</td>`;
+                        }
+                    });
+                    tableHtml += '</tr>';
                 }
             });
-            tableHtml += '</tr>';
-        });
+
+        
 
         tableHtml += '</tbody></table>';
 
