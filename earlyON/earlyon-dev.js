@@ -61,15 +61,13 @@
                 return;
             }
 			
-			if (filteredData.length === 0) {
-            document.getElementById('csvData').innerHTML = 'No playgroups found for the selected day.';
-            return;
-        }
-
+			
+let totalData = 0;
             filteredData.forEach(row => {
                 const currentDate = row['Date'] ? row['Date'] : '';
                 if (!isPastDate(currentDate)) {
-                    tableHtml += '<tr>';
+                    totalData++;
+					tableHtml += '<tr>';
                     headers.forEach(header => {
                         if (header === 'URL') {
                             // Make the URL clickable as a link
@@ -85,6 +83,11 @@
             tableHtml += '</tbody></table>';
 
             document.getElementById('csvData').innerHTML = tableHtml;
+			
+			if (totalData > 0) {
+            document.getElementById('csvData').innerHTML = 'No playgroups found for the selected day.';
+            return;
+			}
         }
 
         function filterDataByDate(data, selectedDate) {
