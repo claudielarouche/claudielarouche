@@ -62,11 +62,11 @@
             }
 			
 			
-let totalData = 0;
+//let totalData = 0;
             filteredData.forEach(row => {
                 const currentDate = row['Date'] ? row['Date'] : '';
                 if (!isPastDate(currentDate)) {
-                    totalData++;
+                    //totalData++;
 					tableHtml += '<tr>';
                     headers.forEach(header => {
                         if (header === 'URL') {
@@ -84,10 +84,10 @@ let totalData = 0;
 
             document.getElementById('csvData').innerHTML = tableHtml;
 			
-			if (totalData > 0) {
+			/*if (totalData > 0) {
             document.getElementById('csvData').innerHTML = 'No playgroups found for the selected day.';
             return;
-			}
+			}*/
         }
 
         function filterDataByDate(data, selectedDate) {
