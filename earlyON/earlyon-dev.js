@@ -108,11 +108,15 @@
         }
 
         function isPastDate(dateString) {
-            const currentDate = new Date();
-			console.log(currentDate);
-            const selectedDate = new Date(dateString);
-            return selectedDate < currentDate;
-        }
+    const currentDate = new Date();
+    currentDate.setHours(0, 0, 0, 0); // Set time to midnight
+
+    const selectedDate = new Date(dateString);
+    selectedDate.setHours(0, 0, 0, 0); // Set time to midnight
+
+    return selectedDate < currentDate;
+}
+
 
         // Listen for changes in date input
         document.getElementById('selectedDate').addEventListener('change', function() {
