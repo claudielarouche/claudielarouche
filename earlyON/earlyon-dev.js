@@ -26,6 +26,12 @@
                     document.getElementById('csvData').innerHTML = 'Error loading data.';
                 }
             });
+			
+			 // Initialize DataTable
+    $(document).ready( function () {
+        $('#dataTable').DataTable();
+    });
+			
         };
 
         function renderTable(data) {
