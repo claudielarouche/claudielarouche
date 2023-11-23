@@ -94,6 +94,7 @@
             document.getElementById('csvData').innerHTML = 'No playgroups found for the selected day.';
             return;
 			}*/
+			 $('#dataTable').DataTable();
         }
 
         function filterDataByDate(data, selectedDate) {
