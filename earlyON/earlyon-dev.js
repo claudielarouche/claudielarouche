@@ -89,7 +89,10 @@ function renderTable(data) {
 
     // Initialize DataTable only once
     if (!$.fn.dataTable.isDataTable('#dataTable')) {
-        $('#dataTable').DataTable({"pageLength": -1});
+        $('#dataTable').DataTable({
+			"pageLength": -1,
+			"lengthChange": false // Hide the "Show x entries" dropdown
+		});
     }
 }
 
