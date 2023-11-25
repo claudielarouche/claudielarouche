@@ -91,7 +91,8 @@ function renderTable(data) {
     if (!$.fn.dataTable.isDataTable('#dataTable')) {
         $('#dataTable').DataTable({
 			"pageLength": -1,
-			"lengthChange": false // Hide the "Show x entries" dropdown
+			"lengthChange": false, // Hide the "Show x entries" dropdown
+			"searching": false
 		});
     }
 }
