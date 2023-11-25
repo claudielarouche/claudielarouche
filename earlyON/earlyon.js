@@ -26,6 +26,12 @@
                     document.getElementById('csvData').innerHTML = 'Error loading data.';
                 }
             });
+			
+			 // Initialize DataTable
+    $(document).ready( function () {
+        $('#dataTable').DataTable();
+    });
+			
         };
 
         function renderTable(data) {
@@ -88,6 +94,7 @@
             document.getElementById('csvData').innerHTML = 'No playgroups found for the selected day.';
             return;
 			}*/
+			 $('#dataTable').DataTable();
         }
 
         function filterDataByDate(data, selectedDate) {
