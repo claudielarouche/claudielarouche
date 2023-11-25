@@ -49,10 +49,10 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-11-15,1:30 PM to 3:30 PM,Metcalfe Playgroup,Metcalfe,"8243 Victoria Street, Metcalfe",South,No,English,https://www.ruralfamilyconnections.ca/programs/earlyon
 2023-11-22,1:30 PM to 3:30 PM,Metcalfe Playgroup,Metcalfe,"8243 Victoria Street, Metcalfe",South,No,English,https://www.ruralfamilyconnections.ca/programs/earlyon
 2023-11-29,1:30 PM to 3:30 PM,Metcalfe Playgroup,Metcalfe,"8243 Victoria Street, Metcalfe",South,No,English,https://www.ruralfamilyconnections.ca/programs/earlyon
-2023-11-08,9:00 AM to 12:00 PM,North Gower Playgroup,North Gower,"2300 Community Way, North Gower",,No,English,https://www.ruralfamilyconnections.ca/programs/earlyon
-2023-11-15,9:00 AM to 12:00 PM,North Gower Playgroup,North Gower,"2300 Community Way, North Gower",,No,English,https://www.ruralfamilyconnections.ca/programs/earlyon
-2023-11-22,9:00 AM to 12:00 PM,North Gower Playgroup,North Gower,"2300 Community Way, North Gower",,No,English,https://www.ruralfamilyconnections.ca/programs/earlyon
-2023-11-29,9:00 AM to 12:00 PM,North Gower Playgroup,North Gower,"2300 Community Way, North Gower",,No,English,https://www.ruralfamilyconnections.ca/programs/earlyon
+2023-11-08,9:00 AM to 12:00 PM,North Gower Playgroup,North Gower,"2300 Community Way, North Gower",South,No,English,https://www.ruralfamilyconnections.ca/programs/earlyon
+2023-11-15,9:00 AM to 12:00 PM,North Gower Playgroup,North Gower,"2300 Community Way, North Gower",South,No,English,https://www.ruralfamilyconnections.ca/programs/earlyon
+2023-11-22,9:00 AM to 12:00 PM,North Gower Playgroup,North Gower,"2300 Community Way, North Gower",South,No,English,https://www.ruralfamilyconnections.ca/programs/earlyon
+2023-11-29,9:00 AM to 12:00 PM,North Gower Playgroup,North Gower,"2300 Community Way, North Gower",South,No,English,https://www.ruralfamilyconnections.ca/programs/earlyon
 2023-11-09,10:00 AM to 12:00 PM,Greely Playgroup,Greely,"1448 Meadow Dr, Greely",South,No,English,https://www.ruralfamilyconnections.ca/programs/earlyon
 2023-11-09,9:00 AM to 12:00 PM,Kars Playgroup,Kars,"1604 Old Wellington St, Kars",South,No,English,https://www.ruralfamilyconnections.ca/programs/earlyon
 2023-11-16,10:00 AM to 12:00 PM,Greely Playgroup,Greely,"1448 Meadow Dr, Greely",South,No,English,https://www.ruralfamilyconnections.ca/programs/earlyon
@@ -523,8 +523,158 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-11-10,1:00 PM to 3:00 PM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/
 2023-11-17,1:00 PM to 3:00 PM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/
 2023-11-24,1:00 PM to 3:00 PM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/
-2023-11-02,1:00 PM to 3:00 PM,Indigenous Wellness Circle (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,Yes,English,https://parentresource.ca/earlyon-programs-and-services/
-2023-11-09,1:00 PM to 3:00 PM,Indigenous Wellness Circle (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,Yes,English,https://parentresource.ca/earlyon-programs-and-services/
-2023-11-16,1:00 PM to 3:00 PM,Indigenous Wellness Circle (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,Yes,English,https://parentresource.ca/earlyon-programs-and-services/
-2023-11-23,1:00 PM to 3:00 PM,Indigenous Wellness Circle (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,Yes,English,https://parentresource.ca/earlyon-programs-and-services/
-2023-11-30,1:00 PM to 3:00 PM,Indigenous Wellness Circle (0-6 years),Parent Resource Centre,301 Goulburn Cr,Central,Yes,English,https://parentresource.ca/earlyon-programs-and-services/
+2023-11-02,1:00 PM to 3:00 PM,Indigenous Wellness Circle (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,Yes?,English,https://parentresource.ca/earlyon-programs-and-services/
+2023-11-09,1:00 PM to 3:00 PM,Indigenous Wellness Circle (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,Yes?,English,https://parentresource.ca/earlyon-programs-and-services/
+2023-11-16,1:00 PM to 3:00 PM,Indigenous Wellness Circle (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,Yes?,English,https://parentresource.ca/earlyon-programs-and-services/
+2023-11-23,1:00 PM to 3:00 PM,Indigenous Wellness Circle (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,Yes?,English,https://parentresource.ca/earlyon-programs-and-services/
+2023-11-30,1:00 PM to 3:00 PM,Indigenous Wellness Circle (0-6 years),Parent Resource Centre,301 Goulburn Cr,Central,Yes?,English,https://parentresource.ca/earlyon-programs-and-services/
+2023-11-01,8:30 am - 12:30 pm,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-01,9:00 am - 1:00 pm,Playgroup (0-6 years),Prince of Peace School,1620 Heatherington Road,South,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-01,9:00 am - 1:00 pm,Playgroup (0-6 years),Our Lady of Mount Carmel School,675 Gardenvale Road,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-01,8:45 am - 12:45 pm,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-01,9:00 am - 12:30 pm,Playgroup (0-6 years),St. Peter High School,750 Charlemagne Boulevard,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-02,8:30 am - 12:30 pm,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-02,9:00 am - 1:00 pm,Playgroup (0-6 years),Prince of Peace School,1620 Heatherington Road,South,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-02,9:00 am - 1:00 pm,Playgroup (0-6 years),Our Lady of Mount Carmel School,675 Gardenvale Road,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-02,8:45 am - 12:45 pm,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-02,9:00 am - 12:30 pm,Playgroup (0-6 years),St. Peter High School,750 Charlemagne Boulevard,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-03,8:30 am - 12:30 pm,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-03,9:00 am - 1:00 pm,Playgroup (0-6 years),Prince of Peace School,1620 Heatherington Road,South,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-03,9:00 am - 1:00 pm,Playgroup (0-6 years),Our Lady of Mount Carmel School,675 Gardenvale Road,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-03,8:45 am - 12:45 pm,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-03,9:00 am - 12:30 pm,Playgroup (0-6 years),St. Peter High School,750 Charlemagne Boulevard,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-06,8:30 am - 12:30 pm,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-06,9:00 am - 1:00 pm,Playgroup (0-6 years),Prince of Peace School,1620 Heatherington Road,South,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-06,9:00 am - 1:00 pm,Playgroup (0-6 years),Our Lady of Mount Carmel School,675 Gardenvale Road,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-06,8:45 am - 12:45 pm,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-06,9:00 am - 12:30 pm,Playgroup (0-6 years),St. Peter High School,750 Charlemagne Boulevard,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-07,8:30 am - 12:30 pm,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-07,9:00 am - 1:00 pm,Playgroup (0-6 years),Prince of Peace School,1620 Heatherington Road,South,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-07,9:00 am - 1:00 pm,Playgroup (0-6 years),Our Lady of Mount Carmel School,675 Gardenvale Road,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-07,8:45 am - 12:45 pm,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-07,9:00 am - 12:30 pm,Playgroup (0-6 years),St. Peter High School,750 Charlemagne Boulevard,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-08,8:30 am - 12:30 pm,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-08,9:00 am - 1:00 pm,Playgroup (0-6 years),Prince of Peace School,1620 Heatherington Road,South,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-08,9:00 am - 1:00 pm,Playgroup (0-6 years),Our Lady of Mount Carmel School,675 Gardenvale Road,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-08,8:45 am - 12:45 pm,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-08,9:00 am - 12:30 pm,Playgroup (0-6 years),St. Peter High School,750 Charlemagne Boulevard,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-09,8:30 am - 12:30 pm,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-09,9:00 am - 1:00 pm,Playgroup (0-6 years),Prince of Peace School,1620 Heatherington Road,South,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-09,9:00 am - 1:00 pm,Playgroup (0-6 years),Our Lady of Mount Carmel School,675 Gardenvale Road,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-09,8:45 am - 12:45 pm,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-09,9:00 am - 12:30 pm,Playgroup (0-6 years),St. Peter High School,750 Charlemagne Boulevard,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-10,8:30 am - 12:30 pm,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-10,9:00 am - 1:00 pm,Playgroup (0-6 years),Prince of Peace School,1620 Heatherington Road,South,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-10,9:00 am - 1:00 pm,Playgroup (0-6 years),Our Lady of Mount Carmel School,675 Gardenvale Road,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-10,8:45 am - 12:45 pm,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-10,9:00 am - 12:30 pm,Playgroup (0-6 years),St. Peter High School,750 Charlemagne Boulevard,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-13,8:30 am - 12:30 pm,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-13,9:00 am - 1:00 pm,Playgroup (0-6 years),Prince of Peace School,1620 Heatherington Road,South,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-13,9:00 am - 1:00 pm,Playgroup (0-6 years),Our Lady of Mount Carmel School,675 Gardenvale Road,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-13,8:45 am - 12:45 pm,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-13,9:00 am - 12:30 pm,Playgroup (0-6 years),St. Peter High School,750 Charlemagne Boulevard,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-14,8:30 am - 12:30 pm,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-14,9:00 am - 1:00 pm,Playgroup (0-6 years),Prince of Peace School,1620 Heatherington Road,South,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-14,9:00 am - 1:00 pm,Playgroup (0-6 years),Our Lady of Mount Carmel School,675 Gardenvale Road,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-14,8:45 am - 12:45 pm,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-14,9:00 am - 12:30 pm,Playgroup (0-6 years),St. Peter High School,750 Charlemagne Boulevard,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-15,8:30 am - 12:30 pm,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-15,9:00 am - 1:00 pm,Playgroup (0-6 years),Prince of Peace School,1620 Heatherington Road,South,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-15,9:00 am - 1:00 pm,Playgroup (0-6 years),Our Lady of Mount Carmel School,675 Gardenvale Road,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-15,8:45 am - 12:45 pm,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-15,9:00 am - 12:30 pm,Playgroup (0-6 years),St. Peter High School,750 Charlemagne Boulevard,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-16,8:30 am - 12:30 pm,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-16,9:00 am - 1:00 pm,Playgroup (0-6 years),Prince of Peace School,1620 Heatherington Road,South,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-16,9:00 am - 1:00 pm,Playgroup (0-6 years),Our Lady of Mount Carmel School,675 Gardenvale Road,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-16,8:45 am - 12:45 pm,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-16,9:00 am - 12:30 pm,Playgroup (0-6 years),St. Peter High School,750 Charlemagne Boulevard,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-17,8:30 am - 12:30 pm,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-17,9:00 am - 1:00 pm,Playgroup (0-6 years),Prince of Peace School,1620 Heatherington Road,South,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-17,9:00 am - 1:00 pm,Playgroup (0-6 years),Our Lady of Mount Carmel School,675 Gardenvale Road,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-17,8:45 am - 12:45 pm,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-17,9:00 am - 12:30 pm,Playgroup (0-6 years),St. Peter High School,750 Charlemagne Boulevard,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-20,8:30 am - 12:30 pm,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-20,9:00 am - 1:00 pm,Playgroup (0-6 years),Prince of Peace School,1620 Heatherington Road,South,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-20,9:00 am - 1:00 pm,Playgroup (0-6 years),Our Lady of Mount Carmel School,675 Gardenvale Road,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-20,8:45 am - 12:45 pm,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-20,9:00 am - 12:30 pm,Playgroup (0-6 years),St. Peter High School,750 Charlemagne Boulevard,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-21,8:30 am - 12:30 pm,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-21,9:00 am - 1:00 pm,Playgroup (0-6 years),Prince of Peace School,1620 Heatherington Road,South,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-21,9:00 am - 1:00 pm,Playgroup (0-6 years),Our Lady of Mount Carmel School,675 Gardenvale Road,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-21,8:45 am - 12:45 pm,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-21,9:00 am - 12:30 pm,Playgroup (0-6 years),St. Peter High School,750 Charlemagne Boulevard,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-22,8:30 am - 12:30 pm,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-22,9:00 am - 1:00 pm,Playgroup (0-6 years),Prince of Peace School,1620 Heatherington Road,South,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-22,9:00 am - 1:00 pm,Playgroup (0-6 years),Our Lady of Mount Carmel School,675 Gardenvale Road,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-22,8:45 am - 12:45 pm,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-22,9:00 am - 12:30 pm,Playgroup (0-6 years),St. Peter High School,750 Charlemagne Boulevard,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-23,8:30 am - 12:30 pm,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-23,9:00 am - 1:00 pm,Playgroup (0-6 years),Prince of Peace School,1620 Heatherington Road,South,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-23,9:00 am - 1:00 pm,Playgroup (0-6 years),Our Lady of Mount Carmel School,675 Gardenvale Road,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-23,8:45 am - 12:45 pm,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-23,9:00 am - 12:30 pm,Playgroup (0-6 years),St. Peter High School,750 Charlemagne Boulevard,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-24,8:30 am - 12:30 pm,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-24,9:00 am - 1:00 pm,Playgroup (0-6 years),Prince of Peace School,1620 Heatherington Road,South,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-24,9:00 am - 1:00 pm,Playgroup (0-6 years),Our Lady of Mount Carmel School,675 Gardenvale Road,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-24,8:45 am - 12:45 pm,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-24,9:00 am - 12:30 pm,Playgroup (0-6 years),St. Peter High School,750 Charlemagne Boulevard,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-27,8:30 am - 12:30 pm,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-27,9:00 am - 1:00 pm,Playgroup (0-6 years),Prince of Peace School,1620 Heatherington Road,South,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-27,9:00 am - 1:00 pm,Playgroup (0-6 years),Our Lady of Mount Carmel School,675 Gardenvale Road,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-27,8:45 am - 12:45 pm,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-27,9:00 am - 12:30 pm,Playgroup (0-6 years),St. Peter High School,750 Charlemagne Boulevard,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-28,8:30 am - 12:30 pm,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-28,9:00 am - 1:00 pm,Playgroup (0-6 years),Prince of Peace School,1620 Heatherington Road,South,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-28,9:00 am - 1:00 pm,Playgroup (0-6 years),Our Lady of Mount Carmel School,675 Gardenvale Road,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-28,8:45 am - 12:45 pm,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-28,9:00 am - 12:30 pm,Playgroup (0-6 years),St. Peter High School,750 Charlemagne Boulevard,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-29,8:30 am - 12:30 pm,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-29,9:00 am - 1:00 pm,Playgroup (0-6 years),Prince of Peace School,1620 Heatherington Road,South,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-29,9:00 am - 1:00 pm,Playgroup (0-6 years),Our Lady of Mount Carmel School,675 Gardenvale Road,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-29,8:45 am - 12:45 pm,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-29,9:00 am - 12:30 pm,Playgroup (0-6 years),St. Peter High School,750 Charlemagne Boulevard,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-30,8:30 am - 12:30 pm,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-30,9:00 am - 1:00 pm,Playgroup (0-6 years),Prince of Peace School,1620 Heatherington Road,South,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-30,9:00 am - 1:00 pm,Playgroup (0-6 years),Our Lady of Mount Carmel School,675 Gardenvale Road,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-30,8:45 am - 12:45 pm,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-30,9:00 am - 12:30 pm,Playgroup (0-6 years),St. Peter High School,750 Charlemagne Boulevard,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-06,9:00 am - 12:30 pm,Playgroup (0-6 years),Holy Trinity Catholic High School,180 Katimavik Road (entrance on McGibbon Drive),West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-13,9:00 am - 12:30 pm,Playgroup (0-6 years),Holy Trinity Catholic High School,180 Katimavik Road (entrance on McGibbon Drive),West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-20,9:00 am - 12:30 pm,Playgroup (0-6 years),Holy Trinity Catholic High School,180 Katimavik Road (entrance on McGibbon Drive),West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-27,9:00 am - 12:30 pm,Playgroup (0-6 years),Holy Trinity Catholic High School,180 Katimavik Road (entrance on McGibbon Drive),West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-01,9:00 am - 12:30 pm,Playgroup (0-6 years),Holy Trinity Catholic High School,180 Katimavik Road (entrance on McGibbon Drive),West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-08,9:00 am - 12:30 pm,Playgroup (0-6 years),Holy Trinity Catholic High School,180 Katimavik Road (entrance on McGibbon Drive),West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-15,9:00 am - 12:30 pm,Playgroup (0-6 years),Holy Trinity Catholic High School,180 Katimavik Road (entrance on McGibbon Drive),West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-22,9:00 am - 12:30 pm,Playgroup (0-6 years),Holy Trinity Catholic High School,180 Katimavik Road (entrance on McGibbon Drive),West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-29,9:00 am - 12:30 pm,Playgroup (0-6 years),Holy Trinity Catholic High School,180 Katimavik Road (entrance on McGibbon Drive),West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-03,9:00 am - 12:30 pm,Playgroup (0-6 years),Holy Trinity Catholic High School,180 Katimavik Road (entrance on McGibbon Drive),West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-10,9:00 am - 12:30 pm,Playgroup (0-6 years),Holy Trinity Catholic High School,180 Katimavik Road (entrance on McGibbon Drive),West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-17,9:00 am - 12:30 pm,Playgroup (0-6 years),Holy Trinity Catholic High School,180 Katimavik Road (entrance on McGibbon Drive),West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-24,9:00 am - 12:30 pm,Playgroup (0-6 years),Holy Trinity Catholic High School,180 Katimavik Road (entrance on McGibbon Drive),West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-07,9:00 am - 12:30 pm,Playgroup (0-6 years),Holy Trinity Catholic High School,180 Katimavik Road (entrance on McGibbon Drive),West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-07,1:15 pm - 3:15 pm,Playgroup (0-6 years),Holy Trinity Catholic High School,180 Katimavik Road (entrance on McGibbon Drive),West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-07,1:15 pm - 3:15 pm,Baby and Me Playgroup (0-18 months),St. Peter High School,750 Charlemagne Boulevard,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-14,9:00 am - 12:30 pm,Playgroup (0-6 years),Holy Trinity Catholic High School,180 Katimavik Road (entrance on McGibbon Drive),West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-14,1:15 pm - 3:15 pm,Playgroup (0-6 years),Holy Trinity Catholic High School,180 Katimavik Road (entrance on McGibbon Drive),West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-14,1:15 pm - 3:15 pm,Baby and Me Playgroup (0-18 months),St. Peter High School,750 Charlemagne Boulevard,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-21,9:00 am - 12:30 pm,Playgroup (0-6 years),Holy Trinity Catholic High School,180 Katimavik Road (entrance on McGibbon Drive),West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-21,1:15 pm - 3:15 pm,Playgroup (0-6 years),Holy Trinity Catholic High School,180 Katimavik Road (entrance on McGibbon Drive),West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-21,1:15 pm - 3:15 pm,Baby and Me Playgroup (0-18 months),St. Peter High School,750 Charlemagne Boulevard,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-28,9:00 am - 12:30 pm,Playgroup (0-6 years),Holy Trinity Catholic High School,180 Katimavik Road (entrance on McGibbon Drive),West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-28,1:15 pm - 3:15 pm,Playgroup (0-6 years),Holy Trinity Catholic High School,180 Katimavik Road (entrance on McGibbon Drive),West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-28,1:15 pm - 3:15 pm,Baby and Me Playgroup (0-18 months),St. Peter High School,750 Charlemagne Boulevard,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-02,9:00 am - 12:30 pm,Playgroup (0-6 years),Holy Trinity Catholic High School,180 Katimavik Road (entrance on McGibbon Drive),West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-02,1:15 pm - 3:15 pm,Playgroup (0-6 years),Holy Trinity Catholic High School,180 Katimavik Road (entrance on McGibbon Drive),West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-02,1:15 pm - 3:15 pm,Baby and Me Playgroup (0-18 months),St. Peter High School,750 Charlemagne Boulevard,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-09,9:00 am - 12:30 pm,Playgroup (0-6 years),Holy Trinity Catholic High School,180 Katimavik Road (entrance on McGibbon Drive),West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-09,1:15 pm - 3:15 pm,Playgroup (0-6 years),Holy Trinity Catholic High School,180 Katimavik Road (entrance on McGibbon Drive),West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-09,1:15 pm - 3:15 pm,Baby and Me Playgroup (0-18 months),St. Peter High School,750 Charlemagne Boulevard,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-16,9:00 am - 12:30 pm,Playgroup (0-6 years),Holy Trinity Catholic High School,180 Katimavik Road (entrance on McGibbon Drive),West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-16,1:15 pm - 3:15 pm,Playgroup (0-6 years),Holy Trinity Catholic High School,180 Katimavik Road (entrance on McGibbon Drive),West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-16,1:15 pm - 3:15 pm,Baby and Me Playgroup (0-18 months),St. Peter High School,750 Charlemagne Boulevard,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-23,9:00 am - 12:30 pm,Playgroup (0-6 years),Holy Trinity Catholic High School,180 Katimavik Road (entrance on McGibbon Drive),West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-23,1:15 pm - 3:15 pm,Playgroup (0-6 years),Holy Trinity Catholic High School,180 Katimavik Road (entrance on McGibbon Drive),West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-23,1:15 pm - 3:15 pm,Baby and Me Playgroup (0-18 months),St. Peter High School,750 Charlemagne Boulevard,East,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-30,9:00 am - 12:30 pm,Playgroup (0-6 years),Holy Trinity Catholic High School,180 Katimavik Road (entrance on McGibbon Drive),West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-30,1:15 pm - 3:15 pm,Playgroup (0-6 years),Holy Trinity Catholic High School,180 Katimavik Road (entrance on McGibbon Drive),West,No,English,https://www.ocsb.ca/parents/child-care/
+2023-11-30,1:15 pm - 3:15 pm,Baby and Me Playgroup (0-18 months),St. Peter High School,750 Charlemagne Boulevard,East,No,English,https://www.ocsb.ca/parents/child-care/
