@@ -29,7 +29,7 @@
 			
 			 // Initialize DataTable
     $(document).ready( function () {
-        $('#dataTable').DataTable();
+        $('#dataTable').DataTable({"pageLength": -1});
     });
 			
         };
