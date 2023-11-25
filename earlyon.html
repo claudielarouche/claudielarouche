@@ -1,123 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EarlyON Ottawa</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	<!--<link rel="stylesheet" type="text/css" href="style.css">-->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
-<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
-
-
-    <style>
-        table {
-            border-collapse: collapse;
-            width: 100%;
-            margin-top: 20px;
-        }
-        th, td {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-        }
-        h2 {
-            margin-top: 20px;
-        }
-        label {
-            display: block;
-            margin-top: 10px;
-        }
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>EarlyON Ottawa</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<!--<link rel="stylesheet" type="text/css" href="style.css">-->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+		<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+		<style>
 		
-    table {
-        border-collapse: collapse;
-        width: 100%;
-        margin-top: 20px;
-        color: black;
-        background-color: white;
-    }
+		#dataTable thead th {
+    position: sticky;
+    top: 0;
+    background-color: #f2f2f2; /* Change the background color as needed */
+    z-index: 100;
+}
+		
+			table {
+				border-collapse: collapse;
+				width: 100%;
+				margin-top: 20px;
+			}
 
-    th, td {
-        border: 1px solid #dddddd;
-        text-align: left;
-        padding: 8px;
-    }
+			th,
+			td {
+				border: 1px solid #dddddd;
+			}
 
-    h2 {
-        margin-top: 20px;
-    }
+			h2 {
+				margin-top: 20px;
+			}
 
-    label {
-        display: block;
-        margin-top: 10px;
-    }
-	
-	.checked {
-            text-decoration: line-through;
-        }
+			label {
+				display: block;
+				margin-top: 10px;
+			}
 
+			
 
-
-
-    </style>
-    <!-- Include PapaParse library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
-</head>
-<body>
-
-<div class="bg-image"></div>
-	<div class="container">
-    <h1>EarlyON Ottawa <small>Version 1.3</small></h1>
-
-    
-
-    <p>Welcome to the central repository of all the EarlyON groups in Ottawa! Finally a place where parents can see details for all the playgroups in the city. Please note that it is highly recommended to visit the source URL to ensure that the playgroup you are planning to attend is still running.</p>
-
-<h2>Filters</h2>
-<label for="selectedDate">Select Date:</label>
-    <input type="date" id="selectedDate">
-<h2>Data</h2>
-    <div id="csvData"></div>
-
-    <p>The data from this table was taken from the various Ottawa EarlyON playgroups posted on the <a href="https://ottawa.ca/en/family-and-social-services/childrens-services/earlyon" target="_blank">Ottawa.ca website</a>.</p>
-
-    <h2>Next Steps</h2>
-
-<h3>Data Entry</h3>
-<ul>
-    <li>Lots of data entry needed! Unfortunately, most calendars are published as PDFs so it is not possible to automate a Python script to read data off of the individual websites</li>
-</ul>
-
-<h3>User Experience Improvement</h3>
-<ul>
-    <li>Add ability to filter
-        <ul class="subitem">
-            <li class="checked">Filter by Date</li>
-            <li>Filter by Area</li>
-            <li>Filter by Language</li>
-            <li>Filter by Location</li>
-        </ul>
-    </li>
-    <li class="checked">Add ability to sort</li>
-    <li>Ensure header is always visible even when we scroll</li>
-	<li class="checked">Add a "No playgroups found" message when picking a day that has no playgroups</li>
-    <li class="checked">Ensure dates that are past don't appear</li>
-    <li class="checked">Improve the look of the website</li>
-</ul>
-
-<h3>Process Improvement</h3>
-<ul>
-    <li>Contact EarlyON employees to see if they can help with data entry</li>
-</ul>
-
-<h3>Marketing</h3>
-<ul>
-    <li>Get the word out! :)</li>
-</ul>
-</div>
-    
-<script src="earlyON/earlyon.js"></script>
-</body>
+			.checked {
+				text-decoration: line-through;
+			}
+		</style>
+		<!-- Include PapaParse library -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+	</head>
+	<body>
+		<div class="bg-image"></div>
+		<div class="container">
+			<h1>EarlyON Ottawa <small>Version 1.3</small>
+			</h1>
+			<p>Welcome to the central repository of all the EarlyON groups in Ottawa! Finally a place where parents can see details for all the playgroups in the city. Please note that it is highly recommended to visit the source URL to ensure that the playgroup you are planning to attend is still running.</p>
+			<h2>Filters</h2>
+			<label for="selectedDate">Select Date:</label>
+			<input type="date" id="selectedDate">
+			<h2>Data</h2>
+			<div id="csvData"></div>
+			<p>The data from this table was taken from the various Ottawa EarlyON playgroups posted on the <a href="https://ottawa.ca/en/family-and-social-services/childrens-services/earlyon" target="_blank">Ottawa.ca website</a>. </p>
+			<h2>Next Steps</h2>
+			<h3>Data Entry</h3>
+			<ul>
+				<li>Lots of data entry needed! Unfortunately, most calendars are published as PDFs so it is not possible to automate a Python script to read data off of the individual websites</li>
+			</ul>
+			<h3>User Experience Improvement</h3>
+			<ul>
+				<li>Add ability to filter <ul class="subitem">
+						<li class="checked">Filter by Date</li>
+						<li>Filter by Area</li>
+						<li>Filter by Language</li>
+						<li>Filter by Location</li>
+					</ul>
+				</li>
+				<li class="checked">Add ability to sort</li>
+				<li class="checked">Ensure header is always visible even when we scroll</li>
+				<li class="checked">Add a "No playgroups found" message when picking a day that has no playgroups</li>
+				<li class="checked">Ensure dates that are past don't appear</li>
+				<li class="checked">Improve the look of the website</li>
+			</ul>
+			<h3>Process Improvement</h3>
+			<ul>
+				<li>Contact EarlyON employees to see if they can help with data entry</li>
+			</ul>
+			<h3>Marketing</h3>
+			<ul>
+				<li>Get the word out! :)</li>
+			</ul>
+		</div>
+		<script src="earlyON/earlyon.js"></script>
+	</body>
 </html>
