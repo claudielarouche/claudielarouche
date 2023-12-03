@@ -7,7 +7,6 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-04,9:00 AM to 11:00 AM,Active Playgroup,Richelieu-Vanier Community Centre,300 Av. des Pères-Blancs,East,No,Bilingual,https://www.cscvanier.com/en/family/preschool/playgroups,CSC Vanier
 2023-12-04,9:30 AM to 11:30 AM,Playgroup Pinecrest Queensway,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
 2023-12-04,1:30 PM to 3:30 PM,Babbling Babies,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
-2023-12-04,9:30 AM to 11:30 AM,Playgroup Bayshore,Bayshore,210 Woodridge Cr.,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
 2023-12-04,9:30 AM to 12:00 PM,Playgroup,Heatherington Family Centre,1495 Heatherington Rd,South,No,English,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC
 2023-12-04,9:30 AM to 12:00 PM,Playgroup,Bank Street,1355 Bank St. 6th florr,South,No,English,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC
 2023-12-04,8:30 AM to 1:30 PM,EarlyON Playgroup,Carlington Community Health Centre,900 Merivale,West,No,English,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC
@@ -59,7 +58,6 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-11,9:00 AM to 11:00 AM,Active Playgroup,Richelieu-Vanier Community Centre,300 Av. des Pères-Blancs,East,No,Bilingual,https://www.cscvanier.com/en/family/preschool/playgroups,CSC Vanier
 2023-12-11,9:30 AM to 11:30 AM,Playgroup Pinecrest Queensway,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
 2023-12-11,1:30 PM to 3:30 PM,Babbling Babies,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
-2023-12-11,9:30 AM to 11:30 AM,Playgroup Bayshore,Bayshore,210 Woodridge Cr.,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
 2023-12-11,9:30 AM to 12:00 PM,Playgroup,Heatherington Family Centre,1495 Heatherington Rd,South,No,English,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC
 2023-12-11,9:30 AM to 12:00 PM,Playgroup,Bank Street,1355 Bank St. 6th florr,South,No,English,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC
 2023-12-11,8:30 AM to 1:30 PM,EarlyON Playgroup,Carlington Community Health Centre,900 Merivale,West,No,English,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC
@@ -111,13 +109,9 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-18,9:00 AM to 11:00 AM,Active Playgroup,Richelieu-Vanier Community Centre,300 Av. des Pères-Blancs,East,No,Bilingual,https://www.cscvanier.com/en/family/preschool/playgroups,CSC Vanier
 2023-12-18,9:30 AM to 11:30 AM,Playgroup Pinecrest Queensway,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
 2023-12-18,1:30 PM to 3:30 PM,Babbling Babies,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
-2023-12-18,9:30 AM to 11:30 AM,Playgroup Bayshore,Bayshore,210 Woodridge Cr.,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
 2023-12-18,9:30 AM to 12:00 PM,Playgroup,Heatherington Family Centre,1495 Heatherington Rd,South,No,English,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC
 2023-12-18,9:30 AM to 12:00 PM,Playgroup,Bank Street,1355 Bank St. 6th florr,South,No,English,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC
 2023-12-18,8:30 AM to 1:30 PM,EarlyON Playgroup,Carlington Community Health Centre,900 Merivale,West,No,English,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC
-2023-12-18,9:00 AM to 11:00 AM,EarlyON Playgroup,Rideauview Community Centre,4310 Shoreline Drive,South,No,English,https://gccs.ca/earlyon-drop-ins-2/,GCCS
-2023-12-18,12:30 PM to 2:30 PM,Baby Drop-In (0-24 months),Rideauview Community Centre,4310 Shoreline Drive,South,No,English,https://gccs.ca/earlyon-drop-ins-2/,GCCS
-2023-12-18,9:00 AM to 11:00 AM,EarlyON Playgroup,Fred G. Barrett Arena - Lions Hall,3280 Leitrim Rd,South,No,English,https://gccs.ca/earlyon-drop-ins-2/,GCCS
 2023-12-18,10:00 AM to 11:30 AM,EarlyON Playgroup,Margaret Rywak Community Building,68 Knoxdale Rd.,West,No,English,https://nrocrc.org/calendar/earlyon-programming4,NROCRC
 2023-12-18,9:00 AM to 12:30 PM,EarlyON Playgroup,Cambridge Street Community Public School,"250 Cambridge Street North, Room 115",Central,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
 2023-12-18,9:30 AM to 1:00 PM,EarlyON Playgroup,Carleton Heights Public School,"1660 Prince of Wales Drive, Room 100",South,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
@@ -162,7 +156,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-05,9:30 AM to 11:30 AM,Overbrook Playgroup,Overbrook Community Centre,33 Quill st.,East,No,Bilingual,https://www.cscvanier.com/en/family/preschool/playgroups,CSC Vanier
 2023-12-05,9:30 AM to 11:30 AM,Playgroup Pinecrest Queensway,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
 2023-12-05,5:30 PM to 7:30 PM,Playgroup Pinecrest Queensway,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
-2023-12-05,1:30 PM to 3:30 PM,Playgroup Bayshore,Bayshore,210 Woodridge Cr.,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
+2023-12-05,1:30 PM to 3:30 PM,Playgroup Bayshore,Bayshore,210 Woodridge Cr. Unit 101 (Dial 101 from lobby),West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
 2023-12-05,9:30 AM to 12:00 PM,Playgroup,Heatherington Family Centre,1495 Heatherington Rd,South,No,English,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC
 2023-12-05,1:00 PM to 2:30 PM,Parent Connection Group (0 - 24 months),Heatherington Family Centre,1495 Heatherington Rd,South,No,English,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC
 2023-12-05,9:30 AM to 11:30 AM,Playgroup,Cedarwood,2850 Cedarwood Cr.,TBD,No,English,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC
@@ -178,8 +172,8 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-05,9:30 AM to 1:00 PM,EarlyON Playgroup,Queen Mary Street Public School,"557 Queen Mary Street, Room 117",East,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
 2023-12-05,9:30 AM to 1:00 PM,EarlyON Playgroup,Agincourt Road Public School,"1250 Agincourt Road, Room 123",West,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
 2023-12-05,9:00 AM to 12:30 PM,EarlyON Playgroup,York Street Public School,"310 York Street, Room B016",Central,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
-2023-12-05,9:00 AM to 11:00 AM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,Parent Resource
-2023-12-05,5:00 PM to 7:00 PM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,Parent Resource
+2023-12-05,9:00 AM to 11:00 AM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,PRC
+2023-12-05,5:00 PM to 7:00 PM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,PRC
 2023-12-05,8:30 am - 12:30 pm,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
 2023-12-05,9:00 am - 1:00 pm,Playgroup (0-6 years),Prince of Peace School,1620 Heatherington Road,South,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
 2023-12-05,9:00 am - 1:00 pm,Playgroup (0-6 years),Our Lady of Mount Carmel School,675 Gardenvale Road,East,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
@@ -218,7 +212,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-12,9:30 AM to 11:30 AM,Overbrook Playgroup,Overbrook Community Centre,33 Quill st.,East,No,Bilingual,https://www.cscvanier.com/en/family/preschool/playgroups,CSC Vanier
 2023-12-12,9:30 AM to 11:30 AM,Playgroup Pinecrest Queensway,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
 2023-12-12,5:30 PM to 7:30 PM,Playgroup Pinecrest Queensway,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
-2023-12-12,1:30 PM to 3:30 PM,Playgroup Bayshore,Bayshore,210 Woodridge Cr.,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
+2023-12-12,1:30 PM to 3:30 PM,Playgroup Bayshore,Bayshore,210 Woodridge Cr. Unit 101 (Dial 101 from lobby),West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
 2023-12-12,9:30 AM to 12:00 PM,Playgroup,Heatherington Family Centre,1495 Heatherington Rd,South,No,English,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC
 2023-12-12,1:00 PM to 2:30 PM,Parent Connection Group (0 - 24 months),Heatherington Family Centre,1495 Heatherington Rd,South,No,English,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC
 2023-12-12,9:30 AM to 11:30 AM,Playgroup,Cedarwood,2850 Cedarwood Cr.,TBD,No,English,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC
@@ -234,8 +228,8 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-12,9:30 AM to 1:00 PM,EarlyON Playgroup,Queen Mary Street Public School,"557 Queen Mary Street, Room 117",East,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
 2023-12-12,9:30 AM to 1:00 PM,EarlyON Playgroup,Agincourt Road Public School,"1250 Agincourt Road, Room 123",West,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
 2023-12-12,9:00 AM to 12:30 PM,EarlyON Playgroup,York Street Public School,"310 York Street, Room B016",Central,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
-2023-12-12,9:00 AM to 11:00 AM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,Parent Resource
-2023-12-12,5:00 PM to 7:00 PM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,Parent Resource
+2023-12-12,9:00 AM to 11:00 AM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,PRC
+2023-12-12,5:00 PM to 7:00 PM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,PRC
 2023-12-12,8:30 am - 12:30 pm,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
 2023-12-12,9:00 am - 1:00 pm,Playgroup (0-6 years),Prince of Peace School,1620 Heatherington Road,South,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
 2023-12-12,9:00 am - 1:00 pm,Playgroup (0-6 years),Our Lady of Mount Carmel School,675 Gardenvale Road,East,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
@@ -274,13 +268,11 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-19,9:30 AM to 11:30 AM,Overbrook Playgroup,Overbrook Community Centre,33 Quill st.,East,No,Bilingual,https://www.cscvanier.com/en/family/preschool/playgroups,CSC Vanier
 2023-12-19,9:30 AM to 11:30 AM,Playgroup Pinecrest Queensway,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
 2023-12-19,5:30 PM to 7:30 PM,Playgroup Pinecrest Queensway,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
-2023-12-19,1:30 PM to 3:30 PM,Playgroup Bayshore,Bayshore,210 Woodridge Cr.,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
+2023-12-19,1:30 PM to 3:30 PM,Playgroup Bayshore,Bayshore,210 Woodridge Cr. Unit 101 (Dial 101 from lobby),West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
 2023-12-19,9:30 AM to 12:00 PM,Playgroup,Heatherington Family Centre,1495 Heatherington Rd,South,No,English,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC
 2023-12-19,1:00 PM to 2:30 PM,Parent Connection Group (0 - 24 months),Heatherington Family Centre,1495 Heatherington Rd,South,No,English,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC
 2023-12-19,9:30 AM to 11:30 AM,Playgroup,Cedarwood,2850 Cedarwood Cr.,TBD,No,English,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC
 2023-12-19,8:30 AM to 1:30 PM,EarlyON Playgroup,Carlington Community Health Centre,900 Merivale,West,No,English,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC
-2023-12-19,9:00 AM to 11:00 AM,EarlyON Playgroup,Orleans Resurrection Lutheran Church,1325 Gaultois Avenue,East,No,English,https://gccs.ca/earlyon-drop-ins-2/,GCCS
-2023-12-19,9:00 AM to 11:00 AM,EarlyON Playgroup,Blackburn Community Hall,190 Glen Park Drive,East,No,English,https://gccs.ca/earlyon-drop-ins-2/,GCCS
 2023-12-19,10:00 AM to 11:30 AM,EarlyON Playgroup,Minto Party Room,1341 Meadowlands Dr.,West,No,English,https://nrocrc.org/calendar/earlyon-programming4,NROCRC
 2023-12-19,9:00 AM to 12:30 PM,EarlyON Playgroup,Cambridge Street Community Public School,"250 Cambridge Street North, Room 115",Central,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
 2023-12-19,9:30 AM to 1:00 PM,EarlyON Playgroup,Carleton Heights Public School,"1660 Prince of Wales Drive, Room 100",South,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
@@ -290,8 +282,8 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-19,9:30 AM to 1:00 PM,EarlyON Playgroup,Queen Mary Street Public School,"557 Queen Mary Street, Room 117",East,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
 2023-12-19,9:30 AM to 1:00 PM,EarlyON Playgroup,Agincourt Road Public School,"1250 Agincourt Road, Room 123",West,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
 2023-12-19,9:00 AM to 12:30 PM,EarlyON Playgroup,York Street Public School,"310 York Street, Room B016",Central,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
-2023-12-19,9:00 AM to 11:00 AM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,Parent Resource
-2023-12-19,5:00 PM to 7:00 PM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,Parent Resource
+2023-12-19,9:00 AM to 11:00 AM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,PRC
+2023-12-19,5:00 PM to 7:00 PM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,PRC
 2023-12-19,8:30 am - 12:30 pm,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
 2023-12-19,9:00 am - 1:00 pm,Playgroup (0-6 years),Prince of Peace School,1620 Heatherington Road,South,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
 2023-12-19,9:00 am - 1:00 pm,Playgroup (0-6 years),Our Lady of Mount Carmel School,675 Gardenvale Road,East,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
@@ -347,8 +339,8 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-06,9:30 AM to 1:00 PM,EarlyON Playgroup,Queen Mary Street Public School,"557 Queen Mary Street, Room 117",East,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
 2023-12-06,9:30 AM to 1:00 PM,EarlyON Playgroup,Agincourt Road Public School,"1250 Agincourt Road, Room 123",West,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
 2023-12-06,9:00 AM to 12:30 PM,EarlyON Playgroup,York Street Public School,"310 York Street, Room B016",Central,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
-2023-12-06,9:00 AM to 11:00 AM,Caregiver Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,Parent Resource
-2023-12-06,1:00 PM to 3:00 PM,Me & My Baby (0-18 months),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,Parent Resource
+2023-12-06,9:00 AM to 11:00 AM,Caregiver Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,PRC
+2023-12-06,1:00 PM to 3:00 PM,Me & My Baby (0-18 months),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,PRC
 2023-12-06,8:30 am - 12:30 pm,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
 2023-12-06,9:00 am - 1:00 pm,Playgroup (0-6 years),Prince of Peace School,1620 Heatherington Road,South,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
 2023-12-06,9:00 am - 1:00 pm,Playgroup (0-6 years),Our Lady of Mount Carmel School,675 Gardenvale Road,East,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
@@ -397,8 +389,8 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-13,9:30 AM to 1:00 PM,EarlyON Playgroup,Queen Mary Street Public School,"557 Queen Mary Street, Room 117",East,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
 2023-12-13,9:30 AM to 1:00 PM,EarlyON Playgroup,Agincourt Road Public School,"1250 Agincourt Road, Room 123",West,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
 2023-12-13,9:00 AM to 12:30 PM,EarlyON Playgroup,York Street Public School,"310 York Street, Room B016",Central,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
-2023-12-13,9:00 AM to 11:00 AM,Caregiver Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,Parent Resource
-2023-12-13,1:00 PM to 3:00 PM,Me & My Baby (0-18 months),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,Parent Resource
+2023-12-13,9:00 AM to 11:00 AM,Caregiver Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,PRC
+2023-12-13,1:00 PM to 3:00 PM,Me & My Baby (0-18 months),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,PRC
 2023-12-13,8:30 am - 12:30 pm,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
 2023-12-13,9:00 am - 1:00 pm,Playgroup (0-6 years),Prince of Peace School,1620 Heatherington Road,South,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
 2023-12-13,9:00 am - 1:00 pm,Playgroup (0-6 years),Our Lady of Mount Carmel School,675 Gardenvale Road,East,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
@@ -436,8 +428,6 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-20,9:30 AM to 12:00 PM,Playgroup,Bank Street,1355 Bank St. 6th florr,South,No,English,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC
 2023-12-20,8:30 AM to 1:30 PM,EarlyON Playgroup,Carlington Community Health Centre,900 Merivale,West,No,English,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC
 2023-12-20,1:30 PM to 3:00 PM,Infant In-Person Playgroup,Centrepointe Child Care Services,75 Hemmingwood Way Ottawa,West,Yes,English,https://centrepointechildcareservices.com/services/earlyon-programs/,Centrepointe Child Care
-2023-12-20,9:00 AM to 11:00 AM,EarlyON Playgroup,Epiphany Anglican Church,1290 Ogilvie Road,East,No,English,https://gccs.ca/earlyon-drop-ins-2/,GCCS
-2023-12-20,9:15 AM to 11:00 AM,EarlyON Playgroup,Fallingbrook Community Elementary School,679 Deancourt Cres.,East,No,English,https://gccs.ca/earlyon-drop-ins-2/,GCCS
 2023-12-20,10:00 AM to 11:30 AM,EarlyON Playgroup,Margaret Rywak Community Building,68 Knoxdale Rd.,West,No,English,https://nrocrc.org/calendar/earlyon-programming4,NROCRC
 2023-12-20,9:00 AM to 12:30 PM,EarlyON Playgroup,Cambridge Street Community Public School,"250 Cambridge Street North, Room 115",Central,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
 2023-12-20,9:30 AM to 1:00 PM,EarlyON Playgroup,Carleton Heights Public School,"1660 Prince of Wales Drive, Room 100",South,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
@@ -447,8 +437,8 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-20,9:30 AM to 1:00 PM,EarlyON Playgroup,Queen Mary Street Public School,"557 Queen Mary Street, Room 117",East,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
 2023-12-20,9:30 AM to 1:00 PM,EarlyON Playgroup,Agincourt Road Public School,"1250 Agincourt Road, Room 123",West,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
 2023-12-20,9:00 AM to 12:30 PM,EarlyON Playgroup,York Street Public School,"310 York Street, Room B016",Central,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
-2023-12-20,9:00 AM to 11:00 AM,Caregiver Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,Parent Resource
-2023-12-20,1:00 PM to 3:00 PM,Me & My Baby (0-18 months),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,Parent Resource
+2023-12-20,9:00 AM to 11:00 AM,Caregiver Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,PRC
+2023-12-20,1:00 PM to 3:00 PM,Me & My Baby (0-18 months),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,PRC
 2023-12-20,8:30 am - 12:30 pm,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
 2023-12-20,9:00 am - 1:00 pm,Playgroup (0-6 years),Prince of Peace School,1620 Heatherington Road,South,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
 2023-12-20,9:00 am - 1:00 pm,Playgroup (0-6 years),Our Lady of Mount Carmel School,675 Gardenvale Road,East,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
@@ -482,8 +472,6 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-27,9:30 AM to 12:00 PM,Playgroup,Bank Street,1355 Bank St. 6th florr,South,No,English,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC
 2023-12-27,8:30 AM to 1:30 PM,EarlyON Playgroup,Carlington Community Health Centre,900 Merivale,West,No,English,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC
 2023-12-27,1:30 PM to 3:00 PM,Infant In-Person Playgroup,Centrepointe Child Care Services,75 Hemmingwood Way Ottawa,West,Yes,English,https://centrepointechildcareservices.com/services/earlyon-programs/,Centrepointe Child Care
-2023-12-27,9:00 AM to 11:00 AM,EarlyON Playgroup,Epiphany Anglican Church,1290 Ogilvie Road,East,No,English,https://gccs.ca/earlyon-drop-ins-2/,GCCS
-2023-12-27,9:15 AM to 11:00 AM,EarlyON Playgroup,Fallingbrook Community Elementary School,679 Deancourt Cres.,East,No,English,https://gccs.ca/earlyon-drop-ins-2/,GCCS
 2023-12-27,10:00 AM to 11:30 AM,EarlyON Playgroup,Margaret Rywak Community Building,68 Knoxdale Rd.,West,No,English,https://nrocrc.org/calendar/earlyon-programming4,NROCRC
 2023-12-27,9:00 AM to 12:30 PM,EarlyON Playgroup,Cambridge Street Community Public School,"250 Cambridge Street North, Room 115",Central,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
 2023-12-27,9:30 AM to 1:00 PM,EarlyON Playgroup,Carleton Heights Public School,"1660 Prince of Wales Drive, Room 100",South,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
@@ -493,8 +481,6 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-27,9:30 AM to 1:00 PM,EarlyON Playgroup,Queen Mary Street Public School,"557 Queen Mary Street, Room 117",East,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
 2023-12-27,9:30 AM to 1:00 PM,EarlyON Playgroup,Agincourt Road Public School,"1250 Agincourt Road, Room 123",West,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
 2023-12-27,9:00 AM to 12:30 PM,EarlyON Playgroup,York Street Public School,"310 York Street, Room B016",Central,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
-2023-12-27,9:00 AM to 11:00 AM,Caregiver Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,Parent Resource
-2023-12-27,1:00 PM to 3:00 PM,Me & My Baby (0-18 months),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,Parent Resource
 2023-12-27,8:30 am - 12:30 pm,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
 2023-12-27,9:00 am - 1:00 pm,Playgroup (0-6 years),Prince of Peace School,1620 Heatherington Road,South,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
 2023-12-27,9:00 am - 1:00 pm,Playgroup (0-6 years),Our Lady of Mount Carmel School,675 Gardenvale Road,East,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
@@ -526,7 +512,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-01,9:00 AM to 11:00 AM,Bilingual Playgroup,CSC Vanier,270 Marier Ave.,East,No,Bilingual,https://www.cscvanier.com/en/family/preschool/playgroups,CSC Vanier
 2023-12-01,9:00 AM to 11:00 AM,Jules Morin Bilingual Playgroup,Pavillon Jules Morin,400 Clarence,East,No,Bilingual,https://www.cscvanier.com/en/family/preschool/playgroups,CSC Vanier
 2023-12-01,9:30 AM to 11:30 AM,Playgroup Pinecrest Queensway,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
-2023-12-01,9:30 AM to 11:30 AM,Playgroup Bells Corners,Bells Corner,681 Seyton Dr.,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
+2023-12-01,09:15 - 11:15,Playgroup Bells Corners,Bells Corner,681 Seyton Dr.,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
 2023-12-01,9:30 AM to 12:00 PM,Playgroup,Heatherington Family Centre,1495 Heatherington Rd,South,No,English,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC
 2023-12-01,9:30 AM to 11:30 AM,Playgroup,Cedarwood,2850 Cedarwood Cr.,TBD,No,English,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC
 2023-12-01,12:00 PM to 3:00 PM,EarlyON Playgroup,Carlington Community Health Centre,900 Merivale,West,No,English,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC
@@ -542,8 +528,8 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-01,9:30 AM to 1:00 PM,EarlyON Playgroup,Queen Mary Street Public School,"557 Queen Mary Street, Room 117",East,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
 2023-12-01,9:30 AM to 1:00 PM,EarlyON Playgroup,Agincourt Road Public School,"1250 Agincourt Road, Room 123",West,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
 2023-12-01,9:00 AM to 12:30 PM,EarlyON Playgroup,York Street Public School,"310 York Street, Room B016",Central,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
-2023-12-01,9:00 AM to 11:00 AM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,Parent Resource
-2023-12-01,1:00 PM to 3:00 PM,Indigenous Wellness Circle (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,Yes?,English,https://parentresource.ca/earlyon-programs-and-services/,Parent Resource
+2023-12-01,9:00 AM to 11:00 AM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,PRC
+2023-12-01,1:00 PM to 3:00 PM,Indigenous Wellness Circle (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,Yes?,English,https://parentresource.ca/earlyon-programs-and-services/,PRC
 2023-12-01,8:30 am - 12:30 pm,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
 2023-12-01,9:00 am - 1:00 pm,Playgroup (0-6 years),Prince of Peace School,1620 Heatherington Road,South,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
 2023-12-01,9:00 am - 1:00 pm,Playgroup (0-6 years),Our Lady of Mount Carmel School,675 Gardenvale Road,East,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
@@ -576,7 +562,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-07,9:00 AM to 11:00 AM,Bilingual Playgroup,CSC Vanier,270 Marier Ave.,East,No,Bilingual,https://www.cscvanier.com/en/family/preschool/playgroups,CSC Vanier
 2023-12-07,9:00 AM to 11:00 AM,Jules Morin Bilingual Playgroup,Pavillon Jules Morin,400 Clarence,East,No,Bilingual,https://www.cscvanier.com/en/family/preschool/playgroups,CSC Vanier
 2023-12-07,9:30 AM to 11:30 AM,Playgroup Pinecrest Queensway,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
-2023-12-07,9:30 AM to 11:30 AM,Playgroup Bells Corners,Bells Corner,681 Seyton Dr.,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
+2023-12-07,09:15 - 11:15,Playgroup Bells Corners,Bells Corner,681 Seyton Dr.,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
 2023-12-07,9:30 AM to 12:00 PM,Playgroup,Heatherington Family Centre,1495 Heatherington Rd,South,No,English,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC
 2023-12-07,9:30 AM to 11:30 AM,Playgroup,Cedarwood,2850 Cedarwood Cr.,TBD,No,English,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC
 2023-12-07,12:00 PM to 3:00 PM,EarlyON Playgroup,Carlington Community Health Centre,900 Merivale,West,No,English,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC
@@ -592,8 +578,8 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-07,9:30 AM to 1:00 PM,EarlyON Playgroup,Queen Mary Street Public School,"557 Queen Mary Street, Room 117",East,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
 2023-12-07,9:30 AM to 1:00 PM,EarlyON Playgroup,Agincourt Road Public School,"1250 Agincourt Road, Room 123",West,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
 2023-12-07,9:00 AM to 12:30 PM,EarlyON Playgroup,York Street Public School,"310 York Street, Room B016",Central,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
-2023-12-07,9:00 AM to 11:00 AM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,Parent Resource
-2023-12-07,1:00 PM to 3:00 PM,Indigenous Wellness Circle (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,Yes?,English,https://parentresource.ca/earlyon-programs-and-services/,Parent Resource
+2023-12-07,9:00 AM to 11:00 AM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,PRC
+2023-12-07,1:00 PM to 3:00 PM,Indigenous Wellness Circle (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,Yes?,English,https://parentresource.ca/earlyon-programs-and-services/,PRC
 2023-12-07,8:30 am - 12:30 pm,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
 2023-12-07,9:00 am - 1:00 pm,Playgroup (0-6 years),Prince of Peace School,1620 Heatherington Road,South,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
 2023-12-07,9:00 am - 1:00 pm,Playgroup (0-6 years),Our Lady of Mount Carmel School,675 Gardenvale Road,East,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
@@ -626,7 +612,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-14,9:00 AM to 11:00 AM,Bilingual Playgroup,CSC Vanier,270 Marier Ave.,East,No,Bilingual,https://www.cscvanier.com/en/family/preschool/playgroups,CSC Vanier
 2023-12-14,9:00 AM to 11:00 AM,Jules Morin Bilingual Playgroup,Pavillon Jules Morin,400 Clarence,East,No,Bilingual,https://www.cscvanier.com/en/family/preschool/playgroups,CSC Vanier
 2023-12-14,9:30 AM to 11:30 AM,Playgroup Pinecrest Queensway,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
-2023-12-14,9:30 AM to 11:30 AM,Playgroup Bells Corners,Bells Corner,681 Seyton Dr.,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
+2023-12-14,09:15 - 11:15,Playgroup Bells Corners,Bells Corner,681 Seyton Dr.,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
 2023-12-14,9:30 AM to 12:00 PM,Playgroup,Heatherington Family Centre,1495 Heatherington Rd,South,No,English,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC
 2023-12-14,9:30 AM to 11:30 AM,Playgroup,Cedarwood,2850 Cedarwood Cr.,TBD,No,English,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC
 2023-12-14,12:00 PM to 3:00 PM,EarlyON Playgroup,Carlington Community Health Centre,900 Merivale,West,No,English,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC
@@ -642,8 +628,8 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-14,9:30 AM to 1:00 PM,EarlyON Playgroup,Queen Mary Street Public School,"557 Queen Mary Street, Room 117",East,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
 2023-12-14,9:30 AM to 1:00 PM,EarlyON Playgroup,Agincourt Road Public School,"1250 Agincourt Road, Room 123",West,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
 2023-12-14,9:00 AM to 12:30 PM,EarlyON Playgroup,York Street Public School,"310 York Street, Room B016",Central,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
-2023-12-14,9:00 AM to 11:00 AM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,Parent Resource
-2023-12-14,1:00 PM to 3:00 PM,Indigenous Wellness Circle (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,Yes?,English,https://parentresource.ca/earlyon-programs-and-services/,Parent Resource
+2023-12-14,9:00 AM to 11:00 AM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,PRC
+2023-12-14,1:00 PM to 3:00 PM,Indigenous Wellness Circle (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,Yes?,English,https://parentresource.ca/earlyon-programs-and-services/,PRC
 2023-12-14,8:30 am - 12:30 pm,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
 2023-12-14,9:00 am - 1:00 pm,Playgroup (0-6 years),Prince of Peace School,1620 Heatherington Road,South,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
 2023-12-14,9:00 am - 1:00 pm,Playgroup (0-6 years),Our Lady of Mount Carmel School,675 Gardenvale Road,East,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
@@ -676,13 +662,11 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-21,9:00 AM to 11:00 AM,Bilingual Playgroup,CSC Vanier,270 Marier Ave.,East,No,Bilingual,https://www.cscvanier.com/en/family/preschool/playgroups,CSC Vanier
 2023-12-21,9:00 AM to 11:00 AM,Jules Morin Bilingual Playgroup,Pavillon Jules Morin,400 Clarence,East,No,Bilingual,https://www.cscvanier.com/en/family/preschool/playgroups,CSC Vanier
 2023-12-21,9:30 AM to 11:30 AM,Playgroup Pinecrest Queensway,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
-2023-12-21,9:30 AM to 11:30 AM,Playgroup Bells Corners,Bells Corner,681 Seyton Dr.,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
+2023-12-21,09:15 - 11:15,Playgroup Bells Corners,Bells Corner,681 Seyton Dr.,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
 2023-12-21,9:30 AM to 12:00 PM,Playgroup,Heatherington Family Centre,1495 Heatherington Rd,South,No,English,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC
 2023-12-21,9:30 AM to 11:30 AM,Playgroup,Cedarwood,2850 Cedarwood Cr.,TBD,No,English,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC
 2023-12-21,12:00 PM to 3:00 PM,EarlyON Playgroup,Carlington Community Health Centre,900 Merivale,West,No,English,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC
 2023-12-21,9:30 AM to 11:00 AM,In-person Playgroup,Centrepointe Child Care Services,75 Hemmingwood Way Ottawa,West,Yes,English,https://centrepointechildcareservices.com/services/earlyon-programs/,Centrepointe Child Care
-2023-12-21,9:00 AM to 11:00 AM,EarlyON Playgroup,St. James Anglican Church,1138 Bridge Street,East,No,English,https://gccs.ca/earlyon-drop-ins-2/,GCCS
-2023-12-21,9:00 AM to 11:00 AM,EarlyON Playgroup,Blackburn Community Hall,190 Glen Park Drive,East,No,English,https://gccs.ca/earlyon-drop-ins-2/,GCCS
 2023-12-21,10:00 AM to 11:30 AM,EarlyON Playgroup,Minto Party Room,1341 Meadowlands Dr.,West,No,English,https://nrocrc.org/calendar/earlyon-programming4,NROCRC
 2023-12-21,9:00 AM to 12:30 PM,EarlyON Playgroup,Cambridge Street Community Public School,"250 Cambridge Street North, Room 115",Central,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
 2023-12-21,9:30 AM to 1:00 PM,EarlyON Playgroup,Carleton Heights Public School,"1660 Prince of Wales Drive, Room 100",South,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
@@ -692,8 +676,8 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-21,9:30 AM to 1:00 PM,EarlyON Playgroup,Queen Mary Street Public School,"557 Queen Mary Street, Room 117",East,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
 2023-12-21,9:30 AM to 1:00 PM,EarlyON Playgroup,Agincourt Road Public School,"1250 Agincourt Road, Room 123",West,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
 2023-12-21,9:00 AM to 12:30 PM,EarlyON Playgroup,York Street Public School,"310 York Street, Room B016",Central,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
-2023-12-21,9:00 AM to 11:00 AM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,Parent Resource
-2023-12-21,1:00 PM to 3:00 PM,Indigenous Wellness Circle (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,Yes?,English,https://parentresource.ca/earlyon-programs-and-services/,Parent Resource
+2023-12-21,9:00 AM to 11:00 AM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,PRC
+2023-12-21,1:00 PM to 3:00 PM,Indigenous Wellness Circle (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,Yes?,English,https://parentresource.ca/earlyon-programs-and-services/,PRC
 2023-12-21,8:30 am - 12:30 pm,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
 2023-12-21,9:00 am - 1:00 pm,Playgroup (0-6 years),Prince of Peace School,1620 Heatherington Road,South,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
 2023-12-21,9:00 am - 1:00 pm,Playgroup (0-6 years),Our Lady of Mount Carmel School,675 Gardenvale Road,East,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
@@ -723,13 +707,11 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-28,9:00 AM to 11:00 AM,Bilingual Playgroup,CSC Vanier,270 Marier Ave.,East,No,Bilingual,https://www.cscvanier.com/en/family/preschool/playgroups,CSC Vanier
 2023-12-28,9:00 AM to 11:00 AM,Jules Morin Bilingual Playgroup,Pavillon Jules Morin,400 Clarence,East,No,Bilingual,https://www.cscvanier.com/en/family/preschool/playgroups,CSC Vanier
 2023-12-28,9:30 AM to 11:30 AM,Playgroup Pinecrest Queensway,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
-2023-12-28,9:30 AM to 11:30 AM,Playgroup Bells Corners,Bells Corner,681 Seyton Dr.,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
+2023-12-28,09:15 - 11:15,Playgroup Bells Corners,Bells Corner,681 Seyton Dr.,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
 2023-12-28,9:30 AM to 12:00 PM,Playgroup,Heatherington Family Centre,1495 Heatherington Rd,South,No,English,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC
 2023-12-28,9:30 AM to 11:30 AM,Playgroup,Cedarwood,2850 Cedarwood Cr.,TBD,No,English,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC
 2023-12-28,12:00 PM to 3:00 PM,EarlyON Playgroup,Carlington Community Health Centre,900 Merivale,West,No,English,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC
 2023-12-28,9:30 AM to 11:00 AM,In-person Playgroup,Centrepointe Child Care Services,75 Hemmingwood Way Ottawa,West,Yes,English,https://centrepointechildcareservices.com/services/earlyon-programs/,Centrepointe Child Care
-2023-12-28,9:00 AM to 11:00 AM,EarlyON Playgroup,St. James Anglican Church,1138 Bridge Street,East,No,English,https://gccs.ca/earlyon-drop-ins-2/,GCCS
-2023-12-28,9:00 AM to 11:00 AM,EarlyON Playgroup,Blackburn Community Hall,190 Glen Park Drive,East,No,English,https://gccs.ca/earlyon-drop-ins-2/,GCCS
 2023-12-28,10:00 AM to 11:30 AM,EarlyON Playgroup,Minto Party Room,1341 Meadowlands Dr.,West,No,English,https://nrocrc.org/calendar/earlyon-programming4,NROCRC
 2023-12-28,9:00 AM to 12:30 PM,EarlyON Playgroup,Cambridge Street Community Public School,"250 Cambridge Street North, Room 115",Central,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
 2023-12-28,9:30 AM to 1:00 PM,EarlyON Playgroup,Carleton Heights Public School,"1660 Prince of Wales Drive, Room 100",South,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
@@ -739,8 +721,6 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-28,9:30 AM to 1:00 PM,EarlyON Playgroup,Queen Mary Street Public School,"557 Queen Mary Street, Room 117",East,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
 2023-12-28,9:30 AM to 1:00 PM,EarlyON Playgroup,Agincourt Road Public School,"1250 Agincourt Road, Room 123",West,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
 2023-12-28,9:00 AM to 12:30 PM,EarlyON Playgroup,York Street Public School,"310 York Street, Room B016",Central,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
-2023-12-28,9:00 AM to 11:00 AM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,Parent Resource
-2023-12-28,1:00 PM to 3:00 PM,Indigenous Wellness Circle (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,Yes?,English,https://parentresource.ca/earlyon-programs-and-services/,Parent Resource
 2023-12-28,8:30 am - 12:30 pm,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
 2023-12-28,9:00 am - 1:00 pm,Playgroup (0-6 years),Prince of Peace School,1620 Heatherington Road,South,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
 2023-12-28,9:00 am - 1:00 pm,Playgroup (0-6 years),Our Lady of Mount Carmel School,675 Gardenvale Road,East,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
@@ -771,8 +751,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-01,9:00 AM to 11:30 AM,Metcalfe Playgroup,Metcalfe,"8243 Victoria Street, Metcalfe",South,No,English,https://www.ruralfamilyconnections.ca/programs/earlyon,Rural Family Connections
 2023-12-01,9:00 AM to 12:00 PM,Osgoode Playgroup,Osgoode,"5662 Osgoode Main, Osgood",South,No,English,https://www.ruralfamilyconnections.ca/programs/earlyon,Rural Family Connections
 2023-12-01,9:00 AM to 11:00 AM,Groupe de jeu francophone,CSC Vanier,270 Marier Ave.,East,No,French,https://www.cscvanier.com/en/family/preschool/playgroups,CSC Vanier
-2023-12-01,9:30 AM to 11:30 AM,Playgroup Bayshore,Bayshore,210 Woodridge Cr.,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
-2023-12-01,11:00 AM to 11:45 AM,Storytime Chapters,Chapters,2735 Iris,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
+2023-12-01,9:30 AM to 11:30 AM,Playgroup Bayshore,Bayshore,210 Woodridge Cr. Unit 101 (Dial 101 from lobby),West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
 2023-12-01,9:30 AM to 12:00 PM,Playgroup,Heatherington Family Centre,1495 Heatherington Rd,South,No,English,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC
 2023-12-01,9:30 AM to 12:00 PM,Playgroup,Bank Street,1355 Bank St. 6th florr,South,No,English,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC
 2023-12-01,8:30 AM to 1:30 PM,EarlyON Playgroup,Carlington Community Health Centre,900 Merivale,West,No,English,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC
@@ -786,8 +765,8 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-01,9:30 AM to 1:00 PM,EarlyON Playgroup,Queen Mary Street Public School,"557 Queen Mary Street, Room 117",East,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
 2023-12-01,9:30 AM to 1:00 PM,EarlyON Playgroup,Agincourt Road Public School,"1250 Agincourt Road, Room 123",West,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
 2023-12-01,9:00 AM to 12:30 PM,EarlyON Playgroup,York Street Public School,"310 York Street, Room B016",Central,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
-2023-12-01,9:30 AM to 11:30 AM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,Parent Resource
-2023-12-01,1:00 PM to 3:00 PM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,Parent Resource
+2023-12-01,9:30 AM to 11:30 AM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,PRC
+2023-12-01,1:00 PM to 3:00 PM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,PRC
 2023-12-01,8:30 am - 12:30 pm,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
 2023-12-01,9:00 am - 1:00 pm,Playgroup (0-6 years),Prince of Peace School,1620 Heatherington Road,South,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
 2023-12-01,9:00 am - 1:00 pm,Playgroup (0-6 years),Our Lady of Mount Carmel School,675 Gardenvale Road,East,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
@@ -818,8 +797,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-08,9:00 AM to 11:30 AM,Metcalfe Playgroup,Metcalfe,"8243 Victoria Street, Metcalfe",South,No,English,https://www.ruralfamilyconnections.ca/programs/earlyon,Rural Family Connections
 2023-12-08,9:00 AM to 12:00 PM,Osgoode Playgroup,Osgoode,"5662 Osgoode Main, Osgood",South,No,English,https://www.ruralfamilyconnections.ca/programs/earlyon,Rural Family Connections
 2023-12-08,9:00 AM to 11:00 AM,Groupe de jeu francophone,CSC Vanier,270 Marier Ave.,East,No,French,https://www.cscvanier.com/en/family/preschool/playgroups,CSC Vanier
-2023-12-08,9:30 AM to 11:30 AM,Playgroup Bayshore,Bayshore,210 Woodridge Cr.,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
-2023-12-08,11:00 AM to 11:45 AM,Storytime Chapters,Chapters,2735 Iris,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
+2023-12-08,9:30 AM to 11:30 AM,Playgroup Bayshore,Bayshore,210 Woodridge Cr. Unit 101 (Dial 101 from lobby),West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
 2023-12-08,9:30 AM to 12:00 PM,Playgroup,Heatherington Family Centre,1495 Heatherington Rd,South,No,English,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC
 2023-12-08,9:30 AM to 12:00 PM,Playgroup,Bank Street,1355 Bank St. 6th florr,South,No,English,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC
 2023-12-08,8:30 AM to 1:30 PM,EarlyON Playgroup,Carlington Community Health Centre,900 Merivale,West,No,English,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC
@@ -833,8 +811,8 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-08,9:30 AM to 1:00 PM,EarlyON Playgroup,Queen Mary Street Public School,"557 Queen Mary Street, Room 117",East,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
 2023-12-08,9:30 AM to 1:00 PM,EarlyON Playgroup,Agincourt Road Public School,"1250 Agincourt Road, Room 123",West,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
 2023-12-08,9:00 AM to 12:30 PM,EarlyON Playgroup,York Street Public School,"310 York Street, Room B016",Central,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
-2023-12-08,9:30 AM to 11:30 AM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,Parent Resource
-2023-12-08,1:00 PM to 3:00 PM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,Parent Resource
+2023-12-08,9:30 AM to 11:30 AM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,PRC
+2023-12-08,1:00 PM to 3:00 PM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,PRC
 2023-12-08,8:30 am - 12:30 pm,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
 2023-12-08,9:00 am - 1:00 pm,Playgroup (0-6 years),Prince of Peace School,1620 Heatherington Road,South,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
 2023-12-08,9:00 am - 1:00 pm,Playgroup (0-6 years),Our Lady of Mount Carmel School,675 Gardenvale Road,East,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
@@ -865,8 +843,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-15,9:00 AM to 11:30 AM,Metcalfe Playgroup,Metcalfe,"8243 Victoria Street, Metcalfe",South,No,English,https://www.ruralfamilyconnections.ca/programs/earlyon,Rural Family Connections
 2023-12-15,9:00 AM to 12:00 PM,Osgoode Playgroup,Osgoode,"5662 Osgoode Main, Osgood",South,No,English,https://www.ruralfamilyconnections.ca/programs/earlyon,Rural Family Connections
 2023-12-15,9:00 AM to 11:00 AM,Groupe de jeu francophone,CSC Vanier,270 Marier Ave.,East,No,French,https://www.cscvanier.com/en/family/preschool/playgroups,CSC Vanier
-2023-12-15,9:30 AM to 11:30 AM,Playgroup Bayshore,Bayshore,210 Woodridge Cr.,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
-2023-12-15,11:00 AM to 11:45 AM,Storytime Chapters,Chapters,2735 Iris,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
+2023-12-15,9:30 AM to 11:30 AM,Playgroup Bayshore,Bayshore,210 Woodridge Cr. Unit 101 (Dial 101 from lobby),West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
 2023-12-15,9:30 AM to 12:00 PM,Playgroup,Heatherington Family Centre,1495 Heatherington Rd,South,No,English,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC
 2023-12-15,9:30 AM to 12:00 PM,Playgroup,Bank Street,1355 Bank St. 6th florr,South,No,English,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC
 2023-12-15,8:30 AM to 1:30 PM,EarlyON Playgroup,Carlington Community Health Centre,900 Merivale,West,No,English,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC
@@ -880,8 +857,8 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-15,9:30 AM to 1:00 PM,EarlyON Playgroup,Queen Mary Street Public School,"557 Queen Mary Street, Room 117",East,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
 2023-12-15,9:30 AM to 1:00 PM,EarlyON Playgroup,Agincourt Road Public School,"1250 Agincourt Road, Room 123",West,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
 2023-12-15,9:00 AM to 12:30 PM,EarlyON Playgroup,York Street Public School,"310 York Street, Room B016",Central,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
-2023-12-15,9:30 AM to 11:30 AM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,Parent Resource
-2023-12-15,1:00 PM to 3:00 PM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,Parent Resource
+2023-12-15,9:30 AM to 11:30 AM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,PRC
+2023-12-15,1:00 PM to 3:00 PM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,PRC
 2023-12-15,8:30 am - 12:30 pm,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
 2023-12-15,9:00 am - 1:00 pm,Playgroup (0-6 years),Prince of Peace School,1620 Heatherington Road,South,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
 2023-12-15,9:00 am - 1:00 pm,Playgroup (0-6 years),Our Lady of Mount Carmel School,675 Gardenvale Road,East,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
@@ -912,13 +889,10 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-22,9:00 AM to 11:30 AM,Metcalfe Playgroup,Metcalfe,"8243 Victoria Street, Metcalfe",South,No,English,https://www.ruralfamilyconnections.ca/programs/earlyon,Rural Family Connections
 2023-12-22,9:00 AM to 12:00 PM,Osgoode Playgroup,Osgoode,"5662 Osgoode Main, Osgood",South,No,English,https://www.ruralfamilyconnections.ca/programs/earlyon,Rural Family Connections
 2023-12-22,9:00 AM to 11:00 AM,Groupe de jeu francophone,CSC Vanier,270 Marier Ave.,East,No,French,https://www.cscvanier.com/en/family/preschool/playgroups,CSC Vanier
-2023-12-22,9:30 AM to 11:30 AM,Playgroup Bayshore,Bayshore,210 Woodridge Cr.,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
-2023-12-22,11:00 AM to 11:45 AM,Storytime Chapters,Chapters,2735 Iris,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
+2023-12-22,9:30 AM to 11:30 AM,Playgroup Bayshore,Bayshore,210 Woodridge Cr. Unit 101 (Dial 101 from lobby),West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
 2023-12-22,9:30 AM to 12:00 PM,Playgroup,Heatherington Family Centre,1495 Heatherington Rd,South,No,English,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC
 2023-12-22,9:30 AM to 12:00 PM,Playgroup,Bank Street,1355 Bank St. 6th florr,South,No,English,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC
 2023-12-22,8:30 AM to 1:30 PM,EarlyON Playgroup,Carlington Community Health Centre,900 Merivale,West,No,English,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC
-2023-12-22,9:00 AM to 11:00 AM,EarlyON Playgroup,Rideauview Community Centre,4310 Shoreline Drive,South,No,English,https://gccs.ca/earlyon-drop-ins-2/,GCCS
-2023-12-22,9:00 AM to 11:00 AM,EarlyON Playgroup,Fred G. Barrett Arena - Lions Hall,3280 Leitrim Rd,South,No,English,https://gccs.ca/earlyon-drop-ins-2/,GCCS
 2023-12-22,9:00 AM to 12:30 PM,EarlyON Playgroup,Cambridge Street Community Public School,"250 Cambridge Street North, Room 115",Central,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
 2023-12-22,9:30 AM to 1:00 PM,EarlyON Playgroup,Carleton Heights Public School,"1660 Prince of Wales Drive, Room 100",South,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
 2023-12-22,9:00 AM to 12:30 PM,EarlyON Playgroup,Charles H. Hulse Public School,"2605 Alta Vista Drive, Room 119",South,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
@@ -927,8 +901,8 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-22,9:30 AM to 1:00 PM,EarlyON Playgroup,Queen Mary Street Public School,"557 Queen Mary Street, Room 117",East,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
 2023-12-22,9:30 AM to 1:00 PM,EarlyON Playgroup,Agincourt Road Public School,"1250 Agincourt Road, Room 123",West,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
 2023-12-22,9:00 AM to 12:30 PM,EarlyON Playgroup,York Street Public School,"310 York Street, Room B016",Central,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
-2023-12-22,9:30 AM to 11:30 AM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,Parent Resource
-2023-12-22,1:00 PM to 3:00 PM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,Parent Resource
+2023-12-22,9:30 AM to 11:30 AM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,PRC
+2023-12-22,1:00 PM to 3:00 PM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,PRC
 2023-12-22,8:30 am - 12:30 pm,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
 2023-12-22,9:00 am - 1:00 pm,Playgroup (0-6 years),Prince of Peace School,1620 Heatherington Road,South,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
 2023-12-22,9:00 am - 1:00 pm,Playgroup (0-6 years),Our Lady of Mount Carmel School,675 Gardenvale Road,East,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
@@ -956,13 +930,10 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-22,09:00 - 11:00,Les Libellules (French playgroup),Somerset West Community Health Centre,30 Rosemount Ave,Central,Yes,French,https://www.eventbrite.ca/o/somerset-west-chc-children-and-youth-31905786993,SWCHC
 2023-12-22,09:30 - 11:30,English Playgroup,Somerset West Community Health Centre,755 Somerset St W,Central,Yes,English,https://www.eventbrite.ca/o/somerset-west-chc-children-and-youth-31905786993,SWCHC
 2023-12-29,9:00 AM to 11:00 AM,Groupe de jeu francophone,CSC Vanier,270 Marier Ave.,East,No,French,https://www.cscvanier.com/en/family/preschool/playgroups,CSC Vanier
-2023-12-29,9:30 AM to 11:30 AM,Playgroup Bayshore,Bayshore,210 Woodridge Cr.,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
-2023-12-29,11:00 AM to 11:45 AM,Storytime Chapters,Chapters,2735 Iris,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
+2023-12-29,9:30 AM to 11:30 AM,Playgroup Bayshore,Bayshore,210 Woodridge Cr. Unit 101 (Dial 101 from lobby),West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
 2023-12-29,9:30 AM to 12:00 PM,Playgroup,Heatherington Family Centre,1495 Heatherington Rd,South,No,English,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC
 2023-12-29,9:30 AM to 12:00 PM,Playgroup,Bank Street,1355 Bank St. 6th florr,South,No,English,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC
 2023-12-29,8:30 AM to 1:30 PM,EarlyON Playgroup,Carlington Community Health Centre,900 Merivale,West,No,English,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC
-2023-12-29,9:00 AM to 11:00 AM,EarlyON Playgroup,Rideauview Community Centre,4310 Shoreline Drive,South,No,English,https://gccs.ca/earlyon-drop-ins-2/,GCCS
-2023-12-29,9:00 AM to 11:00 AM,EarlyON Playgroup,Fred G. Barrett Arena - Lions Hall,3280 Leitrim Rd,South,No,English,https://gccs.ca/earlyon-drop-ins-2/,GCCS
 2023-12-29,9:00 AM to 12:30 PM,EarlyON Playgroup,Cambridge Street Community Public School,"250 Cambridge Street North, Room 115",Central,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
 2023-12-29,9:30 AM to 1:00 PM,EarlyON Playgroup,Carleton Heights Public School,"1660 Prince of Wales Drive, Room 100",South,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
 2023-12-29,9:00 AM to 12:30 PM,EarlyON Playgroup,Charles H. Hulse Public School,"2605 Alta Vista Drive, Room 119",South,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
@@ -971,8 +942,6 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-29,9:30 AM to 1:00 PM,EarlyON Playgroup,Queen Mary Street Public School,"557 Queen Mary Street, Room 117",East,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
 2023-12-29,9:30 AM to 1:00 PM,EarlyON Playgroup,Agincourt Road Public School,"1250 Agincourt Road, Room 123",West,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
 2023-12-29,9:00 AM to 12:30 PM,EarlyON Playgroup,York Street Public School,"310 York Street, Room B016",Central,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB
-2023-12-29,9:30 AM to 11:30 AM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,Parent Resource
-2023-12-29,1:00 PM to 3:00 PM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,Parent Resource
 2023-12-29,8:30 am - 12:30 pm,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
 2023-12-29,9:00 am - 1:00 pm,Playgroup (0-6 years),Prince of Peace School,1620 Heatherington Road,South,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
 2023-12-29,9:00 am - 1:00 pm,Playgroup (0-6 years),Our Lady of Mount Carmel School,675 Gardenvale Road,East,No,English,https://www.ocsb.ca/parents/child-care/,OCSB
@@ -1000,9 +969,8 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-29,09:00 - 11:00,Les Libellules (French playgroup),Somerset West Community Health Centre,30 Rosemount Ave,Central,Yes,French,https://www.eventbrite.ca/o/somerset-west-chc-children-and-youth-31905786993,SWCHC
 2023-12-29,09:30 - 11:30,English Playgroup,Somerset West Community Health Centre,755 Somerset St W,Central,Yes,English,https://www.eventbrite.ca/o/somerset-west-chc-children-and-youth-31905786993,SWCHC
 2023-12-02,9:00 AM to 11:00 AM,Saturday Morning Playgroup,CSC Vanier,270 Marier Ave.,East,No,Bilingual,https://www.cscvanier.com/en/family/preschool/playgroups,CSC Vanier
-2023-12-02,9:30 AM to 11:30 AM,Playgroup,Karsh,29 Wallack Rd,TBD,No,English,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC
 2023-12-02,9:30 AM to 11:30 AM,EarlyON Playgroup,Carlington Community Health Centre,900 Merivale,West,No,English,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC
-2023-12-02,9:30 AM to 11:30 AM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,Parent Resource
+2023-12-02,9:30 AM to 11:30 AM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,PRC
 2023-12-02,9:30 AM - 11:30 AM,Open drop-in,Western Ottawa Community Resource Centre,2 MacNeil Court,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC
 2023-12-02,9:30 AM - 11:30 AM,Music with Margie,Carp Memorial Hall,434 Donald B. Munro Dr.,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC
 2023-12-02,9:30 AM - 11:30 AM,Open drop-in,Stittsville St-Andrew's Presbitarian Church,2 Mulkin St. Sttisville,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC
@@ -1011,9 +979,8 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-02,09:00 - 11:30,Groupe de jeu,École Béatrice-Desloges,"1999, av. Provence",East,No,French,https://lacoccinelle.com/centre-on-y-va,La Coccinelle
 2023-12-02,09:30 - 11:00,English Playgroup,Somerset West Community Health Centre,755 Somerset St W,Central,Yes,English,https://www.eventbrite.ca/o/somerset-west-chc-children-and-youth-31905786993,SWCHC
 2023-12-09,9:00 AM to 11:00 AM,Saturday Morning Playgroup,CSC Vanier,270 Marier Ave.,East,No,Bilingual,https://www.cscvanier.com/en/family/preschool/playgroups,CSC Vanier
-2023-12-09,9:30 AM to 11:30 AM,Playgroup,Karsh,29 Wallack Rd,TBD,No,English,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC
 2023-12-09,9:30 AM to 11:30 AM,EarlyON Playgroup,Carlington Community Health Centre,900 Merivale,West,No,English,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC
-2023-12-09,9:30 AM to 11:30 AM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,Parent Resource
+2023-12-09,9:30 AM to 11:30 AM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,PRC
 2023-12-09,9:30 AM - 11:30 AM,Open drop-in,Western Ottawa Community Resource Centre,2 MacNeil Court,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC
 2023-12-09,9:30 AM - 11:30 AM,Music with Margie,Carp Memorial Hall,434 Donald B. Munro Dr.,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC
 2023-12-09,9:30 AM - 11:30 AM,Open drop-in,Stittsville St-Andrew's Presbitarian Church,2 Mulkin St. Sttisville,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC
@@ -1022,9 +989,8 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-09,09:00 - 11:30,Groupe de jeu,École Béatrice-Desloges,"1999, av. Provence",East,No,French,https://lacoccinelle.com/centre-on-y-va,La Coccinelle
 2023-12-09,09:30 - 11:00,English Playgroup,Somerset West Community Health Centre,755 Somerset St W,Central,Yes,English,https://www.eventbrite.ca/o/somerset-west-chc-children-and-youth-31905786993,SWCHC
 2023-12-16,9:00 AM to 11:00 AM,Saturday Morning Playgroup,CSC Vanier,270 Marier Ave.,East,No,Bilingual,https://www.cscvanier.com/en/family/preschool/playgroups,CSC Vanier
-2023-12-16,9:30 AM to 11:30 AM,Playgroup,Karsh,29 Wallack Rd,TBD,No,English,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC
 2023-12-16,9:30 AM to 11:30 AM,EarlyON Playgroup,Carlington Community Health Centre,900 Merivale,West,No,English,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC
-2023-12-16,9:30 AM to 11:30 AM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,Parent Resource
+2023-12-16,9:30 AM to 11:30 AM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,PRC
 2023-12-16,9:30 AM - 11:30 AM,Open drop-in,Western Ottawa Community Resource Centre,2 MacNeil Court,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC
 2023-12-16,9:30 AM - 11:30 AM,Music with Margie,Carp Memorial Hall,434 Donald B. Munro Dr.,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC
 2023-12-16,9:30 AM - 11:30 AM,Open drop-in,Stittsville St-Andrew's Presbitarian Church,2 Mulkin St. Sttisville,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC
@@ -1033,9 +999,8 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-16,09:00 - 11:30,Groupe de jeu,École Béatrice-Desloges,"1999, av. Provence",East,No,French,https://lacoccinelle.com/centre-on-y-va,La Coccinelle
 2023-12-16,09:30 - 11:00,English Playgroup,Somerset West Community Health Centre,755 Somerset St W,Central,Yes,English,https://www.eventbrite.ca/o/somerset-west-chc-children-and-youth-31905786993,SWCHC
 2023-12-23,9:00 AM to 11:00 AM,Saturday Morning Playgroup,CSC Vanier,270 Marier Ave.,East,No,Bilingual,https://www.cscvanier.com/en/family/preschool/playgroups,CSC Vanier
-2023-12-23,9:30 AM to 11:30 AM,Playgroup,Karsh,29 Wallack Rd,TBD,No,English,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC
 2023-12-23,9:30 AM to 11:30 AM,EarlyON Playgroup,Carlington Community Health Centre,900 Merivale,West,No,English,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC
-2023-12-23,9:30 AM to 11:30 AM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,Parent Resource
+2023-12-23,9:30 AM to 11:30 AM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,PRC
 2023-12-23,9:30 AM - 11:30 AM,Open drop-in,Western Ottawa Community Resource Centre,2 MacNeil Court,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC
 2023-12-23,9:30 AM - 11:30 AM,Music with Margie,Carp Memorial Hall,434 Donald B. Munro Dr.,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC
 2023-12-23,9:30 AM - 11:30 AM,Open drop-in,Stittsville St-Andrew's Presbitarian Church,2 Mulkin St. Sttisville,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC
@@ -1044,9 +1009,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-23,09:00 - 11:30,Groupe de jeu,École Béatrice-Desloges,"1999, av. Provence",East,No,French,https://lacoccinelle.com/centre-on-y-va,La Coccinelle
 2023-12-23,09:30 - 11:00,English Playgroup,Somerset West Community Health Centre,755 Somerset St W,Central,Yes,English,https://www.eventbrite.ca/o/somerset-west-chc-children-and-youth-31905786993,SWCHC
 2023-12-30,9:00 AM to 11:00 AM,Saturday Morning Playgroup,CSC Vanier,270 Marier Ave.,East,No,Bilingual,https://www.cscvanier.com/en/family/preschool/playgroups,CSC Vanier
-2023-12-30,9:30 AM to 11:30 AM,Playgroup,Karsh,29 Wallack Rd,TBD,No,English,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC
 2023-12-30,9:30 AM to 11:30 AM,EarlyON Playgroup,Carlington Community Health Centre,900 Merivale,West,No,English,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC
-2023-12-30,9:30 AM to 11:30 AM,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,Parent Resource
 2023-12-30,9:30 AM - 11:30 AM,Open drop-in,Western Ottawa Community Resource Centre,2 MacNeil Court,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC
 2023-12-30,9:30 AM - 11:30 AM,Music with Margie,Carp Memorial Hall,434 Donald B. Munro Dr.,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC
 2023-12-30,9:30 AM - 11:30 AM,Open drop-in,Stittsville St-Andrew's Presbitarian Church,2 Mulkin St. Sttisville,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC
@@ -1056,10 +1019,6 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-30,09:30 - 11:00,English Playgroup,Somerset West Community Health Centre,755 Somerset St W,Central,Yes,English,https://www.eventbrite.ca/o/somerset-west-chc-children-and-youth-31905786993,SWCHC
 2023-12-18,1:30 PM to 2:15 PM,Story Time at Brantwood Fieldhouse,Brantwood Fieldhouse,39 Onswlow Cr.,Central,No,English,https://mothercraft.com/venues/ontario-early-years-centre/,Mothercraft
 2023-12-02,9:30 AM to 11:30 AM,Playgroup Pinecrest Queensway,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
-2023-12-16,9:30 AM to 11:30 AM,Playgroup Pinecrest Queensway,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
-2023-12-30,9:30 AM to 11:30 AM,Playgroup Pinecrest Queensway,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
-2023-12-09,9:30 AM to 11:30 AM,Playgroup Bayshore,Bayshore,210 Woodridge Cr.,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
-2023-12-23,9:30 AM to 11:30 AM,Playgroup Bayshore,Bayshore,210 Woodridge Cr.,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC
 2023-12-14,1:30 PM to 2:30 PM,Arabic Parenting Group,Heatherington Family Centre,1495 Heatherington Rd,South,No,Arabic,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC
 2023-12-13,09:30 - 11:00,Playgroup at the Navan Arena ,Navan Memorial Centre,1295 Colonial Rd,East,No,English,https://events-evenements.crcoc.ca/events-evenements/category/early-on-y-va/,CRCOC
 2023-12-13,17:45 - 19:00,December Night Walk,Mothercraft Ottawa,475 Evered Ave (Outside),Central,Yes,English,https://mothercraft.com/venues/ontario-early-years-centre/,Mothercraft
