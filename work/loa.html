@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter of Agreement Generator</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .letter-content {
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+		
+		/* Style for form input fields */
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            margin-top: 10px;
+        }
+
+        input {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+        <form id="agreementForm">
+        <label for="personName">Person's Name:</label>
+        <input type="text" id="personName" name="personName" required value="Claudie Larouche">
+        
+        <label for="ministerName">Minister:</label>
+        <input type="text" id="ministerName" name="ministerName" required value="Indigenous Services">
+
+        <label for="departmentName">Name of Department:</label>
+        <input type="text" id="departmentName" name="departmentName" required value="Indigenous Services Canada">
+
+        <label for="departmentAddress">Address of Department:</label>
+        <input type="text" id="departmentAddress" name="departmentAddress" required value="10 Wellington, Gatineau, QC">
+
+        <button type="button" onclick="generateAgreement()">Generate Agreement</button>
+    </form>
+
+    
+    <div class="letter-content" id="letterContent" style="display: none;">
+		<h1 id="letterTitle">Letter of Agreement</h1>
+        <p id="betweenParagraph"><strong>Between</strong></p>
+		<p><strong>His Majesty the King in Right of Canada</strong> as represented by the <strong>Minister of <span id="ministerNameDisplay">[Minister]</span></strong>, acting through <strong><span id="departmentNameDisplay">[Name of Department]</span> (the host department)</strong> at <span id="addressDisplay">[Address of Department]</span>.</p>
+        <p id="andParagraph"><strong>and</strong></p>
+		<p><strong>His Majesty the King in Right of Canada</strong> as represented by the <strong>Minister of Natural Resources</strong>, acting through <strong>Natural Resources Canada (the home department)</strong> at 580 Booth Street, Ottawa, Ontario.</p>
+
+        <!-- Additional content -->
+        <p id="partiesAgreeParagraph">The parties agree to the following:</p>
+        <h2 id="agreementHeading">1.0 The Agreement</h2>
+        <p id="agreementContentParagraph">1.1&nbsp;&nbsp;With this Agreement, the host department is retaining the services of <strong><span id="personNameDisplay">[NAME]</span></strong>, as part of the Canada’s Free Agents program, pursuant to discussions between the host department and the home department to have the Free Agent undertake the work described in Annex A of this Agreement for the benefit and at the request of the host department.</p>
+        <!-- Add more content here as needed -->
+    </div>
+
+    <script>
+    // Declare variables at the beginning of the script
+    let userName, ministerName, departmentName, departmentAddress;
+
+    async function generateAgreement() {
+        const userNameInput = document.getElementById("personName");
+        const ministerNameInput = document.getElementById("ministerName");
+        const departmentNameInput = document.getElementById("departmentName");
+        const departmentAddressInput = document.getElementById("departmentAddress");
+
+        // Update the variables with input values
+        userName = userNameInput.value.trim() || userNameInput.placeholder.trim();
+        ministerName = ministerNameInput.value.trim() || ministerNameInput.placeholder.trim();
+        departmentName = departmentNameInput.value.trim() || departmentNameInput.placeholder.trim();
+        departmentAddress = departmentAddressInput.value.trim() || departmentAddressInput.placeholder.trim();
+
+        if (!userName || !ministerName || !departmentName || !departmentAddress) {
+            alert('Please enter all required information.');
+            return;
+        }
+
+        document.getElementById('letterTitle').innerText = `Letter of Agreement for ${userName}`;
+        document.getElementById('ministerNameDisplay').innerText = ministerName;
+        document.getElementById('personNameDisplay').innerText = userName;
+        document.getElementById('departmentNameDisplay').innerText = departmentName;
+        document.getElementById('addressDisplay').innerText = departmentAddress;
+
+        // Show the letter content
+        document.getElementById('letterContent').style.display = 'block';
+    }
+</script>
+
+
+
+    </script>
+</body>
+</html>
