@@ -45,7 +45,7 @@ function renderTable(data) {
     }
 
     const headers = Object.keys(data[0]);
-	headers.push('DayOfWeek'); // Add this line to include the new header
+	headers.push('Day of Week'); // Add this line to include the new header
 
     let tableHtml = '<table id="dataTable"><thead><tr>';
     headers.forEach(header => {
@@ -73,7 +73,7 @@ function renderTable(data) {
                 if (header === 'URL') {
         // Make the URL clickable as a link
         tableHtml += `<td><a href="${row[header]}" target="_blank">URL</a></td>`;
-    } else if (header === 'DayOfWeek') {
+    } else if (header === 'Day of Week') {
         // Calculate and display the day of the week
         const dateParts = row['Date'].split('-');
         const currentDate = new Date(dateParts[0], dateParts[1] - 1, dateParts[2]);
