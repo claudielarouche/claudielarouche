@@ -28,6 +28,8 @@ window.onload = function () {
 };
 
 function renderTable(data) {
+	
+	
     // Ensure data is an array
     if (!Array.isArray(data)) {
         console.error('Error loading data: Data is not an array.');
@@ -43,6 +45,7 @@ function renderTable(data) {
     }
 
     const headers = Object.keys(data[0]);
+	headers.push('Day of Week'); // Add this line to include the new header
 
     let tableHtml = '<table id="dataTable"><thead><tr>';
     headers.forEach(header => {
@@ -68,11 +71,23 @@ function renderTable(data) {
             tableHtml += '<tr>';
             headers.forEach(header => {
                 if (header === 'URL') {
-                    // Make the URL clickable as a link
-                    tableHtml += `<td><a href="${row[header]}" target="_blank">URL</a></td>`;
-                } else {
-                    tableHtml += `<td>${row[header]}</td>`;
-                }
+        // Make the URL clickable as a link
+        tableHtml += `<td><a href="${row[header]}" target="_blank">URL</a></td>`;
+    } else if (header === 'Day of Week') {
+        // Calculate and display the day of the week
+        const dateParts = row['Date'].split('-');
+        const currentDate = new Date(dateParts[0], dateParts[1] - 1, dateParts[2]);
+        const dayOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][currentDate.getDay()];
+        tableHtml += `<td>${dayOfWeek}</td>`;
+    } else {
+        tableHtml += `<td>${row[header]}</td>`;
+    }
+});
+
+	
+				
+				headers.forEach(header => {
+    			
             });
             tableHtml += '</tr>';
         }
