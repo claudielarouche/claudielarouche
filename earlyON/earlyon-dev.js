@@ -28,8 +28,7 @@ window.onload = function () {
 };
 
 function renderTable(data) {
-	const headers = Object.keys(data[0]);
-	headers.push('DayOfWeek'); // Add this line to include the new header
+	
 	
     // Ensure data is an array
     if (!Array.isArray(data)) {
@@ -46,6 +45,7 @@ function renderTable(data) {
     }
 
     const headers = Object.keys(data[0]);
+	headers.push('DayOfWeek'); // Add this line to include the new header
 
     let tableHtml = '<table id="dataTable"><thead><tr>';
     headers.forEach(header => {
