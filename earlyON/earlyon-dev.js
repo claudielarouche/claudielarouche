@@ -113,10 +113,10 @@ function renderTable(data) {
 	
 	if (!$.fn.dataTable.isDataTable('#dataTable')) {
         $('#dataTable').DataTable({
-			"pageLength": -1,
-			"order": [
-            { "data": "Date", "orderData": [0, 1] }, // Sort by Date first
-            { "data": "Hours", "orderData": [1] }      // Then sort by Hours
+			 "pageLength": -1,
+        "order": [
+            { "data": "Date", "orderSequence": ["desc", "asc"] }, // Sort Date in descending order
+            { "data": "Hours", "orderSequence": ["asc", "desc"] }  // Sort Hours in ascending order
         ]
 		});
     }
