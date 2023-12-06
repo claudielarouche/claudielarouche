@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">-->
     <title>Letter of Agreement Generator</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
+            text-align: center;
             font-family: Arial, sans-serif;
-            margin: 20px; /* Add some margin for better spacing */
         }
 
         h1 {
@@ -30,41 +29,39 @@
         strong {
             font-weight: bold;
         }
+		
+		/* Style for form input fields */
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            margin-top: 10px;
+        }
+
+        input {
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
-       <form id="agreementForm">
-    <div class="form-group row">
-        <label for="personName" class="col-sm-2 col-form-label">Person's Name:</label>
-        <div class="col-sm-10">
-            <input type="text" class="form-control" id="personName" name="personName" required value="Claudie">
-        </div>
-    </div>
+        <form id="agreementForm">
+        <label for="personName">Person's Name:</label>
+        <input type="text" id="personName" name="personName" required value="Claudie Larouche">
+        
+        <label for="ministerName">Minister:</label>
+        <input type="text" id="ministerName" name="ministerName" required value="Indigenous Services">
 
-    <div class="form-group row">
-        <label for="ministerName" class="col-sm-2 col-form-label">Minister:</label>
-        <div class="col-sm-10">
-            <input type="text" class="form-control" id="ministerName" name="ministerName" required value="Indigenous Services">
-        </div>
-    </div>
+        <label for="departmentName">Name of Department:</label>
+        <input type="text" id="departmentName" name="departmentName" required value="Indigenous Services Canada">
 
-    <div class="form-group row">
-        <label for="departmentName" class="col-sm-2 col-form-label">Name of Department:</label>
-        <div class="col-sm-10">
-            <input type="text" class="form-control" id="departmentName" name="departmentName" required value="Indigenous Services Canada">
-        </div>
-    </div>
+        <label for="departmentAddress">Address of Department:</label>
+        <input type="text" id="departmentAddress" name="departmentAddress" required value="10 Wellington, Gatineau, QC">
 
-    <div class="form-group row">
-        <label for="departmentAddress" class="col-sm-2 col-form-label">Address of Department:</label>
-        <div class="col-sm-10">
-            <input type="text" class="form-control" id="departmentAddress" name="departmentAddress" required value="10 Wellington, Gatineau, QC">
-        </div>
-    </div>
-
-    <button type="button" class="btn btn-primary" onclick="generateAgreement()">Generate Agreement</button>
-</form>
-
+        <button type="button" onclick="generateAgreement()">Generate Agreement</button>
+    </form>
 
     
     <div class="letter-content" id="letterContent" style="display: none;">
@@ -105,12 +102,6 @@
 		<!-- Add more content here as needed -->
 
     </div>
-	
-	<!-- Link Bootstrap JS and Popper.js -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
 
     <script>
     // Declare variables at the beginning of the script
