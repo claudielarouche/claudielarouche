@@ -44,7 +44,7 @@
     <div class="form-group row">
         <label for="ministerName" class="col-sm-2 col-form-label">Minister:</label>
         <div class="col-sm-10">
-            <input type="text" class="form-control" id="ministerName" name="ministerName" required value="Indigenous Services">
+            <input type="text" class="form-control" id="ministerName" name="ministerName" required value="Minister of Indigenous Services">
         </div>
     </div>
 
@@ -126,9 +126,9 @@
     </div>
 	
 	<div class="form-group row">
-        <label for="hostContactPhone" class="col-sm-2 col-form-label">Host Department Contact Phone:</label>
+        <label for="hostContactPosition" class="col-sm-2 col-form-label">Host Department Contact Position:</label>
         <div class="col-sm-10">
-            <input type="text" class="form-control" id="hostContactPhone" name="hostContactPhone" required value="333-333-3333">
+            <input type="text" class="form-control" id="hostContactPosition" name="hostContactPosition" required value="Senior director">
         </div>
     </div>
 	
@@ -147,9 +147,9 @@
     </div>
 	
 	<div class="form-group row">
-        <label for="finContactPhone" class="col-sm-2 col-form-label">Host Department Financial Contact Phone:</label>
+        <label for="finContactPosition" class="col-sm-2 col-form-label">Host Department Financial Contact Position:</label>
         <div class="col-sm-10">
-            <input type="text" class="form-control" id="finContactPhone" name="finContactPhone" required value="333-333-3333">
+            <input type="text" class="form-control" id="finContactPosition" name="finContactPosition" required value="Manager, Finance">
         </div>
     </div>
 	
@@ -166,6 +166,14 @@
             <input type="text" class="form-control" id="signatoryTitle" name="signatoryTitle" required value="Senior Director, ACC">
         </div>
     </div>
+	
+	<div class="form-group row">
+        <label for="objectives" class="col-sm-2 col-form-label">Work objectives:</label>
+        <div class="col-sm-10">
+            <textarea  rows="6" class="form-control" id="objectives" name="objectives" ></textarea>
+        </div>
+    </div>
+
 
     <button type="button" class="btn btn-primary" onclick="generateAgreement()">Generate Agreement</button>
 </form>
@@ -175,7 +183,7 @@
     <div class="letter-content" id="letterContent" style="display: none;">
 		<h1 id="letterTitle">Letter of Agreement</h1>
         <p id="betweenParagraph"><strong>Between</strong></p>
-		<p><strong>His Majesty the King in Right of Canada</strong> as represented by the <strong>Minister of <span id="ministerNameDisplay">[Minister]</span></strong>, acting through <strong><span id="departmentNameDisplay">[Name of Department]</span> (the host department)</strong> at <span id="addressDisplay">[Address of Department]</span>.</p>
+		<p><strong>His Majesty the King in Right of Canada</strong> as represented by the <strong><span id="ministerNameDisplay">[Minister]</span></strong>, acting through <strong><span id="departmentNameDisplay">[Name of Department]</span> (the host department)</strong> at <span id="addressDisplay">[Address of Department]</span>.</p>
         <p id="andParagraph"><strong>and</strong></p>
 		<p><strong>His Majesty the King in Right of Canada</strong> as represented by the <strong>Minister of Natural Resources</strong>, acting through <strong>Natural Resources Canada (the home department)</strong> at 580 Booth Street, Ottawa, Ontario.</p>
 
@@ -277,26 +285,32 @@ Canada's Free Agents | Agents libres du Canada<br>
 Natural Resources Canada | Ressources naturelles Canada<br>
 613-222-6773 or natalie.crandall@nrcan-rncan.gc.ca</p>
 <p>6.2 All notices and communications to the host department in connection with this Agreement shall be addressed to:</p>
-<p><strong>Danielle Aubin</strong><br>
-Senior Director<br>
-Indigenous Services Canada<br>
-(613) 415-6014 or danielle.aubin@sac-isc.gc.ca</p>
+<p><strong><span id="hostContactNameDisplay">Jane Doe</span></strong><br>
+<span id="hostContactPositionDisplay">Senior Director</span><br>
+<span id="department2Display">Indigenous Services Canada</span><br>
+<span id="hostContactEmailDisplay">jane.doe@sac-isc.gc.ca</span></p>
 <p>Financial Contact:</p>
-<p><strong>Andrew Cameron</strong><br>
-Manager, Financial Services, Business Management Unit<br>
-Indigenous Services Canada<br>
-andrew.cameron2@sac-isc.gc.ca</p>
+<p><strong><span id="finContactNameDisplay">John Doe</span></strong><br>
+<span id="finContactPositionDisplay">Manager, Financial Services, Business Management Unit</span><br>
+<span id="department3Display">Indigenous Services Canada</span><br>
+<span id="finContactEmailDisplay">john.doe@sac-isc.gc.ca</span></p>
 <p><strong>IN WITNESS WHEREOF, each of the parties have signed.</strong></p>
 <p>HIS MAJESTY THE KING IN RIGHT OF CANADA</p>
 <p>as represented by the <strong>Minister of Natural Resources</strong></p>
 <br><br>
 <p>Signature: _______________________________</p>
-<p>Title: DG, Planning, Delivery and Results, SPI____</p>
+<p>Title: DG, Planning, Delivery and Results, SPI </p>
+
+<hr>
+
 <p>HIS MAJESTY THE KING IN RIGHT OF CANADA</p>
-<p>as represented by the <strong>Minister of Indigenous Services</strong></p>
+<p>as represented by the <strong><span id="minister2Display">Minister of Indigenous Services</span></strong></p>
 <br><br>
 <p>Signature: _______________________________</p>
-<p>Title: _______________________________</p>
+<p>Title: <span id="signatoryTitleDisplay"></span></p>
+
+<hr>
+
 <p>Witnessed by, and in concurrence with the Attachments annexed to this agreement:</p>
 <p>FREE AGENT</p>
 <br><br>
@@ -306,9 +320,8 @@ andrew.cameron2@sac-isc.gc.ca</p>
 <p>ASSIGNMENT WORK OBJECTIVES</p>
 <p><strong>Main Tasks (4 – 6 bullets/items)</strong></p>
 <ul>
-<li>Develop data visualization tools for Indigenous procurement data with information from proactive disclosure of contracting and other sources</li>
-<li>Support ISC in developing annual reporting and trend analysis, including publicly available data visualization tools from departments’ procurement plans and reporting on 5% Indigenous procurement targets</li>
-<li>In partnership with Indigenous organizations, PSPC, TBS and other departments work to develop best practices, support pilots projects and/or proof of concepts and support experimentation and co-development of future Indigenous procurement data strategies</li>
+<li>To be completed</li>
+
 </ul>
 
 		<!-- Add more content here as needed -->
@@ -323,7 +336,7 @@ andrew.cameron2@sac-isc.gc.ca</p>
 
     <script>
     // Declare variables at the beginning of the script
-    let userName, ministerName, departmentName, departmentAddress, linguisticProfile, clearance, startDate, endDate, level, depCode, orgCode, refCode;
+    let userName, ministerName, departmentName, departmentAddress, linguisticProfile, clearance, startDate, endDate, level, depCode, orgCode, refCode, hostContactName, hostContactPhone,hostContactEmail, finContactName, finContactPhone, finContactEmail, signatoryTitle, hostContactPosition, finContactPosition;
 
     async function generateAgreement() {
         const userNameInput = document.getElementById("personName");
@@ -338,6 +351,25 @@ andrew.cameron2@sac-isc.gc.ca</p>
 		const depCodeInput = document.getElementById("depCode");
 		const orgCodeInput = document.getElementById("orgCode");
 		const refCodeInput = document.getElementById("refCode");
+		// Line 1s
+		const hostContactNameInput = document.getElementById("hostContactName");
+		const hostContactEmailInput = document.getElementById("hostContactEmail");
+		const finContactNameInput = document.getElementById("finContactName");
+		const finContactEmailInput = document.getElementById("finContactEmail");
+		const signatoryTitleInput = document.getElementById("signatoryTitle");
+// Additional Line 1s
+const hostContactPositionInput = document.getElementById("hostContactPosition");
+const finContactPositionInput = document.getElementById("finContactPosition");
+
+// Additional Line 2s
+
+
+// Additional Line 3s
+
+
+
+
+
 		
 		 // Update the variables with input values
         userName = userNameInput.value.trim() || "";
@@ -352,13 +384,23 @@ andrew.cameron2@sac-isc.gc.ca</p>
 		depCode = depCodeInput.value.trim() || "";		
 		orgCode = orgCodeInput.value.trim() || "";
 		refCode = refCodeInput.value.trim() || "";
+		hostContactName = hostContactNameInput.value.trim() || "";
+		hostContactEmail = hostContactEmailInput.value.trim() || "";
+		finContactName = finContactNameInput.value.trim() || "";
+		finContactEmail = finContactEmailInput.value.trim() || "";
+		signatoryTitle = signatoryTitleInput.value.trim() || "";
+		hostContactPosition = hostContactPositionInput.value.trim() || "";
+finContactPosition = finContactPositionInput.value.trim() || "";
 
 
         
 		
         document.getElementById('ministerNameDisplay').innerText = ministerName;
+		document.getElementById('minister2Display').innerText = ministerName;
         document.getElementById('personNameDisplay').innerText = userName;
         document.getElementById('departmentNameDisplay').innerText = departmentName;
+		document.getElementById('department2Display').innerText = departmentName;
+		document.getElementById('department3Display').innerText = departmentName;
         document.getElementById('addressDisplay').innerText = departmentAddress;
 		document.getElementById('linguisticProfileDisplay').innerText = linguisticProfile;		
 		document.getElementById('clearanceDisplay').innerText = clearance;
@@ -369,6 +411,13 @@ andrew.cameron2@sac-isc.gc.ca</p>
 		document.getElementById('depCodeDisplay').innerText = depCode;
 		document.getElementById('orgCodeDisplay').innerText = orgCode;
 		document.getElementById('refCodeDisplay').innerText = refCode;
+		document.getElementById('hostContactNameDisplay').innerText = hostContactName;
+		document.getElementById('hostContactEmailDisplay').innerText = hostContactEmail;
+		document.getElementById('finContactNameDisplay').innerText = finContactName;
+		document.getElementById('finContactEmailDisplay').innerText = finContactEmail;
+		document.getElementById('signatoryTitleDisplay').innerText = signatoryTitle;
+		document.getElementById('hostContactPositionDisplay').innerText = hostContactPosition;
+document.getElementById('finContactPositionDisplay').innerText = finContactPosition;
 
 
 
