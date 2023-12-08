@@ -173,6 +173,25 @@
             <textarea  rows="6" class="form-control" id="objectives" name="objectives" ></textarea>
         </div>
     </div>-->
+	<!-- Add this to your HTML form -->
+<div class="form-group row">
+    <label for="mainTasks" class="col-sm-2 col-form-label">Main Tasks:</label>
+    <div class="col-sm-10">
+        <textarea class="form-control" id="mainTasks" name="mainTasks" rows="10">Main Task 1
+Main Task 2
+Main Task 3</textarea>
+    </div>
+</div>
+<!-- Add this to your HTML form -->
+<div class="form-group row">
+    <label for="supportingTasks" class="col-sm-2 col-form-label">Supporting Tasks:</label>
+    <div class="col-sm-10">
+        <textarea class="form-control" id="supportingTasks" name="supportingTasks" rows="10">Supporting Task 1
+Supporting Task 2
+Supporting Task 3</textarea>
+    </div>
+</div>
+
 
 
     <button type="button" class="btn btn-primary" onclick="generateAgreement()">Generate Agreement</button>
@@ -318,11 +337,11 @@ Natural Resources Canada | Ressources naturelles Canada<br>
 
 <h2>ANNEX A</h2>
 <p>ASSIGNMENT WORK OBJECTIVES</p>
-<p><strong>Main Tasks (4 – 6 bullets/items)</strong></p>
-<ul>
-<li>To be completed</li>
+<p><strong>Main Tasks </strong></p>
+<div id="mainTasksDisplay"></div>
 
-</ul>
+<p id="supportingTasksParagraph"><strong>Supporting Tasks </strong></p>
+<div id="supportingTasksDisplay"></div>
 
 		<!-- Add more content here as needed -->
 
@@ -337,7 +356,12 @@ Natural Resources Canada | Ressources naturelles Canada<br>
     <script>
     // Declare variables at the beginning of the script
     let userName, ministerName, departmentName, departmentAddress, linguisticProfile, clearance, startDate, endDate, level, depCode, orgCode, refCode, hostContactName, hostContactPhone,hostContactEmail, finContactName, finContactPhone, finContactEmail, signatoryTitle, hostContactPosition, finContactPosition;
+	
+	// Declare an array to store main tasks
+	let mainTasks = [];
+	let supportingTasks = [];
 
+	
     async function generateAgreement() {
         const userNameInput = document.getElementById("personName");
         const ministerNameInput = document.getElementById("ministerName");
@@ -351,25 +375,15 @@ Natural Resources Canada | Ressources naturelles Canada<br>
 		const depCodeInput = document.getElementById("depCode");
 		const orgCodeInput = document.getElementById("orgCode");
 		const refCodeInput = document.getElementById("refCode");
-		// Line 1s
 		const hostContactNameInput = document.getElementById("hostContactName");
 		const hostContactEmailInput = document.getElementById("hostContactEmail");
 		const finContactNameInput = document.getElementById("finContactName");
 		const finContactEmailInput = document.getElementById("finContactEmail");
 		const signatoryTitleInput = document.getElementById("signatoryTitle");
-// Additional Line 1s
-const hostContactPositionInput = document.getElementById("hostContactPosition");
-const finContactPositionInput = document.getElementById("finContactPosition");
-
-// Additional Line 2s
-
-
-// Additional Line 3s
-
-
-
-
-
+		const hostContactPositionInput = document.getElementById("hostContactPosition");
+		const finContactPositionInput = document.getElementById("finContactPosition");
+		const mainTasksInput = document.getElementById("mainTasks");
+		const supportingTasksInput = document.getElementById("supportingTasks");
 		
 		 // Update the variables with input values
         userName = userNameInput.value.trim() || "";
@@ -390,7 +404,9 @@ const finContactPositionInput = document.getElementById("finContactPosition");
 		finContactEmail = finContactEmailInput.value.trim() || "";
 		signatoryTitle = signatoryTitleInput.value.trim() || "";
 		hostContactPosition = hostContactPositionInput.value.trim() || "";
-finContactPosition = finContactPositionInput.value.trim() || "";
+		finContactPosition = finContactPositionInput.value.trim() || "";
+		mainTasks = mainTasksInput.value.trim().split('\n').map(task => task.trim());
+		supportingTasks = supportingTasksInput.value.trim().split('\n').map(supportingTask => supportingTask.trim());
 
 
         
@@ -417,7 +433,11 @@ finContactPosition = finContactPositionInput.value.trim() || "";
 		document.getElementById('finContactEmailDisplay').innerText = finContactEmail;
 		document.getElementById('signatoryTitleDisplay').innerText = signatoryTitle;
 		document.getElementById('hostContactPositionDisplay').innerText = hostContactPosition;
-document.getElementById('finContactPositionDisplay').innerText = finContactPosition;
+		document.getElementById('finContactPositionDisplay').innerText = finContactPosition;
+		
+		// Update the display of main tasks
+		updateMainTasksDisplay();
+		updateSupportingTasksDisplay();
 
 
 
@@ -425,6 +445,64 @@ document.getElementById('finContactPositionDisplay').innerText = finContactPosit
         // Show the letter content
         document.getElementById('letterContent').style.display = 'block';
     }
+	function updateMainTasksDisplay() {
+    // Get the element where you want to display the main tasks
+    const mainTasksDisplay = document.getElementById('mainTasksDisplay');
+
+    // Clear the existing content
+    mainTasksDisplay.innerHTML = '';
+
+    // Check if there are tasks to display
+    if (mainTasks.length > 0) {
+        // Create an unordered list element
+        const ul = document.createElement('ul');
+
+        // Populate the list with tasks
+        mainTasks.forEach(task => {
+            const li = document.createElement('li');
+            li.textContent = task;
+            ul.appendChild(li);
+        });
+
+        // Append the list to the display element
+        mainTasksDisplay.appendChild(ul);
+    } 
+}
+
+function updateSupportingTasksDisplay() {
+    // Get the element where you want to display the supporting tasks
+    const supportingTasksDisplay = document.getElementById('supportingTasksDisplay');
+
+    // Clear the existing content
+    supportingTasksDisplay.innerHTML = '';
+
+    // Check if there are tasks to display
+    if (supportingTasks != "") {
+        // Create an unordered list element
+        const ul = document.createElement('ul');
+
+        // Populate the list with tasks
+        supportingTasks.forEach(supportingTask => {
+            const li = document.createElement('li');
+            li.textContent = supportingTask;
+            ul.appendChild(li);
+        });
+
+        // Append the list to the display element
+        supportingTasksDisplay.appendChild(ul);
+
+        // Show the supporting tasks paragraph
+        document.getElementById('supportingTasksParagraph').style.display = 'block';
+    } else {
+       
+        // Hide the supporting tasks paragraph if there are no tasks
+        document.getElementById('supportingTasksParagraph').style.display = 'none';
+    }
+}
+
+
+
+	
 </script>
 
 
