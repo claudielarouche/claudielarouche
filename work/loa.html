@@ -33,9 +33,12 @@
     </style>
 </head>
 <body>
+<h1>Letter of Agreement Generator by Claudie Larouche</h1>
+
+<p>If you have any questions or requests for modifications, please contact Claudie at Claudielarouche@gmail.com</p>
        <form id="agreementForm">
     <div class="form-group row">
-        <label for="personName" class="col-sm-2 col-form-label">Person's Name:</label>
+        <label for="personName" class="col-sm-2 col-form-label">Free Agent's Name:</label>
         <div class="col-sm-10">
             <input type="text" class="form-control" id="personName" name="personName" required value="Claudie Larouche">
         </div>
@@ -68,6 +71,15 @@
             <input type="text" class="form-control" id="linguisticProfile" name="linguisticProfile" required value="CBC/CBC">
         </div>
     </div>
+	
+	<div class="form-group row">
+    <div class="col-sm-10 offset-sm-2">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="bilingualBonusCheckbox" onclick="updateBilingualBonusDisplay()">
+            <label class="form-check-label" for="bilingualBonusCheckbox">Free agent is receiving the bilingual bonus</label>
+        </div>
+    </div>
+</div>
 	
 	<div class="form-group row">
         <label for="clearance" class="col-sm-2 col-form-label">Position Sercurity Clearance:</label>
@@ -184,7 +196,7 @@ Main Task 3</textarea>
 </div>
 <!-- Add this to your HTML form -->
 <div class="form-group row">
-    <label for="supportingTasks" class="col-sm-2 col-form-label">Supporting Tasks:</label>
+    <label for="supportingTasks" class="col-sm-2 col-form-label">Supporting Tasks (optional):</label>
     <div class="col-sm-10">
         <textarea class="form-control" id="supportingTasks" name="supportingTasks" rows="10">Supporting Task 1
 Supporting Task 2
@@ -281,8 +293,8 @@ Supporting Task 3</textarea>
 
 <p>The IS transfer will include the following amounts:</p>
 
-<ol><li><strong>100%</strong> of the Free Agent’s indeterminate and bilingual bonus at the <strong><span id="levelDisplay">IT-03</span></strong> level for the duration of the Agreement in accordance with the Directive on Terms and Conditions of Employment and the Bilingualism Bonus Directive</li>
-<li>an additional 20% of the Free Agent’s salary and bilingualism bonus, including for any overtime hours that are payable in cash</li>
+<ol><li><strong>100%</strong> of the Free Agent’s indeterminate <span id="bilingualBonusDisplay1">and bilingual bonus </span>at the <strong><span id="levelDisplay">IT-03</span></strong> level for the duration of the Agreement in accordance with the Directive on Terms and Conditions of Employment and the Bilingualism Bonus Directive</li>
+<li>an additional 20% of the Free Agent’s salary<span id="bilingualBonusDisplay2"> and bilingualism bonus</span>, including for any overtime hours that are payable in cash</li>
 </ol>
 
 <p>5.2 Host financial information:</p>
@@ -438,7 +450,7 @@ Natural Resources Canada | Ressources naturelles Canada<br>
 		// Update the display of main tasks
 		updateMainTasksDisplay();
 		updateSupportingTasksDisplay();
-
+		updateBilingualBonusDisplay();
 
 
 
@@ -501,7 +513,39 @@ function updateSupportingTasksDisplay() {
 }
 
 
+function updateBilingualBonusDisplay() {
+    // Get the checkbox element
+    const bilingualBonusCheckbox = document.getElementById('bilingualBonusCheckbox');
 
+    // Get the element where you want to display the bilingual bonus input
+    const bilingualBonusDisplay1 = document.getElementById('bilingualBonusDisplay1');
+	const bilingualBonusDisplay2 = document.getElementById('bilingualBonusDisplay2');
+
+
+    // Get the input element for bilingual bonus
+    const bilingualBonusInput = document.getElementById('bilingualBonus');
+
+    // Check if the checkbox is checked
+    if (bilingualBonusCheckbox.checked) {
+        // Show the bilingual bonus display
+        bilingualBonusDisplay1.style.display = 'inline';
+		bilingualBonusDisplay2.style.display = 'inline';
+
+
+        // Optional: Set the input to a default value or enable validation
+        // bilingualBonusInput.value = ""; // You can set a default value if needed
+        // bilingualBonusInput.required = true; // Uncomment this line if bilingual bonus is required
+    } else {
+        // Hide the bilingual bonus display
+        bilingualBonusDisplay1.style.display = 'none';
+		bilingualBonusDisplay2.style.display = 'none';
+
+
+        // Optional: Reset the input value or disable validation
+        // bilingualBonusInput.value = "";
+        // bilingualBonusInput.required = false; // Uncomment this line if bilingual bonus is not required
+    }
+}
 	
 </script>
 
