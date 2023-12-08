@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Quotes</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        #quote-container {
+            border: 1px solid #ccc;
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div id="quote-container">
+    <h2>Quote of the Week</h2>
+    <p id="quote-text">Placeholder Quote</p>
+    <p id="week-number">Week 1</p>
+</div>
+
+<script>
+    // Replace the placeholders with your actual quotes
+    const quotes = [
+        "Don’t wait for the perfect moment. Take the moment and make it perfect",
+        "If you look at what you have in life, you'll always have more. If you look at what you don't have in life, you'll never have enough - Oprah Winfrey",
+		"Quote 2",
+		"Quote 2",
+		"Quote 2",
+		"Quote 2",
+		"Quote 2",
+		"Quote 2",
+		"Quote 2",
+		"Quote 2",
+		"Quote 2",
+		"Quote 2",
+		"Quote 2",
+		"Quote 2",
+		"Quote 2",
+		"Quote 2",
+		"Quote 2",
+		"Quote 2",
+		"Quote 2",
+		"Quote 2",
+		"Quote 2",
+		"Quote 2",
+		"Quote 2",
+		"Quote 2",
+		"Quote 2",
+		"Quote 2",
+		"Quote 2",
+		"Quote 2",
+		"Quote 2",
+		"Quote 2",
+		"Quote 2",
+		"Quote 2",
+		"Quote 2",
+		"Quote 2",
+		"Quote 2",
+		"Quote 2",
+		"Quote 2",
+		"Quote 2",
+		"Quote 2",
+		"Quote 2",
+		"Quote 2",
+		"Quote 2",
+		"Quote 2",
+		"Quote 2",
+		"Quote 2",
+		"Quote 2",
+		"Quote 2",
+		"Quote 2",
+		"If you don’t get everything you want, think of the things you don’t get that you don’t want - Oscar Wilde",
+		"Always give your 100%, unless you’re giving blood",
+		"Not everything that can be counted counts, and not everything that counts can be counted. - Albert Einstein",
+		"Let our advance worrying become advance thinking and planning - Winston Churchill",
+		"If you want to be poor, find some rich friends. If you want to be rich, find some poor friends.",
+    ];
+
+    // Get the current date
+    const today = new Date();
+
+    // Calculate the current week number
+    const startOfYear = new Date(today.getFullYear(), 0, 0);
+    const diff = today - startOfYear;
+    const oneWeek = 1000 * 60 * 60 * 24 * 7;
+    const weekNumber = Math.floor(diff / oneWeek) + 1;
+
+    // Get the quote for the current week
+    const currentQuote = quotes[weekNumber - 1];
+
+    // Update the HTML with the quote and week number
+    document.getElementById('quote-text').innerText = currentQuote;
+    document.getElementById('week-number').innerText = 'Week ' + weekNumber;
+</script>
+
+</body>
+</html>
