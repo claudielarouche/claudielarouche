@@ -73,7 +73,7 @@ function renderTable(data) {
         headers.forEach(header => {
             if (header === 'URL') {
                 // Make the URL clickable as a link
-                tableHtml += `<td style="background-color: #e6f3ff;"><a href="${row[header]}" target="_blank">URL</a></td>`;
+                tableHtml += `<td><a href="${row[header]}" target="_blank">URL</a></td>`;
             } else if (header === 'Day of Week') {
                 // Calculate and display the day of the week
                 const dateParts = currentDate.split('-');
