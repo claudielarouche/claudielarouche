@@ -74,13 +74,13 @@ function renderTable(data) {
             if (header === 'URL') {
                 // Make the URL clickable as a link
                 tableHtml += `<td><a href="${row[header]}" target="_blank">URL</a></td>`;
-            } else if (header === 'DayOfWeek') {
+            } else if (header === 'Day Of Week') {
                 // Calculate and display the day of the week
                 const dateParts = currentDate.split('-');
                 const currentJsDate = new Date(dateParts[0], dateParts[1] - 1, dateParts[2]);
                 const dayOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][currentJsDate.getDay()];
                 tableHtml += `<td>${dayOfWeek}</td>`;
-            } else if (header === 'TimeOfDay') {
+            } else if (header === 'Time Of Day') {
                 // Calculate and display the time of day
                 const time = row['Time'] ? row['Time'].trim() : '';
                 if (time.startsWith('09') || time.startsWith('10') || time.startsWith('11')) {
