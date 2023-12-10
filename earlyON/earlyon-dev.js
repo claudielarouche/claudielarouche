@@ -63,9 +63,14 @@ function renderTable(data) {
         document.getElementById('csvData').innerHTML = 'Error loading data.';
         return;
     }
-
-    //let totalData = 0;
-    headers.forEach(header => {
+	
+	    //let totalData = 0;
+    filteredData.forEach(row => {
+        const currentDate = row['Date'] ? row['Date'] : '';
+        if (!isPastDate(currentDate)) {
+            //totalData++;
+            tableHtml += '<tr>';
+            headers.forEach(header => {
 		if (header === 'URL') {
 			// Make the URL clickable as a link
 			tableHtml += `<td><a href="${row[header]}" target="_blank">URL</a></td>`;
@@ -90,6 +95,19 @@ function renderTable(data) {
 			tableHtml += `<td>${row[header]}</td>`;
 		}
 	});
+
+	
+				
+				headers.forEach(header => {
+    			
+            });
+            tableHtml += '</tr>';
+        }
+    });
+	
+   
+
+    
 
     tableHtml += '</tbody></table>';
 
