@@ -86,7 +86,7 @@ function renderTable(data) {
 			const time = row['Hours'] ? row['Hours'].trim() : '';
 			if (time.startsWith('08') || time.startsWith('09') || time.startsWith('10') || time.startsWith('11')) {
 				tableHtml += '<td>Morning</td>';
-			} else if (time.startsWith('12') || time.startsWith('13') || time.startsWith('14') || time.startsWith('15') || time.startsWith('16')) {
+			} else if (time.startsWith('12') || time.startsWith('13') || time.startsWith('14') || time.startsWith('15') ) {
 				tableHtml += '<td>Afternoon</td>';
 			} else {
 				tableHtml += '<td>Evening</td>';
