@@ -95,7 +95,7 @@ function renderTable(data) {
                 const address = row[header] ? row[header].trim() : '';
                 if (address !== '') {
                     const googleMapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)},+Ottawa,+Canada`;
-                    tableHtml += `<td><a href="${googleMapsLink}" target="_blank">${address}</a></td>`;
+                    tableHtml += `<td><a href="${googleMapsLink}" >${address}</a></td>`;
                 } else {
                     tableHtml += '<td></td>';
                 }
