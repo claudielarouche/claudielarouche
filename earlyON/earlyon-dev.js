@@ -82,7 +82,7 @@ function renderTable(data) {
                 tableHtml += `<td>${dayOfWeek}</td>`;
             } else if (header === 'Time of Day') {
                 // Calculate and display the time of day
-                const time = row['Time'] ? row['Time'].trim() : '';
+                const time = row['Hours'] ? row['Hours'].trim() : '';
                 if (time.startsWith('09') || time.startsWith('10') || time.startsWith('11')) {
                     tableHtml += '<td>Morning</td>';
                 } else if (time.startsWith('12') || time.startsWith('13') || time.startsWith('14') || time.startsWith('15') || time.startsWith('16')) {
