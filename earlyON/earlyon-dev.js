@@ -67,52 +67,47 @@ function renderTable(data) {
 	
 	    //let totalData = 0;
     filteredData.forEach(row => {
-        const currentDate = row['Date'] ? row['Date'] : '';
-        if (!isPastDate(currentDate)) {
-            //totalData++;
-            tableHtml += '<tr>';
-            headers.forEach(header => {
-		if (header === 'URL') {
-			// Make the URL clickable as a link
-			tableHtml += `<td><a href="${row[header]}" target="_blank">URL</a></td>`;
-		} else if (header === 'Day of Week') {
-			// Calculate and display the day of the week
-			const dateParts = row['Date'].split('-');
-			const currentDate = new Date(dateParts[0], dateParts[1] - 1, dateParts[2]);
-			const dayOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][currentDate.getDay()];
-			tableHtml += `<td>${dayOfWeek}</td>`;
-		} else if (header === 'Time of Day') {
-			// Calculate and display the time of day
-			const time = row['Hours'] ? row['Hours'].trim() : '';
-			if (time.startsWith('08') || time.startsWith('09') || time.startsWith('10') || time.startsWith('11')) {
-				tableHtml += '<td>Morning</td>';
-			} else if (time.startsWith('12') || time.startsWith('13') || time.startsWith('14') || time.startsWith('15') || time.startsWith('16')) {
-				tableHtml += '<td>Afternoon</td>';
-			} else {
-				tableHtml += '<td>Evening</td>';
-			}
-		} 
-		else if (header === 'Address') {
-    const address = row[header] ? row[header].trim() : '';
-    if (address !== '') {
-        // Create a link with the Google Maps URL
-        const googleMapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)},+Ottawa,+Canada`;
-        tableHtml += `<td><a href="${googleMapsLink}" target="_blank">${address}</a></td>`;
-    } else {
-        // If the address is empty, display an empty cell
-        tableHtml += '<td></td>';
+    const currentDate = row['Date'] ? row['Date'] : '';
+    if (!isPastDate(currentDate)) {
+        tableHtml += '<tr>';
+        headers.forEach(header => {
+            if (header === 'URL') {
+                // Make the URL clickable as a link
+                tableHtml += `<td><a href="${row[header]}" target="_blank">URL</a></td>`;
+            } else if (header === 'DayOfWeek') {
+                // Calculate and display the day of the week
+                const dateParts = currentDate.split('-');
+                const currentJsDate = new Date(dateParts[0], dateParts[1] - 1, dateParts[2]);
+                const dayOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][currentJsDate.getDay()];
+                tableHtml += `<td>${dayOfWeek}</td>`;
+            } else if (header === 'TimeOfDay') {
+                // Calculate and display the time of day
+                const time = row['Time'] ? row['Time'].trim() : '';
+                if (time.startsWith('09') || time.startsWith('10') || time.startsWith('11')) {
+                    tableHtml += '<td>Morning</td>';
+                } else if (time.startsWith('12') || time.startsWith('13') || time.startsWith('14') || time.startsWith('15') || time.startsWith('16')) {
+                    tableHtml += '<td>Afternoon</td>';
+                } else {
+                    tableHtml += '<td>Evening</td>';
+                }
+            } else if (header === 'Address') {
+                // Create a link with the Google Maps URL for the address
+                const address = row[header] ? row[header].trim() : '';
+                if (address !== '') {
+                    const googleMapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)},+Ottawa,+Canada`;
+                    tableHtml += `<td><a href="${googleMapsLink}" target="_blank">${address}</a></td>`;
+                } else {
+                    tableHtml += '<td></td>';
+                }
+            } else {
+                // Display other columns
+                tableHtml += `<td>${row[header]}</td>`;
+            }
+        });
+        tableHtml += '</tr>';
     }
-}
-	});
+});
 
-	
-				
-				headers.forEach(header => {
-    			
-            });
-            tableHtml += '</tr>';
-        }
-    });
 	
    
 
