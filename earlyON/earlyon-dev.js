@@ -90,7 +90,7 @@ function renderTable(data) {
                 } else {
                     tableHtml += '<td>Evening</td>';
                 }
-            } else if (header === 'Address') {
+            } else if (header === 'Location Address') {
                 // Create a link with the Google Maps URL for the address
                 const address = row[header] ? row[header].trim() : '';
                 if (address !== '') {
