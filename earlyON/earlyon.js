@@ -45,7 +45,9 @@ function renderTable(data) {
     }
 
     const headers = Object.keys(data[0]);
+	headers.push('Time of Day'); // Add this line to include the new header
 	headers.push('Day of Week'); // Add this line to include the new header
+	
 
     let tableHtml = '<table id="dataTable"><thead><tr>';
     headers.forEach(header => {
@@ -62,27 +64,38 @@ function renderTable(data) {
         document.getElementById('csvData').innerHTML = 'Error loading data.';
         return;
     }
-
-    //let totalData = 0;
+	
+	    //let totalData = 0;
     filteredData.forEach(row => {
         const currentDate = row['Date'] ? row['Date'] : '';
         if (!isPastDate(currentDate)) {
             //totalData++;
             tableHtml += '<tr>';
             headers.forEach(header => {
-                if (header === 'URL') {
-        // Make the URL clickable as a link
-        tableHtml += `<td><a href="${row[header]}" target="_blank">URL</a></td>`;
-    } else if (header === 'Day of Week') {
-        // Calculate and display the day of the week
-        const dateParts = row['Date'].split('-');
-        const currentDate = new Date(dateParts[0], dateParts[1] - 1, dateParts[2]);
-        const dayOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][currentDate.getDay()];
-        tableHtml += `<td>${dayOfWeek}</td>`;
-    } else {
-        tableHtml += `<td>${row[header]}</td>`;
-    }
-});
+		if (header === 'URL') {
+			// Make the URL clickable as a link
+			tableHtml += `<td><a href="${row[header]}" target="_blank">URL</a></td>`;
+		} else if (header === 'Day of Week') {
+			// Calculate and display the day of the week
+			const dateParts = row['Date'].split('-');
+			const currentDate = new Date(dateParts[0], dateParts[1] - 1, dateParts[2]);
+			const dayOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][currentDate.getDay()];
+			tableHtml += `<td>${dayOfWeek}</td>`;
+		} else if (header === 'Time of Day') {
+			// Calculate and display the time of day
+			const time = row['Hours'] ? row['Hours'].trim() : '';
+			if (time.startsWith('08') || time.startsWith('09') || time.startsWith('10') || time.startsWith('11')) {
+				tableHtml += '<td>Morning</td>';
+			} else if (time.startsWith('12') || time.startsWith('13') || time.startsWith('14') || time.startsWith('15') || time.startsWith('16')) {
+				tableHtml += '<td>Afternoon</td>';
+			} else {
+				tableHtml += '<td>Evening</td>';
+			}
+		} else {
+			// Display other columns
+			tableHtml += `<td>${row[header]}</td>`;
+		}
+	});
 
 	
 				
@@ -92,6 +105,10 @@ function renderTable(data) {
             tableHtml += '</tr>';
         }
     });
+	
+   
+
+    
 
     tableHtml += '</tbody></table>';
 
