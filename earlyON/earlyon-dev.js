@@ -91,10 +91,18 @@ function renderTable(data) {
 			} else {
 				tableHtml += '<td>Evening</td>';
 			}
-		} else {
-			// Display other columns
-			tableHtml += `<td>${row[header]}</td>`;
-		}
+		} 
+		else if (header === 'Address') {
+    const address = row[header] ? row[header].trim() : '';
+    if (address !== '') {
+        // Create a link with the Google Maps URL
+        const googleMapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)},+Ottawa,+Canada`;
+        tableHtml += `<td><a href="${googleMapsLink}" target="_blank">${address}</a></td>`;
+    } else {
+        // If the address is empty, display an empty cell
+        tableHtml += '<td></td>';
+    }
+}
 	});
 
 	
