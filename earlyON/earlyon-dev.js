@@ -45,8 +45,9 @@ function renderTable(data) {
     }
 
     const headers = Object.keys(data[0]);
+	headers.push('Time of Day'); // Add this line to include the new header
 	headers.push('Day of Week'); // Add this line to include the new header
-	headers.push('Time Of Day'); // Add this line to include the new header
+	
 
     let tableHtml = '<table id="dataTable"><thead><tr>';
     headers.forEach(header => {
@@ -80,7 +81,7 @@ function renderTable(data) {
 			const currentDate = new Date(dateParts[0], dateParts[1] - 1, dateParts[2]);
 			const dayOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][currentDate.getDay()];
 			tableHtml += `<td>${dayOfWeek}</td>`;
-		} else if (header === 'Time Of Day') {
+		} else if (header === 'Time of Day') {
 			// Calculate and display the time of day
 			const time = row['Hours'] ? row['Hours'].trim() : '';
 			if (time.startsWith('08') || time.startsWith('09') || time.startsWith('10') || time.startsWith('11')) {
