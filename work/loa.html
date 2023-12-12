@@ -39,7 +39,6 @@
 <h2>Coming soon</h2>
 <ul>
 <li>Change all email addresses into clickable links</li>
-<li>Enable the completed form to be saved in XML or JSON format. Add a button to load an previously saved form, so that changes to existing LOAs can be done quicker (no need to fill the form a 2nd time)</li>
 <li>Maybe more! Submit your ideas to Claudie! </li>
 </ul>
        <form id="agreementForm">
@@ -78,12 +77,13 @@
         </div>
     </div>
 	
-	<div class="form-group row">
-    <div class="col-sm-10 offset-sm-2">
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="bilingualBonusCheckbox" onclick="updateBilingualBonusDisplay()">
-            <label class="form-check-label" for="bilingualBonusCheckbox">Free Agent is receiving the bilingual bonus</label>
-        </div>
+<div class="form-group row">
+    <label for="bilingualBonusDropdown" class="col-sm-2 col-form-label">Free Agent is receiving the bilingual bonus:</label>
+    <div class="col-sm-10">
+        <select class="form-control" id="bilingualBonusDropdown" name="bilingualBonusDropdown">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
     </div>
 </div>
 	
@@ -213,6 +213,14 @@ Supporting Task 3</textarea>
 
 
     <button type="button" class="btn btn-primary" onclick="generateAgreement()">Generate Letter of Agreement</button>
+	<!-- Save button -->
+<button type="button" class="btn btn-success" onclick="saveFormData()">Save Form Data</button>
+
+<!-- Load button -->
+<input type="file" id="fileInput" style="display: none;">
+<button type="button" class="btn btn-info" onclick="loadFormData()">Load Form Data</button>
+
+	
 </form>
 
 
@@ -367,7 +375,7 @@ Natural Resources Canada | Ressources naturelles Canada<br>
 	
 	<!-- Link Bootstrap JS and Popper.js -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <!--<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>-->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 
@@ -518,42 +526,144 @@ function updateSupportingTasksDisplay() {
     }
 }
 
-
 function updateBilingualBonusDisplay() {
     // Get the checkbox element
-    const bilingualBonusCheckbox = document.getElementById('bilingualBonusCheckbox');
-
-    // Get the element where you want to display the bilingual bonus input
-    const bilingualBonusDisplay1 = document.getElementById('bilingualBonusDisplay1');
+    //const bilingualBonusCheckbox = document.getElementById('bilingualBonusCheckbox');
+	const bilingualBonusValue = document.getElementById('bilingualBonusDropdown').value;
+	
+	const bilingualBonusDisplay1 = document.getElementById('bilingualBonusDisplay1');
 	const bilingualBonusDisplay2 = document.getElementById('bilingualBonusDisplay2');
 
+    // Get the element where you want to display the bilingual bonus
+    //const bilingualBonusDisplay = document.getElementById('bilingualBonusDisplay');
 
-    // Get the input element for bilingual bonus
-    const bilingualBonusInput = document.getElementById('bilingualBonus');
-
-    // Check if the checkbox is checked
-    if (bilingualBonusCheckbox.checked) {
-        // Show the bilingual bonus display
+    if (bilingualBonusValue === 'Yes') {
+        // Display the element if the checkbox is checked
         bilingualBonusDisplay1.style.display = 'inline';
 		bilingualBonusDisplay2.style.display = 'inline';
-
-
-        // Optional: Set the input to a default value or enable validation
-        // bilingualBonusInput.value = ""; // You can set a default value if needed
-        // bilingualBonusInput.required = true; // Uncomment this line if bilingual bonus is required
     } else {
-        // Hide the bilingual bonus display
+        // Hide the element if the checkbox is unchecked
         bilingualBonusDisplay1.style.display = 'none';
 		bilingualBonusDisplay2.style.display = 'none';
-
-
-        // Optional: Reset the input value or disable validation
-        // bilingualBonusInput.value = "";
-        // bilingualBonusInput.required = false; // Uncomment this line if bilingual bonus is not required
     }
 }
-	
-</script>
+
+
+
+
+function saveFormData() {
+    // Prompt the user for the file name
+    const fileName = prompt('Enter the file name (without extension):');
+    
+    if (!fileName) {
+        // If the user cancels or provides an empty name, exit the function
+        return;
+    }
+
+    // Get all input elements in the form
+    const formElements = document.getElementById('agreementForm').elements;
+
+    // Create an object to store form data
+    const formData = {};
+
+    // Iterate through form elements and save their values
+    for (let i = 0; i < formElements.length; i++) {
+        const element = formElements[i];
+        // Exclude buttons and file input from saving
+        if (element.type !== 'button' && element.type !== 'file') {
+            if (element.type === 'checkbox') {
+                // Save the state of the checkbox as a boolean
+                formData[element.name] = element.checked;
+            } else {
+                formData[element.name] = element.value;
+            }
+        }
+    }
+
+    // Convert the object to JSON
+    const jsonData = JSON.stringify(formData);
+
+    // Create a Blob containing the JSON data
+    const blob = new Blob([jsonData], { type: 'application/json' });
+
+    // Create a link to download the file
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    
+    // Append the file extension to the user-provided file name
+    a.download = `${fileName}.json`;
+
+    // Append the link to the document and trigger the download
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+}
+
+
+function loadFormData() {
+    // Create an input element of type file
+    const input = document.createElement('input');
+    input.type = 'file';
+
+    // Trigger a click event on the input
+    input.click();
+
+    // Listen for the change event on the input
+    input.addEventListener('change', function () {
+        const file = input.files[0];
+
+        if (file) {
+            // Create a FileReader to read the contents of the file
+            const reader = new FileReader();
+
+            reader.onload = function (e) {
+                try {
+                    // Parse the JSON data
+                    const jsonData = JSON.parse(e.target.result);
+
+                    // Get all input elements in the form
+                    const formElements = document.getElementById('agreementForm').elements;
+
+                    // Iterate through form elements and set their values
+                    for (let i = 0; i < formElements.length; i++) {
+						
+                        const element = formElements[i];
+
+                        // Check if the element's name exists in the loaded data
+                        if (jsonData.hasOwnProperty(element.name)) {
+                            if (element.type === 'checkbox') {
+                                // Set the checked state of the checkbox
+                                element.checked = jsonData[element.name];
+                                // Call the update function for checkboxes (if any)
+                                if (element.name === 'bilingualBonusCheckbox') {
+                                    updateBilingualBonusDisplay();
+                                }
+                            } else if (element.type === 'radio') {
+                                // Set the checked state of radio buttons
+                                element.checked = element.value === jsonData[element.name];
+                            } else {
+                                // Set the value of the element
+								
+                                element.value = jsonData[element.name];
+								
+
+                            }
+                        }
+                    }
+
+                    alert('Form data loaded successfully!');
+                } catch (error) {
+                    console.error(error);
+                    alert('Error loading form data. Please make sure the file is valid JSON.');
+                }
+            };
+
+            // Read the contents of the file as text
+            reader.readAsText(file);
+        }
+    });
+}
+
 
 
 
