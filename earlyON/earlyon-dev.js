@@ -60,6 +60,9 @@ function renderTable(data) {
 			tableHtml += `<th>${header}</th>`;
 		}
 	});
+	// Manually include "Time of Day" and "Day of Week" and "URL" columns in the header
+	tableHtml += '<th>Time of Day</th>';
+	tableHtml += '<th>Day of Week</th>';
 	tableHtml += '<th>URL</th></tr></thead><tbody>';
 
 
