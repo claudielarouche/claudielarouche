@@ -140,7 +140,7 @@ function renderTable(data) {
 			]
 		});
     }
-	
+	$('#dataTable_filter input').val(currentSearchValue).trigger('input');
 }
 
 function filterDataByDate(data, selectedDate) {
@@ -172,7 +172,11 @@ function isPastDate(dateString) {
     return selectedDate < currentDate;
 }
 
+let currentSearchValue = ''; // Variable to store the current search value
+
+
 // Listen for changes in date input
 document.getElementById('selectedDate').addEventListener('change', function() {
+	currentSearchValue = $('#dataTable_filter input').val();
     renderTable(originalData);
 });
