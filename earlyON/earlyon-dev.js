@@ -50,10 +50,18 @@ function renderTable(data) {
 	
 
     let tableHtml = '<table id="dataTable"><thead><tr>';
-    headers.forEach(header => {
-        tableHtml += `<th>${header}</th>`;
-    });
-    tableHtml += '</tr></thead><tbody>';
+    // Get the unique headers in the order they appear in the data
+	const uniqueHeaders = Array.from(new Set(originalData.flatMap(row => Object.keys(row))));
+
+	// Process the header row
+	tableHtml += '<thead><tr>';
+	uniqueHeaders.forEach(header => {
+		if (header !== 'URL') {
+			tableHtml += `<th>${header}</th>`;
+		}
+	});
+	tableHtml += '<th>URL</th></tr></thead><tbody>';
+
 
     const selectedDate = document.getElementById('selectedDate').value;
 
