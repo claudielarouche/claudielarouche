@@ -110,7 +110,7 @@ function renderTable(data) {
         const url = row['URL'] ? row['URL'].trim() : '';
         if (url !== '') {
              // Make the URL clickable as a link
-                tableHtml += `<td><a href="${row[header]}" target="_blank">URL</a></td>`;
+				tableHtml += `<td><a href="${url}" target="_blank">URL</a></td>`;
         } else {
             tableHtml += '<td></td>';
         }
