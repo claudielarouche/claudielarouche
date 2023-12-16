@@ -74,6 +74,12 @@
 				Please make sure to always click on the link to verify that the playgroup you are planning to visit is still running.
 			</div>
 			
+			<!-- Add this code where you want the button to appear -->
+			<div class="mt-3">
+				<a href="#csvData" class="btn btn-primary">
+					<i class="bi bi-lightning"></i> Go to the data
+				</a>
+			</div>
 
 			<h2>Roadmap</h2>
 			<p>Scroll to the bottom of the screen or <a href="#comingSoon">click this link to see what's coming soon!</a></p>
@@ -82,7 +88,15 @@
 			<label for="selectedDate">Select Date:</label>
 			<input type="date" id="selectedDate">
 			
-			
+			<!-- New Area Filter -->
+			<label for="selectedArea">Select Area:</label>
+			<select id="selectedArea">
+				<option value="">All Areas</option>
+				<option value="East">East</option>
+				<option value="West">West</option>
+				<option value="Central">Central</option>
+				<option value="South">South</option>
+			</select>
 
 			
 			<h2>Data</h2>
