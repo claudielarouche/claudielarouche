@@ -2,7 +2,7 @@ let originalData = []; // Initialize as an empty array
 
 window.onload = function () {
     // Update the path to your CSV file
-    const csvFilePath = 'https://claudielarouche.com/earlyON/data.csv';
+    const csvFilePath = 'https://claudielarouche.com/earlyON/data-dev.csv';
 
     Papa.parse(csvFilePath, {
         header: true,
@@ -45,8 +45,8 @@ function renderTable(data) {
     }
 
     const headers = Object.keys(data[0]);
-	headers.push('Time of Day'); // Add this line to include the new header
-	headers.push('Day of Week'); // Add this line to include the new header
+/*	headers.push('Time of Day'); // Add this line to include the new header
+	headers.push('Day of Week'); // Add this line to include the new header*/
 	
 
     let tableHtml = '<table id="dataTable"><thead><tr>';
@@ -74,7 +74,7 @@ function renderTable(data) {
             if (header === 'URL') {
                 // Make the URL clickable as a link
                 tableHtml += `<td><a href="${row[header]}" target="_blank">URL</a></td>`;
-            } else if (header === 'Day of Week') {
+            } /*else if (header === 'Day of Week') {
                 // Calculate and display the day of the week
                 const dateParts = currentDate.split('-');
                 const currentJsDate = new Date(dateParts[0], dateParts[1] - 1, dateParts[2]);
@@ -90,7 +90,7 @@ function renderTable(data) {
                 } else {
                     tableHtml += '<td>Evening</td>';
                 }
-            } else if (header === 'Location Address') {
+            } */else if (header === 'Location Address') {
                 // Create a link with the Google Maps URL for the address
                 const address = row[header] ? row[header].trim() : '';
                 if (address !== '') {
