@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YWMRD8LX5P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YWMRD8LX5P');
+</script>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>EarlyON Ottawa</title>
@@ -9,9 +18,12 @@
 		<!--<link rel="stylesheet" type="text/css" href="style.css">-->
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 		<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
 		<script src="https://cdn.datatables.net/buttons/1.7.1/js/dataTables.buttons.min.js"></script>
-<script src="https://cdn.datatables.net/buttons/1.7.1/js/buttons.colVis.min.js"></script>
+		<script src="https://cdn.datatables.net/buttons/1.7.1/js/buttons.colVis.min.js"></script>
+
 		<style>
 		
 		#dataTable thead th {
@@ -41,10 +53,7 @@
 				margin-top: 10px;
 			}
 
-			#buttons-columnVisibility{
-				margin-top: 30px;
-			}
-
+			
 			.checked {
 				text-decoration: line-through;
 			}
@@ -55,27 +64,25 @@
 	<body>
 		<div class="bg-image"></div>
 		<div class="container">
-			<h1>EarlyON Ottawa <small>Version 1.1</small>
+			<h1>EarlyON Ottawa <small>Version 1.5</small>
 			</h1>
-			<p>Welcome to the central repository of all the EarlyON groups in Ottawa! Finally a place where parents can see details for all the playgroups in the city. Please note that it is highly recommended to visit the source URL to ensure that the playgroup you are planning to attend is still running.</p>
+			<p>Welcome to the central repository of all the EarlyON groups in Ottawa! Finally a place where parents can see details for all the playgroups in the city.</p>
+			<p>Do you have feedback? Are you interested in volunteering to help keep this website up to date? Did you notice an error in the playgroups listed? I'd be happy to <a href="https://forms.gle/qGohDSaTZ9dA7XWy7" target="_blank">hear from you</a>!</p>
+			  <!-- Add the Bootstrap call-out with a lightbulb icon -->
+			<div class="alert alert-info mt-3" role="alert">
+				<span class="material-icons" style="vertical-align: middle;">lightbulb</span>
+				Please make sure to always click on the link to verify that the playgroup you are planning to visit is still running.
+			</div>
+			<h2>Roadmap</h2>
+			<p>Scroll to the bottom of the screen or <a href="#comingSoon">click this link to see what's coming soon!</a></p>
+			
 			<h2>Filters</h2>
 			<label for="selectedDate">Select Date:</label>
 			<input type="date" id="selectedDate">
-			
-			<label for="selectedArea">Select Area:</label>
-			<select id="selectedArea">
-				<option value="">All Areas</option>
-				<option value="East">East</option>
-				<option value="West">West</option>
-				<option value="Central">Central</option>
-				<option value="South">South</option>
-			</select>
-
-						
 			<h2>Data</h2>
 			<div id="csvData"></div>
 			<p>The data from this table was taken from the various Ottawa EarlyON playgroups posted on the <a href="https://ottawa.ca/en/family-and-social-services/childrens-services/earlyon" target="_blank">Ottawa.ca website</a>. </p>
-			<h2>Next Steps</h2>
+			<!--<h2>Next Steps</h2>
 			<h3>Data Entry</h3>
 			<ul>
 				<li>Lots of data entry needed! Unfortunately, most calendars are published as PDFs so it is not possible to automate a Python script to read data off of the individual websites</li>
@@ -102,8 +109,24 @@
 			<h3>Marketing</h3>
 			<ul>
 				<li>Get the word out! :)</li>
+			</ul>-->
+			<h2 id="comingSoon">Coming soon!</h2>
+			<ul>
+			<li>A column to indicate if the playgroup is taking place Indoors or Outdoors</li>
+			<li>Create an Area filter (For now, you can just type any area in the search box and it should filter out the playgroups that are not in that area)</li>
+			<li>Fix the column visibility appearance (right now when you click on the button, the column to choose are hiding the "column visibility" button)</li>			
+			<li>Add a "Show only evenings or weekend" button in the Filters section</li>
+			<li>Merge the URL and Organizer columns (turn the organizer name into the link to click). Would probably also be good to change the background color, or maybe bold the heading (or both)</li>
+			<li>Move the search box to the left</li>
+			<li>Add a "Clear all filters" button</li>
+			<li>On a different page, start analyzing the data we now have (graphs that show the morning vs afternoon or evening playgroups, chart by area, by language, by day of week, etc.)</li>
+			<li>... and maybe more! :) </li>
 			</ul>
+			<div id="footer">
+    <a href="#" id="backToTop">Back to Top</a>
+</div>
 		</div>
+		
 		<script src="earlyON/earlyon-dev.js"></script>
 	</body>
 </html>
