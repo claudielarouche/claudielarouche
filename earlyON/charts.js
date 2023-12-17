@@ -200,18 +200,21 @@ let currentSearchValue = ''; // Variable to store the current search value
 document.getElementById('selectedDate').addEventListener('change', function() {
 	currentSearchValue = $('#dataTable_filter input').val();
 	renderTable(originalData);
+	updateChart();
 });
 
 // Listen for changes in the Area select input
 document.getElementById('selectedArea').addEventListener('change', function() {
 	currentSearchValue = $('#dataTable_filter input').val();
     renderTable(originalData);
+	updateChart();
 });
 
 // Listen for changes in the Age Group select input
 document.getElementById('selectedAgeGroup').addEventListener('change', function() {
 	currentSearchValue = $('#dataTable_filter input').val();
     renderTable(originalData);
+	updateChart();
 });
 
 function clearAllFilters() {
@@ -277,3 +280,10 @@ function renderChart(data) {
         .attr('height', d => height - margin.bottom - y(d.value));
 }
 
+function updateChart() {
+    // Add your D3 chart update code here
+    // For example, you can call the renderChart function again
+    d3.csv('https://claudielarouche.com/earlyON/archive.csv').then(data => {
+        renderChart(data);
+    });
+}
