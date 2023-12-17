@@ -202,12 +202,21 @@ document.getElementById('selectedArea').addEventListener('change', function() {
     renderTable(originalData);
 });
 
+// Listen for changes in the Age Group select input
+document.getElementById('selectedAgeGroup').addEventListener('change', function() {
+    renderTable(originalData);
+});
+
 function clearAllFilters() {
     // Clear the date filter
     document.getElementById('selectedDate').value = '';
 
     // Clear the area filter
     document.getElementById('selectedArea').value = '';
+	
+	 // Clear the area filter
+    document.getElementById('selectedAgeGroup').value = '';
+
 
     // Clear the DataTable search box
     $('#dataTable_filter input').val('');
