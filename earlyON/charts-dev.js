@@ -198,6 +198,9 @@ function renderChart(data) {
     // Remove the existing chart if any
     d3.select('#chart-container').selectAll('*').remove();
 
+	const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+
     // For example, let's create a simple bar chart showing the count of rows by "Day of Week"
     const dayOfWeekCounts = d3.nest()
 		.key(d => d['Day of Week'])
