@@ -278,6 +278,16 @@ function renderChart(data) {
         .attr('y', d => y(d.value))
         .attr('width', x.bandwidth())
         .attr('height', d => height - margin.bottom - y(d.value));
+		
+	 // Append text elements on top of each bar
+    svg.selectAll('.bar-label')
+        .data(dayOfWeekCounts)
+        .enter().append('text')
+        .attr('class', 'bar-label')
+        .attr('x', d => x(d.key) + x.bandwidth() / 2)
+        .attr('y', d => y(d.value) - 5) // Adjust the position as needed
+        .attr('text-anchor', 'middle')
+        .text(d => d.value);
 }
 
 function updateChart() {
