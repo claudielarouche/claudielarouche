@@ -204,6 +204,7 @@ document.getElementById('selectedArea').addEventListener('change', function() {
 
 // Listen for changes in the Age Group select input
 document.getElementById('selectedAgeGroup').addEventListener('change', function() {
+	currentSearchValue = $('#dataTable_filter input').val();
     renderTable(originalData);
 });
 
