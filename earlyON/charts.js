@@ -271,13 +271,7 @@ function renderChart(data) {
         .attr('height', d => height - margin.bottom - y(d.value));
 }
 
-// ... (remaining code)
-
 // D3
-d3.csv('https://claudielarouche.com/earlyON/archive.csv')
-    .then(data => {
-        renderChart(data); // Call the new function to render the D3 chart
-    })
-    .catch(error => {
-        console.error('Error loading CSV for D3 chart:', error);
-    });
+d3.csv('https://claudielarouche.com/earlyON/archive.csv').then(data => {
+    renderChart(data); // Call the new function to render the D3 chart
+});
