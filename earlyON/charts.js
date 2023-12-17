@@ -227,52 +227,53 @@ function clearAllFilters() {
 }
 
 /*D3*/
+function renderChart(data) {
+    // For example, let's create a simple bar chart showing the count of rows by "Day of Week"
+    const dayOfWeekCounts = d3.nest()
+        .key(d => d['Day of Week'])
+        .rollup(v => v.length)
+        .entries(data);
 
+    const svg = d3.select('#chart-container')
+        .append('svg')
+        .attr('width', 400)
+        .attr('height', 300);
+
+    const margin = { top: 20, right: 20, bottom: 30, left: 40 };
+    const width = 400 - margin.left - margin.right;
+    const height = 300 - margin.top - margin.bottom;
+
+    const x = d3.scaleBand()
+        .domain(dayOfWeekCounts.map(d => d.key))
+        .range([margin.left, width - margin.right])
+        .padding(0.1);
+
+    const y = d3.scaleLinear()
+        .domain([0, d3.max(dayOfWeekCounts, d => d.value)])
+        .nice()
+        .range([height - margin.bottom, margin.top]);
+
+    svg.append('g')
+        .attr('transform', `translate(0,${height - margin.bottom})`)
+        .call(d3.axisBottom(x));
+
+    svg.append('g')
+        .attr('transform', `translate(${margin.left},0)`)
+        .call(d3.axisLeft(y));
+
+    svg.selectAll('.bar')
+        .data(dayOfWeekCounts)
+        .enter().append('rect')
+        .attr('class', 'bar')
+        .attr('x', d => x(d.key))
+        .attr('y', d => y(d.value))
+        .attr('width', x.bandwidth())
+        .attr('height', d => height - margin.bottom - y(d.value));
+}
+
+// ... (remaining code)
+
+// D3
 d3.csv('https://claudielarouche.com/earlyON/archive.csv').then(data => {
-        // Your chart code here
-
-        // For example, let's create a simple bar chart showing the count of rows by "Day of Week"
-        const dayOfWeekCounts = d3.nest()
-            .key(d => d['Day of Week'])
-            .rollup(v => v.length)
-            .entries(data);
-
-        const svg = d3.select('#chart-container')
-            .append('svg')
-            .attr('width', 400)
-            .attr('height', 300);
-
-        const margin = { top: 20, right: 20, bottom: 30, left: 40 };
-        const width = 400 - margin.left - margin.right;
-        const height = 300 - margin.top - margin.bottom;
-
-        const x = d3.scaleBand()
-            .domain(dayOfWeekCounts.map(d => d.key))
-            .range([margin.left, width - margin.right])
-            .padding(0.1);
-
-        const y = d3.scaleLinear()
-            .domain([0, d3.max(dayOfWeekCounts, d => d.value)])
-            .nice()
-            .range([height - margin.bottom, margin.top]);
-
-        svg.append('g')
-            .attr('transform', `translate(0,${height - margin.bottom})`)
-            .call(d3.axisBottom(x));
-
-        svg.append('g')
-            .attr('transform', `translate(${margin.left},0)`)
-            .call(d3.axisLeft(y));
-
-        svg.selectAll('.bar')
-            .data(dayOfWeekCounts)
-            .enter().append('rect')
-            .attr('class', 'bar')
-            .attr('x', d => x(d.key))
-            .attr('y', d => y(d.value))
-            .attr('width', x.bandwidth())
-            .attr('height', d => height - margin.bottom - y(d.value));
-
-        // Render the data table
-        renderTable(data);
-    });
+    renderChart(data); // Call the new function to render the D3 chart
+});
