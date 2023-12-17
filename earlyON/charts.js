@@ -295,9 +295,15 @@ function renderChart(data) {
 
 
 function updateChart() {
-    // Add your D3 chart update code here
-    // For example, you can call the renderChart function again
+    // Fetch the CSV data
     d3.csv('https://claudielarouche.com/earlyON/archive.csv').then(data => {
-        renderChart(data);
+        // Apply filters to the data
+        const selectedDate = document.getElementById('selectedDate').value;
+        const selectedArea = document.getElementById('selectedArea').value;
+        const selectedAgeGroup = document.getElementById('selectedAgeGroup').value;
+        const filteredData = filterData(data, selectedDate, selectedArea, selectedAgeGroup);
+
+        // Render the updated chart with the filtered data
+        renderChart(filteredData);
     });
 }
