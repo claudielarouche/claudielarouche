@@ -136,7 +136,8 @@ let originalData = []; // Initialize as an empty array
 			"dom": 'Bfrtip', // 'B' for buttons
 			"buttons": [
 				'colvis' // Column visibility button
-			]
+			],
+			"searching": false // Disable search box
 		});
 	}
 	
