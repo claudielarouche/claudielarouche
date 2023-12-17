@@ -200,9 +200,17 @@ function renderChart(data) {
 
     // For example, let's create a simple bar chart showing the count of rows by "Day of Week"
     const dayOfWeekCounts = d3.nest()
-        .key(d => d['Day of Week'])
-        .rollup(v => v.length)
-        .entries(data);
+		.key(d => d['Day of Week'])
+		.rollup(v => v.length)
+		.entries(data)
+		.map(entry => ({ day: entry.key, count: entry.value }));
+
+	// Ensure all days are included, filling in 0 for days with no data
+	daysOfWeek.forEach(day => {
+		if (!dayOfWeekCounts.some(entry => entry.day === day)) {
+		  dayOfWeekCounts.push({ day, count: 0 });
+		}
+	  });
 
     // Define the order of days of the week
     const daysOfWeekOrder = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
