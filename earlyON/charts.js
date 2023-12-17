@@ -237,14 +237,20 @@ function clearAllFilters() {
 
 /*D3*/
 function renderChart(data) {
-    // Remove the existing chart
-    d3.select('#chart-container').select('svg').remove();
+    // Remove the existing chart if any
+    d3.select('#chart-container').selectAll('*').remove();
 
     // For example, let's create a simple bar chart showing the count of rows by "Day of Week"
     const dayOfWeekCounts = d3.nest()
         .key(d => d['Day of Week'])
         .rollup(v => v.length)
         .entries(data);
+
+    // Define the order of days of the week
+    const daysOfWeekOrder = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+
+    // Sort the dayOfWeekCounts based on the defined order
+    dayOfWeekCounts.sort((a, b) => daysOfWeekOrder.indexOf(a.key) - daysOfWeekOrder.indexOf(b.key));
 
     const svg = d3.select('#chart-container')
         .append('svg')
@@ -281,17 +287,8 @@ function renderChart(data) {
         .attr('y', d => y(d.value))
         .attr('width', x.bandwidth())
         .attr('height', d => height - margin.bottom - y(d.value));
-
-    // Append text elements on top of each bar
-    svg.selectAll('.bar-label')
-        .data(dayOfWeekCounts)
-        .enter().append('text')
-        .attr('class', 'bar-label')
-        .attr('x', d => x(d.key) + x.bandwidth() / 2)
-        .attr('y', d => y(d.value) - 5) // Adjust the position as needed
-        .attr('text-anchor', 'middle')
-        .text(d => d.value);
 }
+
 
 
 function updateChart() {
