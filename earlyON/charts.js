@@ -261,7 +261,7 @@ function renderChart(data) {
 
 function updateChart() {
     // Fetch the CSV data
-    d3.csv('https://claudielarouche.com/earlyON/archive.csv').then(data => {
+    d3.csv('https://claudielarouche.com/earlyON/archive-temp.csv').then(data => {
         // Apply filters to the data
         const selectedDate = document.getElementById('selectedDate').value;
         const selectedArea = document.getElementById('selectedArea').value;
