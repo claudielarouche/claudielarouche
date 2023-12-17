@@ -74,22 +74,98 @@
         renderTable(data);
     });
 
-    function renderTable(data) {
-        // Your existing table rendering code
-        // ...
+   function renderTable(data) {
 
-        // Initialize DataTable only once
-        if (!$.fn.dataTable.isDataTable('#dataTable')) {
-            $('#dataTable').DataTable({
-                "pageLength": -1,
-                "dom": 'Bfrtip', // 'B' for buttons
-                "buttons": [
-                    'colvis' // Column visibility button
-                ]
-            });
-        }
-        $('#dataTable_filter input').val(currentSearchValue).trigger('input');
-    }
+
+	// Ensure data is an array
+	if (!Array.isArray(data)) {
+		console.error('Error loading data: Data is not an array.');
+		document.getElementById('csvData').innerHTML = 'Error loading data.';
+		return;
+	}
+
+	// Check if data is empty
+	if (data.length === 0) {
+		console.warn('No data available.');
+		document.getElementById('csvData').innerHTML = 'No data available.';
+		return;
+	}
+
+	const headers = Object.keys(data[0]);
+
+
+	let tableHtml = '<table id="dataTable"><thead><tr>';
+	headers.forEach(header => {
+		tableHtml += `<th>${header}</th>`;
+	});
+	tableHtml += '</tr></thead><tbody>';
+
+	const selectedArea = document.getElementById('selectedArea').value;
+	const selectedDate = document.getElementById('selectedDate').value;
+	const selectedAgeGroup = document.getElementById('selectedAgeGroup').value;
+	const filteredData = filterData(data, selectedDate, selectedArea, selectedAgeGroup);
+
+	
+	//const filteredData = filterDataByDate(data, selectedDate);
+
+	if (!Array.isArray(filteredData)) {
+		console.error('Error loading data: Filtered data is not an array.');
+		document.getElementById('csvData').innerHTML = 'Error loading data.';
+		return;
+	}
+
+	//let totalData = 0;
+	filteredData.forEach(row => {
+		const currentDate = row['Date'] ? row['Date'] : '';
+		if (!isPastDate(currentDate)) {
+			tableHtml += '<tr>';
+			headers.forEach(header => {
+				if (header === 'URL') {
+					// Make the URL clickable as a link
+					tableHtml += `<td><a href="${row[header]}" target="_blank">URL</a></td>`;
+				}
+				
+				else if (header === 'Location Address') {
+					// Create a link with the Google Maps URL for the address
+					const address = row[header] ? row[header].trim() : '';
+					if (address !== '') {
+						const googleMapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)},+Ottawa,+Canada`;
+						tableHtml += `<td><a href="${googleMapsLink}" >${address}</a></td>`;
+					} else {
+						tableHtml += '<td></td>';
+					}
+				} else {
+					// Display other columns
+					tableHtml += `<td>${row[header]}</td>`;
+				}
+			});
+			tableHtml += '</tr>';
+		}
+	});
+
+
+
+
+	tableHtml += '</tbody></table>';
+
+	document.getElementById('csvData').innerHTML = tableHtml;
+
+
+
+	// Initialize DataTable only once
+
+
+	if (!$.fn.dataTable.isDataTable('#dataTable')) {
+		$('#dataTable').DataTable({
+			"pageLength": -1,
+			"dom": 'Bfrtip', // 'B' for buttons
+			"buttons": [
+				'colvis' // Column visibility button
+			]
+		});
+	}
+	$('#dataTable_filter input').val(currentSearchValue).trigger('input');
+}
 
     // Listen for changes in date input
     document.getElementById('selectedDate').addEventListener('change', function() {
