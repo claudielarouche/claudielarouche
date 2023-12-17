@@ -139,18 +139,18 @@ let originalData = []; // Initialize as an empty array
 			]
 		});
 	}
-	$('#dataTable_filter input').val(currentSearchValue).trigger('input');
+	
 }
 
     // Listen for changes in date input
     document.getElementById('selectedDate').addEventListener('change', function() {
-        currentSearchValue = $('#dataTable_filter input').val();
+        
         renderTable(originalData);
     });
 
     // Listen for changes in the Area select input
     document.getElementById('selectedArea').addEventListener('change', function() {
-        currentSearchValue = $('#dataTable_filter input').val();
+        
         renderTable(originalData);
     });
 	
