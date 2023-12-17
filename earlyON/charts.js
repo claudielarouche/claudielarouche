@@ -218,6 +218,9 @@ function clearAllFilters() {
 
     // Render the table with cleared filters
     renderTable(originalData);
+	
+	// Update the chart with cleared filters
+    updateChart();
 }
 
 /*D3*/
