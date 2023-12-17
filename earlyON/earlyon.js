@@ -57,8 +57,10 @@ function renderTable(data) {
 
 	const selectedArea = document.getElementById('selectedArea').value;
 	const selectedDate = document.getElementById('selectedDate').value;
-	const filteredData = filterDataByDateAndArea(data, selectedDate, selectedArea);
+	const selectedAgeGroup = document.getElementById('selectedAgeGroup').value;
+	const filteredData = filterData(data, selectedDate, selectedArea, selectedAgeGroup);
 
+	
 	//const filteredData = filterDataByDate(data, selectedDate);
 
 	if (!Array.isArray(filteredData)) {
@@ -145,22 +147,28 @@ function renderTable(data) {
 	$('#dataTable_filter input').val(currentSearchValue).trigger('input');
 }
 
-function filterDataByDateAndArea(data, selectedDate, selectedArea) {
-    // If no date or area is selected, return the original data
-    if (!selectedDate && !selectedArea) {
+
+
+
+
+function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
+    // If no date, area, or age group is selected, return the original data
+    if (!selectedDate && !selectedArea && !selectedAgeGroup) {
         return data;
     }
-	
-	 // Ensure data is an array before filtering
+
+    // Ensure data is an array before filtering
     if (Array.isArray(data)) {
         return data.filter(row => {
             const currentDate = row['Date'] ? row['Date'] : '';
             const currentArea = row['Area'] ? row['Area'] : '';
+            const currentAgeGroup = row['Age Group'] ? row['Age Group'] : '';
 
             const dateCondition = !selectedDate || currentDate === selectedDate;
             const areaCondition = !selectedArea || currentArea === selectedArea;
+            const ageGroupCondition = !selectedAgeGroup || currentAgeGroup.includes(selectedAgeGroup);
 
-            return dateCondition && areaCondition;
+            return dateCondition && areaCondition && ageGroupCondition;
         });
     } else {
         return [];
@@ -194,12 +202,22 @@ document.getElementById('selectedArea').addEventListener('change', function() {
     renderTable(originalData);
 });
 
+// Listen for changes in the Age Group select input
+document.getElementById('selectedAgeGroup').addEventListener('change', function() {
+	currentSearchValue = $('#dataTable_filter input').val();
+    renderTable(originalData);
+});
+
 function clearAllFilters() {
     // Clear the date filter
     document.getElementById('selectedDate').value = '';
 
     // Clear the area filter
     document.getElementById('selectedArea').value = '';
+	
+	 // Clear the area filter
+    document.getElementById('selectedAgeGroup').value = '';
+
 
     // Clear the DataTable search box
     $('#dataTable_filter input').val('');
