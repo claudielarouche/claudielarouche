@@ -1,3 +1,4 @@
+let originalData = []; // Initialize as an empty array
 // Load the data from the archive.csv file
     d3.csv('https://claudielarouche.com/earlyON/archive.csv').then(data => {
         // Your chart code here
@@ -91,30 +92,30 @@
 	//let totalData = 0;
 	filteredData.forEach(row => {
 		const currentDate = row['Date'] ? row['Date'] : '';
-		if (!isPastDate(currentDate)) {
-			tableHtml += '<tr>';
-			headers.forEach(header => {
-				if (header === 'URL') {
-					// Make the URL clickable as a link
-					tableHtml += `<td><a href="${row[header]}" target="_blank">URL</a></td>`;
-				}
-				
-				else if (header === 'Location Address') {
-					// Create a link with the Google Maps URL for the address
-					const address = row[header] ? row[header].trim() : '';
-					if (address !== '') {
-						const googleMapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)},+Ottawa,+Canada`;
-						tableHtml += `<td><a href="${googleMapsLink}" >${address}</a></td>`;
-					} else {
-						tableHtml += '<td></td>';
-					}
+		
+		tableHtml += '<tr>';
+		headers.forEach(header => {
+			if (header === 'URL') {
+				// Make the URL clickable as a link
+				tableHtml += `<td><a href="${row[header]}" target="_blank">URL</a></td>`;
+			}
+			
+			else if (header === 'Location Address') {
+				// Create a link with the Google Maps URL for the address
+				const address = row[header] ? row[header].trim() : '';
+				if (address !== '') {
+					const googleMapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)},+Ottawa,+Canada`;
+					tableHtml += `<td><a href="${googleMapsLink}" >${address}</a></td>`;
 				} else {
-					// Display other columns
-					tableHtml += `<td>${row[header]}</td>`;
+					tableHtml += '<td></td>';
 				}
-			});
-			tableHtml += '</tr>';
-		}
+			} else {
+				// Display other columns
+				tableHtml += `<td>${row[header]}</td>`;
+			}
+		});
+		tableHtml += '</tr>';
+		
 	});
 
 
@@ -152,3 +153,27 @@
         currentSearchValue = $('#dataTable_filter input').val();
         renderTable(originalData);
     });
+	
+	function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
+    // If no date, area, or age group is selected, return the original data
+    if (!selectedDate && !selectedArea && !selectedAgeGroup) {
+        return data;
+    }
+
+    // Ensure data is an array before filtering
+    if (Array.isArray(data)) {
+        return data.filter(row => {
+            const currentDate = row['Date'] ? row['Date'] : '';
+            const currentArea = row['Area'] ? row['Area'] : '';
+            const currentAgeGroup = row['Age Group'] ? row['Age Group'] : '';
+
+            const dateCondition = !selectedDate || currentDate === selectedDate;
+            const areaCondition = !selectedArea || currentArea === selectedArea;
+            const ageGroupCondition = !selectedAgeGroup || currentAgeGroup.includes(selectedAgeGroup);
+
+            return dateCondition && areaCondition && ageGroupCondition;
+        });
+    } else {
+        return [];
+    }
+}
