@@ -1,3 +1,9 @@
+// D3
+d3.csv('https://claudielarouche.com/earlyON/archive.csv').then(data => {
+    renderChart(data); // Call the new function to render the D3 chart
+});
+
+
 let originalData = []; // Initialize as an empty array
 
 window.onload = function() {
@@ -271,7 +277,3 @@ function renderChart(data) {
         .attr('height', d => height - margin.bottom - y(d.value));
 }
 
-// D3
-d3.csv('https://claudielarouche.com/earlyON/archive.csv').then(data => {
-    renderChart(data); // Call the new function to render the D3 chart
-});
