@@ -2,7 +2,7 @@ let originalData = []; // Initialize as an empty array
 
 window.onload = function() {
 	// Update the path to your CSV file
-	const csvFilePath = 'https://claudielarouche.com/earlyON/data-dev.csv';
+	const csvFilePath = 'https://claudielarouche.com/earlyON/data.csv';
 
 	Papa.parse(csvFilePath, {
 		header: true,
@@ -193,3 +193,18 @@ document.getElementById('selectedArea').addEventListener('change', function() {
 	currentSearchValue = $('#dataTable_filter input').val();
     renderTable(originalData);
 });
+
+function clearAllFilters() {
+    // Clear the date filter
+    document.getElementById('selectedDate').value = '';
+
+    // Clear the area filter
+    document.getElementById('selectedArea').value = '';
+
+    // Clear the DataTable search box
+    $('#dataTable_filter input').val('');
+
+    // Render the table with cleared filters
+    renderTable(originalData);
+}
+
