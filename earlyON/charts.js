@@ -1,5 +1,5 @@
 // D3
-d3.csv('https://claudielarouche.com/earlyON/archive-temp.csv').then(data => {
+d3.csv('https://claudielarouche.com/earlyON/archive.csv').then(data => {
     renderChart(data); // Call the new function to render the D3 chart
 });
 
@@ -8,7 +8,7 @@ let originalData = []; // Initialize as an empty array
 
 window.onload = function() {
 	// Update the path to your CSV file
-	const csvFilePath = 'https://claudielarouche.com/earlyON/archive-temp.csv';
+	const csvFilePath = 'https://claudielarouche.com/earlyON/archive.csv';
 
 	Papa.parse(csvFilePath, {
 		header: true,
@@ -261,7 +261,7 @@ function renderChart(data) {
 
 function updateChart() {
     // Fetch the CSV data
-    d3.csv('https://claudielarouche.com/earlyON/archive-temp.csv').then(data => {
+    d3.csv('https://claudielarouche.com/earlyON/archive.csv').then(data => {
         // Apply filters to the data
         const selectedDate = document.getElementById('selectedDate').value;
         const selectedArea = document.getElementById('selectedArea').value;
