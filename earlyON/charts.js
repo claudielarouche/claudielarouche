@@ -78,7 +78,7 @@ function renderTable(data) {
 	//let totalData = 0;
 	filteredData.forEach(row => {
 		const currentDate = row['Date'] ? row['Date'] : '';
-		if (!isPastDate(currentDate)) {
+		
 			tableHtml += '<tr>';
 			headers.forEach(header => {
 				if (header === 'URL') {
@@ -117,7 +117,7 @@ function renderTable(data) {
 				}
 			});
 			tableHtml += '</tr>';
-		}
+		
 	});
 
 
@@ -147,10 +147,10 @@ function renderTable(data) {
 			"dom": 'Bfrtip', // 'B' for buttons
 			"buttons": [
 				'colvis' // Column visibility button
-			]
+			],
+			"searching": false
 		});
 	}
-	$('#dataTable_filter input').val(currentSearchValue).trigger('input');
 }
 
 
@@ -181,38 +181,23 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
     }
 }
 
-function isPastDate(dateString) {
-	const currentDate = new Date();
-	currentDate.setHours(0, 0, 0, 0); // Set time to midnight
 
-	// Parse the date string in "YYYY-MM-DD" format
-	const dateParts = dateString.split('-');
-	const selectedDate = new Date(dateParts[0], dateParts[1] - 1, dateParts[2]);
-	selectedDate.setHours(0, 0, 0, 0); // Set time to midnight
-
-	return selectedDate < currentDate;
-}
-
-let currentSearchValue = ''; // Variable to store the current search value
 
 
 // Listen for changes in date input
 document.getElementById('selectedDate').addEventListener('change', function() {
-	currentSearchValue = $('#dataTable_filter input').val();
 	renderTable(originalData);
 	updateChart();
 });
 
 // Listen for changes in the Area select input
 document.getElementById('selectedArea').addEventListener('change', function() {
-	currentSearchValue = $('#dataTable_filter input').val();
     renderTable(originalData);
 	updateChart();
 });
 
 // Listen for changes in the Age Group select input
 document.getElementById('selectedAgeGroup').addEventListener('change', function() {
-	currentSearchValue = $('#dataTable_filter input').val();
     renderTable(originalData);
 	updateChart();
 });
