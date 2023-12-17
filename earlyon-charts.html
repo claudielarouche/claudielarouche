@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charts</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.7.1/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.7.1/js/buttons.colVis.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.7.1/css/buttons.dataTables.min.css"/>
     <script src="https://d3js.org/d3.v5.min.js"></script>
 </head>
 <body>
@@ -13,6 +19,9 @@
 
 <!-- Container for the chart -->
 <div id="chart-container"></div>
+
+<!-- Container for the data table -->
+<div id="csvData"></div>
 
 <script>
     // Load the data from the archive.csv file
@@ -60,8 +69,40 @@
             .attr('y', d => y(d.value))
             .attr('width', x.bandwidth())
             .attr('height', d => height - margin.bottom - y(d.value));
+
+        // Render the data table
+        renderTable(data);
+    });
+
+    function renderTable(data) {
+        // Your existing table rendering code
+        // ...
+
+        // Initialize DataTable only once
+        if (!$.fn.dataTable.isDataTable('#dataTable')) {
+            $('#dataTable').DataTable({
+                "pageLength": -1,
+                "dom": 'Bfrtip', // 'B' for buttons
+                "buttons": [
+                    'colvis' // Column visibility button
+                ]
+            });
+        }
+        $('#dataTable_filter input').val(currentSearchValue).trigger('input');
+    }
+
+    // Listen for changes in date input
+    document.getElementById('selectedDate').addEventListener('change', function() {
+        currentSearchValue = $('#dataTable_filter input').val();
+        renderTable(originalData);
+    });
+
+    // Listen for changes in the Area select input
+    document.getElementById('selectedArea').addEventListener('change', function() {
+        currentSearchValue = $('#dataTable_filter input').val();
+        renderTable(originalData);
     });
 </script>
-Test
+
 </body>
 </html>
