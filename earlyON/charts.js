@@ -237,6 +237,9 @@ function clearAllFilters() {
 
 /*D3*/
 function renderChart(data) {
+    // Remove the existing chart
+    d3.select('#chart-container').select('svg').remove();
+
     // For example, let's create a simple bar chart showing the count of rows by "Day of Week"
     const dayOfWeekCounts = d3.nest()
         .key(d => d['Day of Week'])
@@ -278,8 +281,8 @@ function renderChart(data) {
         .attr('y', d => y(d.value))
         .attr('width', x.bandwidth())
         .attr('height', d => height - margin.bottom - y(d.value));
-		
-	 // Append text elements on top of each bar
+
+    // Append text elements on top of each bar
     svg.selectAll('.bar-label')
         .data(dayOfWeekCounts)
         .enter().append('text')
@@ -289,6 +292,7 @@ function renderChart(data) {
         .attr('text-anchor', 'middle')
         .text(d => d.value);
 }
+
 
 function updateChart() {
     // Add your D3 chart update code here
