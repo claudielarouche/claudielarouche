@@ -249,13 +249,14 @@ function renderChart(data) {
         .call(d3.axisLeft(y));
 
     svg.selectAll('.bar')
-        .data(dayOfWeekCounts)
-        .enter().append('rect')
-        .attr('class', 'bar')
-        .attr('x', d => x(d.key))
-        .attr('y', d => y(d.value))
-        .attr('width', x.bandwidth())
-        .attr('height', d => height - margin.bottom - y(d.value));
+	  .data(dayOfWeekCounts)
+	  .enter().append('rect')
+	  .attr('class', 'bar')
+	  .attr('x', d => x(d.day))
+	  .attr('y', d => isNaN(y(d.count)) ? 0 : y(d.count)) // Handle NaN values
+	  .attr('width', x.bandwidth())
+	  .attr('height', d => isNaN(height - margin.bottom - y(d.count)) ? 0 : height - margin.bottom - y(d.count)); // Handle NaN values
+
 	
 	// Append text elements on top of each bar
     svg.selectAll('.bar-label')
