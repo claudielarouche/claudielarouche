@@ -1,4 +1,4 @@
-alert("version 2");
+alert("version 3");
 
 // D3
 d3.csv('https://claudielarouche.com/earlyON/archive.csv').then(data => {
@@ -278,7 +278,7 @@ function renderChart(data) {
         .enter().append('text')
         .attr('class', 'bar-label')
         .attr('x', d => x(d.key) + x.bandwidth() / 2)
-        .attr('y', d => y(d.value) - 5) // Adjust the position as needed
+        .attr('y', d => isNaN(y(d.value)) ? 0 : y(d.value) - 5) // Handle NaN values
         .attr('text-anchor', 'middle')
         .text(d => d.value);
 }
