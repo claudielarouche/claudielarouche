@@ -226,13 +226,13 @@ function renderChart(data) {
     // Sort the dayOfWeekCounts based on the defined order
     dayOfWeekCounts.sort((a, b) => daysOfWeekOrder.indexOf(a.key) - daysOfWeekOrder.indexOf(b.key));
 
-	console.log('I haven''t failed yet 1');
+	console.log('no failure yet 1');
     const svg = d3.select('#chart-container')
         .append('svg')
         .attr('width', 400)
         .attr('height', 300);
 	
-	console.log('I haven''t failed yet 2');
+	console.log('no failure yet 2');
     
 
     const margin = { top: 20, right: 20, bottom: 30, left: 40 };
@@ -240,7 +240,7 @@ function renderChart(data) {
     const height = 300 - margin.top - margin.bottom;
 	
 	
-	console.log('I haven''t failed yet 3');
+	console.log('no failure yet 3');
 
     const x = d3.scaleBand()
         .domain(dayOfWeekCounts.map(d => d.key))
@@ -248,7 +248,7 @@ function renderChart(data) {
         .padding(0.1);
 		
 	
-	console.log('I haven''t failed yet 4');
+	console.log('no failure yet 4');
 
     const y = d3.scaleLinear()
         .domain([0, d3.max(dayOfWeekCounts, d => d.value)])
@@ -256,21 +256,21 @@ function renderChart(data) {
         .range([height - margin.bottom, margin.top]);
 		
 	
-	console.log('I haven''t failed yet 5');
+	console.log('no failure yet 5');
 
     svg.append('g')
         .attr('transform', `translate(0,${height - margin.bottom})`)
         .call(d3.axisBottom(x));
 		
 	
-	console.log('I haven''t failed yet 6');
+	console.log('no failure yet 6');
 
     svg.append('g')
         .attr('transform', `translate(${margin.left},0)`)
         .call(d3.axisLeft(y));
 
 	
-	console.log('I haven''t failed yet 7');
+	console.log('no failure yet 7');
 	
     svg.selectAll('.bar')
 	  .data(dayOfWeekCounts)
@@ -282,7 +282,7 @@ function renderChart(data) {
 	  .attr('height', d => isNaN(height - margin.bottom - y(d.count)) ? 0 : height - margin.bottom - y(d.count)); // Handle NaN values
 
 	
-	console.log('I haven''t failed yet 8');
+	console.log('no failure yet 8');
 	
 	svg.selectAll('.bar-text')
 	  .data(dayOfWeekCounts)
@@ -296,7 +296,7 @@ function renderChart(data) {
 
 
 	
-	console.log('I haven''t failed yet 9');
+	console.log('no failure yet 9');
 	// Append text elements on top of each bar
     svg.selectAll('.bar-label')
         .data(dayOfWeekCounts)
@@ -307,7 +307,7 @@ function renderChart(data) {
         .attr('text-anchor', 'middle')
         .text(d => d.value);
 	
-	console.log('I haven''t failed yet 10');
+	console.log('no failure yet 10');
 }
 
 
