@@ -197,7 +197,6 @@ function clearAllFilters() {
 
 /*D3*/
 function renderChart(data) {
-	console.log('Rendering chart with data:', data);
     // Remove the existing chart if any
     d3.select('#chart-container').selectAll('*').remove();
 
@@ -308,13 +307,13 @@ function updateChart() {
 
     // Fetch the CSV data
     d3.csv('https://claudielarouche.com/earlyON/archive.csv').then(data => {
-		console.log('Fetched CSV data for update:', data); 
+		
         // Apply filters to the data
         const selectedDate = document.getElementById('selectedDate').value;
         const selectedArea = document.getElementById('selectedArea').value;
         const selectedAgeGroup = document.getElementById('selectedAgeGroup').value;
         const filteredData = filterData(data, selectedDate, selectedArea, selectedAgeGroup);
-		console.log('Filtered data for update:', filteredData); // Log filtered data
+		
 
         // Render the updated chart with the filtered data
         renderChart(filteredData);
