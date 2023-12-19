@@ -1,4 +1,4 @@
-console.log('version 15');
+//console.log('version 15');
 
 // D3
 d3.csv('https://claudielarouche.com/earlyON/archive.csv').then(data => {

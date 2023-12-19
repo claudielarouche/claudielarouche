@@ -1,3 +1,5 @@
+//console.log('version 15');
+
 // D3
 d3.csv('https://claudielarouche.com/earlyON/archive.csv').then(data => {
     renderChart(data); // Call the new function to render the D3 chart
@@ -198,11 +200,23 @@ function renderChart(data) {
     // Remove the existing chart if any
     d3.select('#chart-container').selectAll('*').remove();
 
+	const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+
     // For example, let's create a simple bar chart showing the count of rows by "Day of Week"
     const dayOfWeekCounts = d3.nest()
-        .key(d => d['Day of Week'])
-        .rollup(v => v.length)
-        .entries(data);
+		.key(d => d['Day of Week'])
+		.rollup(v => v.length)
+		.entries(data)
+		.map(entry => ({ day: entry.key, count: entry.value }));
+
+	// Ensure all days are included, filling in 0 for days with no data
+	daysOfWeek.forEach(day => {
+		if (!dayOfWeekCounts.some(entry => entry.day === day)) {
+		  dayOfWeekCounts.push({ day, count: 0 });
+		}
+	  });
+	  
 
     // Define the order of days of the week
     const daysOfWeekOrder = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
@@ -214,59 +228,95 @@ function renderChart(data) {
         .append('svg')
         .attr('width', 400)
         .attr('height', 300);
+	
+    
 
     const margin = { top: 20, right: 20, bottom: 30, left: 40 };
     const width = 400 - margin.left - margin.right;
     const height = 300 - margin.top - margin.bottom;
-
+	
+	
     const x = d3.scaleBand()
-        .domain(dayOfWeekCounts.map(d => d.key))
-        .range([margin.left, width - margin.right])
-        .padding(0.1);
+    .domain(daysOfWeekOrder) // Use the predefined order
+    .range([margin.left, width - margin.right])
+    .padding(0.1);
+		
 
     const y = d3.scaleLinear()
-        .domain([0, d3.max(dayOfWeekCounts, d => d.value)])
-        .nice()
-        .range([height - margin.bottom, margin.top]);
+    .domain([0, d3.max(dayOfWeekCounts, d => d.count)])
+    .nice()
+    .range([height - margin.bottom, margin.top]);
+		
 
     svg.append('g')
-        .attr('transform', `translate(0,${height - margin.bottom})`)
-        .call(d3.axisBottom(x));
+    .attr('transform', `translate(0,${height - margin.bottom})`)
+    .call(d3.axisBottom(x))
+    .selectAll('text')
+    .attr('transform', 'rotate(-45)') // Rotate the x-axis labels
+    .attr('text-anchor', 'end'); // Adjust the anchor for proper alignment
+
+		
+	
 
     svg.append('g')
         .attr('transform', `translate(${margin.left},0)`)
         .call(d3.axisLeft(y));
 
-    svg.selectAll('.bar')
-        .data(dayOfWeekCounts)
-        .enter().append('rect')
-        .attr('class', 'bar')
-        .attr('x', d => x(d.key))
-        .attr('y', d => y(d.value))
-        .attr('width', x.bandwidth())
-        .attr('height', d => height - margin.bottom - y(d.value));
 	
-	// Append text elements on top of each bar
-    svg.selectAll('.bar-label')
-        .data(dayOfWeekCounts)
-        .enter().append('text')
-        .attr('class', 'bar-label')
-        .attr('x', d => x(d.key) + x.bandwidth() / 2)
-        .attr('y', d => y(d.value) - 5) // Adjust the position as needed
-        .attr('text-anchor', 'middle')
-        .text(d => d.value);
+	
+    // Append bars
+svg.selectAll('.bar')
+    .data(dayOfWeekCounts)
+    .enter().append('rect')
+    .attr('class', 'bar')
+    .attr('x', d => x(d.day))
+    .attr('y', d => isNaN(y(d.count)) ? 0 : y(d.count)) // Handle NaN values
+    .attr('width', x.bandwidth())
+    .attr('height', d => isNaN(height - margin.bottom - y(d.count)) ? 0 : height - margin.bottom - y(d.count)); // Handle NaN values
+
+// Append data labels
+/*svg.selectAll('.bar-text')
+    .data(dayOfWeekCounts)
+    .enter().append('text')
+    .attr('class', 'bar-text')
+    .attr('x', d => x(d.day) + x.bandwidth() / 2)
+    .attr('y', d => y(d.count) - 5) // Adjust the vertical position as needed
+    .attr('dy', '0.7em') // Adjust the vertical offset
+    .attr('text-anchor', 'middle')
+    .text(d => (isNaN(d.count) || d.count === 0) ? '' : d.count); // Handle NaN values
+*/
+
+
+
+// Append text elements on top of each bar
+svg.selectAll('.bar-label')
+    .data(dayOfWeekCounts)
+    .enter().append('text')
+    .attr('class', 'bar-label')
+    .attr('x', d => x(d.day) + x.bandwidth() / 2)
+    .attr('y', d => isNaN(y(d.count)) ? height - margin.bottom : y(d.count) - 5) // Adjust the position as needed
+    .attr('text-anchor', 'middle')
+    .text(d => isNaN(d.count) ? '' : d.count);
+
+
+
+	
 }
 
 
 
 function updateChart() {
+	
+
     // Fetch the CSV data
     d3.csv('https://claudielarouche.com/earlyON/archive.csv').then(data => {
+		
         // Apply filters to the data
         const selectedDate = document.getElementById('selectedDate').value;
         const selectedArea = document.getElementById('selectedArea').value;
         const selectedAgeGroup = document.getElementById('selectedAgeGroup').value;
         const filteredData = filterData(data, selectedDate, selectedArea, selectedAgeGroup);
+		
 
         // Render the updated chart with the filtered data
         renderChart(filteredData);
