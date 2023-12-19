@@ -1,4 +1,4 @@
-console.log('version 10');
+console.log('version 11');
 
 // D3
 d3.csv('https://claudielarouche.com/earlyON/archive.csv').then(data => {
@@ -242,8 +242,9 @@ function renderChart(data) {
     .padding(0.1);
 		
 
-    const y = d3.scaleLinear()
-    .domain([0, d3.max(dayOfWeekCounts, d => d.count)])
+    const yMax = d3.max(dayOfWeekCounts, d => isNaN(d.value) ? 0 : d.value);
+const y = d3.scaleLinear()
+    .domain([0, yMax])
     .nice()
     .range([height - margin.bottom, margin.top]);
 		
