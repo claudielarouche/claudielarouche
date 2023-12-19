@@ -218,11 +218,6 @@ function renderChart(data) {
 		}
 	  });
 	  
-	 // Log data to console
-    console.log('Rendering chart with data:', data);
-
-    // Log processed data to console
-    console.log('Processed data for chart:', dayOfWeekCounts);
 
     // Define the order of days of the week
     const daysOfWeekOrder = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
@@ -253,13 +248,14 @@ function renderChart(data) {
     .nice()
     .range([height - margin.bottom, margin.top]);
 		
-	 // Log scaled domains to console
-    console.log('X domain:', x.domain());
-    console.log('Y domain:', y.domain());
 
     svg.append('g')
-        .attr('transform', `translate(0,${height - margin.bottom})`)
-        .call(d3.axisBottom(x));
+    .attr('transform', `translate(0,${height - margin.bottom})`)
+    .call(d3.axisBottom(x))
+    .selectAll('text')
+    .attr('transform', 'rotate(-45)') // Rotate the x-axis labels
+    .attr('text-anchor', 'end'); // Adjust the anchor for proper alignment
+
 		
 	
 
@@ -281,14 +277,15 @@ function renderChart(data) {
 	
 	
 	svg.selectAll('.bar-text')
-	  .data(dayOfWeekCounts)
-	  .enter().append('text')
-	  .attr('class', 'bar-text')
-	  .attr('x', d => isNaN(x(d.day)) ? 0 : x(d.day)) // Handle NaN values
-	  .attr('y', d => isNaN(y(d.count)) ? 0 : y(d.count)) // Handle NaN values
-	  .attr('dy', '-0.5em') // Adjust the vertical position as needed
-	  .attr('text-anchor', 'middle')
-	  .text(d => isNaN(d.count) ? '' : d.count); // Handle NaN values
+    .data(dayOfWeekCounts)
+    .enter().append('text')
+    .attr('class', 'bar-text')
+    .attr('x', d => x(d.day) + x.bandwidth() / 2)
+    .attr('y', d => y(d.count) - 5) // Adjust the vertical position as needed
+    .attr('dy', '0.7em') // Adjust the vertical offset
+    .attr('text-anchor', 'middle')
+    .text(d => (isNaN(d.count) || d.count === 0) ? '' : d.count); // Handle NaN values
+
 
 
 	
@@ -302,14 +299,12 @@ function renderChart(data) {
         .attr('text-anchor', 'middle')
         .text(d => d.value);
 	
-	 // Log final SVG to console
-    console.log('Final SVG:', svg.node().outerHTML);
 }
 
 
 
 function updateChart() {
-	console.log('Updating chart'); // Log update process start
+	
 
     // Fetch the CSV data
     d3.csv('https://claudielarouche.com/earlyON/archive.csv').then(data => {
