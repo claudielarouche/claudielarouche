@@ -1,4 +1,4 @@
-console.log('version 12');
+console.log('version 13');
 
 // D3
 d3.csv('https://claudielarouche.com/earlyON/archive.csv').then(data => {
@@ -290,13 +290,14 @@ svg.selectAll('.bar-text')
 	
 	// Append text elements on top of each bar
     svg.selectAll('.bar-label')
-        .data(dayOfWeekCounts)
-        .enter().append('text')
-        .attr('class', 'bar-label')
-        .attr('x', d => x(d.key) + x.bandwidth() / 2)
-        .attr('y', d => isNaN(y(d.value)) ? 0 : y(d.count) - 5) // Handle NaN values
-        .attr('text-anchor', 'middle')
-        .text(d => d.value);
+    .data(dayOfWeekCounts)
+    .enter().append('text')
+    .attr('class', 'bar-label')
+    .attr('x', d => x(d.day) + x.bandwidth() / 2)
+    .attr('y', d => isNaN(y(d.count)) ? height - margin.bottom : y(d.count) - 5) // Adjust the position as needed
+    .attr('text-anchor', 'middle')
+    .text(d => isNaN(d.count) ? '' : d.count);
+
 	
 }
 
