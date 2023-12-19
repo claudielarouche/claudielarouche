@@ -261,11 +261,12 @@ function renderChart(data) {
 	  .data(dayOfWeekCounts)
 	  .enter().append('text')
 	  .attr('class', 'bar-text')
-	  .attr('x', d => x(d.day) + x.bandwidth() / 2)
+	  .attr('x', d => isNaN(x(d.day)) ? 0 : x(d.day)) // Handle NaN values
 	  .attr('y', d => isNaN(y(d.count)) ? 0 : y(d.count)) // Handle NaN values
 	  .attr('dy', '-0.5em') // Adjust the vertical position as needed
 	  .attr('text-anchor', 'middle')
 	  .text(d => isNaN(d.count) ? '' : d.count); // Handle NaN values
+
 
 	
 	// Append text elements on top of each bar
