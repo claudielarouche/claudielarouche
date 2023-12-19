@@ -1,4 +1,4 @@
-console.log('version 9');
+console.log('version 10');
 
 // D3
 d3.csv('https://claudielarouche.com/earlyON/archive.csv').then(data => {
@@ -265,18 +265,18 @@ function renderChart(data) {
 
 	
 	
-    svg.selectAll('.bar')
-	  .data(dayOfWeekCounts)
-	  .enter().append('rect')
-	  .attr('class', 'bar')
-	  .attr('x', d => x(d.day))
-	  .attr('y', d => isNaN(y(d.count)) ? 0 : y(d.count)) // Handle NaN values
-	  .attr('width', x.bandwidth())
-	  .attr('height', d => isNaN(height - margin.bottom - y(d.count)) ? 0 : height - margin.bottom - y(d.count)); // Handle NaN values
+    // Append bars
+svg.selectAll('.bar')
+    .data(dayOfWeekCounts)
+    .enter().append('rect')
+    .attr('class', 'bar')
+    .attr('x', d => x(d.day))
+    .attr('y', d => isNaN(y(d.count)) ? 0 : y(d.count)) // Handle NaN values
+    .attr('width', x.bandwidth())
+    .attr('height', d => isNaN(height - margin.bottom - y(d.count)) ? 0 : height - margin.bottom - y(d.count)); // Handle NaN values
 
-	
-	
-	svg.selectAll('.bar-text')
+// Append data labels
+svg.selectAll('.bar-text')
     .data(dayOfWeekCounts)
     .enter().append('text')
     .attr('class', 'bar-text')
