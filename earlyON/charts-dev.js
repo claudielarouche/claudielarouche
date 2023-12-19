@@ -1,4 +1,4 @@
-console.log('version 11');
+console.log('version 12');
 
 // D3
 d3.csv('https://claudielarouche.com/earlyON/archive.csv').then(data => {
@@ -242,9 +242,8 @@ function renderChart(data) {
     .padding(0.1);
 		
 
-    const yMax = d3.max(dayOfWeekCounts, d => isNaN(d.value) ? 0 : d.value);
-const y = d3.scaleLinear()
-    .domain([0, yMax])
+    const y = d3.scaleLinear()
+    .domain([0, d3.max(dayOfWeekCounts, d => d.count)])
     .nice()
     .range([height - margin.bottom, margin.top]);
 		
@@ -295,7 +294,7 @@ svg.selectAll('.bar-text')
         .enter().append('text')
         .attr('class', 'bar-label')
         .attr('x', d => x(d.key) + x.bandwidth() / 2)
-        .attr('y', d => isNaN(y(d.value)) ? 0 : y(d.value) - 5) // Handle NaN values
+        .attr('y', d => isNaN(y(d.value)) ? 0 : y(d.count) - 5) // Handle NaN values
         .attr('text-anchor', 'middle')
         .text(d => d.value);
 	
