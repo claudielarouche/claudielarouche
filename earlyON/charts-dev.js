@@ -1,4 +1,4 @@
-alert("version 5");
+alert("version 6");
 
 // D3
 d3.csv('https://claudielarouche.com/earlyON/archive.csv').then(data => {
@@ -206,7 +206,7 @@ function renderChart(data) {
 
     // For example, let's create a simple bar chart showing the count of rows by "Day of Week"
     const dayOfWeekCounts = d3.nest()
-		.key(d => d['Day of Week'])
+		.key(d => d.day)
 		.rollup(v => v.length)
 		.entries(data)
 		.map(entry => ({ day: entry.key, count: entry.value }));
