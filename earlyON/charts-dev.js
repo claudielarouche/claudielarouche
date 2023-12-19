@@ -1,4 +1,4 @@
-alert("version 4");
+alert("version 5");
 
 // D3
 d3.csv('https://claudielarouche.com/earlyON/archive.csv').then(data => {
@@ -218,7 +218,11 @@ function renderChart(data) {
 		}
 	  });
 	  
-	console.log('Rendering chart with data:', data);
+	 // Log data to console
+    console.log('Rendering chart with data:', data);
+
+    // Log processed data to console
+    console.log('Processed data for chart:', dayOfWeekCounts);
 
     // Define the order of days of the week
     const daysOfWeekOrder = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
@@ -255,7 +259,9 @@ function renderChart(data) {
         .nice()
         .range([height - margin.bottom, margin.top]);
 		
-	
+	 // Log scaled domains to console
+    console.log('X domain:', x.domain());
+    console.log('Y domain:', y.domain());
 	console.log('no failure yet 5');
 
     svg.append('g')
@@ -308,6 +314,8 @@ function renderChart(data) {
         .text(d => d.value);
 	
 	console.log('no failure yet 10');
+	 // Log final SVG to console
+    console.log('Final SVG:', svg.node().outerHTML);
 }
 
 
