@@ -390,7 +390,7 @@ function updateCharts() {
 		const selectedOrganizer = document.getElementById('selectedOrganizer').value;
 		alert(selectedOrganizer);
         const filteredData = filterData(data, selectedDate, selectedArea, selectedAgeGroup, selectedOrganizer);
-		
+		console.log(filteredData);
 
         // Render the updated chart with the filtered data
         renderDayOfWeekChart(filteredData);
