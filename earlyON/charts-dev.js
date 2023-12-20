@@ -1,8 +1,9 @@
-console.log('version 2');
+console.log('version 3');
 
 // D3
 d3.csv('https://claudielarouche.com/earlyON/archive.csv').then(data => {
     renderDayOfWeekChart(data); // Call the new function to render the D3 chart
+	renderTimeOfDayChart(data);
 });
 
 
@@ -159,19 +160,19 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
 // Listen for changes in date input
 document.getElementById('selectedDate').addEventListener('change', function() {
 	renderTable(originalData);
-	updateChart();
+	updateCharts();
 });
 
 // Listen for changes in the Area select input
 document.getElementById('selectedArea').addEventListener('change', function() {
     renderTable(originalData);
-	updateChart();
+	updateCharts();
 });
 
 // Listen for changes in the Age Group select input
 document.getElementById('selectedAgeGroup').addEventListener('change', function() {
     renderTable(originalData);
-	updateChart();
+	updateCharts();
 });
 
 function clearAllFilters() {
@@ -192,7 +193,7 @@ function clearAllFilters() {
     renderTable(originalData);
 	
 	// Update the chart with cleared filters
-    updateChart();
+    updateCharts();
 }
 
 /*D3*/
@@ -289,9 +290,97 @@ svg.selectAll('.bar-label')
 	
 }
 
+function renderTimeOfDayChart(data) {
+	
+	d3.select('#time-of-day-chart').selectAll('*').remove();
+	
+    // Add your D3 chart code for "Time of Day" here
+    const timeOfDayCounts = d3.nest()
+        .key(d => d['Time of Day'])
+        .rollup(v => v.length)
+        .map(entry => ({ time: entry.key, count: entry.value }));
+	
+	const timeOfDay = ['Morning', 'Afternoon', 'Evening'];
+
+    // Ensure all times are included, filling in 0 for days with no data
+	timeOfDay.forEach(time => {
+		if (!timeOfDayCounts.some(entry => entry.time === time)) {
+		  timeOfDayCounts.push({ time, count: 0 });
+		}
+	  });
+	
+	// Define the order 
+    const timeOfDayOrder = ['Morning', 'Afternoon', 'Evening'];
+
+    // Sort  based on the defined order
+    timeOfDayCounts.sort((a, b) => timeOfDayOrder.indexOf(a.key) - timeOfDayOrder.indexOf(b.key));
+	
+	const svg = d3.select('#time-of-day-chart')
+        .append('svg')
+        .attr('width', 400)
+        .attr('height', 300);
+	
+    
+
+    const margin = { top: 20, right: 20, bottom: 30, left: 40 };
+    const width = 400 - margin.left - margin.right;
+    const height = 300 - margin.top - margin.bottom;
+	
+	
+    const x = d3.scaleBand()
+    .domain(timeOfDayOrder) // Use the predefined order
+    .range([margin.left, width - margin.right])
+    .padding(0.1);
+		
+
+    const y = d3.scaleLinear()
+    .domain([0, d3.max(timeOfDayCounts, d => d.count)])
+    .nice()
+    .range([height - margin.bottom, margin.top]);
+		
+
+    svg.append('g')
+    .attr('transform', `translate(0,${height - margin.bottom})`)
+    .call(d3.axisBottom(x))
+    .selectAll('text')
+    .attr('transform', 'rotate(-45)') // Rotate the x-axis labels
+    .attr('text-anchor', 'end'); // Adjust the anchor for proper alignment
+
+		
+	
+
+    svg.append('g')
+        .attr('transform', `translate(${margin.left},0)`)
+        .call(d3.axisLeft(y));
+
+	
+	
+    // Append bars
+svg.selectAll('.bar')
+    .data(timeOfDayCounts)
+    .enter().append('rect')
+    .attr('class', 'bar')
+    .attr('x', d => x(d.time))
+    .attr('y', d => isNaN(y(d.count)) ? 0 : y(d.count)) // Handle NaN values
+    .attr('width', x.bandwidth())
+    .attr('height', d => isNaN(height - margin.bottom - y(d.count)) ? 0 : height - margin.bottom - y(d.count)); // Handle NaN values
 
 
-function updateChart() {
+
+
+// Append text elements on top of each bar
+svg.selectAll('.bar-label')
+    .data(timeOfDayCounts)
+    .enter().append('text')
+    .attr('class', 'bar-label')
+    .attr('x', d => x(d.time) + x.bandwidth() / 2)
+    .attr('y', d => isNaN(y(d.count)) ? height - margin.bottom : y(d.count) - 5) // Adjust the position as needed
+    .attr('text-anchor', 'middle')
+    .text(d => isNaN(d.count) ? '' : d.count);
+	
+}
+
+function updateCharts() {
 	
 
     // Fetch the CSV data
@@ -306,5 +395,6 @@ function updateChart() {
 
         // Render the updated chart with the filtered data
         renderDayOfWeekChart(filteredData);
+		renderTimeOfDayChart(filteredData);
     });
 }
