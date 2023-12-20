@@ -1,4 +1,4 @@
-//console.log('version 5');
+console.log('version 7');
 
 // D3
 d3.csv('https://claudielarouche.com/earlyON/archive.csv').then(data => {
@@ -65,7 +65,8 @@ function renderTable(data) {
 	const selectedArea = document.getElementById('selectedArea').value;
 	const selectedDate = document.getElementById('selectedDate').value;
 	const selectedAgeGroup = document.getElementById('selectedAgeGroup').value;
-	const filteredData = filterData(data, selectedDate, selectedArea, selectedAgeGroup);
+	const selectedOrganizer = document.getElementById('selectedOrganizer').value;
+	const filteredData = filterData(data, selectedDate, selectedArea, selectedAgeGroup, selectedOrganizer);
 
 	
 	//const filteredData = filterDataByDate(data, selectedDate);
@@ -115,24 +116,20 @@ function renderTable(data) {
 
 
 	if (!$.fn.dataTable.isDataTable('#dataTable')) {
-		$('#dataTable').DataTable({
-			"pageLength": -1,
-			"dom": 'Bfrtip', // 'B' for buttons
-			"buttons": [
-				'colvis' // Column visibility button
-			],
-			"searching": false
-		});
-	}
+    $('#dataTable').DataTable({
+        "pageLength": -1,
+        "searching": false
+    });
+}
 }
 
 
 
 
 
-function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
+function filterData(data, selectedDate, selectedArea, selectedAgeGroup, selectedOrganizer) {
     // If no date, area, or age group is selected, return the original data
-    if (!selectedDate && !selectedArea && !selectedAgeGroup) {
+    if (!selectedDate && !selectedArea && !selectedAgeGroup && !selectedOrganizer) {
         return data;
     }
 
@@ -142,12 +139,14 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
             const currentDate = row['Date'] ? row['Date'] : '';
             const currentArea = row['Area'] ? row['Area'] : '';
             const currentAgeGroup = row['Age Group'] ? row['Age Group'] : '';
+			const currentOrganizer = row['Organizer'] ? row['Organizer'] : '';
 
             const dateCondition = !selectedDate || currentDate === selectedDate;
             const areaCondition = !selectedArea || currentArea === selectedArea;
             const ageGroupCondition = !selectedAgeGroup || currentAgeGroup.includes(selectedAgeGroup);
+			const organizerCondition = !selectedOrganizer || currentOrganizer.includes(selectedOrganizer);
 
-            return dateCondition && areaCondition && ageGroupCondition;
+            return dateCondition && areaCondition && ageGroupCondition && organizerCondition;
         });
     } else {
         return [];
@@ -175,6 +174,12 @@ document.getElementById('selectedAgeGroup').addEventListener('change', function(
 	updateCharts();
 });
 
+// Listen for changes in the Organizer select input
+document.getElementById('selectedOrganizer').addEventListener('change', function() {	
+    renderTable(originalData);
+	updateCharts();
+});
+
 function clearAllFilters() {
     // Clear the date filter
     document.getElementById('selectedDate').value = '';
@@ -182,8 +187,12 @@ function clearAllFilters() {
     // Clear the area filter
     document.getElementById('selectedArea').value = '';
 	
-	 // Clear the area filter
+	// Clear the area filter
     document.getElementById('selectedAgeGroup').value = '';
+	
+	// Clear the area filter
+    document.getElementById('selectedOrganizer').value = '';
+
 
 
     // Clear the DataTable search box
@@ -377,8 +386,8 @@ function updateCharts() {
         const selectedDate = document.getElementById('selectedDate').value;
         const selectedArea = document.getElementById('selectedArea').value;
         const selectedAgeGroup = document.getElementById('selectedAgeGroup').value;
-        const filteredData = filterData(data, selectedDate, selectedArea, selectedAgeGroup);
-		
+		const selectedOrganizer = document.getElementById('selectedOrganizer').value;		
+        const filteredData = filterData(data, selectedDate, selectedArea, selectedAgeGroup, selectedOrganizer);		
 
         // Render the updated chart with the filtered data
         renderDayOfWeekChart(filteredData);
