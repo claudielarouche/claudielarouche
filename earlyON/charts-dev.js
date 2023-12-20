@@ -1,8 +1,8 @@
-console.log('version 1');
+console.log('version 2');
 
 // D3
 d3.csv('https://claudielarouche.com/earlyON/archive.csv').then(data => {
-    renderChart(data); // Call the new function to render the D3 chart
+    renderDayOfWeekChart(data); // Call the new function to render the D3 chart
 });
 
 
@@ -196,7 +196,7 @@ function clearAllFilters() {
 }
 
 /*D3*/
-function renderChart(data) {
+function renderDayOfWeekChart(data) {
     // Remove the existing chart if any
     d3.select('#day-of-week-chart').selectAll('*').remove();
 
@@ -274,17 +274,6 @@ svg.selectAll('.bar')
     .attr('width', x.bandwidth())
     .attr('height', d => isNaN(height - margin.bottom - y(d.count)) ? 0 : height - margin.bottom - y(d.count)); // Handle NaN values
 
-// Append data labels
-/*svg.selectAll('.bar-text')
-    .data(dayOfWeekCounts)
-    .enter().append('text')
-    .attr('class', 'bar-text')
-    .attr('x', d => x(d.day) + x.bandwidth() / 2)
-    .attr('y', d => y(d.count) - 5) // Adjust the vertical position as needed
-    .attr('dy', '0.7em') // Adjust the vertical offset
-    .attr('text-anchor', 'middle')
-    .text(d => (isNaN(d.count) || d.count === 0) ? '' : d.count); // Handle NaN values
-*/
 
 
 
@@ -297,9 +286,6 @@ svg.selectAll('.bar-label')
     .attr('y', d => isNaN(y(d.count)) ? height - margin.bottom : y(d.count) - 5) // Adjust the position as needed
     .attr('text-anchor', 'middle')
     .text(d => isNaN(d.count) ? '' : d.count);
-
-
-
 	
 }
 
@@ -319,6 +305,6 @@ function updateChart() {
 		
 
         // Render the updated chart with the filtered data
-        renderChart(filteredData);
+        renderDayOfWeekChart(filteredData);
     });
 }
