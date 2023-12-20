@@ -118,10 +118,7 @@ function renderTable(data) {
 	if (!$.fn.dataTable.isDataTable('#dataTable')) {
 		$('#dataTable').DataTable({
 			"pageLength": -1,
-			"dom": 'Bfrtip', // 'B' for buttons
-			"buttons": [
-				'colvis' // Column visibility button
-			],
+			"dom": 'Bfrtip', // 'B' for buttons			
 			"searching": false
 		});
 	}
