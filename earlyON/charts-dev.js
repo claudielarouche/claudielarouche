@@ -1,4 +1,4 @@
-//console.log('version 15');
+console.log('version 1');
 
 // D3
 d3.csv('https://claudielarouche.com/earlyON/archive.csv').then(data => {
@@ -198,7 +198,7 @@ function clearAllFilters() {
 /*D3*/
 function renderChart(data) {
     // Remove the existing chart if any
-    d3.select('#chart-container').selectAll('*').remove();
+    d3.select('#day-of-week-chart').selectAll('*').remove();
 
 	const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
@@ -224,7 +224,7 @@ function renderChart(data) {
     // Sort the dayOfWeekCounts based on the defined order
     dayOfWeekCounts.sort((a, b) => daysOfWeekOrder.indexOf(a.key) - daysOfWeekOrder.indexOf(b.key));
 
-    const svg = d3.select('#chart-container')
+    const svg = d3.select('#day-of-week-chart')
         .append('svg')
         .attr('width', 400)
         .attr('height', 300);
