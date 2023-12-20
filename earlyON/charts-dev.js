@@ -175,8 +175,9 @@ document.getElementById('selectedAgeGroup').addEventListener('change', function(
 	updateCharts();
 });
 
-// Listen for changes in the Age Group select input
+// Listen for changes in the Organizer select input
 document.getElementById('selectedOrganizer').addEventListener('change', function() {
+	alert('changed!');
     renderTable(originalData);
 	updateCharts();
 });
