@@ -175,8 +175,7 @@ document.getElementById('selectedAgeGroup').addEventListener('change', function(
 });
 
 // Listen for changes in the Organizer select input
-document.getElementById('selectedOrganizer').addEventListener('change', function() {
-	alert('changed!');
+document.getElementById('selectedOrganizer').addEventListener('change', function() {	
     renderTable(originalData);
 	updateCharts();
 });
@@ -387,10 +386,8 @@ function updateCharts() {
         const selectedDate = document.getElementById('selectedDate').value;
         const selectedArea = document.getElementById('selectedArea').value;
         const selectedAgeGroup = document.getElementById('selectedAgeGroup').value;
-		const selectedOrganizer = document.getElementById('selectedOrganizer').value;
-		alert(selectedOrganizer);
-        const filteredData = filterData(data, selectedDate, selectedArea, selectedAgeGroup, selectedOrganizer);
-		console.log(filteredData);
+		const selectedOrganizer = document.getElementById('selectedOrganizer').value;		
+        const filteredData = filterData(data, selectedDate, selectedArea, selectedAgeGroup, selectedOrganizer);		
 
         // Render the updated chart with the filtered data
         renderDayOfWeekChart(filteredData);
