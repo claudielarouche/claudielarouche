@@ -1,4 +1,4 @@
-console.log('version 5');
+console.log('version 6');
 
 // D3
 d3.csv('https://claudielarouche.com/earlyON/archive.csv').then(data => {
@@ -388,6 +388,7 @@ function updateCharts() {
         const selectedArea = document.getElementById('selectedArea').value;
         const selectedAgeGroup = document.getElementById('selectedAgeGroup').value;
 		const selectedOrganizer = document.getElementById('selectedOrganizer').value;
+		alert(selectedOrganizer);
         const filteredData = filterData(data, selectedDate, selectedArea, selectedAgeGroup, selectedOrganizer);
 		
 
