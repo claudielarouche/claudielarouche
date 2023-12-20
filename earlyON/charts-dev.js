@@ -1,4 +1,4 @@
-console.log('version 6');
+console.log('version 7');
 
 // D3
 d3.csv('https://claudielarouche.com/earlyON/archive.csv').then(data => {
@@ -116,12 +116,11 @@ function renderTable(data) {
 
 
 	if (!$.fn.dataTable.isDataTable('#dataTable')) {
-		$('#dataTable').DataTable({
-			"pageLength": -1,
-			"dom": 'Bfrtip', // 'B' for buttons			
-			"searching": false
-		});
-	}
+    $('#dataTable').DataTable({
+        "pageLength": -1,
+        "searching": false
+    });
+}
 }
 
 
