@@ -1,4 +1,4 @@
-console.log('version 8');
+console.log('version 1');
 
 let originalData = []; // Initialize as an empty array
 
@@ -120,7 +120,7 @@ function renderTable(data) {
 
 function filterData(data, selectedDate, selectedArea, selectedAgeGroup, selectedSchedule) {
     // If no date, area, age group, or schedule is selected, return the original data
-    if (!selectedDate && !selectedArea && !selectedAgeGroup && !selectedSchedule.length) {
+    if (!selectedDate && !selectedArea && !selectedAgeGroup && (!selectedSchedule || !selectedSchedule.length)) {
         return data;
     }
 
@@ -136,8 +136,8 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup, selected
             const dateCondition = !selectedDate || currentDate === selectedDate;
             const areaCondition = !selectedArea || currentArea === selectedArea;
             const ageGroupCondition = !selectedAgeGroup || currentAgeGroup.includes(selectedAgeGroup);
-            const scheduleCondition = !selectedSchedule.length || 
-                (selectedSchedule.includes(currentTimeOfDay) || (selectedSchedule.includes('Weekend') && (currentDayOfWeek === 'Saturday' || currentDayOfWeek === 'Sunday')));
+            const scheduleCondition = !selectedSchedule || selectedSchedule.includes(currentTimeOfDay) || 
+                                     (selectedSchedule.includes('Weekend') && (currentDayOfWeek === 'Saturday' || currentDayOfWeek === 'Sunday'));
 
             return dateCondition && areaCondition && ageGroupCondition && scheduleCondition;
         });
@@ -145,6 +145,7 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup, selected
         return [];
     }
 }
+
 
 
 
