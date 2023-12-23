@@ -1,3 +1,5 @@
+console.log('version 7');
+
 let originalData = []; // Initialize as an empty array
 
 window.onload = function() {
@@ -45,8 +47,6 @@ function renderTable(data) {
 	}
 
 	const headers = Object.keys(data[0]);
-	/*	headers.push('Time of Day'); // Add this line to include the new header
-		headers.push('Day of Week'); // Add this line to include the new header*/
 
 
 	let tableHtml = '<table id="dataTable"><thead><tr>';
@@ -61,7 +61,6 @@ function renderTable(data) {
 	const filteredData = filterData(data, selectedDate, selectedArea, selectedAgeGroup);
 
 	
-	//const filteredData = filterDataByDate(data, selectedDate);
 
 	if (!Array.isArray(filteredData)) {
 		console.error('Error loading data: Filtered data is not an array.');
@@ -79,23 +78,7 @@ function renderTable(data) {
 					// Make the URL clickable as a link
 					tableHtml += `<td><a href="${row[header]}" target="_blank">URL</a></td>`;
 				}
-				/*else if (header === 'Day of Week') {
-				               // Calculate and display the day of the week
-				               const dateParts = currentDate.split('-');
-				               const currentJsDate = new Date(dateParts[0], dateParts[1] - 1, dateParts[2]);
-				               const dayOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][currentJsDate.getDay()];
-				               tableHtml += `<td>${dayOfWeek}</td>`;
-				           } else if (header === 'Time of Day') {
-				               // Calculate and display the time of day
-				               const time = row['Hours'] ? row['Hours'].trim() : '';
-				               if (time.startsWith('09') || time.startsWith('10') || time.startsWith('11')) {
-				                   tableHtml += '<td>Morning</td>';
-				               } else if (time.startsWith('12') || time.startsWith('13') || time.startsWith('14') || time.startsWith('15') || time.startsWith('16')) {
-				                   tableHtml += '<td>Afternoon</td>';
-				               } else {
-				                   tableHtml += '<td>Evening</td>';
-				               }
-				           } */
+				
 				else if (header === 'Location Address') {
 					// Create a link with the Google Maps URL for the address
 					const address = row[header] ? row[header].trim() : '';
@@ -121,19 +104,6 @@ function renderTable(data) {
 
 	document.getElementById('csvData').innerHTML = tableHtml;
 
-	/*if (totalData > 0) {
-	    document.getElementById('csvData').innerHTML = 'No playgroups found for the selected day.';
-	    return;
-	}*/
-
-	// Initialize DataTable only once
-	/* if (!$.fn.dataTable.isDataTable('#dataTable')) {
-        $('#dataTable').DataTable({
-			"pageLength": -1,
-			"lengthChange": false, // Hide the "Show x entries" dropdown
-			"searching": false
-		});
-    }*/
 
 	if (!$.fn.dataTable.isDataTable('#dataTable')) {
 		$('#dataTable').DataTable({
@@ -146,9 +116,6 @@ function renderTable(data) {
 	}
 	$('#dataTable_filter input').val(currentSearchValue).trigger('input');
 }
-
-
-
 
 
 function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
