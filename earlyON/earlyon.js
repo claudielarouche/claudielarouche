@@ -170,7 +170,7 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
 			(selectedSchedule.includes('Afternoon') && currentTimeOfDay === 'Afternoon') ||
 			(selectedSchedule.includes('Evening') && currentTimeOfDay === 'Evening') ;
 			//||			(selectedSchedule.includes('Weekend') && (currentDayOfWeek === 'Saturday' || currentDayOfWeek === 'Sunday'));
-			
+			//forcing a other refresh
 
 
             return dateCondition && areaCondition && ageGroupCondition && scheduleCondition;
