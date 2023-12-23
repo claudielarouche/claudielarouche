@@ -1,4 +1,4 @@
-console.log('version 9');
+console.log('version 10');
 
 let originalData = []; // Initialize as an empty array
 
@@ -120,7 +120,8 @@ function renderTable(data) {
 				'colvis' // Column visibility button
 			],
 			"language": {
-				"emptyTable": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>."
+				"emptyTable": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>.",
+				"zeroRecords": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>clearing all filters</a>."
 			}
 		});
 	}
