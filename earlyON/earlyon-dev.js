@@ -169,9 +169,7 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
            const scheduleCondition = !selectedSchedule.length || 
 			(selectedSchedule.includes('Morning') && currentTimeOfDay === 'Morning') ||
 			(selectedSchedule.includes('Afternoon') && currentTimeOfDay === 'Afternoon') ||
-			(selectedSchedule.includes('Evening') && currentTimeOfDay === 'Evening');
-			
-			
+			(selectedSchedule.includes('Evening') && currentTimeOfDay === 'Evening');			
 			
 			// Conditions for day of week
             const weekendCondition = weekendCheckbox.checked && (currentDayOfWeek === 'Saturday' || currentDayOfWeek === 'Sunday');
@@ -185,11 +183,6 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
         return [];
     }
 }
-
-
-
-
-
 
 function isPastDate(dateString) {
 	const currentDate = new Date();

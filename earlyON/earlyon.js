@@ -1,4 +1,4 @@
-console.log('version 2');
+console.log('version 4');
 
 let originalData = []; // Initialize as an empty array
 
@@ -134,14 +134,15 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
 	const morningCheckbox = document.getElementById('morningCheckbox');
     const afternoonCheckbox = document.getElementById('afternoonCheckbox');
     const eveningCheckbox = document.getElementById('eveningCheckbox');
-    //const weekendCheckbox = document.getElementById('weekendCheckbox');
-
+  /*  const showWeekend = document.getElementById('weekendCheckbox').checked;
+    const showWeekdays = document.getElementById('weekdaysCheckbox').checked;*/
+	
     const selectedSchedule = [];
     if (morningCheckbox.checked) selectedSchedule.push('Morning');
     if (afternoonCheckbox.checked) selectedSchedule.push('Afternoon');
     if (eveningCheckbox.checked) selectedSchedule.push('Evening');
-    //if (weekendCheckbox.checked) selectedSchedule.push('Weekend');
 	
+    
 	// Ensure that at least one checkbox is selected
     if (selectedSchedule.length === 0) {
         return [];
@@ -168,22 +169,20 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
            const scheduleCondition = !selectedSchedule.length || 
 			(selectedSchedule.includes('Morning') && currentTimeOfDay === 'Morning') ||
 			(selectedSchedule.includes('Afternoon') && currentTimeOfDay === 'Afternoon') ||
-			(selectedSchedule.includes('Evening') && currentTimeOfDay === 'Evening') ;
-			//||			(selectedSchedule.includes('Weekend') && (currentDayOfWeek === 'Saturday' || currentDayOfWeek === 'Sunday'));
-			//forcing a other refresh
+			(selectedSchedule.includes('Evening') && currentTimeOfDay === 'Evening');			
+			
+			// Conditions for day of week
+            const weekendCondition = weekendCheckbox.checked && (currentDayOfWeek === 'Saturday' || currentDayOfWeek === 'Sunday');
+            const weekdaysCondition = weekdaysCheckbox.checked && (currentDayOfWeek === 'Monday' || currentDayOfWeek === 'Tuesday' || currentDayOfWeek === 'Wednesday' || currentDayOfWeek === 'Thursday' || currentDayOfWeek === 'Friday');
+            
+            const weekCondition = weekendCondition || weekdaysCondition;
 
-
-            return dateCondition && areaCondition && ageGroupCondition && scheduleCondition;
+            return dateCondition && areaCondition && ageGroupCondition && scheduleCondition && weekCondition;
         });
     } else {
         return [];
     }
 }
-
-
-
-
-
 
 function isPastDate(dateString) {
 	const currentDate = new Date();
