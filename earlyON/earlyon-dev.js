@@ -1,4 +1,4 @@
-console.log('version 7');
+console.log('version 8');
 
 let originalData = []; // Initialize as an empty array
 
@@ -64,7 +64,7 @@ function renderTable(data) {
         .filter(checkbox => checkbox.checked)
         .map(checkbox => checkbox.id.replace('Checkbox', ''));
 
-    const filteredData = filterData(data, selectedDate, selectedArea, selectedAgeGroup, selectedSchedule);
+    const filteredData = filterData(data, selectedDate, selectedArea, selectedAgeGroup);
 	
 	
 	
@@ -125,7 +125,7 @@ function renderTable(data) {
 }
 
 
-function filterData(data, selectedDate, selectedArea, selectedAgeGroup, selectedSchedule) {
+function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
     
 	const morningCheckbox = document.getElementById('morningCheckbox');
     const afternoonCheckbox = document.getElementById('afternoonCheckbox');
