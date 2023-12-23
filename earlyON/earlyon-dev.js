@@ -1,4 +1,4 @@
-console.log('version 1');
+console.log('version 2');
 
 let originalData = []; // Initialize as an empty array
 
@@ -58,8 +58,15 @@ function renderTable(data) {
 	const selectedArea = document.getElementById('selectedArea').value;
 	const selectedDate = document.getElementById('selectedDate').value;
 	const selectedAgeGroup = document.getElementById('selectedAgeGroup').value;
-	const filteredData = filterData(data, selectedDate, selectedArea, selectedAgeGroup);
+	
+	const selectedScheduleCheckboxes = document.querySelectorAll('.scheduleCheckbox');
+    const selectedSchedule = Array.from(selectedScheduleCheckboxes)
+        .filter(checkbox => checkbox.checked)
+        .map(checkbox => checkbox.id.replace('Checkbox', ''));
 
+    const filteredData = filterData(data, selectedDate, selectedArea, selectedAgeGroup, selectedSchedule);
+	
+	
 	
 
 	if (!Array.isArray(filteredData)) {
