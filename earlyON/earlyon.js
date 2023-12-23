@@ -1,3 +1,5 @@
+console.log('version 9');
+
 let originalData = []; // Initialize as an empty array
 
 window.onload = function() {
@@ -45,8 +47,6 @@ function renderTable(data) {
 	}
 
 	const headers = Object.keys(data[0]);
-	/*	headers.push('Time of Day'); // Add this line to include the new header
-		headers.push('Day of Week'); // Add this line to include the new header*/
 
 
 	let tableHtml = '<table id="dataTable"><thead><tr>';
@@ -58,10 +58,16 @@ function renderTable(data) {
 	const selectedArea = document.getElementById('selectedArea').value;
 	const selectedDate = document.getElementById('selectedDate').value;
 	const selectedAgeGroup = document.getElementById('selectedAgeGroup').value;
-	const filteredData = filterData(data, selectedDate, selectedArea, selectedAgeGroup);
-
 	
-	//const filteredData = filterDataByDate(data, selectedDate);
+	const selectedScheduleCheckboxes = document.querySelectorAll('.scheduleCheckbox');
+    const selectedSchedule = Array.from(selectedScheduleCheckboxes)
+        .filter(checkbox => checkbox.checked)
+        .map(checkbox => checkbox.id.replace('Checkbox', ''));
+
+    const filteredData = filterData(data, selectedDate, selectedArea, selectedAgeGroup);
+	
+	
+	
 
 	if (!Array.isArray(filteredData)) {
 		console.error('Error loading data: Filtered data is not an array.');
@@ -79,23 +85,7 @@ function renderTable(data) {
 					// Make the URL clickable as a link
 					tableHtml += `<td><a href="${row[header]}" target="_blank">URL</a></td>`;
 				}
-				/*else if (header === 'Day of Week') {
-				               // Calculate and display the day of the week
-				               const dateParts = currentDate.split('-');
-				               const currentJsDate = new Date(dateParts[0], dateParts[1] - 1, dateParts[2]);
-				               const dayOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][currentJsDate.getDay()];
-				               tableHtml += `<td>${dayOfWeek}</td>`;
-				           } else if (header === 'Time of Day') {
-				               // Calculate and display the time of day
-				               const time = row['Hours'] ? row['Hours'].trim() : '';
-				               if (time.startsWith('09') || time.startsWith('10') || time.startsWith('11')) {
-				                   tableHtml += '<td>Morning</td>';
-				               } else if (time.startsWith('12') || time.startsWith('13') || time.startsWith('14') || time.startsWith('15') || time.startsWith('16')) {
-				                   tableHtml += '<td>Afternoon</td>';
-				               } else {
-				                   tableHtml += '<td>Evening</td>';
-				               }
-				           } */
+				
 				else if (header === 'Location Address') {
 					// Create a link with the Google Maps URL for the address
 					const address = row[header] ? row[header].trim() : '';
@@ -121,19 +111,6 @@ function renderTable(data) {
 
 	document.getElementById('csvData').innerHTML = tableHtml;
 
-	/*if (totalData > 0) {
-	    document.getElementById('csvData').innerHTML = 'No playgroups found for the selected day.';
-	    return;
-	}*/
-
-	// Initialize DataTable only once
-	/* if (!$.fn.dataTable.isDataTable('#dataTable')) {
-        $('#dataTable').DataTable({
-			"pageLength": -1,
-			"lengthChange": false, // Hide the "Show x entries" dropdown
-			"searching": false
-		});
-    }*/
 
 	if (!$.fn.dataTable.isDataTable('#dataTable')) {
 		$('#dataTable').DataTable({
@@ -141,19 +118,37 @@ function renderTable(data) {
 			"dom": 'Bfrtip', // 'B' for buttons
 			"buttons": [
 				'colvis' // Column visibility button
-			]
+			],
+			"language": {
+				"emptyTable": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>."
+			}
 		});
 	}
 	$('#dataTable_filter input').val(currentSearchValue).trigger('input');
 }
 
 
-
-
-
 function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
-    // If no date, area, or age group is selected, return the original data
-    if (!selectedDate && !selectedArea && !selectedAgeGroup) {
+    
+	const morningCheckbox = document.getElementById('morningCheckbox');
+    const afternoonCheckbox = document.getElementById('afternoonCheckbox');
+    const eveningCheckbox = document.getElementById('eveningCheckbox');
+    const weekendCheckbox = document.getElementById('weekendCheckbox');
+
+    const selectedSchedule = [];
+    if (morningCheckbox.checked) selectedSchedule.push('Morning');
+    if (afternoonCheckbox.checked) selectedSchedule.push('Afternoon');
+    if (eveningCheckbox.checked) selectedSchedule.push('Evening');
+    if (weekendCheckbox.checked) selectedSchedule.push('Weekend');
+	
+	// Ensure that at least one checkbox is selected
+    if (selectedSchedule.length === 0) {
+        return [];
+    }
+
+	
+	// If no date, area, age group, or schedule is selected, return the original data
+    if (!selectedDate && !selectedArea && !selectedAgeGroup && !selectedSchedule.length) {
         return data;
     }
 
@@ -163,17 +158,30 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
             const currentDate = row['Date'] ? row['Date'] : '';
             const currentArea = row['Area'] ? row['Area'] : '';
             const currentAgeGroup = row['Age Group'] ? row['Age Group'] : '';
+            const currentTimeOfDay = row['Time of Day'] ? row['Time of Day'] : '';
+            const currentDayOfWeek = row['Day of Week'] ? row['Day of Week'] : '';
 
             const dateCondition = !selectedDate || currentDate === selectedDate;
             const areaCondition = !selectedArea || currentArea === selectedArea;
             const ageGroupCondition = !selectedAgeGroup || currentAgeGroup.includes(selectedAgeGroup);
+           const scheduleCondition = !selectedSchedule.length || 
+			(selectedSchedule.includes('Morning') && currentTimeOfDay === 'Morning') ||
+			(selectedSchedule.includes('Afternoon') && currentTimeOfDay === 'Afternoon') ||
+			(selectedSchedule.includes('Evening') && currentTimeOfDay === 'Evening') ||
+			(selectedSchedule.includes('Weekend') && (currentDayOfWeek === 'Saturday' || currentDayOfWeek === 'Sunday'));
 
-            return dateCondition && areaCondition && ageGroupCondition;
+
+            return dateCondition && areaCondition && ageGroupCondition && scheduleCondition;
         });
     } else {
         return [];
     }
 }
+
+
+
+
+
 
 function isPastDate(dateString) {
 	const currentDate = new Date();
@@ -208,6 +216,14 @@ document.getElementById('selectedAgeGroup').addEventListener('change', function(
     renderTable(originalData);
 });
 
+// Listen for changes in the "Select Schedule" checkboxes
+document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+    checkbox.addEventListener('change', function() {
+        currentSearchValue = $('#dataTable_filter input').val();
+        renderTable(originalData);
+    });
+});
+
 function clearAllFilters() {
     // Clear the date filter
     document.getElementById('selectedDate').value = '';
@@ -215,9 +231,14 @@ function clearAllFilters() {
     // Clear the area filter
     document.getElementById('selectedArea').value = '';
 	
-	 // Clear the area filter
+	 // Clear the age group filter
     document.getElementById('selectedAgeGroup').value = '';
 
+    // Check all the "Select Schedule" checkboxes
+    document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+        checkbox.checked = true;
+    });
+	
 
     // Clear the DataTable search box
     $('#dataTable_filter input').val('');
@@ -225,4 +246,5 @@ function clearAllFilters() {
     // Render the table with cleared filters
     renderTable(originalData);
 }
+
 
