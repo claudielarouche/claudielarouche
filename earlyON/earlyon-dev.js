@@ -1,4 +1,4 @@
-console.log('version 8');
+console.log('version 9');
 
 let originalData = []; // Initialize as an empty array
 
@@ -118,7 +118,10 @@ function renderTable(data) {
 			"dom": 'Bfrtip', // 'B' for buttons
 			"buttons": [
 				'colvis' // Column visibility button
-			]
+			],
+			"language": {
+				"emptyTable": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>clearing all filters</a>."
+			}
 		});
 	}
 	$('#dataTable_filter input').val(currentSearchValue).trigger('input');
@@ -137,6 +140,12 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
     if (afternoonCheckbox.checked) selectedSchedule.push('Afternoon');
     if (eveningCheckbox.checked) selectedSchedule.push('Evening');
     if (weekendCheckbox.checked) selectedSchedule.push('Weekend');
+	
+	// Ensure that at least one checkbox is selected
+    if (selectedSchedule.length === 0) {
+        return [];
+    }
+
 	
 	// If no date, area, age group, or schedule is selected, return the original data
     if (!selectedDate && !selectedArea && !selectedAgeGroup && !selectedSchedule.length) {
@@ -229,6 +238,7 @@ function clearAllFilters() {
     document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
         checkbox.checked = true;
     });
+	
 
     // Clear the DataTable search box
     $('#dataTable_filter input').val('');
