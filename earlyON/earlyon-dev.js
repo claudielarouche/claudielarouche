@@ -1,4 +1,4 @@
-console.log('version 11');
+console.log('version 2');
 
 let originalData = []; // Initialize as an empty array
 
@@ -134,8 +134,8 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
 	const morningCheckbox = document.getElementById('morningCheckbox');
     const afternoonCheckbox = document.getElementById('afternoonCheckbox');
     const eveningCheckbox = document.getElementById('eveningCheckbox');
-    const showWeekend = document.getElementById('weekendCheckbox').checked;
-    const showWeekdays = document.getElementById('weekdaysCheckbox').checked;
+  /*  const showWeekend = document.getElementById('weekendCheckbox').checked;
+    const showWeekdays = document.getElementById('weekdaysCheckbox').checked;*/
 	
     const selectedSchedule = [];
     if (morningCheckbox.checked) selectedSchedule.push('Morning');
@@ -150,7 +150,7 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
 
 	
 	// If no date, area, age group, or schedule is selected, return the original data
-    if (!selectedDate && !selectedArea && !selectedAgeGroup && !selectedSchedule.length && !showWeekend && !showWeekdays) {
+    if (!selectedDate && !selectedArea && !selectedAgeGroup && !selectedSchedule.length) {
         return data;
     }
 
@@ -171,11 +171,17 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
 			(selectedSchedule.includes('Afternoon') && currentTimeOfDay === 'Afternoon') ||
 			(selectedSchedule.includes('Evening') && currentTimeOfDay === 'Evening');
 			
-			const weekendCondition = !showWeekend || currentDayOfWeek === 'Saturday' || currentDayOfWeek === 'Sunday';
-            const weekdaysCondition = !showWeekdays || currentDayOfWeek !== 'Saturday' && currentDayOfWeek !== 'Sunday';
+			 const weekendCondition = selectedSchedule.includes('Weekend') && (currentDayOfWeek === 'Saturday' || currentDayOfWeek === 'Sunday');
+            const weekdaysCondition = selectedSchedule.includes('Weekdays') && (currentDayOfWeek === 'Monday' || currentDayOfWeek === 'Tuesday' || currentDayOfWeek === 'Wednesday' || currentDayOfWeek === 'Thursday' || currentDayOfWeek === 'Friday');
+			
+			 // Conditions for day of week
+            const weekendCondition = selectedSchedule.includes('Weekend') && (currentDayOfWeek === 'Saturday' || currentDayOfWeek === 'Sunday');
+            const weekdaysCondition = selectedSchedule.includes('Weekdays') && (currentDayOfWeek === 'Monday' || currentDayOfWeek === 'Tuesday' || currentDayOfWeek === 'Wednesday' || currentDayOfWeek === 'Thursday' || currentDayOfWeek === 'Friday');
+			
+			const weekCondition =  weekendCondition || weekdaysCondition;
 
 
-            return dateCondition && areaCondition && ageGroupCondition && scheduleCondition && weekendCondition && weekdaysCondition;;
+            return dateCondition && areaCondition && ageGroupCondition && scheduleCondition && weekCondition;
         });
     } else {
         return [];
