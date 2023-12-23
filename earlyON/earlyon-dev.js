@@ -1,4 +1,4 @@
-console.log('version 7');
+console.log('version 8');
 
 let originalData = []; // Initialize as an empty array
 
@@ -118,9 +118,9 @@ function renderTable(data) {
 }
 
 
-function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
-    // If no date, area, or age group is selected, return the original data
-    if (!selectedDate && !selectedArea && !selectedAgeGroup) {
+function filterData(data, selectedDate, selectedArea, selectedAgeGroup, selectedSchedule) {
+    // If no date, area, age group, or schedule is selected, return the original data
+    if (!selectedDate && !selectedArea && !selectedAgeGroup && !selectedSchedule.length) {
         return data;
     }
 
@@ -130,17 +130,24 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
             const currentDate = row['Date'] ? row['Date'] : '';
             const currentArea = row['Area'] ? row['Area'] : '';
             const currentAgeGroup = row['Age Group'] ? row['Age Group'] : '';
+            const currentTimeOfDay = row['Time of Day'] ? row['Time of Day'] : '';
+            const currentDayOfWeek = row['Day of Week'] ? row['Day of Week'] : '';
 
             const dateCondition = !selectedDate || currentDate === selectedDate;
             const areaCondition = !selectedArea || currentArea === selectedArea;
             const ageGroupCondition = !selectedAgeGroup || currentAgeGroup.includes(selectedAgeGroup);
+            const scheduleCondition = !selectedSchedule.length || 
+                (selectedSchedule.includes(currentTimeOfDay) || (selectedSchedule.includes('Weekend') && (currentDayOfWeek === 'Saturday' || currentDayOfWeek === 'Sunday')));
 
-            return dateCondition && areaCondition && ageGroupCondition;
+            return dateCondition && areaCondition && ageGroupCondition && scheduleCondition;
         });
     } else {
         return [];
     }
 }
+
+
+
 
 function isPastDate(dateString) {
 	const currentDate = new Date();
@@ -175,6 +182,14 @@ document.getElementById('selectedAgeGroup').addEventListener('change', function(
     renderTable(originalData);
 });
 
+// Listen for changes in the "Select Schedule" checkboxes
+document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+    checkbox.addEventListener('change', function() {
+        currentSearchValue = $('#dataTable_filter input').val();
+        renderTable(originalData);
+    });
+});
+
 function clearAllFilters() {
     // Clear the date filter
     document.getElementById('selectedDate').value = '';
@@ -182,9 +197,13 @@ function clearAllFilters() {
     // Clear the area filter
     document.getElementById('selectedArea').value = '';
 	
-	 // Clear the area filter
+	 // Clear the age group filter
     document.getElementById('selectedAgeGroup').value = '';
 
+    // Check all the "Select Schedule" checkboxes
+    document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+        checkbox.checked = true;
+    });
 
     // Clear the DataTable search box
     $('#dataTable_filter input').val('');
@@ -192,4 +211,5 @@ function clearAllFilters() {
     // Render the table with cleared filters
     renderTable(originalData);
 }
+
 
