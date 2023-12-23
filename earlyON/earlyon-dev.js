@@ -1,4 +1,4 @@
-console.log('version 3');
+console.log('version 4');
 
 let originalData = []; // Initialize as an empty array
 
@@ -173,12 +173,11 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
 			
 			
 			
-			 // Conditions for day of week
-            const weekendCondition =  (currentDayOfWeek === 'Saturday' || currentDayOfWeek === 'Sunday');
-            const weekdaysCondition =  (currentDayOfWeek === 'Monday' || currentDayOfWeek === 'Tuesday' || currentDayOfWeek === 'Wednesday' || currentDayOfWeek === 'Thursday' || currentDayOfWeek === 'Friday');
-			
-			const weekCondition =  weekendCondition || weekdaysCondition;
-
+			// Conditions for day of week
+            const weekendCondition = weekendCheckbox.checked && (currentDayOfWeek === 'Saturday' || currentDayOfWeek === 'Sunday');
+            const weekdaysCondition = weekdaysCheckbox.checked && (currentDayOfWeek === 'Monday' || currentDayOfWeek === 'Tuesday' || currentDayOfWeek === 'Wednesday' || currentDayOfWeek === 'Thursday' || currentDayOfWeek === 'Friday');
+            
+            const weekCondition = weekendCondition || weekdaysCondition;
 
             return dateCondition && areaCondition && ageGroupCondition && scheduleCondition && weekCondition;
         });
