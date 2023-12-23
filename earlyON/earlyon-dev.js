@@ -134,13 +134,16 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
 	const morningCheckbox = document.getElementById('morningCheckbox');
     const afternoonCheckbox = document.getElementById('afternoonCheckbox');
     const eveningCheckbox = document.getElementById('eveningCheckbox');
-    const weekendCheckbox = document.getElementById('weekendCheckbox');
+    const weekendCheckbox = document.getElementById('weekendCheckbox');	
+    const weekdayCheckbox = document.getElementById('weekdaysCheckbox');
 
     const selectedSchedule = [];
     if (morningCheckbox.checked) selectedSchedule.push('Morning');
     if (afternoonCheckbox.checked) selectedSchedule.push('Afternoon');
     if (eveningCheckbox.checked) selectedSchedule.push('Evening');
+	
     if (weekendCheckbox.checked) selectedSchedule.push('Weekend');
+	if (weekendCheckbox.checked) selectedSchedule.push('Weekdays');
 	
 	// Ensure that at least one checkbox is selected
     if (selectedSchedule.length === 0) {
@@ -169,7 +172,8 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
 			(selectedSchedule.includes('Morning') && currentTimeOfDay === 'Morning') ||
 			(selectedSchedule.includes('Afternoon') && currentTimeOfDay === 'Afternoon') ||
 			(selectedSchedule.includes('Evening') && currentTimeOfDay === 'Evening') ||
-			(selectedSchedule.includes('Weekend') && (currentDayOfWeek === 'Saturday' || currentDayOfWeek === 'Sunday'));
+			(selectedSchedule.includes('Weekend') && (currentDayOfWeek === 'Saturday' || currentDayOfWeek === 'Sunday'))
+			(selectedSchedule.includes('Weekdays') && (currentDayOfWeek === 'Monday' || currentDayOfWeek === 'Tuesday' || currentDayOfWeek === 'Wednesday' || currentDayOfWeek === 'Thursday' || currentDayOfWeek === 'Friday'));
 
 
             return dateCondition && areaCondition && ageGroupCondition && scheduleCondition;
