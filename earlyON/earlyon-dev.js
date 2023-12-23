@@ -171,8 +171,7 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
 			(selectedSchedule.includes('Afternoon') && currentTimeOfDay === 'Afternoon') ||
 			(selectedSchedule.includes('Evening') && currentTimeOfDay === 'Evening');
 			
-			 const weekendCondition = selectedSchedule.includes('Weekend') && (currentDayOfWeek === 'Saturday' || currentDayOfWeek === 'Sunday');
-            const weekdaysCondition = selectedSchedule.includes('Weekdays') && (currentDayOfWeek === 'Monday' || currentDayOfWeek === 'Tuesday' || currentDayOfWeek === 'Wednesday' || currentDayOfWeek === 'Thursday' || currentDayOfWeek === 'Friday');
+			
 			
 			 // Conditions for day of week
             const weekendCondition = selectedSchedule.includes('Weekend') && (currentDayOfWeek === 'Saturday' || currentDayOfWeek === 'Sunday');
