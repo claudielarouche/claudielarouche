@@ -1,4 +1,4 @@
-console.log('version 10');
+console.log('version 11');
 
 let originalData = []; // Initialize as an empty array
 
@@ -143,7 +143,7 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
     if (eveningCheckbox.checked) selectedSchedule.push('Evening');
 	
     if (weekendCheckbox.checked) selectedSchedule.push('Weekend');
-	if (weekendCheckbox.checked) selectedSchedule.push('Weekdays');
+	if (weekdaysCheckbox.checked) selectedSchedule.push('Weekdays');
 	
 	// Ensure that at least one checkbox is selected
     if (selectedSchedule.length === 0) {
