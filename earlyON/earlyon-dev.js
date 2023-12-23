@@ -1,4 +1,4 @@
-console.log('version 3');
+console.log('version 4');
 
 let originalData = []; // Initialize as an empty array
 
@@ -143,7 +143,12 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup, selected
             const dateCondition = !selectedDate || currentDate === selectedDate;
             const areaCondition = !selectedArea || currentArea === selectedArea;
             const ageGroupCondition = !selectedAgeGroup || currentAgeGroup.includes(selectedAgeGroup);
-            const scheduleCondition = !selectedSchedule.length || selectedSchedule.includes(currentTimeOfDay) || (selectedSchedule.includes('Weekend') && (currentDayOfWeek === 'Saturday' || currentDayOfWeek === 'Sunday'));
+           const scheduleCondition = !selectedSchedule.length || 
+			(selectedSchedule.includes('Morning') && currentTimeOfDay === 'Morning') ||
+			(selectedSchedule.includes('Afternoon') && currentTimeOfDay === 'Afternoon') ||
+			(selectedSchedule.includes('Evening') && currentTimeOfDay === 'Evening') ||
+			(selectedSchedule.includes('Weekend') && (currentDayOfWeek === 'Saturday' || currentDayOfWeek === 'Sunday'));
+
 
             return dateCondition && areaCondition && ageGroupCondition && scheduleCondition;
         });
