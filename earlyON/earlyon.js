@@ -172,12 +172,14 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
 			(selectedSchedule.includes('Evening') && currentTimeOfDay === 'Evening');			
 			
 			// Conditions for day of week
-            const weekendCondition = weekendCheckbox.checked && (currentDayOfWeek === 'Saturday' || currentDayOfWeek === 'Sunday');
+            /*const weekendCondition = weekendCheckbox.checked && (currentDayOfWeek === 'Saturday' || currentDayOfWeek === 'Sunday');
             const weekdaysCondition = weekdaysCheckbox.checked && (currentDayOfWeek === 'Monday' || currentDayOfWeek === 'Tuesday' || currentDayOfWeek === 'Wednesday' || currentDayOfWeek === 'Thursday' || currentDayOfWeek === 'Friday');
             
             const weekCondition = weekendCondition || weekdaysCondition;
 
-            return dateCondition && areaCondition && ageGroupCondition && scheduleCondition && weekCondition;
+            return dateCondition && areaCondition && ageGroupCondition && scheduleCondition && weekCondition;*/
+			
+			 return dateCondition && areaCondition && ageGroupCondition && scheduleCondition;
         });
     } else {
         return [];
