@@ -1,4 +1,4 @@
-console.log('version 5');
+console.log('version 6');
 
 let originalData = []; // Initialize as an empty array
 
