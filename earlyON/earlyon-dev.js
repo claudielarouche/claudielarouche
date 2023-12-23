@@ -134,17 +134,15 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
 	const morningCheckbox = document.getElementById('morningCheckbox');
     const afternoonCheckbox = document.getElementById('afternoonCheckbox');
     const eveningCheckbox = document.getElementById('eveningCheckbox');
-    const weekendCheckbox = document.getElementById('weekendCheckbox');	
-    const weekdayCheckbox = document.getElementById('weekdaysCheckbox');
-
+    const showWeekend = document.getElementById('weekendCheckbox').checked;
+    const showWeekdays = document.getElementById('weekdaysCheckbox').checked;
+	
     const selectedSchedule = [];
     if (morningCheckbox.checked) selectedSchedule.push('Morning');
     if (afternoonCheckbox.checked) selectedSchedule.push('Afternoon');
     if (eveningCheckbox.checked) selectedSchedule.push('Evening');
 	
-    if (weekendCheckbox.checked) selectedSchedule.push('Weekend');
-	if (weekdaysCheckbox.checked) selectedSchedule.push('Weekdays');
-	
+    
 	// Ensure that at least one checkbox is selected
     if (selectedSchedule.length === 0) {
         return [];
@@ -152,7 +150,7 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
 
 	
 	// If no date, area, age group, or schedule is selected, return the original data
-    if (!selectedDate && !selectedArea && !selectedAgeGroup && !selectedSchedule.length) {
+    if (!selectedDate && !selectedArea && !selectedAgeGroup && !selectedSchedule.length && !showWeekend && !showWeekdays) {
         return data;
     }
 
@@ -171,12 +169,13 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
            const scheduleCondition = !selectedSchedule.length || 
 			(selectedSchedule.includes('Morning') && currentTimeOfDay === 'Morning') ||
 			(selectedSchedule.includes('Afternoon') && currentTimeOfDay === 'Afternoon') ||
-			(selectedSchedule.includes('Evening') && currentTimeOfDay === 'Evening') ||
-			(selectedSchedule.includes('Weekend') && (currentDayOfWeek === 'Saturday' || currentDayOfWeek === 'Sunday'))
-			(selectedSchedule.includes('Weekdays') && (currentDayOfWeek === 'Monday' || currentDayOfWeek === 'Tuesday' || currentDayOfWeek === 'Wednesday' || currentDayOfWeek === 'Thursday' || currentDayOfWeek === 'Friday'));
+			(selectedSchedule.includes('Evening') && currentTimeOfDay === 'Evening');
+			
+			const weekendCondition = !showWeekend || currentDayOfWeek === 'Saturday' || currentDayOfWeek === 'Sunday';
+            const weekdaysCondition = !showWeekdays || currentDayOfWeek !== 'Saturday' && currentDayOfWeek !== 'Sunday';
 
 
-            return dateCondition && areaCondition && ageGroupCondition && scheduleCondition;
+            return dateCondition && areaCondition && ageGroupCondition && scheduleCondition && weekendCondition && weekdaysCondition;;
         });
     } else {
         return [];
