@@ -1,4 +1,4 @@
-console.log('version 6');
+console.log('version 7');
 
 let originalData = []; // Initialize as an empty array
 
@@ -126,7 +126,19 @@ function renderTable(data) {
 
 
 function filterData(data, selectedDate, selectedArea, selectedAgeGroup, selectedSchedule) {
-    // If no date, area, age group, or schedule is selected, return the original data
+    
+	const morningCheckbox = document.getElementById('morningCheckbox');
+    const afternoonCheckbox = document.getElementById('afternoonCheckbox');
+    const eveningCheckbox = document.getElementById('eveningCheckbox');
+    const weekendCheckbox = document.getElementById('weekendCheckbox');
+
+    const selectedSchedule = [];
+    if (morningCheckbox.checked) selectedSchedule.push('Morning');
+    if (afternoonCheckbox.checked) selectedSchedule.push('Afternoon');
+    if (eveningCheckbox.checked) selectedSchedule.push('Evening');
+    if (weekendCheckbox.checked) selectedSchedule.push('Weekend');
+	
+	// If no date, area, age group, or schedule is selected, return the original data
     if (!selectedDate && !selectedArea && !selectedAgeGroup && !selectedSchedule.length) {
         return data;
     }
