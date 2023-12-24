@@ -271,6 +271,7 @@ function clearAllFilters() {
         checkbox.checked = true;
     });
 	
+	document.getElementById('scheduleFilter').value = '';
 
     // Clear the DataTable search box
     $('#dataTable_filter input').val('');
