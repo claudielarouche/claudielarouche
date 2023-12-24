@@ -130,19 +130,17 @@ function renderTable(data) {
 
 
 function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
-    
-	const morningCheckbox = document.getElementById('morningCheckbox');
+    const morningCheckbox = document.getElementById('morningCheckbox');
     const afternoonCheckbox = document.getElementById('afternoonCheckbox');
     const eveningCheckbox = document.getElementById('eveningCheckbox');
-	const scheduleFilter = document.getElementById('scheduleFilter').value;
-	
+    const scheduleFilter = document.getElementById('scheduleFilter').value;
+
     const selectedSchedule = [];
     if (morningCheckbox.checked) selectedSchedule.push('Morning');
     if (afternoonCheckbox.checked) selectedSchedule.push('Afternoon');
     if (eveningCheckbox.checked) selectedSchedule.push('Evening');
-	
-	
-	// If no date, area, age group, or schedule is selected, return the original data
+
+    // If no date, area, age group, or schedule is selected, return the original data
     if (!selectedDate && !selectedArea && !selectedAgeGroup && scheduleFilter === 'all') {
         return data;
     }
@@ -159,36 +157,50 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
             const dateCondition = !selectedDate || currentDate === selectedDate;
             const areaCondition = !selectedArea || currentArea === selectedArea;
             const ageGroupCondition = !selectedAgeGroup || currentAgeGroup.includes(selectedAgeGroup);
-           const scheduleCondition = !selectedSchedule.length || 
-			(selectedSchedule.includes('Morning') && currentTimeOfDay === 'Morning') ||
-			(selectedSchedule.includes('Afternoon') && currentTimeOfDay === 'Afternoon') ||
-			(selectedSchedule.includes('Evening') && currentTimeOfDay === 'Evening');			
-			
-			switch (scheduleFilter) {
+            const scheduleCondition =
+                !selectedSchedule.length ||
+                (selectedSchedule.includes('Morning') && currentTimeOfDay === 'Morning') ||
+                (selectedSchedule.includes('Afternoon') && currentTimeOfDay === 'Afternoon') ||
+                (selectedSchedule.includes('Evening') && currentTimeOfDay === 'Evening');
+
+            switch (scheduleFilter) {
                 case 'all':
                     // Show all rows
                     return dateCondition && areaCondition && ageGroupCondition && scheduleCondition;
 
                 case 'eveningsWeekends':
                     // Show evenings and weekends only
-                    return dateCondition && areaCondition && ageGroupCondition && scheduleCondition &&
-                        (currentTimeOfDay === 'Evening' || currentDayOfWeek === 'Saturday' || currentDayOfWeek === 'Sunday');
+                    return (
+                        dateCondition &&
+                        areaCondition &&
+                        ageGroupCondition &&
+                        scheduleCondition &&
+                        (currentTimeOfDay === 'Evening' ||
+                            currentDayOfWeek === 'Saturday' ||
+                            currentDayOfWeek === 'Sunday')
+                    );
 
                 case 'weekdayAMPM':
                     // Show weekday AM and PM only
-                    return dateCondition && areaCondition && ageGroupCondition && scheduleCondition &&
+                    return (
+                        dateCondition &&
+                        areaCondition &&
+                        ageGroupCondition &&
+                        scheduleCondition &&
                         ((currentDayOfWeek !== 'Saturday' && currentDayOfWeek !== 'Sunday') ||
-                        (currentTimeOfDay === 'Morning' || currentTimeOfDay === 'Afternoon'));
+                            (currentTimeOfDay === 'Morning' || currentTimeOfDay === 'Afternoon'))
+                    );
 
                 default:
+                    // Handle other cases
                     return false;
-
-			
+            }
         });
     } else {
         return [];
     }
 }
+
 
 function isPastDate(dateString) {
 	const currentDate = new Date();
