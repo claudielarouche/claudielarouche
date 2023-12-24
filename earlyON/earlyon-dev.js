@@ -1,4 +1,4 @@
-console.log('version 6');
+console.log('version 7');
 
 let originalData = []; // Initialize as an empty array
 
@@ -269,7 +269,7 @@ function clearAllFilters() {
         checkbox.checked = true;
     });*/
 	
-	document.getElementById('scheduleFilter').value = '';
+	document.getElementById('scheduleFilter').value = 'all';
 
     // Clear the DataTable search box
     $('#dataTable_filter input').val('');
