@@ -126,10 +126,10 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
     const eveningCheckbox = document.getElementById('eveningCheckbox');
     const scheduleFilter = document.getElementById('scheduleFilter').value;
 
-    const selectedSchedule = [];
+    /*const selectedSchedule = [];
     if (morningCheckbox.checked) selectedSchedule.push('Morning');
     if (afternoonCheckbox.checked) selectedSchedule.push('Afternoon');
-    if (eveningCheckbox.checked) selectedSchedule.push('Evening');
+    if (eveningCheckbox.checked) selectedSchedule.push('Evening');*/
 
     // If no date, area, age group, or schedule is selected, return the original data
     if (!selectedDate && !selectedArea && !selectedAgeGroup && scheduleFilter === 'all') {
@@ -148,16 +148,16 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
             const dateCondition = !selectedDate || currentDate === selectedDate;
             const areaCondition = !selectedArea || currentArea === selectedArea;
             const ageGroupCondition = !selectedAgeGroup || currentAgeGroup.includes(selectedAgeGroup);
-            const scheduleCondition =
+           /* const scheduleCondition =
                 !selectedSchedule.length ||
                 (selectedSchedule.includes('Morning') && currentTimeOfDay === 'Morning') ||
                 (selectedSchedule.includes('Afternoon') && currentTimeOfDay === 'Afternoon') ||
-                (selectedSchedule.includes('Evening') && currentTimeOfDay === 'Evening');
+                (selectedSchedule.includes('Evening') && currentTimeOfDay === 'Evening');*/
 
             switch (scheduleFilter) {
                 case 'all':
                     // Show all rows
-                    return dateCondition && areaCondition && ageGroupCondition && scheduleCondition;
+                    return dateCondition && areaCondition && ageGroupCondition;
 
                 case 'eveningsWeekends':
                     // Show evenings and weekends only
@@ -165,7 +165,6 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
                         dateCondition &&
                         areaCondition &&
                         ageGroupCondition &&
-                        scheduleCondition &&
                         (currentTimeOfDay === 'Evening' ||
                             currentDayOfWeek === 'Saturday' ||
                             currentDayOfWeek === 'Sunday')
@@ -177,7 +176,6 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
 					dateCondition &&
 					areaCondition &&
 					ageGroupCondition &&
-					scheduleCondition &&
 					(
 						(currentDayOfWeek !== 'Saturday' && currentDayOfWeek !== 'Sunday') &&
 						(currentTimeOfDay === 'Morning' || currentTimeOfDay === 'Afternoon')
@@ -230,10 +228,10 @@ document.getElementById('selectedAgeGroup').addEventListener('change', function(
 });
 
 document.getElementById('scheduleFilter').addEventListener('change', function() {
-    const scheduleFilterValue = this.value;
+   // const scheduleFilterValue = this.value;
 
     // Uncheck morning and afternoon, check evening for "Show evenings and weekends only"
-    if (scheduleFilterValue === 'eveningsAndWeekends') {
+    /*if (scheduleFilterValue === 'eveningsAndWeekends') {
         document.getElementById('morningCheckbox').checked = false;
         document.getElementById('afternoonCheckbox').checked = false;
         document.getElementById('eveningCheckbox').checked = true;
@@ -241,7 +239,7 @@ document.getElementById('scheduleFilter').addEventListener('change', function() 
 	
 	if (scheduleFilterValue === 'weekdayAMandPM') {
         document.getElementById('eveningCheckbox').checked = false;
-    } 
+    } */
 	
 	currentSearchValue = $('#dataTable_filter input').val();
     renderTable(originalData);
@@ -267,9 +265,9 @@ function clearAllFilters() {
     document.getElementById('selectedAgeGroup').value = '';
 
     // Check all the "Select Schedule" checkboxes
-    document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+   /* document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
         checkbox.checked = true;
-    });
+    });*/
 	
 	document.getElementById('scheduleFilter').value = '';
 
