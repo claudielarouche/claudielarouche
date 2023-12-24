@@ -30,8 +30,6 @@ window.onload = function() {
 };
 
 function renderTable(data) {
-
-
 	// Ensure data is an array
 	if (!Array.isArray(data)) {
 		console.error('Error loading data: Data is not an array.');
@@ -47,7 +45,6 @@ function renderTable(data) {
 	}
 
 	const headers = Object.keys(data[0]);
-
 
 	let tableHtml = '<table id="dataTable"><thead><tr>';
 	headers.forEach(header => {
@@ -65,9 +62,6 @@ function renderTable(data) {
         .map(checkbox => checkbox.id.replace('Checkbox', ''));
 
     const filteredData = filterData(data, selectedDate, selectedArea, selectedAgeGroup);
-	
-	
-	
 
 	if (!Array.isArray(filteredData)) {
 		console.error('Error loading data: Filtered data is not an array.');
@@ -103,10 +97,7 @@ function renderTable(data) {
 			tableHtml += '</tr>';
 		}
 	});
-
-
-
-
+	
 	tableHtml += '</tbody></table>';
 
 	document.getElementById('csvData').innerHTML = tableHtml;
