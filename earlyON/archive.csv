@@ -76,7 +76,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-01,09:30 - 13:00,EarlyON Playgroup,Queen Mary Street Public School,"557 Queen Mary Street, Room 117",East,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB,Kids,Morning,Friday
 2023-12-01,09:30 - 13:00,EarlyON Playgroup,Agincourt Road Public School,"1250 Agincourt Road, Room 123",West,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB,Kids,Morning,Friday
 2023-12-01,10:00 - 11:00,Musical Adventures Storytime,Eva James Memorial Community Centre,65 Stonehaven Dr. ,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Kids,Morning,Friday
-2023-12-01,10:00 - 11:00,Stroller Walk (0-18 months),Morning Owl (click on URL for details about meeting location),1047 Canadian Shield Ave,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Babies,Morning,Friday
+2023-12-01,10:00 - 11:00,Stroller Walk (0-18 months),Morning Owl (click on link for details about meeting location),1047 Canadian Shield Ave,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Babies,Morning,Friday
 2023-12-01,10:00 - 11:30,Drop-in Playgroup with CHEO,Farley Mowat Public School ,75 Waterbridge dr.,South,No,English,https://mothercraft.com/venues/ontario-early-years-centre/,Mothercraft,Kids,Morning,Friday
 2023-12-01,10:00 - 11:30,EarlyON Playgroup,Minto Party Room,1341 Meadowlands Dr.,West,No,English,https://nrocrc.org/,NROCRC,Kids,Morning,Friday
 2023-12-01,10:00 - 12:00,Greely Playgroup,Greely,"1448 Meadow Dr, Greely",South,No,English,https://www.ruralfamilyconnections.ca/programs/earlyon,Rural Family Connections,Kids,Morning,Friday
@@ -169,6 +169,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-05,09:00 - 11:00,EarlyON Playgroup,Orleans Resurrection Lutheran Church,1325 Gaultois Avenue,East,No,English,https://gccs.ca/earlyon-drop-ins-2/,GCCS,Kids,Morning,Tuesday
 2023-12-05,09:00 - 11:00,EarlyON Playgroup,Blackburn Community Hall,190 Glen Park Drive,East,No,English,https://gccs.ca/earlyon-drop-ins-2/,GCCS,Kids,Morning,Tuesday
 2023-12-05,09:00 - 11:00,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,PRC,Kids,Morning,Tuesday
+2023-12-05,09:00 - 11:00,EarlyON Playgroup,Carlington Recreation Gym ,1520 Caldwell Ave.,West,No,English,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC,Kids,Morning,Tuesday
 2023-12-05,09:00 - 11:30,0-6 years Playgroup,Don Reid,2330 Don Reid Dr.,South,No,English,https://www.afchildrensservices.ca/earlyon-child-and-family-centre/monthly-programming-schedule/,AF Children Services,Kids,Morning,Tuesday
 2023-12-05,09:00 - 11:30,0-6 years Playgroup,Trainyards,600-700 Industrial,East,No,English,https://www.afchildrensservices.ca/earlyon-child-and-family-centre/monthly-programming-schedule/,AF Children Services,Kids,Morning,Tuesday
 2023-12-05,09:00 - 11:30,Groupe de jeu,École Béatrice-Desloges,"1999, av. Provence",East,No,French,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Kids,Morning,Tuesday
@@ -318,7 +319,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-07,09:30 - 13:00,EarlyON Playgroup,Agincourt Road Public School,"1250 Agincourt Road, Room 123",West,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB,Kids,Morning,Thursday
 2023-12-07,10:00 - 11:30,Drop-in Playgroup with CHEO,Farley Mowat Public School ,75 Waterbridge dr.,South,No,English,https://mothercraft.com/venues/ontario-early-years-centre/,Mothercraft,Kids,Morning,Thursday
 2023-12-07,10:00 - 11:30,EarlyON Playgroup,Minto Party Room,1341 Meadowlands Dr.,West,No,English,https://nrocrc.org/,NROCRC,Kids,Morning,Thursday
-2023-12-07,10:00 - 11:30,Outdoor Adventures,Sheila McKee Park (click on URL for details about meeting location),"1730 Sixth Line Road, Dunrobin",West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Kids,Morning,Thursday
+2023-12-07,10:00 - 11:30,Outdoor Adventures,Sheila McKee Park (click on link for details about meeting location),"1730 Sixth Line Road, Dunrobin",West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Kids,Morning,Thursday
 2023-12-07,10:00 - 12:00,Greely Playgroup,Greely,"1448 Meadow Dr, Greely",South,No,English,https://www.ruralfamilyconnections.ca/programs/earlyon,Rural Family Connections,Kids,Morning,Thursday
 2023-12-07,10:00 - 12:00,Mandarin Mother Goose Playgroup,Somerset West Community Health Centre,755 Somerset St W,Central,Yes,Mandarin,https://www.eventbrite.ca/o/somerset-west-chc-children-and-youth-31905786993,SWCHC,Kids,Morning,Thursday
 2023-12-07,12:00 - 15:00,EarlyON Playgroup,Carlington Community Health Centre,900 Merivale,West,No,English,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC,Kids,Afternoon,Thursday
@@ -374,7 +375,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-08,09:30 - 13:00,EarlyON Playgroup,Queen Mary Street Public School,"557 Queen Mary Street, Room 117",East,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB,Kids,Morning,Friday
 2023-12-08,09:30 - 13:00,EarlyON Playgroup,Agincourt Road Public School,"1250 Agincourt Road, Room 123",West,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB,Kids,Morning,Friday
 2023-12-08,10:00 - 11:00,Musical Adventures Storytime,Eva James Memorial Community Centre,65 Stonehaven Dr. ,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Kids,Morning,Friday
-2023-12-08,10:00 - 11:00,Stroller Walk (0-18 months),Equator Coffee Roaster (click on URL for details about meeting location),5114 Kanata Ave,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Babies,Morning,Friday
+2023-12-08,10:00 - 11:00,Stroller Walk (0-18 months),Equator Coffee Roaster (click on link for details about meeting location),5114 Kanata Ave,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Babies,Morning,Friday
 2023-12-08,10:15 - 11:30,Indoor Playgroup,City View Centre,1099 Longfields Dr.,West,No,English,https://www.cityviewcentre.ca/playgroups,City View Centre,Kids,Morning,Friday
 2023-12-08,11:00 - 11:45,Storytime Ikea,Ikea,3rd floor at the back of the restaurant,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Kids,Morning,Friday
 2023-12-08,13:00 - 14:15,Multicultural Newcomer Drop-In (OCCSC),Western Ottawa Community Resource Centre,2 MacNeil Court,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Kids,Afternoon,Friday
@@ -454,6 +455,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-12,09:00 - 11:00,EarlyON Playgroup,Orleans Resurrection Lutheran Church,1325 Gaultois Avenue,East,No,English,https://gccs.ca/earlyon-drop-ins-2/,GCCS,Kids,Morning,Tuesday
 2023-12-12,09:00 - 11:00,EarlyON Playgroup,Blackburn Community Hall,190 Glen Park Drive,East,No,English,https://gccs.ca/earlyon-drop-ins-2/,GCCS,Kids,Morning,Tuesday
 2023-12-12,09:00 - 11:00,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,PRC,Kids,Morning,Tuesday
+2023-12-12,09:00 - 11:00,EarlyON Playgroup,Carlington Recreation Gym ,1520 Caldwell Ave.,West,No,English,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC,Kids,Morning,Tuesday
 2023-12-12,09:00 - 11:30,0-6 years Playgroup,Don Reid,2330 Don Reid Dr.,South,No,English,https://www.afchildrensservices.ca/earlyon-child-and-family-centre/monthly-programming-schedule/,AF Children Services,Kids,Morning,Tuesday
 2023-12-12,09:00 - 11:30,0-6 years Playgroup,Trainyards,600-700 Industrial,East,No,English,https://www.afchildrensservices.ca/earlyon-child-and-family-centre/monthly-programming-schedule/,AF Children Services,Kids,Morning,Tuesday
 2023-12-12,09:00 - 11:30,Groupe de jeu,École Béatrice-Desloges,"1999, av. Provence",East,No,French,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Kids,Morning,Tuesday
@@ -601,7 +603,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-14,09:30 - 13:00,EarlyON Playgroup,Agincourt Road Public School,"1250 Agincourt Road, Room 123",West,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB,Kids,Morning,Thursday
 2023-12-14,10:00 - 11:30,Drop-in Playgroup with CHEO,Farley Mowat Public School ,75 Waterbridge dr.,South,No,English,https://mothercraft.com/venues/ontario-early-years-centre/,Mothercraft,Kids,Morning,Thursday
 2023-12-14,10:00 - 11:30,EarlyON Playgroup,Minto Party Room,1341 Meadowlands Dr.,West,No,English,https://nrocrc.org/,NROCRC,Kids,Morning,Thursday
-2023-12-14,10:00 - 11:30,Outdoor Adventures,Deevy Pines Park (click on URL for details about meeting location),233 Bridgestone Dr.,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Kids,Morning,Thursday
+2023-12-14,10:00 - 11:30,Outdoor Adventures,Deevy Pines Park (click on link for details about meeting location),233 Bridgestone Dr.,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Kids,Morning,Thursday
 2023-12-14,10:00 - 12:00,Greely Playgroup,Greely,"1448 Meadow Dr, Greely",South,No,English,https://www.ruralfamilyconnections.ca/programs/earlyon,Rural Family Connections,Kids,Morning,Thursday
 2023-12-14,10:00 - 12:00,Mandarin Mother Goose Playgroup,Somerset West Community Health Centre,755 Somerset St W,Central,Yes,Mandarin,https://www.eventbrite.ca/o/somerset-west-chc-children-and-youth-31905786993,SWCHC,Kids,Morning,Thursday
 2023-12-14,12:00 - 15:00,EarlyON Playgroup,Carlington Community Health Centre,900 Merivale,West,No,English,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC,Kids,Afternoon,Thursday
@@ -656,7 +658,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-15,09:30 - 13:00,EarlyON Playgroup,Queen Mary Street Public School,"557 Queen Mary Street, Room 117",East,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB,Kids,Morning,Friday
 2023-12-15,09:30 - 13:00,EarlyON Playgroup,Agincourt Road Public School,"1250 Agincourt Road, Room 123",West,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB,Kids,Morning,Friday
 2023-12-15,10:00 - 11:00,Musical Adventures Storytime,Eva James Memorial Community Centre,65 Stonehaven Dr. ,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Kids,Morning,Friday
-2023-12-15,10:00 - 11:00,Stroller Walk (0-18 months),Luna Crepes & Cafe (click on URL for details about meeting location),329 March Rd,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Babies,Morning,Friday
+2023-12-15,10:00 - 11:00,Stroller Walk (0-18 months),Luna Crepes & Cafe (click on link for details about meeting location),329 March Rd,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Babies,Morning,Friday
 2023-12-15,10:15 - 11:30,Indoor Playgroup,City View Centre,1099 Longfields Dr.,West,No,English,https://www.cityviewcentre.ca/playgroups,City View Centre,Kids,Morning,Friday
 2023-12-15,11:00 - 11:45,Storytime Ikea,Ikea,3rd floor at the back of the restaurant,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Kids,Morning,Friday
 2023-12-15,13:00 - 14:15,Multicultural Newcomer Drop-In (OCCSC),Western Ottawa Community Resource Centre,2 MacNeil Court,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Kids,Afternoon,Friday
@@ -724,13 +726,13 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-18,13:30 - 15:30,Baby & Me,Don Reid,2330 Don Reid Dr.,South,No,English,https://www.afchildrensservices.ca/earlyon-child-and-family-centre/monthly-programming-schedule/,AF Children Services,Babies,Afternoon,Monday
 2023-12-18,13:30 - 15:30,Baby & Me,Trainyards,600-700 Industrial,East,No,English,https://www.afchildrensservices.ca/earlyon-child-and-family-centre/monthly-programming-schedule/,AF Children Services,Babies,Afternoon,Monday
 2023-12-18,16:00 - 19:00,Arabic Playgroup,Somerset West Community Health Centre,755 Somerset St W,Central,Yes,Arabic,https://www.eventbrite.ca/o/somerset-west-chc-children-and-youth-31905786993,SWCHC,Kids,Evening,Monday
-2023-12-18,17:00 - 19:00,Open drop-in,Western Ottawa Community Resource Centre,2 MacNeil Court,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Kids,Evening,Monday
 2023-12-18,18:00 - 19:30,Gym Time!,Connaught Public School,1149 Gladstone,West,Yes,English,https://www.eventbrite.ca/o/somerset-west-chc-children-and-youth-31905786993,SWCHC,Kids,Evening,Monday
 2023-12-19,08:30 - 12:30,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,https://www.ocsb.ca/parents/child-care/,OCSB,Kids,Morning,Tuesday
 2023-12-19,08:30 - 13:30,EarlyON Playgroup,Carlington Community Health Centre,900 Merivale,West,No,English,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC,Kids,Morning,Tuesday
 2023-12-19,08:45 - 10:00,Indoor Playgroup,City View Centre,1099 Longfields Dr.,West,No,English,https://www.cityviewcentre.ca/playgroups,City View Centre,Kids,Morning,Tuesday
 2023-12-19,08:45 - 12:45,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,English,https://www.ocsb.ca/parents/child-care/,OCSB,Kids,Morning,Tuesday
 2023-12-19,09:00 - 11:00,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,PRC,Kids,Morning,Tuesday
+2023-12-19,09:00 - 11:00,EarlyON Playgroup,Carlington Recreation Gym ,1520 Caldwell Ave.,West,No,English,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC,Kids,Morning,Tuesday
 2023-12-19,09:00 - 11:30,0-6 years Playgroup,Don Reid,2330 Don Reid Dr.,South,No,English,https://www.afchildrensservices.ca/earlyon-child-and-family-centre/monthly-programming-schedule/,AF Children Services,Kids,Morning,Tuesday
 2023-12-19,09:00 - 11:30,0-6 years Playgroup,Trainyards,600-700 Industrial,East,No,English,https://www.afchildrensservices.ca/earlyon-child-and-family-centre/monthly-programming-schedule/,AF Children Services,Kids,Morning,Tuesday
 2023-12-19,09:00 - 11:30,Groupe de jeu,École Béatrice-Desloges,"1999, av. Provence",East,No,French,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Kids,Morning,Tuesday
@@ -755,7 +757,6 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-19,09:30 - 11:30,Playgroup Pinecrest Queensway,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Kids,Morning,Tuesday
 2023-12-19,09:30 - 11:30,Playgroup,Cedarwood,2850 Cedarwood Cr.,South,No,English,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC,Kids,Morning,Tuesday
 2023-12-19,09:30 - 11:30,Open drop-in,Carp Memorial Hall,434 Donald B. Munro Dr.,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Kids,Morning,Tuesday
-2023-12-19,09:30 - 11:30,Open drop-in,"Bethel St-Andrew's United Church, Fitzroy Harbour",184 Jack Lougheed Way,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Kids,Morning,Tuesday
 2023-12-19,09:30 - 11:30,Little Movers,Glen Cairn Community Centre,190 Morrena Rd.,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Kids,Morning,Tuesday
 2023-12-19,09:30 - 11:30,Groupe de jeu,École Des Voyageurs ,6030 prom. Voyageur,East,No,French,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Kids,Morning,Tuesday
 2023-12-19,09:30 - 11:30,Playgroup Bethany Baptist,Bethany Baptist Gym,382 Centrepointe (use side door),West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Kids,Morning,Tuesday
@@ -814,7 +815,6 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-20,09:30 - 11:30,Playgroup Pinecrest Queensway,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Kids,Morning,Wednesday
 2023-12-20,09:30 - 11:30,Open drop-in,Western Ottawa Community Resource Centre,2 MacNeil Court,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Kids,Morning,Wednesday
 2023-12-20,09:30 - 11:30,Open drop-in,Stittsville St-Andrew's Presbitarian Church,2 Mulkin St. Sttisville,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Kids,Morning,Wednesday
-2023-12-20,09:30 - 11:30,Open drop-in,"Bethel St-Andrew's United Church, Fitzroy Harbour",184 Jack Lougheed Way,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Kids,Morning,Wednesday
 2023-12-20,09:30 - 11:30,Groupe de jeu,École Des Voyageurs ,6030 prom. Voyageur,East,No,French,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Kids,Morning,Wednesday
 2023-12-20,09:30 - 11:30,Playgroup Bayshore,Bayshore,210 Woodridge Cr. Unit 101 (Dial 101 from lobby),West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Kids,Morning,Wednesday
 2023-12-20,09:30 - 12:00,Playgroup,Heatherington Family Centre,1495 Heatherington Rd,South,No,English,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC,Kids,Morning,Wednesday
@@ -872,8 +872,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-21,09:30 - 13:00,EarlyON Playgroup,Agincourt Road Public School,"1250 Agincourt Road, Room 123",West,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB,Kids,Morning,Thursday
 2023-12-21,10:00 - 11:30,Drop-in Playgroup with CHEO,Farley Mowat Public School ,75 Waterbridge dr.,South,No,English,https://mothercraft.com/venues/ontario-early-years-centre/,Mothercraft,Kids,Morning,Thursday
 2023-12-21,10:00 - 11:30,EarlyON Playgroup,Minto Party Room,1341 Meadowlands Dr.,West,No,English,https://nrocrc.org/,NROCRC,Kids,Morning,Thursday
-2023-12-22,10:00 - 11:30,EarlyON Playgroup,Emerald Plaza,1547 Merivale Rd. suite 200,West,No,English,https://nrocrc.org/,NROCRC,Kids,Morning,Friday
-2023-12-21,10:00 - 11:30,Outdoor Adventures,Alexander Grove Park (click on URL for details about meeting location),10 Warner-Colpitts,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Kids,Morning,Thursday
+2023-12-21,10:00 - 11:30,Outdoor Adventures,Alexander Grove Park (click on link for details about meeting location),10 Warner-Colpitts,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Kids,Morning,Thursday
 2023-12-21,10:00 - 12:00,Greely Playgroup,Greely,"1448 Meadow Dr, Greely",South,No,English,https://www.ruralfamilyconnections.ca/programs/earlyon,Rural Family Connections,Kids,Morning,Thursday
 2023-12-21,10:00 - 12:00,Mandarin Mother Goose Playgroup,Somerset West Community Health Centre,755 Somerset St W,Central,Yes,Mandarin,https://www.eventbrite.ca/o/somerset-west-chc-children-and-youth-31905786993,SWCHC,Kids,Morning,Thursday
 2023-12-21,12:00 - 15:00,EarlyON Playgroup,Carlington Community Health Centre,900 Merivale,West,No,English,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC,Kids,Afternoon,Thursday
@@ -909,7 +908,6 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-22,09:00 - 13:00,Playgroup (0-6 years),Our Lady of Mount Carmel School,675 Gardenvale Road,East,No,English,https://www.ocsb.ca/parents/child-care/,OCSB,Kids,Morning,Friday
 2023-12-22,09:15 - 11:15,Intergenerational Playgroup,Pearley Health,1750 Russell Dr. ,East,No,English,https://www.afchildrensservices.ca/earlyon-child-and-family-centre/monthly-programming-schedule/,AF Children Services,Kids,Morning,Friday
 2023-12-22,09:30 - 11:00,450 Laurier Drop-in Playgroup,McAuley Place,450 Laurier Ave West,Central,No,English,https://mothercraft.com/venues/ontario-early-years-centre/,Mothercraft,Kids,Morning,Friday
-2023-12-22,09:30 - 11:00,Richmond Playgroup,Richmond Memorial Arena,"6095 Perth St, Richmond",West,No,English,https://www.cityviewcentre.ca/playgroups,City View Centre,Kids,Morning,Friday
 2023-12-22,09:30 - 11:00,English playgroup ,OCCRC,240 Centrum Blvd,East,No,English,https://events-evenements.crcoc.ca/events-evenements/category/early-on-y-va/,CRCOC,Kids,Morning,Friday
 2023-12-22,09:30 - 11:30,Playgroup Bayshore,Bayshore,210 Woodridge Cr. Unit 101 (Dial 101 from lobby),West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Kids,Morning,Friday
 2023-12-22,09:30 - 11:30,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,PRC,Kids,Morning,Friday
@@ -925,21 +923,19 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-22,09:30 - 13:00,EarlyON Playgroup,Queen Mary Street Public School,"557 Queen Mary Street, Room 117",East,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB,Kids,Morning,Friday
 2023-12-22,09:30 - 13:00,EarlyON Playgroup,Agincourt Road Public School,"1250 Agincourt Road, Room 123",West,No,English,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB,Kids,Morning,Friday
 2023-12-22,10:00 - 11:00,Musical Adventures Storytime,Eva James Memorial Community Centre,65 Stonehaven Dr. ,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Kids,Morning,Friday
-2023-12-22,10:00 - 11:00,Stroller Walk (0-18 months),Alice's Village Cafe (click on URL for details about meeting location),"3773 Carp Rd, Carp",West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Babies,Morning,Friday
+2023-12-22,10:00 - 11:00,Stroller Walk (0-18 months),Alice's Village Cafe (click on links for details about meeting location),"3773 Carp Rd, Carp",West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Babies,Morning,Friday
+2023-12-22,10:00 - 11:30,EarlyON Playgroup,Emerald Plaza,1547 Merivale Rd. suite 200,West,No,English,https://nrocrc.org/,NROCRC,Kids,Morning,Friday
 2023-12-22,10:15 - 11:30,Indoor Playgroup,City View Centre,1099 Longfields Dr.,West,No,English,https://www.cityviewcentre.ca/playgroups,City View Centre,Kids,Morning,Friday
 2023-12-22,11:00 - 11:45,Storytime Ikea,Ikea,3rd floor at the back of the restaurant,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Kids,Morning,Friday
 2023-12-22,13:00 - 14:15,Multicultural Newcomer Drop-In (OCCSC),Western Ottawa Community Resource Centre,2 MacNeil Court,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Kids,Afternoon,Friday
-2023-12-22,13:00 - 15:00,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,PRC,Kids,Afternoon,Friday
 2023-12-22,13:30 - 15:30,0-6 years Playgroup,Don Reid,2330 Don Reid Dr.,South,No,English,https://www.afchildrensservices.ca/earlyon-child-and-family-centre/monthly-programming-schedule/,AF Children Services,Kids,Afternoon,Friday
 2023-12-23,09:00 - 11:00,Indoor Playgroup,City View Centre,1099 Longfields Dr.,West,No,English,https://www.cityviewcentre.ca/playgroups,City View Centre,Kids,Morning,Saturday
-2023-12-23,09:00 - 11:30,0-6 years Playgroup,Don Reid,2330 Don Reid Dr.,South,No,English,https://www.afchildrensservices.ca/earlyon-child-and-family-centre/monthly-programming-schedule/,AF Children Services,Kids,Morning,Saturday
+2023-12-23,09:00 - 11:15,0-6 years Playgroup,Don Reid,2330 Don Reid Dr.,South,No,English,https://www.afchildrensservices.ca/earlyon-child-and-family-centre/monthly-programming-schedule/,AF Children Services,Kids,Morning,Saturday
 2023-12-23,09:00 - 11:30,Groupe de jeu,École Béatrice-Desloges,"1999, av. Provence",East,No,French,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Kids,Morning,Saturday
 2023-12-23,09:30 - 11:00,English Playgroup,Somerset West Community Health Centre,755 Somerset St W,Central,Yes,English,https://www.eventbrite.ca/o/somerset-west-chc-children-and-youth-31905786993,SWCHC,Kids,Morning,Saturday
-2023-12-23,09:30 - 11:30,EarlyON Playgroup,Carlington Community Health Centre,900 Merivale,West,No,English,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC,Kids,Morning,Saturday
 2023-12-23,09:30 - 11:30,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,https://parentresource.ca/earlyon-programs-and-services/,PRC,Kids,Morning,Saturday
 2023-12-23,09:30 - 11:30,Open drop-in,Western Ottawa Community Resource Centre,2 MacNeil Court,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Kids,Morning,Saturday
 2023-12-23,09:30 - 11:30,Music with Margie,Carp Memorial Hall,434 Donald B. Munro Dr.,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Kids,Morning,Saturday
-2023-12-23,09:30 - 11:30,Open drop-in,Stittsville St-Andrew's Presbitarian Church,2 Mulkin St. Sttisville,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Kids,Morning,Saturday
 2023-12-23,09:30 - 11:30,Playgroup Pinecrest Queensway,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Kids,Morning,Saturday
 2023-12-27,09:30 - 11:00,0-6 years Playgroup,Centretown Community Health Center,420 Cooper St.,Central,Yes,English,https://www.centretownchc.org/calendar,Centretown CHC,Kids,Morning,Wednesday
 2023-12-27,09:30 - 11:30,Playgroup Pinecrest Queensway,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Kids,Morning,Wednesday
@@ -954,12 +950,12 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2023-12-28,09:30 - 11:30,Porte ouverte francophone,Western Ottawa Community Resource Centre,2 MacNeil Court,West,No,French,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Kids,Morning,Thursday
 2023-12-28,09:30 - 11:30,Open drop-in,Carp Memorial Hall,434 Donald B. Munro Dr.,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Kids,Morning,Thursday
 2023-12-28,09:30 - 11:30,Open drop-in,Constance and Buckham's Bay Community Centre,262 Len Purcell Dr.,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Kids,Morning,Thursday
-2023-12-28,10:00 - 11:30,Outdoor Adventures,Hazeldean Woods (click on URL for details about meeting location),89 Kakulu Rd.,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Kids,Morning,Thursday
+2023-12-28,10:00 - 11:30,Outdoor Adventures,Hazeldean Woods (click on link for details about meeting location),89 Kakulu Rd.,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Kids,Morning,Thursday
 2023-12-28,13:00 - 15:00,Baby and me,Western Ottawa Community Resource Centre,2 MacNeil Court,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Babies,Afternoon,Thursday
 2023-12-29,09:30 - 11:30,Playgroup Bayshore,Bayshore,210 Woodridge Cr. Unit 101 (Dial 101 from lobby),West,No,English,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Kids,Morning,Friday
 2023-12-29,09:30 - 11:30,Open drop-in,Western Ottawa Community Resource Centre,2 MacNeil Court,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Kids,Morning,Friday
 2023-12-29,09:30 - 11:30,Open drop-in,Stittsville St-Andrew's Presbitarian Church,2 Mulkin St. Sttisville,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Kids,Morning,Friday
-2023-12-29,10:00 - 11:00,Stroller Walk (0-18 months),Morning Owl (click on URL for details about meeting location),1047 Canadian Shield Ave,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Babies,Morning,Friday
+2023-12-29,10:00 - 11:00,Stroller Walk (0-18 months),Morning Owl (click on link for details about meeting location),1047 Canadian Shield Ave,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Babies,Morning,Friday
 2023-12-29,13:00 - 14:15,Multicultural Newcomer Drop-In (OCCSC),Western Ottawa Community Resource Centre,2 MacNeil Court,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Kids,Afternoon,Friday
 2023-12-30,09:30 - 11:30,Open drop-in,Western Ottawa Community Resource Centre,2 MacNeil Court,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Kids,Morning,Saturday
 2023-12-30,09:30 - 11:30,Music with Margie,Carp Memorial Hall,434 Donald B. Munro Dr.,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Kids,Morning,Saturday
