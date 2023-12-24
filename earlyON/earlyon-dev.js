@@ -1,4 +1,4 @@
-console.log('version 5');
+console.log('version 6');
 
 let originalData = []; // Initialize as an empty array
 
@@ -172,15 +172,18 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
                     );
 
                 case 'weekdayAMPM':
-                    // Show weekday AM and PM only
-                    return (
-                        dateCondition &&
-                        areaCondition &&
-                        ageGroupCondition &&
-                        scheduleCondition &&
-                        ((currentDayOfWeek !== 'Saturday' && currentDayOfWeek !== 'Sunday') ||
-                            (currentTimeOfDay === 'Morning' || currentTimeOfDay === 'Afternoon'))
-                    );
+				// Show weekday AM and PM only
+				return (
+					dateCondition &&
+					areaCondition &&
+					ageGroupCondition &&
+					scheduleCondition &&
+					(
+						(currentDayOfWeek !== 'Saturday' && currentDayOfWeek !== 'Sunday') &&
+						(currentTimeOfDay === 'Morning' || currentTimeOfDay === 'Afternoon')
+					)
+				);
+
 
                 default:
                     // Handle other cases
