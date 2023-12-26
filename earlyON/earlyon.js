@@ -1,4 +1,4 @@
-console.log('version 4');
+console.log('version 7');
 
 let originalData = []; // Initialize as an empty array
 
@@ -30,8 +30,6 @@ window.onload = function() {
 };
 
 function renderTable(data) {
-
-
 	// Ensure data is an array
 	if (!Array.isArray(data)) {
 		console.error('Error loading data: Data is not an array.');
@@ -47,7 +45,6 @@ function renderTable(data) {
 	}
 
 	const headers = Object.keys(data[0]);
-
 
 	let tableHtml = '<table id="dataTable"><thead><tr>';
 	headers.forEach(header => {
@@ -65,9 +62,6 @@ function renderTable(data) {
         .map(checkbox => checkbox.id.replace('Checkbox', ''));
 
     const filteredData = filterData(data, selectedDate, selectedArea, selectedAgeGroup);
-	
-	
-	
 
 	if (!Array.isArray(filteredData)) {
 		console.error('Error loading data: Filtered data is not an array.');
@@ -103,10 +97,7 @@ function renderTable(data) {
 			tableHtml += '</tr>';
 		}
 	});
-
-
-
-
+	
 	tableHtml += '</tbody></table>';
 
 	document.getElementById('csvData').innerHTML = tableHtml;
@@ -130,27 +121,18 @@ function renderTable(data) {
 
 
 function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
-    
-	const morningCheckbox = document.getElementById('morningCheckbox');
+    const morningCheckbox = document.getElementById('morningCheckbox');
     const afternoonCheckbox = document.getElementById('afternoonCheckbox');
     const eveningCheckbox = document.getElementById('eveningCheckbox');
-  /*  const showWeekend = document.getElementById('weekendCheckbox').checked;
-    const showWeekdays = document.getElementById('weekdaysCheckbox').checked;*/
-	
-    const selectedSchedule = [];
+    const scheduleFilter = document.getElementById('scheduleFilter').value;
+
+    /*const selectedSchedule = [];
     if (morningCheckbox.checked) selectedSchedule.push('Morning');
     if (afternoonCheckbox.checked) selectedSchedule.push('Afternoon');
-    if (eveningCheckbox.checked) selectedSchedule.push('Evening');
-	
-    
-	// Ensure that at least one checkbox is selected
-    if (selectedSchedule.length === 0) {
-        return [];
-    }
+    if (eveningCheckbox.checked) selectedSchedule.push('Evening');*/
 
-	
-	// If no date, area, age group, or schedule is selected, return the original data
-    if (!selectedDate && !selectedArea && !selectedAgeGroup && !selectedSchedule.length) {
+    // If no date, area, age group, or schedule is selected, return the original data
+    if (!selectedDate && !selectedArea && !selectedAgeGroup && scheduleFilter === 'all') {
         return data;
     }
 
@@ -166,25 +148,51 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
             const dateCondition = !selectedDate || currentDate === selectedDate;
             const areaCondition = !selectedArea || currentArea === selectedArea;
             const ageGroupCondition = !selectedAgeGroup || currentAgeGroup.includes(selectedAgeGroup);
-           const scheduleCondition = !selectedSchedule.length || 
-			(selectedSchedule.includes('Morning') && currentTimeOfDay === 'Morning') ||
-			(selectedSchedule.includes('Afternoon') && currentTimeOfDay === 'Afternoon') ||
-			(selectedSchedule.includes('Evening') && currentTimeOfDay === 'Evening');			
-			
-			// Conditions for day of week
-            /*const weekendCondition = weekendCheckbox.checked && (currentDayOfWeek === 'Saturday' || currentDayOfWeek === 'Sunday');
-            const weekdaysCondition = weekdaysCheckbox.checked && (currentDayOfWeek === 'Monday' || currentDayOfWeek === 'Tuesday' || currentDayOfWeek === 'Wednesday' || currentDayOfWeek === 'Thursday' || currentDayOfWeek === 'Friday');
-            
-            const weekCondition = weekendCondition || weekdaysCondition;
+           /* const scheduleCondition =
+                !selectedSchedule.length ||
+                (selectedSchedule.includes('Morning') && currentTimeOfDay === 'Morning') ||
+                (selectedSchedule.includes('Afternoon') && currentTimeOfDay === 'Afternoon') ||
+                (selectedSchedule.includes('Evening') && currentTimeOfDay === 'Evening');*/
 
-            return dateCondition && areaCondition && ageGroupCondition && scheduleCondition && weekCondition;*/
-			
-			 return dateCondition && areaCondition && ageGroupCondition && scheduleCondition;
+            switch (scheduleFilter) {
+                case 'all':
+                    // Show all rows
+                    return dateCondition && areaCondition && ageGroupCondition;
+
+                case 'eveningsWeekends':
+                    // Show evenings and weekends only
+                    return (
+                        dateCondition &&
+                        areaCondition &&
+                        ageGroupCondition &&
+                        (currentTimeOfDay === 'Evening' ||
+                            currentDayOfWeek === 'Saturday' ||
+                            currentDayOfWeek === 'Sunday')
+                    );
+
+                case 'weekdayAMPM':
+				// Show weekday AM and PM only
+				return (
+					dateCondition &&
+					areaCondition &&
+					ageGroupCondition &&
+					(
+						(currentDayOfWeek !== 'Saturday' && currentDayOfWeek !== 'Sunday') &&
+						(currentTimeOfDay === 'Morning' || currentTimeOfDay === 'Afternoon')
+					)
+				);
+
+
+                default:
+                    // Handle other cases
+                    return false;
+            }
         });
     } else {
         return [];
     }
 }
+
 
 function isPastDate(dateString) {
 	const currentDate = new Date();
@@ -219,6 +227,25 @@ document.getElementById('selectedAgeGroup').addEventListener('change', function(
     renderTable(originalData);
 });
 
+document.getElementById('scheduleFilter').addEventListener('change', function() {
+   // const scheduleFilterValue = this.value;
+
+    // Uncheck morning and afternoon, check evening for "Show evenings and weekends only"
+    /*if (scheduleFilterValue === 'eveningsAndWeekends') {
+        document.getElementById('morningCheckbox').checked = false;
+        document.getElementById('afternoonCheckbox').checked = false;
+        document.getElementById('eveningCheckbox').checked = true;
+    } 
+	
+	if (scheduleFilterValue === 'weekdayAMandPM') {
+        document.getElementById('eveningCheckbox').checked = false;
+    } */
+	
+	currentSearchValue = $('#dataTable_filter input').val();
+    renderTable(originalData);
+});
+
+
 // Listen for changes in the "Select Schedule" checkboxes
 document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
     checkbox.addEventListener('change', function() {
@@ -238,10 +265,11 @@ function clearAllFilters() {
     document.getElementById('selectedAgeGroup').value = '';
 
     // Check all the "Select Schedule" checkboxes
-    document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+   /* document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
         checkbox.checked = true;
-    });
+    });*/
 	
+	document.getElementById('scheduleFilter').value = 'all';
 
     // Clear the DataTable search box
     $('#dataTable_filter input').val('');
