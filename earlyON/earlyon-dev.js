@@ -213,14 +213,11 @@ document.getElementById('selectedArea').addEventListener('change', function() {
 
 // Listen for changes in the Age Group select input
 document.getElementById('selectedAgeGroup').addEventListener('change', function() {
-	console.log("about to capture search value by schedule filter");    
 	currentSearchValue = $('#dataTable_filter input').val();
     renderTable(originalData);
 });
 
-document.getElementById('scheduleFilter').addEventListener('change', function() {
-	
-	console.log("about to capture search value by schedule filter");    
+document.getElementById('scheduleFilter').addEventListener('change', function() {	
 	currentSearchValue = $('#dataTable_filter input').val();
     renderTable(originalData);
 });
