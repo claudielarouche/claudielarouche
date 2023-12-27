@@ -273,6 +273,7 @@ function clearAllFilters() {
 
     // Clear the DataTable search box
     $('#dataTable_filter input').val('');
+	currentSearchValue = "";
 
     // Render the table with cleared filters
     renderTable(originalData);
