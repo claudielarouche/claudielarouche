@@ -1,4 +1,4 @@
-console.log('version 7');
+console.log('version 8');
 
 let originalData = []; // Initialize as an empty array
 
@@ -272,7 +272,10 @@ function clearAllFilters() {
 	document.getElementById('scheduleFilter').value = 'all';
 
     // Clear the DataTable search box
-    $('#dataTable_filter input').val('');
+    //$('#dataTable_filter input').val('');
+    var dataTable = $('#dataTable').DataTable();
+    dataTable.search('').draw();
+
 
     // Render the table with cleared filters
     renderTable(originalData);
