@@ -1,4 +1,4 @@
-console.log('version 6');
+console.log('version 7');
 
 let originalData = []; // Initialize as an empty array
 
@@ -124,7 +124,7 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
     const scheduleFilter = document.getElementById('scheduleFilter').value;
 
 	const selectedLanguages = [];
-	if (arabicCheckbox.checked) selectedLanguages.push('Arabic');
+	/*if (arabicCheckbox.checked) selectedLanguages.push('Arabic');
 	if (englishCheckbox.checked) selectedLanguages.push('English');
 	if (frenchCheckbox.checked) selectedLanguages.push('French');
 	if (mandarinCheckbox.checked) selectedLanguages.push('Mandarin');
