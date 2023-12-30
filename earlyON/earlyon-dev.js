@@ -151,7 +151,11 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
             const areaCondition = !selectedArea || currentArea === selectedArea;
             const ageGroupCondition = !selectedAgeGroup || currentAgeGroup.includes(selectedAgeGroup);
 			//const languageCondition = !selectedLanguages.length || selectedLanguages.some(lang => row['Language'].includes(lang));
-			const languageCondition = !selectedLanguages.length || selectedLanguages.some(lang => row['Language'].toLowerCase().includes(lang.toLowerCase()));
+			//const languageCondition = !selectedLanguages.length || selectedLanguages.some(lang => row['Language'].toLowerCase().includes(lang.toLowerCase()));
+			const languageCondition = !selectedLanguages.length || selectedLanguages.some(lang => {
+				const normalizedLang = lang.toLowerCase().trim();
+				return row['Language'].toLowerCase().includes(normalizedLang);
+			});
 
 
 
