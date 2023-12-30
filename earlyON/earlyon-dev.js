@@ -1,4 +1,4 @@
-console.log('version 3');
+console.log('version exact match');
 
 let originalData = []; // Initialize as an empty array
 
@@ -150,12 +150,14 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
             const dateCondition = !selectedDate || currentDate === selectedDate;
             const areaCondition = !selectedArea || currentArea === selectedArea;
             const ageGroupCondition = !selectedAgeGroup || currentAgeGroup.includes(selectedAgeGroup);
+			const languageCondition = !selectedLanguages.length || selectedLanguages.includes(row['Language']); //exact match on language
+
 			//const languageCondition = !selectedLanguages.length || selectedLanguages.some(lang => row['Language'].includes(lang));
 			//const languageCondition = !selectedLanguages.length || selectedLanguages.some(lang => row['Language'].toLowerCase().includes(lang.toLowerCase()));
-			const languageCondition = !selectedLanguages.length || selectedLanguages.some(lang => {
+			/*const languageCondition = !selectedLanguages.length || selectedLanguages.some(lang => {
 				const normalizedLang = lang.toLowerCase().trim();
 				return row['Language'].toLowerCase().includes(normalizedLang);
-			});
+			});*/
 
 
 
