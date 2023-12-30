@@ -123,6 +123,10 @@ function renderTable(data) {
 function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
     const scheduleFilter = document.getElementById('scheduleFilter').value;
 	
+	 if (selectedLanguages.length === 0) {
+        return [];
+    }
+	
     // If no date, area, age group, or schedule is selected, return the original data
     if (!selectedDate && !selectedArea && !selectedAgeGroup && scheduleFilter === 'all'  && !selectedLanguages.length) {
         return data;
