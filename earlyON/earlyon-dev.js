@@ -1,4 +1,4 @@
-console.log('version ');
+console.log('version 1');
 
 let originalData = []; // Initialize as an empty array
 
@@ -150,7 +150,10 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
             const dateCondition = !selectedDate || currentDate === selectedDate;
             const areaCondition = !selectedArea || currentArea === selectedArea;
             const ageGroupCondition = !selectedAgeGroup || currentAgeGroup.includes(selectedAgeGroup);
-			const languageCondition = !selectedLanguages.length || selectedLanguages.some(lang => row['Language'].includes(lang));
+			//const languageCondition = !selectedLanguages.length || selectedLanguages.some(lang => row['Language'].includes(lang));
+			const languageCondition = !selectedLanguages.length || selectedLanguages.some(lang => row['Language'].toLowerCase().includes(lang.toLowerCase()));
+
+
 
             switch (scheduleFilter) {
                 case 'all':
