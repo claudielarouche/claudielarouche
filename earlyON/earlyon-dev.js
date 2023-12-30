@@ -1,4 +1,4 @@
-console.log('version 5');
+console.log('version 6');
 
 let originalData = []; // Initialize as an empty array
 
@@ -121,14 +121,7 @@ function renderTable(data) {
 
 
 function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
-    /*const morningCheckbox = document.getElementById('morningCheckbox');
-    const afternoonCheckbox = document.getElementById('afternoonCheckbox');
-    const eveningCheckbox = document.getElementById('eveningCheckbox');*/
     const scheduleFilter = document.getElementById('scheduleFilter').value;
-	/*const arabicCheckbox = document.getElementById('arabicCheckbox');
-	const englishCheckbox = document.getElementById('englishCheckbox');
-	const frenchCheckbox = document.getElementById('frenchCheckbox');
-	const mandarinCheckbox = document.getElementById('mandarinCheckbox');
 
 	const selectedLanguages = [];
 	if (arabicCheckbox.checked) selectedLanguages.push('Arabic');
@@ -157,8 +150,7 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
             const dateCondition = !selectedDate || currentDate === selectedDate;
             const areaCondition = !selectedArea || currentArea === selectedArea;
             const ageGroupCondition = !selectedAgeGroup || currentAgeGroup.includes(selectedAgeGroup);
-			const languageCondition = !selectedLanguages.length || selectedLanguages.includes(currentLanguage); // Adjust this line
-			
+			const languageCondition = !selectedLanguages.length || selectedLanguages.some(lang => row['Language'].includes(lang));
 
             switch (scheduleFilter) {
                 case 'all':
@@ -246,7 +238,6 @@ const selectedLanguages = [];
 document.querySelectorAll('.languageCheckbox').forEach(function (checkbox) {
     checkbox.addEventListener('change', function () {
         currentSearchValue = $('#dataTable_filter input').val();
-		console.log("I'm running that code");
 		if (checkbox.checked) {
             selectedLanguages.push(checkbox.value);
         } else {
@@ -263,18 +254,8 @@ document.querySelectorAll('.languageCheckbox').forEach(function (checkbox) {
     // Initialize with all checkboxes checked by default
     checkbox.checked = true;
     selectedLanguages.push(checkbox.value);
-	console.log("I'm running this code");
 });
 
-
-
-// Listen for changes in the "Select Schedule" checkboxes
-/*document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
-    checkbox.addEventListener('change', function() {
-        currentSearchValue = $('#dataTable_filter input').val();
-        renderTable(originalData);
-    });
-});*/
 
 function clearAllFilters() {
     // Clear the date filter
@@ -287,9 +268,9 @@ function clearAllFilters() {
     document.getElementById('selectedAgeGroup').value = '';
 
     // Check all the "Select Schedule" checkboxes
-   /* document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+    document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
         checkbox.checked = true;
-    });*/
+    });
 	
 	document.getElementById('scheduleFilter').value = 'all';
 
