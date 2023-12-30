@@ -1,4 +1,4 @@
-console.log('version 1');
+console.log('version 2');
 
 let originalData = []; // Initialize as an empty array
 
@@ -263,6 +263,7 @@ document.querySelectorAll('input[name="languageCheckbox"]').forEach(function (ch
     // Initialize with all checkboxes checked by default
     checkbox.checked = true;
     selectedLanguages.push(checkbox.value);
+	console.log("I'm running this code");
 });
 
 
