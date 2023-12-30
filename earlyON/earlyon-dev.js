@@ -1,4 +1,4 @@
-console.log('version 1');
+console.log('version 2');
 
 let originalData = []; // Initialize as an empty array
 
@@ -129,7 +129,7 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
 
 
     // If no date, area, age group, or schedule is selected, return the original data
-    if (!selectedDate && !selectedArea && !selectedAgeGroup && scheduleFilter === 'all'  /*&& !selectedLanguages.length*/) {
+    if (!selectedDate && !selectedArea && !selectedAgeGroup && scheduleFilter === 'all'  && !selectedLanguages.length) {
         return data;
     }
 
