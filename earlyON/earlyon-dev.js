@@ -1,4 +1,4 @@
-console.log('version 4');
+console.log('version 5');
 
 let originalData = []; // Initialize as an empty array
 
@@ -243,7 +243,7 @@ document.getElementById('scheduleFilter').addEventListener('change', function() 
 
 // Listen for changes in language checkboxes
 const selectedLanguages = [];
-document.querySelectorAll('input[name="languageCheckbox"]').forEach(function (checkbox) {
+document.querySelectorAll('.languageCheckbox').forEach(function (checkbox) {
     checkbox.addEventListener('change', function () {
         currentSearchValue = $('#dataTable_filter input').val();
 		console.log("I'm running that code");
