@@ -1,4 +1,4 @@
-console.log('version 5');
+console.log('version not exact match');
 
 let originalData = []; // Initialize as an empty array
 
@@ -157,7 +157,9 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
             const dateCondition = !selectedDate || currentDate === selectedDate;
             const areaCondition = !selectedArea || currentArea === selectedArea;
             const ageGroupCondition = !selectedAgeGroup || currentAgeGroup.includes(selectedAgeGroup);
-			const languageCondition = !selectedLanguages.length || selectedLanguages.includes(currentLanguage); // Adjust this line
+			//const languageCondition = !selectedLanguages.length || selectedLanguages.includes(currentLanguage); // exact match
+			
+			const languageCondition = !selectedLanguages.length || selectedLanguages.some(lang => row['Language'].toLowerCase().includes(lang.toLowerCase())); //Not exact match
 			
 
             switch (scheduleFilter) {
