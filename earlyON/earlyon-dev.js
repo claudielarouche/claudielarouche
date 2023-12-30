@@ -121,10 +121,23 @@ function renderTable(data) {
 
 
 function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
-    const morningCheckbox = document.getElementById('morningCheckbox');
+    /*const morningCheckbox = document.getElementById('morningCheckbox');
     const afternoonCheckbox = document.getElementById('afternoonCheckbox');
-    const eveningCheckbox = document.getElementById('eveningCheckbox');
+    const eveningCheckbox = document.getElementById('eveningCheckbox');*/
     const scheduleFilter = document.getElementById('scheduleFilter').value;
+	const arabicCheckbox = document.getElementById('arabicCheckbox');
+	const englishCheckbox = document.getElementById('englishCheckbox');
+	const frenchCheckbox = document.getElementById('frenchCheckbox');
+	const mandarinCheckbox = document.getElementById('mandarinCheckbox');
+
+	const selectedLanguages = [];
+	if (arabicCheckbox.checked) selectedLanguages.push('Arabic');
+	if (englishCheckbox.checked) selectedLanguages.push('English');
+	if (frenchCheckbox.checked) selectedLanguages.push('French');
+	if (mandarinCheckbox.checked) selectedLanguages.push('Mandarin');
+	
+	const languageCondition = !selectedLanguages.length || selectedLanguages.includes(row['Language']);
+
 
     // If no date, area, age group, or schedule is selected, return the original data
     if (!selectedDate && !selectedArea && !selectedAgeGroup && scheduleFilter === 'all') {
@@ -147,13 +160,14 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
             switch (scheduleFilter) {
                 case 'all':
                     // Show all rows
-                    return dateCondition && areaCondition && ageGroupCondition;
+                    return dateCondition && areaCondition && ageGroupCondition && languageCondition;
 
                 case 'eveningsWeekends':
                     // Show evenings and weekends only
                     return (
                         dateCondition &&
                         areaCondition &&
+						languageCondition &&
                         ageGroupCondition &&
                         (currentTimeOfDay === 'Evening' ||
                             currentDayOfWeek === 'Saturday' ||
@@ -165,6 +179,7 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
 				return (
 					dateCondition &&
 					areaCondition &&
+					languageCondition &&
 					ageGroupCondition &&
 					(
 						(currentDayOfWeek !== 'Saturday' && currentDayOfWeek !== 'Sunday') &&
@@ -217,10 +232,20 @@ document.getElementById('selectedAgeGroup').addEventListener('change', function(
     renderTable(originalData);
 });
 
+// Listen for changes in the Schedule Filter 
 document.getElementById('scheduleFilter').addEventListener('change', function() {	
 	currentSearchValue = $('#dataTable_filter input').val();
     renderTable(originalData);
 });
+
+// Listen for changes in language checkboxes
+document.querySelectorAll('input[name="languageCheckbox"]').forEach(function(checkbox) {
+    checkbox.addEventListener('change', function() {
+        currentSearchValue = $('#dataTable_filter input').val();
+        renderTable(originalData);
+    });
+});
+
 
 
 // Listen for changes in the "Select Schedule" checkboxes
