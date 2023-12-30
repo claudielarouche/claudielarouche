@@ -1,4 +1,4 @@
-console.log('version not exact match');
+console.log('version 1');
 
 let originalData = []; // Initialize as an empty array
 
@@ -125,22 +125,11 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
     const afternoonCheckbox = document.getElementById('afternoonCheckbox');
     const eveningCheckbox = document.getElementById('eveningCheckbox');*/
     const scheduleFilter = document.getElementById('scheduleFilter').value;
-	/*const arabicCheckbox = document.getElementById('arabicCheckbox');
-	const englishCheckbox = document.getElementById('englishCheckbox');
-	const frenchCheckbox = document.getElementById('frenchCheckbox');
-	const mandarinCheckbox = document.getElementById('mandarinCheckbox');
-
-	const selectedLanguages = [];
-	if (arabicCheckbox.checked) selectedLanguages.push('Arabic');
-	if (englishCheckbox.checked) selectedLanguages.push('English');
-	if (frenchCheckbox.checked) selectedLanguages.push('French');
-	if (mandarinCheckbox.checked) selectedLanguages.push('Mandarin');
 	
-	const languageCondition = !selectedLanguages.length || selectedLanguages.includes(row['Language']);*/
 
 
     // If no date, area, age group, or schedule is selected, return the original data
-    if (!selectedDate && !selectedArea && !selectedAgeGroup && scheduleFilter === 'all'  && !selectedLanguages.length) {
+    if (!selectedDate && !selectedArea && !selectedAgeGroup && scheduleFilter === 'all'  /*&& !selectedLanguages.length*/) {
         return data;
     }
 
