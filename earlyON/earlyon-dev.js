@@ -1,4 +1,4 @@
-console.log('version 7');
+console.log('version ');
 
 let originalData = []; // Initialize as an empty array
 
@@ -247,13 +247,14 @@ document.querySelectorAll('.languageCheckbox').forEach(function (checkbox) {
             }
         }
 
-		
+		console.log("selected languages" + selectedLanguages)
         renderTable(originalData);
     });
 
     // Initialize with all checkboxes checked by default
     checkbox.checked = true;
     selectedLanguages.push(checkbox.value);
+	console.log(selectedLanguages);
 });
 
 
