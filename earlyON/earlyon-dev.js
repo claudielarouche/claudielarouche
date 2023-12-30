@@ -1,4 +1,4 @@
-console.log('version 2');
+console.log('version 3');
 
 let originalData = []; // Initialize as an empty array
 
@@ -241,11 +241,12 @@ document.getElementById('scheduleFilter').addEventListener('change', function() 
 });
 
 // Listen for changes in language checkboxes
+// Listen for changes in language checkboxes
 const selectedLanguages = [];
 document.querySelectorAll('.languageCheckbox').forEach(function (checkbox) {
     checkbox.addEventListener('change', function () {
         currentSearchValue = $('#dataTable_filter input').val();
-		if (checkbox.checked) {
+        if (checkbox.checked) {
             selectedLanguages.push(checkbox.value);
         } else {
             const index = selectedLanguages.indexOf(checkbox.value);
@@ -254,15 +255,16 @@ document.querySelectorAll('.languageCheckbox').forEach(function (checkbox) {
             }
         }
 
-		console.log("selected languages" + selectedLanguages)
+        console.log("selected languages" + selectedLanguages)
         renderTable(originalData);
     });
 
     // Initialize with all checkboxes checked by default
     checkbox.checked = true;
     selectedLanguages.push(checkbox.value);
-	console.log(selectedLanguages);
+    console.log(selectedLanguages);
 });
+
 
 
 function clearAllFilters() {
