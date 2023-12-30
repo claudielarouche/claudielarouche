@@ -121,13 +121,8 @@ function renderTable(data) {
 
 
 function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
-    /*const morningCheckbox = document.getElementById('morningCheckbox');
-    const afternoonCheckbox = document.getElementById('afternoonCheckbox');
-    const eveningCheckbox = document.getElementById('eveningCheckbox');*/
     const scheduleFilter = document.getElementById('scheduleFilter').value;
 	
-
-
     // If no date, area, age group, or schedule is selected, return the original data
     if (!selectedDate && !selectedArea && !selectedAgeGroup && scheduleFilter === 'all'  && !selectedLanguages.length) {
         return data;
@@ -145,11 +140,8 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
 
             const dateCondition = !selectedDate || currentDate === selectedDate;
             const areaCondition = !selectedArea || currentArea === selectedArea;
-            const ageGroupCondition = !selectedAgeGroup || currentAgeGroup.includes(selectedAgeGroup);
-			//const languageCondition = !selectedLanguages.length || selectedLanguages.includes(currentLanguage); // exact match
-			
+            const ageGroupCondition = !selectedAgeGroup || currentAgeGroup.includes(selectedAgeGroup);			
 			const languageCondition = !selectedLanguages.length || selectedLanguages.some(lang => row['Language'].toLowerCase().includes(lang.toLowerCase())); //Not exact match
-			
 
             switch (scheduleFilter) {
                 case 'all':
@@ -257,16 +249,6 @@ document.querySelectorAll('.languageCheckbox').forEach(function (checkbox) {
 	console.log("I'm running this code");
 });
 
-
-
-// Listen for changes in the "Select Schedule" checkboxes
-/*document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
-    checkbox.addEventListener('change', function() {
-        currentSearchValue = $('#dataTable_filter input').val();
-        renderTable(originalData);
-    });
-});*/
-
 function clearAllFilters() {
     // Clear the date filter
     document.getElementById('selectedDate').value = '';
@@ -278,9 +260,9 @@ function clearAllFilters() {
     document.getElementById('selectedAgeGroup').value = '';
 
     // Check all the "Select Schedule" checkboxes
-   /* document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+    document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
         checkbox.checked = true;
-    });*/
+    });
 	
 	document.getElementById('scheduleFilter').value = 'all';
 
