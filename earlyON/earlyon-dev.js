@@ -1,4 +1,4 @@
-console.log('version 9');
+console.log('version 1');
 
 let originalData = []; // Initialize as an empty array
 
@@ -246,6 +246,17 @@ const selectedLanguages = [];
 document.querySelectorAll('input[name="languageCheckbox"]').forEach(function (checkbox) {
     checkbox.addEventListener('change', function () {
         currentSearchValue = $('#dataTable_filter input').val();
+		
+		if (checkbox.checked) {
+            selectedLanguages.push(checkbox.value);
+        } else {
+            const index = selectedLanguages.indexOf(checkbox.value);
+            if (index !== -1) {
+                selectedLanguages.splice(index, 1);
+            }
+        }
+
+		
         renderTable(originalData);
     });
 
