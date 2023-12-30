@@ -1,4 +1,4 @@
-console.log('version 2');
+console.log('version 3');
 
 let originalData = []; // Initialize as an empty array
 
@@ -233,7 +233,6 @@ const selectedLanguages = [];
 document.querySelectorAll('.languageCheckbox').forEach(function (checkbox) {
     checkbox.addEventListener('change', function () {
         currentSearchValue = $('#dataTable_filter input').val();
-		console.log("I'm running that code");
 		if (checkbox.checked) {
             selectedLanguages.push(checkbox.value);
         } else {
@@ -242,15 +241,12 @@ document.querySelectorAll('.languageCheckbox').forEach(function (checkbox) {
                 selectedLanguages.splice(index, 1);
             }
         }
-
-		
         renderTable(originalData);
     });
 
     // Initialize with all checkboxes checked by default
     checkbox.checked = true;
     selectedLanguages.push(checkbox.value);
-	console.log("I'm running this code");
 });
 
 function clearAllFilters() {
