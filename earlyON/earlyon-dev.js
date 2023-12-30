@@ -1,4 +1,4 @@
-console.log('version 3');
+console.log('version 4');
 
 let originalData = []; // Initialize as an empty array
 
@@ -246,7 +246,7 @@ const selectedLanguages = [];
 document.querySelectorAll('input[name="languageCheckbox"]').forEach(function (checkbox) {
     checkbox.addEventListener('change', function () {
         currentSearchValue = $('#dataTable_filter input').val();
-		
+		console.log("I'm running that code");
 		if (checkbox.checked) {
             selectedLanguages.push(checkbox.value);
         } else {
