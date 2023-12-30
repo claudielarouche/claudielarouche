@@ -125,7 +125,7 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
     const afternoonCheckbox = document.getElementById('afternoonCheckbox');
     const eveningCheckbox = document.getElementById('eveningCheckbox');*/
     const scheduleFilter = document.getElementById('scheduleFilter').value;
-	const arabicCheckbox = document.getElementById('arabicCheckbox');
+	/*const arabicCheckbox = document.getElementById('arabicCheckbox');
 	const englishCheckbox = document.getElementById('englishCheckbox');
 	const frenchCheckbox = document.getElementById('frenchCheckbox');
 	const mandarinCheckbox = document.getElementById('mandarinCheckbox');
@@ -136,11 +136,11 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
 	if (frenchCheckbox.checked) selectedLanguages.push('French');
 	if (mandarinCheckbox.checked) selectedLanguages.push('Mandarin');
 	
-	const languageCondition = !selectedLanguages.length || selectedLanguages.includes(row['Language']);
+	const languageCondition = !selectedLanguages.length || selectedLanguages.includes(row['Language']);*/
 
 
     // If no date, area, age group, or schedule is selected, return the original data
-    if (!selectedDate && !selectedArea && !selectedAgeGroup && scheduleFilter === 'all') {
+    if (!selectedDate && !selectedArea && !selectedAgeGroup && scheduleFilter === 'all'  && !selectedLanguages.length) {
         return data;
     }
 
@@ -152,10 +152,13 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
             const currentAgeGroup = row['Age Group'] ? row['Age Group'] : '';
             const currentTimeOfDay = row['Time of Day'] ? row['Time of Day'] : '';
             const currentDayOfWeek = row['Day of Week'] ? row['Day of Week'] : '';
+			const currentLanguage = row['Language'] ? row['Language'] : ''; 
 
             const dateCondition = !selectedDate || currentDate === selectedDate;
             const areaCondition = !selectedArea || currentArea === selectedArea;
             const ageGroupCondition = !selectedAgeGroup || currentAgeGroup.includes(selectedAgeGroup);
+			const languageCondition = !selectedLanguages.length || selectedLanguages.includes(currentLanguage); // Adjust this line
+			
 
             switch (scheduleFilter) {
                 case 'all':
@@ -239,11 +242,16 @@ document.getElementById('scheduleFilter').addEventListener('change', function() 
 });
 
 // Listen for changes in language checkboxes
-document.querySelectorAll('input[name="languageCheckbox"]').forEach(function(checkbox) {
-    checkbox.addEventListener('change', function() {
+const selectedLanguages = [];
+document.querySelectorAll('input[name="languageCheckbox"]').forEach(function (checkbox) {
+    checkbox.addEventListener('change', function () {
         currentSearchValue = $('#dataTable_filter input').val();
         renderTable(originalData);
     });
+
+    // Initialize with all checkboxes checked by default
+    checkbox.checked = true;
+    selectedLanguages.push(checkbox.value);
 });
 
 
