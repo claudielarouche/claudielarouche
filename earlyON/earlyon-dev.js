@@ -1,4 +1,4 @@
-console.log('version 6');
+console.log('version 7');
 
 let originalData = []; // Initialize as an empty array
 
@@ -144,7 +144,7 @@ function filterData(data, selectedDate, selectedAgeGroup) {
 			const currentLanguage = row['Language'] ? row['Language'] : ''; 
 
             const dateCondition = !selectedDate || currentDate === selectedDate;
-            const areaCondition = !selectedArea || currentArea === selectedArea;
+            //const areaCondition = !selectedArea || currentArea === selectedArea;
             const ageGroupCondition = !selectedAgeGroup || currentAgeGroup.includes(selectedAgeGroup);			
 			const languageCondition = !selectedLanguages.length || selectedLanguages.some(lang => row['Language'].toLowerCase().includes(lang.toLowerCase())); //Not exact match
 			const areaCondition = !selectedAreas.length || selectedAreas.some(lang => row['Area'].toLowerCase().includes(lang.toLowerCase())); //Not exact match
