@@ -1,4 +1,4 @@
-console.log('version 3');
+console.log('version 4');
 
 let originalData = []; // Initialize as an empty array
 
@@ -262,6 +262,7 @@ function clearAllFilters() {
     // Check all the "Select Schedule" checkboxes
     document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
         checkbox.checked = true;
+		selectedLanguages.push(checkbox.value);
     });
 	
 	document.getElementById('scheduleFilter').value = 'all';
