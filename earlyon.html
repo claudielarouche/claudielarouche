@@ -95,41 +95,67 @@
 			<p>Scroll to the bottom of the screen or <a href="#comingSoon">click this link to see what's coming soon!</a></p>
 			
 			<h2>Filters</h2>
-			<label for="selectedDate">Select Date:</label>
-			<input type="date" id="selectedDate">
-			
-			<!-- New Area Filter -->
-			<label for="selectedArea">Select Area:</label>
-			<select id="selectedArea">
-				<option value="">All Areas</option>
-				<option value="East">East</option>
-				<option value="West">West</option>
-				<option value="Central">Central</option>
-				<option value="South">South</option>
-			</select>
-			
-			<!-- Add this code in the Filters area -->
-			<label for="selectedAgeGroup">Select Age Group:</label>
-			<select id="selectedAgeGroup">
-				<option value="">Show all</option>
-				<option value="Babies">Show baby playgroups only</option>
-				<option value="Kids">Show kids playgroups only</option>
-			</select>
-			
-			<!--<label for="selectedSchedule">Select Schedule:</label>
-			<input type="checkbox" id="morningCheckbox" value="Morning" checked> Morning
-			<input type="checkbox" id="afternoonCheckbox" value="Afternoon" checked> Afternoon
-			<input type="checkbox" id="eveningCheckbox" value="Evening" checked> Evening
-			<br>
-			<input type="checkbox" id="weekdaysCheckbox" value="Weekdays" checked> Include Weekdays
-			<input type="checkbox" id="weekendCheckbox" value="Weekend" checked> Include Weekend-->
-			
-			<label for="scheduleFilter">Select Schedule:</label>
-			<select id="scheduleFilter">
-				<option value="all">Show all times</option>
-				<option value="eveningsWeekends">Show evenings and weekends only</option>
-				<option value="weekdayAMPM">Show weekday AM and PM only</option>
-			</select>
+			<div class="row">
+				<div class="col-sm-2">
+					<label for="selectedDate">Select Date:</label>
+				</div>
+				<div class="col-sm-10">
+					<input type="date" id="selectedDate">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-2">
+					<label for="selectedArea">Select Area:</label>
+				</div>
+				<div class="col-sm-10">
+					<select id="selectedArea">
+						<option value="">All Areas</option>
+						<option value="East">East</option>
+						<option value="West">West</option>
+						<option value="Central">Central</option>
+						<option value="South">South</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-2">
+					<label for="selectedAgeGroup">Select Age Group:</label>
+				</div>
+				<div class="col-sm-10">
+					<select id="selectedAgeGroup">
+						<option value="">Show all</option>
+						<option value="Babies">Show baby playgroups only</option>
+						<option value="Kids">Show kids playgroups only</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-2">
+					<label for="scheduleFilter">Select Schedule:</label>
+				</div>
+				<div class="col-sm-10">
+					<select id="scheduleFilter">
+						<option value="all">Show all times</option>
+						<option value="eveningsWeekends">Show evenings and weekends only</option>
+						<option value="weekdayAMPM">Show weekday AM and PM only</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-2">
+					Select Language(s):
+				</div>
+				<div class="col-sm-10">
+					<input type="checkbox" id="arabicCheckbox" class="languageCheckbox" value="Arabic" checked> Arabic
+					<input type="checkbox" id="englishCheckbox" class="languageCheckbox" value="English" checked> English
+					<input type="checkbox" id="frenchCheckbox" class="languageCheckbox" value="French" checked>French
+					<input type="checkbox" id="mandarinCheckbox" class="languageCheckbox" value="Mandarin" checked> Mandarin
+				</div>
+			</div>
 			
 			<div class="mt-3">
 				<button class="btn btn-secondary" onclick="clearAllFilters()">

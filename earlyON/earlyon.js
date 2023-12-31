@@ -1,4 +1,4 @@
-console.log('version 7');
+console.log('version 6');
 
 let originalData = []; // Initialize as an empty array
 
@@ -112,7 +112,7 @@ function renderTable(data) {
 			],
 			"language": {
 				"emptyTable": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>.",
-				"zeroRecords": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>clearing all filters</a>."
+				"zeroRecords": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>."
 			}
 		});
 	}
@@ -121,18 +121,14 @@ function renderTable(data) {
 
 
 function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
-    const morningCheckbox = document.getElementById('morningCheckbox');
-    const afternoonCheckbox = document.getElementById('afternoonCheckbox');
-    const eveningCheckbox = document.getElementById('eveningCheckbox');
     const scheduleFilter = document.getElementById('scheduleFilter').value;
-
-    /*const selectedSchedule = [];
-    if (morningCheckbox.checked) selectedSchedule.push('Morning');
-    if (afternoonCheckbox.checked) selectedSchedule.push('Afternoon');
-    if (eveningCheckbox.checked) selectedSchedule.push('Evening');*/
-
+	
+	 if (selectedLanguages.length === 0) {
+        return [];
+    }
+	
     // If no date, area, age group, or schedule is selected, return the original data
-    if (!selectedDate && !selectedArea && !selectedAgeGroup && scheduleFilter === 'all') {
+    if (!selectedDate && !selectedArea && !selectedAgeGroup && scheduleFilter === 'all'  && !selectedLanguages.length) {
         return data;
     }
 
@@ -144,26 +140,24 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
             const currentAgeGroup = row['Age Group'] ? row['Age Group'] : '';
             const currentTimeOfDay = row['Time of Day'] ? row['Time of Day'] : '';
             const currentDayOfWeek = row['Day of Week'] ? row['Day of Week'] : '';
+			const currentLanguage = row['Language'] ? row['Language'] : ''; 
 
             const dateCondition = !selectedDate || currentDate === selectedDate;
             const areaCondition = !selectedArea || currentArea === selectedArea;
-            const ageGroupCondition = !selectedAgeGroup || currentAgeGroup.includes(selectedAgeGroup);
-           /* const scheduleCondition =
-                !selectedSchedule.length ||
-                (selectedSchedule.includes('Morning') && currentTimeOfDay === 'Morning') ||
-                (selectedSchedule.includes('Afternoon') && currentTimeOfDay === 'Afternoon') ||
-                (selectedSchedule.includes('Evening') && currentTimeOfDay === 'Evening');*/
+            const ageGroupCondition = !selectedAgeGroup || currentAgeGroup.includes(selectedAgeGroup);			
+			const languageCondition = !selectedLanguages.length || selectedLanguages.some(lang => row['Language'].toLowerCase().includes(lang.toLowerCase())); //Not exact match
 
             switch (scheduleFilter) {
                 case 'all':
                     // Show all rows
-                    return dateCondition && areaCondition && ageGroupCondition;
+                    return dateCondition && areaCondition && ageGroupCondition && languageCondition;
 
                 case 'eveningsWeekends':
                     // Show evenings and weekends only
                     return (
                         dateCondition &&
                         areaCondition &&
+						languageCondition &&
                         ageGroupCondition &&
                         (currentTimeOfDay === 'Evening' ||
                             currentDayOfWeek === 'Saturday' ||
@@ -175,6 +169,7 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
 				return (
 					dateCondition &&
 					areaCondition &&
+					languageCondition &&
 					ageGroupCondition &&
 					(
 						(currentDayOfWeek !== 'Saturday' && currentDayOfWeek !== 'Sunday') &&
@@ -227,31 +222,35 @@ document.getElementById('selectedAgeGroup').addEventListener('change', function(
     renderTable(originalData);
 });
 
-document.getElementById('scheduleFilter').addEventListener('change', function() {
-   // const scheduleFilterValue = this.value;
-
-    // Uncheck morning and afternoon, check evening for "Show evenings and weekends only"
-    /*if (scheduleFilterValue === 'eveningsAndWeekends') {
-        document.getElementById('morningCheckbox').checked = false;
-        document.getElementById('afternoonCheckbox').checked = false;
-        document.getElementById('eveningCheckbox').checked = true;
-    } 
-	
-	if (scheduleFilterValue === 'weekdayAMandPM') {
-        document.getElementById('eveningCheckbox').checked = false;
-    } */
-	
+// Listen for changes in the Schedule Filter 
+document.getElementById('scheduleFilter').addEventListener('change', function() {	
 	currentSearchValue = $('#dataTable_filter input').val();
     renderTable(originalData);
 });
 
-
-// Listen for changes in the "Select Schedule" checkboxes
-document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
-    checkbox.addEventListener('change', function() {
+// Listen for changes in language checkboxes
+const selectedLanguages = [];
+document.querySelectorAll('.languageCheckbox').forEach(function (checkbox) {
+    checkbox.addEventListener('change', function () {
         currentSearchValue = $('#dataTable_filter input').val();
+		if (checkbox.checked) {
+            if (!selectedLanguages.includes(checkbox.value)) {
+                selectedLanguages.push(checkbox.value);
+            }
+        } else {
+            const index = selectedLanguages.indexOf(checkbox.value);
+            if (index !== -1) {
+                selectedLanguages.splice(index, 1);
+            }
+        }
         renderTable(originalData);
     });
+
+    // Initialize with all checkboxes checked by default
+    checkbox.checked = true;
+    if (!selectedLanguages.includes(checkbox.value)) {
+        selectedLanguages.push(checkbox.value);
+    }
 });
 
 function clearAllFilters() {
@@ -264,19 +263,21 @@ function clearAllFilters() {
 	 // Clear the age group filter
     document.getElementById('selectedAgeGroup').value = '';
 
-    // Check all the "Select Schedule" checkboxes
-   /* document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+    // Check all the "Select Schedule" checkboxes -> This code currently only works for language checkbox. If you create more checkboxes in the future you'll need to adjust this
+    document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
         checkbox.checked = true;
-    });*/
+		if (!selectedLanguages.includes(checkbox.value)) {
+			selectedLanguages.push(checkbox.value);
+		}
+    });
 	
 	document.getElementById('scheduleFilter').value = 'all';
 
     // Clear the DataTable search box
-    $('#dataTable_filter input').val('');
+    var dataTable = $('#dataTable').DataTable();
+    dataTable.search('').draw();
 	currentSearchValue = "";
 
     // Render the table with cleared filters
     renderTable(originalData);
 }
-
-
