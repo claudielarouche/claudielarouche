@@ -129,7 +129,7 @@ function filterData(data, selectedDate, selectedAgeGroup) {
     }
 	
     // If no date, area, age group, or schedule is selected, return the original data
-    if (!selectedDate && !selectedArea && !selectedAgeGroup && scheduleFilter === 'all'  && !selectedLanguages.length) {
+    if (!selectedDate && !selectedAreas.length && !selectedAgeGroup && scheduleFilter === 'all'  && !selectedLanguages.length) {
         return data;
     }
 
@@ -284,7 +284,7 @@ function clearAllFilters() {
     document.getElementById('selectedDate').value = '';
 
     // Clear the area filter
-    document.getElementById('selectedArea').value = '';
+    //document.getElementById('selectedArea').value = '';
 	
 	 // Clear the age group filter
     document.getElementById('selectedAgeGroup').value = '';
