@@ -1,4 +1,4 @@
-console.log('version 5');
+console.log('version 6');
 
 let originalData = []; // Initialize as an empty array
 
@@ -234,7 +234,9 @@ document.querySelectorAll('.languageCheckbox').forEach(function (checkbox) {
     checkbox.addEventListener('change', function () {
         currentSearchValue = $('#dataTable_filter input').val();
 		if (checkbox.checked) {
-            selectedLanguages.push(checkbox.value);
+            if (!selectedLanguages.includes(checkbox.value)) {
+                selectedLanguages.push(checkbox.value);
+            }
         } else {
             const index = selectedLanguages.indexOf(checkbox.value);
             if (index !== -1) {
@@ -246,7 +248,9 @@ document.querySelectorAll('.languageCheckbox').forEach(function (checkbox) {
 
     // Initialize with all checkboxes checked by default
     checkbox.checked = true;
-    selectedLanguages.push(checkbox.value);
+    if (!selectedLanguages.includes(checkbox.value)) {
+        selectedLanguages.push(checkbox.value);
+    }
 });
 
 function clearAllFilters() {
@@ -262,7 +266,9 @@ function clearAllFilters() {
     // Check all the "Select Schedule" checkboxes -> This code currently only works for language checkbox. If you create more checkboxes in the future you'll need to adjust this
     document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
         checkbox.checked = true;
-		selectedLanguages.push(checkbox.value);
+		if (!selectedLanguages.includes(checkbox.value)) {
+			selectedLanguages.push(checkbox.value);
+		}
     });
 	
 	document.getElementById('scheduleFilter').value = 'all';
