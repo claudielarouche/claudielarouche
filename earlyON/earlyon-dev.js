@@ -259,7 +259,7 @@ function clearAllFilters() {
 	 // Clear the age group filter
     document.getElementById('selectedAgeGroup').value = '';
 
-    // Check all the "Select Schedule" checkboxes
+    // Check all the "Select Schedule" checkboxes -> This code currently only works for language checkbox. If you create more checkboxes in the future you'll need to adjust this
     document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
         checkbox.checked = true;
 		selectedLanguages.push(checkbox.value);
