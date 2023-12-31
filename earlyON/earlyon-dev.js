@@ -52,7 +52,7 @@ function renderTable(data) {
 	});
 	tableHtml += '</tr></thead><tbody>';
 
-	const selectedArea = document.getElementById('selectedArea').value;
+	//const selectedArea = document.getElementById('selectedArea').value;
 	const selectedDate = document.getElementById('selectedDate').value;
 	const selectedAgeGroup = document.getElementById('selectedAgeGroup').value;
 	
@@ -61,7 +61,8 @@ function renderTable(data) {
         .filter(checkbox => checkbox.checked)
         .map(checkbox => checkbox.id.replace('Checkbox', ''));
 
-    const filteredData = filterData(data, selectedDate, selectedArea, selectedAgeGroup);
+    //const filteredData = filterData(data, selectedDate, selectedArea, selectedAgeGroup);
+	const filteredData = filterData(data, selectedDate, selectedAgeGroup);
 
 	if (!Array.isArray(filteredData)) {
 		console.error('Error loading data: Filtered data is not an array.');
@@ -120,7 +121,7 @@ function renderTable(data) {
 }
 
 
-function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
+function filterData(data, selectedDate, selectedAgeGroup) {
     const scheduleFilter = document.getElementById('scheduleFilter').value;
 	
 	 if (selectedLanguages.length === 0) {
@@ -136,7 +137,7 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
     if (Array.isArray(data)) {
         return data.filter(row => {
             const currentDate = row['Date'] ? row['Date'] : '';
-            const currentArea = row['Area'] ? row['Area'] : '';
+            //const currentArea = row['Area'] ? row['Area'] : '';
             const currentAgeGroup = row['Age Group'] ? row['Age Group'] : '';
             const currentTimeOfDay = row['Time of Day'] ? row['Time of Day'] : '';
             const currentDayOfWeek = row['Day of Week'] ? row['Day of Week'] : '';
@@ -146,11 +147,12 @@ function filterData(data, selectedDate, selectedArea, selectedAgeGroup) {
             const areaCondition = !selectedArea || currentArea === selectedArea;
             const ageGroupCondition = !selectedAgeGroup || currentAgeGroup.includes(selectedAgeGroup);			
 			const languageCondition = !selectedLanguages.length || selectedLanguages.some(lang => row['Language'].toLowerCase().includes(lang.toLowerCase())); //Not exact match
+			const areaCondition = !selectedAreas.length || selectedAreas.some(lang => row['Area'].toLowerCase().includes(lang.toLowerCase())); //Not exact match
 
             switch (scheduleFilter) {
                 case 'all':
                     // Show all rows
-                    return dateCondition && areaCondition && ageGroupCondition && languageCondition;
+                    return dateCondition && areaCondition && ageGroupCondition && languageCondition && areaCondition;
 
                 case 'eveningsWeekends':
                     // Show evenings and weekends only
@@ -211,10 +213,10 @@ document.getElementById('selectedDate').addEventListener('change', function() {
 });
 
 // Listen for changes in the Area select input
-document.getElementById('selectedArea').addEventListener('change', function() {
+/*document.getElementById('selectedArea').addEventListener('change', function() {
 	currentSearchValue = $('#dataTable_filter input').val();
     renderTable(originalData);
-});
+});*/
 
 // Listen for changes in the Age Group select input
 document.getElementById('selectedAgeGroup').addEventListener('change', function() {
@@ -253,6 +255,30 @@ document.querySelectorAll('.languageCheckbox').forEach(function (checkbox) {
     }
 });
 
+const selectedAreas = [];
+document.querySelectorAll('.areaCheckbox').forEach(function (checkbox) {
+    checkbox.addEventListener('change', function () {
+        currentSearchValue = $('#dataTable_filter input').val();
+		if (checkbox.checked) {
+            if (!selectedAreas.includes(checkbox.value)) {
+                selectedAreas.push(checkbox.value);
+            }
+        } else {
+            const index = selectedAreas.indexOf(checkbox.value);
+            if (index !== -1) {
+                selectedAreas.splice(index, 1);
+            }
+        }
+        renderTable(originalData);
+    });
+
+    // Initialize with all checkboxes checked by default
+    checkbox.checked = true;
+    if (!selectedAreas.includes(checkbox.value)) {
+        selectedAreas.push(checkbox.value);
+    }
+});
+
 function clearAllFilters() {
     // Clear the date filter
     document.getElementById('selectedDate').value = '';
@@ -263,11 +289,19 @@ function clearAllFilters() {
 	 // Clear the age group filter
     document.getElementById('selectedAgeGroup').value = '';
 
-    // Check all the "Select Schedule" checkboxes -> This code currently only works for language checkbox. If you create more checkboxes in the future you'll need to adjust this
-    document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+    // Check all the "Select Schedule" checkboxes
+    document.querySelectorAll('.languageCheckbox').forEach(checkbox => {
         checkbox.checked = true;
 		if (!selectedLanguages.includes(checkbox.value)) {
 			selectedLanguages.push(checkbox.value);
+		}
+    });
+	
+	// Check all the "Select Schedule" checkboxes
+    document.querySelectorAll('.areaCheckbox').forEach(checkbox => {
+        checkbox.checked = true;
+		if (!selectedAreas.includes(checkbox.value)) {
+			selectedAreas.push(checkbox.value);
 		}
     });
 	
