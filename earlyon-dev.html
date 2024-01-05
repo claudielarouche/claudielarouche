@@ -90,65 +90,69 @@
 			<p>Scroll to the bottom of the screen or <a href="#comingSoon">click this link to see what's coming soon!</a></p>
 			
 			<h2>Filters</h2>
-			<div class="row">
-				<div class="col-sm-2">
-					<label for="selectedDate">Select Date:</label>
-				</div>
-				<div class="col-sm-10">
-					<input type="date" id="selectedDate">
-				</div>
-			</div>
-			
-			<div class="row">
-				<div class="col-sm-2">
-					Select Area(s):
-				</div>
-				<div class="col-sm-10">
-					<input type="checkbox" id="centralCheckbox" class="areaCheckbox" value="Central" checked> Central
-					<input type="checkbox" id="eastCheckbox" class="areaCheckbox" value="East" checked> East
-					<input type="checkbox" id="southCheckbox" class="areaCheckbox" value="South" checked> South
-					<input type="checkbox" id="westCheckbox" class="areaCheckbox" value="West" checked> West					
-				</div>
-			</div>
-			
+			<form class="form">
 
-			<div class="row">
-				<div class="col-sm-2">
-					<label for="selectedAgeGroup">Select Age Group:</label>
-				</div>
-				<div class="col-sm-10">
-					<select id="selectedAgeGroup">
-						<option value="">Show all</option>
-						<option value="Babies">Show baby playgroups only</option>
-						<option value="Kids">Show kids playgroups only</option>
-					</select>
-				</div>
-			</div>
+    <div class="form-group row">
+        <label for="selectedDate" class="col-sm-2 col-form-label">Select Date:</label>
+        <div class="col-sm-10">
+            <input type="date" id="selectedDate" class="form-control col-sm-2">
+        </div>
+    </div>
 
-			<div class="row">
-				<div class="col-sm-2">
-					<label for="scheduleFilter">Select Schedule:</label>
-				</div>
-				<div class="col-sm-10">
-					<select id="scheduleFilter">
-						<option value="all">Show all times</option>
-						<option value="eveningsWeekends">Show evenings and weekends only</option>
-						<option value="weekdayAMPM">Show weekday AM and PM only</option>
-					</select>
-				</div>
-			</div>
+    <div class="form-group row">
+        <label for="selectedArea" class="col-sm-2 col-form-label">Select Area(s):</label>
+        <div class="col-sm-10">
+            <div class="checkbox">
+                <label><input type="checkbox" id="centralCheckbox" class="areaCheckbox" value="Central" checked=""> Central</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" id="eastCheckbox" class="areaCheckbox" value="East" checked=""> East</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" id="southCheckbox" class="areaCheckbox" value="South" checked=""> South</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" id="westCheckbox" class="areaCheckbox" value="West" checked=""> West</label>
+            </div>
+        </div>
+    </div>
 
-			<div class="row">
-				<div class="col-sm-2">
-					Select Language(s):
-				</div>
-				<div class="col-sm-10">
-					<input type="checkbox" id="arabicCheckbox" class="languageCheckbox" value="Arabic" checked> Arabic
-					<input type="checkbox" id="englishCheckbox" class="languageCheckbox" value="English" checked> English
-					<input type="checkbox" id="frenchCheckbox" class="languageCheckbox" value="French" checked> French
-					<input type="checkbox" id="mandarinCheckbox" class="languageCheckbox" value="Mandarin" checked> Mandarin
-				</div>
-			</div>
+    <div class="form-group row">
+        <label for="selectedAgeGroup" class="col-sm-2 col-form-label">Select Age Group:</label>
+        <div class="col-sm-3">
+            <select id="selectedAgeGroup" class="form-control">
+                <option value="">Show all</option>
+                <option value="Babies">Show baby playgroups only</option>
+                <option value="Kids">Show kids playgroups only</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label for="scheduleFilter" class="col-sm-2 col-form-label">Select Schedule:</label>
+        <div class="col-sm-4">
+            <select id="scheduleFilter" class="form-control">
+                <option value="all">Show all times</option>
+                <option value="eveningsWeekends">Show evenings and weekends only</option>
+                <option value="weekdayAMPM">Show weekday AM and PM only</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label for="languageFilter" class="col-sm-2 col-form-label">Select Language(s):</label>
+        <div class="col-sm-10">
+            <div class="checkbox">
+                <label><input type="checkbox" id="arabicCheckbox" class="languageCheckbox" value="Arabic" checked=""> Arabic</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" id="englishCheckbox" class="languageCheckbox" value="English" checked=""> English</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" id="frenchCheckbox" class="languageCheckbox" value="French" checked=""> French</label>
+            </div>
+            <div class="checkbox">
+                <label></label></div></div></div></form>
 
 			
 			<div class="mt-3">
