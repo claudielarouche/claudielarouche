@@ -74,14 +74,17 @@ function renderTable(data) {
 	filteredData.forEach(row => {
 		const currentDate = row['Date'] ? row['Date'] : '';
 		if (!isPastDate(currentDate)) {
-			tableHtml += '<tr>';
+			// Check if "Playgroup Name" contains "CANCELLED"
+			const isCancelled = row['Playgroup Name'] && row['Playgroup Name'].includes('CANCELLED');
+
+			// Start building the row with a conditional background color
+			tableHtml += `<tr${isCancelled ? ' style="background-color: red;"' : ''}>`;
+
 			headers.forEach(header => {
 				if (header === 'URL') {
 					// Make the URL clickable as a link
 					tableHtml += `<td><a href="${row[header]}" target="_blank">URL</a></td>`;
-				}
-				
-				else if (header === 'Location Address') {
+				} else if (header === 'Location Address') {
 					// Create a link with the Google Maps URL for the address
 					const address = row[header] ? row[header].trim() : '';
 					if (address !== '') {
@@ -95,9 +98,11 @@ function renderTable(data) {
 					tableHtml += `<td>${row[header]}</td>`;
 				}
 			});
+
 			tableHtml += '</tr>';
 		}
 	});
+
 	
 	tableHtml += '</tbody></table>';
 
