@@ -58,6 +58,10 @@
 			.checked {
 				text-decoration: line-through;
 			}
+			
+			td.dataTables_empty {
+				text-align: left !important;
+			}
 		</style>
 		<!-- Include PapaParse library -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
@@ -65,26 +69,27 @@
 	<body>
 		<div class="bg-image"></div>
 		<div class="container">
-			<h1>EarlyON Ottawa <small>Version 1.5</small>
-			</h1>
-			<p>Welcome to the central repository of all the EarlyON groups in Ottawa! Finally a place where parents can see details for all the playgroups in the city.</p>
-			<p>Do you have feedback? Are you interested in volunteering to help keep this website up to date? Did you notice an error in the playgroups listed? I'd be happy to <a href="https://forms.gle/qGohDSaTZ9dA7XWy7" target="_blank">hear from you</a>!</p>
-			  <!-- Add the Bootstrap call-out with a lightbulb icon -->
-			  
-			  <!-- Facebook Share Button -->
-    <a href="https://www.facebook.com/sharer/sharer.php?u=https://claudielarouche.com/earlyon.html" target="_blank" class="btn btn-primary">Share this page on Facebook</a>
-			  
-			<div class="alert alert-info mt-3" role="alert">
-				<span class="material-icons" style="vertical-align: middle;">lightbulb</span>
-				Please make sure to always click on the link to verify that the playgroup you are planning to visit is still running.
-			</div>
-			
-			<!-- Add this code where you want the button to appear -->
+			<h1>EarlyON Ottawa</h1>
 			<div class="mt-3">
 				<a href="#csvData" class="btn btn-primary">
 					 Go to the data
 				</a>
 			</div>
+			
+			<p>Welcome to the central repository of all the EarlyON playgroups in Ottawa! Finally, a place where parents can find details about all the EarlyON playgroups in the city. EarlyON offers weekday and weekend playgroups. There are even some evening playgroups listed! </p>
+
+			<p>Are you looking for free activities for babies, toddlers or young children? Explore our comprehensive list of EarlyON playgroups near you!</p>
+			<p>Do you have feedback? Are you interested in volunteering to help keep this website up to date? Did you notice an error in the playgroups listed? I'd be happy to <a href="https://forms.gle/qGohDSaTZ9dA7XWy7" target="_blank">hear from you</a>! This tool was built by Claudie Larouche, feel free to connect on <a href="https://www.facebook.com/claudie.larouche.3" target="_blank">Facebook</a> or <a href="https://www.linkedin.com/in/claudie-larouche/" target="_blank">LinkedIn</a>!</p>
+			<p>Now that I have some good data to play with, I've started making a few <a href="https://claudielarouche.com/earlyon-charts.html">charts</a>. :)</p>
+			
+			  <!-- Add the Bootstrap call-out with a lightbulb icon -->
+			<div class="alert alert-info mt-3" role="alert">
+				<span class="material-icons" style="vertical-align: middle;">lightbulb</span>
+				Please make sure to always click on the link to verify that the playgroup you are planning to visit is still running.
+			</div>
+			
+			
+			
 
 			<h2>Roadmap</h2>
 			<p>Scroll to the bottom of the screen or <a href="#comingSoon">click this link to see what's coming soon!</a></p>
@@ -92,77 +97,81 @@
 			<h2>Filters</h2>
 			<form class="form">
 
-    <div class="form-group row">
-        <label for="selectedDate" class="col-sm-2 col-form-label">Select Date:</label>
-        <div class="col-sm-10">
-            <input type="date" id="selectedDate" class="form-control col-sm-2">
-        </div>
-    </div>
+				<div class="form-group row">
+					<label for="selectedDate" class="col-sm-2 col-form-label">Select Date:</label>
+					<div class="col-sm-10">
+						<input type="date" id="selectedDate" class="form-control col-sm-2">
+					</div>
+				</div>
 
-    <div class="form-group row">
-        <label for="selectedArea" class="col-sm-2 col-form-label">Select Area(s):</label>
-        <div class="col-sm-10">
-            <div class="checkbox">
-                <label><input type="checkbox" id="centralCheckbox" class="areaCheckbox" value="Central" checked=""> Central</label>
-            </div>
-            <div class="checkbox">
-                <label><input type="checkbox" id="eastCheckbox" class="areaCheckbox" value="East" checked=""> East</label>
-            </div>
-            <div class="checkbox">
-                <label><input type="checkbox" id="southCheckbox" class="areaCheckbox" value="South" checked=""> South</label>
-            </div>
-            <div class="checkbox">
-                <label><input type="checkbox" id="westCheckbox" class="areaCheckbox" value="West" checked=""> West</label>
-            </div>
-        </div>
-    </div>
+				<div class="form-group row">
+					<label for="selectedArea" class="col-sm-2 col-form-label">Select Area(s):</label>
+					<div class="col-sm-10">
+						<div class="checkbox">
+							<label><input type="checkbox" id="centralCheckbox" class="areaCheckbox" value="Central" checked=""> Central</label>
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" id="eastCheckbox" class="areaCheckbox" value="East" checked=""> East</label>
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" id="southCheckbox" class="areaCheckbox" value="South" checked=""> South</label>
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" id="westCheckbox" class="areaCheckbox" value="West" checked=""> West</label>
+						</div>
+					</div>
+				</div>
 
-    <div class="form-group row">
-        <label for="selectedAgeGroup" class="col-sm-2 col-form-label">Select Age Group:</label>
-        <div class="col-sm-3">
-            <select id="selectedAgeGroup" class="form-control">
-                <option value="">Show all</option>
-                <option value="Babies">Show baby playgroups only</option>
-                <option value="Kids">Show kids playgroups only</option>
-            </select>
-        </div>
-    </div>
+				<div class="form-group row">
+					<label for="selectedAgeGroup" class="col-sm-2 col-form-label">Select Age Group:</label>
+					<div class="col-sm-3">
+						<select id="selectedAgeGroup" class="form-control">
+							<option value="">Show all</option>
+							<option value="Babies">Show baby playgroups only</option>
+							<option value="Kids">Show kids playgroups only</option>
+						</select>
+					</div>
+				</div>
 
-    <div class="form-group row">
-        <label for="scheduleFilter" class="col-sm-2 col-form-label">Select Schedule:</label>
-        <div class="col-sm-4">
-            <select id="scheduleFilter" class="form-control">
-                <option value="all">Show all times</option>
-                <option value="eveningsWeekends">Show evenings and weekends only</option>
-                <option value="weekdayAMPM">Show weekday AM and PM only</option>
-            </select>
-        </div>
-    </div>
+				<div class="form-group row">
+					<label for="scheduleFilter" class="col-sm-2 col-form-label">Select Schedule:</label>
+					<div class="col-sm-4">
+						<select id="scheduleFilter" class="form-control">
+							<option value="all">Show all times</option>
+							<option value="eveningsWeekends">Show evenings and weekends only</option>
+							<option value="weekdayAMPM">Show weekday AM and PM only</option>
+						</select>
+					</div>
+				</div>
 
-    <div class="form-group row">
-        <label for="languageFilter" class="col-sm-2 col-form-label">Select Language(s):</label>
-        <div class="col-sm-10">
-            <div class="checkbox">
-                <label><input type="checkbox" id="arabicCheckbox" class="languageCheckbox" value="Arabic" checked=""> Arabic</label>
-            </div>
-            <div class="checkbox">
-                <label><input type="checkbox" id="englishCheckbox" class="languageCheckbox" value="English" checked=""> English</label>
-            </div>
-            <div class="checkbox">
-                <label><input type="checkbox" id="frenchCheckbox" class="languageCheckbox" value="French" checked=""> French</label>
-            </div>
-            <div class="checkbox">
-                <label><input type="checkbox" id="mandarinCheckbox" class="languageCheckbox" value="Mandarin" checked=""> Mandarin</label>
-			</div>
-		</div>
-	</div>
-	</form>
-
+				<div class="form-group row">
+					<label for="languageFilter" class="col-sm-2 col-form-label">Select Language(s):</label>
+					<div class="col-sm-10">
+						<div class="checkbox">
+							<label><input type="checkbox" id="arabicCheckbox" class="languageCheckbox" value="Arabic" checked=""> Arabic</label>
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" id="englishCheckbox" class="languageCheckbox" value="English" checked=""> English</label>
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" id="frenchCheckbox" class="languageCheckbox" value="French" checked=""> French</label>
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" id="mandarinCheckbox" class="languageCheckbox" value="Mandarin" checked=""> Mandarin</label>
+						</div>
+					</div>
+				</div>
+			</form>
 			
 			<div class="mt-3">
 				<button class="btn btn-secondary" onclick="clearAllFilters()">
 					Reset filters to default
 				</button>
+			</div>
+			<div class="mt-3">
+				<a href="#csvData" class="btn btn-primary">
+					 Go to the data
+				</a>
 			</div>
 
 			
@@ -200,12 +209,9 @@
 			<h2 id="comingSoon">Coming soon!</h2>
 			<ul>
 			<li>A column to indicate if the playgroup is taking place Indoors or Outdoors</li>
-			<li>Fix the column visibility appearance (right now when you click on the button, the column to choose are hiding the "column visibility" button)</li>			
-			<li>Add a "Show only evenings or weekend" button in the Filters section</li>
+			<li>Fix the column visibility appearance (right now when you click on the button, the column to choose are hiding the "column visibility" button)</li>						
 			<li>Merge the URL and Organizer columns (turn the organizer name into the link to click). Would probably also be good to change the background color, or maybe bold the heading (or both)</li>
 			<li>Move the search box to the left</li>
-			<li>Add a "Clear all filters" button</li>
-			<li>On a different page, start analyzing the data we now have (graphs that show the morning vs afternoon or evening playgroups, chart by area, by language, by day of week, etc.)</li>
 			<li>... and maybe more! :) </li>
 			</ul>
 			<div id="footer">
