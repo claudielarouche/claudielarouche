@@ -78,7 +78,7 @@ function renderTable(data) {
 			const isCancelled = row['Playgroup Name'] && row['Playgroup Name'].includes('CANCELLED');
 
 			// Start building the row with a conditional background color
-			tableHtml += `<tr${isCancelled ? ' style="background-color: red;"' : ''}>`;
+			tableHtml += `<tr${isCancelled ? ' style="background-color: #FFCCCB;"' : ''}>`;
 
 			headers.forEach(header => {
 				if (header === 'URL') {
