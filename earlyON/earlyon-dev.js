@@ -1,4 +1,4 @@
-console.log('version 10');
+console.log('version 11');
 
 let originalData = []; // Initialize as an empty array
 
@@ -127,6 +127,7 @@ function renderTable(data) {
 			}
 		});
 	}
+	console.log("in render table: " + currentSearchValue)
 	$('#dataTable_filter input').val(currentSearchValue).trigger('input');
 }
 
@@ -213,7 +214,7 @@ function isPastDate(dateString) {
 	return selectedDate < currentDate;
 }
 
-let currentSearchValue = ''; // Variable to store the current search value
+let currentSearchValue = getQueryParam('search'); // Variable to store the current search value
 
 
 // Listen for changes in date input
