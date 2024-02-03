@@ -1,4 +1,4 @@
-console.log('version 11');
+console.log('version 12');
 
 let originalData = []; // Initialize as an empty array
 
@@ -219,7 +219,7 @@ let currentSearchValue = getQueryParam('search'); // Variable to store the curre
 
 // Listen for changes in date input
 document.getElementById('selectedDate').addEventListener('change', function() {
-	currentSearchValue = getQueryParam('search') || $('#dataTable_filter input').val();$('#dataTable_filter input').val();
+	currentSearchValue =  $('#dataTable_filter input').val();$('#dataTable_filter input').val();
 	renderTable(originalData);
 });
 
@@ -231,13 +231,13 @@ document.getElementById('selectedDate').addEventListener('change', function() {
 
 // Listen for changes in the Age Group select input
 document.getElementById('selectedAgeGroup').addEventListener('change', function() {
-	currentSearchValue = getQueryParam('search') || $('#dataTable_filter input').val();$('#dataTable_filter input').val();
-    renderTable(originalData);
+	currentSearchValue =  $('#dataTable_filter input').val();
+	renderTable(originalData);
 });
 
 // Listen for changes in the Schedule Filter 
 document.getElementById('scheduleFilter').addEventListener('change', function() {	
-	currentSearchValue = getQueryParam('search') || $('#dataTable_filter input').val();$('#dataTable_filter input').val();
+	currentSearchValue =  $('#dataTable_filter input').val();
     renderTable(originalData);
 });
 
@@ -245,7 +245,7 @@ document.getElementById('scheduleFilter').addEventListener('change', function() 
 const selectedLanguages = [];
 document.querySelectorAll('.languageCheckbox').forEach(function (checkbox) {
     checkbox.addEventListener('change', function () {
-        currentSearchValue = getQueryParam('search') || $('#dataTable_filter input').val();$('#dataTable_filter input').val();
+        currentSearchValue = $('#dataTable_filter input').val();
 		if (checkbox.checked) {
             if (!selectedLanguages.includes(checkbox.value)) {
                 selectedLanguages.push(checkbox.value);
@@ -269,7 +269,7 @@ document.querySelectorAll('.languageCheckbox').forEach(function (checkbox) {
 const selectedAreas = [];
 document.querySelectorAll('.areaCheckbox').forEach(function (checkbox) {
     checkbox.addEventListener('change', function () {
-        currentSearchValue = getQueryParam('search') || $('#dataTable_filter input').val();$('#dataTable_filter input').val();
+        currentSearchValue =  $('#dataTable_filter input').val();
 		if (checkbox.checked) {
             if (!selectedAreas.includes(checkbox.value)) {
                 selectedAreas.push(checkbox.value);
