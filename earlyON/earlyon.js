@@ -2,6 +2,11 @@
 
 let originalData = []; // Initialize as an empty array
 
+function getQueryParam(key) {
+    const params = new URLSearchParams(window.location.search);
+    return params.get(key);
+}
+
 window.onload = function() {
 	// Update the path to your CSV file
 	const csvFilePath = 'https://claudielarouche.com/earlyON/data.csv';
@@ -208,7 +213,7 @@ function isPastDate(dateString) {
 	return selectedDate < currentDate;
 }
 
-let currentSearchValue = ''; // Variable to store the current search value
+let currentSearchValue = getQueryParam('search'); // Variable to store the current search value
 
 
 // Listen for changes in date input
