@@ -2,6 +2,11 @@
 
 let originalData = []; // Initialize as an empty array
 
+function getQueryParam(key) {
+    const params = new URLSearchParams(window.location.search);
+    return params.get(key);
+}
+
 window.onload = function() {
 	// Update the path to your CSV file
 	const csvFilePath = 'https://claudielarouche.com/earlyON/data.csv';
@@ -122,6 +127,7 @@ function renderTable(data) {
 			}
 		});
 	}
+	$('#dataTable_filter input').val(currentSearchValue).trigger('input');
 	$('#dataTable_filter input').val(currentSearchValue).trigger('input');
 }
 
