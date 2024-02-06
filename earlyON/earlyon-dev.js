@@ -120,7 +120,7 @@ function renderTable(data) {
 
 	if (!$.fn.dataTable.isDataTable('#dataTable')) {
 		$('#dataTable').DataTable({
-			"pageLength": -1,
+			"pageLength": 100,
 			"dom": 'Bfrtip', // 'B' for buttons
 			"buttons": [
 				'colvis' // Column visibility button
@@ -286,6 +286,14 @@ document.querySelectorAll('.areaCheckbox').forEach(function (checkbox) {
     if (!selectedAreas.includes(checkbox.value)) {
         selectedAreas.push(checkbox.value);
     }
+});
+
+document.getElementById('pageLength').addEventListener('change', function() {
+    const selectedPageLength = parseInt(this.value, 10);
+    const dataTable = $('#dataTable').DataTable();
+    
+    // Update DataTable page length
+    dataTable.page.len(selectedPageLength).draw();
 });
 
 function clearAllFilters() {
