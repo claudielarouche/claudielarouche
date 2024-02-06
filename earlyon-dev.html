@@ -372,9 +372,40 @@
   <td>613-591-3686, ext. 545</td>
 </tr>
 
+<!-- Modal for reporting a problem -->
+<div class="modal fade" id="reportModal" tabindex="-1" role="dialog" aria-labelledby="reportModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="reportModalLabel">Report a Problem</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="https://formspree.io/f/xpzvpyaq" method="POST">
+          <input type="hidden" name="_subject" value="New Problem Report">
+          <input type="hidden" name="_cc" value="claudielarouche@gmail.com"> <!-- CC to another email, if needed -->
 
-      <!-- Add more rows for each center -->
-      <!-- ... -->
+          <!-- Add other hidden input fields for the playgroup information -->
+          <input type="hidden" id="playgroupDate" name="playgroupDate">
+          <input type="hidden" id="playgroupName" name="playgroupName">
+          <input type="hidden" id="time" name="time">
+          <input type="hidden" id="locationName" name="locationName">
+          <input type="hidden" id="locationAddress" name="locationAddress">
+
+          <!-- Textarea for users to explain the problem -->
+          <label for="problemExplanation">Explain the Problem:</label>
+          <textarea class="form-control" id="problemExplanation" name="problemExplanation" required></textarea>
+
+          <!-- Submit button -->
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
     </tbody>
   </table>
 </div>

@@ -1,4 +1,4 @@
-console.log('version 12');
+console.log('testing formspree 1');
 
 let originalData = []; // Initialize as an empty array
 
@@ -74,6 +74,8 @@ function renderTable(data) {
 		document.getElementById('csvData').innerHTML = 'Error loading data.';
 		return;
 	}
+	
+	<th>Actions</th>
 
 	//let totalData = 0;
 	filteredData.forEach(row => {
@@ -103,7 +105,9 @@ function renderTable(data) {
 					tableHtml += `<td>${row[header]}</td>`;
 				}
 			});
-
+			
+			
+			tableHtml += `<td><a href="#" class="reportLink" data-toggle="modal" data-target="#reportModal" data-playgroup-date="${row['Date']}" data-playgroup-name="${row['Playgroup Name']}" data-time="${row['Hours']}" data-location-name="${row['Location Name']}" data-location-address="${row['Location Address']}">Report a Problem</a></td>`;
 			tableHtml += '</tr>';
 		}
 	});
