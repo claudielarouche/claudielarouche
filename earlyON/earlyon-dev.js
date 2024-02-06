@@ -1,4 +1,4 @@
-console.log('testing formspree 3');
+console.log('testing formspree 4');
 
 let originalData = []; // Initialize as an empty array
 
@@ -226,12 +226,6 @@ document.getElementById('selectedDate').addEventListener('change', function() {
 	currentSearchValue =  $('#dataTable_filter input').val();$('#dataTable_filter input').val();
 	renderTable(originalData);
 });
-
-// Listen for changes in the Area select input
-/*document.getElementById('selectedArea').addEventListener('change', function() {
-	currentSearchValue = $('#dataTable_filter input').val();
-    renderTable(originalData);
-});*/
 
 // Listen for changes in the Age Group select input
 document.getElementById('selectedAgeGroup').addEventListener('change', function() {
