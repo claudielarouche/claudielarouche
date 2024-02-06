@@ -116,7 +116,7 @@ function renderTable(data) {
 
 	if (!$.fn.dataTable.isDataTable('#dataTable')) {
 		$('#dataTable').DataTable({
-			"pageLength": 150,
+			"pageLength": -1,
 			"dom": 'Bfrtip', // 'B' for buttons
 			"buttons": [
 				'colvis' // Column visibility button
