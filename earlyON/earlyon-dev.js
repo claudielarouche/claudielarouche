@@ -1,4 +1,4 @@
-console.log('testing formspree 2');
+console.log('testing formspree 3');
 
 let originalData = []; // Initialize as an empty array
 
@@ -55,7 +55,7 @@ function renderTable(data) {
 	headers.forEach(header => {
 		tableHtml += `<th>${header}</th>`;
 	});
-	tableHtml += '</tr></thead><tbody>';
+	tableHtml += '<th>Actions</th></tr></thead><tbody>';
 
 	//const selectedArea = document.getElementById('selectedArea').value;
 	const selectedDate = document.getElementById('selectedDate').value;
@@ -75,7 +75,7 @@ function renderTable(data) {
 		return;
 	}
 	
-	<th>Actions</th>
+	
 
 	//let totalData = 0;
 	filteredData.forEach(row => {
