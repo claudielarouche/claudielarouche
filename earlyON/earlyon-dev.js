@@ -80,6 +80,7 @@ function renderTable(data) {
 	//let totalData = 0;
 	filteredData.forEach(row => {
 		const currentDate = row['Date'] ? row['Date'] : '';
+		const problemReportUrl = 'earlyon-problem.html'; // Replace with your actual URL
 		if (!isPastDate(currentDate)) {
 			// Check if "Playgroup Name" contains "CANCELLED"
 			const isCancelled = row['Playgroup Name'] && row['Playgroup Name'].includes('CANCELLED');
@@ -107,7 +108,7 @@ function renderTable(data) {
 			});
 			
 			
-			tableHtml += `<td><a href="#" class="reportLink" data-toggle="modal" data-target="#reportModal" data-playgroup-date="${row['Date']}" data-playgroup-name="${row['Playgroup Name']}" data-time="${row['Hours']}" data-location-name="${row['Location Name']}" data-location-address="${row['Location Address']}">Report a Problem</a></td>`;
+			tableHtml += `<td><a href="${problemReportUrl}?date=${encodeURIComponent(row['Date'])}&name=${encodeURIComponent(row['Playgroup Name'])}&time=${encodeURIComponent(row['Time'])}&location_name=${encodeURIComponent(row['Location Name'])}&location_address=${encodeURIComponent(row['Location Address'])}" target="_blank">Report a Problem</a></td>`;
 			tableHtml += '</tr>';
 		}
 	});
