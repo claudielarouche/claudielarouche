@@ -108,7 +108,7 @@ function renderTable(data) {
 			});
 			
 			
-			tableHtml += `<td><a href="${problemReportUrl}?date=${encodeURIComponent(row['Date'])}&name=${encodeURIComponent(row['Playgroup Name'])}&time=${encodeURIComponent(row['Time'])}&location_name=${encodeURIComponent(row['Location Name'])}&location_address=${encodeURIComponent(row['Location Address'])}" target="_blank">Report a Problem</a></td>`;
+			tableHtml += `<td><a href="https://forms.gle/1X8hDtoGfuuLZH6T6?date=${encodeURIComponent(row['Date'])}&name=${encodeURIComponent(row['Playgroup Name'])}&time=${encodeURIComponent(row['Time'])}&location_name=${encodeURIComponent(row['Location Name'])}&location_address=${encodeURIComponent(row['Location Address'])}" target="_blank">Report a Problem</a></td>`;
 			tableHtml += '</tr>';
 		}
 	});
