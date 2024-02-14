@@ -45,7 +45,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-02-01,10:00 - 12:00,Playgroup,"Somerset West Community Health Centre, 3rd floor",755 Somerset St W,Central,Recommended,English,https://www.swchc.on.ca/children-youth-programs/parent-support-calendar,SWCHC,Kids,Morning,Thursday
 2024-02-01,12:00 - 15:00,EarlyON Playgroup,Carlington Community Health Centre,900 Merivale,West,No,English,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC,Kids,Afternoon,Thursday
 2024-02-01,13:00 - 14:00,Baby & Me Yoga (babies 6 weeks to 6 months),Centretown Community Health Center,420 Cooper St.,Central,Yes,English,https://www.centretownchc.org/calendar,Centretown CHC,Babies,Afternoon,Thursday
-2024-02-01,13:00 - 15:00,Indigenous Wellness Circle (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,Yes?,English,https://parentresource.ca/earlyon-programs-and-services/,PRC,Kids,Afternoon,Thursday
+2024-02-01,13:00 - 15:00,Indigenous Wellness Circle (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,Yes,English,https://parentresource.ca/earlyon-programs-and-services/,PRC,Kids,Afternoon,Thursday
 2024-02-01,13:00 - 15:00,Baby and me,Western Ottawa Community Resource Centre,2 MacNeil Court,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Babies,Afternoon,Thursday
 2024-02-01,13:15 - 15:15,Playgroup (0-6 years),Holy Trinity Catholic High School (entrance on McGibbon Drive),180 Katimavik Road,West,No,English,https://www.ocsb.ca/parents/child-care/,OCSB,Kids,Afternoon,Thursday
 2024-02-01,13:15 - 15:15,Baby and Me Playgroup (0-18 months),St. Peter High School,750 Charlemagne Boulevard,East,No,English,https://www.ocsb.ca/parents/child-care/,OCSB,Babies,Afternoon,Thursday
@@ -333,7 +333,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-02-08,12:00 - 15:00,EarlyON Playgroup,Carlington Community Health Centre,900 Merivale,West,No,English,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC,Kids,Afternoon,Thursday
 2024-02-08,13:00 - 14:00,Baby & Me Yoga (babies 6 weeks to 6 months),Centretown Community Health Center,420 Cooper St.,Central,Yes,English,https://www.centretownchc.org/calendar,Centretown CHC,Babies,Afternoon,Thursday
 2024-02-08,13:00 - 14:30,Bulle parentale (0-9 mois),École Béatrice-Desloges,"1999, av. Provence",East,No,French,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Babies,Afternoon,Thursday
-2024-02-08,13:00 - 15:00,Indigenous Wellness Circle (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,Yes?,English,https://parentresource.ca/earlyon-programs-and-services/,PRC,Kids,Afternoon,Thursday
+2024-02-08,13:00 - 15:00,Indigenous Wellness Circle (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,Yes,English,https://parentresource.ca/earlyon-programs-and-services/,PRC,Kids,Afternoon,Thursday
 2024-02-08,13:00 - 15:00,Baby and me,Western Ottawa Community Resource Centre,2 MacNeil Court,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Babies,Afternoon,Thursday
 2024-02-08,13:15 - 15:15,Playgroup (0-6 years),Holy Trinity Catholic High School (entrance on McGibbon Drive),180 Katimavik Road,West,No,English,https://www.ocsb.ca/parents/child-care/,OCSB,Kids,Afternoon,Thursday
 2024-02-08,13:15 - 15:15,Baby and Me Playgroup (0-18 months),St. Peter High School,750 Charlemagne Boulevard,East,No,English,https://www.ocsb.ca/parents/child-care/,OCSB,Babies,Afternoon,Thursday
@@ -623,7 +623,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-02-15,10:00 - 12:00,Playgroup,"Somerset West Community Health Centre, 3rd floor",755 Somerset St W,Central,Recommended,English,https://www.swchc.on.ca/children-youth-programs/parent-support-calendar,SWCHC,Kids,Morning,Thursday
 2024-02-15,12:00 - 15:00,EarlyON Playgroup,Carlington Community Health Centre,900 Merivale,West,No,English,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC,Kids,Afternoon,Thursday
 2024-02-15,13:00 - 14:30,Bulle parentale (0-9 mois),École Béatrice-Desloges,"1999, av. Provence",East,No,French,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Babies,Afternoon,Thursday
-2024-02-15,13:00 - 15:00,Indigenous Wellness Circle (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,Yes?,English,https://parentresource.ca/earlyon-programs-and-services/,PRC,Kids,Afternoon,Thursday
+2024-02-15,13:00 - 15:00,Indigenous Wellness Circle (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,Yes,English,https://parentresource.ca/earlyon-programs-and-services/,PRC,Kids,Afternoon,Thursday
 2024-02-15,13:00 - 15:00,Baby and me,Western Ottawa Community Resource Centre,2 MacNeil Court,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Babies,Afternoon,Thursday
 2024-02-15,13:15 - 15:15,Playgroup (0-6 years),Holy Trinity Catholic High School (entrance on McGibbon Drive),180 Katimavik Road,West,No,English,https://www.ocsb.ca/parents/child-care/,OCSB,Kids,Afternoon,Thursday
 2024-02-15,13:15 - 15:15,Baby and Me Playgroup (0-18 months),St. Peter High School,750 Charlemagne Boulevard,East,No,English,https://www.ocsb.ca/parents/child-care/,OCSB,Babies,Afternoon,Thursday
@@ -910,7 +910,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-02-22,12:00 - 15:00,EarlyON Playgroup,Carlington Community Health Centre,900 Merivale,West,No,English,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC,Kids,Afternoon,Thursday
 2024-02-22,13:00 - 14:00,Baby & Me Yoga (babies 6 weeks to 6 months),Centretown Community Health Center,420 Cooper St.,Central,Yes,English,https://www.centretownchc.org/calendar,Centretown CHC,Babies,Afternoon,Thursday
 2024-02-22,13:00 - 14:30,Bulle parentale (0-9 mois),École Béatrice-Desloges,"1999, av. Provence",East,No,French,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Babies,Afternoon,Thursday
-2024-02-22,13:00 - 15:00,Indigenous Wellness Circle (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,Yes?,English,https://parentresource.ca/earlyon-programs-and-services/,PRC,Kids,Afternoon,Thursday
+2024-02-22,13:00 - 15:00,Indigenous Wellness Circle (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,Yes,English,https://parentresource.ca/earlyon-programs-and-services/,PRC,Kids,Afternoon,Thursday
 2024-02-22,13:00 - 15:00,Baby and me,Western Ottawa Community Resource Centre,2 MacNeil Court,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Babies,Afternoon,Thursday
 2024-02-22,13:15 - 15:15,Playgroup (0-6 years),Holy Trinity Catholic High School (entrance on McGibbon Drive),180 Katimavik Road,West,No,English,https://www.ocsb.ca/parents/child-care/,OCSB,Kids,Afternoon,Thursday
 2024-02-22,13:15 - 15:15,Baby and Me Playgroup (0-18 months),St. Peter High School,750 Charlemagne Boulevard,East,No,English,https://www.ocsb.ca/parents/child-care/,OCSB,Babies,Afternoon,Thursday
@@ -1205,7 +1205,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-02-29,12:00 - 15:00,EarlyON Playgroup,Carlington Community Health Centre,900 Merivale,West,No,English,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC,Kids,Afternoon,Thursday
 2024-02-29,13:00 - 14:00,Baby & Me Yoga (babies 6 weeks to 6 months),Centretown Community Health Center,420 Cooper St.,Central,Yes,English,https://www.centretownchc.org/calendar,Centretown CHC,Babies,Afternoon,Thursday
 2024-02-29,13:00 - 14:30,Bulle parentale (0-9 mois),École Béatrice-Desloges,"1999, av. Provence",East,No,French,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Babies,Afternoon,Thursday
-2024-02-29,13:00 - 15:00,Indigenous Wellness Circle (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,Yes?,English,https://parentresource.ca/earlyon-programs-and-services/,PRC,Kids,Afternoon,Thursday
+2024-02-29,13:00 - 15:00,Indigenous Wellness Circle (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,Yes,English,https://parentresource.ca/earlyon-programs-and-services/,PRC,Kids,Afternoon,Thursday
 2024-02-29,13:00 - 15:00,Baby and me,Western Ottawa Community Resource Centre,2 MacNeil Court,West,No,English,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Babies,Afternoon,Thursday
 2024-02-29,13:15 - 15:15,Playgroup (0-6 years),Holy Trinity Catholic High School (entrance on McGibbon Drive),180 Katimavik Road,West,No,English,https://www.ocsb.ca/parents/child-care/,OCSB,Kids,Afternoon,Thursday
 2024-02-29,13:15 - 15:15,Baby and Me Playgroup (0-18 months),St. Peter High School,750 Charlemagne Boulevard,East,No,English,https://www.ocsb.ca/parents/child-care/,OCSB,Babies,Afternoon,Thursday
