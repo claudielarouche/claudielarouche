@@ -215,6 +215,26 @@ function isPastDate(dateString) {
 
 let currentSearchValue = getQueryParam('search'); // Variable to store the current search value
 
+// Go to today's playgroup button
+document.getElementById('showPlaygroupsButton').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default behavior of the anchor link
+
+        // Scroll to the element with id 'csvData'
+        document.getElementById('csvData').scrollIntoView({ behavior: 'smooth' });
+
+        // Get today's date in YYYY-MM-DD format
+        const today = new Date();
+        const year = today.getFullYear();
+        const month = String(today.getMonth() + 1).padStart(2, '0'); // Months are zero based
+        const day = String(today.getDate()).padStart(2, '0');
+        const todayDate = `${year}-${month}-${day}`;
+
+        // Populate the search box with today's date
+        document.getElementById('dataTable_filter').querySelector('input').value = todayDate;
+        
+        // Trigger the input event to initiate the search
+        document.getElementById('dataTable_filter').querySelector('input').dispatchEvent(new Event('input'));
+    });
 
 // Listen for changes in date input
 document.getElementById('selectedDate').addEventListener('change', function() {
