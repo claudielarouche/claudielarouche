@@ -1,4 +1,4 @@
-console.log('bug fix 4');
+console.log('bug fix 5');
 
 let originalData = []; // Initialize as an empty array
 
@@ -106,6 +106,10 @@ if (currentDate && new Date(currentDate) >= new Date('2024-03-10')) {
 			        case 'URL':
 			            // Make the URL clickable as a link
 			            tableHtml += `<td><a href="${row[header]}" target="_blank">URL</a></td>`;
+			            break;
+			    	case 'Date':
+			            // Make the URL clickable as a link
+			            tableHtml += `<td>${row[header]}</td>`;
 			            break;
 			        case 'Location Address':
 			            // Create a link with the Google Maps URL for the address
