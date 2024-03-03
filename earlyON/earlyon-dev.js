@@ -1,4 +1,4 @@
-console.log('bug fix 6');
+console.log('bug fix 7');
 
 let originalData = []; // Initialize as an empty array
 
@@ -111,7 +111,7 @@ if (currentDate && new Date(currentDate) >= new Date('2024-03-10')) {
 				    const dateValue = new Date(row[header]);
 				    const march10_2024 = new Date('2024-03-10');
 				
-				    if (dateValue > march10_2024) {
+				    if (dateValue < march10_2024) {
 				        dateValue.setDate(dateValue.getDate() + 1);
 				    }
 				
