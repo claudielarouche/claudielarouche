@@ -1,4 +1,4 @@
-console.log('today playgroup 1');
+console.log('bug fix 1');
 
 let originalData = []; // Initialize as an empty array
 
