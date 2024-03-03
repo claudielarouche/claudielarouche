@@ -1,4 +1,4 @@
-console.log('bug fix 5');
+console.log('bug fix 6');
 
 let originalData = []; // Initialize as an empty array
 
@@ -108,9 +108,18 @@ if (currentDate && new Date(currentDate) >= new Date('2024-03-10')) {
 			            tableHtml += `<td><a href="${row[header]}" target="_blank">URL</a></td>`;
 			            break;
 			    	case 'Date':
-			            // Make the URL clickable as a link
-			            tableHtml += `<td>${row[header]}</td>`;
-			            break;
+				    const dateValue = new Date(row[header]);
+				    const march10_2024 = new Date('2024-03-10');
+				
+				    if (dateValue > march10_2024) {
+				        dateValue.setDate(dateValue.getDate() + 1);
+				    }
+				
+				    // Format the date to the desired string format (e.g., YYYY-MM-DD)
+				    const formattedDate = `${dateValue.getFullYear()}-${(dateValue.getMonth() + 1).toString().padStart(2, '0')}-${dateValue.getDate().toString().padStart(2, '0')}`;
+				
+				    tableHtml += `<td>${formattedDate}</td>`;
+				    break;
 			        case 'Location Address':
 			            // Create a link with the Google Maps URL for the address
 			            const address = row[header] ? row[header].trim() : '';
