@@ -1,4 +1,4 @@
-console.log('bug fix 1');
+console.log('bug fix 2');
 
 let originalData = []; // Initialize as an empty array
 
@@ -81,7 +81,7 @@ function renderTable(data) {
 
 	//let totalData = 0;
 	filteredData.forEach(row => {
-		const currentDate = row['Date'] ? row['Date'] : '';
+		let currentDate = row['Date'] ? row['Date'] : '';
 
 
 if (currentDate && new Date(currentDate) >= new Date('2024-03-10')) {
