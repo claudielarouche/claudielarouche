@@ -102,22 +102,26 @@ if (currentDate && new Date(currentDate) >= new Date('2024-03-10')) {
 			tableHtml += `<tr${isCancelled ? ' style="background-color: #FFCCCB;"' : ''}>`;
 
 			headers.forEach(header => {
-				if (header === 'URL') {
-					// Make the URL clickable as a link
-					tableHtml += `<td><a href="${row[header]}" target="_blank">URL</a></td>`;
-				} else if (header === 'Location Address') {
-					// Create a link with the Google Maps URL for the address
-					const address = row[header] ? row[header].trim() : '';
-					if (address !== '') {
-						const googleMapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)},+Ottawa,+Canada`;
-						tableHtml += `<td><a href="${googleMapsLink}" >${address}</a></td>`;
-					} else {
-						tableHtml += '<td></td>';
-					}
-				} else {
-					// Display other columns
-					tableHtml += `<td>${row[header]}</td>`;
-				}
+			    switch(header) {
+			        case 'URL':
+			            // Make the URL clickable as a link
+			            tableHtml += `<td><a href="${row[header]}" target="_blank">URL</a></td>`;
+			            break;
+			        case 'Location Address':
+			            // Create a link with the Google Maps URL for the address
+			            const address = row[header] ? row[header].trim() : '';
+			            if (address !== '') {
+			                const googleMapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)},+Ottawa,+Canada`;
+			                tableHtml += `<td><a href="${googleMapsLink}" >${address}</a></td>`;
+			            } else {
+			                tableHtml += '<td></td>';
+			            }
+			            break;
+			        default:
+			            // Display other columns
+			            tableHtml += `<td>${row[header]}</td>`;
+			            break;
+			    }
 			});
 			
 			
