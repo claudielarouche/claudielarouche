@@ -1,4 +1,4 @@
-console.log('bug fix 3');
+console.log('bug fix 4');
 
 let originalData = []; // Initialize as an empty array
 
@@ -81,9 +81,9 @@ function renderTable(data) {
 
 	//let totalData = 0;
 	filteredData.forEach(row => {
-		let currentDate = row['Date'] ? row['Date'] : '';
+		const currentDate = row['Date'] ? row['Date'] : '';
 
-
+/*
 if (currentDate && new Date(currentDate) >= new Date('2024-03-10')) {
 	console.log("I'm inside the new if");
 	console.log(currentDate);
@@ -91,7 +91,7 @@ if (currentDate && new Date(currentDate) >= new Date('2024-03-10')) {
     date.setDate(date.getDate() + 1);
     currentDate = date.toISOString().slice(0, 10);
 	console.log(currentDate);
-}
+}*/
 		
 		const problemReportUrl = 'earlyon-problem.html'; // Replace with your actual URL
 		if (!isPastDate(currentDate)) {
