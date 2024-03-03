@@ -1,4 +1,4 @@
-//console.log('version 8');
+console.log('bug fix');
 
 let originalData = []; // Initialize as an empty array
 
@@ -86,22 +86,43 @@ function renderTable(data) {
 			tableHtml += `<tr${isCancelled ? ' style="background-color: #FFCCCB;"' : ''}>`;
 
 			headers.forEach(header => {
-				if (header === 'URL') {
-					// Make the URL clickable as a link
-					tableHtml += `<td><a href="${row[header]}" target="_blank">URL</a></td>`;
-				} else if (header === 'Location Address') {
-					// Create a link with the Google Maps URL for the address
-					const address = row[header] ? row[header].trim() : '';
-					if (address !== '') {
-						const googleMapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)},+Ottawa,+Canada`;
-						tableHtml += `<td><a href="${googleMapsLink}" target="_blank">${address}</a></td>`;
-					} else {
-						tableHtml += '<td></td>';
-					}
-				} else {
-					// Display other columns
-					tableHtml += `<td>${row[header]}</td>`;
-				}
+			    switch(header) {
+			        case 'URL':
+			            // Make the URL clickable as a link
+			            tableHtml += `<td><a href="${row[header]}" target="_blank">URL</a></td>`;
+			            break;
+			    	case 'Date':
+				    //Start of a very weird bug fix where all dates where one day off starting on March 9, 2024. Caroline thinks it's because of the time change
+				    let dateValue = new Date(row[header]);
+				    dateValue.setDate(dateValue.getDate() + 1);
+				    let march9_2024 = new Date('2024-03-09');
+				    march9_2024.setDate(march9_2024.getDate() + 1);
+				
+				    if (dateValue > march9_2024) {
+				        dateValue.setDate(dateValue.getDate() + 1);
+				    }
+				
+				    // Format the date to the desired string format (e.g., YYYY-MM-DD)
+				    const formattedDate = `${dateValue.getFullYear()}-${(dateValue.getMonth() + 1).toString().padStart(2, '0')}-${dateValue.getDate().toString().padStart(2, '0')}`;
+
+				    tableHtml += `<td>${formattedDate}</td>`;
+				    break;
+				    //end of weird bug fix
+			        case 'Location Address':
+			            // Create a link with the Google Maps URL for the address
+			            const address = row[header] ? row[header].trim() : '';
+			            if (address !== '') {
+			                const googleMapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)},+Ottawa,+Canada`;
+			                tableHtml += `<td><a href="${googleMapsLink}" >${address}</a></td>`;
+			            } else {
+			                tableHtml += '<td></td>';
+			            }
+			            break;
+			        default:
+			            // Display other columns
+			            tableHtml += `<td>${row[header]}</td>`;
+			            break;
+			    }
 			});
 
 			tableHtml += '</tr>';
