@@ -1,4 +1,4 @@
-console.log('bug fix 7');
+console.log('bug fix 8');
 
 let originalData = []; // Initialize as an empty array
 
@@ -108,16 +108,21 @@ if (currentDate && new Date(currentDate) >= new Date('2024-03-10')) {
 			            tableHtml += `<td><a href="${row[header]}" target="_blank">URL</a></td>`;
 			            break;
 			    	case 'Date':
+					console.log("row[header] "+row[header]);
 				    const dateValue = new Date(row[header]);
 				    const march10_2024 = new Date('2024-03-10');
+					    console.log("dateValue "+dateValue);
+					    console.log("march10_2024"+march10_2024);
 				
 				    if (dateValue < march10_2024) {
+					console.log("inside the if statement");
 				        dateValue.setDate(dateValue.getDate() + 1);
+					console.log("dateValue "+dateValue)
 				    }
 				
 				    // Format the date to the desired string format (e.g., YYYY-MM-DD)
 				    const formattedDate = `${dateValue.getFullYear()}-${(dateValue.getMonth() + 1).toString().padStart(2, '0')}-${dateValue.getDate().toString().padStart(2, '0')}`;
-				
+				    console.log("formattedDate "+formattedDate);
 				    tableHtml += `<td>${formattedDate}</td>`;
 				    break;
 			        case 'Location Address':
