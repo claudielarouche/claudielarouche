@@ -1,4 +1,4 @@
-console.log('bug fix 2');
+console.log('bug fix 3');
 
 let originalData = []; // Initialize as an empty array
 
