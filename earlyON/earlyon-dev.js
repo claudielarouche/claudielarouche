@@ -102,7 +102,7 @@ function renderTable(data) {
 				    //console.log("row[header] "+row[header]);
 				    let dateValue = new Date(row[header]);
 					    
-				    dateValue.setDate(dateValue.getDate() + 1);
+				    //dateValue.setDate(dateValue.getDate() + 1);
 /*
  				    //console.log("dateValue: " + dateValue);    
 			            //console.log("is it daylight saving? " + isDaylightSavingTime(dateValue)); // Output: true or false
