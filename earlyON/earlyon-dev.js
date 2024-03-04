@@ -391,3 +391,10 @@ function clearAllFilters() {
     // Render the table with cleared filters
     renderTable(originalData);
 }
+
+function isDaylightSavingTime(date) {
+    const januaryOffset = new Date(date.getFullYear(), 0, 1).getTimezoneOffset();
+    const currentOffset = date.getTimezoneOffset();
+
+    return januaryOffset !== currentOffset;
+}
