@@ -1,4 +1,4 @@
-console.log('bug fix 2');
+console.log('bug fix 3');
 
 let originalData = []; // Initialize as an empty array
 
@@ -83,16 +83,7 @@ function renderTable(data) {
 	filteredData.forEach(row => {
 		const currentDate = row['Date'] ? row['Date'] : '';
 
-/*
-if (currentDate && new Date(currentDate) >= new Date('2024-03-10')) {
-	console.log("I'm inside the new if");
-	console.log(currentDate);
-    const date = new Date(currentDate);
-    date.setDate(date.getDate() + 1);
-    currentDate = date.toISOString().slice(0, 10);
-	console.log(currentDate);
-}*/
-		
+	
 		const problemReportUrl = 'earlyon-problem.html'; // Replace with your actual URL
 		if (!isPastDate(currentDate)) {
 			// Check if "Playgroup Name" contains "CANCELLED"
@@ -110,14 +101,19 @@ if (currentDate && new Date(currentDate) >= new Date('2024-03-10')) {
 			    	case 'Date':
 				    //console.log("row[header] "+row[header]);
 				    let dateValue = new Date(row[header]);
+					    
 				    dateValue.setDate(dateValue.getDate() + 1);
+
+ 				    console.log("dateValue: " + dateValue);    
+			            console.log("is it daylight saving? " + isDaylightSavingTime(dateValue)); // Output: true or false
+					    
 				    let march9_2024 = new Date('2024-03-09');
 				    march9_2024.setDate(march9_2024.getDate() + 1);
 					//    console.log("dateValue "+dateValue);
 					  //  console.log("march10_2024"+march10_2024);
 				
 				    if (dateValue > march9_2024) {
-				//	console.log("inside the if statement");
+					console.log("inside the if statement");
 				        dateValue.setDate(dateValue.getDate() + 1);
 				//	console.log("dateValue "+dateValue)
 				    }
