@@ -1,4 +1,4 @@
-console.log('bug fix 3');
+console.log('bug fix 4');
 
 let originalData = []; // Initialize as an empty array
 
@@ -103,7 +103,7 @@ function renderTable(data) {
 				    let dateValue = new Date(row[header]);
 					    
 				    dateValue.setDate(dateValue.getDate() + 1);
-
+/*
  				    //console.log("dateValue: " + dateValue);    
 			            //console.log("is it daylight saving? " + isDaylightSavingTime(dateValue)); // Output: true or false
 					    
@@ -116,13 +116,20 @@ function renderTable(data) {
 					console.log("inside the if statement");
 				        dateValue.setDate(dateValue.getDate() + 1);
 				//	console.log("dateValue "+dateValue)
-				    }
+				    }*/
 				
 				    // Format the date to the desired string format (e.g., YYYY-MM-DD)
-				    const formattedDate = `${dateValue.getFullYear()}-${(dateValue.getMonth() + 1).toString().padStart(2, '0')}-${dateValue.getDate().toString().padStart(2, '0')}`;
+				    let formattedDate = `${dateValue.getFullYear()}-${(dateValue.getMonth() + 1).toString().padStart(2, '0')}-${dateValue.getDate().toString().padStart(2, '0')}`;
 
-				console.log("formattedDate: " + formattedDate);    
-			            console.log("is it daylight saving? " + isDaylightSavingTime(formattedDate)); // Output: true or false
+			            if (isDaylightSavingTime(formattedDate) == true)
+				    {
+					    dateValue.setDate(dateValue.getDate() + 1);
+				    }
+
+				    formattedDate = `${dateValue.getFullYear()}-${(dateValue.getMonth() + 1).toString().padStart(2, '0')}-${dateValue.getDate().toString().padStart(2, '0')}`;	    
+
+				    /*console.log("formattedDate: " + formattedDate);    
+			            console.log("is it daylight saving? " + isDaylightSavingTime(formattedDate)); // Output: true or false*/
 					    
 				 //   console.log("formattedDate "+formattedDate);
 				    tableHtml += `<td>${formattedDate}</td>`;
