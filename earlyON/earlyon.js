@@ -1,4 +1,4 @@
-console.log('bug fix 2');
+console.log('bug fix 3');
 
 let originalData = []; // Initialize as an empty array
 
@@ -104,6 +104,8 @@ function renderTable(data) {
 				
 				    // Format the date to the desired string format (e.g., YYYY-MM-DD)
 				    const formattedDate = `${dateValue.getFullYear()}-${(dateValue.getMonth() + 1).toString().padStart(2, '0')}-${dateValue.getDate().toString().padStart(2, '0')}`;
+				    console.log("formattedDate: " + formattedDate);    
+			            console.log("is it daylight saving? " + isDaylightSavingTime(formattedDate)); // Output: true or false
 
 				    tableHtml += `<td>${formattedDate}</td>`;
 				    break;
@@ -365,4 +367,11 @@ function clearAllFilters() {
 
     // Render the table with cleared filters
     renderTable(originalData);
+}
+
+function isDaylightSavingTime(date) {
+    const standardOffset = date.getTimezoneOffset();
+    const daylightOffset = new Date(date.getFullYear(), 0, 1).getTimezoneOffset(); // Calculate the time zone offset for January 1st of the same year
+    
+    return standardOffset !== daylightOffset;
 }
