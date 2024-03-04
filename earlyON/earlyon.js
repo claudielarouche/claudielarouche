@@ -104,8 +104,8 @@ function renderTable(data) {
 				
 				    // Format the date to the desired string format (e.g., YYYY-MM-DD)
 				    const formattedDate = `${dateValue.getFullYear()}-${(dateValue.getMonth() + 1).toString().padStart(2, '0')}-${dateValue.getDate().toString().padStart(2, '0')}`;
-				    console.log("formattedDate: " + formattedDate);    
-			            console.log("is it daylight saving? " + isDaylightSavingTime(formattedDate)); // Output: true or false
+				    //console.log("formattedDate: " + formattedDate);    
+			            //console.log("is it daylight saving? " + isDaylightSavingTime(formattedDate)); // Output: true or false
 
 				    tableHtml += `<td>${formattedDate}</td>`;
 				    break;
