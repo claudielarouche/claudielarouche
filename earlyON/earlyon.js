@@ -369,9 +369,11 @@ function clearAllFilters() {
     renderTable(originalData);
 }
 
+/*
 function isDaylightSavingTime(date) {
     const standardOffset = date.getTimezoneOffset();
     const daylightOffset = new Date(date.getFullYear(), 0, 1).getTimezoneOffset(); // Calculate the time zone offset for January 1st of the same year
     
     return standardOffset !== daylightOffset;
 }
+*/
