@@ -104,8 +104,8 @@ function renderTable(data) {
 					    
 				    dateValue.setDate(dateValue.getDate() + 1);
 
- 				    console.log("dateValue: " + dateValue);    
-			            console.log("is it daylight saving? " + isDaylightSavingTime(dateValue)); // Output: true or false
+ 				    //console.log("dateValue: " + dateValue);    
+			            //console.log("is it daylight saving? " + isDaylightSavingTime(dateValue)); // Output: true or false
 					    
 				    let march9_2024 = new Date('2024-03-09');
 				    march9_2024.setDate(march9_2024.getDate() + 1);
