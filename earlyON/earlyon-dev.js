@@ -1,4 +1,4 @@
-console.log('bug fix 4');
+console.log('bug fix 5');
 
 let originalData = []; // Initialize as an empty array
 
@@ -152,7 +152,8 @@ function renderTable(data) {
 			});
 			
 			
-			tableHtml += `<td><a href="https://forms.gle/1X8hDtoGfuuLZH6T6?date=${encodeURIComponent(row['Date'])}&name=${encodeURIComponent(row['Playgroup Name'])}&time=${encodeURIComponent(row['Time'])}&location_name=${encodeURIComponent(row['Location Name'])}&location_address=${encodeURIComponent(row['Location Address'])}" target="_blank">Report a Problem</a></td>`;
+			tableHtml += `<td><a href="https://docs.google.com/forms/d/e/1FAIpQLScAtAvU5WfcL2Jkk3trRwLDq4j_dW0nzcJflcHrtdbyzOaQ3w/viewform?usp=sf_link&entry.980923575=${encodeURIComponent(row['Date'])}&entry.658764103=${encodeURIComponent(row['Playgroup Name'])}&entry.253977818=${encodeURIComponent(row['Hours'])}&entry.1285117799=${encodeURIComponent(row['Location Name'])}&entry.763229385=${encodeURIComponent(row['Location Address'])}" target="_blank">Report a Problem</a></td>`;
+			
 			tableHtml += '</tr>';
 		}
 	});
