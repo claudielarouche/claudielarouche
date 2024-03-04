@@ -124,6 +124,10 @@ if (currentDate && new Date(currentDate) >= new Date('2024-03-10')) {
 				
 				    // Format the date to the desired string format (e.g., YYYY-MM-DD)
 				    const formattedDate = `${dateValue.getFullYear()}-${(dateValue.getMonth() + 1).toString().padStart(2, '0')}-${dateValue.getDate().toString().padStart(2, '0')}`;
+
+				console.log("formattedDate: " + formattedDate);    
+			            console.log("is it daylight saving? " + isDaylightSavingTime(formattedDate)); // Output: true or false
+					    
 				 //   console.log("formattedDate "+formattedDate);
 				    tableHtml += `<td>${formattedDate}</td>`;
 				    break;
