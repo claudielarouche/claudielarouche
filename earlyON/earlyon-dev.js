@@ -1,4 +1,4 @@
-console.log('bug fix 1');
+console.log('bug fix 2');
 
 let originalData = []; // Initialize as an empty array
 
@@ -397,8 +397,15 @@ function clearAllFilters() {
 }
 
 function isDaylightSavingTime(date) {
-    const januaryOffset = new Date(date.getFullYear(), 0, 1).getTimezoneOffset();
-    const currentOffset = date.getTimezoneOffset();
+    // Extracting year from the date string
+    const year = parseInt(date.slice(0, 4));
 
+    // Getting the timezone offset for January 1st of the extracted year
+    const januaryOffset = new Date(year, 0, 1).getTimezoneOffset();
+
+    // Getting the current timezone offset
+    const currentOffset = new Date(date).getTimezoneOffset();
+
+    // Comparing the offsets to determine if the date is in daylight saving time
     return januaryOffset !== currentOffset;
 }
