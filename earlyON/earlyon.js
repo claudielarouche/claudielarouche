@@ -1,4 +1,4 @@
-console.log('bug fix 4');
+console.log('bug fix 1');
 
 let originalData = []; // Initialize as an empty array
 
@@ -252,7 +252,7 @@ document.getElementById('showPlaygroupsButton').addEventListener('click', functi
         const day = String(today.getDate()).padStart(2, '0');
         const todayDate = `${year}-${month}-${day}`;
 
-	currentSearchValue = todayDate + " " + currentSearchValue;
+	currentSearchValue = todayDate + (currentSearchValue ? " " + currentSearchValue : "");
 
         // Populate the search box with today's date
         document.getElementById('dataTable_filter').querySelector('input').value = currentSearchValue;
