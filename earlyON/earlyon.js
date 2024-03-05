@@ -127,6 +127,9 @@ function renderTable(data) {
 			    }
 			});
 
+			tableHtml += `<td><a href="https://docs.google.com/forms/d/e/1FAIpQLScAtAvU5WfcL2Jkk3trRwLDq4j_dW0nzcJflcHrtdbyzOaQ3w/viewform?usp=sf_link&entry.980923575=${encodeURIComponent(row['Date'])}&entry.658764103=${encodeURIComponent(row['Playgroup Name'])}&entry.253977818=${encodeURIComponent(row['Hours'])}&entry.1285117799=${encodeURIComponent(row['Location Name'])}&entry.763229385=${encodeURIComponent(row['Location Address'])}&entry.1707950985=${encodeURIComponent(row['Area'])}&entry.1819665326=${encodeURIComponent(row['Registration Required'])}&entry.1741653207=${encodeURIComponent(row['Language'])}&entry.1282617511=${encodeURIComponent(row['URL'])}&entry.815961453=${encodeURIComponent(row['Organizer'])}&entry.863582397=${encodeURIComponent(row['Age Group'])}&entry.740455553=${encodeURIComponent(row['Time of Day'])}&entry.1566548831=${encodeURIComponent(row['Day of Week'])}" target="_blank">Report a Problem</a></td>`;
+			
+
 			tableHtml += '</tr>';
 		}
 	});
