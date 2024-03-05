@@ -1,4 +1,4 @@
-console.log('bug fix 1');
+console.log('bug fix 2');
 
 let originalData = []; // Initialize as an empty array
 
@@ -251,6 +251,8 @@ document.getElementById('showPlaygroupsButton').addEventListener('click', functi
         const month = String(today.getMonth() + 1).padStart(2, '0'); // Months are zero based
         const day = String(today.getDate()).padStart(2, '0');
         const todayDate = `${year}-${month}-${day}`;
+
+	currentSearchValue = $('#dataTable_filter input').val();
 
 	currentSearchValue = todayDate + (currentSearchValue ? " " + currentSearchValue : "");
 
