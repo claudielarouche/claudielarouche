@@ -55,7 +55,8 @@ function renderTable(data) {
 	headers.forEach(header => {
 		tableHtml += `<th>${header}</th>`;
 	});
-	tableHtml += '</tr></thead><tbody>';
+	tableHtml += '<th>Actions</th></tr></thead><tbody>';
+	
 
 	//const selectedArea = document.getElementById('selectedArea').value;
 	const selectedDate = document.getElementById('selectedDate').value;
