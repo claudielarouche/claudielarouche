@@ -1,6 +1,6 @@
 /*THIS IS THE VERSION I WAS WORKING ON FOR THE PERMANENT DATE FIX*/
 
-console.log('bug fix 3');
+console.log('bug fix 4');
 
 let originalData = []; // Initialize as an empty array
 
@@ -271,10 +271,9 @@ function isPastDate(dateString) {
 	console.log("month: " + month);
 	var day = parseInt(dateInput.substring(8, 10));
 	console.log("day: " + day);
-	var dateParts = new Date(year, month, day);
+	var selectedDate = new Date(year, month, day);
 	
 	//const dateParts = dateString.split('-');
-	const selectedDate = new Date(dateParts[0], dateParts[1] - 1, dateParts[2]);
 	selectedDate.setHours(0, 0, 0, 0); // Set time to midnight
 
 
