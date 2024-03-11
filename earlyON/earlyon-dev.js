@@ -1,6 +1,6 @@
 /*THIS IS THE VERSION I WAS WORKING ON FOR THE PERMANENT DATE FIX*/
 
-console.log('bug fix 9');
+console.log('bug fix 10');
 
 let originalData = []; // Initialize as an empty array
 
@@ -24,7 +24,7 @@ window.onload = function() {
 				console.error('Error parsing CSV:', results.errors);
 				document.getElementById('csvData').innerHTML = 'Error loading data.';
 			} else if (Array.isArray(results.data)) {
-				console.log("results[0]['Date']: " + results[0]['Date']);
+				//console.log("results[0]['Date']: " + results[0]['Date']);
 				console.log("results: " + results);
 				originalData = results.data;
 				console.log("originalData: " + originalData);
