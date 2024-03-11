@@ -1,6 +1,6 @@
 /*THIS IS THE VERSION I WAS WORKING ON FOR THE PERMANENT DATE FIX*/
 
-console.log('bug fix 5');
+console.log('bug fix 6');
 
 let originalData = []; // Initialize as an empty array
 
