@@ -1,6 +1,6 @@
 /*THIS IS THE VERSION I WAS WORKING ON FOR THE PERMANENT DATE FIX*/
 
-console.log('bug fix 11');
+console.log('bug fix 12');
 
 let originalData = []; // Initialize as an empty array
 
@@ -19,6 +19,7 @@ window.onload = function() {
 		header: true,
 		download: true,
 		skipEmptyLines: true,
+		dateFormats: ["YYYY-MM-DD"], // Add other formats as needed
 		complete: function(results) {
 			if (results.errors.length > 0) {
 				console.error('Error parsing CSV:', results.errors);
