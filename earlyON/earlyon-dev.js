@@ -1,6 +1,6 @@
 /*THIS IS THE VERSION I WAS WORKING ON FOR THE PERMANENT DATE FIX*/
 
-console.log('bug fix 4');
+console.log('bug fix 5');
 
 let originalData = []; // Initialize as an empty array
 
@@ -84,6 +84,7 @@ function renderTable(data) {
 	//let totalData = 0;
 	filteredData.forEach(row => {
 		const currentDate = row['Date'] ? row['Date'] : '';
+		console.log("currentDate: " + currentDate);
 
 	
 		const problemReportUrl = 'earlyon-problem.html'; // Replace with your actual URL
