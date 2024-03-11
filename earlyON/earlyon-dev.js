@@ -1,4 +1,6 @@
-console.log('bug fix 6');
+/*THIS IS THE VERSION I WAS WORKING ON FOR THE PERMANENT DATE FIX*/
+
+console.log('bug fix 1');
 
 let originalData = []; // Initialize as an empty array
 
@@ -208,7 +210,6 @@ function filterData(data, selectedDate, selectedAgeGroup) {
 			const currentLanguage = row['Language'] ? row['Language'] : ''; 
 
             const dateCondition = !selectedDate || currentDate === selectedDate;
-            //const areaCondition = !selectedArea || currentArea === selectedArea;
             const ageGroupCondition = !selectedAgeGroup || currentAgeGroup.includes(selectedAgeGroup);			
 			const languageCondition = !selectedLanguages.length || selectedLanguages.some(lang => row['Language'].toLowerCase().includes(lang.toLowerCase())); //Not exact match
 			const areaCondition = !selectedAreas.length || selectedAreas.some(lang => row['Area'].toLowerCase().includes(lang.toLowerCase())); //Not exact match
@@ -260,10 +261,23 @@ function isPastDate(dateString) {
 	currentDate.setHours(0, 0, 0, 0); // Set time to midnight
 
 	// Parse the date string in "YYYY-MM-DD" format
-	const dateParts = dateString.split('-');
+	var dateInput = dateString;
+
+	// Extract year, month, and day components
+	var year = parseInt(dateInput.substring(0, 4));
+	var month = parseInt(dateInput.substring(5, 7)) - 1; // Months are zero-based
+	var day = parseInt(dateInput.substring(8, 10));
+	var dateParts = new Date(year, month, day);
+	
+	//const dateParts = dateString.split('-');
 	const selectedDate = new Date(dateParts[0], dateParts[1] - 1, dateParts[2]);
 	selectedDate.setHours(0, 0, 0, 0); // Set time to midnight
 
+
+	console.log("selectedDate: " + selectedDate); 
+	console.log("currentDate: " + currentDate); 	 
+	console.log("selectedDate < currentDate: " + selectedDate < currentDate); 
+	
 	return selectedDate < currentDate;
 }
 
