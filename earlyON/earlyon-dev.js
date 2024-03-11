@@ -1,6 +1,6 @@
 /*THIS IS THE VERSION I WAS WORKING ON FOR THE PERMANENT DATE FIX*/
 
-console.log('bug fix 8');
+console.log('bug fix 9');
 
 let originalData = []; // Initialize as an empty array
 
@@ -25,7 +25,9 @@ window.onload = function() {
 				document.getElementById('csvData').innerHTML = 'Error loading data.';
 			} else if (Array.isArray(results.data)) {
 				console.log("results[0]['Date']: " + results[0]['Date']);
+				console.log("results: " + results);
 				originalData = results.data;
+				console.log("originalData: " + originalData);
 				renderTable(originalData);
 			} else {
 				console.error('Error loading data: Data is not an array.');
