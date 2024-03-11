@@ -1,6 +1,6 @@
 /*THIS IS THE VERSION I WAS WORKING ON FOR THE PERMANENT DATE FIX*/
 
-console.log('bug fix 6');
+console.log('bug fix 7');
 
 let originalData = []; // Initialize as an empty array
 
@@ -204,6 +204,7 @@ function filterData(data, selectedDate, selectedAgeGroup) {
     if (Array.isArray(data)) {
         return data.filter(row => {
             const currentDate = row['Date'] ? row['Date'] : '';
+			console.log("current date in filter data" + currentDate);
             //const currentArea = row['Area'] ? row['Area'] : '';
             const currentAgeGroup = row['Age Group'] ? row['Age Group'] : '';
             const currentTimeOfDay = row['Time of Day'] ? row['Time of Day'] : '';
