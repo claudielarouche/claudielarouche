@@ -1,6 +1,6 @@
 /*THIS IS THE VERSION I WAS WORKING ON FOR THE PERMANENT DATE FIX*/
 
-console.log('bug fix 1');
+console.log('bug fix 2');
 
 let originalData = []; // Initialize as an empty array
 
@@ -262,7 +262,8 @@ function isPastDate(dateString) {
 
 	// Parse the date string in "YYYY-MM-DD" format
 	var dateInput = dateString;
-
+	
+	console.log("dateString: " + dateString);
 	// Extract year, month, and day components
 	var year = parseInt(dateInput.substring(0, 4));
 	var month = parseInt(dateInput.substring(5, 7)) - 1; // Months are zero-based
