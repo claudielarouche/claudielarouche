@@ -1,4 +1,4 @@
-console.log('bug fix 2');
+//console.log('bug fix 2');
 
 let originalData = []; // Initialize as an empty array
 
@@ -237,11 +237,7 @@ function isPastDate(dateString) {
 	const selectedDate = new Date(dateParts[0], dateParts[1] - 1, dateParts[2]);
 	selectedDate.setHours(0, 0, 0, 0); // Set time to midnight
 
-	//During Daylight Saving only
-	console.log("selectedDate: " + selectedDate);
-	//selectedDate.setDate(selectedDate.getDate() - 1);
-	//console.log("selectedDate: " + selectedDate);
-	console.log("Current Date: " + currentDate);
+	
 
 
 	
