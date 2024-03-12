@@ -1,4 +1,4 @@
-console.log('bug fix');
+console.log('bug fix 2');
 
 let originalData = []; // Initialize as an empty array
 
@@ -239,8 +239,8 @@ function isPastDate(dateString) {
 
 	//During Daylight Saving only
 	console.log("selectedDate: " + selectedDate);
-	selectedDate.setDate(selectedDate.getDate() - 1);
-	console.log("selectedDate: " + selectedDate);
+	//selectedDate.setDate(selectedDate.getDate() - 1);
+	//console.log("selectedDate: " + selectedDate);
 	console.log("Current Date: " + currentDate);
 
 
