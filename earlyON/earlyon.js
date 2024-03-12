@@ -1,4 +1,4 @@
-console.log('bug fix dates 2');
+console.log('bug fix');
 
 let originalData = []; // Initialize as an empty array
 
@@ -79,7 +79,7 @@ function renderTable(data) {
 	//let totalData = 0;
 	filteredData.forEach(row => {
 		const currentDate = row['Date'] ? row['Date'] : '';
-		//if (!isPastDate(currentDate)) {
+		if (!isPastDate(currentDate)) {
 			// Check if "Playgroup Name" contains "CANCELLED"
 			const isCancelled = row['Playgroup Name'] && row['Playgroup Name'].includes('CANCELLED');
 
@@ -132,7 +132,7 @@ function renderTable(data) {
 			
 
 			tableHtml += '</tr>';
-		//}
+		}
 	});
 
 	
