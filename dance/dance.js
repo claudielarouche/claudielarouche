@@ -55,7 +55,7 @@ function renderTable(data) {
 	headers.forEach(header => {
 		tableHtml += `<th>${header}</th>`;
 	});
-	tableHtml += '<th>Actions</th></tr></thead><tbody>';
+	//tableHtml += '<th>Actions</th></tr></thead><tbody>';
 	
 
 	
@@ -121,7 +121,7 @@ function renderTable(data) {
 			    }
 			});
 
-			tableHtml += `<td>TBD</td>`;
+			//tableHtml += `<td>TBD</td>`;
 			
 
 			tableHtml += '</tr>';
