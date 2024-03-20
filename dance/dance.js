@@ -56,6 +56,7 @@ function renderTable(data) {
 		tableHtml += `<th>${header}</th>`;
 	});
 	//tableHtml += '<th>Actions</th></tr></thead><tbody>';
+	tableHtml += '</tr></thead><tbody>';
 	
 
 	
