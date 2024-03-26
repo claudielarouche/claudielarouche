@@ -35,121 +35,95 @@ window.onload = function() {
 };
 
 function renderTable(data) {
-	// Ensure data is an array
-	if (!Array.isArray(data)) {
-		console.error('Error loading data: Data is not an array.');
-		document.getElementById('csvData').innerHTML = 'Error loading data.';
-		return;
-	}
+    // Ensure data is an array
+    if (!Array.isArray(data)) {
+        console.error('Error loading data: Data is not an array.');
+        document.getElementById('csvData').innerHTML = 'Error loading data.';
+        return;
+    }
 
-	// Check if data is empty
-	if (data.length === 0) {
-		console.warn('No data available.');
-		document.getElementById('csvData').innerHTML = 'No data available.';
-		return;
-	}
+    // Check if data is empty
+    if (data.length === 0) {
+        console.warn('No data available.');
+        document.getElementById('csvData').innerHTML = 'No data available.';
+        return;
+    }
 
-	const headers = Object.keys(data[0]);
+    const headers = Object.keys(data[0]);
 
-	let tableHtml = '<table id="dataTable"><thead><tr>';
-	headers.forEach(header => {
-		tableHtml += `<th>${header}</th>`;
-	});
-	//tableHtml += '<th>Actions</th></tr></thead><tbody>';
-	tableHtml += '</tr></thead><tbody>';
-	
+    let tableHtml = '<table id="dataTable"><thead><tr>';
+    headers.forEach(header => {
+        // Skip rendering the URL column
+        if (header !== 'URL') {
+            tableHtml += `<th>${header}</th>`;
+        }
+    });
+    tableHtml += '</tr></thead><tbody>';
 
-	
+    // Iterate through each row of data
+    data.forEach(row => {
+        const currentDate = row['Date'] ? row['Date'] : '';
 
-    //const filteredData = filterData(data, selectedDate, selectedArea, selectedAgeGroup);
-	//const filteredData = filterData(data, selectedDate, selectedAgeGroup);
+        // Start building the row with a conditional background color
+        tableHtml += '<tr>';
 
-	if (!Array.isArray(data)) {
-		console.error('Error loading data: Filtered data is not an array.');
-		document.getElementById('csvData').innerHTML = 'Error loading data.';
-		return;
-	}
+        headers.forEach(header => {
+            // Skip rendering the URL column
+            if (header !== 'URL') {
+                switch (header) {
+                    case 'School / Teacher Name':
+                        // Merge URL with School Name to create a clickable link
+                        const url = row['URL'] ? row['URL'] : '';
+                        const schoolName = row[header] ? row[header] : '';
+                        if (url !== '' && schoolName !== '') {
+                            tableHtml += `<td><a href="${url}" target="_blank">${schoolName}</a></td>`;
+                        } else {
+                            tableHtml += `<td>${schoolName}</td>`;
+                        }
+                        break;
 
-	//let totalData = 0;
-	data.forEach(row => {
-		const currentDate = row['Date'] ? row['Date'] : '';
-		//if (!isPastDate(currentDate)) {
-			// Check if "Playgroup Name" contains "CANCELLED"
-			const isCancelled = row['Playgroup Name'] && row['Playgroup Name'].includes('CANCELLED');
+                    case 'Location Address':
+                        // Create a link with the Google Maps URL for the address
+                        const address = row[header] ? row[header].trim() : '';
+                        if (address !== '') {
+                            const googleMapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)},+Ottawa,+Canada`;
+                            tableHtml += `<td><a href="${googleMapsLink}" target="_blank">${address}</a></td>`;
+                        } else {
+                            tableHtml += '<td></td>';
+                        }
+                        break;
 
-			// Start building the row with a conditional background color
-			tableHtml += `<tr${isCancelled ? ' style="background-color: #FFCCCB;"' : ''}>`;
+                    default:
+                        // Display other columns
+                        tableHtml += `<td>${row[header]}</td>`;
+                        break;
+                }
+            }
+        });
 
-			headers.forEach(header => {
-			    switch(header) {
-			        case 'URL':
-			            // Make the URL clickable as a link
-			            tableHtml += `<td><a href="${row[header]}" target="_blank">URL</a></td>`;
-			            break;
-			    	/*case 'Date':
-				    //Start of a very weird bug fix where all dates where one day off starting on March 9, 2024. Caroline thinks it's because of the time change
-				    let dateValue = new Date(row[header]);
-				    dateValue.setDate(dateValue.getDate() + 1);
-				    let march9_2024 = new Date('2024-03-09');
-				    march9_2024.setDate(march9_2024.getDate() + 1);
-				
-				    if (dateValue > march9_2024) {
-				        dateValue.setDate(dateValue.getDate() + 1);
-				    }
-				
-				    // Format the date to the desired string format (e.g., YYYY-MM-DD)
-				    const formattedDate = `${dateValue.getFullYear()}-${(dateValue.getMonth() + 1).toString().padStart(2, '0')}-${dateValue.getDate().toString().padStart(2, '0')}`;
-				    //console.log("formattedDate: " + formattedDate);    
-			            //console.log("is it daylight saving? " + isDaylightSavingTime(formattedDate)); // Output: true or false
+        tableHtml += '</tr>';
+    });
 
-				    tableHtml += `<td>${formattedDate}</td>`;
-				    break;*/
-				    //end of weird bug fix
-			        case 'Location Address':
-			            // Create a link with the Google Maps URL for the address
-			            const address = row[header] ? row[header].trim() : '';
-			            if (address !== '') {
-			                const googleMapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)},+Ottawa,+Canada`;
-			                tableHtml += `<td><a href="${googleMapsLink}" target="_blank">${address}</a></td>`;
-			            } else {
-			                tableHtml += '<td></td>';
-			            }
-			            break;
-			        default:
-			            // Display other columns
-			            tableHtml += `<td>${row[header]}</td>`;
-			            break;
-			    }
-			});
+    tableHtml += '</tbody></table>';
 
-			//tableHtml += `<td>TBD</td>`;
-			
+    document.getElementById('csvData').innerHTML = tableHtml;
 
-			tableHtml += '</tr>';
-		//}
-	});
-
-	
-	tableHtml += '</tbody></table>';
-
-	document.getElementById('csvData').innerHTML = tableHtml;
-
-
-	if (!$.fn.dataTable.isDataTable('#dataTable')) {
-		$('#dataTable').DataTable({
-			"pageLength": -1,
-			"dom": 'Bfrtip', // 'B' for buttons
-			"buttons": [
-				'colvis' // Column visibility button
-			],
-			"language": {
-				"emptyTable": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>.",
-				"zeroRecords": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>."
-			}
-		});
-	}
-	$('#dataTable_filter input').val(currentSearchValue).trigger('input');
+    if (!$.fn.dataTable.isDataTable('#dataTable')) {
+        $('#dataTable').DataTable({
+            "pageLength": -1,
+            "dom": 'Bfrtip', // 'B' for buttons
+            "buttons": [
+                'colvis' // Column visibility button
+            ],
+            "language": {
+                "emptyTable": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>.",
+                "zeroRecords": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>."
+            }
+        });
+    }
+    $('#dataTable_filter input').val(currentSearchValue).trigger('input');
 }
+
 
 
 
