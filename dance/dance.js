@@ -71,7 +71,7 @@ function renderTable(data) {
             // Skip rendering the URL column
             if (header !== 'URL') {
                 switch (header) {
-                    case 'School / Teacher Name':
+                    case 'Name':
                         // Merge URL with School Name to create a clickable link
                         const url = row['URL'] ? row['URL'] : '';
                         const schoolName = row[header] ? row[header] : '';
