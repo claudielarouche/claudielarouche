@@ -1,25 +1,31 @@
-Name,URL,Location Address,Area,Types of dance offered
-Art Motion,https://www.artmotionottawa.com/,60 Colonnade Rd,West - Nepean,"Latin, Ballroom, Ballet, Jazz, Salsa, Hip Hop, Argentine Tango & more!"
-Brazily Fitness,https://www.brazilyfitness.com/,190 Alex Polowin avenue ,West - Barrhaven,Brazily
-Canadian School  of Dance,https://canadianschoolofdance.com/,35 Larkin Drive ,West - Barrhaven,"Ballet, Hip Hop, Jazz Funk, Tap, Lyrical, Acro, JAB"
-Capital City Dance,https://www.capitalcitydance.ca/,1309 Carling Ave,West - Nepean,"Ballet, Tap, Hip Hop, Jazz, Comtempory, Acro"
-Cherry Blossom Aerial Dance Studio,https://cherryblossomstudio.ca/,427 St. Laurent Blvd,East - Vanier,Aerial
-Dance Fusion Studios,https://www.dancefusionstudios.com/,A2-2212 Gladwin Crescent,South,"Ballet, Pointe, Highland,Modern, Tap, Jazz, Contemporary"
-Dance Roots,https://danceroots.ca/,4456 Limebank,West - Barrhaven,"Competitive, Hip Hop, Ballet, Contemporary"
-Dance with Alana,https://www.dancewithalana.com/,109A Fourth Avenue,Central,"Private lessons only: Swing: East Coast, Lindy Hop, Charleston, Blues) Tap, Zumba, Vintage Jazz, Belly Dance"
-Dance with Alana,https://www.dancewithalana.com/,174 Wilbrod Street,Central,"Private lessons only: Swing: East Coast, Lindy Hop, Charleston, Blues) Tap, Zumba, Vintage Jazz, Belly Dance"
-Dance with Alana,https://www.dancewithalana.com/,61 Main Street,Central,"Private lessons only: Swing: East Coast, Lindy Hop, Charleston, Blues) Tap, Zumba, Vintage Jazz, Belly Dance"
-Dance with Emilie,https://www.dancewithemilie.com/,175 Third Avenue,Central,"Funk, Hip Hop, Burlesque, Reggaeton"
-Dance With Us Ottawa,https://www.dancewithusottawa.com/dance-classes-for-adults/,74 Jamie Avenue,West - Nepean,"Argentine Tango, Salsa, Bachata, Cha Cha, Latin, Ballroom (International Standard)"
-Devotion Dance,https://www.devotiondance.ca/,"100 Castlefrank Rd, Unit 4A",West - Kanata,"Jazz, Lyrical, Contemporary, Burlesque"
-DQ Ballroom and Fitness,https://dqballroomandfitness.com/,1160 Maitland Avenue,West - Nepean,"Ballroom, Latin, Salsa, Argentine Tango"
-Fred Astaire,http://www.fredastaire.ca/locations/ottawa/,"149 Second Avenue, Suite 203",Central,"Ballroom (Foxtrot, Tango, Viennese Waltz QuickStep, Waltz)  Latin (Bolero, Line Dancing, Eastern Swing, Merengue, Polka, West Coast Swing, Cha Cha, Rumba, Country Western, Mambo, Paso Doble, Salsa)"
-Golden Flame Dance Company,https://goldenflamedance.ca/,168 Charlotte St 2nd floor,Central,"Hip Hop,Salsa, Bachata, Konpa, Afrobeat, Belly Dance, Kizomba, Heels"
-Greta Leeming Dance Studio,https://gretaleemingdance.com/,1460 Merivale,West - Nepean,"Ballet, Jazz, Tap"
-Ottawa Dance Academy,https://ottawadanceacademy.ca/,2120 Robertson Rd,West - Kanata,"Ballet, Jazz, Contemporary, Hip Hop, Acro"
-Pointe of Grace Dance Campany,https://pointeofgrace.com/,"69 Iber Road, Unit 103",West - Kanata,"Ballet, Jazz,Lyrical, Hip-Hop, Tap, Acro, Musical Theater"
-Rouge Studio of Dance,https://www.rougestudioofdance.com/ottawaclasses,340 MacLaren St,Central,"Burlesque, Belly Dance, Jazz Funk, Heels, Fan Dancing, Latin Rythmn, Ballet Barre"
-Rouge Studio of Dance,https://www.rougestudioofdance.com/ottawaclasses,250 City Centre Ave,Central,"Burlesque, Belly Dance, Jazz Funk, Heels, Fan Dancing, Latin Rythmn, Ballet Barre"
-School of Dance,https://www.theschoolofdance.ca/,200 Crichton,Central,"Ballet, Jazz, Lyrical, Contemporary"
-Step by Step school of dance,https://sbsdancestudio.com/,1120 Morrison Drive,West - Nepean,"Ballet, Tap, Hip Hop"
-Union Studios,https://www.unionstudios.ca/,290 Picton Ave. Unit 102,West - Nepean,"Tap, Ballet, Contemporary, Jazz, Broadway, Dancehall"
+Name,URL,Location Address,Area,Types of dance offered,Note
+Art Motion,https://www.artmotionottawa.com/,60 Colonnade Rd,West - Nepean,"Latin, Ballroom, Ballet, Jazz, Salsa, Hip Hop, Argentine Tango & more!",
+Brazily Fitness,https://www.brazilyfitness.com/,190 Alex Polowin avenue ,West - Barrhaven,Brazily,
+Canadian School  of Dance,https://canadianschoolofdance.com/,35 Larkin Drive ,West - Barrhaven,"Ballet, Hip Hop, Jazz Funk, Tap, Lyrical, Acro, JAB",
+Capital City Dance,https://www.capitalcitydance.ca/,1309 Carling Ave,West - Nepean,"Ballet, Tap, Hip Hop, Jazz, Comtempory, Acro",
+Cherry Blossom Aerial Dance Studio,https://cherryblossomstudio.ca/,427 St. Laurent Blvd,East - Vanier,Aerial,
+Dance Fusion Studios,https://www.dancefusionstudios.com/,A2-2212 Gladwin Crescent,South,"Ballet, Pointe, Highland, Modern, Tap, Jazz, Contemporary",
+Dance Roots,https://danceroots.ca/,4456 Limebank,West - Barrhaven,"Competitive, Hip Hop, Ballet, Contemporary",
+Dance with Alana,https://www.dancewithalana.com/,109A Fourth Avenue,Central,"Swing: East Coast, Lindy Hop, Charleston, Blues, Tap, Zumba, Vintage Jazz, Belly Dance",Private lessons only
+Dance with Alana,https://www.dancewithalana.com/,174 Wilbrod Street,Central,"Swing: East Coast, Lindy Hop, Charleston, Blues, Tap, Zumba, Vintage Jazz, Belly Dance",Private lessons only
+Dance with Alana,https://www.dancewithalana.com/,61 Main Street,Central,"Swing: East Coast, Lindy Hop, Charleston, Blues, Tap, Zumba, Vintage Jazz, Belly Dance",Private lessons only
+Dance with Emilie,https://www.dancewithemilie.com/,175 Third Avenue,Central,"Funk, Hip Hop, Burlesque, Reggaeton",
+Dance With Us Ottawa,https://www.dancewithusottawa.com/dance-classes-for-adults/,74 Jamie Avenue,West - Nepean,"Argentine Tango, Salsa, Bachata, Cha Cha, Latin, Ballroom (International Standard)",
+Devotion Dance,https://www.devotiondance.ca/,"100 Castlefrank Rd, Unit 4A",West - Kanata,"Jazz, Lyrical, Contemporary, Burlesque",
+DQ Ballroom and Fitness,https://dqballroomandfitness.com/,1160 Maitland Avenue,West - Nepean,"Ballroom, Latin, Salsa, Argentine Tango",
+Fred Astaire,http://www.fredastaire.ca/locations/ottawa/,"149 Second Avenue, Suite 203",Central,"Ballroom (Foxtrot, Tango, Viennese Waltz QuickStep, Waltz)  Latin (Bolero, Line Dancing, Eastern Swing, Merengue, Polka, West Coast Swing, Cha Cha, Rumba, Country Western, Mambo, Paso Doble, Salsa)",
+Golden Flame Dance Company,https://goldenflamedance.ca/,168 Charlotte St 2nd floor,Central,"Hip Hop, Salsa, Bachata, Konpa, Afrobeat, Belly Dance, Kizomba, Heels",
+Greta Leeming Dance Studio,https://gretaleemingdance.com/,1460 Merivale,West - Nepean,"Ballet, Jazz, Tap",
+Ottawa Dance Academy,https://ottawadanceacademy.ca/,2120 Robertson Rd,West - Kanata,"Ballet, Jazz, Contemporary, Hip Hop, Acro",
+Pointe of Grace Dance Campany,https://pointeofgrace.com/,"69 Iber Road, Unit 103",West - Kanata,"Ballet, Jazz, Lyrical, Hip-Hop, Tap, Acro, Musical Theater",
+Rouge Studio of Dance,https://www.rougestudioofdance.com/ottawaclasses,340 MacLaren St,Central,"Burlesque, Belly Dance, Jazz Funk, Heels, Fan Dancing, Latin Rythmn, Ballet Barre",
+Rouge Studio of Dance,https://www.rougestudioofdance.com/ottawaclasses,250 City Centre Ave,Central,"Burlesque, Belly Dance, Jazz Funk, Heels, Fan Dancing, Latin Rythmn, Ballet Barre",
+School of Dance,https://www.theschoolofdance.ca/,200 Crichton,Central,"Ballet, Jazz, Lyrical, Contemporary",
+Step by Step school of dance,https://sbsdancestudio.com/,1120 Morrison Drive,West - Nepean,"Ballet, Tap, Hip Hop",
+Union Studios,https://www.unionstudios.ca/,290 Picton Ave. Unit 102,West - Nepean,"Tap, Ballet, Contemporary, Jazz, Broadway, Dancehall",
+Celtic Cross Dancers,https://celticcrossdancers.com/,?,?,"Irish, Scottish, Step",
+International Folk Dancers of Ottawa,https://www.internationalfolkdancersofottawa.ca/en/welcome/,320 Jack Purcell Ln Rm 203,,Folk,
+Polanie,https://www.polanie.org/,893 Admiral Ave,,Polish,
+Svitanok Ukrainian Dance Society ,https://www.svitanok.ca/,200 Crichton St,,Ukrainian,
+Latvian Folk Dance Ottawa ,https://www.facebook.com/tautasdeja/,Various locations,,,
+Westie Underground,https://westieunderground.ca/,"1574 Walkley Rd, Ottawa",,"West Coast Swing, Country two-step, Hustle, Line Dance",
