@@ -30,6 +30,7 @@
     document.getElementById("results").innerHTML = "";
 
     urlsInput.forEach(function(url) {
+        console.log("v1");
         fetch(url)
         .then(response => response.text())
         .then(data => {
