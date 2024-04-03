@@ -1,4 +1,4 @@
-console.log('merge URL 1');
+console.log('merge URL 2');
 
 let originalData = []; // Initialize as an empty array
 
@@ -53,7 +53,10 @@ function renderTable(data) {
 
 	let tableHtml = '<table id="dataTable"><thead><tr>';
 	headers.forEach(header => {
-		tableHtml += `<th>${header}</th>`;
+		// Skip rendering the URL column
+     		if (header !== 'URL') {
+     		    tableHtml += `<th>${header}</th>`;
+    		}
 	});
 	tableHtml += '<th>Actions</th></tr></thead><tbody>';
 	
@@ -90,27 +93,19 @@ function renderTable(data) {
 			    switch(header) {
 			        case 'URL':
 			            // Make the URL clickable as a link
-			            tableHtml += `<td><a href="${row[header]}" target="_blank">URL</a></td>`;
+			            // tableHtml += `<td><a href="${row[header]}" target="_blank">URL</a></td>`;
 			            break;
-			    	/*case 'Date':
-				    //Start of a very weird bug fix where all dates where one day off starting on March 9, 2024. Caroline thinks it's because of the time change
-				    let dateValue = new Date(row[header]);
-				    dateValue.setDate(dateValue.getDate() + 1);
-				    let march9_2024 = new Date('2024-03-09');
-				    march9_2024.setDate(march9_2024.getDate() + 1);
-				
-				    if (dateValue > march9_2024) {
-				        dateValue.setDate(dateValue.getDate() + 1);
-				    }
-				
-				    // Format the date to the desired string format (e.g., YYYY-MM-DD)
-				    const formattedDate = `${dateValue.getFullYear()}-${(dateValue.getMonth() + 1).toString().padStart(2, '0')}-${dateValue.getDate().toString().padStart(2, '0')}`;
-				    //console.log("formattedDate: " + formattedDate);    
-			            //console.log("is it daylight saving? " + isDaylightSavingTime(formattedDate)); // Output: true or false
-
-				    tableHtml += `<td>${formattedDate}</td>`;
-				    break;*/
-				    //end of weird bug fix
+				 case 'Playgroup Name':
+				    // Merge URL with School Name to create a clickable link
+		                        const url = row['URL'] ? row['URL'] : '';
+		                        const playgroupName = row[header] ? row[header] : '';
+		                        if (url !== '' && playgroupName !== '') {
+		                            tableHtml += `<td><a href="${url}" target="_blank">${playgroupName}</a></td>`;
+		                        } else {
+		                            tableHtml += `<td>${playgroupName}</td>`;
+		                        }
+		                        break;
+			    	
 			        case 'Location Address':
 			            // Create a link with the Google Maps URL for the address
 			            const address = row[header] ? row[header].trim() : '';
