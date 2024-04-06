@@ -25,7 +25,11 @@
 
     <script>
         function analyze() {
-            var url = document.getElementById('urlInput').value;
+            var inputUrl = document.getElementById('urlInput').value;
+            var url = inputUrl.trim();
+            if (!url.startsWith('http://') && !url.startsWith('https://')) {
+                url = 'http://' + url;
+            }
             fetch(url)
             .then(response => response.text())
             .then(data => {
