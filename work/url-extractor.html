@@ -24,7 +24,7 @@
     <div id="result"></div>
 
     <script>
-        console.log("v1");
+        console.log("v2");
         function analyze() {
             var inputUrl = document.getElementById('urlInput').value;
             var baseUrl = getBaseUrl(inputUrl);
@@ -41,10 +41,12 @@
                 var result = '';
                 links.forEach(link => {
                     var href = link.getAttribute('href');
-                    if (href.startsWith('/')) {
-                        href = baseUrl + href;
+                    if (href && !href.startsWith('#')) {
+                        if (href.startsWith('/')) {
+                            href = baseUrl + href;
+                        }
+                        result += href + '\n';
                     }
-                    result += href + '\n';
                 });
                 document.getElementById('result').innerText = result;
             })
