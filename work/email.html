@@ -42,6 +42,7 @@
         <textarea id="textInput" rows="10" cols="100"></textarea>
         <br>
 		<button onclick="extractEmails()">Extract Email Addresses</button>
+		<button onclick="clearInput()">Clear</button>
     </div>
     <div id="output"></div>
 	</div>
@@ -57,6 +58,11 @@
             } else {
                 document.getElementById('output').textContent = "No email addresses found.";
             }
+        }
+		
+		function clearInput() {
+            document.getElementById('textInput').value = "";
+            document.getElementById('output').textContent = "";
         }
     </script>
 </body>
