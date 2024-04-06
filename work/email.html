@@ -12,7 +12,17 @@
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Email Extractor</title>
+<title>Email Addresses Extractor</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<!--<link rel="stylesheet" type="text/css" href="style.css">-->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+		<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+		<script src="https://cdn.datatables.net/buttons/1.7.1/js/dataTables.buttons.min.js"></script>
+		<script src="https://cdn.datatables.net/buttons/1.7.1/js/buttons.colVis.min.js"></script>
 <style>
     #output {
         margin-top: 20px;
@@ -21,8 +31,9 @@
 </style>
 </head>
 <body>
+	<div class="container">
     <div>
-	<h1>Email Address Extractor</h1>
+	<h1>Email Addresses Extractor</h1>
 	<h2>How to use</h2>
 	<p>Enter any paragraph of text in the box below. The tool will find all the email addresses from the block of text and show them on the screen so that you can easily copy paste them. Duplicates are removed.</p>
 	<p>Email addresses are all separated by a semi-colon so that you can quickly paste them in your email client to send a quick message out.</p>
@@ -33,7 +44,7 @@
 		<button onclick="extractEmails()">Extract Email Addresses</button>
     </div>
     <div id="output"></div>
-
+	</div>
     <script>
         function extractEmails() {
             const inputText = document.getElementById('textInput').value;
