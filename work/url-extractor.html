@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>URL Analyzer</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    #result {
+        margin-top: 20px;
+        white-space: pre-wrap;
+    }
+</style>
+</head>
+<body>
+    <h1>URL Analyzer</h1>
+    <label for="urlInput">Enter URL:</label>
+    <input type="text" id="urlInput">
+    <button onclick="analyze()">Analyze</button>
+    <div id="result"></div>
+
+    <script>
+        function analyze() {
+            var url = document.getElementById('urlInput').value;
+            fetch(url)
+            .then(response => response.text())
+            .then(data => {
+                var parser = new DOMParser();
+                var htmlDoc = parser.parseFromString(data, 'text/html');
+                var links = htmlDoc.querySelectorAll('a[href]');
+                var result = '';
+                links.forEach(link => {
+                    result += link.href + '\n';
+                });
+                document.getElementById('result').innerText = result;
+            })
+            .catch(error => {
+                document.getElementById('result').innerText = 'Error: ' + error.message;
+            });
+        }
+    </script>
+</body>
+</html>
