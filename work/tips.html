@@ -9,7 +9,7 @@
 </style>
 </head>
 <body>
-    <h1>Web Scraping Tool v13</h1>
+    <h1>Web Scraping Tool v14</h1>
     <form id="scrapingForm">
         <label for="urls">Enter URLs (separated by carriage return):</label><br>
         <textarea id="urls" rows="4" cols="50">https://www.canada.ca/en/canadian-heritage/corporate/publications/plans-reports/departmental-plan-2024-2025.html</textarea><br>
@@ -22,7 +22,7 @@
     </div>
 
     <script>
-       function scrape() {
+      function scrape() {
     var urlsInput = document.getElementById("urls").value.trim().split("\n");
     var searchText = document.getElementById("searchText").value.trim();
 
@@ -52,22 +52,22 @@
                     var nextHeading = headings[index + 1];
                     if (nextHeading) {
                         var resultElement = document.createElement("div");
-
-                        // Add h1 text and URL before result
-                        var h1Text = htmlDoc.querySelector('h1').textContent;
-                        var urlElement = document.createElement("div");
-                        urlElement.textContent = "URL: " + url;
-                        resultElement.appendChild(document.createTextNode(h1Text));
-                        resultElement.appendChild(document.createElement("br"));
-                        resultElement.appendChild(urlElement);
-
-                        // Add result
                         var text = getTextBetweenNodes(heading.nextSibling, nextHeading);
-                        resultElement.innerHTML += text;
+                        resultElement.innerHTML = text;
                         document.getElementById("results").appendChild(resultElement);
                     }
                 }
             });
+
+            // Display h1 text and URL once
+            var h1Text = htmlDoc.querySelector('h1').textContent;
+            var urlElement = document.createElement("div");
+            urlElement.textContent = "URL: " + url;
+            var h1UrlContainer = document.createElement("div");
+            h1UrlContainer.appendChild(document.createTextNode(h1Text));
+            h1UrlContainer.appendChild(document.createElement("br"));
+            h1UrlContainer.appendChild(urlElement);
+            document.getElementById("results").prepend(h1UrlContainer);
         })
         .catch(error => console.error('Error fetching data:', error));
     });
@@ -92,6 +92,7 @@ function getTextBetweenNodes(startNode, endNode) {
 
     return text;
 }
+
 
 
 
