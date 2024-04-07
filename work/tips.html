@@ -22,7 +22,7 @@
     </div>
 
     <script>
-        function scrape() {
+      function scrape() {
     var urlsInput = document.getElementById("urls").value.trim().split("\n");
     var searchText = document.getElementById("searchText").value.trim();
 
@@ -30,7 +30,6 @@
     document.getElementById("results").innerHTML = "";
 
     urlsInput.forEach(function(url) {
-        console.log("v1");
         fetch(url)
         .then(response => response.text())
         .then(data => {
@@ -41,10 +40,10 @@
             headings.forEach(function(heading, index) {
                 if (heading.textContent.includes(searchText)) {
                     var nextHeading = headings[index + 1];
-                    if (nextHeading) {
+                    if (nextHeading && getNextHeadingLevel(heading) < getNextHeadingLevel(nextHeading)) {
                         var resultElement = document.createElement("div");
                         var text = getTextBetweenNodes(heading.nextSibling, nextHeading);
-                        resultElement.textContent = text;
+                        resultElement.innerHTML = text;
                         document.getElementById("results").appendChild(resultElement);
                     }
                 }
@@ -52,6 +51,10 @@
         })
         .catch(error => console.error('Error fetching data:', error));
     });
+}
+
+function getNextHeadingLevel(heading) {
+    return parseInt(heading.tagName.substring(1));
 }
 
 function getTextBetweenNodes(startNode, endNode) {
