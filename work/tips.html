@@ -12,9 +12,9 @@
     <h1>Web Scraping Tool</h1>
     <form id="scrapingForm">
         <label for="urls">Enter URLs (separated by carriage return):</label><br>
-        <textarea id="urls" rows="4" cols="50"></textarea><br>
+        <textarea id="urls" rows="4" cols="50">https://www.canada.ca/en/canadian-heritage/corporate/publications/plans-reports/departmental-plan-2024-2025.html</textarea><br>
         <label for="searchText">Enter Text to Search:</label><br>
-        <input type="text" id="searchText" name="searchText"><br><br>
+        <input type="text" id="searchText" name="searchText" value="Planning for contracts awarded to Indigenous businesses"><br><br>
         <button type="button" onclick="scrape()">Scrape</button>
     </form>
     <div id="results">
