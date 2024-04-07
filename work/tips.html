@@ -18,7 +18,7 @@
 </head>
 <body>
 	<div class="container">
-    <h1>Web Scraping Tool v2</h1>
+    <h1>Web Scraping Tool v3</h1>
     <form id="scrapingForm">
         <label for="urls">Enter URLs (separated by carriage return):</label><br>
         <textarea id="urls" rows="4" cols="50">https://www.canada.ca/en/canadian-heritage/corporate/publications/plans-reports/departmental-plan-2024-2025.html</textarea><br>
@@ -39,11 +39,6 @@
     document.getElementById("results").innerHTML = "";
 
     urlsInput.forEach(function(url, index) {
-        // Create and append URL container
-        var urlContainer = document.createElement("div");
-        urlContainer.textContent = "URL: " + url;
-        document.getElementById("results").appendChild(urlContainer);
-
         fetch(url)
         .then(response => {
             if (!response.ok) {
@@ -54,6 +49,20 @@
         .then(data => {
             var parser = new DOMParser();
             var htmlDoc = parser.parseFromString(data, 'text/html');
+            
+            // Display URL
+            var urlContainer = document.createElement("div");
+            urlContainer.textContent = "URL: " + url;
+            document.getElementById("results").appendChild(urlContainer);
+
+            // Display content of the <h1> tag
+            var h1Content = htmlDoc.querySelector('h1');
+            if (h1Content) {
+                var h1Container = document.createElement("div");
+                h1Container.textContent = "H1: " + h1Content.textContent;
+                document.getElementById("results").appendChild(h1Container);
+            }
+
             var headings = htmlDoc.querySelectorAll('h1, h2, h3, h4, h5, h6');
 
             var headingFound = false;
@@ -83,10 +92,8 @@
             });
 
             // Add horizontal rule between URL result
-            if (index !== urlsInput.length - 1) {
-                var hr = document.createElement("hr");
-                document.getElementById("results").appendChild(hr);
-            }
+            var hr = document.createElement("hr");
+            document.getElementById("results").appendChild(hr);
         })
         .catch(error => {
             console.error('Error fetching data:', error);
@@ -96,10 +103,8 @@
             document.getElementById("results").appendChild(resultElement);
 
             // Add horizontal rule between URL result
-            if (index !== urlsInput.length - 1) {
-                var hr = document.createElement("hr");
-                document.getElementById("results").appendChild(hr);
-            }
+            var hr = document.createElement("hr");
+            document.getElementById("results").appendChild(hr);
         });
     });
 }
