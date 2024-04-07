@@ -22,8 +22,8 @@
     </div>
 
     <script>
-        console.log("v8");
-      function scrape() {
+        console.log("v9");
+     function scrape() {
     var urlsInput = document.getElementById("urls").value.trim().split("\n");
     var searchText = document.getElementById("searchText").value.trim();
 
@@ -38,10 +38,13 @@
             var htmlDoc = parser.parseFromString(data, 'text/html');
             var headings = htmlDoc.querySelectorAll('h1, h2, h3, h4, h5, h6');
 
+            var headingFound = false;
+
             headings.forEach(function(heading, index) {
-                if (heading.textContent.includes(searchText)) {
-                    var nextHeading = getNextHeadingOfSameLevel(heading);
-                    if (nextHeading) {
+                if (!headingFound && heading.textContent.includes(searchText)) {
+                    var nextHeading = headings[index + 1];
+                    if (nextHeading && getNextHeadingLevel(nextHeading) <= getNextHeadingLevel(heading)) {
+                        headingFound = true;
                         var resultElement = document.createElement("div");
                         var text = getTextBetweenNodes(heading.nextSibling, nextHeading);
                         resultElement.innerHTML = text;
@@ -54,18 +57,25 @@
     });
 }
 
-function getNextHeadingOfSameLevel(heading) {
-    var level = getNextHeadingLevel(heading);
-    var nextSibling = heading.nextSibling;
+function getNextHeadingLevel(heading) {
+    return parseInt(heading.tagName.substring(1));
+}
 
-    while (nextSibling) {
-        if (nextSibling.tagName && nextSibling.tagName.toLowerCase().startsWith('h') && getNextHeadingLevel(nextSibling) <= level) {
-            return nextSibling;
+function getTextBetweenNodes(startNode, endNode) {
+    var text = '';
+    var currentNode = startNode;
+
+    while (currentNode && currentNode !== endNode) {
+        if (currentNode.nodeType === Node.TEXT_NODE) {
+            text += currentNode.textContent.trim() + ' ';
+        } else if (currentNode.nodeType === Node.ELEMENT_NODE) {
+            // Handle nested elements
+            text += getTextBetweenNodes(currentNode.firstChild, null);
         }
-        nextSibling = nextSibling.nextSibling;
+        currentNode = currentNode.nextSibling;
     }
 
-    return null;
+    return text.trim();
 }
 
 
