@@ -18,7 +18,7 @@
 </head>
 <body>
 	<div class="container">
-    <h1>Web Scraping Tool v5</h1>
+    <h1>Web Scraping Tool v7</h1>
     <form id="scrapingForm">
         <label for="urls">Enter URLs (separated by carriage return):</label><br>
         <textarea id="urls" rows="4" cols="50">https://www.canada.ca/en/canadian-heritage/corporate/publications/plans-reports/departmental-plan-2024-2025.html</textarea><br>
@@ -42,7 +42,7 @@
         fetch(url)
         .then(response => {
             if (!response.ok) {
-		    document.getElementById("results").appendChild("Unable to access this web page");
+		  //  document.getElementById("results").appendChild("Unable to access this web page");
                 throw new Error("Unable to access this web page");
             }
             return response.text();
@@ -59,7 +59,7 @@
             // Display content of the <h1> tag
             var h1Content = htmlDoc.querySelector('h1');
             if (h1Content) {
-                var h1Container = document.createElement("div");
+                var h1Container = document.createElement("h2");
                 h1Container.textContent = "H1: " + h1Content.textContent;
                 document.getElementById("results").appendChild(h1Container);
             }
@@ -90,11 +90,17 @@
                         document.getElementById("results").appendChild(resultElement);
                     }
                 }
+		    
             });
 
 	   if (!headingFound){
-		   resultElement.textContent = "Text not found";
-		   document.getElementById("results").appendChild(resultElement);
+		   var notFound = document.createElement("div");
+		   notFound.textContent = "Text not found";
+		   var notFound2 = document.createElement("div");
+		   notFound2.innerHTML = "Not found 2";
+		   document.getElementById("results").appendChild(notFound);
+		   
+		   document.getElementById("results").appendChild(notFound2);
 	   }
 
             // Add horizontal rule between URL result
