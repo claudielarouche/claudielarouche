@@ -18,7 +18,7 @@
 </head>
 <body>
 	<div class="container">
-    <h1>Web Scraping Tool v7</h1>
+    <h1>Web Scraping Tool v9</h1>
     <form id="scrapingForm">
         <label for="urls">Enter URLs (separated by carriage return):</label><br>
         <textarea id="urls" rows="4" cols="50">https://www.canada.ca/en/canadian-heritage/corporate/publications/plans-reports/departmental-plan-2024-2025.html</textarea><br>
@@ -93,7 +93,7 @@
 		    
             });
 
-	   if (!headingFound){
+	/*   if (!headingFound){
 		   var notFound = document.createElement("div");
 		   notFound.textContent = "Text not found";
 		   var notFound2 = document.createElement("div");
@@ -101,7 +101,7 @@
 		   document.getElementById("results").appendChild(notFound);
 		   
 		   document.getElementById("results").appendChild(notFound2);
-	   }
+	   }*/
 
             // Add horizontal rule between URL result
             var hr = document.createElement("hr");
