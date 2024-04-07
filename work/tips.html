@@ -18,7 +18,7 @@
 </head>
 <body>
 	<div id="container">
-    <h1>Web Scraping Tool v16</h1>
+    <h1>Web Scraping Tool v17</h1>
     <form id="scrapingForm">
         <label for="urls">Enter URLs (separated by carriage return):</label><br>
         <textarea id="urls" rows="4" cols="50">https://www.canada.ca/en/canadian-heritage/corporate/publications/plans-reports/departmental-plan-2024-2025.html</textarea><br>
@@ -67,7 +67,11 @@
                     if (nextHeading) {
                         var resultElement = document.createElement("div");
                         var text = getTextBetweenNodes(heading.nextSibling, nextHeading);
-                        resultElement.innerHTML = text;
+                        if (text.trim() === '') {
+                            resultElement.textContent = "Text not found";
+                        } else {
+                            resultElement.innerHTML = text;
+                        }
                         document.getElementById("results").appendChild(resultElement);
                     }
                 }
