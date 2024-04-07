@@ -91,7 +91,10 @@
                 }
             });
 
-	   if (!headingFound){}
+	   if (!headingFound){
+		   resultElement.textContent = "Text not found";
+		   document.getElementById("results").appendChild(resultElement);
+	   }
 
             // Add horizontal rule between URL result
             var hr = document.createElement("hr");
