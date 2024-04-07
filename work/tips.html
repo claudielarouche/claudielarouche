@@ -22,6 +22,7 @@
     </div>
 
     <script>
+        console.log("v8");
       function scrape() {
     var urlsInput = document.getElementById("urls").value.trim().split("\n");
     var searchText = document.getElementById("searchText").value.trim();
@@ -39,8 +40,8 @@
 
             headings.forEach(function(heading, index) {
                 if (heading.textContent.includes(searchText)) {
-                    var nextHeading = headings[index + 1];
-                    if (nextHeading && getNextHeadingLevel(heading) < getNextHeadingLevel(nextHeading)) {
+                    var nextHeading = getNextHeadingOfSameLevel(heading);
+                    if (nextHeading) {
                         var resultElement = document.createElement("div");
                         var text = getTextBetweenNodes(heading.nextSibling, nextHeading);
                         resultElement.innerHTML = text;
@@ -53,26 +54,20 @@
     });
 }
 
-function getNextHeadingLevel(heading) {
-    return parseInt(heading.tagName.substring(1));
-}
+function getNextHeadingOfSameLevel(heading) {
+    var level = getNextHeadingLevel(heading);
+    var nextSibling = heading.nextSibling;
 
-function getTextBetweenNodes(startNode, endNode) {
-    var text = '';
-    var currentNode = startNode;
-
-    while (currentNode && currentNode !== endNode) {
-        if (currentNode.nodeType === Node.TEXT_NODE) {
-            text += currentNode.textContent.trim() + ' ';
-        } else if (currentNode.nodeType === Node.ELEMENT_NODE) {
-            // Handle nested elements
-            text += getTextBetweenNodes(currentNode.firstChild, null);
+    while (nextSibling) {
+        if (nextSibling.tagName && nextSibling.tagName.toLowerCase().startsWith('h') && getNextHeadingLevel(nextSibling) <= level) {
+            return nextSibling;
         }
-        currentNode = currentNode.nextSibling;
+        nextSibling = nextSibling.nextSibling;
     }
 
-    return text.trim();
+    return null;
 }
+
 
     </script>
 </body>
