@@ -9,7 +9,7 @@
 </style>
 </head>
 <body>
-    <h1>Web Scraping Tool v10</h1>
+    <h1>Web Scraping Tool v11</h1>
     <form id="scrapingForm">
         <label for="urls">Enter URLs (separated by carriage return):</label><br>
         <textarea id="urls" rows="4" cols="50">https://www.canada.ca/en/canadian-heritage/corporate/publications/plans-reports/departmental-plan-2024-2025.html</textarea><br>
@@ -51,9 +51,13 @@
                 if (headingFound) {
                     var nextHeading = headings[index + 1];
                     if (nextHeading) {
-                        var resultElement = document.createElement("div");
                         var text = getTextBetweenNodes(heading.nextSibling, nextHeading);
-                        resultElement.innerHTML = text;
+                        var resultElement = document.createElement("div");
+                        if (nextHeading.tagName === "TABLE") {
+                            resultElement.innerHTML = text;
+                        } else {
+                            resultElement.textContent = text;
+                        }
                         document.getElementById("results").appendChild(resultElement);
                     }
                 }
@@ -83,6 +87,7 @@ function getTextBetweenNodes(startNode, endNode) {
 
     return text.trim();
 }
+
 
 
 
