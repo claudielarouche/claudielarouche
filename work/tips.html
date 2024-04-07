@@ -9,7 +9,7 @@
 </style>
 </head>
 <body>
-    <h1>Web Scraping Tool v11</h1>
+    <h1>Web Scraping Tool v12</h1>
     <form id="scrapingForm">
         <label for="urls">Enter URLs (separated by carriage return):</label><br>
         <textarea id="urls" rows="4" cols="50">https://www.canada.ca/en/canadian-heritage/corporate/publications/plans-reports/departmental-plan-2024-2025.html</textarea><br>
@@ -22,7 +22,7 @@
     </div>
 
     <script>
-        function scrape() {
+       function scrape() {
     var urlsInput = document.getElementById("urls").value.trim().split("\n");
     var searchText = document.getElementById("searchText").value.trim();
 
@@ -53,11 +53,7 @@
                     if (nextHeading) {
                         var text = getTextBetweenNodes(heading.nextSibling, nextHeading);
                         var resultElement = document.createElement("div");
-                        if (nextHeading.tagName === "TABLE") {
-                            resultElement.innerHTML = text;
-                        } else {
-                            resultElement.textContent = text;
-                        }
+                        resultElement.innerHTML = heading.outerHTML + text;
                         document.getElementById("results").appendChild(resultElement);
                     }
                 }
@@ -77,16 +73,16 @@ function getTextBetweenNodes(startNode, endNode) {
 
     while (currentNode && currentNode !== endNode) {
         if (currentNode.nodeType === Node.TEXT_NODE) {
-            text += currentNode.textContent.trim() + ' ';
+            text += currentNode.textContent;
         } else if (currentNode.nodeType === Node.ELEMENT_NODE) {
-            // Handle nested elements
-            text += getTextBetweenNodes(currentNode.firstChild, null);
+            text += currentNode.outerHTML;
         }
         currentNode = currentNode.nextSibling;
     }
 
-    return text.trim();
+    return text;
 }
+
 
 
 
