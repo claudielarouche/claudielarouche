@@ -17,7 +17,8 @@
     </style>
 </head>
 <body>
-    <h1>Web Scraping Tool v14</h1>
+	<div id="container">
+    <h1>Web Scraping Tool v15</h1>
     <form id="scrapingForm">
         <label for="urls">Enter URLs (separated by carriage return):</label><br>
         <textarea id="urls" rows="4" cols="50">https://www.canada.ca/en/canadian-heritage/corporate/publications/plans-reports/departmental-plan-2024-2025.html</textarea><br>
@@ -28,7 +29,7 @@
     <div id="results">
         <!-- Display scraping results here -->
     </div>
-
+	</div>
     <script>
       function scrape() {
     var urlsInput = document.getElementById("urls").value.trim().split("\n");
