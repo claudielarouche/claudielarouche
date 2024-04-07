@@ -18,7 +18,7 @@
 </head>
 <body>
 	<div class="container">
-    <h1>Web Scraping Tool v17</h1>
+    <h1>Web Scraping Tool v18</h1>
     <form id="scrapingForm">
         <label for="urls">Enter URLs (separated by carriage return):</label><br>
         <textarea id="urls" rows="4" cols="50">https://www.canada.ca/en/canadian-heritage/corporate/publications/plans-reports/departmental-plan-2024-2025.html</textarea><br>
@@ -38,7 +38,11 @@
     // Clear previous results
     document.getElementById("results").innerHTML = "";
 
-    urlsInput.forEach(function(url) {
+    urlsInput.forEach(function(url, index) {
+        var urlContainer = document.createElement("div");
+        urlContainer.textContent = "URL: " + url;
+        document.getElementById("results").appendChild(urlContainer);
+
         fetch(url)
         .then(response => {
             if (!response.ok) {
@@ -77,12 +81,23 @@
                 }
             });
 
+            // Add horizontal rule between URL results
+            if (index !== urlsInput.length - 1) {
+                document.getElementById("results").appendChild(document.createElement("hr"));
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching data:', error);
             // Display error message if unable to access the page
             var resultElement = document.createElement("div");
             resultElement.textContent = "Unable to access this web page";
             document.getElementById("results").appendChild(resultElement);
-        })
-        .catch(error => console.error('Error fetching data:', error));
+
+            // Add horizontal rule between URL results
+            if (index !== urlsInput.length - 1) {
+                document.getElementById("results").appendChild(document.createElement("hr"));
+            }
+        });
     });
 }
 
@@ -105,10 +120,6 @@ function getTextBetweenNodes(startNode, endNode) {
 
     return text;
 }
-
-
-
-
 
 
 
