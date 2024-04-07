@@ -18,7 +18,7 @@
 </head>
 <body>
 	<div class="container">
-    <h1>Web Scraping Tool v20</h1>
+    <h1>Web Scraping Tool v1</h1>
     <form id="scrapingForm">
         <label for="urls">Enter URLs (separated by carriage return):</label><br>
         <textarea id="urls" rows="4" cols="50">https://www.canada.ca/en/canadian-heritage/corporate/publications/plans-reports/departmental-plan-2024-2025.html</textarea><br>
@@ -80,10 +80,6 @@
                     }
                 }
             });
-
-            // Add horizontal rule between URL result
-            var hr = document.createElement("hr");
-            document.getElementById("results").appendChild(hr);
         })
         .catch(error => {
             console.error('Error fetching data:', error);
@@ -91,12 +87,12 @@
             var resultElement = document.createElement("div");
             resultElement.textContent = "Unable to access this web page";
             document.getElementById("results").appendChild(resultElement);
-
-            // Add horizontal rule between URL result
-            var hr = document.createElement("hr");
-            document.getElementById("results").appendChild(hr);
         });
     });
+
+    // Add horizontal rule between URL results
+    var hr = document.createElement("hr");
+    document.getElementById("results").appendChild(hr);
 }
 
 function getNextHeadingLevel(heading) {
