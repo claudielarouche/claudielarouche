@@ -81,7 +81,6 @@
                 }
 
                 if (headingFound) {
-			console.log("headingFound for " + index);
                     var nextHeading = headings[index + 1];
                     if (nextHeading) {
                         var resultElement = document.createElement("div");
@@ -93,22 +92,8 @@
                         }
                         document.getElementById("results").appendChild(resultElement);
                     }
-                }
-		    else{
-			    console.log("I am in the else statement for ") + index; 
-		    }
-		    
+                }		   	    
             });
-
-	/*   if (!headingFound){
-		   var notFound = document.createElement("div");
-		   notFound.textContent = "Text not found";
-		   var notFound2 = document.createElement("div");
-		   notFound2.innerHTML = "Not found 2";
-		   document.getElementById("results").appendChild(notFound);
-		   
-		   document.getElementById("results").appendChild(notFound2);
-	   }*/
 
             // Add horizontal rule between URL result
             var hr = document.createElement("hr");
