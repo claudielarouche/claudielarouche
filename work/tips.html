@@ -18,7 +18,7 @@
 </head>
 <body>
 	<div class="container">
-    <h1>Web Scraping Tool v10</h1>
+    <h1>Web Scraping Tool v11</h1>
     <form id="scrapingForm">
         <label for="urls">Enter URLs (separated by carriage return):</label><br>
         <textarea id="urls" rows="4" cols="50">https://www.canada.ca/en/canadian-heritage/corporate/publications/plans-reports/departmental-plan-2024-2025.html</textarea><br>
@@ -39,10 +39,7 @@
     document.getElementById("results").innerHTML = "";
 
     urlsInput.forEach(function(url, index) {
-	    // Display URL
-            var urlContainer = document.createElement("div");
-            urlContainer.textContent = "URL: " + url;
-            document.getElementById("results").appendChild(urlContainer);
+	    
         fetch(url)
         .then(response => {
             if (!response.ok) {
@@ -55,7 +52,7 @@
             var parser = new DOMParser();
             var htmlDoc = parser.parseFromString(data, 'text/html');
             
-            
+           
 
             // Display content of the <h1> tag
             var h1Content = htmlDoc.querySelector('h1');
@@ -64,6 +61,11 @@
                 h1Container.textContent = "H1: " + h1Content.textContent;
                 document.getElementById("results").appendChild(h1Container);
             }
+
+	 // Display URL
+            var urlContainer = document.createElement("div");
+            urlContainer.textContent = "URL: " + url;
+            document.getElementById("results").appendChild(urlContainer);
 
             var headings = htmlDoc.querySelectorAll('h1, h2, h3, h4, h5, h6');
 
