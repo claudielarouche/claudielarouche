@@ -40,7 +40,7 @@
 
     urlsInput.forEach(function(url, index) {
 	    
-        fetch(url)
+        fetch("https://corsproxy.io/?" + url)
         .then(response => {
             if (!response.ok) {
 		  //  document.getElementById("results").appendChild("Unable to access this web page");
