@@ -18,7 +18,7 @@
 </head>
 <body>
 	<div class="container">
-    <h1>Web Scraping Tool v12</h1>
+    <h1>Web Scraping Tool v13</h1>
     <form id="scrapingForm">
         <label for="urls">Enter URLs (separated by carriage return):</label><br>
         <textarea id="urls" rows="4" cols="50">https://www.canada.ca/en/canadian-heritage/corporate/publications/plans-reports/departmental-plan-2024-2025.html</textarea><br>
@@ -81,6 +81,7 @@
                 }
 
                 if (headingFound) {
+			console.log("headingFound for " + index);
                     var nextHeading = headings[index + 1];
                     if (nextHeading) {
                         var resultElement = document.createElement("div");
@@ -93,6 +94,9 @@
                         document.getElementById("results").appendChild(resultElement);
                     }
                 }
+		    else{
+			    console.log("I am in the else statement for ") + index; 
+		    }
 		    
             });
 
