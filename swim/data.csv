@@ -1,78 +1,78 @@
-Sort Order,Pool Name,Address,Day of week,Time of day,Swim Type,Reservation Required?
-1,Brewer Pool,100 Brewer Way,Monday,07:30 - 14:00,Lane Swim,No
-1,Brewer Pool,100 Brewer Way,Monday,20:30 - 21:30,Lane Swim,No
-2,Brewer Pool,100 Brewer Way,Tuesday,09:05 - 10:00,Aquafit general - Shallow,No
-2,Brewer Pool,100 Brewer Way,Tuesday,10:00 - 10:55,Aquafit general - Shallow,No
-2,Brewer Pool,100 Brewer Way,Tuesday,09:05 - 10:00,Aquafit general - Deep,No
-2,Brewer Pool,100 Brewer Way,Tuesday,10:00 - 10:55,Aquafit general - Deep,No
-2,Brewer Pool,100 Brewer Way,Tuesday,08:00 - 09:00,Lane Swim,No
-2,Brewer Pool,100 Brewer Way,Tuesday,11:00 - 12:00,Lane Swim,No
-2,Brewer Pool,100 Brewer Way,Tuesday,20:00 - 21:30,Lane Swim,No
-3,Brewer Pool,100 Brewer Way,Wednesday,09:35 - 10:30,Aquafit general - Shallow,No
-3,Brewer Pool,100 Brewer Way,Wednesday,10:30 - 11:25,Aquafit general - Shallow,No
-3,Brewer Pool,100 Brewer Way,Wednesday,09:35 - 10:30,Aquafit general - Deep,No
-3,Brewer Pool,100 Brewer Way,Wednesday,10:30 - 11:25,Aquafit general - Deep,No
-3,Brewer Pool,100 Brewer Way,Wednesday,07:30 - 09:30,Lane Swim,No
-3,Brewer Pool,100 Brewer Way,Wednesday,11:30 - 13:00,Lane Swim,No
-3,Brewer Pool,100 Brewer Way,Wednesday,20:00 - 21:30,Lane Swim,No
-4,Brewer Pool,100 Brewer Way,Thursday,09:05 - 10:00,Aquafit general - Shallow,No
-4,Brewer Pool,100 Brewer Way,Thursday,10:00 - 10:55,Aquafit general - Shallow,No
-4,Brewer Pool,100 Brewer Way,Thursday,09:05 - 10:00,Aquafit general - Deep,No
-4,Brewer Pool,100 Brewer Way,Thursday,10:00 - 10:55,Aquafit general - Deep,No
-4,Brewer Pool,100 Brewer Way,Thursday,08:00 - 09:00,Lane Swim,No
-4,Brewer Pool,100 Brewer Way,Thursday,11:00 - 12:00,Lane Swim,No
-5,Brewer Pool,100 Brewer Way,Friday,09:35 - 10:30,Aquafit general - Shallow,No
-5,Brewer Pool,100 Brewer Way,Friday,10:30 - 11:25,Aquafit general - Shallow,No
-5,Brewer Pool,100 Brewer Way,Friday,09:35 - 10:30,Aquafit general - Deep,No
-5,Brewer Pool,100 Brewer Way,Friday,10:30 - 11:25,Aquafit general - Deep,No
-5,Brewer Pool,100 Brewer Way,Friday,07:30 - 09:30,Lane Swim,No
-5,Brewer Pool,100 Brewer Way,Friday,11:30 - 14:00,Lane Swim,No
-6,Brewer Pool,100 Brewer Way,Saturday,13:30 - 14:30,Public swim,No
-6,Brewer Pool,100 Brewer Way,Saturday,12:30 - 13:30,Lane Swim,No
-7,Brewer Pool,100 Brewer Way,Sunday,13:30 - 14:30,Public swim,No
-7,Brewer Pool,100 Brewer Way,Sunday,12:30 - 13:30,Lane Swim,No
-1,Deborah Anne Kirwan Pool,1300 Kitchener Avenue,Monday,20:30 - 21:30,Lane swim ,No
-1,Deborah Anne Kirwan Pool,1300 Kitchener Avenue,Monday,19:30 - 20:30,Public swim,No
-1,Deborah Anne Kirwan Pool,1300 Kitchener Avenue,Monday,16:00 - 17:00,50+ Swim ,No
-2,Deborah Anne Kirwan Pool,1300 Kitchener Avenue,Tuesday,20:30 - 21:30,Lane swim ,No
-2,Deborah Anne Kirwan Pool,1300 Kitchener Avenue,Tuesday,19:30 - 20:30,Public swim,No
-2,Deborah Anne Kirwan Pool,1300 Kitchener Avenue,Tuesday,16:00 - 17:00,50+ Swim ,No
-3,Deborah Anne Kirwan Pool,1300 Kitchener Avenue,Wednesday,19:45 - 21:30,Women's only public swim        ,TBD
-3,Deborah Anne Kirwan Pool,1300 Kitchener Avenue,Wednesday,16:00 - 17:00,50+ Swim ,No
-4,Deborah Anne Kirwan Pool,1300 Kitchener Avenue,Thursday,20:30 - 21:30,Lane swim ,No
-4,Deborah Anne Kirwan Pool,1300 Kitchener Avenue,Thursday,19:30 - 20:30,Public swim,No
-4,Deborah Anne Kirwan Pool,1300 Kitchener Avenue,Thursday,16:00 - 17:00,50+ Swim ,No
-5,Deborah Anne Kirwan Pool,1300 Kitchener Avenue,Friday,17:00 - 19:00,Public swim,No
-5,Deborah Anne Kirwan Pool,1300 Kitchener Avenue,Friday,16:00 - 17:00,50+ Swim ,No
-6,Deborah Anne Kirwan Pool,1300 Kitchener Avenue,Saturday,13:00 - 16:00,Public swim,No
-6,Deborah Anne Kirwan Pool,1300 Kitchener Avenue,Saturday,12:00 - 13:00,Preschool Swim ,No
-7,Deborah Anne Kirwan Pool,1300 Kitchener Avenue,Sunday,13:00 - 16:00,Public swim,No
-7,Deborah Anne Kirwan Pool,1300 Kitchener Avenue,Sunday,12:00 - 13:00,50+ Swim ,No
-1,Lowertown Community Centre and Pool,40 Cobourg Street,Monday,08:30 - 10:00,Lane swim ,No
-1,Lowertown Community Centre and Pool,40 Cobourg Street,Monday,11:00 - 13:00,Lane swim ,No
-1,Lowertown Community Centre and Pool,40 Cobourg Street,Monday,20:30 - 21:30,Lane swim ,No
-1,Lowertown Community Centre and Pool,40 Cobourg Street,Monday,10:00 - 11:00,50+ Swim ,No
-1,Lowertown Community Centre and Pool,40 Cobourg Street,Monday,15:00 - 16:00,50+ Swim ,No
-1,Lowertown Community Centre and Pool,40 Cobourg Street,Monday,13:00 - 14:00,50+ Vitality ,No
-2,Lowertown Community Centre and Pool,40 Cobourg Street,Tuesday,11:00 - 14:00,Lane swim ,No
-2,Lowertown Community Centre and Pool,40 Cobourg Street,Tuesday,19:00 - 20:00,Lane swim ,No
-2,Lowertown Community Centre and Pool,40 Cobourg Street,Tuesday,10:00 - 11:00,50+ Swim ,No
-2,Lowertown Community Centre and Pool,40 Cobourg Street,Tuesday,14:00 - 15:30,50+ Swim ,No
-3,Lowertown Community Centre and Pool,40 Cobourg Street,Wednesday,11:00 - 13:00,Lane swim ,No
-3,Lowertown Community Centre and Pool,40 Cobourg Street,Wednesday,20:00 - 21:00,Lane swim ,No
-3,Lowertown Community Centre and Pool,40 Cobourg Street,Wednesday,18:00 - 20:00,Public swim,No
-3,Lowertown Community Centre and Pool,40 Cobourg Street,Wednesday,15:00 - 16:00,50+ Swim ,No
-3,Lowertown Community Centre and Pool,40 Cobourg Street,Wednesday,10:00 - 11:00,50+ Vitality ,No
-4,Lowertown Community Centre and Pool,40 Cobourg Street,Thursday,06:30 - 10:00,Lane swim ,No
-4,Lowertown Community Centre and Pool,40 Cobourg Street,Thursday,11:00 - 14:00,Lane swim ,No
-4,Lowertown Community Centre and Pool,40 Cobourg Street,Thursday,19:00 - 20:00,Lane swim ,No
-4,Lowertown Community Centre and Pool,40 Cobourg Street,Thursday,10:00 - 11:00,50+ Swim ,No
-5,Lowertown Community Centre and Pool,40 Cobourg Street,Friday,11:00 - 13:00,Lane swim ,No
-5,Lowertown Community Centre and Pool,40 Cobourg Street,Friday,14:00 - 16:00,Lane swim ,No
-5,Lowertown Community Centre and Pool,40 Cobourg Street,Friday,20:00 - 21:00,Lane swim ,No
-5,Lowertown Community Centre and Pool,40 Cobourg Street,Friday,16:00 - 18:00,Public swim,No
-5,Lowertown Community Centre and Pool,40 Cobourg Street,Friday,10:00 - 11:00,50+ Vitality ,No
-6,Lowertown Community Centre and Pool,40 Cobourg Street,Saturday,15:00 - 16:00,Lane swim ,No
-6,Lowertown Community Centre and Pool,40 Cobourg Street,Saturday,12:00 - 15:00,Public swim,No
-7,Lowertown Community Centre and Pool,40 Cobourg Street,Sunday,15:00 - 16:00,Lane swim ,No
-7,Lowertown Community Centre and Pool,40 Cobourg Street,Sunday,12:00 - 15:00,Public swim,No
+Sort Order,Day of week,Time of day,Pool Name,Address,Area,Swim Type,Reservation Required?
+1,Monday,07:30 - 14:00,Brewer Pool,100 Brewer Way,TBD,Lane Swim,No
+1,Monday,08:30 - 10:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,Lane swim ,No
+1,Monday,10:00 - 11:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,50+ Swim ,No
+1,Monday,11:00 - 13:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,Lane swim ,No
+1,Monday,13:00 - 14:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,50+ Vitality ,No
+1,Monday,15:00 - 16:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,50+ Swim ,No
+1,Monday,16:00 - 17:00,Deborah Anne Kirwan Pool,1300 Kitchener Avenue (link is external),TBD,50+ Swim ,No
+1,Monday,19:30 - 20:30,Deborah Anne Kirwan Pool,1300 Kitchener Avenue (link is external),TBD,Public swim,No
+1,Monday,20:30 - 21:30,Brewer Pool,100 Brewer Way,TBD,Lane Swim,No
+1,Monday,20:30 - 21:30,Deborah Anne Kirwan Pool,1300 Kitchener Avenue (link is external),TBD,Lane swim ,No
+1,Monday,20:30 - 21:30,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,Lane swim ,No
+2,Tuesday,08:00 - 09:00,Brewer Pool,100 Brewer Way,TBD,Lane Swim,No
+2,Tuesday,09:05 - 10:00,Brewer Pool,100 Brewer Way,TBD,Aquafit general - Shallow,No
+2,Tuesday,09:05 - 10:00,Brewer Pool,100 Brewer Way,TBD,Aquafit general - Deep,No
+2,Tuesday,10:00 - 10:55,Brewer Pool,100 Brewer Way,TBD,Aquafit general - Shallow,No
+2,Tuesday,10:00 - 10:55,Brewer Pool,100 Brewer Way,TBD,Aquafit general - Deep,No
+2,Tuesday,10:00 - 11:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,50+ Swim ,No
+2,Tuesday,11:00 - 12:00,Brewer Pool,100 Brewer Way,TBD,Lane Swim,No
+2,Tuesday,11:00 - 14:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,Lane swim ,No
+2,Tuesday,14:00 - 15:30,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,50+ Swim ,No
+2,Tuesday,16:00 - 17:00,Deborah Anne Kirwan Pool,1300 Kitchener Avenue (link is external),TBD,50+ Swim ,No
+2,Tuesday,19:00 - 20:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,Lane swim ,No
+2,Tuesday,19:30 - 20:30,Deborah Anne Kirwan Pool,1300 Kitchener Avenue (link is external),TBD,Public swim,No
+2,Tuesday,20:00 - 21:30,Brewer Pool,100 Brewer Way,TBD,Lane Swim,No
+2,Tuesday,20:30 - 21:30,Deborah Anne Kirwan Pool,1300 Kitchener Avenue (link is external),TBD,Lane swim ,No
+3,Wednesday,07:30 - 09:30,Brewer Pool,100 Brewer Way,TBD,Lane Swim,No
+3,Wednesday,09:35 - 10:30,Brewer Pool,100 Brewer Way,TBD,Aquafit general - Shallow,No
+3,Wednesday,09:35 - 10:30,Brewer Pool,100 Brewer Way,TBD,Aquafit general - Deep,No
+3,Wednesday,10:00 - 11:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,50+ Vitality ,No
+3,Wednesday,10:30 - 11:25,Brewer Pool,100 Brewer Way,TBD,Aquafit general - Shallow,No
+3,Wednesday,10:30 - 11:25,Brewer Pool,100 Brewer Way,TBD,Aquafit general - Deep,No
+3,Wednesday,11:00 - 13:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,Lane swim ,No
+3,Wednesday,11:30 - 13:00,Brewer Pool,100 Brewer Way,TBD,Lane Swim,No
+3,Wednesday,15:00 - 16:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,50+ Swim ,No
+3,Wednesday,16:00 - 17:00,Deborah Anne Kirwan Pool,1300 Kitchener Avenue (link is external),TBD,50+ Swim ,No
+3,Wednesday,18:00 - 20:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,Public swim,No
+3,Wednesday,19:45 - 21:30,Deborah Anne Kirwan Pool,1300 Kitchener Avenue (link is external),TBD,Women's only public swim        ,TBD
+3,Wednesday,20:00 - 21:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,Lane swim ,No
+3,Wednesday,20:00 - 21:30,Brewer Pool,100 Brewer Way,TBD,Lane Swim,No
+4,Thursday,06:30 - 10:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,Lane swim ,No
+4,Thursday,08:00 - 09:00,Brewer Pool,100 Brewer Way,TBD,Lane Swim,No
+4,Thursday,09:05 - 10:00,Brewer Pool,100 Brewer Way,TBD,Aquafit general - Shallow,No
+4,Thursday,09:05 - 10:00,Brewer Pool,100 Brewer Way,TBD,Aquafit general - Deep,No
+4,Thursday,10:00 - 10:55,Brewer Pool,100 Brewer Way,TBD,Aquafit general - Shallow,No
+4,Thursday,10:00 - 10:55,Brewer Pool,100 Brewer Way,TBD,Aquafit general - Deep,No
+4,Thursday,10:00 - 11:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,50+ Swim ,No
+4,Thursday,11:00 - 12:00,Brewer Pool,100 Brewer Way,TBD,Lane Swim,No
+4,Thursday,11:00 - 14:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,Lane swim ,No
+4,Thursday,16:00 - 17:00,Deborah Anne Kirwan Pool,1300 Kitchener Avenue (link is external),TBD,50+ Swim ,No
+4,Thursday,19:00 - 20:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,Lane swim ,No
+4,Thursday,19:30 - 20:30,Deborah Anne Kirwan Pool,1300 Kitchener Avenue (link is external),TBD,Public swim,No
+4,Thursday,20:30 - 21:30,Deborah Anne Kirwan Pool,1300 Kitchener Avenue (link is external),TBD,Lane swim ,No
+5,Friday,07:30 - 09:30,Brewer Pool,100 Brewer Way,TBD,Lane Swim,No
+5,Friday,09:35 - 10:30,Brewer Pool,100 Brewer Way,TBD,Aquafit general - Shallow,No
+5,Friday,09:35 - 10:30,Brewer Pool,100 Brewer Way,TBD,Aquafit general - Deep,No
+5,Friday,10:00 - 11:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,50+ Vitality ,No
+5,Friday,10:30 - 11:25,Brewer Pool,100 Brewer Way,TBD,Aquafit general - Shallow,No
+5,Friday,10:30 - 11:25,Brewer Pool,100 Brewer Way,TBD,Aquafit general - Deep,No
+5,Friday,11:00 - 13:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,Lane swim ,No
+5,Friday,11:30 - 14:00,Brewer Pool,100 Brewer Way,TBD,Lane Swim,No
+5,Friday,14:00 - 16:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,Lane swim ,No
+5,Friday,16:00 - 17:00,Deborah Anne Kirwan Pool,1300 Kitchener Avenue (link is external),TBD,50+ Swim ,No
+5,Friday,16:00 - 18:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,Public swim,No
+5,Friday,17:00 - 19:00,Deborah Anne Kirwan Pool,1300 Kitchener Avenue (link is external),TBD,Public swim,No
+5,Friday,20:00 - 21:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,Lane swim ,No
+6,Saturday,12:00 - 13:00,Deborah Anne Kirwan Pool,1300 Kitchener Avenue (link is external),TBD,Preschool Swim ,No
+6,Saturday,12:00 - 15:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,Public swim,No
+6,Saturday,12:30 - 13:30,Brewer Pool,100 Brewer Way,TBD,Lane Swim,No
+6,Saturday,13:00 - 16:00,Deborah Anne Kirwan Pool,1300 Kitchener Avenue (link is external),TBD,Public swim,No
+6,Saturday,13:30 - 14:30,Brewer Pool,100 Brewer Way,TBD,Public swim,No
+6,Saturday,15:00 - 16:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,Lane swim ,No
+7,Sunday,12:00 - 13:00,Deborah Anne Kirwan Pool,1300 Kitchener Avenue (link is external),TBD,50+ Swim ,No
+7,Sunday,12:00 - 15:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,Public swim,No
+7,Sunday,12:30 - 13:30,Brewer Pool,100 Brewer Way,TBD,Lane Swim,No
+7,Sunday,13:00 - 16:00,Deborah Anne Kirwan Pool,1300 Kitchener Avenue (link is external),TBD,Public swim,No
+7,Sunday,13:30 - 14:30,Brewer Pool,100 Brewer Way,TBD,Public swim,No
+7,Sunday,15:00 - 16:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,Lane swim ,No
