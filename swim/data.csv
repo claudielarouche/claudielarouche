@@ -1,1 +1,33 @@
-
+Sort Order,Pool Name,Address,Day of week,Time of day,Swim Type,Reservation Required?
+1,Brewer Pool,100 Brewer Way,Monday,07:30 - 14:00,Lane Swim,No
+1,Brewer Pool,100 Brewer Way,Monday,20:30 - 21:30,Lane Swim,No
+2,Brewer Pool,100 Brewer Way,Tuesday,09:05 - 10:00,Aquafit general - Shallow,No
+2,Brewer Pool,100 Brewer Way,Tuesday,10:00 - 10:55,Aquafit general - Shallow,No
+2,Brewer Pool,100 Brewer Way,Tuesday,09:05 - 10:00,Aquafit general - Deep,No
+2,Brewer Pool,100 Brewer Way,Tuesday,10:00 - 10:55,Aquafit general - Deep,No
+2,Brewer Pool,100 Brewer Way,Tuesday,08:00 - 09:00,Lane Swim,No
+2,Brewer Pool,100 Brewer Way,Tuesday,11:00 - 12:00,Lane Swim,No
+2,Brewer Pool,100 Brewer Way,Tuesday,20:00 - 21:30,Lane Swim,No
+3,Brewer Pool,100 Brewer Way,Wednesday,09:35 - 10:30,Aquafit general - Shallow,No
+3,Brewer Pool,100 Brewer Way,Wednesday,10:30 - 11:25,Aquafit general - Shallow,No
+3,Brewer Pool,100 Brewer Way,Wednesday,09:35 - 10:30,Aquafit general - Deep,No
+3,Brewer Pool,100 Brewer Way,Wednesday,10:30 - 11:25,Aquafit general - Deep,No
+3,Brewer Pool,100 Brewer Way,Wednesday,07:30 - 09:30,Lane Swim,No
+3,Brewer Pool,100 Brewer Way,Wednesday,11:30 - 13:00,Lane Swim,No
+3,Brewer Pool,100 Brewer Way,Wednesday,20:00 - 21:30,Lane Swim,No
+4,Brewer Pool,100 Brewer Way,Thursday,09:05 - 10:00,Aquafit general - Shallow,No
+4,Brewer Pool,100 Brewer Way,Thursday,10:00 - 10:55,Aquafit general - Shallow,No
+4,Brewer Pool,100 Brewer Way,Thursday,09:05 - 10:00,Aquafit general - Deep,No
+4,Brewer Pool,100 Brewer Way,Thursday,10:00 - 10:55,Aquafit general - Deep,No
+4,Brewer Pool,100 Brewer Way,Thursday,08:00 - 09:00,Lane Swim,No
+4,Brewer Pool,100 Brewer Way,Thursday,11:00 - 12:00,Lane Swim,No
+5,Brewer Pool,100 Brewer Way,Friday,09:35 - 10:30,Aquafit general - Shallow,No
+5,Brewer Pool,100 Brewer Way,Friday,10:30 - 11:25,Aquafit general - Shallow,No
+5,Brewer Pool,100 Brewer Way,Friday,09:35 - 10:30,Aquafit general - Deep,No
+5,Brewer Pool,100 Brewer Way,Friday,10:30 - 11:25,Aquafit general - Deep,No
+5,Brewer Pool,100 Brewer Way,Friday,07:30 - 09:30,Lane Swim,No
+5,Brewer Pool,100 Brewer Way,Friday,11:30 - 14:00,Lane Swim,No
+6,Brewer Pool,100 Brewer Way,Saturday,13:30 - 14:30,Public swim,No
+6,Brewer Pool,100 Brewer Way,Saturday,12:30 - 13:30,Lane Swim,No
+7,Brewer Pool,100 Brewer Way,Sunday,13:30 - 14:30,Public swim,No
+7,Brewer Pool,100 Brewer Way,Sunday,12:30 - 13:30,Lane Swim,No
