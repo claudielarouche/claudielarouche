@@ -19,9 +19,11 @@
 </head>
 <body>
 	<div class="container">
-    <h1>City of Ottawa Activity Schedule Extractor v36</h1>
+    <h1>City of Ottawa Activity Schedule Extractor v37</h1>
 		<p>Last version that works perfectly is v20</p>
-		<p>v35 has the correct start time and indicator<p>		
+		<p>v36 has the correct start time and indicator and correct end time<p>		
+			<p>Need to handle Noon</p>
+		<p>need to handle cases when am was not written but should have been (if start bigger than end, do start minus 12)</p>
     <form id="scrapingForm">
         <label for="urls">Enter URLs (separated by carriage return):</label><br>
         <textarea id="urls" rows="4" cols="50">https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/francois-dupuis-recreation-centre</textarea><br>        
@@ -85,7 +87,8 @@ function scrape() {
 				    var startTime = extractStartTime(time);
 				    var amPmIndicatorStart = extractAmPmIndicatorStart(time);
 				    var endTime = extractEndTime(time);
-				    csvContent += '"' + day + '","' + type + '","' + time + '","' + weekday + '","' + startTime + '","' + amPmIndicatorStart + '","' + endTime + '"<br>';
+				    var amPmIndicatorEnd = extractAmPmIndicatorEnd(time);
+				    csvContent += '"' + day + '","' + type + '","' + time + '","' + weekday + '","' + startTime + '","' + amPmIndicatorStart + '","' + endTime + '","' + amPmIndicatorEnd +'"<br>';
 				});
 
                         });
@@ -172,6 +175,19 @@ function extractEndTime(time) {
 function extractAmPmIndicatorStart(time) {
     // Regular expression to match two letters
     var regex = /[a-zA-Z]{2}/;
+    var match = time.match(regex);
+    if (match) {
+        return match[0];
+    } else {
+        // Return an empty string if no match found
+        return "";
+    }
+}
+
+	    // Function to extract am/pm indicator from time field
+function extractAmPmIndicatorEnd(time) {
+    // Regular expression to match two letters
+    var regex = /[a-zA-Z]{2}$/;
     var match = time.match(regex);
     if (match) {
         return match[0];
