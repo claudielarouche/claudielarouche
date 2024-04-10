@@ -18,7 +18,7 @@
 </head>
 <body>
 	<div class="container">
-    <h1>City of Ottawa Swim Schedule Extractor v11</h1>
+    <h1>City of Ottawa Swim Schedule Extractor v12</h1>
     <form id="scrapingForm">
         <label for="urls">Enter URLs (separated by carriage return):</label><br>
         <textarea id="urls" rows="4" cols="50">https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/francois-dupuis-recreation-centre</textarea><br>        
@@ -67,15 +67,15 @@
                             rowData += '"' + cell.textContent.trim().replace(/\n/g, '') + '",';
                         });
 
-                        // If row data is not empty, add it to CSV content with a newline
+                        // If row data is not empty, add it to CSV content with a line break
                         if (rowData.trim() !== "") {
-                            csvContent += rowData + "\n";
+                            csvContent += rowData + "<br>";
                         }
                     });
 
                     // Append CSV content to results div
                     var resultElement = document.createElement("div");
-                    resultElement.textContent = csvContent;
+                    resultElement.innerHTML = csvContent;
                     document.getElementById("results").appendChild(resultElement);
                 });
             } else {
@@ -94,6 +94,7 @@
         });
     });
 }
+
 
 
 
