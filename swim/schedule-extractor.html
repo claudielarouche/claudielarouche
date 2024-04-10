@@ -19,9 +19,9 @@
 </head>
 <body>
 	<div class="container">
-    <h1>City of Ottawa Activity Schedule Extractor v37</h1>
+    <h1>City of Ottawa Activity Schedule Extractor v38</h1>
 		<p>Last version that works perfectly is v20</p>
-		<p>v36 has the correct start time and indicator and correct end time<p>		
+		<p>v37 has the correct start time and indicator and correct end time and indicator in most cases<p>		
 			<p>Need to handle Noon</p>
 		<p>need to handle cases when am was not written but should have been (if start bigger than end, do start minus 12)</p>
     <form id="scrapingForm">
@@ -82,6 +82,12 @@ function scrape() {
                             
                             // Loop through each time and add to CSV content
 				times.forEach(function(time) {
+					// Replace "Noon" or "noon" with "12:00"
+					    time = time.replace(/noon/gi, '12:00');
+					    
+					    // Remove carriage return
+					    time = time.replace(/\r?\n|\r/g, '');
+					
 				    var weekday = getWeekdayFromColumnNumber(columnNumber);
 				   
 				    var startTime = extractStartTime(time);
