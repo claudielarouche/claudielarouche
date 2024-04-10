@@ -1,4 +1,4 @@
-console.log('version 4');
+console.log('version 1');
 
 let originalData = []; // Initialize as an empty array
 
@@ -54,7 +54,7 @@ function renderTable(data) {
     let tableHtml = '<table id="dataTable"><thead><tr>';
     headers.forEach(header => {
         // Skip rendering the URL column
-        if (header !== 'URL') {
+        if (header !== 'Sort Order') {
             tableHtml += `<th>${header}</th>`;
         }
     });
@@ -69,7 +69,7 @@ function renderTable(data) {
 
         headers.forEach(header => {
             // Skip rendering the URL column
-            if (header !== 'URL') {
+            if (header !== 'Sort Order') {
                 switch (header) {
                     case 'Name':
                         // Merge URL with School Name to create a clickable link
