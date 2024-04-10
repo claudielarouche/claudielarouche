@@ -18,7 +18,7 @@
 </head>
 <body>
 	<div class="container">
-    <h1>City of Ottawa Swim Schedule Extractor</h1>
+    <h1>City of Ottawa Swim Schedule Extractor v2</h1>
     <form id="scrapingForm">
         <label for="urls">Enter URLs (separated by carriage return):</label><br>
         <textarea id="urls" rows="4" cols="50">https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/francois-dupuis-recreation-centre</textarea><br>        
@@ -58,6 +58,19 @@
                 var h1Container = document.createElement("h2");
                 h1Container.textContent = "H1: " + h1Content.textContent;
                 document.getElementById("results").appendChild(h1Container);
+            }
+
+		// Find the table with caption containing "Swim" (case insensitive)
+            var swimTable = htmlDoc.querySelector('table[summary*="swim" i]');
+            if (swimTable) {
+                // Append the HTML content of the swim table to the results div
+                var swimTableHTML = swimTable.outerHTML;
+                document.getElementById("results").insertAdjacentHTML('beforeend', swimTableHTML);
+            } else {
+                // If no swim table found, display message
+                var noSwimTableMessage = document.createElement("div");
+                noSwimTableMessage.textContent = "No swim schedule found on this page.";
+                document.getElementById("results").appendChild(noSwimTableMessage);
             }
 
 	 
