@@ -18,7 +18,7 @@
 </head>
 <body>
 	<div class="container">
-    <h1>City of Ottawa Swim Schedule Extractor v7</h1>
+    <h1>City of Ottawa Swim Schedule Extractor v9</h1>
     <form id="scrapingForm">
         <label for="urls">Enter URLs (separated by carriage return):</label><br>
         <textarea id="urls" rows="4" cols="50">https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/francois-dupuis-recreation-centre</textarea><br>        
@@ -47,25 +47,36 @@
             var parser = new DOMParser();
             var htmlDoc = parser.parseFromString(data, 'text/html');
             
-            // Find the table row containing the swim schedule
-            var swimRow = htmlDoc.querySelector('tr');
+            // Find all tables in the document
+            var tables = htmlDoc.querySelectorAll('table');
 
-            if (swimRow) {
-                // Extract data from each cell and format as CSV
-                var csvContent = "";
-                swimRow.querySelectorAll('th, td').forEach(function(cell) {
-                    csvContent += cell.textContent.trim().replace(/\n/g, '') + ",";
+            if (tables.length > 0) {
+                // Loop through each table
+                tables.forEach(function(table) {
+                    // Initialize CSV content for this table
+                    var csvContent = "";
+
+                    // Loop through each table row
+                    table.querySelectorAll('tr').forEach(function(row) {
+                        // Loop through each table cell (th or td) in the row
+                        row.querySelectorAll('th, td').forEach(function(cell) {
+                            // Add cell content to CSV content
+                            csvContent += '"' + cell.textContent.trim().replace(/\n/g, '') + '",';
+                        });
+                        // Add newline after each row
+                        csvContent += "\n";
+                    });
+
+                    // Append CSV content to results div
+                    var resultElement = document.createElement("div");
+                    resultElement.textContent = csvContent;
+                    document.getElementById("results").appendChild(resultElement);
                 });
-
-                // Append CSV content to results div
-                var resultElement = document.createElement("div");
-                resultElement.textContent = csvContent;
-                document.getElementById("results").appendChild(resultElement);
             } else {
-                // If no swim row found, display message
-                var noSwimRowMessage = document.createElement("div");
-                noSwimRowMessage.textContent = "No swim schedule found on this page.";
-                document.getElementById("results").appendChild(noSwimRowMessage);
+                // If no tables found, display message
+                var noTablesMessage = document.createElement("div");
+                noTablesMessage.textContent = "No tables found on this page.";
+                document.getElementById("results").appendChild(noTablesMessage);
             }
         })
         .catch(error => {
@@ -77,6 +88,7 @@
         });
     });
 }
+
 
 
 
