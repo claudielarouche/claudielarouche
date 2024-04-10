@@ -100,7 +100,7 @@ function scrape() {
     					var finalStartTime = buildFinalTime(startTime, amPmIndicatorStart);
     					var finalEndTime = buildFinalTime(endTime, amPmIndicatorEnd);
 					
-				    csvContent += '"' + day + '","' + type + '","' + time + '","' + weekday + '","' + startTime + '","' + amPmIndicatorStart + '","' + endTime + '","' + amPmIndicatorEnd + '","' + finalStartTime + " - " + finalEndTime + '"<br>';
+				    csvContent += '"' + day + '","' + type + '","' + time + '","' + weekday + finalStartTime + " - " + finalEndTime + '"<br>';
 				});
 
                         });
