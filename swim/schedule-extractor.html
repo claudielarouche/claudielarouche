@@ -19,7 +19,7 @@
 </head>
 <body>
 	<div class="container">
-    <h1>City of Ottawa Swim Schedule Extractor v17</h1>
+    <h1>City of Ottawa Swim Schedule Extractor v18</h1>
     <form id="scrapingForm">
         <label for="urls">Enter URLs (separated by carriage return):</label><br>
         <textarea id="urls" rows="4" cols="50">https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/francois-dupuis-recreation-centre</textarea><br>        
@@ -30,7 +30,7 @@
     </div>
 	</div>
     <script>
-      function scrape() {
+     function scrape() {
     var urlsInput = document.getElementById("urls").value.trim().split("\n");
 
     // Clear previous results
@@ -58,26 +58,29 @@
                     var csvContent = "";
 
                     // Loop through each table row
-                    table.querySelectorAll('tr').forEach(function(row, rowIndex) {
+                    table.querySelectorAll('tr').forEach(function(row) {
+                        // Get the day from the first cell in the row
                         var day = row.querySelector('th').textContent.trim();
-			    // Skip header row
-                        if (rowIndex > 0) {
+                        
+                        // Initialize column number counter
+                        var columnNumber = 0;
+                        
+                        // Loop through each table cell (td) in the row
+                        row.querySelectorAll('td').forEach(function(cell) {
+                            // Increment column number
+                            columnNumber++;
                             
-                            
-                            // Loop through each table cell (td) in the row
-                            row.querySelectorAll('td').forEach(function(cell) {
-                                var typeElement = cell.querySelector('strong');
-                                var type = typeElement ? typeElement.textContent.trim() : '';
-                                var times = cell.textContent.split(',').map(function(time) {
-                                    return time.trim();
-                                });
-                                
-                                // Loop through each time and add to CSV content
-                                times.forEach(function(time) {
-                                    csvContent += '"' + day + '","' + type + '","' + time + '<br>';
-                                });
+                            var typeElement = cell.querySelector('strong');
+                            var type = typeElement ? typeElement.textContent.trim() : '';
+                            var times = cell.textContent.split(',').map(function(time) {
+                                return time.trim();
                             });
-                        }
+                            
+                            // Loop through each time and add to CSV content
+                            times.forEach(function(time) {
+                                csvContent += '"' + day + '","' + type + '","' + time + '","' + columnNumber + '<br>"';
+                            });
+                        });
                     });
 
                     // Append CSV content to results div
@@ -101,12 +104,6 @@
         });
     });
 }
-
-
-
-
-
-
 
 
     </script>
