@@ -1,78 +1,161 @@
 Sort Order,Day of week,Time of day,Pool Name,Address,Area,Swim Type,Reservation Required?
 1,Monday,07:30 - 14:00,Brewer Pool,100 Brewer Way,TBD,Lane Swim,No
+1,Monday,08:00 - 09:00,Sawmill Creek Community Centre and Pool,3380 D’Aoust Avenue,TBD,Aquafit general deep,No
+1,Monday,08:00 - 09:00,Sawmill Creek Community Centre and Pool,3380 D’Aoust Avenue,TBD,Aquafit general shallow,No
+1,Monday,08:00 - 10:00,Kanata Leisure Centre and Wave Pool,70 Aird Place,TBD,Lane Swim ,No
+1,Monday,08:00 - 13:00,Kanata Leisure Centre and Wave Pool,70 Aird Place,TBD,Hot Tub and Sauna ,No
 1,Monday,08:30 - 10:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,Lane swim ,No
+1,Monday,09:00 - 10:00,Sawmill Creek Community Centre and Pool,3380 D’Aoust Avenue,TBD,Aquafit general deep,No
+1,Monday,09:00 - 10:00,Sawmill Creek Community Centre and Pool,3380 D’Aoust Avenue,TBD,Aquafit general shallow,No
 1,Monday,10:00 - 11:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,50+ Swim ,No
+1,Monday,10:00 - 11:00,Kanata Leisure Centre and Wave Pool,70 Aird Place,TBD,Aquafit  ,No
+1,Monday,10:00 - 11:00,Sawmill Creek Community Centre and Pool,3380 D’Aoust Avenue,TBD,Aquafit general deep,No
+1,Monday,10:00 - 11:00,Sawmill Creek Community Centre and Pool,3380 D’Aoust Avenue,TBD,Aquafit general shallow,No
 1,Monday,11:00 - 13:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,Lane swim ,No
+1,Monday,11:00 - 13:00,Kanata Leisure Centre and Wave Pool,70 Aird Place,TBD,Lane Swim,No
+1,Monday,11:00 - 13:00,Kanata Leisure Centre and Wave Pool,70 Aird Place,TBD,Preschool swim ,No
+1,Monday,11:00 - 13:00,Sawmill Creek Community Centre and Pool,3380 D’Aoust Avenue,TBD,Lane Swim,No
 1,Monday,13:00 - 14:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,50+ Vitality ,No
 1,Monday,15:00 - 16:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,50+ Swim ,No
 1,Monday,16:00 - 17:00,Deborah Anne Kirwan Pool,1300 Kitchener Avenue,TBD,50+ Swim ,No
+1,Monday,17:00 - 21:00,Kanata Leisure Centre and Wave Pool,70 Aird Place,TBD,Hot Tub and Sauna ,No
 1,Monday,19:30 - 20:30,Deborah Anne Kirwan Pool,1300 Kitchener Avenue,TBD,Public swim,No
+1,Monday,20:00 - 21:00,Kanata Leisure Centre and Wave Pool,70 Aird Place,TBD,Lane Swim,No
+1,Monday,20:00 - 21:00,Sawmill Creek Community Centre and Pool,3380 D’Aoust Avenue,TBD,Lane Swim,No
 1,Monday,20:30 - 21:30,Brewer Pool,100 Brewer Way,TBD,Lane Swim,No
 1,Monday,20:30 - 21:30,Deborah Anne Kirwan Pool,1300 Kitchener Avenue,TBD,Lane swim ,No
 1,Monday,20:30 - 21:30,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,Lane swim ,No
+2,Tuesday,07:00 - 08:30,Sawmill Creek Community Centre and Pool,3380 D’Aoust Avenue,TBD,Lane Swim,No
 2,Tuesday,08:00 - 09:00,Brewer Pool,100 Brewer Way,TBD,Lane Swim,No
+2,Tuesday,08:00 - 10:00,Kanata Leisure Centre and Wave Pool,70 Aird Place,TBD,Hot Tub and Sauna ,No
+2,Tuesday,08:00 - 10:00,Kanata Leisure Centre and Wave Pool,70 Aird Place,TBD,Lane Swim ,No
+2,Tuesday,08:30 - 11:00,Sawmill Creek Community Centre and Pool,3380 D’Aoust Avenue,TBD,Lane Swim (Shared pool),No
 2,Tuesday,09:05 - 10:00,Brewer Pool,100 Brewer Way,TBD,Aquafit general - Shallow,No
 2,Tuesday,09:05 - 10:00,Brewer Pool,100 Brewer Way,TBD,Aquafit general - Deep,No
 2,Tuesday,10:00 - 10:55,Brewer Pool,100 Brewer Way,TBD,Aquafit general - Shallow,No
 2,Tuesday,10:00 - 10:55,Brewer Pool,100 Brewer Way,TBD,Aquafit general - Deep,No
 2,Tuesday,10:00 - 11:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,50+ Swim ,No
+2,Tuesday,10:00 - 11:00,Sawmill Creek Community Centre and Pool,3380 D’Aoust Avenue,TBD,Preschool swim (shared pool),No
 2,Tuesday,11:00 - 12:00,Brewer Pool,100 Brewer Way,TBD,Lane Swim,No
+2,Tuesday,11:00 - 13:00,Kanata Leisure Centre and Wave Pool,70 Aird Place,TBD,Hot Tub and Sauna ,No
+2,Tuesday,11:00 - 13:00,Kanata Leisure Centre and Wave Pool,70 Aird Place,TBD,Lane Swim,No
+2,Tuesday,11:00 - 13:00,Kanata Leisure Centre and Wave Pool,70 Aird Place,TBD,Preschool swim ,No
+2,Tuesday,11:00 - 13:00,Sawmill Creek Community Centre and Pool,3380 D’Aoust Avenue,TBD,Lane Swim,No
 2,Tuesday,11:00 - 14:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,Lane swim ,No
 2,Tuesday,14:00 - 15:30,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,50+ Swim ,No
 2,Tuesday,16:00 - 17:00,Deborah Anne Kirwan Pool,1300 Kitchener Avenue,TBD,50+ Swim ,No
+2,Tuesday,17:00 - 21:00,Kanata Leisure Centre and Wave Pool,70 Aird Place,TBD,Hot Tub and Sauna ,No
 2,Tuesday,19:00 - 20:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,Lane swim ,No
+2,Tuesday,19:00 - 20:00,Sawmill Creek Community Centre and Pool,3380 D’Aoust Avenue,TBD,Aquafit general deep,No
+2,Tuesday,19:00 - 20:00,Sawmill Creek Community Centre and Pool,3380 D’Aoust Avenue,TBD,Aquafit general shallow,No
 2,Tuesday,19:30 - 20:30,Deborah Anne Kirwan Pool,1300 Kitchener Avenue,TBD,Public swim,No
+2,Tuesday,20:00 - 21:00,Kanata Leisure Centre and Wave Pool,70 Aird Place,TBD,Lane Swim,No
+2,Tuesday,20:00 - 21:00,Sawmill Creek Community Centre and Pool,3380 D’Aoust Avenue,TBD,Lane Swim,No
 2,Tuesday,20:00 - 21:30,Brewer Pool,100 Brewer Way,TBD,Lane Swim,No
 2,Tuesday,20:30 - 21:30,Deborah Anne Kirwan Pool,1300 Kitchener Avenue,TBD,Lane swim ,No
 3,Wednesday,07:30 - 09:30,Brewer Pool,100 Brewer Way,TBD,Lane Swim,No
+3,Wednesday,08:00 - 09:00,Sawmill Creek Community Centre and Pool,3380 D’Aoust Avenue,TBD,Aquafit general deep,No
+3,Wednesday,08:00 - 09:00,Sawmill Creek Community Centre and Pool,3380 D’Aoust Avenue,TBD,Aquafit general shallow,No
+3,Wednesday,08:00 - 13:00,Kanata Leisure Centre and Wave Pool,70 Aird Place,TBD,Hot Tub and Sauna ,No
+3,Wednesday,08:00 - 13:00,Kanata Leisure Centre and Wave Pool,70 Aird Place,TBD,Lane Swim ,No
+3,Wednesday,09:00 - 10:00,Sawmill Creek Community Centre and Pool,3380 D’Aoust Avenue,TBD,Aquafit general deep,No
+3,Wednesday,09:00 - 10:00,Sawmill Creek Community Centre and Pool,3380 D’Aoust Avenue,TBD,Aquafit general shallow,No
 3,Wednesday,09:35 - 10:30,Brewer Pool,100 Brewer Way,TBD,Aquafit general - Shallow,No
 3,Wednesday,09:35 - 10:30,Brewer Pool,100 Brewer Way,TBD,Aquafit general - Deep,No
 3,Wednesday,10:00 - 11:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,50+ Vitality ,No
+3,Wednesday,10:00 - 11:00,Sawmill Creek Community Centre and Pool,3380 D’Aoust Avenue,TBD,Aquafit general deep,No
+3,Wednesday,10:00 - 11:00,Sawmill Creek Community Centre and Pool,3380 D’Aoust Avenue,TBD,Aquafit general shallow,No
 3,Wednesday,10:30 - 11:25,Brewer Pool,100 Brewer Way,TBD,Aquafit general - Shallow,No
 3,Wednesday,10:30 - 11:25,Brewer Pool,100 Brewer Way,TBD,Aquafit general - Deep,No
 3,Wednesday,11:00 - 13:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,Lane swim ,No
+3,Wednesday,11:00 - 13:00,Sawmill Creek Community Centre and Pool,3380 D’Aoust Avenue,TBD,Lane Swim,No
 3,Wednesday,11:30 - 13:00,Brewer Pool,100 Brewer Way,TBD,Lane Swim,No
 3,Wednesday,15:00 - 16:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,50+ Swim ,No
 3,Wednesday,16:00 - 17:00,Deborah Anne Kirwan Pool,1300 Kitchener Avenue,TBD,50+ Swim ,No
+3,Wednesday,17:00 - 18:00,Kanata Leisure Centre and Wave Pool,70 Aird Place,TBD,Public swim,No
+3,Wednesday,17:00 - 21:00,Kanata Leisure Centre and Wave Pool,70 Aird Place,TBD,Hot Tub and Sauna ,No
 3,Wednesday,18:00 - 20:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,Public swim,No
+3,Wednesday,18:00 - 20:00,Kanata Leisure Centre and Wave Pool,70 Aird Place,TBD,Wave swim,No
 3,Wednesday,19:45 - 21:30,Deborah Anne Kirwan Pool,1300 Kitchener Avenue,TBD,Women's only public swim        ,TBD
 3,Wednesday,20:00 - 21:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,Lane swim ,No
+3,Wednesday,20:00 - 21:00,Kanata Leisure Centre and Wave Pool,70 Aird Place,TBD,Lane Swim ,No
+3,Wednesday,20:00 - 21:00,Sawmill Creek Community Centre and Pool,3380 D’Aoust Avenue,TBD,Lane Swim,No
 3,Wednesday,20:00 - 21:30,Brewer Pool,100 Brewer Way,TBD,Lane Swim,No
 4,Thursday,06:30 - 10:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,Lane swim ,No
+4,Thursday,07:00 - 10:00,Sawmill Creek Community Centre and Pool,3380 D’Aoust Avenue,TBD,Lane Swim,No
 4,Thursday,08:00 - 09:00,Brewer Pool,100 Brewer Way,TBD,Lane Swim,No
+4,Thursday,08:00 - 10:00,Kanata Leisure Centre and Wave Pool,70 Aird Place,TBD,Hot Tub and Sauna ,No
+4,Thursday,08:00 - 10:00,Kanata Leisure Centre and Wave Pool,70 Aird Place,TBD,Lane Swim ,No
 4,Thursday,09:05 - 10:00,Brewer Pool,100 Brewer Way,TBD,Aquafit general - Shallow,No
 4,Thursday,09:05 - 10:00,Brewer Pool,100 Brewer Way,TBD,Aquafit general - Deep,No
 4,Thursday,10:00 - 10:55,Brewer Pool,100 Brewer Way,TBD,Aquafit general - Shallow,No
 4,Thursday,10:00 - 10:55,Brewer Pool,100 Brewer Way,TBD,Aquafit general - Deep,No
 4,Thursday,10:00 - 11:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,50+ Swim ,No
+4,Thursday,10:00 - 11:00,Sawmill Creek Community Centre and Pool,3380 D’Aoust Avenue,TBD,Lane Swim (Shared pool),No
+4,Thursday,10:00 - 11:00,Sawmill Creek Community Centre and Pool,3380 D’Aoust Avenue,TBD,Preschool swim (shared pool),No
 4,Thursday,11:00 - 12:00,Brewer Pool,100 Brewer Way,TBD,Lane Swim,No
+4,Thursday,11:00 - 13:00,Kanata Leisure Centre and Wave Pool,70 Aird Place,TBD,Hot Tub and Sauna ,No
 4,Thursday,11:00 - 14:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,Lane swim ,No
+4,Thursday,12:00 - 13:00,Sawmill Creek Community Centre and Pool,3380 D’Aoust Avenue,TBD,Lane Swim,No
 4,Thursday,16:00 - 17:00,Deborah Anne Kirwan Pool,1300 Kitchener Avenue,TBD,50+ Swim ,No
+4,Thursday,17:00 - 21:00,Kanata Leisure Centre and Wave Pool,70 Aird Place,TBD,Hot Tub and Sauna ,No
 4,Thursday,19:00 - 20:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,Lane swim ,No
 4,Thursday,19:30 - 20:30,Deborah Anne Kirwan Pool,1300 Kitchener Avenue,TBD,Public swim,No
+4,Thursday,20:00 - 21:00,Kanata Leisure Centre and Wave Pool,70 Aird Place,TBD,Lane Swim ,No
+4,Thursday,20:00 - 21:00,Sawmill Creek Community Centre and Pool,3380 D’Aoust Avenue,TBD,Lane Swim,No
 4,Thursday,20:30 - 21:30,Deborah Anne Kirwan Pool,1300 Kitchener Avenue,TBD,Lane swim ,No
 5,Friday,07:30 - 09:30,Brewer Pool,100 Brewer Way,TBD,Lane Swim,No
+5,Friday,08:00 - 09:00,Sawmill Creek Community Centre and Pool,3380 D’Aoust Avenue,TBD,Aquafit general deep,No
+5,Friday,08:00 - 09:00,Sawmill Creek Community Centre and Pool,3380 D’Aoust Avenue,TBD,Aquafit general shallow,No
+5,Friday,08:00 - 10:00,Kanata Leisure Centre and Wave Pool,70 Aird Place,TBD,Lane Swim ,No
+5,Friday,08:00 - 13:00,Kanata Leisure Centre and Wave Pool,70 Aird Place,TBD,Hot Tub and Sauna ,No
+5,Friday,09:00 - 10:00,Sawmill Creek Community Centre and Pool,3380 D’Aoust Avenue,TBD,Aquafit general deep,No
+5,Friday,09:00 - 10:00,Sawmill Creek Community Centre and Pool,3380 D’Aoust Avenue,TBD,Aquafit general shallow,No
 5,Friday,09:35 - 10:30,Brewer Pool,100 Brewer Way,TBD,Aquafit general - Shallow,No
 5,Friday,09:35 - 10:30,Brewer Pool,100 Brewer Way,TBD,Aquafit general - Deep,No
 5,Friday,10:00 - 11:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,50+ Vitality ,No
+5,Friday,10:00 - 11:00,Kanata Leisure Centre and Wave Pool,70 Aird Place,TBD,Aquafit  ,No
+5,Friday,10:00 - 11:00,Sawmill Creek Community Centre and Pool,3380 D’Aoust Avenue,TBD,Aquafit general deep,No
+5,Friday,10:00 - 11:00,Sawmill Creek Community Centre and Pool,3380 D’Aoust Avenue,TBD,Aquafit general shallow,No
 5,Friday,10:30 - 11:25,Brewer Pool,100 Brewer Way,TBD,Aquafit general - Shallow,No
 5,Friday,10:30 - 11:25,Brewer Pool,100 Brewer Way,TBD,Aquafit general - Deep,No
 5,Friday,11:00 - 13:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,Lane swim ,No
+5,Friday,11:00 - 13:00,Kanata Leisure Centre and Wave Pool,70 Aird Place,TBD,Lane Swim,No
+5,Friday,11:00 - 13:00,Kanata Leisure Centre and Wave Pool,70 Aird Place,TBD,Preschool swim ,No
+5,Friday,11:00 - 13:00,Sawmill Creek Community Centre and Pool,3380 D’Aoust Avenue,TBD,Lane Swim,No
 5,Friday,11:30 - 14:00,Brewer Pool,100 Brewer Way,TBD,Lane Swim,No
 5,Friday,14:00 - 16:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,Lane swim ,No
 5,Friday,16:00 - 17:00,Deborah Anne Kirwan Pool,1300 Kitchener Avenue,TBD,50+ Swim ,No
 5,Friday,16:00 - 18:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,Public swim,No
+5,Friday,17:00 - 18:00,Kanata Leisure Centre and Wave Pool,70 Aird Place,TBD,Public swim,No
 5,Friday,17:00 - 19:00,Deborah Anne Kirwan Pool,1300 Kitchener Avenue,TBD,Public swim,No
+5,Friday,17:00 - 21:00,Kanata Leisure Centre and Wave Pool,70 Aird Place,TBD,Hot Tub and Sauna ,No
+5,Friday,18:00 - 20:00,Kanata Leisure Centre and Wave Pool,70 Aird Place,TBD,Wave swim,No
 5,Friday,20:00 - 21:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,Lane swim ,No
+5,Friday,20:00 - 21:00,Kanata Leisure Centre and Wave Pool,70 Aird Place,TBD,Lane Swim,No
+5,Friday,20:15 - 21:15,Sawmill Creek Community Centre and Pool,3380 D’Aoust Avenue,TBD,Women’s only swim,No
 6,Saturday,12:00 - 13:00,Deborah Anne Kirwan Pool,1300 Kitchener Avenue,TBD,Preschool Swim ,No
+6,Saturday,12:00 - 13:00,Kanata Leisure Centre and Wave Pool,70 Aird Place,TBD,Public swim,No
+6,Saturday,12:00 - 13:00,Sawmill Creek Community Centre and Pool,3380 D’Aoust Avenue,TBD,Lane Swim,No
 6,Saturday,12:00 - 15:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,Public swim,No
+6,Saturday,12:00 - 17:00,Kanata Leisure Centre and Wave Pool,70 Aird Place,TBD,Hot Tub and Sauna ,No
 6,Saturday,12:30 - 13:30,Brewer Pool,100 Brewer Way,TBD,Lane Swim,No
+6,Saturday,13:00 - 15:00,Sawmill Creek Community Centre and Pool,3380 D’Aoust Avenue,TBD,Public swim,No
 6,Saturday,13:00 - 16:00,Deborah Anne Kirwan Pool,1300 Kitchener Avenue,TBD,Public swim,No
+6,Saturday,13:00 - 17:00,Kanata Leisure Centre and Wave Pool,70 Aird Place,TBD,Wave swim,No
 6,Saturday,13:30 - 14:30,Brewer Pool,100 Brewer Way,TBD,Public swim,No
 6,Saturday,15:00 - 16:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,Lane swim ,No
+6,Saturday,18:30 - 19:30,Sawmill Creek Community Centre and Pool,3380 D’Aoust Avenue,TBD,Public swim,No
+6,Saturday,19:30 - 20:30,Sawmill Creek Community Centre and Pool,3380 D’Aoust Avenue,TBD,Lane Swim,No
 7,Sunday,12:00 - 13:00,Deborah Anne Kirwan Pool,1300 Kitchener Avenue,TBD,50+ Swim ,No
+7,Sunday,12:00 - 13:00,Kanata Leisure Centre and Wave Pool,70 Aird Place,TBD,Public swim,No
+7,Sunday,12:00 - 13:00,Sawmill Creek Community Centre and Pool,3380 D’Aoust Avenue,TBD,Lane Swim,No
 7,Sunday,12:00 - 15:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,Public swim,No
+7,Sunday,12:00 - 17:00,Kanata Leisure Centre and Wave Pool,70 Aird Place,TBD,Hot Tub and Sauna ,No
 7,Sunday,12:30 - 13:30,Brewer Pool,100 Brewer Way,TBD,Lane Swim,No
+7,Sunday,13:00 - 15:00,Sawmill Creek Community Centre and Pool,3380 D’Aoust Avenue,TBD,Public swim,No
 7,Sunday,13:00 - 16:00,Deborah Anne Kirwan Pool,1300 Kitchener Avenue,TBD,Public swim,No
+7,Sunday,13:00 - 17:00,Kanata Leisure Centre and Wave Pool,70 Aird Place,TBD,Wave swim,No
 7,Sunday,13:30 - 14:30,Brewer Pool,100 Brewer Way,TBD,Public swim,No
 7,Sunday,15:00 - 16:00,Lowertown Community Centre and Pool,40 Cobourg Street,TBD,Lane swim ,No
+7,Sunday,19:00 - 20:00,Sawmill Creek Community Centre and Pool,3380 D’Aoust Avenue,TBD,Lane Swim,No
