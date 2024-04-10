@@ -19,7 +19,7 @@
 </head>
 <body>
 	<div class="container">
-    <h1>City of Ottawa Activity Schedule Extractor v38</h1>
+    <h1>City of Ottawa Activity Schedule Extractor v39</h1>
 		<p>Last version that works perfectly is v20</p>
 		<p>v37 has the correct start time and indicator and correct end time and indicator in most cases<p>		
 			<p>Need to handle Noon</p>
@@ -94,7 +94,13 @@ function scrape() {
 				    var amPmIndicatorStart = extractAmPmIndicatorStart(time);
 				    var endTime = extractEndTime(time);
 				    var amPmIndicatorEnd = extractAmPmIndicatorEnd(time);
-				    csvContent += '"' + day + '","' + type + '","' + time + '","' + weekday + '","' + startTime + '","' + amPmIndicatorStart + '","' + endTime + '","' + amPmIndicatorEnd +'"<br>';
+
+
+				    // Build the final start and end time
+    					var finalStartTime = buildFinalTime(startTime, amPmIndicatorStart);
+    					var finalEndTime = buildFinalTime(endTime, amPmIndicatorEnd);
+					
+				    csvContent += '"' + day + '","' + type + '","' + time + '","' + weekday + '","' + startTime + '","' + amPmIndicatorStart + '","' + endTime + '","' + amPmIndicatorEnd + '","' + finalStartTime + " - " + finalEndTime + '"<br>';
 				});
 
                         });
@@ -201,6 +207,22 @@ function extractAmPmIndicatorEnd(time) {
         // Return an empty string if no match found
         return "";
     }
+}
+	    
+// Function to build the final time based on start time, am/pm indicator, end time, and am/pm indicator
+function buildFinalTime(time, amPmIndicator) {
+    var hours = parseInt(time.split(':')[0]);
+    var minutes = parseInt(time.split(':')[1]);
+    
+    if (amPmIndicator.toLowerCase() === 'pm') {
+        hours += 12;
+    }
+    
+    if (hours >= 24) {
+        hours -= 12;
+    }
+
+    return (hours < 10 ? '0' : '') + hours + ':' + (minutes < 10 ? '0' : '') + minutes;
 }
 
 
