@@ -18,7 +18,7 @@
 </head>
 <body>
 	<div class="container">
-    <h1>City of Ottawa Swim Schedule Extractor v9</h1>
+    <h1>City of Ottawa Swim Schedule Extractor v8</h1>
     <form id="scrapingForm">
         <label for="urls">Enter URLs (separated by carriage return):</label><br>
         <textarea id="urls" rows="4" cols="50">https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/francois-dupuis-recreation-centre</textarea><br>        
@@ -46,7 +46,15 @@
         .then(data => {
             var parser = new DOMParser();
             var htmlDoc = parser.parseFromString(data, 'text/html');
-            
+
+	    // Display content of the <h1> tag
+            var h1Content = htmlDoc.querySelector('h1');
+            if (h1Content) {
+                var h1Container = document.createElement("h2");
+                h1Container.textContent = "H1: " + h1Content.textContent;
+                document.getElementById("results").appendChild(h1Container);
+            }
+		
             // Find all tables in the document
             var tables = htmlDoc.querySelectorAll('table');
 
