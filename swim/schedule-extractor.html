@@ -18,7 +18,7 @@
 </head>
 <body>
 	<div class="container">
-    <h1>City of Ottawa Swim Schedule Extractor v18</h1>
+    <h1>City of Ottawa Swim Schedule Extractor v19</h1>
     <form id="scrapingForm">
         <label for="urls">Enter URLs (separated by carriage return):</label><br>
         <textarea id="urls" rows="4" cols="50">https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/francois-dupuis-recreation-centre</textarea><br>        
@@ -56,31 +56,30 @@
                     // Initialize CSV content for this table
                     var csvContent = "";
 
-                    // Get the table caption which contains date range
-                    var caption = table.querySelector('caption').textContent.trim();
-
                     // Loop through each table row
-                    table.querySelectorAll('tbody tr').forEach(function(row, rowIndex) {
+                    table.querySelectorAll('tr').forEach(function(row, rowIndex) {
                         // Skip header row
                         if (rowIndex > 0) {
-                            // Get the day from the first cell in the row
-                            var day = row.querySelector('th').textContent.trim();
+                            // Get the day from the first non-header cell in the row
+                            var day = '';
+                            row.querySelectorAll('td').forEach(function(cell) {
+                                if (day === '' && cell.textContent.trim() !== '') {
+                                    day = cell.textContent.trim();
+                                }
+                            });
                             
                             // Loop through each table cell (td) in the row
-                            row.querySelectorAll('td').forEach(function(cell, cellIndex) {
-                                // Skip the first cell which contains the day
-                                if (cellIndex > 0) {
-                                    var typeElement = cell.querySelector('strong');
-                                    var type = typeElement ? typeElement.textContent.trim() : '';
-                                    var times = cell.textContent.split(',').map(function(time) {
-                                        return time.trim();
-                                    });
-                                    
-                                    // Loop through each time and add to CSV content
-                                    times.forEach(function(time) {
-                                        csvContent += '"' + caption + '","' + day + '","' + type + '","' + time + '"\n';
-                                    });
-                                }
+                            row.querySelectorAll('td').forEach(function(cell) {
+                                var typeElement = cell.querySelector('strong');
+                                var type = typeElement ? typeElement.textContent.trim() : '';
+                                var times = cell.textContent.split(',').map(function(time) {
+                                    return time.trim();
+                                });
+                                
+                                // Loop through each time and add to CSV content
+                                times.forEach(function(time) {
+                                    csvContent += '"' + day + '","' + type + '","' + time + '"\n';
+                                });
                             });
                         }
                     });
@@ -106,6 +105,7 @@
         });
     });
 }
+
 
 
     </script>
