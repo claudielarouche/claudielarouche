@@ -59,9 +59,10 @@
 
                     // Loop through each table row
                     table.querySelectorAll('tr').forEach(function(row, rowIndex) {
-                        // Skip header row
+                        var day = row.querySelector('th').textContent.trim();
+			    // Skip header row
                         if (rowIndex > 0) {
-                            var day = row.querySelector('th').textContent.trim();
+                            
                             
                             // Loop through each table cell (td) in the row
                             row.querySelectorAll('td').forEach(function(cell) {
