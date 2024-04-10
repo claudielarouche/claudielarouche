@@ -18,7 +18,7 @@
 </head>
 <body>
 	<div class="container">
-    <h1>City of Ottawa Swim Schedule Extractor v2</h1>
+    <h1>City of Ottawa Swim Schedule Extractor v3</h1>
     <form id="scrapingForm">
         <label for="urls">Enter URLs (separated by carriage return):</label><br>
         <textarea id="urls" rows="4" cols="50">https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/francois-dupuis-recreation-centre</textarea><br>        
@@ -61,7 +61,8 @@
             }
 
 		// Find the table with caption containing "Swim" (case insensitive)
-            var swimTable = htmlDoc.querySelector('table[summary*="swim" i]');
+            var swimTable = htmlDoc.querySelector('table caption:contains("swim" i)').closest('table');
+
             if (swimTable) {
                 // Append the HTML content of the swim table to the results div
                 var swimTableHTML = swimTable.outerHTML;
