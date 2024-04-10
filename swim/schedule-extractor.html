@@ -18,7 +18,7 @@
 </head>
 <body>
 	<div class="container">
-    <h1>City of Ottawa Swim Schedule Extractor v8</h1>
+    <h1>City of Ottawa Swim Schedule Extractor v10</h1>
     <form id="scrapingForm">
         <label for="urls">Enter URLs (separated by carriage return):</label><br>
         <textarea id="urls" rows="4" cols="50">https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/francois-dupuis-recreation-centre</textarea><br>        
@@ -58,7 +58,7 @@
             // Find all tables in the document
             var tables = htmlDoc.querySelectorAll('table');
 
-            if (tables.length > 0) {
+             if (tables.length > 0) {
                 // Loop through each table
                 tables.forEach(function(table) {
                     // Initialize CSV content for this table
@@ -66,13 +66,16 @@
 
                     // Loop through each table row
                     table.querySelectorAll('tr').forEach(function(row) {
+                        var rowData = "";
                         // Loop through each table cell (th or td) in the row
                         row.querySelectorAll('th, td').forEach(function(cell) {
-                            // Add cell content to CSV content
-                            csvContent += '"' + cell.textContent.trim().replace(/\n/g, '') + '",';
+                            // Add cell content to row data
+                            rowData += '"' + cell.textContent.trim().replace(/\n/g, '') + '",';
                         });
-                        // Add newline after each row
-                        csvContent += "\n";
+                        // Add row data to CSV content, followed by newline
+                        if (rowData) {
+                            csvContent += rowData + "\n";
+                        }
                     });
 
                     // Append CSV content to results div
