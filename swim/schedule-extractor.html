@@ -19,7 +19,7 @@
 </head>
 <body>
 	<div class="container">
-    <h1>City of Ottawa Activity Schedule Extractor v33</h1>
+    <h1>City of Ottawa Activity Schedule Extractor v34</h1>
 		<p>Last version that works perfectly is v20</p>
 		<p>v30 has the correct start time but no indicator<p>
 		<p>V 22 the start hour was working but not the end hour. We need to handle cases when start is in AM and end in PM also</p>
@@ -86,7 +86,7 @@ function scrape() {
 				   
 				    var startTime = extractStartTime(time);
 				    var amPmIndicatorStart = extractAmPmIndicatorStart(time);
-				    csvContent += '"' + weekday + '","' + type + '","' + '","' + startTime + '","' + amPmIndicatorStart + '"<br>';
+				    csvContent += '"' + day + '","' + type + '","' + time + '","' + weekday + '","' + startTime + '"<br>';
 				});
 
                         });
