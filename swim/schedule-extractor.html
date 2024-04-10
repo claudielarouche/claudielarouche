@@ -33,7 +33,7 @@
     </div>
 	</div>
     <script>
-   function scrape() {
+ function scrape() {
     var urlsInput = document.getElementById("urls").value.trim().split("\n");
 
     // Clear previous results
@@ -76,7 +76,7 @@
                             var typeElement = cell.querySelector('strong');
                             var type = typeElement ? typeElement.textContent.trim() : '';
                             var times = cell.textContent.split(',').map(function(time) {
-                                return formatTime(time.trim());
+                                return time.trim();
                             });
                             
                             // Loop through each time and add to CSV content
@@ -128,69 +128,6 @@ function getWeekdayFromColumnNumber(columnNumber) {
             return "Sunday";
         default:
             return "";
-    }
-}
-
-function formatTime(time) {
-    // Check if the time string contains a colon
-    if (time.includes(':')) {
-        // If it contains a colon, split time into parts (start and end times, am/pm)
-        var parts = time.split(/[\s-]/);
-        var startParts = parts[0].split(':');
-        var endParts = parts[1].split(':');
-        var startHour = parseInt(startParts[0]);
-        var endHour = parseInt(endParts[0]);
-        var startMinute = parseInt(startParts[1]);
-        var endMinute = parseInt(endParts[1]);
-        var ampm = parts[2] ? parts[2].toLowerCase() : '';
-
-        // Convert hours to 24-hour format
-        if (ampm === 'pm' && startHour < 12) {
-            startHour += 12;
-        } else if (ampm === 'am' && startHour === 12) {
-            startHour = 0;
-        }
-        
-        if (ampm === 'pm' && endHour < 12) {
-            endHour += 12;
-        } else if (ampm === 'am' && endHour === 12) {
-            endHour = 0;
-        }
-
-        // Add leading zeros if necessary
-        var formattedStartHour = startHour < 10 ? '0' + startHour : startHour;
-        var formattedEndHour = endHour < 10 ? '0' + endHour : endHour;
-        var formattedStartMinute = startMinute < 10 ? '0' + startMinute : startMinute;
-        var formattedEndMinute = endMinute < 10 ? '0' + endMinute : endMinute;
-
-        // Return formatted time range
-        return formattedStartHour + ':' + formattedStartMinute + ' - ' + formattedEndHour + ':' + formattedEndMinute;
-    } else {
-        // If it doesn't contain a colon, treat it as whole hours and handle as before
-        var parts = time.split(/[\s-]/);
-        var startHour = parseInt(parts[0]);
-        var endHour = parseInt(parts[1]);
-        var ampm = parts[2] ? parts[2].toLowerCase() : '';
-
-        // Convert hours to 24-hour format
-        if (ampm === 'pm' && startHour < 12) {
-            startHour += 12;
-        } else if (ampm === 'am' && startHour === 12) {
-            startHour = 0;
-        }
-        
-        if (ampm === 'pm' && endHour < 12) {
-            endHour += 12;
-        } else if (ampm === 'am' && endHour === 12) {
-            endHour = 0;
-        }
-
-        // Add leading zeros if necessary
-        var formattedStartHour = startHour < 10 ? '0' + startHour : startHour;
-        var formattedEndHour = endHour < 10 ? '0' + endHour : endHour;
-
-        // Return formatted time range
-        return formattedStartHour + ':00 - ' + formattedEndHour + ':00';
     }
 }
 
