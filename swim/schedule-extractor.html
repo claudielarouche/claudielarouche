@@ -18,7 +18,7 @@
 </head>
 <body>
 	<div class="container">
-    <h1>City of Ottawa Swim Schedule Extractor v10</h1>
+    <h1>City of Ottawa Swim Schedule Extractor v11</h1>
     <form id="scrapingForm">
         <label for="urls">Enter URLs (separated by carriage return):</label><br>
         <textarea id="urls" rows="4" cols="50">https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/francois-dupuis-recreation-centre</textarea><br>        
@@ -46,19 +46,11 @@
         .then(data => {
             var parser = new DOMParser();
             var htmlDoc = parser.parseFromString(data, 'text/html');
-
-	    // Display content of the <h1> tag
-            var h1Content = htmlDoc.querySelector('h1');
-            if (h1Content) {
-                var h1Container = document.createElement("h2");
-                h1Container.textContent = "H1: " + h1Content.textContent;
-                document.getElementById("results").appendChild(h1Container);
-            }
-		
+            
             // Find all tables in the document
             var tables = htmlDoc.querySelectorAll('table');
 
-             if (tables.length > 0) {
+            if (tables.length > 0) {
                 // Loop through each table
                 tables.forEach(function(table) {
                     // Initialize CSV content for this table
@@ -66,14 +58,17 @@
 
                     // Loop through each table row
                     table.querySelectorAll('tr').forEach(function(row) {
+                        // Initialize row data
                         var rowData = "";
+
                         // Loop through each table cell (th or td) in the row
                         row.querySelectorAll('th, td').forEach(function(cell) {
                             // Add cell content to row data
                             rowData += '"' + cell.textContent.trim().replace(/\n/g, '') + '",';
                         });
-                        // Add row data to CSV content, followed by newline
-                        if (rowData) {
+
+                        // If row data is not empty, add it to CSV content with a newline
+                        if (rowData.trim() !== "") {
                             csvContent += rowData + "\n";
                         }
                     });
