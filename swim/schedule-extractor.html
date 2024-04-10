@@ -19,7 +19,7 @@
 </head>
 <body>
 	<div class="container">
-    <h1>City of Ottawa Activity Schedule Extractor v27</h1>
+    <h1>City of Ottawa Activity Schedule Extractor v28-reverting to 22</h1>
 		<p>Last version that works perfectly is v20</p>
 		<p>V 22 the start hour was working but not the end hour. We need to handle cases when start is in AM and end in PM also</p>
 		<p>Another idea is to grab the start time in one column, the am/pm indicator in another column, the end time, the am/pm indicator again, and then rebuild the whole thing in Google sheet (or with the website)</p>
@@ -193,7 +193,6 @@ function formatTime(time) {
         return formattedStartHour + ':00 - ' + formattedEndHour + ':00';
     }
 }
-
 
 
 
