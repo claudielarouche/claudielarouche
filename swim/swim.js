@@ -54,7 +54,7 @@ function renderTable(data) {
     let tableHtml = '<table id="dataTable"><thead><tr>';
     headers.forEach(header => {
         // Skip rendering the URL column
-        if (header !== 'Sort Order') {
+        if (header !== 'Sort Order' && header !== 'URL') {
             tableHtml += `<th>${header}</th>`;
         }
     });
