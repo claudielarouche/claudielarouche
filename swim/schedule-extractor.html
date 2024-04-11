@@ -19,7 +19,7 @@
 </head>
 <body>
 	<div class="container">
-    <h1>City of Ottawa Activity Schedule Extractor v39</h1>
+    <h1>City of Ottawa Activity Schedule Extractor v40</h1>
 		<p>Last version that works perfectly is v20</p>
 		<p>v39 has final time, correct in most cases except when am indicator missing<p>		
 			
@@ -66,8 +66,8 @@ function scrape() {
 
                     // Loop through each table row
                     table.querySelectorAll('tr').forEach(function(row) {
-                        // Get the day from the first cell in the row
-                        var day = row.querySelector('th').textContent.trim();
+                        // Get the type from the first cell in the row
+                        var type = row.querySelector('th').textContent.trim();
                         
                         // Initialize column number counter
                         var columnNumber = 0;
@@ -77,8 +77,8 @@ function scrape() {
                             // Increment column number
                             columnNumber++;
                             
-                            var typeElement = cell.querySelector('strong');
-                            var type = typeElement ? typeElement.textContent.trim() : '';
+                          
+                            
                             var times = cell.textContent.split(',').map(function(time) {
                                 return time.trim();
                             });
@@ -103,7 +103,7 @@ function scrape() {
     					var finalStartTime = buildFinalTime(startTime, amPmIndicatorStart);
     					var finalEndTime = buildFinalTime(endTime, amPmIndicatorEnd);
 					
-				    csvContent += '"' + day + '","' + type + '","' + time + '","' + weekday + finalStartTime + " - " + finalEndTime + '"<br>';
+				    csvContent += weekday + ',"' + type + '","'  +   finalStartTime + " - " + finalEndTime + '"<br>';
 				});
 
                         });
