@@ -69,16 +69,16 @@ function renderTable(data) {
 
         headers.forEach(header => {
             // Skip rendering the URL column
-            if (header !== 'Sort Order') {
+            if (header !== 'Sort Order' && header !== 'URL') {
                 switch (header) {
-                    case 'Name':
-                        // Merge URL with School Name to create a clickable link
+                    case 'Pool Name':
+                        // Merge URL with Pool Name to create a clickable link
                         const url = row['URL'] ? row['URL'] : '';
-                        const schoolName = row[header] ? row[header] : '';
-                        if (url !== '' && schoolName !== '') {
-                            tableHtml += `<td><a href="${url}" target="_blank">${schoolName}</a></td>`;
+                        const poolName = row[header] ? row[header] : '';
+                        if (url !== '' && poolName !== '') {
+                            tableHtml += `<td><a href="${url}" target="_blank">${poolName}</a></td>`;
                         } else {
-                            tableHtml += `<td>${schoolName}</td>`;
+                            tableHtml += `<td>${poolName}</td>`;
                         }
                         break;
 
