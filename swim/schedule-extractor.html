@@ -19,11 +19,10 @@
 </head>
 <body>
 	<div class="container">
-    <h1>City of Ottawa Activity Schedule Extractor v41</h1>
+    <h1>City of Ottawa Activity Schedule Extractor v42</h1>
 		
-		<p>v40 has final time, correct in most cases except when am indicator missing<p>		
+		<p>v41 has final time, correct in most cases except when am indicator missing and am not written is handled yay<p>		
 			
-		<p>need to handle cases when am was not written but should have been (if start bigger than end, do start minus 12)</p>
 		<p>remove *Reservations not required.</p>
 		
 		<p>remove n/a</p>
@@ -57,6 +56,10 @@ function scrape() {
             
             // Find all tables in the document
             var tables = htmlDoc.querySelectorAll('table');
+
+	// Display content of the <h1> tag
+            var h1Content = htmlDoc.querySelector('h1');
+            
 
             if (tables.length > 0) {
                 // Loop through each table
@@ -108,7 +111,7 @@ function scrape() {
 					        finalStartTime = subtract12Hours(finalStartTime);
 					    }
 										
-				    csvContent += weekday + ',"' + type + '","'  +   finalStartTime + " - " + finalEndTime + '"<br>';
+				    csvContent += weekday + ',"'  +   finalStartTime + " - " + finalEndTime  + '","'  + h1Content + '","'  + "address here" + '","'  + "area here" + '","' + type + '"<br>';
 				});
 
                         });
