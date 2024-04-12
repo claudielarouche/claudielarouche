@@ -19,7 +19,7 @@
 </head>
 <body>
 	<div class="container">
-    <h1>City of Ottawa Activity Schedule Extractor v50.1</h1>
+    <h1>City of Ottawa Activity Schedule Extractor v52</h1>
 		
 		<p>v49 or 49.1 works well<p>		
 			
@@ -187,12 +187,19 @@ function extractStartTime(time) {
 // Function to extract end time from time field
 function extractEndTime(time) {
     // Regular expression to match one or two digits followed by an optional colon and zero or two digits
-    var regex = /\b\d{1,2}(?::\d{2})?\b/;
-    var match = time.match(regex);
-    if (match) {
-        var startTime = match[1];
-        // Split the start time to handle leading zero for single digit hour and add minutes if missing
-        var parts = startTime.split(':');
+    var regex = /\b\d{1,2}(?::\d{2})?\b/g; // Add the 'g' flag for global search
+    var match;
+    var endTime;
+
+    // Execute the regex in a loop to capture all matches
+    while ((match = regex.exec(time)) !== null) {
+        // Assuming the second match is the end time
+        endTime = match[0];
+    }
+
+    if (endTime) {
+        // Split the end time to handle leading zero for single digit hour and add minutes if missing
+        var parts = endTime.split(':');
         var formattedHour = parts[0].length === 1 ? '0' + parts[0] : parts[0];
         var formattedMinute = parts.length === 1 ? '00' : parts[1];
         return formattedHour + ':' + formattedMinute;
