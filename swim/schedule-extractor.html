@@ -19,7 +19,7 @@
 </head>
 <body>
 	<div class="container">
-    <h1>City of Ottawa Activity Schedule Extractor v42</h1>
+    <h1>City of Ottawa Activity Schedule Extractor v43</h1>
 		
 		<p>v41 has final time, correct in most cases except when am indicator missing and am not written is handled yay<p>		
 			
@@ -111,7 +111,7 @@ function scrape() {
 					        finalStartTime = subtract12Hours(finalStartTime);
 					    }
 										
-				    csvContent += weekday + ',"'  +   finalStartTime + " - " + finalEndTime  + '","'  + h1Content + '","'  + "address here" + '","'  + "area here" + '","' + type + '"<br>';
+				    csvContent += weekday + ',"'  +   finalStartTime + " - " + finalEndTime  + '","'  + h1Content.textContent + '","'  + "address here" + '","'  + "area here" + '","' + type + '","'  + "URL here" +'"<br>';
 				});
 
                         });
