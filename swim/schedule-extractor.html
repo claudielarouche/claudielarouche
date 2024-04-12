@@ -19,7 +19,7 @@
 </head>
 <body>
 	<div class="container">
-    <h1>City of Ottawa Activity Schedule Extractor v46</h1>
+    <h1>City of Ottawa Activity Schedule Extractor v47</h1>
 		
 		<p>v45 works well<p>		
 			
@@ -71,7 +71,7 @@ function scrape() {
                     // Loop through each table row
                     table.querySelectorAll('tr').forEach(function(row) {
                         // Get the type from the first cell in the row and remove the text "Reservations not required"
-                        var type = row.querySelector('th').textContent.trim().replace('*Reservations not required.', '');
+                        var type = row.querySelector('th').textContent.replace('*Reservations not required.', '').trim();
                         
                         // Initialize column number counter
                         var columnNumber = 0;
