@@ -19,7 +19,7 @@
 </head>
 <body>
 	<div class="container">
-    <h1>City of Ottawa Activity Schedule Extractor v48</h1>
+    <h1>City of Ottawa Activity Schedule Extractor v49</h1>
 		
 		<p>v47 works well, 48 trying to handle no space after dash<p>		
 			
@@ -111,8 +111,14 @@ function scrape() {
 					    if (finalStartTime > finalEndTime) {
 					        finalStartTime = subtract12Hours(finalStartTime);
 					    }
-										
-				    csvContent += weekday + ',"'  +   finalStartTime + " - " + finalEndTime  + '","'  + h1Content.textContent + '","'  + address.textContent + '","'  + "area here" + '","' + type + '","'  + url +'"<br>';
+
+					var finalTime = finalStartTime + " - " + finalEndTime;
+
+					if (finalTime != "NaN:NaN - NaN:NaN"){
+						csvContent += weekday + ',"'  +   finalStartTime + " - " + finalEndTime  + '","'  + h1Content.textContent + '","'  + address.textContent + '","'  + "area here" + '","' + type + '","'  + url +'"<br>';
+					}
+					
+				    
 				});
 
                         });
