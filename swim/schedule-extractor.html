@@ -19,9 +19,9 @@
 </head>
 <body>
 	<div class="container">
-    <h1>City of Ottawa Activity Schedule Extractor v49.1</h1>
+    <h1>City of Ottawa Activity Schedule Extractor v50.1</h1>
 		
-		<p>v47 works well, 48 trying to handle no space after dash<p>		
+		<p>v49 or 49.1 works well<p>		
 			
 
 		
@@ -186,18 +186,18 @@ function extractStartTime(time) {
 
 // Function to extract end time from time field
 function extractEndTime(time) {
-    // Regular expression to match one or two digits after a hyphen
-    var regex = /-\s?(\d{1,2})(:\d{2})?/;
+    // Regular expression to match one or two digits followed by an optional colon and zero or two digits
+    var regex = /\b\d{1,2}(?::\d{2})?\b/;
     var match = time.match(regex);
-    if (match && match[1]) {
-        // Add leading zero if necessary
-        var hours = match[1].length === 1 ? '0' + match[1] : match[1];
-        // If minutes are present, include them
-        var minutes = match[2] ? match[2] : ':00';
-        return hours + minutes;
-    } else {
-        return "";
+    if (match) {
+        var startTime = match[1];
+        // Split the start time to handle leading zero for single digit hour and add minutes if missing
+        var parts = startTime.split(':');
+        var formattedHour = parts[0].length === 1 ? '0' + parts[0] : parts[0];
+        var formattedMinute = parts.length === 1 ? '00' : parts[1];
+        return formattedHour + ':' + formattedMinute;
     }
+    return "";
 }
 
 
