@@ -19,9 +19,9 @@
 </head>
 <body>
 	<div class="container">
-    <h1>City of Ottawa Activity Schedule Extractor v40</h1>
+    <h1>City of Ottawa Activity Schedule Extractor v41</h1>
 		
-		<p>v39 has final time, correct in most cases except when am indicator missing<p>		
+		<p>v40 has final time, correct in most cases except when am indicator missing<p>		
 			
 		<p>need to handle cases when am was not written but should have been (if start bigger than end, do start minus 12)</p>
 		<p>remove *Reservations not required.</p>
@@ -102,7 +102,12 @@ function scrape() {
 				    // Build the final start and end time
     					var finalStartTime = buildFinalTime(startTime, amPmIndicatorStart);
     					var finalEndTime = buildFinalTime(endTime, amPmIndicatorEnd);
-					
+
+					// Check if final start time is later than final end time and adjust if necessary
+					    if (finalStartTime > finalEndTime) {
+					        finalStartTime = subtract12Hours(finalStartTime);
+					    }
+										
 				    csvContent += weekday + ',"' + type + '","'  +   finalStartTime + " - " + finalEndTime + '"<br>';
 				});
 
@@ -227,7 +232,19 @@ function buildFinalTime(time, amPmIndicator) {
 
     return (hours < 10 ? '0' : '') + hours + ':' + (minutes < 10 ? '0' : '') + minutes;
 }
+// Function to subtract 12 hours from a given time
+function subtract12Hours(time) {
+    var hours = parseInt(time.split(':')[0]);
+    var minutes = parseInt(time.split(':')[1]);
 
+    hours -= 12;
+    
+    if (hours < 0) {
+        hours += 24;
+    }
+
+    return (hours < 10 ? '0' : '') + hours + ':' + (minutes < 10 ? '0' : '') + minutes;
+}
 
     </script>
 </body>
