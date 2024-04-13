@@ -143,6 +143,12 @@ function renderTable(data) {
 			"buttons": [
 				'colvis' // Column visibility button
 			],
+			 "columnDefs": [
+		            {
+		                "name": "Baby Scale", // Hiding the Baby Scale column
+		                "visible": false, // Make the column invisible
+		                
+		            },
 			"language": {
 				"emptyTable": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>.",
 				"zeroRecords": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>."
