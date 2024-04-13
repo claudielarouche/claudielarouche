@@ -1,4 +1,4 @@
-console.log('merge URL 2');
+console.log('baby scale 1');
 
 let originalData = []; // Initialize as an empty array
 
@@ -9,7 +9,7 @@ function getQueryParam(key) {
 
 window.onload = function() {
 	// Update the path to your CSV file
-	const csvFilePath = 'https://claudielarouche.com/earlyON/data.csv';
+	const csvFilePath = 'https://claudielarouche.com/earlyON/data-dev.csv';
 
 	Papa.parse(csvFilePath, {
 		header: true,
