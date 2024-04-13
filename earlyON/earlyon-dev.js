@@ -1,4 +1,4 @@
-console.log('baby scale 2');
+console.log('baby scale 3');
 
 let originalData = []; // Initialize as an empty array
 
@@ -143,7 +143,7 @@ function renderTable(data) {
 			"buttons": [
 				'colvis' // Column visibility button
 			],
-			 "columnDefs": [
+			 "columns": [
 		            {
 		                "name": "Baby Scale", // Hiding the Baby Scale column
 		                "visible": false, // Make the column invisible
