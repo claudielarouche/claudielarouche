@@ -127,3 +127,15 @@ function renderTable(data) {
 
 
 let currentSearchValue = getQueryParam('search'); // Variable to store the current search value
+
+function clearAllFilters() {
+
+
+    // Clear the DataTable search box
+    var dataTable = $('#dataTable').DataTable();
+    dataTable.search('').draw();
+	currentSearchValue = "";
+
+    // Render the table with cleared filters
+    renderTable(originalData);
+}
