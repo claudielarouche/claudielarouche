@@ -1,4 +1,4 @@
-console.log('baby scale 16 - 15 worked well, now starting refactoring');
+console.log('baby scale 17 - 15 worked well, now starting refactoring');
 
 let originalData = []; // Initialize as an empty array
 
@@ -71,7 +71,7 @@ function renderTable(data) {
         .map(checkbox => checkbox.id.replace('Checkbox', ''));
 
     //const filteredData = filterData(data, selectedDate, selectedArea, selectedAgeGroup);
-	const filteredData = filterData(data, selectedDate, selectedAgeGroup, selectedLanguages, selectedSchedule);
+	const filteredData = filterData(data, selectedDate, selectedAgeGroup, selectedLanguages, selectedAreas, selectedSchedule);
 
 	if (!Array.isArray(filteredData)) {
 		console.error('Error loading data: Filtered data is not an array.');
