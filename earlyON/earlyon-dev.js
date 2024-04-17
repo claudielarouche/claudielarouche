@@ -1,4 +1,4 @@
-console.log('baby scale 15, version 6 and 11 worked as expected, Im just trying diff way');
+console.log('baby scale 15 - works although the checkbox doesn''t do anything right now');
 
 let originalData = []; // Initialize as an empty array
 
