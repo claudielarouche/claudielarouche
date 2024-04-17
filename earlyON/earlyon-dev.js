@@ -80,6 +80,8 @@ function renderTable(data) {
 	}
 
 	let babyScaleIndex; // Declare babyScaleIndex variable
+	let timeOfDayIndex;
+	let dayOfWeekIndex;
 
 	//let totalData = 0;
 	filteredData.forEach(row => {
