@@ -1,4 +1,4 @@
-console.log('baby scale 8, version 6 worked as expected as is, Im just trying diff way');
+console.log('baby scale 9, version 6 worked as expected as is, Im just trying diff way');
 
 let originalData = []; // Initialize as an empty array
 
@@ -96,6 +96,7 @@ function renderTable(data) {
 				    // Assign the index of the "Baby Scale" column to the babyScaleIndex variable
                     		    babyScaleIndex = index;
 				    tableHtml += `<td>${row[header]}</td>`;
+				    break;
 			        case 'URL':
 			            // Make the URL clickable as a link
 			            // tableHtml += `<td><a href="${row[header]}" target="_blank">URL</a></td>`;
