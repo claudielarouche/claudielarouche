@@ -1,4 +1,4 @@
-console.log('baby scale 4');
+console.log('baby scale 5');
 
 let originalData = []; // Initialize as an empty array
 
@@ -143,15 +143,13 @@ function renderTable(data) {
 			"buttons": [
 				'colvis' // Column visibility button
 			],
-			 "columns": [
-				 null,
-				 null,
+			 "columnDefs": [
 		            {
-		                "name": "Baby Scale", // Hiding the Baby Scale column
+		                "targets": 1, // Index of the column you want to hide
 		                "visible": false, // Make the column invisible
-		                
-		            },
-			 ],
+		            }
+		            
+		        ],
 			"language": {
 				"emptyTable": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>.",
 				"zeroRecords": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>."
