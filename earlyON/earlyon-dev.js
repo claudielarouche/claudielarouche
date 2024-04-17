@@ -1,4 +1,4 @@
-console.log('baby scale 7, version 6 worked as expected as is, Im just trying diff way');
+console.log('baby scale 8, version 6 worked as expected as is, Im just trying diff way');
 
 let originalData = []; // Initialize as an empty array
 
@@ -90,7 +90,7 @@ function renderTable(data) {
 			tableHtml += `<tr${isCancelled ? ' style="background-color: #FFCCCB;"' : ''}>`;
 			let babyScaleIndex; // Declare babyScaleIndex variable
 
-			headers.forEach(header, index) => {
+			headers.forEach((header, index) => {
 			    switch(header) {
 				case 'Baby Scale': 
 				    // Assign the index of the "Baby Scale" column to the babyScaleIndex variable
