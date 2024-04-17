@@ -101,17 +101,17 @@ function renderTable(data) {
 					   
 				    // Assign the index of the "Baby Scale" column to the babyScaleIndex variable
                     		    babyScaleIndex = index;
-					     console.log("Index is: " + index);
-					     console.log("babyScaleIndex is: " + babyScaleIndex);
+					  //   console.log("Index is: " + index);
+					   //  console.log("babyScaleIndex is: " + babyScaleIndex);
 				    tableHtml += `<td>${row[header]}</td>`;
 				    break;
 			        case 'URL':
 			            // Make the URL clickable as a link
 			            // tableHtml += `<td><a href="${row[header]}" target="_blank">URL</a></td>`;
-					    console.log("URL Index is: " + index);
+				//	    console.log("URL Index is: " + index);
 			            break;
 				 case 'Playgroup Name':
-					    console.log("Plaugroup Name Index is: " + index);
+					//    console.log("Plaugroup Name Index is: " + index);
 				    // Merge URL with School Name to create a clickable link
 		                        const url = row['URL'] ? row['URL'] : '';
 		                        const playgroupName = row[header] ? row[header] : '';
@@ -123,7 +123,7 @@ function renderTable(data) {
 		                        break;
 			    	
 			        case 'Location Address':
-					    console.log("Location address index is: " + index);
+					//    console.log("Location address index is: " + index);
 			            // Create a link with the Google Maps URL for the address
 			            const address = row[header] ? row[header].trim() : '';
 			            if (address !== '') {
