@@ -1,4 +1,4 @@
-console.log('baby scale 6');
+console.log('baby scale 7, version 6 worked as expected as is, Im just trying diff way');
 
 let originalData = []; // Initialize as an empty array
 
@@ -88,9 +88,14 @@ function renderTable(data) {
 
 			// Start building the row with a conditional background color
 			tableHtml += `<tr${isCancelled ? ' style="background-color: #FFCCCB;"' : ''}>`;
+			let babyScaleIndex; // Declare babyScaleIndex variable
 
-			headers.forEach(header => {
+			headers.forEach(header, index) => {
 			    switch(header) {
+				case 'Baby Scale': 
+				    // Assign the index of the "Baby Scale" column to the babyScaleIndex variable
+                    		    babyScaleIndex = index;
+				    tableHtml += `<td>${row[header]}</td>`;
 			        case 'URL':
 			            // Make the URL clickable as a link
 			            // tableHtml += `<td><a href="${row[header]}" target="_blank">URL</a></td>`;
@@ -145,7 +150,7 @@ function renderTable(data) {
 			],
 			 "columnDefs": [
 		            {
-		                "targets": 0, // Index of the column you want to hide
+		                "targets": babyScaleIndex, // Index of the column you want to hide
 		                "visible": false // Make the column invisible
 		            }
 		            
