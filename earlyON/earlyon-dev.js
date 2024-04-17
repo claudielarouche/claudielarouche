@@ -1,4 +1,4 @@
-console.log('baby scale 10, version 6 worked as expected as is, Im just trying diff way');
+console.log('baby scale 11, version 6 worked as expected as is, Im just trying diff way');
 
 let originalData = []; // Initialize as an empty array
 
@@ -79,6 +79,8 @@ function renderTable(data) {
 		return;
 	}
 
+	let babyScaleIndex; // Declare babyScaleIndex variable
+
 	//let totalData = 0;
 	filteredData.forEach(row => {
 		const currentDate = row['Date'] ? row['Date'] : '';
@@ -88,7 +90,7 @@ function renderTable(data) {
 
 			// Start building the row with a conditional background color
 			tableHtml += `<tr${isCancelled ? ' style="background-color: #FFCCCB;"' : ''}>`;
-			let babyScaleIndex; // Declare babyScaleIndex variable
+			
 
 			headers.forEach((header, index) => {
 			    switch(header) {
