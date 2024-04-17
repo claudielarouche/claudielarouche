@@ -1,4 +1,4 @@
-console.log('baby scale 15 - works although the checkbox doesn''t do anything right now');
+console.log('baby scale 16 - 15 worked well, now starting refactoring');
 
 let originalData = []; // Initialize as an empty array
 
@@ -71,7 +71,7 @@ function renderTable(data) {
         .map(checkbox => checkbox.id.replace('Checkbox', ''));
 
     //const filteredData = filterData(data, selectedDate, selectedArea, selectedAgeGroup);
-	const filteredData = filterData(data, selectedDate, selectedAgeGroup);
+	const filteredData = filterData(data, selectedDate, selectedAgeGroup, selectedLanguages, selectedSchedule);
 
 	if (!Array.isArray(filteredData)) {
 		console.error('Error loading data: Filtered data is not an array.');
@@ -178,74 +178,40 @@ function renderTable(data) {
 }
 
 
-function filterData(data, selectedDate, selectedAgeGroup) {
-    const scheduleFilter = document.getElementById('scheduleFilter').value;
-	
-	 if (selectedLanguages.length === 0) {
-        return [];
-    }
-	
-    // If no date, area, age group, or schedule is selected, return the original data
-    if (!selectedDate && !selectedAreas.length && !selectedAgeGroup && scheduleFilter === 'all'  && !selectedLanguages.length) {
+function filterData(data, selectedDate, selectedAgeGroup, selectedLanguages, selectedAreas, scheduleFilter) {
+    // If no date, age group, languages, areas, or schedule is selected, return the original data
+    if (!selectedDate && !selectedAgeGroup && selectedLanguages.length === 0 && selectedAreas.length === 0 && scheduleFilter === 'all') {
         return data;
     }
 
-    // Ensure data is an array before filtering
-    if (Array.isArray(data)) {
-        return data.filter(row => {
-            const currentDate = row['Date'] ? row['Date'] : '';
-            //const currentArea = row['Area'] ? row['Area'] : '';
-            const currentAgeGroup = row['Age Group'] ? row['Age Group'] : '';
-            const currentTimeOfDay = row['Time of Day'] ? row['Time of Day'] : '';
-            const currentDayOfWeek = row['Day of Week'] ? row['Day of Week'] : '';
-			const currentLanguage = row['Language'] ? row['Language'] : ''; 
+    return data.filter(row => {
+        const currentDate = row['Date'] || '';
+        const currentAgeGroup = row['Age Group'] || '';
+        const currentTimeOfDay = row['Time of Day'] || '';
+        const currentDayOfWeek = row['Day of Week'] || '';
+        const currentLanguage = row['Language'] || '';
+        const currentArea = row['Area'] || '';
 
-            const dateCondition = !selectedDate || currentDate === selectedDate;
-            //const areaCondition = !selectedArea || currentArea === selectedArea;
-            const ageGroupCondition = !selectedAgeGroup || currentAgeGroup.includes(selectedAgeGroup);			
-			const languageCondition = !selectedLanguages.length || selectedLanguages.some(lang => row['Language'].toLowerCase().includes(lang.toLowerCase())); //Not exact match
-			const areaCondition = !selectedAreas.length || selectedAreas.some(lang => row['Area'].toLowerCase().includes(lang.toLowerCase())); //Not exact match
+        const dateCondition = !selectedDate || currentDate === selectedDate;
+        const ageGroupCondition = !selectedAgeGroup || currentAgeGroup.includes(selectedAgeGroup);
+        const languageCondition = !selectedLanguages.length || selectedLanguages.some(lang => currentLanguage.toLowerCase().includes(lang.toLowerCase()));
+        const areaCondition = !selectedAreas.length || selectedAreas.some(area => currentArea.toLowerCase().includes(area.toLowerCase()));
 
-            switch (scheduleFilter) {
-                case 'all':
-                    // Show all rows
-                    return dateCondition && areaCondition && ageGroupCondition && languageCondition && areaCondition;
+        let scheduleFilterCondition = true;
 
-                case 'eveningsWeekends':
-                    // Show evenings and weekends only
-                    return (
-                        dateCondition &&
-                        areaCondition &&
-						languageCondition &&
-                        ageGroupCondition &&
-                        (currentTimeOfDay === 'Evening' ||
-                            currentDayOfWeek === 'Saturday' ||
-                            currentDayOfWeek === 'Sunday')
-                    );
+        switch (scheduleFilter) {
+            case 'eveningsWeekends':
+                scheduleFilterCondition = currentTimeOfDay === 'Evening' || currentDayOfWeek === 'Saturday' || currentDayOfWeek === 'Sunday';
+                break;
+            case 'weekdayAMPM':
+                scheduleFilterCondition = (currentDayOfWeek !== 'Saturday' && currentDayOfWeek !== 'Sunday') && (currentTimeOfDay === 'Morning' || currentTimeOfDay === 'Afternoon');
+                break;
+        }
 
-                case 'weekdayAMPM':
-				// Show weekday AM and PM only
-				return (
-					dateCondition &&
-					areaCondition &&
-					languageCondition &&
-					ageGroupCondition &&
-					(
-						(currentDayOfWeek !== 'Saturday' && currentDayOfWeek !== 'Sunday') &&
-						(currentTimeOfDay === 'Morning' || currentTimeOfDay === 'Afternoon')
-					)
-				);
-
-
-                default:
-                    // Handle other cases
-                    return false;
-            }
-        });
-    } else {
-        return [];
-    }
+        return dateCondition && ageGroupCondition && languageCondition && areaCondition && scheduleFilterCondition;
+    });
 }
+
 
 
 function isPastDate(dateString) {
