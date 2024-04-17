@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Longitude and Latitude</title>
+</head>
+<body>
+    <h1>Longitude and Latitude</h1>
+	<h2>How to use</h2>
+	<p>Enter a list of addresses below (one per line) and the tool will generate the longitude and latitude for all the addresses</p>
+    <textarea id="addressInput" rows="5" cols="50"></textarea>
+    <button onclick="geocodeAddresses()">Generate</button>
+    <div id="output"></div>
+
+    <script>
+        async function geocodeAddresses() {
+            const addressInput = document.getElementById('addressInput');
+            const addresses = addressInput.value.split('\n').filter(Boolean); // Splitting addresses by line and removing empty lines
+
+            const outputDiv = document.getElementById('output');
+            outputDiv.innerHTML = '';
+
+            for (const address of addresses) {
+                try {
+                    const response = await fetch(`https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(address)}&format=json&addressdetails=1&limit=1`);
+                    const data = await response.json();
+                    if (data.length > 0) {
+                        const lat = data[0].lat;
+                        const lon = data[0].lon;
+                        outputDiv.innerHTML += `<p>${lat}, ${lon}</p>`;
+                    } else {
+                        outputDiv.innerHTML += `<p>No results found for address: ${address}</p>`;
+                    }
+                } catch (error) {
+                    console.error('Error geocoding address:', error);
+                    outputDiv.innerHTML += `<p>Error geocoding address: ${address}</p>`;
+                }
+            }
+        }
+    </script>
+</body>
+</html>
