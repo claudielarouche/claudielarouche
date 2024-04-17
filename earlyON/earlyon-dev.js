@@ -1,4 +1,4 @@
-console.log('baby scale 12, version 6 and 11 worked as expected, Im just trying diff way');
+console.log('baby scale 13, version 6 and 11 worked as expected, Im just trying diff way');
 
 let originalData = []; // Initialize as an empty array
 
@@ -102,23 +102,20 @@ function renderTable(data) {
 				    tableHtml += `<td>${row[header]}</td>`;
 				    break;
 				case 'Time of Day': 	
-				    // Assign the index of the "Baby Scale" column to the babyScaleIndex variable
+	
                     		    timeOfDayIndex = index;					  
 				    tableHtml += `<td>${row[header]}</td>`;
 				    break;
 				case 'Day of Week': 	
-				    // Assign the index of the "Baby Scale" column to the babyScaleIndex variable
+				  
                     		    dayOfWeekIndex = index;					  
 				    tableHtml += `<td>${row[header]}</td>`;
 				    break;
 			        case 'URL':
-			            // Make the URL clickable as a link
-			            // tableHtml += `<td><a href="${row[header]}" target="_blank">URL</a></td>`;
-				//	    console.log("URL Index is: " + index);
+				    //Skip the URL column
 			            break;
 				 case 'Playgroup Name':
-					//    console.log("Plaugroup Name Index is: " + index);
-				    // Merge URL with School Name to create a clickable link
+				    // Merge URL with Name to create a clickable link
 		                        const url = row['URL'] ? row['URL'] : '';
 		                        const playgroupName = row[header] ? row[header] : '';
 		                        if (url !== '' && playgroupName !== '') {
@@ -129,7 +126,6 @@ function renderTable(data) {
 		                        break;
 			    	
 			        case 'Location Address':
-					//    console.log("Location address index is: " + index);
 			            // Create a link with the Google Maps URL for the address
 			            const address = row[header] ? row[header].trim() : '';
 			            if (address !== '') {
@@ -157,7 +153,7 @@ function renderTable(data) {
 	tableHtml += '</tbody></table>';
 
 	document.getElementById('csvData').innerHTML = tableHtml;
-
+	console.log("Timeofday index" + timeOfDayIndex);
 
 	if (!$.fn.dataTable.isDataTable('#dataTable')) {
 		$('#dataTable').DataTable({
