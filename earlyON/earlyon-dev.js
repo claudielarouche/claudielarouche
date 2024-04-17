@@ -1,4 +1,4 @@
-console.log('baby scale 14, version 6 and 11 worked as expected, Im just trying diff way');
+console.log('baby scale 15, version 6 and 11 worked as expected, Im just trying diff way');
 
 let originalData = []; // Initialize as an empty array
 
@@ -102,13 +102,13 @@ function renderTable(data) {
 				    tableHtml += `<td>${row[header]}</td>`;
 				    break;
 				case 'Time of Day': 	
-				    //+1 because Time of Day is after URL
-                    		    timeOfDayIndex = index + 1;					  
+				    //-1 because Time of Day is after URL
+                    		    timeOfDayIndex = index - 1;					  
 				    tableHtml += `<td>${row[header]}</td>`;
 				    break;
 				case 'Day of Week': 	
-				    //+1 because Day of Week is after URL
-                    		    dayOfWeekIndex = index + 1;					  
+				    //-1 because Day of Week is after URL
+                    		    dayOfWeekIndex = index - 1;					  
 				    tableHtml += `<td>${row[header]}</td>`;
 				    break;
 			        case 'URL':
