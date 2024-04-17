@@ -1,4 +1,4 @@
-console.log('baby scale 5');
+console.log('baby scale 6');
 
 let originalData = []; // Initialize as an empty array
 
@@ -145,8 +145,8 @@ function renderTable(data) {
 			],
 			 "columnDefs": [
 		            {
-		                "targets": 1, // Index of the column you want to hide
-		                "visible": false, // Make the column invisible
+		                "targets": 0, // Index of the column you want to hide
+		                "visible": false // Make the column invisible
 		            }
 		            
 		        ],
