@@ -1,4 +1,4 @@
-console.log('baby scale 11, version 6 worked as expected as is, Im just trying diff way');
+console.log('baby scale 12, version 6 and 11 worked as expected, Im just trying diff way');
 
 let originalData = []; // Initialize as an empty array
 
@@ -96,13 +96,19 @@ function renderTable(data) {
 
 			headers.forEach((header, index) => {
 			    switch(header) {
-				case 'Baby Scale': 
-				    console.log("inside Baby Scale");
-					   
+				case 'Baby Scale': 	
 				    // Assign the index of the "Baby Scale" column to the babyScaleIndex variable
-                    		    babyScaleIndex = index;
-					  //   console.log("Index is: " + index);
-					   //  console.log("babyScaleIndex is: " + babyScaleIndex);
+                    		    babyScaleIndex = index;					  
+				    tableHtml += `<td>${row[header]}</td>`;
+				    break;
+				case 'Time of Day': 	
+				    // Assign the index of the "Baby Scale" column to the babyScaleIndex variable
+                    		    timeOfDayIndex = index;					  
+				    tableHtml += `<td>${row[header]}</td>`;
+				    break;
+				case 'Day of Week': 	
+				    // Assign the index of the "Baby Scale" column to the babyScaleIndex variable
+                    		    dayOfWeekIndex = index;					  
 				    tableHtml += `<td>${row[header]}</td>`;
 				    break;
 			        case 'URL':
@@ -162,7 +168,7 @@ function renderTable(data) {
 			],
 			 "columnDefs": [
 		            {
-		                "targets": babyScaleIndex, // Index of the column you want to hide
+		                "targets": [babyScaleIndex, timeOfDayIndex, dayOfWeekIndex], // Index of the column you want to hide
 		                "visible": false // Make the column invisible
 		            }
 		            
