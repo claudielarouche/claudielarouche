@@ -218,7 +218,7 @@ function filterData(data, selectedDate, selectedAgeGroup, selectedLanguages, sel
         const currentDayOfWeek = row['Day of Week'] || '';
         const currentLanguage = row['Language'] || '';
         const currentArea = row['Area'] || '';
-	const currentBabyScale = row['Baby Scale]' || ''; 
+	const currentBabyScale = row['Baby Scale'] || ''; 
 	   
 
 
