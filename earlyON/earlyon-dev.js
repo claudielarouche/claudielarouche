@@ -1,4 +1,4 @@
-console.log('baby scale 25 - 19 works well! But now trying to fix column visibility bug. Checkbox filter for scale not currently working');
+console.log('baby scale 26 - 25 works well! column visibility bug fixed. Checkbox filter for scale not currently working');
 
 let originalData = []; // Initialize as an empty array
 let babyScaleVisible = false; // Flag to track if the Baby Scale column is visible
@@ -372,6 +372,15 @@ document.querySelectorAll('.areaCheckbox').forEach(function (checkbox) {
         selectedAreas.push(checkbox.value);
     }
 });
+
+
+// Listen for changes in the Schedule Filter 
+document.getElementById('babyScaleCheckbox').addEventListener('change', function() {	
+	currentSearchValue = $('#dataTable_filter input').val();
+    renderTable(originalData);
+	console.log("babyscalecheckbox changed")
+});
+
 
 function clearAllFilters() {
     // Clear the date filter
