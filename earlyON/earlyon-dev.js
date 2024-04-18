@@ -1,4 +1,4 @@
-console.log('baby scale 20 - 19 works well! But now trying to fix column visibility bug. Checkbox filter for scale not currently working');
+console.log('baby scale 21 - 19 works well! But now trying to fix column visibility bug. Checkbox filter for scale not currently working');
 
 let originalData = []; // Initialize as an empty array
 
@@ -216,18 +216,18 @@ function filterData(data, selectedDate, selectedAgeGroup, selectedLanguages, sel
 
         let scheduleFilterCondition = true;
 
-	    console.log("just before switch"); 
+	   
         switch (scheduleFilter) {
             case 'all':
                 scheduleFilterCondition = true;
-			console.log("all");
+			
                 break;
             case 'eveningsWeekends':
                 scheduleFilterCondition = currentTimeOfDay === 'Evening' || currentDayOfWeek === 'Saturday' || currentDayOfWeek === 'Sunday';
-			console.log("evening");
+			
                 break;
             case 'weekdayAMPM':
-			console.log("weekday");
+			
                 scheduleFilterCondition = (currentDayOfWeek !== 'Saturday' && currentDayOfWeek !== 'Sunday') && (currentTimeOfDay === 'Morning' || currentTimeOfDay === 'Afternoon');
                 break;
         }
