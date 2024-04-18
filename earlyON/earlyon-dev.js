@@ -1,4 +1,4 @@
-console.log('baby scale 22 - 19 works well! But now trying to fix column visibility bug. Checkbox filter for scale not currently working');
+console.log('baby scale 23 - 19 works well! But now trying to fix column visibility bug. Checkbox filter for scale not currently working');
 
 let originalData = []; // Initialize as an empty array
 let babyScaleVisible = false; // Flag to track if the Baby Scale column is visible
@@ -168,19 +168,19 @@ function renderTable(data) {
 				'colvis' // Column visibility button
 			],
 			 "columnDefs": [
-		    {
-			"targets": babyScaleIndex, // Index of the Baby Scale column
-			"visible": babyScaleVisible // Make the Baby Scale column hidden initially
-		    },
-		    {
-			"targets": timeOfDayIndex, // Index of the Time of Day column
-			"visible": timeOfDayVisible // Make the Time of Day column hidden initially
-		    },
-		    {
-			"targets": dayOfWeekIndex, // Index of the Day of Week column
-			"visible": dayOfWeekVisible // Make the Day of Week column hidden initially
-		    }
-		]
+			    {
+				"targets": babyScaleIndex, // Index of the Baby Scale column
+				"visible": babyScaleVisible // Make the Baby Scale column hidden initially
+			    },
+			    {
+				"targets": timeOfDayIndex, // Index of the Time of Day column
+				"visible": timeOfDayVisible // Make the Time of Day column hidden initially
+			    },
+			    {
+				"targets": dayOfWeekIndex, // Index of the Day of Week column
+				"visible": dayOfWeekVisible // Make the Day of Week column hidden initially
+			    }
+			],
 			"language": {
 				"emptyTable": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>.",
 				"zeroRecords": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>."
