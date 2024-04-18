@@ -1,4 +1,4 @@
-console.log('baby scale 23 - 19 works well! But now trying to fix column visibility bug. Checkbox filter for scale not currently working');
+console.log('baby scale 24 - 19 works well! But now trying to fix column visibility bug. Checkbox filter for scale not currently working');
 
 let originalData = []; // Initialize as an empty array
 let babyScaleVisible = false; // Flag to track if the Baby Scale column is visible
@@ -237,12 +237,19 @@ function filterData(data, selectedDate, selectedAgeGroup, selectedLanguages, sel
 
 // Listen for column visibility event
 $('#dataTable').on('column-visibility.dt', function (e, settings, column, state) {
+	console.log("listening");
     if (column === babyScaleIndex) {
+	    console.log("scale");
 	babyScaleVisible = state; // Update the flag based on the visibility state of the Baby Scale column
+	    console.log(babyScaleVisible);
     } else if (column === timeOfDayIndex) {
+	    console.log("time");
 	timeOfDayVisible = state; // Update the flag based on the visibility state of the Time of Day column
+	    console.log(timeOfDayVisible);
     } else if (column === dayOfWeekIndex) {
+	    console.log("day");
 	dayOfWeekVisible = state; // Update the flag based on the visibility state of the Day of Week column
+	    console.log(dayOfWeekVisible);
     }
 });
 
