@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>City of Ottawa Activities</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<!--<link rel="stylesheet" type="text/css" href="style.css">-->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+		<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+		<script src="https://cdn.datatables.net/buttons/1.7.1/js/dataTables.buttons.min.js"></script>
+		<script src="https://cdn.datatables.net/buttons/1.7.1/js/buttons.colVis.min.js"></script>
+		
+		
+		<style>
+		
+		#dataTable thead th {
+    position: sticky;
+    top: 0;
+    background-color: #f2f2f2; /* Change the background color as needed */
+    z-index: 100;
+}
+		
+			table {
+				border-collapse: collapse;
+				width: 100%;
+				margin-top: 20px;
+			}
+
+			th,
+			td {
+				border: 1px solid #dddddd;
+			}
+
+			h2 {
+				margin-top: 20px;
+			}
+
+			label {
+				display: block;
+				margin-top: 10px;
+			}
+
+			
+			.checked {
+				text-decoration: line-through;
+			}
+			
+			td.dataTables_empty {
+				text-align: left !important;
+			}
+			.dataTables_wrapper .dataTables_filter {
+			    float: left;
+			    text-align: left;
+			}
+			
+		</style>
+		<!-- Include PapaParse library -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+	</head>
+	<body>
+		<div class="bg-image"></div>
+		<div class="container">
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+	  <a class="navbar-brand" href="https://claudielarouche.com">Claudie's other projects</a>
+	  
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	      <!-- Add any additional menu items here if needed -->
+	    </ul>
+	  </div>
+	</nav>
+			
+			<h1>City of Ottawa Activities</h1>
+
+			<div class="row">
+    <div class="col-md-6">
+        <div class="mt-3">
+            <a href="#csvData" class="btn btn-primary">
+                Go to listing
+            </a>
+        </div>
+      <!--  <div class="mt-3">
+            <a href="#filter" class="btn btn-primary" >
+                Go to filters
+            </a>
+        </div>-->
+
+	    <div class="mt-3">
+	            <a href="#" class="btn btn-primary" id="showToday" >
+	                Show me today's activities
+	            </a>
+	    </div>
+	    
+	    <div class="mt-3">
+            <a href="#newsletter" class="btn btn-warning" >
+                Sign-up for updates
+            </a>
+		    <p>Lasted update (2024-04-18): Added "Show me today's activities" button :) </p>
+        </div>
+	     </div>
+				<div class="col-md-6">
+        <i>If you see me in Ottawa, please say hi!</i>
+        <img src="assets/img/claudie.png" alt="Claudie's Picture" class="img-fluid">
+    </div>
+				 </div>
+			
+			<p>Hello!</p>
+			<p>Have you ever had trouble finding activities organized by the City of Ottawa because you can only check the schedule one facility at a time?</p>
+			<p>I have a solution for you :) Check out the listing below which lists every single activity taking place at a City of Ottawa facility.  </p>
+			<p>If you notice anything incorrect in the table below, please send me a note at claudielarouche@gmail.com and I'll update the entire schedule</p>
+			<p>If you could please share this website with all your friends and family, I would be super grateful!</p>
+			
+		
+      <p>Thanks for visiting this website, enjoy!</p>
+
+				
+			<h2>City of Ottawa Activities</h2>
+			
+			<div id="csvData"></div>
+			
+			
+			<h2 id="newsletter">Stay up to date!</h2>
+
+			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfWDjzio_bwHSKPeTHnNq5Yks1cDIo4cN_nlP6Ir-lzz4AqqQ/viewform?embedded=true" width="640" height="471" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+			
+		
+			
+
+			
+			<div id="footer">
+    <a href="#" id="backToTop">Back to Top</a>
+</div>
+		</div>
+		<script src="ottawa/ottawa-dev.js"></script>
+	</body>
+</html>
