@@ -1,4 +1,4 @@
-console.log('baby scale 18 - 15 worked well, now starting refactoring');
+console.log('baby scale 19 - 15 worked well, now starting refactoring');
 
 let originalData = []; // Initialize as an empty array
 
@@ -64,11 +64,12 @@ function renderTable(data) {
 	//const selectedArea = document.getElementById('selectedArea').value;
 	const selectedDate = document.getElementById('selectedDate').value;
 	const selectedAgeGroup = document.getElementById('selectedAgeGroup').value;
+	const selectedSchedule = document.getElementById('scheduleFilter').value;
 	
-	const selectedScheduleCheckboxes = document.querySelectorAll('.scheduleCheckbox');
+	/*const selectedScheduleCheckboxes = document.querySelectorAll('.scheduleCheckbox');
     const selectedSchedule = Array.from(selectedScheduleCheckboxes)
         .filter(checkbox => checkbox.checked)
-        .map(checkbox => checkbox.id.replace('Checkbox', ''));
+        .map(checkbox => checkbox.id.replace('Checkbox', ''));*/
 
     //const filteredData = filterData(data, selectedDate, selectedArea, selectedAgeGroup);
 	const filteredData = filterData(data, selectedDate, selectedAgeGroup, selectedLanguages, selectedAreas, selectedSchedule);
@@ -199,6 +200,7 @@ function filterData(data, selectedDate, selectedAgeGroup, selectedLanguages, sel
 
         let scheduleFilterCondition = true;
 
+	    console.log("just before switch"); 
         switch (scheduleFilter) {
             case 'all':
                 scheduleFilterCondition = true;
