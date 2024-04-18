@@ -1,4 +1,4 @@
-console.log('baby scale 19 - 15 worked well, now starting refactoring');
+console.log('baby scale 20 - 19 works well! But now trying to fix column visibility bug. Checkbox filter for scale not currently working');
 
 let originalData = []; // Initialize as an empty array
 
@@ -155,6 +155,10 @@ function renderTable(data) {
 
 	document.getElementById('csvData').innerHTML = tableHtml;
 
+	let babyScaleVisible = false; // Flag to track if the Baby Scale column is visible
+	let timeOfDayVisible = false; // Flag to track if the Time of Day column is visible
+	let dayOfWeekVisible = false; // Flag to track if the Day of Week column is visible
+
 	if (!$.fn.dataTable.isDataTable('#dataTable')) {
 		$('#dataTable').DataTable({
 			"pageLength": -1,
@@ -176,6 +180,18 @@ function renderTable(data) {
 		});
 	}
 	$('#dataTable_filter input').val(currentSearchValue).trigger('input');
+
+	// Listen for column visibility event
+	$('#dataTable').on('column-visibility.dt', function (e, settings, column, state) {
+	    if (column === babyScaleIndex) {
+	        babyScaleVisible = state; // Update the flag based on the visibility state of the Baby Scale column
+	    } else if (column === timeOfDayIndex) {
+	        timeOfDayVisible = state; // Update the flag based on the visibility state of the Time of Day column
+	    } else if (column === dayOfWeekIndex) {
+	        dayOfWeekVisible = state; // Update the flag based on the visibility state of the Day of Week column
+	    }
+	});
+	
 }
 
 
