@@ -1,4 +1,4 @@
-console.log('baby scale 28 - 25 works well! column visibility bug fixed. Checkbox filter for scale not currently working');
+console.log('baby scale 28, ready to be uploaded to prod!');
 
 let originalData = []; // Initialize as an empty array
 let babyScaleVisible = false; // Flag to track if the Baby Scale column is visible
