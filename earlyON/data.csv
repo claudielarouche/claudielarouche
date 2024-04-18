@@ -2,7 +2,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-01,08:30 - 12:30,CANCELLED - Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Monday
 2024-04-01,08:30 - 13:30,EarlyON Playgroup,Carlington Community Health Centre (Use the door in front of Merivale) ,900 Merivale,West,No,English,Kids,N/A,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC,Morning,Monday
 2024-04-01,08:45 - 10:00,CANCELLED - Indoor Playgroup,City View Centre,1099 Longfields Dr.,West,No,English,Kids,N/A,https://www.cityviewcentre.ca/playgroups,City View Centre,Morning,Monday
-2024-04-01,08:45 - 12:45,CANCELLED - Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Monday
+2024-04-01,08:45 - 12:45,CANCELLED - Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,"English, French, Arabic",Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Monday
 2024-04-01,09:00 - 11:00,EarlyON Playgroup,Rideauview Community Centre,4310 Shoreline Drive,South,No,English,Kids,N/A,https://gccs.ca/earlyon-drop-ins-2/,GCCS,Morning,Monday
 2024-04-01,09:00 - 11:00,EarlyON Playgroup,Fred G. Barrett Arena - Lions Hall,3280 Leitrim Rd,South,No,English,Kids,N/A,https://gccs.ca/earlyon-drop-ins-2/,GCCS,Morning,Monday
 2024-04-01,09:00 - 11:00,CANCELLED - Groupe de jeu,École La Vérendrye ,"614, prom. Eastvale ",East,No,French,Kids,N/A,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Morning,Monday
@@ -54,7 +54,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-02,08:30 - 12:30,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Tuesday
 2024-04-02,08:30 - 13:30,EarlyON Playgroup,Carlington Community Health Centre (Use the door in front of Merivale) ,900 Merivale,West,No,English,Kids,N/A,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC,Morning,Tuesday
 2024-04-02,08:45 - 10:00,Indoor Playgroup,City View Centre,1099 Longfields Dr.,West,No,English,Kids,N/A,https://www.cityviewcentre.ca/playgroups,City View Centre,Morning,Tuesday
-2024-04-02,08:45 - 12:45,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Tuesday
+2024-04-02,08:45 - 12:45,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,"English, French, Arabic",Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Tuesday
 2024-04-02,09:00 - 11:00,EarlyON Playgroup,Carlington Recreation Gym ,1520 Caldwell Ave.,West,No,English,Kids,N/A,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC,Morning,Tuesday
 2024-04-02,09:00 - 11:00,EarlyON Playgroup,Orleans Resurrection Lutheran Church,1325 Gaultois Avenue,East,No,English,Kids,N/A,https://gccs.ca/earlyon-drop-ins-2/,GCCS,Morning,Tuesday
 2024-04-02,09:00 - 11:00,EarlyON Playgroup,Blackburn Community Hall,190 Glen Park Drive,East,No,English,Kids,N/A,https://gccs.ca/earlyon-drop-ins-2/,GCCS,Morning,Tuesday
@@ -106,8 +106,8 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-02,13:30 - 15:00,0-6 years Playgroup,Centretown Community Health Center,420 Cooper St.,Central,No,English,Kids,N/A,https://www.centretownchc.org/calendar,Centretown CHC,Afternoon,Tuesday
 2024-04-02,13:30 - 15:00,Baby Playgroup,City View Centre,1099 Longfields Dr.,West,No,English,Babies,TBD,https://www.cityviewcentre.ca/playgroups,City View Centre,Afternoon,Tuesday
 2024-04-02,13:30 - 15:30,0-6 years Playgroup,Don Reid,2330 Don Reid Dr.,South,No,English,Kids,N/A,https://www.afchildrensservices.ca/earlyon-child-and-family-centre/monthly-programming-schedule/,AF Children Services,Afternoon,Tuesday
-2024-04-02,13:30 - 15:30,Baby and Me Bilingual playgroup,CSC Vanier,270 Marier Ave.,East,No,English & French,Babies,TBD,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Afternoon,Tuesday
-2024-04-02,13:30 - 15:30,Ça mijote - Francophone,CSC Vanier,270 Marier Ave.,East,Yes - On site,French,Pregnancy,N/A,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Afternoon,Tuesday
+2024-04-02,13:30 - 15:30,Baby and Me Bilingual playgroup,CSC Vanier,270 Marier Ave.,East,No,English & French,Babies,TBD,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Afternoon,Tuesday
+2024-04-02,13:30 - 15:30,Ça mijote - Francophone,CSC Vanier,270 Marier Ave.,East,Yes - On site,French,Pregnancy,N/A,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Afternoon,Tuesday
 2024-04-02,13:30 - 15:30,Playgroup Bayshore,"Bayshore (Unit 101, dial 101 from lobby)",210 Woodridge Cr. ,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Afternoon,Tuesday
 2024-04-02,16:30 - 18:30,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,Kids,N/A,https://parentresource.ca/earlyon-programs-and-services/,PRC,Evening,Tuesday
 2024-04-02,17:00 - 19:00,Open drop-in,Western Ottawa Community Resource Centre,2 MacNeil Court,West,No,English,Kids,N/A,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Evening,Tuesday
@@ -115,7 +115,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-02,17:30 - 19:00,Playgroup Pinecrest Queensway,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Evening,Tuesday
 2024-04-03,08:30 - 12:30,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Wednesday
 2024-04-03,08:30 - 13:30,EarlyON Playgroup,Carlington Community Health Centre (Use the door in front of Merivale) ,900 Merivale,West,No,English,Kids,N/A,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC,Morning,Wednesday
-2024-04-03,08:45 - 12:45,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Wednesday
+2024-04-03,08:45 - 12:45,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,"English, French, Arabic",Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Wednesday
 2024-04-03,09:00 - 11:00,EarlyON Playgroup,Epiphany Anglican Church,1290 Ogilvie Road,East,No,English,Kids,N/A,https://gccs.ca/earlyon-drop-ins-2/,GCCS,Morning,Wednesday
 2024-04-03,09:00 - 11:00,Caregiver Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,Kids,N/A,https://parentresource.ca/earlyon-programs-and-services/,PRC,Morning,Wednesday
 2024-04-03,09:00 - 11:00,Les Libellules (French playgroup),Somerset West Community Health Centre,30 Rosemount Ave,Central,Recommended,French,Kids,N/A,https://www.swchc.on.ca/children-youth-programs/parent-support-calendar,SWCHC,Morning,Wednesday
@@ -140,7 +140,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-03,09:30 - 11:00,Playgroup at the Cumberland Arena,R.J. Kennedy Arena,1115 Dunning Road,East,No,English,Kids,N/A,https://events-evenements.crcoc.ca/events-evenements/category/early-on-y-va/,CRCOC,Morning,Wednesday
 2024-04-03,09:30 - 11:00,École Lamoureux,École Lamoureux,2540 ave. Kaladar,South,No,French,Kids,N/A,https://grandirensemble.ca/services-a-la-petite-enfance-et-a-la-famille/centre-on-y-va-grandir-ensemble/,Grandir ensemble,Morning,Wednesday
 2024-04-03,09:30 - 11:00,Parent & Caregiver Drop-In Playgroup,Farley Mowat Public School ,75 Waterbridge dr.,South,No,English,Kids,N/A,https://mothercraft.com/venues/ontario-early-years-centre/,Mothercraft,Morning,Wednesday
-2024-04-03,09:30 - 11:30,Jules Morin Francophone Playgroup,Pavillon Jules Morin,400 Clarence,East,No,French,Kids,N/A,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Morning,Wednesday
+2024-04-03,09:30 - 11:30,Jules Morin Francophone Playgroup,Pavillon Jules Morin,400 Clarence,East,No,French,Kids,N/A,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Morning,Wednesday
 2024-04-03,09:30 - 11:30,Groupe de jeu,École Des Voyageurs ,6030 prom. Voyageur,East,No,French,Kids,N/A,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Morning,Wednesday
 2024-04-03,09:30 - 11:30,Playgroup Bayshore,"Bayshore (Unit 101, dial 101 from lobby)",210 Woodridge Cr. ,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Wednesday
 2024-04-03,09:30 - 11:30,Playgroup Pinecrest Queensway,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Wednesday
@@ -154,7 +154,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-03,09:30 - 13:00,EarlyON Playgroup,"Featherston Drive Public School, Room 123",1801 Featherston Drive,South,No,English,Kids,N/A,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB,Morning,Wednesday
 2024-04-03,09:30 - 13:00,EarlyON Playgroup,"Queen Mary Street Public School, Room 117",557 Queen Mary Street,East,No,English,Kids,N/A,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB,Morning,Wednesday
 2024-04-03,09:30 - 13:00,EarlyON Playgroup,"Agincourt Road Public School, Room 123",1250 Agincourt Road,West,No,English,Kids,N/A,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB,Morning,Wednesday
-2024-04-03,10:00 - 11:30,Forest Group - Bilingual Playgroup,Forest,300 Av. des Pères-Blancs,East,No,English & French,Kids,N/A,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Morning,Wednesday
+2024-04-03,10:00 - 11:30,Forest Group - Bilingual Playgroup,Forest,300 Av. des Pères-Blancs,East,No,English & French,Kids,N/A,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Morning,Wednesday
 2024-04-03,10:00 - 11:30,EarlyON Playgroup,Margaret Rywak Community Building,68 Knoxdale Rd.,West,No,English,Kids,N/A,https://nrocrc.org/,NROCRC,Morning,Wednesday
 2024-04-03,10:00 - 11:30,Story Stretchers,Old Town Hall - South March,821 March Rd,West,No,English,Kids,N/A,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Morning,Wednesday
 2024-04-03,10:00 - 12:00,Playgroup,"Somerset West Community Health Centre, 3rd floor",755 Somerset St W,Central,Recommended,English,Kids,N/A,https://www.swchc.on.ca/children-youth-programs/parent-support-calendar,SWCHC,Morning,Wednesday
@@ -167,10 +167,10 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-03,13:30 - 15:30,Metcalfe Playgroup,Metcalfe,"8243 Victoria Street, Metcalfe",South,No,English,Kids,N/A,https://www.ruralfamilyconnections.ca/programs/earlyon,Rural Family Connections,Afternoon,Wednesday
 2024-04-03,16:00 - 19:00,Arabic Playgroup,"Somerset West Community Health Centre, 3rd floor",755 Somerset St W,Central,Recommended,Arabic,Kids,N/A,https://www.swchc.on.ca/children-youth-programs/parent-support-calendar,SWCHC,Evening,Wednesday
 2024-04-03,16:30 - 18:30,Evening Playgroup,Odawa Native Friendship Centre,815 St. Laurent Blvd,East,Yes,English,Kids,N/A,http://odawafc.com/programs/earlyon-children-0-6/,Odawa,Evening,Wednesday
-2024-04-03,17:00 - 19:00,Papa et moi - Bilingual Playgroup,CSC Vanier,270 Marier Ave.,East,No,English & French,Kids,N/A,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Evening,Wednesday
+2024-04-03,17:00 - 19:00,Papa et moi - Bilingual Playgroup,CSC Vanier,270 Marier Ave.,East,No,English & French,Kids,N/A,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Evening,Wednesday
 2024-04-03,17:00 - 19:00,Open drop-in,Western Ottawa Community Resource Centre,2 MacNeil Court,West,No,English,Kids,N/A,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Evening,Wednesday
 2024-04-04,08:30 - 12:30,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Thursday
-2024-04-04,08:45 - 12:45,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Thursday
+2024-04-04,08:45 - 12:45,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,"English, French, Arabic",Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Thursday
 2024-04-04,09:00 - 11:00,EarlyON Playgroup,St. James Anglican Church,1138 Bridge Street,East,No,English,Kids,N/A,https://gccs.ca/earlyon-drop-ins-2/,GCCS,Morning,Thursday
 2024-04-04,09:00 - 11:00,EarlyON Playgroup,Blackburn Community Hall,190 Glen Park Drive,East,No,English,Kids,N/A,https://gccs.ca/earlyon-drop-ins-2/,GCCS,Morning,Thursday
 2024-04-04,09:00 - 11:00,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,Kids,N/A,https://parentresource.ca/earlyon-programs-and-services/,PRC,Morning,Thursday
@@ -193,8 +193,8 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-04,09:30 - 11:00,Barrhaven United Church Playgroup,Barrhaven United Church,3013 Jockvale Rd,West,No,English,Kids,N/A,https://www.cityviewcentre.ca/playgroups,City View Centre,Morning,Thursday
 2024-04-04,09:30 - 11:00,Groupe de jeu francophone au Centre ON y va !,OCCRC,240 Centrum Blvd,East,No,French,Kids,N/A,https://events-evenements.crcoc.ca/events-evenements/category/early-on-y-va/,CRCOC,Morning,Thursday
 2024-04-04,09:30 - 11:00,Maison Brantwood,Maison Brantwood,39 Onslow cr.,Central,No,French,Kids,N/A,https://grandirensemble.ca/services-a-la-petite-enfance-et-a-la-famille/centre-on-y-va-grandir-ensemble/,Grandir ensemble,Morning,Thursday
-2024-04-04,09:30 - 11:30,Bilingual Playgroup,CSC Vanier,270 Marier Ave.,East,No,English & French,Kids,N/A,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Morning,Thursday
-2024-04-04,09:30 - 11:30,CANCELLED - Jules Morin Bilingual Playgroup,Pavillon Jules Morin,400 Clarence,East,No,English & French,Kids,N/A,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Morning,Thursday
+2024-04-04,09:30 - 11:30,Bilingual Playgroup,CSC Vanier,270 Marier Ave.,East,No,English & French,Kids,N/A,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Morning,Thursday
+2024-04-04,09:30 - 11:30,CANCELLED - Jules Morin Bilingual Playgroup,Pavillon Jules Morin,400 Clarence,East,No,English & French,Kids,N/A,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Morning,Thursday
 2024-04-04,09:30 - 11:30,Playgroup Pinecrest Queensway,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Thursday
 2024-04-04,09:30 - 11:30,Playgroup Bethany Baptist,Bethany Baptist Gym (use side door),382 Centrepointe,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Thursday
 2024-04-04,09:30 - 11:30,Playgroup Foster Farm,Foster Farm,1065 Ramsey Cres.,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Thursday
@@ -222,11 +222,11 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-04,13:15 - 15:15,Playgroup (0-6 years),Holy Trinity Catholic High School (entrance on McGibbon Drive),180 Katimavik Road,West,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Afternoon,Thursday
 2024-04-04,13:15 - 15:15,Baby and Me Playgroup (0-18 months),St. Peter High School,750 Charlemagne Boulevard,East,No,English,Babies,TBD,https://www.ocsb.ca/parents/child-care/,OCSB,Afternoon,Thursday
 2024-04-04,13:30 - 15:30,Baby & Me,Don Reid,2330 Don Reid Dr.,South,No,English,Babies,TBD,https://www.afchildrensservices.ca/earlyon-child-and-family-centre/monthly-programming-schedule/,AF Children Services,Afternoon,Thursday
-2024-04-04,13:30 - 15:30,Soutien et entraide à l'allaitement,CSC Vanier,270 Marier Ave.,East,No,French,Babies,TBD,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Afternoon,Thursday
+2024-04-04,13:30 - 15:30,Soutien et entraide à l'allaitement,CSC Vanier,270 Marier Ave.,East,No,French,Babies,TBD,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Afternoon,Thursday
 2024-04-05,08:30 - 12:30,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Friday
 2024-04-05,08:30 - 13:30,EarlyON Playgroup,Carlington Community Health Centre (Use the door in front of Merivale) ,900 Merivale,West,No,English,Kids,N/A,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC,Morning,Friday
 2024-04-05,08:45 - 10:00,Indoor Playgroup,City View Centre,1099 Longfields Dr.,West,No,English,Kids,N/A,https://www.cityviewcentre.ca/playgroups,City View Centre,Morning,Friday
-2024-04-05,08:45 - 12:45,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Friday
+2024-04-05,08:45 - 12:45,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,"English, French, Arabic",Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Friday
 2024-04-05,09:00 - 11:00,EarlyON Playgroup,Rideauview Community Centre,4310 Shoreline Drive,South,No,English,Kids,N/A,https://gccs.ca/earlyon-drop-ins-2/,GCCS,Morning,Friday
 2024-04-05,09:00 - 11:00,EarlyON Playgroup,Fred G. Barrett Arena - Lions Hall,3280 Leitrim Rd,South,No,English,Kids,N/A,https://gccs.ca/earlyon-drop-ins-2/,GCCS,Morning,Friday
 2024-04-05,09:00 - 11:00,Groupe de jeu,École Reine-des-Bois ,"1450, Rue Duford ",East,No,French,Kids,N/A,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Morning,Friday
@@ -252,7 +252,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-05,09:30 - 11:00,Richmond Playgroup,Richmond Memorial Arena,"6095 Perth St, Richmond",West,No,English,Kids,N/A,https://www.cityviewcentre.ca/playgroups,City View Centre,Morning,Friday
 2024-04-05,09:30 - 11:00,English playgroup ,OCCRC,240 Centrum Blvd,East,No,English,Kids,N/A,https://events-evenements.crcoc.ca/events-evenements/category/early-on-y-va/,CRCOC,Morning,Friday
 2024-04-05,09:30 - 11:00,450 Laurier Drop-in Playgroup,McAuley Place,450 Laurier Ave West,Central,No,English,Kids,N/A,https://mothercraft.com/venues/ontario-early-years-centre/,Mothercraft,Morning,Friday
-2024-04-05,09:30 - 11:30,Groupe de jeu francophone,CSC Vanier,270 Marier Ave.,East,No,French,Kids,N/A,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Morning,Friday
+2024-04-05,09:30 - 11:30,Groupe de jeu francophone,CSC Vanier,270 Marier Ave.,East,No,French,Kids,N/A,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Morning,Friday
 2024-04-05,09:30 - 11:30,Groupe de jeu,École Des Voyageurs ,6030 prom. Voyageur,East,No,French,Kids,N/A,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Morning,Friday
 2024-04-05,09:30 - 11:30,Playgroup Bayshore,"Bayshore (Unit 101, dial 101 from lobby)",210 Woodridge Cr. ,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Friday
 2024-04-05,09:30 - 11:30,Playgroup,Cedarwood,2850 Cedarwood Cr.,South,No,English,Kids,N/A,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC,Morning,Friday
@@ -279,7 +279,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-06,09:00 - 11:30,Site Principal,Site Principal,431 Boul. St-Laurent,East,No,French,Kids,N/A,https://grandirensemble.ca/services-a-la-petite-enfance-et-a-la-famille/centre-on-y-va-grandir-ensemble/,Grandir ensemble,Morning,Saturday
 2024-04-06,09:00 - 11:30,Groupe de jeu,École Béatrice-Desloges,"1999, av. Provence",East,No,French,Kids,N/A,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Morning,Saturday
 2024-04-06,09:30 - 11:30,EarlyON Playgroup,Carlington Community Health Centre (Use the door in front of Merivale) ,900 Merivale,West,No,English,Kids,N/A,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC,Morning,Saturday
-2024-04-06,09:30 - 11:30,Saturday Morning Bilingual Playgroup,CSC Vanier,270 Marier Ave.,East,No,English & French,Kids,N/A,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Morning,Saturday
+2024-04-06,09:30 - 11:30,Saturday Morning Bilingual Playgroup,CSC Vanier,270 Marier Ave.,East,No,English & French,Kids,N/A,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Morning,Saturday
 2024-04-06,09:30 - 11:30,Playgroup Pinecrest Queensway,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Saturday
 2024-04-06,09:30 - 11:30,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,Kids,N/A,https://parentresource.ca/earlyon-programs-and-services/,PRC,Morning,Saturday
 2024-04-06,09:30 - 11:30,Playgroup,"Somerset West Community Health Centre, 3rd floor",755 Somerset St W,Central,Recommended,English,Kids,N/A,https://www.swchc.on.ca/children-youth-programs/parent-support-calendar,SWCHC,Morning,Saturday
@@ -289,7 +289,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-08,08:30 - 12:30,CANCELLED - Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Monday
 2024-04-08,08:30 - 13:30,EarlyON Playgroup,Carlington Community Health Centre (Use the door in front of Merivale) ,900 Merivale,West,No,English,Kids,N/A,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC,Morning,Monday
 2024-04-08,08:45 - 10:00,Indoor Playgroup,City View Centre,1099 Longfields Dr.,West,No,English,Kids,N/A,https://www.cityviewcentre.ca/playgroups,City View Centre,Morning,Monday
-2024-04-08,08:45 - 12:45,CANCELLED - Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Monday
+2024-04-08,08:45 - 12:45,CANCELLED - Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,"English, French, Arabic",Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Monday
 2024-04-08,09:00 - 11:00,EarlyON Playgroup,Rideauview Community Centre,4310 Shoreline Drive,South,No,English,Kids,N/A,https://gccs.ca/earlyon-drop-ins-2/,GCCS,Morning,Monday
 2024-04-08,09:00 - 11:00,EarlyON Playgroup,Fred G. Barrett Arena - Lions Hall,3280 Leitrim Rd,South,No,English,Kids,N/A,https://gccs.ca/earlyon-drop-ins-2/,GCCS,Morning,Monday
 2024-04-08,09:00 - 11:00,Groupe de jeu,École La Vérendrye ,"614, prom. Eastvale ",East,No,French,Kids,N/A,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Morning,Monday
@@ -312,8 +312,8 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-08,09:30 - 11:00,Groupe de jeu francophone au Centre ON y va !,OCCRC,240 Centrum Blvd,East,No,French,Kids,N/A,https://events-evenements.crcoc.ca/events-evenements/category/early-on-y-va/,CRCOC,Morning,Monday
 2024-04-08,09:30 - 11:00,Home Childcare Provider Drop-In Playgroup,Farley Mowat Public School ,75 Waterbridge dr.,South,No,English,Kids,N/A,https://mothercraft.com/venues/ontario-early-years-centre/,Mothercraft,Morning,Monday
 2024-04-08,09:30 - 11:00,Westboro Infant Drop-In Playgroup,Mothercraft Ottawa,475 Evered,Central,No,English,Babies,TBD,https://mothercraft.com/venues/ontario-early-years-centre/,Mothercraft,Morning,Monday
-2024-04-08,09:30 - 11:30,CTC Bilingual Playgroup (special need children),CSC Vanier,270 Marier Ave.,East,No,English & French,Kids,N/A,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Morning,Monday
-2024-04-08,09:30 - 11:30,Active Bilingual Playgroup,Richelieu-Vanier Community Centre,300 Av. des Pères-Blancs,East,No,English & French,Kids,N/A,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Morning,Monday
+2024-04-08,09:30 - 11:30,CTC Bilingual Playgroup (special need children),CSC Vanier,270 Marier Ave.,East,No,English & French,Kids,N/A,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Morning,Monday
+2024-04-08,09:30 - 11:30,Active Bilingual Playgroup,Richelieu-Vanier Community Centre,300 Av. des Pères-Blancs,East,No,English & French,Kids,N/A,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Morning,Monday
 2024-04-08,09:30 - 11:30,Playgroup Pinecrest Queensway,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Monday
 2024-04-08,09:30 - 11:30,Playgroup Foster Farm,Foster Farm,1065 Ramsey Cres.,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Monday
 2024-04-08,09:30 - 11:30,Open drop-in,Western Ottawa Community Resource Centre,2 MacNeil Court,West,No,English,Kids,N/A,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Morning,Monday
@@ -341,7 +341,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-09,08:30 - 12:30,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Tuesday
 2024-04-09,08:30 - 13:30,EarlyON Playgroup,Carlington Community Health Centre (Use the door in front of Merivale) ,900 Merivale,West,No,English,Kids,N/A,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC,Morning,Tuesday
 2024-04-09,08:45 - 10:00,Indoor Playgroup,City View Centre,1099 Longfields Dr.,West,No,English,Kids,N/A,https://www.cityviewcentre.ca/playgroups,City View Centre,Morning,Tuesday
-2024-04-09,08:45 - 12:45,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Tuesday
+2024-04-09,08:45 - 12:45,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,"English, French, Arabic",Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Tuesday
 2024-04-09,09:00 - 11:00,EarlyON Playgroup,Carlington Recreation Gym ,1520 Caldwell Ave.,West,No,English,Kids,N/A,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC,Morning,Tuesday
 2024-04-09,09:00 - 11:00,EarlyON Playgroup,Orleans Resurrection Lutheran Church,1325 Gaultois Avenue,East,No,English,Kids,N/A,https://gccs.ca/earlyon-drop-ins-2/,GCCS,Morning,Tuesday
 2024-04-09,09:00 - 11:00,EarlyON Playgroup,Blackburn Community Hall,190 Glen Park Drive,East,No,English,Kids,N/A,https://gccs.ca/earlyon-drop-ins-2/,GCCS,Morning,Tuesday
@@ -362,7 +362,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-09,09:15 - 11:15,Playgroup Bells Corners,Bells Corner,681 Seyton Dr.,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Tuesday
 2024-04-09,09:30 - 11:00,Chapman Mills Playgroup,Chapman Mills,424 Chapman Mills Dr,West,No,English,Kids,N/A,https://www.cityviewcentre.ca/playgroups,City View Centre,Morning,Tuesday
 2024-04-09,09:30 - 11:00,English playgroup ,OCCRC,240 Centrum Blvd,East,No,English,Kids,N/A,https://events-evenements.crcoc.ca/events-evenements/category/early-on-y-va/,CRCOC,Morning,Tuesday
-2024-04-09,09:30 - 11:30,Overbrook Bilingual Playgroup,Overbrook Community Centre,33 Quill st.,East,No,English & French,Kids,N/A,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Morning,Tuesday
+2024-04-09,09:30 - 11:30,Overbrook Bilingual Playgroup,Overbrook Community Centre,33 Quill st.,East,No,English & French,Kids,N/A,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Morning,Tuesday
 2024-04-09,09:30 - 11:30,Groupe de jeu,École Des Voyageurs ,6030 prom. Voyageur,East,No,French,Kids,N/A,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Morning,Tuesday
 2024-04-09,09:30 - 11:30,Playgroup Pinecrest Queensway,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Tuesday
 2024-04-09,09:30 - 11:30,Playgroup Bethany Baptist,Bethany Baptist Gym (use side door),382 Centrepointe,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Tuesday
@@ -393,8 +393,8 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-09,13:30 - 15:00,0-6 years Playgroup,Centretown Community Health Center,420 Cooper St.,Central,No,English,Kids,N/A,https://www.centretownchc.org/calendar,Centretown CHC,Afternoon,Tuesday
 2024-04-09,13:30 - 15:00,Baby Playgroup,City View Centre,1099 Longfields Dr.,West,No,English,Babies,TBD,https://www.cityviewcentre.ca/playgroups,City View Centre,Afternoon,Tuesday
 2024-04-09,13:30 - 15:30,0-6 years Playgroup,Don Reid,2330 Don Reid Dr.,South,No,English,Kids,N/A,https://www.afchildrensservices.ca/earlyon-child-and-family-centre/monthly-programming-schedule/,AF Children Services,Afternoon,Tuesday
-2024-04-09,13:30 - 15:30,Baby and Me Bilingual playgroup,CSC Vanier,270 Marier Ave.,East,No,English & French,Babies,TBD,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Afternoon,Tuesday
-2024-04-09,13:30 - 15:30,Ça mijote - Francophone,CSC Vanier,270 Marier Ave.,East,Yes - On site,French,Pregnancy,N/A,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Afternoon,Tuesday
+2024-04-09,13:30 - 15:30,Baby and Me Bilingual playgroup,CSC Vanier,270 Marier Ave.,East,No,English & French,Babies,TBD,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Afternoon,Tuesday
+2024-04-09,13:30 - 15:30,Ça mijote - Francophone,CSC Vanier,270 Marier Ave.,East,Yes - On site,French,Pregnancy,N/A,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Afternoon,Tuesday
 2024-04-09,13:30 - 15:30,Playgroup Bayshore,"Bayshore (Unit 101, dial 101 from lobby)",210 Woodridge Cr. ,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Afternoon,Tuesday
 2024-04-09,16:30 - 18:30,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,Kids,N/A,https://parentresource.ca/earlyon-programs-and-services/,PRC,Evening,Tuesday
 2024-04-09,17:00 - 19:00,Open drop-in,Western Ottawa Community Resource Centre,2 MacNeil Court,West,No,English,Kids,N/A,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Evening,Tuesday
@@ -402,7 +402,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-09,17:30 - 19:00,Playgroup Pinecrest Queensway,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Evening,Tuesday
 2024-04-10,08:30 - 12:30,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Wednesday
 2024-04-10,08:30 - 13:30,EarlyON Playgroup,Carlington Community Health Centre (Use the door in front of Merivale) ,900 Merivale,West,No,English,Kids,N/A,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC,Morning,Wednesday
-2024-04-10,08:45 - 12:45,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Wednesday
+2024-04-10,08:45 - 12:45,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,"English, French, Arabic",Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Wednesday
 2024-04-10,09:00 - 11:00,EarlyON Playgroup,Epiphany Anglican Church,1290 Ogilvie Road,East,No,English,Kids,N/A,https://gccs.ca/earlyon-drop-ins-2/,GCCS,Morning,Wednesday
 2024-04-10,09:00 - 11:00,Caregiver Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,Kids,N/A,https://parentresource.ca/earlyon-programs-and-services/,PRC,Morning,Wednesday
 2024-04-10,09:00 - 11:00,Les Libellules (French playgroup),Somerset West Community Health Centre,30 Rosemount Ave,Central,Recommended,French,Kids,N/A,https://www.swchc.on.ca/children-youth-programs/parent-support-calendar,SWCHC,Morning,Wednesday
@@ -427,7 +427,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-10,09:30 - 11:00,Playgroup at the Navan Arena ,Navan Memorial Centre,1295 Colonial Rd,East,No,English,Kids,N/A,https://events-evenements.crcoc.ca/events-evenements/category/early-on-y-va/,CRCOC,Morning,Wednesday
 2024-04-10,09:30 - 11:00,École Lamoureux,École Lamoureux,2540 ave. Kaladar,South,No,French,Kids,N/A,https://grandirensemble.ca/services-a-la-petite-enfance-et-a-la-famille/centre-on-y-va-grandir-ensemble/,Grandir ensemble,Morning,Wednesday
 2024-04-10,09:30 - 11:00,Parent & Caregiver Drop-In Playgroup,Farley Mowat Public School ,75 Waterbridge dr.,South,No,English,Kids,N/A,https://mothercraft.com/venues/ontario-early-years-centre/,Mothercraft,Morning,Wednesday
-2024-04-10,09:30 - 11:30,Jules Morin Francophone Playgroup,Pavillon Jules Morin,400 Clarence,East,No,French,Kids,N/A,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Morning,Wednesday
+2024-04-10,09:30 - 11:30,Jules Morin Francophone Playgroup,Pavillon Jules Morin,400 Clarence,East,No,French,Kids,N/A,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Morning,Wednesday
 2024-04-10,09:30 - 11:30,Groupe de jeu,École Des Voyageurs ,6030 prom. Voyageur,East,No,French,Kids,N/A,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Morning,Wednesday
 2024-04-10,09:30 - 11:30,Playgroup Bayshore,"Bayshore (Unit 101, dial 101 from lobby)",210 Woodridge Cr. ,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Wednesday
 2024-04-10,09:30 - 11:30,Playgroup Pinecrest Queensway,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Wednesday
@@ -441,7 +441,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-10,09:30 - 13:00,EarlyON Playgroup,"Featherston Drive Public School, Room 123",1801 Featherston Drive,South,No,English,Kids,N/A,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB,Morning,Wednesday
 2024-04-10,09:30 - 13:00,EarlyON Playgroup,"Queen Mary Street Public School, Room 117",557 Queen Mary Street,East,No,English,Kids,N/A,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB,Morning,Wednesday
 2024-04-10,09:30 - 13:00,EarlyON Playgroup,"Agincourt Road Public School, Room 123",1250 Agincourt Road,West,No,English,Kids,N/A,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB,Morning,Wednesday
-2024-04-10,10:00 - 11:30,Forest Group - Bilingual Playgroup,Forest,300 Av. des Pères-Blancs,East,No,English & French,Kids,N/A,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Morning,Wednesday
+2024-04-10,10:00 - 11:30,Forest Group - Bilingual Playgroup,Forest,300 Av. des Pères-Blancs,East,No,English & French,Kids,N/A,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Morning,Wednesday
 2024-04-10,10:00 - 11:30,EarlyON Playgroup,Margaret Rywak Community Building,68 Knoxdale Rd.,West,No,English,Kids,N/A,https://nrocrc.org/,NROCRC,Morning,Wednesday
 2024-04-10,10:00 - 11:30,Story Stretchers,Old Town Hall - South March,821 March Rd,West,No,English,Kids,N/A,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Morning,Wednesday
 2024-04-10,10:00 - 12:00,Playgroup,"Somerset West Community Health Centre, 3rd floor",755 Somerset St W,Central,Recommended,English,Kids,N/A,https://www.swchc.on.ca/children-youth-programs/parent-support-calendar,SWCHC,Morning,Wednesday
@@ -456,7 +456,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-10,16:30 - 18:30,Evening Playgroup,Odawa Native Friendship Centre,815 St. Laurent Blvd,East,Yes,English,Kids,N/A,http://odawafc.com/programs/earlyon-children-0-6/,Odawa,Evening,Wednesday
 2024-04-10,17:00 - 19:00,Open drop-in,Western Ottawa Community Resource Centre,2 MacNeil Court,West,No,English,Kids,N/A,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Evening,Wednesday
 2024-04-11,08:30 - 12:30,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Thursday
-2024-04-11,08:45 - 12:45,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Thursday
+2024-04-11,08:45 - 12:45,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,"English, French, Arabic",Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Thursday
 2024-04-11,09:00 - 11:00,EarlyON Playgroup,St. James Anglican Church,1138 Bridge Street,East,No,English,Kids,N/A,https://gccs.ca/earlyon-drop-ins-2/,GCCS,Morning,Thursday
 2024-04-11,09:00 - 11:00,EarlyON Playgroup,Blackburn Community Hall,190 Glen Park Drive,East,No,English,Kids,N/A,https://gccs.ca/earlyon-drop-ins-2/,GCCS,Morning,Thursday
 2024-04-11,09:00 - 11:00,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,Kids,N/A,https://parentresource.ca/earlyon-programs-and-services/,PRC,Morning,Thursday
@@ -479,8 +479,8 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-11,09:30 - 11:00,Barrhaven United Church Playgroup,Barrhaven United Church,3013 Jockvale Rd,West,No,English,Kids,N/A,https://www.cityviewcentre.ca/playgroups,City View Centre,Morning,Thursday
 2024-04-11,09:30 - 11:00,Groupe de jeu francophone au Centre ON y va !,OCCRC,240 Centrum Blvd,East,No,French,Kids,N/A,https://events-evenements.crcoc.ca/events-evenements/category/early-on-y-va/,CRCOC,Morning,Thursday
 2024-04-11,09:30 - 11:00,Maison Brantwood,Maison Brantwood,39 Onslow cr.,Central,No,French,Kids,N/A,https://grandirensemble.ca/services-a-la-petite-enfance-et-a-la-famille/centre-on-y-va-grandir-ensemble/,Grandir ensemble,Morning,Thursday
-2024-04-11,09:30 - 11:30,Bilingual Playgroup,CSC Vanier,270 Marier Ave.,East,No,English & French,Kids,N/A,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Morning,Thursday
-2024-04-11,09:30 - 11:30,Jules Morin Bilingual Playgroup,Pavillon Jules Morin,400 Clarence,East,No,English & French,Kids,N/A,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Morning,Thursday
+2024-04-11,09:30 - 11:30,Bilingual Playgroup,CSC Vanier,270 Marier Ave.,East,No,English & French,Kids,N/A,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Morning,Thursday
+2024-04-11,09:30 - 11:30,Jules Morin Bilingual Playgroup,Pavillon Jules Morin,400 Clarence,East,No,English & French,Kids,N/A,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Morning,Thursday
 2024-04-11,09:30 - 11:30,Playgroup Pinecrest Queensway,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Thursday
 2024-04-11,09:30 - 11:30,Playgroup Bethany Baptist,Bethany Baptist Gym (use side door),382 Centrepointe,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Thursday
 2024-04-11,09:30 - 11:30,Playgroup Foster Farm,Foster Farm,1065 Ramsey Cres.,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Thursday
@@ -513,7 +513,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-12,08:30 - 12:30,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Friday
 2024-04-12,08:30 - 13:30,EarlyON Playgroup,Carlington Community Health Centre (Use the door in front of Merivale) ,900 Merivale,West,No,English,Kids,N/A,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC,Morning,Friday
 2024-04-12,08:45 - 10:00,Indoor Playgroup,City View Centre,1099 Longfields Dr.,West,No,English,Kids,N/A,https://www.cityviewcentre.ca/playgroups,City View Centre,Morning,Friday
-2024-04-12,08:45 - 12:45,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Friday
+2024-04-12,08:45 - 12:45,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,"English, French, Arabic",Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Friday
 2024-04-12,09:00 - 11:00,EarlyON Playgroup,Rideauview Community Centre,4310 Shoreline Drive,South,No,English,Kids,N/A,https://gccs.ca/earlyon-drop-ins-2/,GCCS,Morning,Friday
 2024-04-12,09:00 - 11:00,EarlyON Playgroup,Fred G. Barrett Arena - Lions Hall,3280 Leitrim Rd,South,No,English,Kids,N/A,https://gccs.ca/earlyon-drop-ins-2/,GCCS,Morning,Friday
 2024-04-12,09:00 - 11:00,Groupe de jeu,École Reine-des-Bois ,"1450, Rue Duford ",East,No,French,Kids,N/A,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Morning,Friday
@@ -539,7 +539,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-12,09:30 - 11:00,Richmond Playgroup,Richmond Memorial Arena,"6095 Perth St, Richmond",West,No,English,Kids,N/A,https://www.cityviewcentre.ca/playgroups,City View Centre,Morning,Friday
 2024-04-12,09:30 - 11:00,English playgroup ,OCCRC,240 Centrum Blvd,East,No,English,Kids,N/A,https://events-evenements.crcoc.ca/events-evenements/category/early-on-y-va/,CRCOC,Morning,Friday
 2024-04-12,09:30 - 11:00,450 Laurier Drop-in Playgroup,McAuley Place,450 Laurier Ave West,Central,No,English,Kids,N/A,https://mothercraft.com/venues/ontario-early-years-centre/,Mothercraft,Morning,Friday
-2024-04-12,09:30 - 11:30,Groupe de jeu francophone,CSC Vanier,270 Marier Ave.,East,No,French,Kids,N/A,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Morning,Friday
+2024-04-12,09:30 - 11:30,Groupe de jeu francophone,CSC Vanier,270 Marier Ave.,East,No,French,Kids,N/A,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Morning,Friday
 2024-04-12,09:30 - 11:30,Groupe de jeu,École Des Voyageurs ,6030 prom. Voyageur,East,No,French,Kids,N/A,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Morning,Friday
 2024-04-12,09:30 - 11:30,Playgroup Bayshore,"Bayshore (Unit 101, dial 101 from lobby)",210 Woodridge Cr. ,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Friday
 2024-04-12,09:30 - 11:30,Playgroup,Cedarwood,2850 Cedarwood Cr.,South,No,English,Kids,N/A,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC,Morning,Friday
@@ -566,7 +566,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-13,09:00 - 11:30,Site Principal,Site Principal,431 Boul. St-Laurent,East,No,French,Kids,N/A,https://grandirensemble.ca/services-a-la-petite-enfance-et-a-la-famille/centre-on-y-va-grandir-ensemble/,Grandir ensemble,Morning,Saturday
 2024-04-13,09:00 - 11:30,Groupe de jeu,École Béatrice-Desloges,"1999, av. Provence",East,No,French,Kids,N/A,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Morning,Saturday
 2024-04-13,09:30 - 11:30,EarlyON Playgroup,Carlington Community Health Centre (Use the door in front of Merivale) ,900 Merivale,West,No,English,Kids,N/A,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC,Morning,Saturday
-2024-04-13,09:30 - 11:30,Saturday Morning Bilingual Playgroup,CSC Vanier,270 Marier Ave.,East,No,English & French,Kids,N/A,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Morning,Saturday
+2024-04-13,09:30 - 11:30,Saturday Morning Bilingual Playgroup,CSC Vanier,270 Marier Ave.,East,No,English & French,Kids,N/A,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Morning,Saturday
 2024-04-13,09:30 - 11:30,Playgroup Pinecrest Queensway,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Saturday
 2024-04-13,09:30 - 11:30,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,Kids,N/A,https://parentresource.ca/earlyon-programs-and-services/,PRC,Morning,Saturday
 2024-04-13,09:30 - 11:30,Playgroup,"Somerset West Community Health Centre, 3rd floor",755 Somerset St W,Central,Recommended,English,Kids,N/A,https://www.swchc.on.ca/children-youth-programs/parent-support-calendar,SWCHC,Morning,Saturday
@@ -576,7 +576,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-15,08:30 - 12:30,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Monday
 2024-04-15,08:30 - 13:30,EarlyON Playgroup,Carlington Community Health Centre (Use the door in front of Merivale) ,900 Merivale,West,No,English,Kids,N/A,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC,Morning,Monday
 2024-04-15,08:45 - 10:00,Indoor Playgroup,City View Centre,1099 Longfields Dr.,West,No,English,Kids,N/A,https://www.cityviewcentre.ca/playgroups,City View Centre,Morning,Monday
-2024-04-15,08:45 - 12:45,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Monday
+2024-04-15,08:45 - 12:45,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,"English, French, Arabic",Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Monday
 2024-04-15,09:00 - 11:00,EarlyON Playgroup,Rideauview Community Centre,4310 Shoreline Drive,South,No,English,Kids,N/A,https://gccs.ca/earlyon-drop-ins-2/,GCCS,Morning,Monday
 2024-04-15,09:00 - 11:00,EarlyON Playgroup,Fred G. Barrett Arena - Lions Hall,3280 Leitrim Rd,South,No,English,Kids,N/A,https://gccs.ca/earlyon-drop-ins-2/,GCCS,Morning,Monday
 2024-04-15,09:00 - 11:00,Groupe de jeu,École La Vérendrye ,"614, prom. Eastvale ",East,No,French,Kids,N/A,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Morning,Monday
@@ -599,8 +599,8 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-15,09:30 - 11:00,Groupe de jeu francophone au Centre ON y va !,OCCRC,240 Centrum Blvd,East,No,French,Kids,N/A,https://events-evenements.crcoc.ca/events-evenements/category/early-on-y-va/,CRCOC,Morning,Monday
 2024-04-15,09:30 - 11:00,Home Childcare Provider Drop-In Playgroup,Farley Mowat Public School ,75 Waterbridge dr.,South,No,English,Kids,N/A,https://mothercraft.com/venues/ontario-early-years-centre/,Mothercraft,Morning,Monday
 2024-04-15,09:30 - 11:00,Westboro Infant Drop-In Playgroup,Mothercraft Ottawa,475 Evered,Central,No,English,Babies,TBD,https://mothercraft.com/venues/ontario-early-years-centre/,Mothercraft,Morning,Monday
-2024-04-15,09:30 - 11:30,CTC Bilingual Playgroup (special need children),CSC Vanier,270 Marier Ave.,East,No,English & French,Kids,N/A,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Morning,Monday
-2024-04-15,09:30 - 11:30,Active Bilingual Playgroup,Richelieu-Vanier Community Centre,300 Av. des Pères-Blancs,East,No,English & French,Kids,N/A,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Morning,Monday
+2024-04-15,09:30 - 11:30,CTC Bilingual Playgroup (special need children),CSC Vanier,270 Marier Ave.,East,No,English & French,Kids,N/A,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Morning,Monday
+2024-04-15,09:30 - 11:30,Active Bilingual Playgroup,Richelieu-Vanier Community Centre,300 Av. des Pères-Blancs,East,No,English & French,Kids,N/A,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Morning,Monday
 2024-04-15,09:30 - 11:30,Playgroup Pinecrest Queensway,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Monday
 2024-04-15,09:30 - 11:30,Playgroup Foster Farm,Foster Farm,1065 Ramsey Cres.,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Monday
 2024-04-15,09:30 - 11:30,Open drop-in,Western Ottawa Community Resource Centre,2 MacNeil Court,West,No,English,Kids,N/A,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Morning,Monday
@@ -629,7 +629,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-16,08:30 - 12:30,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Tuesday
 2024-04-16,08:30 - 13:30,EarlyON Playgroup,Carlington Community Health Centre (Use the door in front of Merivale) ,900 Merivale,West,No,English,Kids,N/A,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC,Morning,Tuesday
 2024-04-16,08:45 - 10:00,Indoor Playgroup,City View Centre,1099 Longfields Dr.,West,No,English,Kids,N/A,https://www.cityviewcentre.ca/playgroups,City View Centre,Morning,Tuesday
-2024-04-16,08:45 - 12:45,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Tuesday
+2024-04-16,08:45 - 12:45,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,"English, French, Arabic",Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Tuesday
 2024-04-16,09:00 - 11:00,EarlyON Playgroup,Carlington Recreation Gym ,1520 Caldwell Ave.,West,No,English,Kids,N/A,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC,Morning,Tuesday
 2024-04-16,09:00 - 11:00,EarlyON Playgroup,Orleans Resurrection Lutheran Church,1325 Gaultois Avenue,East,No,English,Kids,N/A,https://gccs.ca/earlyon-drop-ins-2/,GCCS,Morning,Tuesday
 2024-04-16,09:00 - 11:00,EarlyON Playgroup,Blackburn Community Hall,190 Glen Park Drive,East,No,English,Kids,N/A,https://gccs.ca/earlyon-drop-ins-2/,GCCS,Morning,Tuesday
@@ -650,7 +650,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-16,09:15 - 11:15,Playgroup Bells Corners,Bells Corner,681 Seyton Dr.,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Tuesday
 2024-04-16,09:30 - 11:00,Chapman Mills Playgroup,Chapman Mills,424 Chapman Mills Dr,West,No,English,Kids,N/A,https://www.cityviewcentre.ca/playgroups,City View Centre,Morning,Tuesday
 2024-04-16,09:30 - 11:00,English playgroup ,OCCRC,240 Centrum Blvd,East,No,English,Kids,N/A,https://events-evenements.crcoc.ca/events-evenements/category/early-on-y-va/,CRCOC,Morning,Tuesday
-2024-04-16,09:30 - 11:30,Overbrook Bilingual Playgroup,Overbrook Community Centre,33 Quill st.,East,No,English & French,Kids,N/A,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Morning,Tuesday
+2024-04-16,09:30 - 11:30,Overbrook Bilingual Playgroup,Overbrook Community Centre,33 Quill st.,East,No,English & French,Kids,N/A,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Morning,Tuesday
 2024-04-16,09:30 - 11:30,Groupe de jeu,École Des Voyageurs ,6030 prom. Voyageur,East,No,French,Kids,N/A,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Morning,Tuesday
 2024-04-16,09:30 - 11:30,Playgroup Pinecrest Queensway,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Tuesday
 2024-04-16,09:30 - 11:30,Playgroup Bethany Baptist,Bethany Baptist Gym (use side door),382 Centrepointe,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Tuesday
@@ -680,10 +680,10 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-16,13:30 - 14:30,Parent Connection Group (babies 0 - 24 months),Heatherington Family Centre,1495 Heatherington Rd,South,No,English,Babies,TBD,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC,Afternoon,Tuesday
 2024-04-16,13:30 - 15:00,0-6 years Playgroup,Centretown Community Health Center,420 Cooper St.,Central,No,English,Kids,N/A,https://www.centretownchc.org/calendar,Centretown CHC,Afternoon,Tuesday
 2024-04-16,13:30 - 15:00,Baby Playgroup,City View Centre,1099 Longfields Dr.,West,No,English,Babies,TBD,https://www.cityviewcentre.ca/playgroups,City View Centre,Afternoon,Tuesday
-2024-04-16,13:30 - 15:00,Atelier (Workshop): Introduction aux solides,CSC Vanier,270 Marier Ave.,East,No,English & French,Babies,TBD,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Afternoon,Tuesday
+2024-04-16,13:30 - 15:00,Atelier (Workshop): Introduction aux solides,CSC Vanier,270 Marier Ave.,East,No,English & French,Babies,TBD,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Afternoon,Tuesday
 2024-04-16,13:30 - 15:30,0-6 years Playgroup,Don Reid,2330 Don Reid Dr.,South,No,English,Kids,N/A,https://www.afchildrensservices.ca/earlyon-child-and-family-centre/monthly-programming-schedule/,AF Children Services,Afternoon,Tuesday
-2024-04-16,13:30 - 15:30,Baby and Me Bilingual playgroup,CSC Vanier,270 Marier Ave.,East,No,English & French,Babies,TBD,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Afternoon,Tuesday
-2024-04-16,13:30 - 15:30,Ça mijote - Francophone,CSC Vanier,270 Marier Ave.,East,Yes - On site,French,Pregnancy,N/A,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Afternoon,Tuesday
+2024-04-16,13:30 - 15:30,Baby and Me Bilingual playgroup,CSC Vanier,270 Marier Ave.,East,No,English & French,Babies,TBD,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Afternoon,Tuesday
+2024-04-16,13:30 - 15:30,Ça mijote - Francophone,CSC Vanier,270 Marier Ave.,East,Yes - On site,French,Pregnancy,N/A,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Afternoon,Tuesday
 2024-04-16,13:30 - 15:30,Playgroup Bayshore,"Bayshore (Unit 101, dial 101 from lobby)",210 Woodridge Cr. ,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Afternoon,Tuesday
 2024-04-16,16:30 - 18:30,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,Kids,N/A,https://parentresource.ca/earlyon-programs-and-services/,PRC,Evening,Tuesday
 2024-04-16,17:00 - 19:00,Open drop-in,Western Ottawa Community Resource Centre,2 MacNeil Court,West,No,English,Kids,N/A,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Evening,Tuesday
@@ -691,7 +691,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-16,17:30 - 19:00,Playgroup Pinecrest Queensway,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Evening,Tuesday
 2024-04-17,08:30 - 12:30,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Wednesday
 2024-04-17,08:30 - 13:30,EarlyON Playgroup,Carlington Community Health Centre (Use the door in front of Merivale) ,900 Merivale,West,No,English,Kids,N/A,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC,Morning,Wednesday
-2024-04-17,08:45 - 12:45,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Wednesday
+2024-04-17,08:45 - 12:45,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,"English, French, Arabic",Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Wednesday
 2024-04-17,09:00 - 11:00,EarlyON Playgroup,Epiphany Anglican Church,1290 Ogilvie Road,East,No,English,Kids,N/A,https://gccs.ca/earlyon-drop-ins-2/,GCCS,Morning,Wednesday
 2024-04-17,09:00 - 11:00,Caregiver Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,Kids,N/A,https://parentresource.ca/earlyon-programs-and-services/,PRC,Morning,Wednesday
 2024-04-17,09:00 - 11:00,Les Libellules (French playgroup),Somerset West Community Health Centre,30 Rosemount Ave,Central,Recommended,French,Kids,N/A,https://www.swchc.on.ca/children-youth-programs/parent-support-calendar,SWCHC,Morning,Wednesday
@@ -716,7 +716,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-17,09:30 - 11:00,Playgroup at the Cumberland Arena,R.J. Kennedy Arena,1115 Dunning Road,East,No,English,Kids,N/A,https://events-evenements.crcoc.ca/events-evenements/category/early-on-y-va/,CRCOC,Morning,Wednesday
 2024-04-17,09:30 - 11:00,École Lamoureux,École Lamoureux,2540 ave. Kaladar,South,No,French,Kids,N/A,https://grandirensemble.ca/services-a-la-petite-enfance-et-a-la-famille/centre-on-y-va-grandir-ensemble/,Grandir ensemble,Morning,Wednesday
 2024-04-17,09:30 - 11:00,Parent & Caregiver Drop-In Playgroup,Farley Mowat Public School ,75 Waterbridge dr.,South,No,English,Kids,N/A,https://mothercraft.com/venues/ontario-early-years-centre/,Mothercraft,Morning,Wednesday
-2024-04-17,09:30 - 11:30,Jules Morin Francophone Playgroup,Pavillon Jules Morin,400 Clarence,East,No,French,Kids,N/A,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Morning,Wednesday
+2024-04-17,09:30 - 11:30,Jules Morin Francophone Playgroup,Pavillon Jules Morin,400 Clarence,East,No,French,Kids,N/A,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Morning,Wednesday
 2024-04-17,09:30 - 11:30,Groupe de jeu,École Des Voyageurs ,6030 prom. Voyageur,East,No,French,Kids,N/A,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Morning,Wednesday
 2024-04-17,09:30 - 11:30,Playgroup Bayshore,"Bayshore (Unit 101, dial 101 from lobby)",210 Woodridge Cr. ,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Wednesday
 2024-04-17,09:30 - 11:30,Playgroup Pinecrest Queensway,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Wednesday
@@ -730,7 +730,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-17,09:30 - 13:00,EarlyON Playgroup,"Featherston Drive Public School, Room 123",1801 Featherston Drive,South,No,English,Kids,N/A,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB,Morning,Wednesday
 2024-04-17,09:30 - 13:00,EarlyON Playgroup,"Queen Mary Street Public School, Room 117",557 Queen Mary Street,East,No,English,Kids,N/A,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB,Morning,Wednesday
 2024-04-17,09:30 - 13:00,EarlyON Playgroup,"Agincourt Road Public School, Room 123",1250 Agincourt Road,West,No,English,Kids,N/A,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB,Morning,Wednesday
-2024-04-17,10:00 - 11:30,Forest Group - Bilingual Playgroup,Forest,300 Av. des Pères-Blancs,East,No,English & French,Kids,N/A,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Morning,Wednesday
+2024-04-17,10:00 - 11:30,Forest Group - Bilingual Playgroup,Forest,300 Av. des Pères-Blancs,East,No,English & French,Kids,N/A,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Morning,Wednesday
 2024-04-17,10:00 - 11:30,EarlyON Playgroup,Margaret Rywak Community Building,68 Knoxdale Rd.,West,No,English,Kids,N/A,https://nrocrc.org/,NROCRC,Morning,Wednesday
 2024-04-17,10:00 - 11:30,Story Stretchers,Old Town Hall - South March,821 March Rd,West,No,English,Kids,N/A,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Morning,Wednesday
 2024-04-17,10:00 - 12:00,Playgroup,"Somerset West Community Health Centre, 3rd floor",755 Somerset St W,Central,Recommended,English,Kids,N/A,https://www.swchc.on.ca/children-youth-programs/parent-support-calendar,SWCHC,Morning,Wednesday
@@ -745,7 +745,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-17,16:30 - 18:30,Evening Playgroup,Odawa Native Friendship Centre,815 St. Laurent Blvd,East,Yes,English,Kids,N/A,http://odawafc.com/programs/earlyon-children-0-6/,Odawa,Evening,Wednesday
 2024-04-17,17:00 - 19:00,Open drop-in,Western Ottawa Community Resource Centre,2 MacNeil Court,West,No,English,Kids,N/A,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Evening,Wednesday
 2024-04-18,08:30 - 12:30,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Thursday
-2024-04-18,08:45 - 12:45,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Thursday
+2024-04-18,08:45 - 12:45,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,"English, French, Arabic",Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Thursday
 2024-04-18,09:00 - 11:00,EarlyON Playgroup,St. James Anglican Church,1138 Bridge Street,East,No,English,Kids,N/A,https://gccs.ca/earlyon-drop-ins-2/,GCCS,Morning,Thursday
 2024-04-18,09:00 - 11:00,EarlyON Playgroup,Blackburn Community Hall,190 Glen Park Drive,East,No,English,Kids,N/A,https://gccs.ca/earlyon-drop-ins-2/,GCCS,Morning,Thursday
 2024-04-18,09:00 - 11:00,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,Kids,N/A,https://parentresource.ca/earlyon-programs-and-services/,PRC,Morning,Thursday
@@ -768,8 +768,8 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-18,09:30 - 11:00,Barrhaven United Church Playgroup,Barrhaven United Church,3013 Jockvale Rd,West,No,English,Kids,N/A,https://www.cityviewcentre.ca/playgroups,City View Centre,Morning,Thursday
 2024-04-18,09:30 - 11:00,Groupe de jeu francophone au Centre ON y va !,OCCRC,240 Centrum Blvd,East,No,French,Kids,N/A,https://events-evenements.crcoc.ca/events-evenements/category/early-on-y-va/,CRCOC,Morning,Thursday
 2024-04-18,09:30 - 11:00,Maison Brantwood,Maison Brantwood,39 Onslow cr.,Central,No,French,Kids,N/A,https://grandirensemble.ca/services-a-la-petite-enfance-et-a-la-famille/centre-on-y-va-grandir-ensemble/,Grandir ensemble,Morning,Thursday
-2024-04-18,09:30 - 11:30,Bilingual Playgroup,CSC Vanier,270 Marier Ave.,East,No,English & French,Kids,N/A,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Morning,Thursday
-2024-04-18,09:30 - 11:30,Jules Morin Bilingual Playgroup,Pavillon Jules Morin,400 Clarence,East,No,English & French,Kids,N/A,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Morning,Thursday
+2024-04-18,09:30 - 11:30,Bilingual Playgroup,CSC Vanier,270 Marier Ave.,East,No,English & French,Kids,N/A,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Morning,Thursday
+2024-04-18,09:30 - 11:30,Jules Morin Bilingual Playgroup,Pavillon Jules Morin,400 Clarence,East,No,English & French,Kids,N/A,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Morning,Thursday
 2024-04-18,09:30 - 11:30,Playgroup Pinecrest Queensway,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Thursday
 2024-04-18,09:30 - 11:30,Playgroup Bethany Baptist,Bethany Baptist Gym (use side door),382 Centrepointe,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Thursday
 2024-04-18,09:30 - 11:30,Playgroup Foster Farm,Foster Farm,1065 Ramsey Cres.,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Thursday
@@ -796,11 +796,11 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-18,13:15 - 15:15,Playgroup (0-6 years),Holy Trinity Catholic High School (entrance on McGibbon Drive),180 Katimavik Road,West,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Afternoon,Thursday
 2024-04-18,13:15 - 15:15,Baby and Me Playgroup (0-18 months),St. Peter High School,750 Charlemagne Boulevard,East,No,English,Babies,TBD,https://www.ocsb.ca/parents/child-care/,OCSB,Afternoon,Thursday
 2024-04-18,13:30 - 15:30,Baby & Me,Don Reid,2330 Don Reid Dr.,South,No,English,Babies,TBD,https://www.afchildrensservices.ca/earlyon-child-and-family-centre/monthly-programming-schedule/,AF Children Services,Afternoon,Thursday
-2024-04-18,13:30 - 15:30,Soutien et entraide à l'allaitement,CSC Vanier,270 Marier Ave.,East,No,French,Babies,TBD,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Afternoon,Thursday
+2024-04-18,13:30 - 15:30,Soutien et entraide à l'allaitement,CSC Vanier,270 Marier Ave.,East,No,French,Babies,TBD,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Afternoon,Thursday
 2024-04-19,08:30 - 12:30,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Friday
 2024-04-19,08:30 - 13:30,EarlyON Playgroup,Carlington Community Health Centre (Use the door in front of Merivale) ,900 Merivale,West,No,English,Kids,N/A,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC,Morning,Friday
 2024-04-19,08:45 - 10:00,Indoor Playgroup,City View Centre,1099 Longfields Dr.,West,No,English,Kids,N/A,https://www.cityviewcentre.ca/playgroups,City View Centre,Morning,Friday
-2024-04-19,08:45 - 12:45,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Friday
+2024-04-19,08:45 - 12:45,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,"English, French, Arabic",Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Friday
 2024-04-19,09:00 - 11:00,EarlyON Playgroup,Rideauview Community Centre,4310 Shoreline Drive,South,No,English,Kids,N/A,https://gccs.ca/earlyon-drop-ins-2/,GCCS,Morning,Friday
 2024-04-19,09:00 - 11:00,EarlyON Playgroup,Fred G. Barrett Arena - Lions Hall,3280 Leitrim Rd,South,No,English,Kids,N/A,https://gccs.ca/earlyon-drop-ins-2/,GCCS,Morning,Friday
 2024-04-19,09:00 - 11:00,Groupe de jeu,École Reine-des-Bois ,"1450, Rue Duford ",East,No,French,Kids,N/A,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Morning,Friday
@@ -826,7 +826,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-19,09:30 - 11:00,Richmond Playgroup,Richmond Memorial Arena,"6095 Perth St, Richmond",West,No,English,Kids,N/A,https://www.cityviewcentre.ca/playgroups,City View Centre,Morning,Friday
 2024-04-19,09:30 - 11:00,English playgroup ,OCCRC,240 Centrum Blvd,East,No,English,Kids,N/A,https://events-evenements.crcoc.ca/events-evenements/category/early-on-y-va/,CRCOC,Morning,Friday
 2024-04-19,09:30 - 11:00,450 Laurier Drop-in Playgroup,McAuley Place,450 Laurier Ave West,Central,No,English,Kids,N/A,https://mothercraft.com/venues/ontario-early-years-centre/,Mothercraft,Morning,Friday
-2024-04-19,09:30 - 11:30,Groupe de jeu francophone,CSC Vanier,270 Marier Ave.,East,No,French,Kids,N/A,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Morning,Friday
+2024-04-19,09:30 - 11:30,Groupe de jeu francophone,CSC Vanier,270 Marier Ave.,East,No,French,Kids,N/A,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Morning,Friday
 2024-04-19,09:30 - 11:30,Groupe de jeu,École Des Voyageurs ,6030 prom. Voyageur,East,No,French,Kids,N/A,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Morning,Friday
 2024-04-19,09:30 - 11:30,Playgroup Bayshore,"Bayshore (Unit 101, dial 101 from lobby)",210 Woodridge Cr. ,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Friday
 2024-04-19,09:30 - 11:30,Playgroup,Cedarwood,2850 Cedarwood Cr.,South,No,English,Kids,N/A,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC,Morning,Friday
@@ -854,7 +854,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-20,09:00 - 11:30,Groupe de jeu,École Béatrice-Desloges,"1999, av. Provence",East,No,French,Kids,N/A,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Morning,Saturday
 2024-04-20,09:30 - 11:00,Saturday Playgroup,OCCRC,240 Centrum Blvd,East,No,English,Kids,N/A,https://events-evenements.crcoc.ca/events-evenements/category/early-on-y-va/,CRCOC,Morning,Saturday
 2024-04-20,09:30 - 11:30,EarlyON Playgroup,Carlington Community Health Centre (Use the door in front of Merivale) ,900 Merivale,West,No,English,Kids,N/A,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC,Morning,Saturday
-2024-04-20,09:30 - 11:30,Saturday Morning Bilingual Playgroup,CSC Vanier,270 Marier Ave.,East,No,English & French,Kids,N/A,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Morning,Saturday
+2024-04-20,09:30 - 11:30,Saturday Morning Bilingual Playgroup,CSC Vanier,270 Marier Ave.,East,No,English & French,Kids,N/A,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Morning,Saturday
 2024-04-20,09:30 - 11:30,Playgroup Pinecrest Queensway,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Saturday
 2024-04-20,09:30 - 11:30,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,Kids,N/A,https://parentresource.ca/earlyon-programs-and-services/,PRC,Morning,Saturday
 2024-04-20,09:30 - 11:30,Playgroup,"Somerset West Community Health Centre, 3rd floor",755 Somerset St W,Central,Recommended,English,Kids,N/A,https://www.swchc.on.ca/children-youth-programs/parent-support-calendar,SWCHC,Morning,Saturday
@@ -865,7 +865,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-22,08:30 - 12:30,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Monday
 2024-04-22,08:30 - 13:30,EarlyON Playgroup,Carlington Community Health Centre (Use the door in front of Merivale) ,900 Merivale,West,No,English,Kids,N/A,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC,Morning,Monday
 2024-04-22,08:45 - 10:00,Indoor Playgroup,City View Centre,1099 Longfields Dr.,West,No,English,Kids,N/A,https://www.cityviewcentre.ca/playgroups,City View Centre,Morning,Monday
-2024-04-22,08:45 - 12:45,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Monday
+2024-04-22,08:45 - 12:45,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,"English, French, Arabic",Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Monday
 2024-04-22,09:00 - 11:00,EarlyON Playgroup,Rideauview Community Centre,4310 Shoreline Drive,South,No,English,Kids,N/A,https://gccs.ca/earlyon-drop-ins-2/,GCCS,Morning,Monday
 2024-04-22,09:00 - 11:00,EarlyON Playgroup,Fred G. Barrett Arena - Lions Hall,3280 Leitrim Rd,South,No,English,Kids,N/A,https://gccs.ca/earlyon-drop-ins-2/,GCCS,Morning,Monday
 2024-04-22,09:00 - 11:00,Groupe de jeu,École La Vérendrye ,"614, prom. Eastvale ",East,No,French,Kids,N/A,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Morning,Monday
@@ -888,8 +888,8 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-22,09:30 - 11:00,Groupe de jeu francophone au Centre ON y va !,OCCRC,240 Centrum Blvd,East,No,French,Kids,N/A,https://events-evenements.crcoc.ca/events-evenements/category/early-on-y-va/,CRCOC,Morning,Monday
 2024-04-22,09:30 - 11:00,Home Childcare Provider Drop-In Playgroup,Farley Mowat Public School ,75 Waterbridge dr.,South,No,English,Kids,N/A,https://mothercraft.com/venues/ontario-early-years-centre/,Mothercraft,Morning,Monday
 2024-04-22,09:30 - 11:00,Westboro Infant Drop-In Playgroup,Mothercraft Ottawa,475 Evered,Central,No,English,Babies,TBD,https://mothercraft.com/venues/ontario-early-years-centre/,Mothercraft,Morning,Monday
-2024-04-22,09:30 - 11:30,CTC Bilingual Playgroup (special need children),CSC Vanier,270 Marier Ave.,East,No,English & French,Kids,N/A,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Morning,Monday
-2024-04-22,09:30 - 11:30,Active Bilingual Playgroup,Richelieu-Vanier Community Centre,300 Av. des Pères-Blancs,East,No,English & French,Kids,N/A,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Morning,Monday
+2024-04-22,09:30 - 11:30,CTC Bilingual Playgroup (special need children),CSC Vanier,270 Marier Ave.,East,No,English & French,Kids,N/A,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Morning,Monday
+2024-04-22,09:30 - 11:30,Active Bilingual Playgroup,Richelieu-Vanier Community Centre,300 Av. des Pères-Blancs,East,No,English & French,Kids,N/A,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Morning,Monday
 2024-04-22,09:30 - 11:30,Playgroup Pinecrest Queensway,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Monday
 2024-04-22,09:30 - 11:30,Playgroup Foster Farm,Foster Farm,1065 Ramsey Cres.,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Monday
 2024-04-22,09:30 - 11:30,Open drop-in,Western Ottawa Community Resource Centre,2 MacNeil Court,West,No,English,Kids,N/A,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Morning,Monday
@@ -917,7 +917,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-23,08:30 - 12:30,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Tuesday
 2024-04-23,08:30 - 13:30,EarlyON Playgroup,Carlington Community Health Centre (Use the door in front of Merivale) ,900 Merivale,West,No,English,Kids,N/A,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC,Morning,Tuesday
 2024-04-23,08:45 - 10:00,Indoor Playgroup,City View Centre,1099 Longfields Dr.,West,No,English,Kids,N/A,https://www.cityviewcentre.ca/playgroups,City View Centre,Morning,Tuesday
-2024-04-23,08:45 - 12:45,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Tuesday
+2024-04-23,08:45 - 12:45,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,"English, French, Arabic",Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Tuesday
 2024-04-23,09:00 - 11:00,EarlyON Playgroup,Carlington Recreation Gym ,1520 Caldwell Ave.,West,No,English,Kids,N/A,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC,Morning,Tuesday
 2024-04-23,09:00 - 11:00,EarlyON Playgroup,Orleans Resurrection Lutheran Church,1325 Gaultois Avenue,East,No,English,Kids,N/A,https://gccs.ca/earlyon-drop-ins-2/,GCCS,Morning,Tuesday
 2024-04-23,09:00 - 11:00,EarlyON Playgroup,Blackburn Community Hall,190 Glen Park Drive,East,No,English,Kids,N/A,https://gccs.ca/earlyon-drop-ins-2/,GCCS,Morning,Tuesday
@@ -938,7 +938,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-23,09:15 - 11:15,Playgroup Bells Corners,Bells Corner,681 Seyton Dr.,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Tuesday
 2024-04-23,09:30 - 11:00,Chapman Mills Playgroup,Chapman Mills,424 Chapman Mills Dr,West,No,English,Kids,N/A,https://www.cityviewcentre.ca/playgroups,City View Centre,Morning,Tuesday
 2024-04-23,09:30 - 11:00,English playgroup ,OCCRC,240 Centrum Blvd,East,No,English,Kids,N/A,https://events-evenements.crcoc.ca/events-evenements/category/early-on-y-va/,CRCOC,Morning,Tuesday
-2024-04-23,09:30 - 11:30,Overbrook Bilingual Playgroup,Overbrook Community Centre,33 Quill st.,East,No,English & French,Kids,N/A,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Morning,Tuesday
+2024-04-23,09:30 - 11:30,Overbrook Bilingual Playgroup,Overbrook Community Centre,33 Quill st.,East,No,English & French,Kids,N/A,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Morning,Tuesday
 2024-04-23,09:30 - 11:30,Groupe de jeu,École Des Voyageurs ,6030 prom. Voyageur,East,No,French,Kids,N/A,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Morning,Tuesday
 2024-04-23,09:30 - 11:30,Playgroup Pinecrest Queensway,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Tuesday
 2024-04-23,09:30 - 11:30,Playgroup Bethany Baptist,Bethany Baptist Gym (use side door),382 Centrepointe,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Tuesday
@@ -969,8 +969,8 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-23,13:30 - 15:00,0-6 years Playgroup,Centretown Community Health Center,420 Cooper St.,Central,No,English,Kids,N/A,https://www.centretownchc.org/calendar,Centretown CHC,Afternoon,Tuesday
 2024-04-23,13:30 - 15:00,Baby Playgroup,City View Centre,1099 Longfields Dr.,West,No,English,Babies,TBD,https://www.cityviewcentre.ca/playgroups,City View Centre,Afternoon,Tuesday
 2024-04-23,13:30 - 15:30,0-6 years Playgroup,Don Reid,2330 Don Reid Dr.,South,No,English,Kids,N/A,https://www.afchildrensservices.ca/earlyon-child-and-family-centre/monthly-programming-schedule/,AF Children Services,Afternoon,Tuesday
-2024-04-23,13:30 - 15:30,Baby and Me Bilingual playgroup,CSC Vanier,270 Marier Ave.,East,No,English & French,Babies,TBD,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Afternoon,Tuesday
-2024-04-23,13:30 - 15:30,Ça mijote - Francophone,CSC Vanier,270 Marier Ave.,East,Yes - On site,French,Pregnancy,N/A,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Afternoon,Tuesday
+2024-04-23,13:30 - 15:30,Baby and Me Bilingual playgroup,CSC Vanier,270 Marier Ave.,East,No,English & French,Babies,TBD,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Afternoon,Tuesday
+2024-04-23,13:30 - 15:30,Ça mijote - Francophone,CSC Vanier,270 Marier Ave.,East,Yes - On site,French,Pregnancy,N/A,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Afternoon,Tuesday
 2024-04-23,13:30 - 15:30,Playgroup Bayshore,"Bayshore (Unit 101, dial 101 from lobby)",210 Woodridge Cr. ,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Afternoon,Tuesday
 2024-04-23,16:30 - 18:30,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,Kids,N/A,https://parentresource.ca/earlyon-programs-and-services/,PRC,Evening,Tuesday
 2024-04-23,17:00 - 19:00,Open drop-in,Western Ottawa Community Resource Centre,2 MacNeil Court,West,No,English,Kids,N/A,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Evening,Tuesday
@@ -978,7 +978,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-23,17:30 - 19:00,Playgroup Pinecrest Queensway,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Evening,Tuesday
 2024-04-24,08:30 - 12:30,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Wednesday
 2024-04-24,08:30 - 13:30,EarlyON Playgroup,Carlington Community Health Centre (Use the door in front of Merivale) ,900 Merivale,West,No,English,Kids,N/A,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC,Morning,Wednesday
-2024-04-24,08:45 - 12:45,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Wednesday
+2024-04-24,08:45 - 12:45,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,"English, French, Arabic",Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Wednesday
 2024-04-24,09:00 - 11:00,EarlyON Playgroup,Epiphany Anglican Church,1290 Ogilvie Road,East,No,English,Kids,N/A,https://gccs.ca/earlyon-drop-ins-2/,GCCS,Morning,Wednesday
 2024-04-24,09:00 - 11:00,Caregiver Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,Kids,N/A,https://parentresource.ca/earlyon-programs-and-services/,PRC,Morning,Wednesday
 2024-04-24,09:00 - 11:00,Les Libellules (French playgroup),Somerset West Community Health Centre,30 Rosemount Ave,Central,Recommended,French,Kids,N/A,https://www.swchc.on.ca/children-youth-programs/parent-support-calendar,SWCHC,Morning,Wednesday
@@ -1003,7 +1003,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-24,09:30 - 11:00,Playgroup at the Navan Arena ,Navan Memorial Centre,1295 Colonial Rd,East,No,English,Kids,N/A,https://events-evenements.crcoc.ca/events-evenements/category/early-on-y-va/,CRCOC,Morning,Wednesday
 2024-04-24,09:30 - 11:00,École Lamoureux,École Lamoureux,2540 ave. Kaladar,South,No,French,Kids,N/A,https://grandirensemble.ca/services-a-la-petite-enfance-et-a-la-famille/centre-on-y-va-grandir-ensemble/,Grandir ensemble,Morning,Wednesday
 2024-04-24,09:30 - 11:00,Parent & Caregiver Drop-In Playgroup,Farley Mowat Public School ,75 Waterbridge dr.,South,No,English,Kids,N/A,https://mothercraft.com/venues/ontario-early-years-centre/,Mothercraft,Morning,Wednesday
-2024-04-24,09:30 - 11:30,Jules Morin Francophone Playgroup,Pavillon Jules Morin,400 Clarence,East,No,French,Kids,N/A,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Morning,Wednesday
+2024-04-24,09:30 - 11:30,Jules Morin Francophone Playgroup,Pavillon Jules Morin,400 Clarence,East,No,French,Kids,N/A,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Morning,Wednesday
 2024-04-24,09:30 - 11:30,Groupe de jeu,École Des Voyageurs ,6030 prom. Voyageur,East,No,French,Kids,N/A,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Morning,Wednesday
 2024-04-24,09:30 - 11:30,Playgroup Bayshore,"Bayshore (Unit 101, dial 101 from lobby)",210 Woodridge Cr. ,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Wednesday
 2024-04-24,09:30 - 11:30,Playgroup Pinecrest Queensway,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Wednesday
@@ -1017,7 +1017,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-24,09:30 - 13:00,EarlyON Playgroup,"Featherston Drive Public School, Room 123",1801 Featherston Drive,South,No,English,Kids,N/A,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB,Morning,Wednesday
 2024-04-24,09:30 - 13:00,EarlyON Playgroup,"Queen Mary Street Public School, Room 117",557 Queen Mary Street,East,No,English,Kids,N/A,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB,Morning,Wednesday
 2024-04-24,09:30 - 13:00,EarlyON Playgroup,"Agincourt Road Public School, Room 123",1250 Agincourt Road,West,No,English,Kids,N/A,https://www.ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978,OCDSB,Morning,Wednesday
-2024-04-24,10:00 - 11:30,Forest Group - Bilingual Playgroup,Forest,300 Av. des Pères-Blancs,East,No,English & French,Kids,N/A,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Morning,Wednesday
+2024-04-24,10:00 - 11:30,Forest Group - Bilingual Playgroup,Forest,300 Av. des Pères-Blancs,East,No,English & French,Kids,N/A,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Morning,Wednesday
 2024-04-24,10:00 - 11:30,EarlyON Playgroup,Margaret Rywak Community Building,68 Knoxdale Rd.,West,No,English,Kids,N/A,https://nrocrc.org/,NROCRC,Morning,Wednesday
 2024-04-24,10:00 - 11:30,Story Stretchers,Old Town Hall - South March,821 March Rd,West,No,English,Kids,N/A,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Morning,Wednesday
 2024-04-24,10:00 - 12:00,Playgroup,"Somerset West Community Health Centre, 3rd floor",755 Somerset St W,Central,Recommended,English,Kids,N/A,https://www.swchc.on.ca/children-youth-programs/parent-support-calendar,SWCHC,Morning,Wednesday
@@ -1032,7 +1032,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-24,16:30 - 18:30,Evening Playgroup,Odawa Native Friendship Centre,815 St. Laurent Blvd,East,Yes,English,Kids,N/A,http://odawafc.com/programs/earlyon-children-0-6/,Odawa,Evening,Wednesday
 2024-04-24,17:00 - 19:00,Open drop-in,Western Ottawa Community Resource Centre,2 MacNeil Court,West,No,English,Kids,N/A,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Evening,Wednesday
 2024-04-25,08:30 - 12:30,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Thursday
-2024-04-25,08:45 - 12:45,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Thursday
+2024-04-25,08:45 - 12:45,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,"English, French, Arabic",Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Thursday
 2024-04-25,09:00 - 11:00,EarlyON Playgroup,St. James Anglican Church,1138 Bridge Street,East,No,English,Kids,N/A,https://gccs.ca/earlyon-drop-ins-2/,GCCS,Morning,Thursday
 2024-04-25,09:00 - 11:00,EarlyON Playgroup,Blackburn Community Hall,190 Glen Park Drive,East,No,English,Kids,N/A,https://gccs.ca/earlyon-drop-ins-2/,GCCS,Morning,Thursday
 2024-04-25,09:00 - 11:00,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,Kids,N/A,https://parentresource.ca/earlyon-programs-and-services/,PRC,Morning,Thursday
@@ -1055,8 +1055,8 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-25,09:30 - 11:00,Barrhaven United Church Playgroup,Barrhaven United Church,3013 Jockvale Rd,West,No,English,Kids,N/A,https://www.cityviewcentre.ca/playgroups,City View Centre,Morning,Thursday
 2024-04-25,09:30 - 11:00,Groupe de jeu francophone au Centre ON y va !,OCCRC,240 Centrum Blvd,East,No,French,Kids,N/A,https://events-evenements.crcoc.ca/events-evenements/category/early-on-y-va/,CRCOC,Morning,Thursday
 2024-04-25,09:30 - 11:00,Maison Brantwood,Maison Brantwood,39 Onslow cr.,Central,No,French,Kids,N/A,https://grandirensemble.ca/services-a-la-petite-enfance-et-a-la-famille/centre-on-y-va-grandir-ensemble/,Grandir ensemble,Morning,Thursday
-2024-04-25,09:30 - 11:30,Bilingual Playgroup,CSC Vanier,270 Marier Ave.,East,No,English & French,Kids,N/A,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Morning,Thursday
-2024-04-25,09:30 - 11:30,Jules Morin Bilingual Playgroup,Pavillon Jules Morin,400 Clarence,East,No,English & French,Kids,N/A,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Morning,Thursday
+2024-04-25,09:30 - 11:30,Bilingual Playgroup,CSC Vanier,270 Marier Ave.,East,No,English & French,Kids,N/A,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Morning,Thursday
+2024-04-25,09:30 - 11:30,Jules Morin Bilingual Playgroup,Pavillon Jules Morin,400 Clarence,East,No,English & French,Kids,N/A,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Morning,Thursday
 2024-04-25,09:30 - 11:30,Playgroup Pinecrest Queensway,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Thursday
 2024-04-25,09:30 - 11:30,Playgroup Bethany Baptist,Bethany Baptist Gym (use side door),382 Centrepointe,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Thursday
 2024-04-25,09:30 - 11:30,Playgroup Foster Farm,Foster Farm,1065 Ramsey Cres.,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Thursday
@@ -1086,7 +1086,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-26,08:30 - 12:30,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Friday
 2024-04-26,08:30 - 13:30,EarlyON Playgroup,Carlington Community Health Centre (Use the door in front of Merivale) ,900 Merivale,West,No,English,Kids,N/A,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC,Morning,Friday
 2024-04-26,08:45 - 10:00,Indoor Playgroup,City View Centre,1099 Longfields Dr.,West,No,English,Kids,N/A,https://www.cityviewcentre.ca/playgroups,City View Centre,Morning,Friday
-2024-04-26,08:45 - 12:45,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Friday
+2024-04-26,08:45 - 12:45,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,"English, French, Arabic",Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Friday
 2024-04-26,09:00 - 11:00,EarlyON Playgroup,Rideauview Community Centre,4310 Shoreline Drive,South,No,English,Kids,N/A,https://gccs.ca/earlyon-drop-ins-2/,GCCS,Morning,Friday
 2024-04-26,09:00 - 11:00,EarlyON Playgroup,Fred G. Barrett Arena - Lions Hall,3280 Leitrim Rd,South,No,English,Kids,N/A,https://gccs.ca/earlyon-drop-ins-2/,GCCS,Morning,Friday
 2024-04-26,09:00 - 11:00,Groupe de jeu,École Reine-des-Bois ,"1450, Rue Duford ",East,No,French,Kids,N/A,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Morning,Friday
@@ -1112,7 +1112,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-26,09:30 - 11:00,Richmond Playgroup,Richmond Memorial Arena,"6095 Perth St, Richmond",West,No,English,Kids,N/A,https://www.cityviewcentre.ca/playgroups,City View Centre,Morning,Friday
 2024-04-26,09:30 - 11:00,English playgroup ,OCCRC,240 Centrum Blvd,East,No,English,Kids,N/A,https://events-evenements.crcoc.ca/events-evenements/category/early-on-y-va/,CRCOC,Morning,Friday
 2024-04-26,09:30 - 11:00,450 Laurier Drop-in Playgroup,McAuley Place,450 Laurier Ave West,Central,No,English,Kids,N/A,https://mothercraft.com/venues/ontario-early-years-centre/,Mothercraft,Morning,Friday
-2024-04-26,09:30 - 11:30,Groupe de jeu francophone,CSC Vanier,270 Marier Ave.,East,No,French,Kids,N/A,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Morning,Friday
+2024-04-26,09:30 - 11:30,Groupe de jeu francophone,CSC Vanier,270 Marier Ave.,East,No,French,Kids,N/A,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Morning,Friday
 2024-04-26,09:30 - 11:30,Groupe de jeu,École Des Voyageurs ,6030 prom. Voyageur,East,No,French,Kids,N/A,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Morning,Friday
 2024-04-26,09:30 - 11:30,Playgroup Bayshore,"Bayshore (Unit 101, dial 101 from lobby)",210 Woodridge Cr. ,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Friday
 2024-04-26,09:30 - 11:30,Playgroup,Cedarwood,2850 Cedarwood Cr.,South,No,English,Kids,N/A,https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/,SEOCHC,Morning,Friday
@@ -1140,7 +1140,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-27,09:00 - 11:30,Groupe de jeu,École Béatrice-Desloges,"1999, av. Provence",East,No,French,Kids,N/A,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Morning,Saturday
 2024-04-27,09:30 - 11:00,Saturday Playgroup,OCCRC,240 Centrum Blvd,East,No,English,Kids,N/A,https://events-evenements.crcoc.ca/events-evenements/category/early-on-y-va/,CRCOC,Morning,Saturday
 2024-04-27,09:30 - 11:30,EarlyON Playgroup,Carlington Community Health Centre (Use the door in front of Merivale) ,900 Merivale,West,No,English,Kids,N/A,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC,Morning,Saturday
-2024-04-27,09:30 - 11:30,Saturday Morning Bilingual Playgroup,CSC Vanier,270 Marier Ave.,East,No,English & French,Kids,N/A,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Morning,Saturday
+2024-04-27,09:30 - 11:30,Saturday Morning Bilingual Playgroup,CSC Vanier,270 Marier Ave.,East,No,English & French,Kids,N/A,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Morning,Saturday
 2024-04-27,09:30 - 11:30,Playgroup Pinecrest Queensway,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Saturday
 2024-04-27,09:30 - 11:30,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,Kids,N/A,https://parentresource.ca/earlyon-programs-and-services/,PRC,Morning,Saturday
 2024-04-27,09:30 - 11:30,Playgroup,"Somerset West Community Health Centre, 3rd floor",755 Somerset St W,Central,Recommended,English,Kids,N/A,https://www.swchc.on.ca/children-youth-programs/parent-support-calendar,SWCHC,Morning,Saturday
@@ -1150,7 +1150,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-29,08:30 - 12:30,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Monday
 2024-04-29,08:30 - 13:30,EarlyON Playgroup,Carlington Community Health Centre (Use the door in front of Merivale) ,900 Merivale,West,No,English,Kids,N/A,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC,Morning,Monday
 2024-04-29,08:45 - 10:00,Indoor Playgroup,City View Centre,1099 Longfields Dr.,West,No,English,Kids,N/A,https://www.cityviewcentre.ca/playgroups,City View Centre,Morning,Monday
-2024-04-29,08:45 - 12:45,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Monday
+2024-04-29,08:45 - 12:45,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,"English, French, Arabic",Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Monday
 2024-04-29,09:00 - 11:00,EarlyON Playgroup,Rideauview Community Centre,4310 Shoreline Drive,South,No,English,Kids,N/A,https://gccs.ca/earlyon-drop-ins-2/,GCCS,Morning,Monday
 2024-04-29,09:00 - 11:00,EarlyON Playgroup,Fred G. Barrett Arena - Lions Hall,3280 Leitrim Rd,South,No,English,Kids,N/A,https://gccs.ca/earlyon-drop-ins-2/,GCCS,Morning,Monday
 2024-04-29,09:00 - 11:00,Groupe de jeu,École La Vérendrye ,"614, prom. Eastvale ",East,No,French,Kids,N/A,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Morning,Monday
@@ -1173,8 +1173,8 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-29,09:30 - 11:00,Groupe de jeu francophone au Centre ON y va !,OCCRC,240 Centrum Blvd,East,No,French,Kids,N/A,https://events-evenements.crcoc.ca/events-evenements/category/early-on-y-va/,CRCOC,Morning,Monday
 2024-04-29,09:30 - 11:00,Home Childcare Provider Drop-In Playgroup,Farley Mowat Public School ,75 Waterbridge dr.,South,No,English,Kids,N/A,https://mothercraft.com/venues/ontario-early-years-centre/,Mothercraft,Morning,Monday
 2024-04-29,09:30 - 11:00,Westboro Infant Drop-In Playgroup,Mothercraft Ottawa,475 Evered,Central,No,English,Babies,TBD,https://mothercraft.com/venues/ontario-early-years-centre/,Mothercraft,Morning,Monday
-2024-04-29,09:30 - 11:30,CTC Bilingual Playgroup (special need children),CSC Vanier,270 Marier Ave.,East,No,English & French,Kids,N/A,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Morning,Monday
-2024-04-29,09:30 - 11:30,Active Bilingual Playgroup,Richelieu-Vanier Community Centre,300 Av. des Pères-Blancs,East,No,English & French,Kids,N/A,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Morning,Monday
+2024-04-29,09:30 - 11:30,CTC Bilingual Playgroup (special need children),CSC Vanier,270 Marier Ave.,East,No,English & French,Kids,N/A,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Morning,Monday
+2024-04-29,09:30 - 11:30,Active Bilingual Playgroup,Richelieu-Vanier Community Centre,300 Av. des Pères-Blancs,East,No,English & French,Kids,N/A,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Morning,Monday
 2024-04-29,09:30 - 11:30,Playgroup Pinecrest Queensway,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Monday
 2024-04-29,09:30 - 11:30,Playgroup Foster Farm,Foster Farm,1065 Ramsey Cres.,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Monday
 2024-04-29,09:30 - 11:30,Open drop-in,Western Ottawa Community Resource Centre,2 MacNeil Court,West,No,English,Kids,N/A,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Morning,Monday
@@ -1202,7 +1202,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-30,08:30 - 12:30,Playgroup (0-6 years),Divine Infant School,8100 Jeanne D’Arc Blvd,East,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Tuesday
 2024-04-30,08:30 - 13:30,EarlyON Playgroup,Carlington Community Health Centre (Use the door in front of Merivale) ,900 Merivale,West,No,English,Kids,N/A,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC,Morning,Tuesday
 2024-04-30,08:45 - 10:00,Indoor Playgroup,City View Centre,1099 Longfields Dr.,West,No,English,Kids,N/A,https://www.cityviewcentre.ca/playgroups,City View Centre,Morning,Tuesday
-2024-04-30,08:45 - 12:45,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Tuesday
+2024-04-30,08:45 - 12:45,Playgroup (0-6 years),St. Elizabeth School,1366 Coldrey Avenue,West,No,"English, French, Arabic",Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Morning,Tuesday
 2024-04-30,09:00 - 11:00,EarlyON Playgroup,Carlington Recreation Gym ,1520 Caldwell Ave.,West,No,English,Kids,N/A,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC,Morning,Tuesday
 2024-04-30,09:00 - 11:00,EarlyON Playgroup,Orleans Resurrection Lutheran Church,1325 Gaultois Avenue,East,No,English,Kids,N/A,https://gccs.ca/earlyon-drop-ins-2/,GCCS,Morning,Tuesday
 2024-04-30,09:00 - 11:00,EarlyON Playgroup,Blackburn Community Hall,190 Glen Park Drive,East,No,English,Kids,N/A,https://gccs.ca/earlyon-drop-ins-2/,GCCS,Morning,Tuesday
@@ -1223,7 +1223,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-30,09:15 - 11:15,Playgroup Bells Corners,Bells Corner,681 Seyton Dr.,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Tuesday
 2024-04-30,09:30 - 11:00,Chapman Mills Playgroup,Chapman Mills,424 Chapman Mills Dr,West,No,English,Kids,N/A,https://www.cityviewcentre.ca/playgroups,City View Centre,Morning,Tuesday
 2024-04-30,09:30 - 11:00,English playgroup ,OCCRC,240 Centrum Blvd,East,No,English,Kids,N/A,https://events-evenements.crcoc.ca/events-evenements/category/early-on-y-va/,CRCOC,Morning,Tuesday
-2024-04-30,09:30 - 11:30,Overbrook Bilingual Playgroup,Overbrook Community Centre,33 Quill st.,East,No,English & French,Kids,N/A,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Morning,Tuesday
+2024-04-30,09:30 - 11:30,Overbrook Bilingual Playgroup,Overbrook Community Centre,33 Quill st.,East,No,English & French,Kids,N/A,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Morning,Tuesday
 2024-04-30,09:30 - 11:30,Groupe de jeu,École Des Voyageurs ,6030 prom. Voyageur,East,No,French,Kids,N/A,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Morning,Tuesday
 2024-04-30,09:30 - 11:30,Playgroup Pinecrest Queensway,Pinecrest Queensway Community Health Centre,1365 Richmond Road,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Tuesday
 2024-04-30,09:30 - 11:30,Playgroup Bethany Baptist,Bethany Baptist Gym (use side door),382 Centrepointe,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Morning,Tuesday
@@ -1254,8 +1254,8 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-30,13:30 - 15:00,0-6 years Playgroup,Centretown Community Health Center,420 Cooper St.,Central,No,English,Kids,N/A,https://www.centretownchc.org/calendar,Centretown CHC,Afternoon,Tuesday
 2024-04-30,13:30 - 15:00,Baby Playgroup,City View Centre,1099 Longfields Dr.,West,No,English,Babies,TBD,https://www.cityviewcentre.ca/playgroups,City View Centre,Afternoon,Tuesday
 2024-04-30,13:30 - 15:30,0-6 years Playgroup,Don Reid,2330 Don Reid Dr.,South,No,English,Kids,N/A,https://www.afchildrensservices.ca/earlyon-child-and-family-centre/monthly-programming-schedule/,AF Children Services,Afternoon,Tuesday
-2024-04-30,13:30 - 15:30,Baby and Me Bilingual playgroup,CSC Vanier,270 Marier Ave.,East,No,English & French,Babies,TBD,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Afternoon,Tuesday
-2024-04-30,13:30 - 15:30,Ça mijote - Francophone,CSC Vanier,270 Marier Ave.,East,Yes - On site,French,Pregnancy,N/A,https://www.cscvanier.com/en/family/preschool/monthly-calendars,CSC Vanier,Afternoon,Tuesday
+2024-04-30,13:30 - 15:30,Baby and Me Bilingual playgroup,CSC Vanier,270 Marier Ave.,East,No,English & French,Babies,TBD,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Afternoon,Tuesday
+2024-04-30,13:30 - 15:30,Ça mijote - Francophone,CSC Vanier,270 Marier Ave.,East,Yes - On site,French,Pregnancy,N/A,https://mcusercontent.com/16c4e04f7ae91535ae6c66d7e/files/4aa7cb7a-47a8-4b69-111e-c14f1825c72b/Calendriers_2_.pdf,CSC Vanier,Afternoon,Tuesday
 2024-04-30,13:30 - 15:30,Playgroup Bayshore,"Bayshore (Unit 101, dial 101 from lobby)",210 Woodridge Cr. ,West,No,English,Kids,N/A,http://www.pqchc.com/children-family-services/early-on/,PQCHC,Afternoon,Tuesday
 2024-04-30,16:30 - 18:30,Playgroup (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,No,English,Kids,N/A,https://parentresource.ca/earlyon-programs-and-services/,PRC,Evening,Tuesday
 2024-04-30,17:00 - 19:00,Open drop-in,Western Ottawa Community Resource Centre,2 MacNeil Court,West,No,English,Kids,N/A,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Evening,Tuesday
