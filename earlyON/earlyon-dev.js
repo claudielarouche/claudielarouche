@@ -1,4 +1,4 @@
-console.log('baby scale 17 - 15 worked well, now starting refactoring');
+console.log('baby scale 18 - 15 worked well, now starting refactoring');
 
 let originalData = []; // Initialize as an empty array
 
@@ -200,10 +200,16 @@ function filterData(data, selectedDate, selectedAgeGroup, selectedLanguages, sel
         let scheduleFilterCondition = true;
 
         switch (scheduleFilter) {
+            case 'all':
+                scheduleFilterCondition = true;
+			console.log("all");
+                break;
             case 'eveningsWeekends':
                 scheduleFilterCondition = currentTimeOfDay === 'Evening' || currentDayOfWeek === 'Saturday' || currentDayOfWeek === 'Sunday';
+			console.log("evening");
                 break;
             case 'weekdayAMPM':
+			console.log("weekday");
                 scheduleFilterCondition = (currentDayOfWeek !== 'Saturday' && currentDayOfWeek !== 'Sunday') && (currentTimeOfDay === 'Morning' || currentTimeOfDay === 'Afternoon');
                 break;
         }
