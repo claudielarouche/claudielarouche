@@ -1,4 +1,4 @@
-console.log('baby scale 27 - 25 works well! column visibility bug fixed. Checkbox filter for scale not currently working');
+console.log('baby scale 28 - 25 works well! column visibility bug fixed. Checkbox filter for scale not currently working');
 
 let originalData = []; // Initialize as an empty array
 let babyScaleVisible = false; // Flag to track if the Baby Scale column is visible
@@ -227,7 +227,7 @@ function filterData(data, selectedDate, selectedAgeGroup, selectedLanguages, sel
         const languageCondition = !selectedLanguages.length || selectedLanguages.some(lang => currentLanguage.toLowerCase().includes(lang.toLowerCase()));
         const areaCondition = !selectedAreas.length || selectedAreas.some(area => currentArea.toLowerCase().includes(area.toLowerCase()));
 	// If babyScaleCheckbox is checked, include only rows where 'Baby Scale' is 'Yes'
-    	const babyScaleCondition = !babyScaleFilter || currentBabyScale.includes("Yes");
+    	const babyScaleCondition = !babyScaleFilter.checked || currentBabyScale === 'Yes';
 
         let scheduleFilterCondition = true;
 
