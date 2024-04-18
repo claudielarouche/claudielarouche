@@ -1,4 +1,4 @@
-console.log('baby scale 26 - 25 works well! column visibility bug fixed. Checkbox filter for scale not currently working');
+console.log('baby scale 27 - 25 works well! column visibility bug fixed. Checkbox filter for scale not currently working');
 
 let originalData = []; // Initialize as an empty array
 let babyScaleVisible = false; // Flag to track if the Baby Scale column is visible
@@ -64,18 +64,13 @@ function renderTable(data) {
 	tableHtml += '<th>Actions</th></tr></thead><tbody>';
 	
 
-	//const selectedArea = document.getElementById('selectedArea').value;
 	const selectedDate = document.getElementById('selectedDate').value;
 	const selectedAgeGroup = document.getElementById('selectedAgeGroup').value;
 	const selectedSchedule = document.getElementById('scheduleFilter').value;
-	
-	/*const selectedScheduleCheckboxes = document.querySelectorAll('.scheduleCheckbox');
-    const selectedSchedule = Array.from(selectedScheduleCheckboxes)
-        .filter(checkbox => checkbox.checked)
-        .map(checkbox => checkbox.id.replace('Checkbox', ''));*/
+	const babyScaleCheckbox = document.getElementById('babyScaleCheckbox');
 
-    //const filteredData = filterData(data, selectedDate, selectedArea, selectedAgeGroup);
-	const filteredData = filterData(data, selectedDate, selectedAgeGroup, selectedLanguages, selectedAreas, selectedSchedule);
+	
+	const filteredData = filterData(data, selectedDate, selectedAgeGroup, selectedLanguages, selectedAreas, selectedSchedule, babyScaleCheckbox);
 
 	if (!Array.isArray(filteredData)) {
 		console.error('Error loading data: Filtered data is not an array.');
@@ -210,7 +205,7 @@ function renderTable(data) {
 }
 
 
-function filterData(data, selectedDate, selectedAgeGroup, selectedLanguages, selectedAreas, scheduleFilter) {
+function filterData(data, selectedDate, selectedAgeGroup, selectedLanguages, selectedAreas, scheduleFilter, babyScaleFilter) {
     // If no date, age group, languages, areas, or schedule is selected, return the original data
     if (!selectedDate && !selectedAgeGroup && selectedLanguages.length === 0 && selectedAreas.length === 0 && scheduleFilter === 'all') {
         return data;
@@ -223,11 +218,16 @@ function filterData(data, selectedDate, selectedAgeGroup, selectedLanguages, sel
         const currentDayOfWeek = row['Day of Week'] || '';
         const currentLanguage = row['Language'] || '';
         const currentArea = row['Area'] || '';
+	const currentBabyScale = row['Baby Scale]' || ''; 
+	   
+
 
         const dateCondition = !selectedDate || currentDate === selectedDate;
         const ageGroupCondition = !selectedAgeGroup || currentAgeGroup.includes(selectedAgeGroup);
         const languageCondition = !selectedLanguages.length || selectedLanguages.some(lang => currentLanguage.toLowerCase().includes(lang.toLowerCase()));
         const areaCondition = !selectedAreas.length || selectedAreas.some(area => currentArea.toLowerCase().includes(area.toLowerCase()));
+	// If babyScaleCheckbox is checked, include only rows where 'Baby Scale' is 'Yes'
+    	const babyScaleCondition = !babyScaleFilter || currentBabyScale.includes("Yes");
 
         let scheduleFilterCondition = true;
 
@@ -247,7 +247,7 @@ function filterData(data, selectedDate, selectedAgeGroup, selectedLanguages, sel
                 break;
         }
 
-        return dateCondition && ageGroupCondition && languageCondition && areaCondition && scheduleFilterCondition;
+        return dateCondition && ageGroupCondition && languageCondition && areaCondition && scheduleFilterCondition && babyScaleCondition;
     });
 }
 
@@ -374,7 +374,7 @@ document.querySelectorAll('.areaCheckbox').forEach(function (checkbox) {
 });
 
 
-// Listen for changes in the Schedule Filter 
+// Listen for changes in the baby scale checkbox 
 document.getElementById('babyScaleCheckbox').addEventListener('change', function() {	
 	currentSearchValue = $('#dataTable_filter input').val();
     renderTable(originalData);
