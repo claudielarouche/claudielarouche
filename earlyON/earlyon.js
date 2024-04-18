@@ -1,4 +1,4 @@
-//console.log('baby scale 28, ready to be uploaded to prod!');
+console.log('Baby scale infrastructure ready');
 
 let originalData = []; // Initialize as an empty array
 let babyScaleVisible = false; // Flag to track if the Baby Scale column is visible
@@ -12,7 +12,7 @@ function getQueryParam(key) {
 
 window.onload = function() {
 	// Update the path to your CSV file
-	const csvFilePath = 'https://claudielarouche.com/earlyON/data-dev.csv';
+	const csvFilePath = 'https://claudielarouche.com/earlyON/data.csv';
 
 	Papa.parse(csvFilePath, {
 		header: true,
