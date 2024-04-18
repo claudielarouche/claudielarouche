@@ -1,6 +1,9 @@
-console.log('baby scale 21 - 19 works well! But now trying to fix column visibility bug. Checkbox filter for scale not currently working');
+console.log('baby scale 22 - 19 works well! But now trying to fix column visibility bug. Checkbox filter for scale not currently working');
 
 let originalData = []; // Initialize as an empty array
+let babyScaleVisible = false; // Flag to track if the Baby Scale column is visible
+let timeOfDayVisible = false; // Flag to track if the Time of Day column is visible
+let dayOfWeekVisible = false; // Flag to track if the Day of Week column is visible
 
 function getQueryParam(key) {
     const params = new URLSearchParams(window.location.search);
@@ -155,9 +158,7 @@ function renderTable(data) {
 
 	document.getElementById('csvData').innerHTML = tableHtml;
 
-	let babyScaleVisible = false; // Flag to track if the Baby Scale column is visible
-	let timeOfDayVisible = false; // Flag to track if the Time of Day column is visible
-	let dayOfWeekVisible = false; // Flag to track if the Day of Week column is visible
+	
 
 	if (!$.fn.dataTable.isDataTable('#dataTable')) {
 		$('#dataTable').DataTable({
@@ -167,12 +168,19 @@ function renderTable(data) {
 				'colvis' // Column visibility button
 			],
 			 "columnDefs": [
-		            {
-		                "targets": [babyScaleIndex, timeOfDayIndex, dayOfWeekIndex], // Index of the column you want to hide
-		                "visible": false // Make the column invisible
-		            }
-		            
-		        ],
+		    {
+			"targets": babyScaleIndex, // Index of the Baby Scale column
+			"visible": babyScaleVisible // Make the Baby Scale column hidden initially
+		    },
+		    {
+			"targets": timeOfDayIndex, // Index of the Time of Day column
+			"visible": timeOfDayVisible // Make the Time of Day column hidden initially
+		    },
+		    {
+			"targets": dayOfWeekIndex, // Index of the Day of Week column
+			"visible": dayOfWeekVisible // Make the Day of Week column hidden initially
+		    }
+		]
 			"language": {
 				"emptyTable": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>.",
 				"zeroRecords": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>."
@@ -181,16 +189,7 @@ function renderTable(data) {
 	}
 	$('#dataTable_filter input').val(currentSearchValue).trigger('input');
 
-	// Listen for column visibility event
-	$('#dataTable').on('column-visibility.dt', function (e, settings, column, state) {
-	    if (column === babyScaleIndex) {
-	        babyScaleVisible = state; // Update the flag based on the visibility state of the Baby Scale column
-	    } else if (column === timeOfDayIndex) {
-	        timeOfDayVisible = state; // Update the flag based on the visibility state of the Time of Day column
-	    } else if (column === dayOfWeekIndex) {
-	        dayOfWeekVisible = state; // Update the flag based on the visibility state of the Day of Week column
-	    }
-	});
+	
 	
 }
 
@@ -236,7 +235,16 @@ function filterData(data, selectedDate, selectedAgeGroup, selectedLanguages, sel
     });
 }
 
-
+// Listen for column visibility event
+$('#dataTable').on('column-visibility.dt', function (e, settings, column, state) {
+    if (column === babyScaleIndex) {
+	babyScaleVisible = state; // Update the flag based on the visibility state of the Baby Scale column
+    } else if (column === timeOfDayIndex) {
+	timeOfDayVisible = state; // Update the flag based on the visibility state of the Time of Day column
+    } else if (column === dayOfWeekIndex) {
+	dayOfWeekVisible = state; // Update the flag based on the visibility state of the Day of Week column
+    }
+});
 
 function isPastDate(dateString) {
 	const currentDate = new Date();
