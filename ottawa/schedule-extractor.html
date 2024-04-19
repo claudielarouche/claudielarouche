@@ -1,1 +1,262 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>City of Ottawa Activity Schedule Extractor</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<!--<link rel="stylesheet" type="text/css" href="style.css">-->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<style>
+        #urls {
+            width: 100%;
+            height: 25em; /* 25 lines */
+        }
+    </style>
+</head>
+<body>
+	<div class="container">
+    <h1>City of Ottawa Activity Schedule Extractor v52</h1>
+		
+		
+    <form id="scrapingForm">
+        <label for="urls">Enter URLs (separated by carriage return):</label><br>
+        <textarea id="urls" rows="4" cols="50">https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/francois-dupuis-recreation-centre&#13;&#10;https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/brewer-pool-and-arena</textarea><br>        
+        <button type="button" onclick="scrape()">Extract</button>
+    </form>
+    <div id="results">
+        <!-- Display scraping results here -->
+    </div>
+	</div>
+    <script>
+function scrape() {
+    var urlsInput = document.getElementById("urls").value.trim().split("\n");
+
+    // Clear previous results
+    document.getElementById("results").innerHTML = "";
+
+    urlsInput.forEach(function(url, index) {
+        fetch(url)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Unable to access this web page");
+            }
+            return response.text();
+        })
+        .then(data => {
+            var parser = new DOMParser();
+            var htmlDoc = parser.parseFromString(data, 'text/html');
+            
+            // Find all tables in the document
+            var tables = htmlDoc.querySelectorAll('table');
+
+	// extract name of the facility
+            var h1Content = htmlDoc.querySelector('h1');
+        //extract address
+		var address = htmlDoc.querySelector('.place-address-1');
+
+            if (tables.length > 0) {
+                // Loop through each table
+                tables.forEach(function(table) {
+                    // Initialize CSV content for this table
+                    var csvContent = "";
+
+                    // Loop through each table row
+                    table.querySelectorAll('tr').forEach(function(row) {
+                        // Get the type from the first cell in the row and remove the text "Reservations not required"
+                        var type = row.querySelector('th').textContent.replace('*Reservations not required.', '').trim();
+                        
+                        // Initialize column number counter
+                        var columnNumber = 0;
+                        
+                        // Loop through each table cell (td) in the row
+                        row.querySelectorAll('td').forEach(function(cell) {
+                            // Increment column number
+                            columnNumber++;
+                            
+                          
+                            
+                            var times = cell.textContent.split(',').map(function(time) {
+                                return time.trim();
+                            });
+                            
+                            // Loop through each time and add to CSV content
+				times.forEach(function(time) {
+					// Replace "Noon" or "noon" with "12:00"
+					    time = time.replace(/noon/gi, '12:00');
+					    
+					    // Remove carriage return
+					    time = time.replace(/\r?\n|\r/g, '');
+					
+				    var weekday = getWeekdayFromColumnNumber(columnNumber);
+				   
+				    var startTime = extractStartTime(time);
+				    var amPmIndicatorStart = extractAmPmIndicatorStart(time);
+				    var endTime = extractEndTime(time);
+				    var amPmIndicatorEnd = extractAmPmIndicatorEnd(time);
+
+
+				    // Build the final start and end time
+    					var finalStartTime = buildFinalTime(startTime, amPmIndicatorStart);
+    					var finalEndTime = buildFinalTime(endTime, amPmIndicatorEnd);
+
+					// Check if final start time is later than final end time and adjust if necessary
+					    if (finalStartTime > finalEndTime) {
+					        finalStartTime = subtract12Hours(finalStartTime);
+					    }
+
+					var finalTime = finalStartTime + " - " + finalEndTime;
+
+					if (finalTime != "NaN:NaN - NaN:NaN"){
+						csvContent += weekday + ',"'  +   finalStartTime + " - " + finalEndTime  + '","'  + h1Content.textContent + '","'  + address.textContent + '","'  + "area here" + '","' + type + '","'  + url +'"<br>';
+					}
+					
+				    
+				});
+
+                        });
+                    });
+
+                    // Append CSV content to results div
+                    var resultElement = document.createElement("div");
+                    resultElement.innerHTML = csvContent;
+                    document.getElementById("results").appendChild(resultElement);
+                });
+            } else {
+                // If no tables found, display message
+                console.log("No table found on " + url)
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching data:', error);
+            // Display error message if unable to access the page
+            /*var errorMessage = document.createElement("div");
+            errorMessage.textContent = "Unable to access this web page";
+            document.getElementById("results").appendChild(errorMessage);*/
+        });
+    });
+}
+
+// Function to get weekday from column number
+function getWeekdayFromColumnNumber(columnNumber) {
+    switch (columnNumber) {
+        case 1:
+            return "Monday";
+        case 2:
+            return "Tuesday";
+        case 3:
+            return "Wednesday";
+        case 4:
+            return "Thursday";
+        case 5:
+            return "Friday";
+        case 6:
+            return "Saturday";
+        case 7:
+            return "Sunday";
+        default:
+            return "";
+    }
+}
+
+// Function to extract start time from time field
+function extractStartTime(time) {
+    // Regular expression to match one or two digits followed by an optional colon and zero or two digits
+    var regex = /\b\d{1,2}(?::\d{2})?\b/;
+    var match = time.match(regex);
+    if (match) {
+        var startTime = match[0];
+        // Split the start time to handle leading zero for single digit hour and add minutes if missing
+        var parts = startTime.split(':');
+        var formattedHour = parts[0].length === 1 ? '0' + parts[0] : parts[0];
+        var formattedMinute = parts.length === 1 ? '00' : parts[1];
+        return formattedHour + ':' + formattedMinute;
+    }
+    return "";
+}
+
+// Function to extract end time from time field
+function extractEndTime(time) {
+    // Regular expression to match one or two digits followed by an optional colon and zero or two digits
+    var regex = /\b\d{1,2}(?::\d{2})?\b/g; // Add the 'g' flag for global search
+    var match;
+    var endTime;
+
+    // Execute the regex in a loop to capture all matches
+    while ((match = regex.exec(time)) !== null) {
+        // Assuming the second match is the end time
+        endTime = match[0];
+    }
+
+    if (endTime) {
+        // Split the end time to handle leading zero for single digit hour and add minutes if missing
+        var parts = endTime.split(':');
+        var formattedHour = parts[0].length === 1 ? '0' + parts[0] : parts[0];
+        var formattedMinute = parts.length === 1 ? '00' : parts[1];
+        return formattedHour + ':' + formattedMinute;
+    }
+    return "";
+}
+
+
+// Function to extract am/pm indicator from time field
+function extractAmPmIndicatorStart(time) {
+    // Regular expression to match two letters
+    var regex = /[a-zA-Z]{2}/;
+    var match = time.match(regex);
+    if (match) {
+        return match[0];
+    } else {
+        // Return an empty string if no match found
+        return "";
+    }
+}
+
+	    // Function to extract am/pm indicator from time field
+function extractAmPmIndicatorEnd(time) {
+    // Regular expression to match two letters
+    var regex = /[a-zA-Z]{2}$/;
+    var match = time.match(regex);
+    if (match) {
+        return match[0];
+    } else {
+        // Return an empty string if no match found
+        return "";
+    }
+}
+	    
+// Function to build the final time based on start time, am/pm indicator, end time, and am/pm indicator
+function buildFinalTime(time, amPmIndicator) {
+    var hours = parseInt(time.split(':')[0]);
+    var minutes = parseInt(time.split(':')[1]);
+    
+    if (amPmIndicator.toLowerCase() === 'pm') {
+        hours += 12;
+    }
+    
+    if (hours >= 24) {
+        hours -= 12;
+    }
+
+    return (hours < 10 ? '0' : '') + hours + ':' + (minutes < 10 ? '0' : '') + minutes;
+}
+// Function to subtract 12 hours from a given time
+function subtract12Hours(time) {
+    var hours = parseInt(time.split(':')[0]);
+    var minutes = parseInt(time.split(':')[1]);
+
+    hours -= 12;
+    
+    if (hours < 0) {
+        hours += 24;
+    }
+
+    return (hours < 10 ? '0' : '') + hours + ':' + (minutes < 10 ? '0' : '') + minutes;
+}
+
+    </script>
+</body>
+</html>
