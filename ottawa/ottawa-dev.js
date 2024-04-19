@@ -1,4 +1,4 @@
-console.log('fix sort order 2');
+console.log('fix sort order 3');
 
 let originalData = []; // Initialize as an empty array
 
@@ -69,7 +69,7 @@ function renderTable(data) {
         // Start building the row with a conditional background color
         tableHtml += '<tr>';
 
-        headers.forEach(header => {
+        headers.forEach((header, index) => {
             // Skip rendering the URL column
             if (header !== 'URL') {
                 switch (header) {
