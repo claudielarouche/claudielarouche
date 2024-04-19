@@ -1,4 +1,4 @@
-console.log('version 3');
+console.log('version 4');
 
 let originalData = []; // Initialize as an empty array
 
@@ -92,6 +92,16 @@ function renderTable(data) {
                             tableHtml += '<td></td>';
                         }
                         break;
+
+		case 'Reservation':
+                // Handle Facility URL content
+                const facilityUrl = row[header] ? row[header] : '';
+                if (facilityUrl === '#') {
+                    tableHtml += '<td>N/A</td>';
+                } else {
+                    tableHtml += `<td><a href="${facilityUrl}" target="_blank">Reservation</a></td>`;
+                }
+                break;
 
                     default:
                         // Display other columns
