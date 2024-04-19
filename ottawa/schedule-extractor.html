@@ -67,7 +67,7 @@ function scrape() {
                     // Loop through each table row
                     table.querySelectorAll('tr').forEach(function(row) {
                         // Get the type from the first cell in the row and remove the text "Reservations not required"
-                        var type = row.querySelector('th').textContent.replace('*Reservations not required.', '').trim();
+                        var type = row.querySelector('th').textContent.trim();
                         
                         // Initialize column number counter
                         var columnNumber = 0;
