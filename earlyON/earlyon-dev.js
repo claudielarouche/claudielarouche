@@ -400,7 +400,7 @@ function clearAllFilters() {
 		}
     });
 	
-	// Check all the "Select Schedule" checkboxes
+	// Check all the "Areas" checkboxes
     document.querySelectorAll('.areaCheckbox').forEach(checkbox => {
         checkbox.checked = true;
 		if (!selectedAreas.includes(checkbox.value)) {
@@ -410,6 +410,13 @@ function clearAllFilters() {
 	
 	document.getElementById('scheduleFilter').value = 'all';
 
+
+		// Uncheck  all the "other options" checkboxes
+    document.querySelectorAll('.otherOptionsCheckbox').forEach(checkbox => {
+        checkbox.checked = false;
+		
+    });
+	
     // Clear the DataTable search box
     var dataTable = $('#dataTable').DataTable();
     dataTable.search('').draw();
