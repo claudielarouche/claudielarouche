@@ -1,4 +1,4 @@
-console.log('version 4');
+console.log('fix sort order 1');
 
 let originalData = []; // Initialize as an empty array
 
@@ -42,6 +42,8 @@ function renderTable(data) {
         return;
     }
 
+   let sortOrderIndex; // Declare babyScaleIndex variable
+
     // Check if data is empty
     if (data.length === 0) {
         console.warn('No data available.');
@@ -54,7 +56,7 @@ function renderTable(data) {
     let tableHtml = '<table id="dataTable"><thead><tr>';
     headers.forEach(header => {
         // Skip rendering the URL column
-        if (header !== 'Sort Order' && header !== 'URL') {
+        if (header !== 'URL') {
             tableHtml += `<th>${header}</th>`;
         }
     });
@@ -69,8 +71,13 @@ function renderTable(data) {
 
         headers.forEach(header => {
             // Skip rendering the URL column
-            if (header !== 'Sort Order' && header !== 'URL') {
+            if (header !== 'URL') {
                 switch (header) {
+		    case 'Sort Order': 	
+				    // Assign the index of the "Baby Scale" column to the babyScaleIndex variable
+                    		    sortOrderIndex = index;					  
+				    tableHtml += `<td>${row[header]}</td>`;
+				    break;
                     case 'Facility Name':
                         // Merge URL with Pool Name to create a clickable link
                         const url = row['URL'] ? row['URL'] : '';
@@ -125,6 +132,17 @@ function renderTable(data) {
             "buttons": [
                 'colvis' // Column visibility button
             ],
+
+	    "columnDefs": [
+			    {
+				"targets": sortOrderIndex, 
+				"visible": false 
+			    }
+			  
+			],
+		"order": [
+        [0, 'asc'] // Specify the index of the hidden column and the sorting order
+    ]
             "language": {
                 "emptyTable": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>.",
                 "zeroRecords": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>."
