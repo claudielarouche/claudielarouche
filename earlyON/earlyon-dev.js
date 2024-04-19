@@ -1,4 +1,4 @@
-console.log('baby scale 28, ready to be uploaded to prod!');
+console.log('baby scale 29, clear filters');
 
 let originalData = []; // Initialize as an empty array
 let babyScaleVisible = false; // Flag to track if the Baby Scale column is visible
