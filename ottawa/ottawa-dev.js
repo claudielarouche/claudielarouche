@@ -76,7 +76,7 @@ function renderTable(data) {
 		    case 'Sort Order': 	
 				    // Assign the index of the "Baby Scale" column to the babyScaleIndex variable
 				// minus 1 because it is after the URL column which is not shown
-                    		    sortOrderIndex = index - 1;					  
+                    		    sortOrderIndex = index;					  
 				    tableHtml += `<td>${row[header]}</td>`;
 				    break;
                     case 'Facility Name':
