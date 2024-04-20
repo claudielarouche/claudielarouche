@@ -1,4 +1,4 @@
-console.log('fix sort order 5');
+console.log('fix sort order 6');
 
 let originalData = []; // Initialize as an empty array
 
@@ -75,7 +75,8 @@ function renderTable(data) {
                 switch (header) {
 		    case 'Sort Order': 	
 				    // Assign the index of the "Baby Scale" column to the babyScaleIndex variable
-                    		    sortOrderIndex = index;					  
+				// minus 1 because it is after the URL column which is not shown
+                    		    sortOrderIndex = index - 1;					  
 				    //tableHtml += `<td>${row[header]}</td>`;
 				    break;
                     case 'Facility Name':
