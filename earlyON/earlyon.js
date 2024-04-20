@@ -1,4 +1,4 @@
-console.log('Baby scale infrastructure ready, re-adding day of week');
+console.log('Baby scale infrastructure ready, clearing filter');
 
 let originalData = []; // Initialize as an empty array
 let babyScaleVisible = false; // Flag to track if the Baby Scale column is visible
@@ -392,11 +392,16 @@ function clearAllFilters() {
 			selectedAreas.push(checkbox.value);
 		}
     });
+
+
 	
     document.getElementById('scheduleFilter').value = 'all';
 
-   //TODO: Uncheck Baby Scale
-
+    // Uncheck  all the "other options" checkboxes
+    document.querySelectorAll('.otherOptionsCheckbox').forEach(checkbox => {
+        checkbox.checked = false;
+		
+    });
     // Clear the DataTable search box
     var dataTable = $('#dataTable').DataTable();
     dataTable.search('').draw();
