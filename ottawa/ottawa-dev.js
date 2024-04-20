@@ -1,4 +1,4 @@
-console.log('fix sort order 6');
+console.log('fix sort order 7');
 
 let originalData = []; // Initialize as an empty array
 
@@ -42,7 +42,7 @@ function renderTable(data) {
         return;
     }
 
-   let sortOrderIndex; // Declare babyScaleIndex variable
+   let sortOrderIndex; 
 
     // Check if data is empty
     if (data.length === 0) {
@@ -77,7 +77,7 @@ function renderTable(data) {
 				    // Assign the index of the "Baby Scale" column to the babyScaleIndex variable
 				// minus 1 because it is after the URL column which is not shown
                     		    sortOrderIndex = index - 1;					  
-				    //tableHtml += `<td>${row[header]}</td>`;
+				    tableHtml += `<td>${row[header]}</td>`;
 				    break;
                     case 'Facility Name':
                         // Merge URL with Pool Name to create a clickable link
