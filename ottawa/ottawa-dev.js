@@ -1,4 +1,4 @@
-console.log('Add filter v2');
+console.log('Add filter v3');
 
 let originalData = []; // Initialize as an empty array
 
@@ -65,7 +65,7 @@ function renderTable(data) {
     const filteredData = filterData(data, selectedAreas);
 
     // Iterate through each row of data
-    data.forEach(row => {
+    filteredData.forEach(row => {
         const currentDate = row['Date'] ? row['Date'] : '';
 
         // Start building the row with a conditional background color
