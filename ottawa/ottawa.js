@@ -1,4 +1,4 @@
-console.log('category filter v2');
+console.log('day filter v1');
 
 let originalData = []; // Initialize as an empty array
 
@@ -62,7 +62,7 @@ function renderTable(data) {
     });
     tableHtml += '</tr></thead><tbody>';
 
-    const filteredData = filterData(data, selectedAreas, selectedCategory);
+    const filteredData = filterData(data, selectedAreas, selectedCategory, selectedDay);
 
     // Iterate through each row of data
     filteredData.forEach(row => {
@@ -177,7 +177,7 @@ document.getElementById('showToday').addEventListener('click', function(event) {
     document.getElementById('dataTable_filter').querySelector('input').dispatchEvent(new Event('input'));
 });
 
-function filterData(data, selectedAreas, selectedCategory) {
+function filterData(data, selectedAreas, selectedCategory, selectedDay) {
 
 
     return data.filter(row => {
@@ -191,11 +191,13 @@ function filterData(data, selectedAreas, selectedCategory) {
 
 	const currentArea = row['Area'] || '';
 	const currentCategory = row['Category'] || '';
+	const currentDay = row['Day'] || '';
 	//const areaCondition = !selectedAreas.length || selectedAreas.some(area => currentArea.toLowerCase().includes(area.toLowerCase()));
 
 	const areaCondition = selectedAreas.some(area => currentArea.toLowerCase().includes(area.toLowerCase()));
 	//const categoryCondition = selectedCategory.some(category => currentCategory.toLowerCase().includes(category.toLowerCase()));
         const categoryCondition = selectedCategory.some(category => currentCategory.toLowerCase() === category.toLowerCase());
+	const dayCondition = selectedDay.some(day => currentDay.toLowerCase() === day.toLowerCase());
 
         /*const dateCondition = !selectedDate || currentDate === selectedDate;
         const ageGroupCondition = !selectedAgeGroup || currentAgeGroup.includes(selectedAgeGroup);
@@ -222,7 +224,7 @@ function filterData(data, selectedAreas, selectedCategory) {
         }
 
         return dateCondition && ageGroupCondition && languageCondition && areaCondition && scheduleFilterCondition && babyScaleCondition;*/
-	return areaCondition && categoryCondition;
+	return areaCondition && categoryCondition && dayCondition;
     });
 }
 
@@ -244,6 +246,14 @@ function clearAllFilters() {
         checkbox.checked = true;
 		if (!selectedCategory.includes(checkbox.value)) {
 			selectedCategory.push(checkbox.value);
+		}
+    });
+
+// Check all the "Select Day" checkboxes
+    document.querySelectorAll('.dayCheckbox').forEach(checkbox => {
+        checkbox.checked = true;
+		if (!selectedDay.includes(checkbox.value)) {
+			selectedDay.push(checkbox.value);
 		}
     });
 
@@ -302,5 +312,29 @@ document.querySelectorAll('.categoryCheckbox').forEach(function (checkbox) {
     checkbox.checked = true;
     if (!selectedCategory.includes(checkbox.value)) {
         selectedCategory.push(checkbox.value);
+    }
+});
+
+const selectedDay = [];
+document.querySelectorAll('.dayCheckbox').forEach(function (checkbox) {
+    checkbox.addEventListener('change', function () {
+        currentSearchValue = $('#dataTable_filter input').val();
+		if (checkbox.checked) {
+            if (!selectedDay.includes(checkbox.value)) {
+                selectedDay.push(checkbox.value);
+            }
+        } else {
+            const index = selectedDay.indexOf(checkbox.value);
+            if (index !== -1) {
+                selectedDay.splice(index, 1);
+            }
+        }
+        renderTable(originalData);
+    });
+
+    // Initialize with all checkboxes checked by default
+    checkbox.checked = true;
+    if (!selectedDay.includes(checkbox.value)) {
+        selectedDay.push(checkbox.value);
     }
 });
