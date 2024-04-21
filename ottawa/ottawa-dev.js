@@ -1,4 +1,4 @@
-console.log('Add filter v1');
+console.log('Add filter v2');
 
 let originalData = []; // Initialize as an empty array
 
@@ -61,6 +61,8 @@ function renderTable(data) {
         }
     });
     tableHtml += '</tr></thead><tbody>';
+
+    const filteredData = filterData(data, selectedAreas);
 
     // Iterate through each row of data
     data.forEach(row => {
@@ -175,9 +177,67 @@ document.getElementById('showToday').addEventListener('click', function(event) {
     document.getElementById('dataTable_filter').querySelector('input').dispatchEvent(new Event('input'));
 });
 
+function filterData(data, selectedAreas) {
+    // If no date, age group, languages, areas, or schedule is selected, return the original data
+    //if (!selectedDate && !selectedAgeGroup && selectedLanguages.length === 0 && selectedAreas.length === 0 && scheduleFilter === 'all') {
+    if (selectedAreas.length === 0) {
+        return data;
+    }
+
+    return data.filter(row => {
+        /*const currentDate = row['Date'] || '';
+        const currentAgeGroup = row['Age Group'] || '';
+        const currentTimeOfDay = row['Time of Day'] || '';
+        const currentDayOfWeek = row['Day of Week'] || '';
+        const currentLanguage = row['Language'] || '';
+        
+	const currentBabyScale = row['Baby Scale'] || ''; */
+
+	const currentArea = row['Area'] || '';
+	const areaCondition = !selectedAreas.length || selectedAreas.some(area => currentArea.toLowerCase().includes(area.toLowerCase()));
+
+
+        /*const dateCondition = !selectedDate || currentDate === selectedDate;
+        const ageGroupCondition = !selectedAgeGroup || currentAgeGroup.includes(selectedAgeGroup);
+        const languageCondition = !selectedLanguages.length || selectedLanguages.some(lang => currentLanguage.toLowerCase().includes(lang.toLowerCase()));
+        // If babyScaleCheckbox is checked, include only rows where 'Baby Scale' is 'Yes'
+    	const babyScaleCondition = !babyScaleFilter.checked || currentBabyScale === 'Yes';
+
+        let scheduleFilterCondition = true;
+
+	   
+        switch (scheduleFilter) {
+            case 'all':
+                scheduleFilterCondition = true;
+			
+                break;
+            case 'eveningsWeekends':
+                scheduleFilterCondition = currentTimeOfDay === 'Evening' || currentDayOfWeek === 'Saturday' || currentDayOfWeek === 'Sunday';
+			
+                break;
+            case 'weekdayAMPM':
+			
+                scheduleFilterCondition = (currentDayOfWeek !== 'Saturday' && currentDayOfWeek !== 'Sunday') && (currentTimeOfDay === 'Morning' || currentTimeOfDay === 'Afternoon');
+                break;
+        }
+
+        return dateCondition && ageGroupCondition && languageCondition && areaCondition && scheduleFilterCondition && babyScaleCondition;*/
+	return areaCondition;
+    });
+}
+
+
 let currentSearchValue = getQueryParam('search'); // Variable to store the current search value
 
 function clearAllFilters() {
+
+    // Check all the "Select Schedule" checkboxes
+    document.querySelectorAll('.areaCheckbox').forEach(checkbox => {
+        checkbox.checked = true;
+		if (!selectedAreas.includes(checkbox.value)) {
+			selectedAreas.push(checkbox.value);
+		}
+    });
 
 
     // Clear the DataTable search box
@@ -188,3 +248,27 @@ function clearAllFilters() {
     // Render the table with cleared filters
     renderTable(originalData);
 }
+
+const selectedAreas = [];
+document.querySelectorAll('.areaCheckbox').forEach(function (checkbox) {
+    checkbox.addEventListener('change', function () {
+        currentSearchValue = $('#dataTable_filter input').val();
+		if (checkbox.checked) {
+            if (!selectedAreas.includes(checkbox.value)) {
+                selectedAreas.push(checkbox.value);
+            }
+        } else {
+            const index = selectedAreas.indexOf(checkbox.value);
+            if (index !== -1) {
+                selectedAreas.splice(index, 1);
+            }
+        }
+        renderTable(originalData);
+    });
+
+    // Initialize with all checkboxes checked by default
+    checkbox.checked = true;
+    if (!selectedAreas.includes(checkbox.value)) {
+        selectedAreas.push(checkbox.value);
+    }
+});
