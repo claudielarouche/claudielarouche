@@ -231,11 +231,19 @@ let currentSearchValue = getQueryParam('search'); // Variable to store the curre
 
 function clearAllFilters() {
 
-    // Check all the "Select Schedule" checkboxes
+    // Check all the "Select Area" checkboxes
     document.querySelectorAll('.areaCheckbox').forEach(checkbox => {
         checkbox.checked = true;
 		if (!selectedAreas.includes(checkbox.value)) {
 			selectedAreas.push(checkbox.value);
+		}
+    });
+
+// Check all the "Select Category" checkboxes
+    document.querySelectorAll('.categoryCheckbox').forEach(checkbox => {
+        checkbox.checked = true;
+		if (!selectedCategory.includes(checkbox.value)) {
+			selectedCategory.push(checkbox.value);
 		}
     });
 
