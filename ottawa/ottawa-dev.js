@@ -1,4 +1,4 @@
-console.log('Add filter v5');
+console.log('Add filter v6');
 
 let originalData = []; // Initialize as an empty array
 
@@ -180,9 +180,9 @@ document.getElementById('showToday').addEventListener('click', function(event) {
 function filterData(data, selectedAreas) {
     // If no date, age group, languages, areas, or schedule is selected, return the original data
     //if (!selectedDate && !selectedAgeGroup && selectedLanguages.length === 0 && selectedAreas.length === 0 && scheduleFilter === 'all') {
-   /* if (selectedAreas.length === 0) {
+    if (selectedAreas.length === 0) {
         return data;
-    }*/
+    }
 
     return data.filter(row => {
         /*const currentDate = row['Date'] || '';
