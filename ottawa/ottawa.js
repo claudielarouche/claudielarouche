@@ -62,7 +62,7 @@ function renderTable(data) {
     });
     tableHtml += '</tr></thead><tbody>';
 
-    const filteredData = filterData(data, selectedAreas);
+    const filteredData = filterData(data, selectedAreas, selectedCategory);
 
     // Iterate through each row of data
     filteredData.forEach(row => {
@@ -177,7 +177,7 @@ document.getElementById('showToday').addEventListener('click', function(event) {
     document.getElementById('dataTable_filter').querySelector('input').dispatchEvent(new Event('input'));
 });
 
-function filterData(data, selectedAreas) {
+function filterData(data, selectedAreas, selectedCategory) {
 
 
     return data.filter(row => {
@@ -190,11 +190,12 @@ function filterData(data, selectedAreas) {
 	const currentBabyScale = row['Baby Scale'] || ''; */
 
 	const currentArea = row['Area'] || '';
+	const currentCategory = row['Category'] || '';
 	//const areaCondition = !selectedAreas.length || selectedAreas.some(area => currentArea.toLowerCase().includes(area.toLowerCase()));
 
 	const areaCondition = selectedAreas.some(area => currentArea.toLowerCase().includes(area.toLowerCase()));
-
-
+	//const categoryCondition = selectedCategory.some(category => currentCategory.toLowerCase().includes(category.toLowerCase()));
+        const categoryCondition = selectedCategory.some(category => currentCategory.toLowerCase() === category.toLowerCase());
 
         /*const dateCondition = !selectedDate || currentDate === selectedDate;
         const ageGroupCondition = !selectedAgeGroup || currentAgeGroup.includes(selectedAgeGroup);
@@ -221,7 +222,7 @@ function filterData(data, selectedAreas) {
         }
 
         return dateCondition && ageGroupCondition && languageCondition && areaCondition && scheduleFilterCondition && babyScaleCondition;*/
-	return areaCondition;
+	return areaCondition && categoryCondition;
     });
 }
 
@@ -269,5 +270,29 @@ document.querySelectorAll('.areaCheckbox').forEach(function (checkbox) {
     checkbox.checked = true;
     if (!selectedAreas.includes(checkbox.value)) {
         selectedAreas.push(checkbox.value);
+    }
+});
+
+const selectedCategory = [];
+document.querySelectorAll('.categoryCheckbox').forEach(function (checkbox) {
+    checkbox.addEventListener('change', function () {
+        currentSearchValue = $('#dataTable_filter input').val();
+		if (checkbox.checked) {
+            if (!selectedCategory.includes(checkbox.value)) {
+                selectedCategory.push(checkbox.value);
+            }
+        } else {
+            const index = selectedCategory.indexOf(checkbox.value);
+            if (index !== -1) {
+                selectedCategory.splice(index, 1);
+            }
+        }
+        renderTable(originalData);
+    });
+
+    // Initialize with all checkboxes checked by default
+    checkbox.checked = true;
+    if (!selectedCategory.includes(checkbox.value)) {
+        selectedCategory.push(checkbox.value);
     }
 });
