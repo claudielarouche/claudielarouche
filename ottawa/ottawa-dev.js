@@ -1,4 +1,4 @@
-console.log('category filter v1');
+console.log('category filter v2');
 
 let originalData = []; // Initialize as an empty array
 
