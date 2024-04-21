@@ -1,4 +1,4 @@
-console.log('Add filter v7');
+console.log('Add filter v8');
 
 let originalData = []; // Initialize as an empty array
 
