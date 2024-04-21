@@ -1,4 +1,4 @@
-console.log('Add filter v4');
+console.log('Add filter v5');
 
 let originalData = []; // Initialize as an empty array
 
@@ -194,7 +194,10 @@ function filterData(data, selectedAreas) {
 	const currentBabyScale = row['Baby Scale'] || ''; */
 
 	const currentArea = row['Area'] || '';
-	const areaCondition = !selectedAreas.length || selectedAreas.some(area => currentArea.toLowerCase().includes(area.toLowerCase()));
+	//const areaCondition = !selectedAreas.length || selectedAreas.some(area => currentArea.toLowerCase().includes(area.toLowerCase()));
+
+	const areaCondition = selectedAreas.some(area => currentArea.toLowerCase().includes(area.toLowerCase()));
+
 
 
         /*const dateCondition = !selectedDate || currentDate === selectedDate;
