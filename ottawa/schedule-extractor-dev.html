@@ -20,7 +20,7 @@
 <body>
 	<div class="container">
 		
-    <h1>City of Ottawa Activity Schedule Extractor v9</h1>
+    <h1>City of Ottawa Activity Schedule Extractor v10</h1>
     
 		
     <form id="scrapingForm">
@@ -29,6 +29,7 @@
 	<textarea id="urls" rows="4" cols="50">https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/plant-recreation-centre</textarea><br>        
         
         <button type="button" onclick="scrape()">Extract</button>
+	<button id="downloadCSV" style="display:none;">Download CSV</button>
     </form>
     <h2>Warnings</h2>
     <div id="warning">
@@ -271,6 +272,15 @@ function scrape() {
             errorMessage.textContent = "Unable to access this web page";
             document.getElementById("results").appendChild(errorMessage);*/
         });
+	.finally(() => {
+            // Show the download button after processing all URLs
+            document.getElementById("downloadCSV").style.display = "block";
+        });
+    });
+
+    // When the download button is clicked, trigger the CSV download
+    document.getElementById("downloadCSV").addEventListener("click", function() {
+        downloadCSV(csvContent, 'data.csv');
     });
 }
 
