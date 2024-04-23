@@ -20,7 +20,7 @@
 <body>
 	<div class="container">
 		
-    <h1>City of Ottawa Activity Schedule Extractor v8</h1>
+    <h1>City of Ottawa Activity Schedule Extractor v9</h1>
     
 		
     <form id="scrapingForm">
@@ -169,7 +169,7 @@ function scrape() {
 
 
 	    // Find all divs with class layout__region
-            var layoutRegions = htmlDoc.querySelectorAll('layout--bootstrap-fixed-grid-row-1');
+            var layoutRegions = htmlDoc.querySelectorAll('.layout--bootstrap-fixed-grid-row-1');
 	    layoutRegions.forEach(function(region) {
                 var countTables = region.querySelectorAll('table');
 		console.log(countTables.length)
