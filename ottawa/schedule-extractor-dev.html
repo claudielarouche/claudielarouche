@@ -20,7 +20,7 @@
 <body>
 	<div class="container">
 		
-    <h1>City of Ottawa Activity Schedule Extractor v15</h1>
+    <h1>City of Ottawa Activity Schedule Extractor v16</h1>
     
 		
     <form id="scrapingForm">
@@ -154,6 +154,7 @@ Is facility still closed? https://ottawa.ca/en/recreation-and-parks/facilities/p
 function scrape() {
     // Initialize CSV content for this table
     var csvContent = "";
+    var csvFile = "";
     var urlsInput = document.getElementById("urls").value.trim().split("\n");
 
     // Clear previous results
@@ -250,6 +251,7 @@ function scrape() {
 
 					if (finalTime != "NaN:NaN - NaN:NaN"){
 						csvContent += weekday + ',"'  +   finalStartTime + " - " + finalEndTime  + '","'  + h1Content.textContent + '","'  + address.textContent + '","' + type + '","'  + url +'"<br>';
+						csvFile += weekday + ',"'  +   finalStartTime + " - " + finalEndTime  + '","'  + h1Content.textContent + '","'  + address.textContent + '","' + type + '","'  + url + "\n";
 					}
 					
 				    
@@ -262,7 +264,7 @@ function scrape() {
                     var resultElement = document.createElement("div");
                     resultElement.innerHTML = csvContent;
                     document.getElementById("results").appendChild(resultElement);
-		    downloadCSV(csvContent, 'data.csv');
+		    downloadCSV(csvFile, 'data.csv');
                 });
             } else {
                 // If no tables found, display message
