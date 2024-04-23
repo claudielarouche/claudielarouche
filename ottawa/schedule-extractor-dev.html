@@ -20,7 +20,7 @@
 <body>
 	<div class="container">
 		
-    <h1>City of Ottawa Activity Schedule Extractor v6</h1>
+    <h1>City of Ottawa Activity Schedule Extractor v7</h1>
     
 		
     <form id="scrapingForm">
@@ -172,6 +172,7 @@ function scrape() {
             var layoutRegions = htmlDoc.querySelectorAll('.layout__region');
 	    layoutRegions.forEach(function(region) {
                 var countTables = region.querySelectorAll('table');
+		console.log(countTables.length)
                 if (countTables.length > 1) {
                     // If more than one table found, add the URL to the warning section
                     //document.querySelector(".warning").innerHTML += "<p>More than one table found under " + region.tagName + " with class " + region.className + " for URL: " + url + "</p>";
@@ -184,7 +185,7 @@ function scrape() {
             });
 		
             // Find all tables in the document
-            //var tables = htmlDoc.querySelectorAll('table');
+            var tables = htmlDoc.querySelectorAll('table');
 
 	// extract name of the facility
             var h1Content = htmlDoc.querySelector('h1');
