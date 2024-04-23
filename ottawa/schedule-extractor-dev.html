@@ -19,15 +19,20 @@
 </head>
 <body>
 	<div class="container">
-    <h1>City of Ottawa Activity Schedule Extractor v53</h1>
-		
+    <h1>City of Ottawa Activity Schedule Extractor v1</h1>
+    
 		
     <form id="scrapingForm">
         <label for="urls">Enter URLs (separated by carriage return):</label><br>
         <textarea id="urls" rows="4" cols="50">https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/francois-dupuis-recreation-centre&#13;&#10;https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/brewer-pool-and-arena</textarea><br>        
         <button type="button" onclick="scrape()">Extract</button>
     </form>
+    <h2>Results</h2>    
     <div id="results">
+        <!-- Display scraping results here -->
+    </div>
+    <h2>Warnings</h2>
+    <div id="warnings">
         <!-- Display scraping results here -->
     </div>
 	</div>
