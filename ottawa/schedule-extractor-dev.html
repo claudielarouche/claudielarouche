@@ -20,7 +20,7 @@
 <body>
 	<div class="container">
 		
-    <h1>City of Ottawa Activity Schedule Extractor v12</h1>
+    <h1>City of Ottawa Activity Schedule Extractor v13</h1>
     
 		
     <form id="scrapingForm">
@@ -262,6 +262,7 @@ function scrape() {
                     var resultElement = document.createElement("div");
                     resultElement.innerHTML = csvContent;
                     document.getElementById("results").appendChild(resultElement);
+		    downloadCSV(csvContent, 'data.csv');
                 });
             } else {
                 // If no tables found, display message
