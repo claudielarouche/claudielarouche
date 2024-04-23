@@ -20,7 +20,7 @@
 <body>
 	<div class="container">
 		
-    <h1>City of Ottawa Activity Schedule Extractor v18</h1>
+    <h1>City of Ottawa Activity Schedule Extractor v19</h1>
     
 		
     <form id="scrapingForm">
@@ -251,7 +251,7 @@ function scrape() {
 
 					if (finalTime != "NaN:NaN - NaN:NaN"){
 						csvContent += weekday + ',"'  +   finalStartTime + " - " + finalEndTime  + '","'  + h1Content.textContent + '","'  + address.textContent + '","' + type + '","'  + url +'"<br>';
-						csvFile += weekday + ',"'  +   finalStartTime + " - " + finalEndTime  + '","'  + h1Content.textContent + '","'  + address.textContent + '","' + type + '","'  + url + '&#10;';
+						csvFile += weekday + ',"'  +   finalStartTime + " - " + finalEndTime  + '","'  + h1Content.textContent + '","'  + address.textContent + '","' + type + '","'  + url + '"\n';;
 					}
 					
 				    
