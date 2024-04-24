@@ -20,7 +20,7 @@
 <body>
 	<div class="container">
 		
-    <h1>City of Ottawa Activity Schedule Extractor v19</h1>
+    <h1>City of Ottawa Activity Schedule Extractor v20</h1>
     
 		
     <form id="scrapingForm">
@@ -155,6 +155,7 @@ function scrape() {
     // Initialize CSV content for this table
     var csvContent = "";
     var csvFile = "";
+    var accumulatedCSV = ""; // Initialize variable to store accumulated CSV content
     var urlsInput = document.getElementById("urls").value.trim().split("\n");
 
     // Clear previous results
@@ -251,7 +252,8 @@ function scrape() {
 
 					if (finalTime != "NaN:NaN - NaN:NaN"){
 						csvContent += weekday + ',"'  +   finalStartTime + " - " + finalEndTime  + '","'  + h1Content.textContent + '","'  + address.textContent + '","' + type + '","'  + url +'"<br>';
-						csvFile += weekday + ',"'  +   finalStartTime + " - " + finalEndTime  + '","'  + h1Content.textContent + '","'  + address.textContent + '","' + type + '","'  + url + '"\n';;
+						csvFile += weekday + ',"'  +   finalStartTime + " - " + finalEndTime  + '","'  + h1Content.textContent + '","'  + address.textContent + '","' + type + '","'  + url + '"\n';
+						accumulatedCSV += csvFile;
 					}
 					
 				    
@@ -264,7 +266,7 @@ function scrape() {
                     var resultElement = document.createElement("div");
                     resultElement.innerHTML = csvContent;
                     document.getElementById("results").appendChild(resultElement);
-		    downloadCSV(csvFile, 'data.csv');
+		    
                 });
             } else {
                 // If no tables found, display message
@@ -281,6 +283,9 @@ function scrape() {
 	.finally(() => {
             // Show the download button after processing all URLs
             document.getElementById("downloadCSV").style.display = "block";
+	    if (index === urlsInput.length - 1) {
+                downloadCSV(accumulatedCSV, 'data.csv');
+            }
         });
     });
 
