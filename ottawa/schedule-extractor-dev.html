@@ -20,13 +20,13 @@
 <body>
 	<div class="container">
 		
-    <h1>City of Ottawa Activity Schedule Extractor v26</h1>
+    <h1>City of Ottawa Activity Schedule Extractor v27</h1>
     
 		
     <form id="scrapingForm">
         <label for="urls">Enter URLs (separated by carriage return):</label><br>
-        <!--<textarea id="urls" rows="4" cols="50">https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/francois-dupuis-recreation-centre&#13;&#10;https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/brewer-pool-and-arena</textarea><br>        -->
-	<textarea id="urls" rows="4" cols="50">https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/plant-recreation-centre</textarea><br>        
+        <textarea id="urls" rows="4" cols="50">https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/francois-dupuis-recreation-centre&#13;&#10;https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/brewer-pool-and-arena</textarea><br>        
+	<!--<textarea id="urls" rows="4" cols="50">https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/plant-recreation-centre</textarea><br>        -->
         
         <button type="button" onclick="scrape()">Extract</button>
     </form>
@@ -174,101 +174,100 @@ function scrape() {
             var htmlDoc = parser.parseFromString(data, 'text/html');
 
 
-	    // Find all divs with class layout__region
+			// Find all divs with class layout__region
             var layoutRegions = htmlDoc.querySelectorAll('.layout--bootstrap-fixed-grid-row-1');
-	    layoutRegions.forEach(function(region) {
-                var countTables = region.querySelectorAll('table');
-		console.log(countTables.length)
-                if (countTables.length > 1) {
-                    // If more than one table found, add the URL to the warning section
-                    //document.querySelector(".warning").innerHTML += "<p>More than one table found under " + region.tagName + " with class " + region.className + " for URL: " + url + "</p>";
+			layoutRegions.forEach(function(region) {
+				var countTables = region.querySelectorAll('table');
+				
+				if (countTables.length > 1) {
+					// If more than one table found, add the URL to the warning section
+					
 
-		    var warningElement = document.createElement("div");
-                    warningElement.innerHTML = "<p>More than one table found for URL: " + url + "</p>";
-                    document.getElementById("warning").appendChild(warningElement);
-			
-                }
-            });
+					var warningElement = document.createElement("div");
+					warningElement.innerHTML = "<p>More than one table found for URL: " + url + "</p>";
+					document.getElementById("warning").appendChild(warningElement);
+				
+					}
+				});
 		
             // Find all tables in the document
             var tables = htmlDoc.querySelectorAll('table');
 
-	// extract name of the facility
+			// extract name of the facility
             var h1Content = htmlDoc.querySelector('h1');
-        //extract address
-		var address = htmlDoc.querySelector('.place-address-1');
+			//extract address
+			var address = htmlDoc.querySelector('.place-address-1');
 
             if (tables.length > 0) {
                 // Loop through each table
                 tables.forEach(function(table) {
                     
 
-                    // Loop through each table row
-                    table.querySelectorAll('tr').forEach(function(row) {
-                        // Get the type from the first cell in the row and remove the text "Reservations not required"
-                        var type = row.querySelector('th').textContent.trim();
-                        
-                        // Initialize column number counter
-                        var columnNumber = 0;
-                        
-                        // Loop through each table cell (td) in the row
-                        row.querySelectorAll('td').forEach(function(cell) {
-                            // Increment column number
-                            columnNumber++;
-                            
-                          
-                            
-                            var times = cell.textContent.split(',').map(function(time) {
-                                return time.trim();
-                            });
-                            
-                            // Loop through each time and add to CSV content
-				times.forEach(function(time) {
-					// Replace "Noon" or "noon" with "12:00"
-					    time = time.replace(/noon/gi, '12:00');
-					    
-					    // Remove carriage return
-					    time = time.replace(/\r?\n|\r/g, '');
-					
-				    var weekday = getWeekdayFromColumnNumber(columnNumber);
-				   
-				    var startTime = extractStartTime(time);
-				    var amPmIndicatorStart = extractAmPmIndicatorStart(time);
-				    var endTime = extractEndTime(time);
-				    var amPmIndicatorEnd = extractAmPmIndicatorEnd(time);
-
-
-				    // Build the final start and end time
-    					var finalStartTime = buildFinalTime(startTime, amPmIndicatorStart);
-    					var finalEndTime = buildFinalTime(endTime, amPmIndicatorEnd);
-
-					// Check if final start time is later than final end time and adjust if necessary
-					    if (finalStartTime > finalEndTime) {
-					        finalStartTime = subtract12Hours(finalStartTime);
-					    }
-
-					var finalTime = finalStartTime + " - " + finalEndTime;
-
-					if (finalTime != "NaN:NaN - NaN:NaN"){
-						csvContent += weekday + ',"'  +   finalStartTime + " - " + finalEndTime  + '","'  + h1Content.textContent + '","'  + address.textContent + '","' + type + '","'  + url +'"<br>';
-						csvFile += weekday + ',"'  +   finalStartTime + " - " + finalEndTime  + '","'  + h1Content.textContent + '","'  + address.textContent + '","' + type + '","'  + url + '"\n';
+					// Loop through each table row
+					table.querySelectorAll('tr').forEach(function(row) {
+						// Get the type from the first cell in the row
+						var type = row.querySelector('th').textContent.trim();
 						
-					}
-					
-				    
+						// Initialize column number counter
+						var columnNumber = 0;
+						
+						// Loop through each table cell (td) in the row
+						row.querySelectorAll('td').forEach(function(cell) {
+							// Increment column number
+							columnNumber++;
+								
+							  
+								
+							var times = cell.textContent.split(',').map(function(time) {
+								return time.trim();
+							});
+								
+							// Loop through each time and add to CSV content
+							times.forEach(function(time) {
+								// Replace "Noon" or "noon" with "12:00"
+								time = time.replace(/noon/gi, '12:00');
+									
+								// Remove carriage return
+								time = time.replace(/\r?\n|\r/g, '');
+								
+								var weekday = getWeekdayFromColumnNumber(columnNumber);
+							   
+								var startTime = extractStartTime(time);
+								var amPmIndicatorStart = extractAmPmIndicatorStart(time);
+								var endTime = extractEndTime(time);
+								var amPmIndicatorEnd = extractAmPmIndicatorEnd(time);
+
+
+								// Build the final start and end time
+								var finalStartTime = buildFinalTime(startTime, amPmIndicatorStart);
+								var finalEndTime = buildFinalTime(endTime, amPmIndicatorEnd);
+
+								// Check if final start time is later than final end time and adjust if necessary
+								if (finalStartTime > finalEndTime) {
+									finalStartTime = subtract12Hours(finalStartTime);
+								}
+
+								var finalTime = finalStartTime + " - " + finalEndTime;
+
+								if (finalTime != "NaN:NaN - NaN:NaN"){
+									csvContent += weekday + ',"'  + finalStartTime + " - " + finalEndTime  + '","'  + h1Content.textContent.trim() + '","'  + address.textContent.trim() + '","' + type.trim() + '","'  + url.trim() + '"<br>';
+									csvFile += weekday + ',"'  + finalStartTime + " - " + finalEndTime  + '","'  + h1Content.textContent.trim() + '","'  + address.textContent.trim() + '","' + type.trim() + '","'  + url.trim() + '"\n';
+									
+								}
+						
+						
+							});
+
+						});
+					});
+
+					// Append CSV content to results div
+					var resultElement = document.createElement("div");
+					resultElement.innerHTML = csvContent;
+					document.getElementById("results").appendChild(resultElement);
+					accumulatedCSV += csvFile;
+				
 				});
-
-                        });
-                    });
-
-                    // Append CSV content to results div
-                    var resultElement = document.createElement("div");
-                    resultElement.innerHTML = csvContent;
-                    document.getElementById("results").appendChild(resultElement);
-		    accumulatedCSV += csvFile;
-		    console.log(accumulatedCSV);
-		    
-                });
             } else {
                 // If no tables found, display message
                 console.log("No table found on " + url)
@@ -277,11 +276,14 @@ function scrape() {
         .catch(error => {
             console.error('Error fetching data:', error);
         })
+		.finally(() => {
+			// Trigger download once all URLs have been processed
+			if (index === urlsInput.length - 1) {
+				downloadCSV(accumulatedCSV, 'data.csv');
+			}
+		});
 	
     });
-console.log("just about to download");
-	console.log(accumulatedCSV);
-downloadCSV(accumulatedCSV, 'data.csv');
     
 }
 
@@ -404,10 +406,8 @@ function subtract12Hours(time) {
 
 function downloadCSV(content, filename) {
     // Create a Blob object from the CSV content
-    var blob = new Blob([content], { type: 'text/csv' });
-	console.log("blob");
-	console.log(blob);
-    // Create a temporary anchor element
+    var blob = new Blob([new Uint8Array([0xEF, 0xBB, 0xBF]), content], { type: 'text/csv;charset=utf-8' });
+	// Create a temporary anchor element
     var anchor = document.createElement('a');
     anchor.href = window.URL.createObjectURL(blob);
     anchor.download = filename;
