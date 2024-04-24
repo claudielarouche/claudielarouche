@@ -20,7 +20,7 @@
 <body>
 	<div class="container">
 		
-    <h1>City of Ottawa Activity Schedule Extractor v27</h1>
+    <h1>City of Ottawa Activity Schedule Extractor v1</h1>
     
 		
     <form id="scrapingForm">
@@ -152,8 +152,7 @@ Is facility still closed? https://ottawa.ca/en/recreation-and-parks/facilities/p
 	    
 function scrape() {
     // Initialize CSV content for this table
-    var csvContent = "";
-    var csvFile = "";
+    
     var accumulatedCSV = ""; // Initialize variable to store accumulated CSV content
     var urlsInput = document.getElementById("urls").value.trim().split("\n");
 
@@ -162,6 +161,9 @@ function scrape() {
     document.getElementById("warning").innerHTML = "";
 
     urlsInput.forEach(function(url, index) {
+		// Initialize CSV content for each URL
+		var csvContent = "";
+		var csvFile = "";
         fetch(url)
         .then(response => {
             if (!response.ok) {
@@ -201,12 +203,14 @@ function scrape() {
             if (tables.length > 0) {
                 // Loop through each table
                 tables.forEach(function(table) {
-                    
+                    // Reset CSV content for each table
+					csvContent = "";
+					csvFile = "";
 
 					// Loop through each table row
 					table.querySelectorAll('tr').forEach(function(row) {
 						// Get the type from the first cell in the row
-						var type = row.querySelector('th').textContent.trim();
+						var type = row.querySelector('th').textContent.trim().replace(/\s+/g, ' ');
 						
 						// Initialize column number counter
 						var columnNumber = 0;
