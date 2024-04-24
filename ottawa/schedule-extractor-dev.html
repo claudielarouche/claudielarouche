@@ -20,7 +20,7 @@
 <body>
 	<div class="container">
 		
-    <h1>City of Ottawa Activity Schedule Extractor v23</h1>
+    <h1>City of Ottawa Activity Schedule Extractor v24</h1>
     
 		
     <form id="scrapingForm">
@@ -279,6 +279,8 @@ function scrape() {
         })
 	
     });
+console.log("just about to download");
+	console.log(accumulatedCSV);
 downloadCSV(accumulatedCSV, 'data.csv');
     
 }
@@ -403,7 +405,8 @@ function subtract12Hours(time) {
 function downloadCSV(content, filename) {
     // Create a Blob object from the CSV content
     var blob = new Blob([content], { type: 'text/csv' });
-
+	console.log("blob");
+	console.log(blob);
     // Create a temporary anchor element
     var anchor = document.createElement('a');
     anchor.href = window.URL.createObjectURL(blob);
