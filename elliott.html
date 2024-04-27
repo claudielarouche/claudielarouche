@@ -11,12 +11,13 @@
     padding: 0;
   }
   .container {
-    width: 100%;
-    height: 100vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+  }
+  .column {
+    width: 20%;
   }
   .elliotts {
     font-size: 12px;
@@ -25,13 +26,28 @@
 </style>
 </head>
 <body>
-<div class="container">
-  <!-- Repeat Elliott's name multiple times -->
-  <?php
-    for ($i = 0; $i < 50; $i++) {
-      echo "<div class='elliotts'>Elliott</div>";
-    }
-  ?>
+<div class="container" id="container">
+  <!-- Elliott's name will be added here dynamically -->
 </div>
+
+<script>
+  // Function to repeat Elliott's name
+  function repeatName(name, times) {
+    var container = document.getElementById("container");
+    for (var i = 0; i < times; i++) {
+      var div = document.createElement("div");
+      div.className = "column";
+      var span = document.createElement("div");
+      span.className = "elliotts";
+      span.textContent = name;
+      div.appendChild(span);
+      container.appendChild(div);
+    }
+  }
+
+  // Call the function to repeat Elliott's name 300 times in 5 columns
+  repeatName("Elliott", 300);
+</script>
+
 </body>
 </html>
