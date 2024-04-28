@@ -1,4 +1,4 @@
-console.log('day filter v1');
+console.log('age filter v1');
 
 let originalData = []; // Initialize as an empty array
 
@@ -62,7 +62,7 @@ function renderTable(data) {
     });
     tableHtml += '</tr></thead><tbody>';
 
-    const filteredData = filterData(data, selectedAreas, selectedCategory, selectedDay);
+    const filteredData = filterData(data, selectedAreas, selectedCategory, selectedDay, selectedAge);
 
     // Iterate through each row of data
     filteredData.forEach(row => {
@@ -177,7 +177,7 @@ document.getElementById('showToday').addEventListener('click', function(event) {
     document.getElementById('dataTable_filter').querySelector('input').dispatchEvent(new Event('input'));
 });
 
-function filterData(data, selectedAreas, selectedCategory, selectedDay) {
+function filterData(data, selectedAreas, selectedCategory, selectedDay, selectedAge) {
 
 
     return data.filter(row => {
@@ -192,13 +192,16 @@ function filterData(data, selectedAreas, selectedCategory, selectedDay) {
 	const currentArea = row['Area'] || '';
 	const currentCategory = row['Category'] || '';
 	const currentDay = row['Day'] || '';
+	const currentAge = row['Age'] || '';
 	//const areaCondition = !selectedAreas.length || selectedAreas.some(area => currentArea.toLowerCase().includes(area.toLowerCase()));
 
 	const areaCondition = selectedAreas.some(area => currentArea.toLowerCase().includes(area.toLowerCase()));
 	//const categoryCondition = selectedCategory.some(category => currentCategory.toLowerCase().includes(category.toLowerCase()));
         const categoryCondition = selectedCategory.some(category => currentCategory.toLowerCase() === category.toLowerCase());
 	const dayCondition = selectedDay.some(day => currentDay.toLowerCase() === day.toLowerCase());
+	const ageCondition = selectedAge.some(age => currentAge.toLowerCase().includes(age.toLowerCase()));
 
+	    
         /*const dateCondition = !selectedDate || currentDate === selectedDate;
         const ageGroupCondition = !selectedAgeGroup || currentAgeGroup.includes(selectedAgeGroup);
         const languageCondition = !selectedLanguages.length || selectedLanguages.some(lang => currentLanguage.toLowerCase().includes(lang.toLowerCase()));
@@ -224,7 +227,7 @@ function filterData(data, selectedAreas, selectedCategory, selectedDay) {
         }
 
         return dateCondition && ageGroupCondition && languageCondition && areaCondition && scheduleFilterCondition && babyScaleCondition;*/
-	return areaCondition && categoryCondition && dayCondition;
+	return areaCondition && categoryCondition && dayCondition && ageCondition;
     });
 }
 
@@ -254,6 +257,14 @@ function clearAllFilters() {
         checkbox.checked = true;
 		if (!selectedDay.includes(checkbox.value)) {
 			selectedDay.push(checkbox.value);
+		}
+    });
+
+// Check all the "Select Age" checkboxes
+    document.querySelectorAll('.ageCheckbox').forEach(checkbox => {
+        checkbox.checked = true;
+		if (!selectedAge.includes(checkbox.value)) {
+			selectedAge.push(checkbox.value);
 		}
     });
 
@@ -336,5 +347,29 @@ document.querySelectorAll('.dayCheckbox').forEach(function (checkbox) {
     checkbox.checked = true;
     if (!selectedDay.includes(checkbox.value)) {
         selectedDay.push(checkbox.value);
+    }
+});
+
+const selectedAge = [];
+document.querySelectorAll('.ageCheckbox').forEach(function (checkbox) {
+    checkbox.addEventListener('change', function () {
+        currentSearchValue = $('#dataTable_filter input').val();
+		if (checkbox.checked) {
+            if (!selectedAge.includes(checkbox.value)) {
+                selectedAge.push(checkbox.value);
+            }
+        } else {
+            const index = selectedAge.indexOf(checkbox.value);
+            if (index !== -1) {
+                selectedAge.splice(index, 1);
+            }
+        }
+        renderTable(originalData);
+    });
+
+    // Initialize with all checkboxes checked by default
+    checkbox.checked = true;
+    if (!selectedAge.includes(checkbox.value)) {
+        selectedAge.push(checkbox.value);
     }
 });
