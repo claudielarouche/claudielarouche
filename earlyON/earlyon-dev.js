@@ -1,4 +1,4 @@
-console.log('sort bug fix 6');
+console.log('sort bug fix 7');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -184,6 +184,10 @@ function renderTable(data) {
 		});
 	}
 	$('#dataTable_filter input').val(currentSearchValue).trigger('input');
+
+	if (sortingState) {
+           $('#dataTable').DataTable().order(sortingState).draw();
+        }
 
 	// Listen for column visibility event
 	$('#dataTable').on('column-visibility.dt', function (e, settings, column, state) {
@@ -375,9 +379,7 @@ document.querySelectorAll('.areaCheckbox').forEach(function (checkbox) {
             }
         }
         renderTable(originalData);
-	if (sortingState) {
-           $('#dataTable').DataTable().order(sortingState).draw();
-        }
+	
     });
 
     // Initialize with all checkboxes checked by default
