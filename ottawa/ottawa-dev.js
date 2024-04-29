@@ -1,4 +1,4 @@
-console.log('age filter v1');
+console.log('age filter');
 
 let originalData = []; // Initialize as an empty array
 
@@ -9,7 +9,7 @@ function getQueryParam(key) {
 
 window.onload = function() {
 	// Update the path to your CSV file
-	const csvFilePath = 'https://claudielarouche.com/ottawa/data-dev.csv';
+	const csvFilePath = 'https://claudielarouche.com/ottawa/data.csv';
 
 	Papa.parse(csvFilePath, {
 		header: true,
