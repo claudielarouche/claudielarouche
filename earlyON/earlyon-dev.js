@@ -1,4 +1,4 @@
-console.log('sort bug fix 2');
+console.log('sort bug fix 3');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -296,26 +296,43 @@ document.getElementById('showPlaygroupsButton').addEventListener('click', functi
 
 // Listen for changes in date input
 document.getElementById('selectedDate').addEventListener('change', function() {
-	currentSearchValue = $('#dataTable_filter input').val();
-	renderTable(originalData);
+    // Store the current sorting state
+    sortingState = $('#dataTable').DataTable().state();
+    currentSearchValue = $('#dataTable_filter input').val();
+    renderTable(originalData);
+    if (sortingState) {
+        $('#dataTable').DataTable().state(sortingState).draw();
+    }
 });
 
 // Listen for changes in the Age Group select input
 document.getElementById('selectedAgeGroup').addEventListener('change', function() {
-	currentSearchValue = $('#dataTable_filter input').val();
+    // Store the current sorting state
+    sortingState = $('#dataTable').DataTable().state();
+    currentSearchValue = $('#dataTable_filter input').val();
     renderTable(originalData);
+    if (sortingState) {
+        $('#dataTable').DataTable().state(sortingState).draw();
+    }
 });
 
 // Listen for changes in the Schedule Filter 
 document.getElementById('scheduleFilter').addEventListener('change', function() {	
-	currentSearchValue = $('#dataTable_filter input').val();
+    // Store the current sorting state
+    sortingState = $('#dataTable').DataTable().state();
+    currentSearchValue = $('#dataTable_filter input').val();
     renderTable(originalData);
+    if (sortingState) {
+        $('#dataTable').DataTable().state(sortingState).draw();
+    }
 });
 
 // Listen for changes in language checkboxes
 const selectedLanguages = [];
 document.querySelectorAll('.languageCheckbox').forEach(function (checkbox) {
     checkbox.addEventListener('change', function () {
+	// Store the current sorting state
+    	sortingState = $('#dataTable').DataTable().state();
         currentSearchValue = $('#dataTable_filter input').val();
 		if (checkbox.checked) {
             if (!selectedLanguages.includes(checkbox.value)) {
@@ -328,6 +345,9 @@ document.querySelectorAll('.languageCheckbox').forEach(function (checkbox) {
             }
         }
         renderTable(originalData);
+	if (sortingState) {
+            $('#dataTable').DataTable().state(sortingState).draw();
+    	}
     });
 
     // Initialize with all checkboxes checked by default
@@ -340,8 +360,7 @@ document.querySelectorAll('.languageCheckbox').forEach(function (checkbox) {
 const selectedAreas = [];
 document.querySelectorAll('.areaCheckbox').forEach(function (checkbox) {
     checkbox.addEventListener('change', function () {
-	// Store the current sorting state
-	alert("code has been called");
+	// Store the current sorting state	
 	sortingState = $('#dataTable').DataTable().state();
         currentSearchValue = $('#dataTable_filter input').val();
 	if (checkbox.checked) {
@@ -355,6 +374,9 @@ document.querySelectorAll('.areaCheckbox').forEach(function (checkbox) {
             }
         }
         renderTable(originalData);
+	if (sortingState) {
+            $('#dataTable').DataTable().state(sortingState).draw();
+        }
     });
 
     // Initialize with all checkboxes checked by default
@@ -371,7 +393,9 @@ document.getElementById('babyScaleCheckbox').addEventListener('change', function
     // Store the current sorting state
     sortingState = $('#dataTable').DataTable().state();
     renderTable(originalData);
-	console.log("babyscalecheckbox changed")
+    if (sortingState) {
+        $('#dataTable').DataTable().state(sortingState).draw();
+    }
 });
 
 
@@ -417,4 +441,7 @@ function clearAllFilters() {
 
     // Render the table with cleared filters
     renderTable(originalData);
+    if (sortingState) {
+        $('#dataTable').DataTable().state(sortingState).draw();
+    }
 }
