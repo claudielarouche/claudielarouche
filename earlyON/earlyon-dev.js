@@ -1,4 +1,4 @@
-console.log('baby scale 29, clear filters');
+console.log('sort bug fix 1');
 
 let originalData = []; // Initialize as an empty array
 let babyScaleVisible = false; // Flag to track if the Baby Scale column is visible
@@ -12,7 +12,7 @@ function getQueryParam(key) {
 
 window.onload = function() {
 	// Update the path to your CSV file
-	const csvFilePath = 'https://claudielarouche.com/earlyON/data-dev.csv';
+	const csvFilePath = 'https://claudielarouche.com/earlyON/data.csv';
 
 	Papa.parse(csvFilePath, {
 		header: true,
@@ -105,11 +105,11 @@ function renderTable(data) {
                     		    timeOfDayIndex = index - 1;					  
 				    tableHtml += `<td>${row[header]}</td>`;
 				    break;
-				case 'Day of Week': 	
+				/*case 'Day of Week': 	
 				    //-1 because Day of Week is after URL
                     		    dayOfWeekIndex = index - 1;					  
 				    tableHtml += `<td>${row[header]}</td>`;
-				    break;
+				    break;*/
 			        case 'URL':
 				    //Skip the URL column
 			            break;
@@ -170,11 +170,11 @@ function renderTable(data) {
 			    {
 				"targets": timeOfDayIndex, // Index of the Time of Day column
 				"visible": timeOfDayVisible // Make the Time of Day column hidden initially
-			    },
+			    }/*,
 			    {
 				"targets": dayOfWeekIndex, // Index of the Day of Week column
 				"visible": dayOfWeekVisible // Make the Day of Week column hidden initially
-			    }
+			    }*/
 			],
 			"language": {
 				"emptyTable": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>.",
@@ -195,11 +195,11 @@ function renderTable(data) {
 		    console.log("time");
 		timeOfDayVisible = state; // Update the flag based on the visibility state of the Time of Day column
 		    console.log(timeOfDayVisible);
-	    } else if (column === dayOfWeekIndex) {
+	    } /*else if (column === dayOfWeekIndex) {
 		    console.log("day");
 		dayOfWeekVisible = state; // Update the flag based on the visibility state of the Day of Week column
 		    console.log(dayOfWeekVisible);
-	    }
+	    }*/
 	});
 	
 }
@@ -261,15 +261,8 @@ function isPastDate(dateString) {
 	const dateParts = dateString.split('-');
 	const selectedDate = new Date(dateParts[0], dateParts[1] - 1, dateParts[2]);
 	selectedDate.setHours(0, 0, 0, 0); // Set time to midnight
-
 	
-
-
-	
-	return selectedDate < currentDate;
-
-
-	
+	return selectedDate < currentDate;	
 }
 
 
@@ -305,12 +298,6 @@ document.getElementById('selectedDate').addEventListener('change', function() {
 	currentSearchValue = $('#dataTable_filter input').val();
 	renderTable(originalData);
 });
-
-// Listen for changes in the Area select input
-/*document.getElementById('selectedArea').addEventListener('change', function() {
-	currentSearchValue = $('#dataTable_filter input').val();
-    renderTable(originalData);
-});*/
 
 // Listen for changes in the Age Group select input
 document.getElementById('selectedAgeGroup').addEventListener('change', function() {
@@ -386,9 +373,7 @@ function clearAllFilters() {
     // Clear the date filter
     document.getElementById('selectedDate').value = '';
 
-    // Clear the area filter
-    //document.getElementById('selectedArea').value = '';
-	
+   
 	 // Clear the age group filter
     document.getElementById('selectedAgeGroup').value = '';
 
@@ -400,23 +385,23 @@ function clearAllFilters() {
 		}
     });
 	
-	// Check all the "Areas" checkboxes
+	// Check all the "Select Schedule" checkboxes
     document.querySelectorAll('.areaCheckbox').forEach(checkbox => {
         checkbox.checked = true;
 		if (!selectedAreas.includes(checkbox.value)) {
 			selectedAreas.push(checkbox.value);
 		}
     });
+
+
 	
-	document.getElementById('scheduleFilter').value = 'all';
+    document.getElementById('scheduleFilter').value = 'all';
 
-
-		// Uncheck  all the "other options" checkboxes
+    // Uncheck  all the "other options" checkboxes
     document.querySelectorAll('.otherOptionsCheckbox').forEach(checkbox => {
         checkbox.checked = false;
 		
     });
-	
     // Clear the DataTable search box
     var dataTable = $('#dataTable').DataTable();
     dataTable.search('').draw();
