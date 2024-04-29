@@ -1,5 +1,6 @@
-console.log('age filter');
+console.log('sort bug fix 1');
 
+let sortingState;
 let originalData = []; // Initialize as an empty array
 
 function getQueryParam(key) {
@@ -153,6 +154,11 @@ function renderTable(data) {
         });
     }
     $('#dataTable_filter input').val(currentSearchValue).trigger('input');
+
+    //If sortingState is set, sort the table by sortingState
+    if (sortingState) {
+        $('#dataTable').DataTable().order(sortingState.order).draw();
+    }
 }
 
 document.getElementById('showToday').addEventListener('click', function(event) {
@@ -235,7 +241,9 @@ function filterData(data, selectedAreas, selectedCategory, selectedDay, selected
 let currentSearchValue = getQueryParam('search'); // Variable to store the current search value
 
 function clearAllFilters() {
-
+    // Store the current sorting state
+    sortingState = $('#dataTable').DataTable().state();
+	
     // Check all the "Select Area" checkboxes
     document.querySelectorAll('.areaCheckbox').forEach(checkbox => {
         checkbox.checked = true;
@@ -281,6 +289,8 @@ function clearAllFilters() {
 const selectedAreas = [];
 document.querySelectorAll('.areaCheckbox').forEach(function (checkbox) {
     checkbox.addEventListener('change', function () {
+	// Store the current sorting state
+        sortingState = $('#dataTable').DataTable().state();
         currentSearchValue = $('#dataTable_filter input').val();
 		if (checkbox.checked) {
             if (!selectedAreas.includes(checkbox.value)) {
@@ -305,6 +315,8 @@ document.querySelectorAll('.areaCheckbox').forEach(function (checkbox) {
 const selectedCategory = [];
 document.querySelectorAll('.categoryCheckbox').forEach(function (checkbox) {
     checkbox.addEventListener('change', function () {
+	// Store the current sorting state
+        sortingState = $('#dataTable').DataTable().state();
         currentSearchValue = $('#dataTable_filter input').val();
 		if (checkbox.checked) {
             if (!selectedCategory.includes(checkbox.value)) {
@@ -329,6 +341,8 @@ document.querySelectorAll('.categoryCheckbox').forEach(function (checkbox) {
 const selectedDay = [];
 document.querySelectorAll('.dayCheckbox').forEach(function (checkbox) {
     checkbox.addEventListener('change', function () {
+	// Store the current sorting state
+        sortingState = $('#dataTable').DataTable().state();
         currentSearchValue = $('#dataTable_filter input').val();
 		if (checkbox.checked) {
             if (!selectedDay.includes(checkbox.value)) {
@@ -353,6 +367,8 @@ document.querySelectorAll('.dayCheckbox').forEach(function (checkbox) {
 const selectedAge = [];
 document.querySelectorAll('.ageCheckbox').forEach(function (checkbox) {
     checkbox.addEventListener('change', function () {
+	// Store the current sorting state
+        sortingState = $('#dataTable').DataTable().state();
         currentSearchValue = $('#dataTable_filter input').val();
 		if (checkbox.checked) {
             if (!selectedAge.includes(checkbox.value)) {
