@@ -1,5 +1,6 @@
-console.log('sort bug fix 1');
+console.log('sort bug fix 2');
 
+let sortingState;
 let originalData = []; // Initialize as an empty array
 let babyScaleVisible = false; // Flag to track if the Baby Scale column is visible
 let timeOfDayVisible = false; // Flag to track if the Time of Day column is visible
@@ -339,8 +340,11 @@ document.querySelectorAll('.languageCheckbox').forEach(function (checkbox) {
 const selectedAreas = [];
 document.querySelectorAll('.areaCheckbox').forEach(function (checkbox) {
     checkbox.addEventListener('change', function () {
+	// Store the current sorting state
+	alert("code has been called");
+	sortingState = $('#dataTable').DataTable().state();
         currentSearchValue = $('#dataTable_filter input').val();
-		if (checkbox.checked) {
+	if (checkbox.checked) {
             if (!selectedAreas.includes(checkbox.value)) {
                 selectedAreas.push(checkbox.value);
             }
@@ -363,13 +367,17 @@ document.querySelectorAll('.areaCheckbox').forEach(function (checkbox) {
 
 // Listen for changes in the baby scale checkbox 
 document.getElementById('babyScaleCheckbox').addEventListener('change', function() {	
-	currentSearchValue = $('#dataTable_filter input').val();
+    currentSearchValue = $('#dataTable_filter input').val();
+    // Store the current sorting state
+    sortingState = $('#dataTable').DataTable().state();
     renderTable(originalData);
 	console.log("babyscalecheckbox changed")
 });
 
 
 function clearAllFilters() {
+    // Store the current sorting state
+    sortingState = $('#dataTable').DataTable().state();
     // Clear the date filter
     document.getElementById('selectedDate').value = '';
 
