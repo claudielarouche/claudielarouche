@@ -1,4 +1,4 @@
-console.log('sort bug fix 5');
+console.log('sort bug fix 6');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -376,7 +376,7 @@ document.querySelectorAll('.areaCheckbox').forEach(function (checkbox) {
         }
         renderTable(originalData);
 	if (sortingState) {
-            $('#dataTable').DataTable().state(sortingState).draw();
+           $('#dataTable').DataTable().order(sortingState).draw();
         }
     });
 
