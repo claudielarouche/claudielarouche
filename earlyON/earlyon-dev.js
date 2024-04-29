@@ -1,4 +1,4 @@
-console.log('sort bug fix 4');
+console.log('sort bug fix 5');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -362,7 +362,7 @@ document.querySelectorAll('.areaCheckbox').forEach(function (checkbox) {
     checkbox.addEventListener('change', function () {
 	// Store the current sorting state	
 	sortingState = $('#dataTable').DataTable().state();
-	alert(sortingState); 
+	console.log(sortingState); 
         currentSearchValue = $('#dataTable_filter input').val();
 	if (checkbox.checked) {
             if (!selectedAreas.includes(checkbox.value)) {
