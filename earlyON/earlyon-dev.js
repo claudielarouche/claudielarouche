@@ -306,9 +306,7 @@ document.getElementById('selectedDate').addEventListener('change', function() {
     sortingState = $('#dataTable').DataTable().state();
     currentSearchValue = $('#dataTable_filter input').val();
     renderTable(originalData);
-    if (sortingState) {
-        $('#dataTable').DataTable().state(sortingState).draw();
-    }
+
 });
 
 // Listen for changes in the Age Group select input
@@ -317,9 +315,7 @@ document.getElementById('selectedAgeGroup').addEventListener('change', function(
     sortingState = $('#dataTable').DataTable().state();
     currentSearchValue = $('#dataTable_filter input').val();
     renderTable(originalData);
-    if (sortingState) {
-        $('#dataTable').DataTable().state(sortingState).draw();
-    }
+
 });
 
 // Listen for changes in the Schedule Filter 
@@ -328,9 +324,7 @@ document.getElementById('scheduleFilter').addEventListener('change', function() 
     sortingState = $('#dataTable').DataTable().state();
     currentSearchValue = $('#dataTable_filter input').val();
     renderTable(originalData);
-    if (sortingState) {
-        $('#dataTable').DataTable().state(sortingState).draw();
-    }
+
 });
 
 // Listen for changes in language checkboxes
@@ -351,9 +345,7 @@ document.querySelectorAll('.languageCheckbox').forEach(function (checkbox) {
             }
         }
         renderTable(originalData);
-	if (sortingState) {
-            $('#dataTable').DataTable().state(sortingState).draw();
-    	}
+
     });
 
     // Initialize with all checkboxes checked by default
@@ -398,9 +390,7 @@ document.getElementById('babyScaleCheckbox').addEventListener('change', function
     // Store the current sorting state
     sortingState = $('#dataTable').DataTable().state();
     renderTable(originalData);
-    if (sortingState) {
-        $('#dataTable').DataTable().state(sortingState).draw();
-    }
+
 });
 
 
@@ -446,7 +436,5 @@ function clearAllFilters() {
 
     // Render the table with cleared filters
     renderTable(originalData);
-    if (sortingState) {
-        $('#dataTable').DataTable().state(sortingState).draw();
-    }
+
 }
