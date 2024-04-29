@@ -1,4 +1,4 @@
-console.log('sort bug fix 7');
+console.log('sort bug fix 8');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -185,8 +185,10 @@ function renderTable(data) {
 	}
 	$('#dataTable_filter input').val(currentSearchValue).trigger('input');
 
+	
+
 	if (sortingState) {
-           $('#dataTable').DataTable().order(sortingState).draw();
+           $('#dataTable').DataTable().order(sortingState.order).draw();
         }
 
 	// Listen for column visibility event
