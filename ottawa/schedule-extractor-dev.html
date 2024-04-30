@@ -20,7 +20,7 @@
 <body>
 	<div class="container">
 		
-    <h1>City of Ottawa Activity Schedule Extractor v1</h1>
+    <h1>City of Ottawa Activity Schedule Extractor v28</h1>
     
 		
     <form id="scrapingForm">
@@ -159,8 +159,10 @@ function scrape() {
     // Clear previous results
     document.getElementById("results").innerHTML = "";
     document.getElementById("warning").innerHTML = "";
+	var tableIndex;
 
     urlsInput.forEach(function(url, index) {
+		tableIndex = 0;
 		// Initialize CSV content for each URL
 		var csvContent = "";
 		var csvFile = "";
@@ -203,6 +205,7 @@ function scrape() {
             if (tables.length > 0) {
                 // Loop through each table
                 tables.forEach(function(table) {
+					tableIndex++;
                     // Reset CSV content for each table
 					csvContent = "";
 					csvFile = "";
@@ -211,6 +214,26 @@ function scrape() {
 					table.querySelectorAll('tr').forEach(function(row) {
 						// Get the type from the first cell in the row
 						var type = row.querySelector('th').textContent.trim().replace(/\s+/g, ' ');
+						
+						// Initialize regReq variable
+                            var regReq = "";
+
+                            // Check if "Registration not required" is in type
+                            if (type.includes("Reservations not required") || type.includes("Reservation not required")) {
+                                regReq = "No";
+                            } else {
+                                regReq = "Yes";
+                            }
+							
+						type = type.replace(" *Reservations not required.", ""); 
+						type = type.replace(" *Reservation not required.", ""); 
+						type = type.replace(" *Reservations not required", ""); 
+						type = type.replace(" *Reservation not required.", ""); 
+						type = type.replace(" *Reservations required.", ""); 
+						type = type.replace(" *Reservations required", ""); 
+						type = type.replace(" *Reservation required.", ""); 
+						type = type.replace(" *Reservation required", ""); 
+						
 						
 						// Initialize column number counter
 						var columnNumber = 0;
@@ -254,8 +277,12 @@ function scrape() {
 								var finalTime = finalStartTime + " - " + finalEndTime;
 
 								if (finalTime != "NaN:NaN - NaN:NaN"){
-									csvContent += weekday + ',"'  + finalStartTime + " - " + finalEndTime  + '","'  + h1Content.textContent.trim() + '","'  + address.textContent.trim() + '","' + type.trim() + '","'  + url.trim() + '"<br>';
-									csvFile += weekday + ',"'  + finalStartTime + " - " + finalEndTime  + '","'  + h1Content.textContent.trim() + '","'  + address.textContent.trim() + '","' + type.trim() + '","'  + url.trim() + '"\n';
+								//	csvContent += weekday + ',"'  + finalStartTime + " - " + finalEndTime  + '","'  + h1Content.textContent.trim() + '","'  + address.textContent.trim() + '","' + type.trim() + '","' + regReq.trim() + '","'  + url.trim() + '","' + tableIndex + '","' + '"<br>';
+								//	csvFile += weekday + ',"'  + finalStartTime + " - " + finalEndTime  + '","'  + h1Content.textContent.trim() + '","'  + address.textContent.trim() + '","' + type.trim() + '","'  + regReq.trim() +'","' + url.trim() + '","' + tableIndex + '","' + '"\n';
+
+									
+									csvContent += weekday + ',"'  + finalStartTime + " - " + finalEndTime  + '","'  + h1Content.textContent.trim() + '","'  + address.textContent.trim() + '","' + type.trim() + '","' + regReq.trim() + '","'  + url.trim() +   '"<br>';
+									csvFile += weekday + ',"'  + finalStartTime + " - " + finalEndTime  + '","'  + h1Content.textContent.trim() + '","'  + address.textContent.trim() + '","' + type.trim() + '","'  + regReq.trim() +'","' + url.trim() + '"\n';
 									
 								}
 						
