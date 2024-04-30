@@ -1,4 +1,4 @@
-console.log('v1');
+console.log('v2');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -174,52 +174,16 @@ function filterData(data, selectedAreas, selectedDay) {
 
 
     return data.filter(row => {
-        /*const currentDate = row['Date'] || '';
-        const currentAgeGroup = row['Age Group'] || '';
-        const currentTimeOfDay = row['Time of Day'] || '';
-        const currentDayOfWeek = row['Day of Week'] || '';
-        const currentLanguage = row['Language'] || '';
-        
-	const currentBabyScale = row['Baby Scale'] || ''; */
 
-	const currentArea = row['Area'] || '';
-	
+
+	const currentArea = row['Area'] || '';	
 	const currentDay = row['Day'] || '';
 	
-	//const areaCondition = !selectedAreas.length || selectedAreas.some(area => currentArea.toLowerCase().includes(area.toLowerCase()));
 
-	const areaCondition = selectedAreas.some(area => currentArea.toLowerCase().includes(area.toLowerCase()));
-	//const categoryCondition = selectedCategory.some(category => currentCategory.toLowerCase().includes(category.toLowerCase()));
-        
+	const areaCondition = selectedAreas.some(area => currentArea.toLowerCase().includes(area.toLowerCase()));        
 	const dayCondition = selectedDay.some(day => currentDay.toLowerCase() === day.toLowerCase());
 	
 
-	    
-        /*const dateCondition = !selectedDate || currentDate === selectedDate;
-        const ageGroupCondition = !selectedAgeGroup || currentAgeGroup.includes(selectedAgeGroup);
-        const languageCondition = !selectedLanguages.length || selectedLanguages.some(lang => currentLanguage.toLowerCase().includes(lang.toLowerCase()));
-        // If babyScaleCheckbox is checked, include only rows where 'Baby Scale' is 'Yes'
-    	const babyScaleCondition = !babyScaleFilter.checked || currentBabyScale === 'Yes';
-
-        let scheduleFilterCondition = true;
-
-	   
-        switch (scheduleFilter) {
-            case 'all':
-                scheduleFilterCondition = true;
-			
-                break;
-            case 'eveningsWeekends':
-                scheduleFilterCondition = currentTimeOfDay === 'Evening' || currentDayOfWeek === 'Saturday' || currentDayOfWeek === 'Sunday';
-			
-                break;
-            case 'weekdayAMPM':
-			
-                scheduleFilterCondition = (currentDayOfWeek !== 'Saturday' && currentDayOfWeek !== 'Sunday') && (currentTimeOfDay === 'Morning' || currentTimeOfDay === 'Afternoon');
-                break;
-        }
-
-        return dateCondition && ageGroupCondition && languageCondition && areaCondition && scheduleFilterCondition && babyScaleCondition;*/
 	return areaCondition && dayCondition;
     });
 }
