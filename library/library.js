@@ -1,4 +1,4 @@
-console.log('v3');
+console.log('v4');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -104,7 +104,10 @@ function renderTable(data) {
                         }
                         break;
 
-		
+		default:
+                        // Display other columns
+                        tableHtml += `<td>${row[header]}</td>`;
+                        break;
                 }
             }
         });
