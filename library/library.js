@@ -1,4 +1,4 @@
-console.log('v2');
+console.log('v3');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
