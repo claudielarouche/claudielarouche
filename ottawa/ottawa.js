@@ -110,7 +110,7 @@ function renderTable(data) {
                 if (facilityUrl === '#') {
                     tableHtml += '<td>N/A</td>';
                 } else {
-                    tableHtml += `<td><a href="${facilityUrl}" target="_blank">Facility Reservation Page</a> (if required)</td>`;
+                    tableHtml += `<td><a href="${facilityUrl}" target="_blank">Facility Reservation Page</a></td>`;
                 }
                 break;
 
