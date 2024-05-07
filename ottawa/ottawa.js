@@ -144,8 +144,7 @@ function renderTable(data) {
 			    }
 			  
 			],
-		"order": [
-        [0, 'asc'] // Specify the index of the hidden column and the sorting order
+		"order": [[0, 'asc'], [2, 'asc'], [3, 'asc']],
     ],
             "language": {
                 "emptyTable": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>.",
