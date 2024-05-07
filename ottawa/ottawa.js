@@ -1,4 +1,4 @@
-console.log('sort order 1');
+console.log('sort bug fix 1');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -10,7 +10,7 @@ function getQueryParam(key) {
 
 window.onload = function() {
 	// Update the path to your CSV file
-	const csvFilePath = 'https://claudielarouche.com/ottawa/data-dev.csv';
+	const csvFilePath = 'https://claudielarouche.com/ottawa/data.csv';
 
 	Papa.parse(csvFilePath, {
 		header: true,
@@ -144,7 +144,9 @@ function renderTable(data) {
 			    }
 			  
 			],
-		"order": [[0, 'asc'], [2, 'asc'], [3, 'asc']],
+		"order": [
+        [0, 'asc'] // Specify the index of the hidden column and the sorting order
+    ],
             "language": {
                 "emptyTable": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>.",
                 "zeroRecords": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>."
