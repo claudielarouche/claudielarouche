@@ -1,5 +1,6 @@
 console.log('version 4');
 
+let sortingState;
 let originalData = []; // Initialize as an empty array
 
 function getQueryParam(key) {
@@ -122,12 +123,18 @@ function renderTable(data) {
         });
     }
     $('#dataTable_filter input').val(currentSearchValue).trigger('input');
+
+    //If sortingState is set, sort the table by sortingState
+    if (sortingState) {
+        $('#dataTable').DataTable().order(sortingState.order).draw();
+    }
 }
 
 let currentSearchValue = getQueryParam('search'); // Variable to store the current search value
 
 function clearAllFilters() {
-
+   // Store the current sorting state
+    sortingState = $('#dataTable').DataTable().state();
 
     // Clear the DataTable search box
     var dataTable = $('#dataTable').DataTable();
