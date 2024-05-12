@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YWMRD8LX5P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YWMRD8LX5P');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Time Difference Calculator</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<!--<link rel="stylesheet" type="text/css" href="style.css">-->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+		<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+		<script src="https://cdn.datatables.net/buttons/1.7.1/js/dataTables.buttons.min.js"></script>
+		<script src="https://cdn.datatables.net/buttons/1.7.1/js/buttons.colVis.min.js"></script>
+<style>
+    .time-inputs {
+        margin-bottom: 10px;
+    }
+    .time-inputs input[type="time"] {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+    .deleteTime {
+        margin-left: 10px;
+        padding: 8px 16px;
+        background-color: #ff6347;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+	#addTime {
+        margin-left: 10px;
+        padding: 8px 16px;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+	#calculate{
+        margin-left: 10px;
+        padding: 8px 16px;
+        background-color: #008CBA;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="https://claudielarouche.com">Check out Claudie's other projects and tools</a>
+  </nav>
+  
+  <div class="container">
+    <h1>Time Difference Calculator</h1>
+    <button id="addTime">Add More Time Boxes</button>
+
+<div id="timeInputs">
+    <div class="time-inputs">
+        <label for="start1">Start Time:</label>
+        <input type="time" id="start1" name="start1" class="timepicker">
+        <label for="end1">End Time:</label>
+        <input type="time" id="end1" name="end1" class="timepicker">
+    </div>
+</div>
+<button id="calculate">Calculate</button>
+
+<div id="totalTime"></div>
+</div>
+<script>
+    const addTimeButton = document.getElementById("addTime");
+    const calculateButton = document.getElementById("calculate");
+    const timeInputs = document.getElementById("timeInputs");
+    const totalTimeDisplay = document.getElementById("totalTime");
+
+    let timeCount = 1;
+
+    addTimeButton.addEventListener("click", () => {
+        timeCount++;
+        const newTimeInputDiv = document.createElement("div");
+        newTimeInputDiv.classList.add("time-inputs");
+        newTimeInputDiv.innerHTML = `
+            <label for="start${timeCount}">Start Time:</label>
+            <input type="time" id="start${timeCount}" name="start${timeCount}" class="timepicker">
+            <label for="end${timeCount}">End Time:</label>
+            <input type="time" id="end${timeCount}" name="end${timeCount}" class="timepicker">
+        `;
+        if (timeCount > 1) {
+            const deleteButton = document.createElement("button");
+            deleteButton.classList.add("deleteTime");
+            deleteButton.textContent = "Delete";
+            deleteButton.addEventListener("click", () => {
+                newTimeInputDiv.remove();
+                timeCount--;
+            });
+            newTimeInputDiv.appendChild(deleteButton);
+        }
+        timeInputs.appendChild(newTimeInputDiv);
+        initializeTimepickers(); // Reinitialize timepickers after adding new ones
+    });
+
+    function initializeTimepickers() {
+        const timepickers = document.querySelectorAll('.timepicker');
+        timepickers.forEach((timepicker) => {
+            timepicker.addEventListener('focus', () => {
+                if (!timepicker.value) {
+                    // Optionally, you can provide some default value here if needed
+                }
+            });
+        });
+    }
+
+    initializeTimepickers(); // Initialize timepickers on page load
+
+    calculateButton.addEventListener("click", () => {
+        let totalTimeInMilliseconds = 0;
+        let timeDetails = '';
+        for (let i = 1; i <= timeCount; i++) {
+            const startTime = parseTime(document.getElementById(`start${i}`).value);
+            const endTime = parseTime(document.getElementById(`end${i}`).value);
+            if (startTime && endTime) {
+                const timeDiff = endTime - startTime;
+                totalTimeInMilliseconds += timeDiff;
+                const startValue = document.getElementById(`start${i}`).value;
+                const endValue = document.getElementById(`end${i}`).value;
+                const hours = Math.floor(timeDiff / (1000 * 60 * 60));
+                const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+                const decimalHours = timeDiff / (1000 * 60 * 60);
+                timeDetails += `${startValue} to ${endValue}: ${hours} hours and ${minutes} minutes (${decimalHours.toFixed(2)} hours)<br>`;
+            }
+        }
+        const totalHours = Math.floor(totalTimeInMilliseconds / (1000 * 60 * 60));
+        const totalMinutes = Math.floor((totalTimeInMilliseconds % (1000 * 60 * 60)) / (1000 * 60));
+        const totalDecimalHours = totalTimeInMilliseconds / (1000 * 60 * 60);
+        totalTimeDisplay.innerHTML = `${timeDetails}----------------------<br>Total Time: ${totalHours} hours and ${totalMinutes} minutes (${totalDecimalHours.toFixed(2)} hours)`;
+    });
+
+    function parseTime(timeString) {
+        const timeComponents = timeString.split(':');
+        const hours = parseInt(timeComponents[0]);
+        const minutes = parseInt(timeComponents[1]);
+        return hours * 3600000 + minutes * 60000;
+    }
+</script>
+</body>
+</html>
