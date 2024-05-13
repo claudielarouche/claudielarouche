@@ -1,4 +1,4 @@
-console.log('sort bug fix');
+console.log('today fix');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -289,15 +289,19 @@ document.getElementById('showPlaygroupsButton').addEventListener('click', functi
         const day = String(today.getDate()).padStart(2, '0');
         const todayDate = `${year}-${month}-${day}`;
 
-	currentSearchValue = $('#dataTable_filter input').val();
+		currentSearchValue = $('#dataTable_filter input').val();
+		
+		if (!currentSearchValue.includes(todayDate)) {
+			// Append today's date to the existing filter value
+			currentSearchValue = todayDate + (currentSearchValue ? " " + currentSearchValue : "");
 
-	currentSearchValue = todayDate + (currentSearchValue ? " " + currentSearchValue : "");
-
-        // Populate the search box with today's date
-        document.getElementById('dataTable_filter').querySelector('input').value = currentSearchValue;
-        
-        // Trigger the input event to initiate the search
-        document.getElementById('dataTable_filter').querySelector('input').dispatchEvent(new Event('input'));
+			// Populate the search box with today's date
+			document.getElementById('dataTable_filter').querySelector('input').value = currentSearchValue;
+			
+			// Trigger the input event to initiate the search
+			document.getElementById('dataTable_filter').querySelector('input').dispatchEvent(new Event('input'));
+		}
+		
     });
 
 // Listen for changes in date input
