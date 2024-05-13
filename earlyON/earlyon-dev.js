@@ -1,4 +1,4 @@
-console.log('sort bug fix 8');
+console.log('sort bug fix');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
