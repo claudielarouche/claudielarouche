@@ -109,8 +109,8 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-04-30,10:00 - 12:00,Playgroup,"Somerset West Community Health Centre, 3rd floor",755 Somerset St W,Central,Recommended,English,Kids,N/A,https://www.swchc.on.ca/children-youth-programs/parent-support-calendar,SWCHC,Morning,Tuesday
 2024-04-30,10:15 - 11:30,Indoor Playgroup,City View Centre,1099 Longfields Dr.,West,No,English,Kids,N/A,https://www.cityviewcentre.ca/playgroups,City View Centre,Morning,Tuesday
 2024-04-30,10:30 - 11:15,Charming Chapters Storytime,Chapters,400 Earl Grey Dr. ,West,No,English,Kids,N/A,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Morning,Tuesday
-2024-04-30,13:00 - 14:30,Cocci-bébé (10-18 mois),École Béatrice-Desloges,"1999, av. Provence",East,No,French,Babies,TBD,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Afternoon,Tuesday
-2024-04-30,13:00 - 14:30,Cocci-bébé (10-18 mois),École Des Voyageurs ,6030 prom. Voyageur,East,No,French,Babies,TBD,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Afternoon,Tuesday
+2024-04-30,13:00 - 14:30,Cocci-bébé (10-18 mois),École Béatrice-Desloges,"1999, av. Provence",East,No,French,Babies,No,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Afternoon,Tuesday
+2024-04-30,13:00 - 14:30,Cocci-bébé (10-18 mois),École Des Voyageurs ,6030 prom. Voyageur,East,No,French,Babies,No,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Afternoon,Tuesday
 2024-04-30,13:00 - 15:00,Parent Chat and Kids Play,Parent Resource Centre,300 Goulburn Cr,Central,No,English,Kids,N/A,https://parentresource.ca/earlyon-programs-and-services/,PRC,Afternoon,Tuesday
 2024-04-30,13:00 - 15:00,Baby and me,Carp Memorial Hall,434 Donald B. Munro Dr.,West,No,English,Babies,TBD,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Afternoon,Tuesday
 2024-04-30,13:15 - 15:15,Playgroup (0-6 years),Holy Trinity Catholic High School (entrance on McGibbon Drive),180 Katimavik Road,West,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Afternoon,Tuesday
@@ -228,7 +228,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-05-02,10:00 - 12:00,Greely Playgroup,Greely,"1448 Meadow Dr, Greely",South,No,English,Kids,N/A,https://www.ruralfamilyconnections.ca/programs/earlyon,Rural Family Connections,Morning,Thursday
 2024-05-02,10:00 - 12:00,Mandarin Playgroup,"Somerset West Community Health Centre, 3rd floor",755 Somerset St W,Central,Recommended,Mandarin,Kids,N/A,https://www.swchc.on.ca/children-youth-programs/parent-support-calendar,SWCHC,Morning,Thursday
 2024-05-02,12:00 - 15:00,EarlyON Playgroup,Carlington Community Health Centre (Use the door in front of Merivale) ,900 Merivale,West,No,English,Kids,N/A,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC,Afternoon,Thursday
-2024-05-02,13:00 - 14:30,Bulle parentale (0-9 mois),École Béatrice-Desloges,"1999, av. Provence",East,No,French,Babies,TBD,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Afternoon,Thursday
+2024-05-02,13:00 - 14:30,Bulle parentale (0-9 mois),École Béatrice-Desloges,"1999, av. Provence",East,No,French,Babies,No,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Afternoon,Thursday
 2024-05-02,13:00 - 15:00,Indigenous Wellness Circle (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,Yes,English,Kids,N/A,https://parentresource.ca/earlyon-programs-and-services/,PRC,Afternoon,Thursday
 2024-05-02,13:00 - 15:00,Baby and me,Western Ottawa Community Resource Centre,2 MacNeil Court,West,No,English,Babies,TBD,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Afternoon,Thursday
 2024-05-02,13:15 - 15:15,Playgroup (0-6 years),Holy Trinity Catholic High School (entrance on McGibbon Drive),180 Katimavik Road,West,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Afternoon,Thursday
@@ -401,8 +401,8 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-05-07,10:00 - 12:00,Playgroup,"Somerset West Community Health Centre, 3rd floor",755 Somerset St W,Central,Recommended,English,Kids,N/A,https://www.swchc.on.ca/children-youth-programs/parent-support-calendar,SWCHC,Morning,Tuesday
 2024-05-07,10:15 - 11:30,Outdoor Playgroup,City View Centre,1099 Longfields Dr.,West,No,English,Kids,N/A,https://www.cityviewcentre.ca/playgroups,City View Centre,Morning,Tuesday
 2024-05-07,10:30 - 11:15,Charming Chapters Storytime,Chapters,400 Earl Grey Dr. ,West,No,English,Kids,N/A,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Morning,Tuesday
-2024-05-07,13:00 - 14:30,Cocci-bébé (10-18 mois),École Béatrice-Desloges,"1999, av. Provence",East,No,French,Babies,TBD,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Afternoon,Tuesday
-2024-05-07,13:00 - 14:30,Cocci-bébé (10-18 mois),École Des Voyageurs ,6030 prom. Voyageur,East,No,French,Babies,TBD,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Afternoon,Tuesday
+2024-05-07,13:00 - 14:30,Cocci-bébé (10-18 mois),École Béatrice-Desloges,"1999, av. Provence",East,No,French,Babies,No,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Afternoon,Tuesday
+2024-05-07,13:00 - 14:30,Cocci-bébé (10-18 mois),École Des Voyageurs ,6030 prom. Voyageur,East,No,French,Babies,No,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Afternoon,Tuesday
 2024-05-07,13:00 - 15:00,Parent Chat and Kids Play,Parent Resource Centre,300 Goulburn Cr,Central,No,English,Kids,N/A,https://parentresource.ca/earlyon-programs-and-services/,PRC,Afternoon,Tuesday
 2024-05-07,13:00 - 15:00,Baby and me,Carp Memorial Hall,434 Donald B. Munro Dr.,West,No,English,Babies,TBD,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Afternoon,Tuesday
 2024-05-07,13:15 - 15:15,Playgroup (0-6 years),Holy Trinity Catholic High School (entrance on McGibbon Drive),180 Katimavik Road,West,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Afternoon,Tuesday
@@ -520,7 +520,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-05-09,10:00 - 12:00,Greely Playgroup,Greely,"1448 Meadow Dr, Greely",South,No,English,Kids,N/A,https://www.ruralfamilyconnections.ca/programs/earlyon,Rural Family Connections,Morning,Thursday
 2024-05-09,10:00 - 12:00,Mandarin Playgroup,"Somerset West Community Health Centre, 3rd floor",755 Somerset St W,Central,Recommended,Mandarin,Kids,N/A,https://www.swchc.on.ca/children-youth-programs/parent-support-calendar,SWCHC,Morning,Thursday
 2024-05-09,12:00 - 15:00,EarlyON Playgroup,Carlington Community Health Centre (Use the door in front of Merivale) ,900 Merivale,West,No,English,Kids,N/A,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC,Afternoon,Thursday
-2024-05-09,13:00 - 14:30,Bulle parentale (0-9 mois),École Béatrice-Desloges,"1999, av. Provence",East,No,French,Babies,TBD,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Afternoon,Thursday
+2024-05-09,13:00 - 14:30,Bulle parentale (0-9 mois),École Béatrice-Desloges,"1999, av. Provence",East,No,French,Babies,No,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Afternoon,Thursday
 2024-05-09,13:00 - 15:00,Indigenous Wellness Circle (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,Yes,English,Kids,N/A,https://parentresource.ca/earlyon-programs-and-services/,PRC,Afternoon,Thursday
 2024-05-09,13:00 - 15:00,Baby and me,Western Ottawa Community Resource Centre,2 MacNeil Court,West,No,English,Babies,TBD,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Afternoon,Thursday
 2024-05-09,13:15 - 15:15,Playgroup (0-6 years),Holy Trinity Catholic High School (entrance on McGibbon Drive),180 Katimavik Road,West,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Afternoon,Thursday
@@ -694,7 +694,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-05-14,10:00 - 12:00,Playgroup,"Somerset West Community Health Centre, 3rd floor",755 Somerset St W,Central,Recommended,English,Kids,N/A,https://www.swchc.on.ca/children-youth-programs/parent-support-calendar,SWCHC,Morning,Tuesday
 2024-05-14,10:15 - 11:30,Outdoor Playgroup,City View Centre,1099 Longfields Dr.,West,No,English,Kids,N/A,https://www.cityviewcentre.ca/playgroups,City View Centre,Morning,Tuesday
 2024-05-14,10:30 - 11:15,Charming Chapters Storytime,Chapters,400 Earl Grey Dr. ,West,No,English,Kids,N/A,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Morning,Tuesday
-2024-05-14,13:00 - 14:30,Cocci-bébé (10-18 mois),École Béatrice-Desloges,"1999, av. Provence",East,No,French,Babies,TBD,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Afternoon,Tuesday
+2024-05-14,13:00 - 14:30,Cocci-bébé (10-18 mois),École Béatrice-Desloges,"1999, av. Provence",East,No,French,Babies,No,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Afternoon,Tuesday
 2024-05-14,13:00 - 15:00,Parent Chat and Kids Play,Parent Resource Centre,300 Goulburn Cr,Central,No,English,Kids,N/A,https://parentresource.ca/earlyon-programs-and-services/,PRC,Afternoon,Tuesday
 2024-05-14,13:00 - 15:00,Baby and me,Carp Memorial Hall,434 Donald B. Munro Dr.,West,No,English,Babies,TBD,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Afternoon,Tuesday
 2024-05-14,13:15 - 15:15,Playgroup (0-6 years),Holy Trinity Catholic High School (entrance on McGibbon Drive),180 Katimavik Road,West,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Afternoon,Tuesday
@@ -811,7 +811,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-05-16,10:00 - 12:00,Greely Playgroup,Greely,"1448 Meadow Dr, Greely",South,No,English,Kids,N/A,https://www.ruralfamilyconnections.ca/programs/earlyon,Rural Family Connections,Morning,Thursday
 2024-05-16,10:00 - 12:00,Mandarin Playgroup,"Somerset West Community Health Centre, 3rd floor",755 Somerset St W,Central,Recommended,Mandarin,Kids,N/A,https://www.swchc.on.ca/children-youth-programs/parent-support-calendar,SWCHC,Morning,Thursday
 2024-05-16,12:00 - 15:00,EarlyON Playgroup,Carlington Community Health Centre (Use the door in front of Merivale) ,900 Merivale,West,No,English,Kids,N/A,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC,Afternoon,Thursday
-2024-05-16,13:00 - 14:30,Bulle parentale (0-9 mois),École Béatrice-Desloges,"1999, av. Provence",East,No,French,Babies,TBD,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Afternoon,Thursday
+2024-05-16,13:00 - 14:30,Bulle parentale (0-9 mois),École Béatrice-Desloges,"1999, av. Provence",East,No,French,Babies,No,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Afternoon,Thursday
 2024-05-16,13:00 - 15:00,Indigenous Wellness Circle (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,Yes,English,Kids,N/A,https://parentresource.ca/earlyon-programs-and-services/,PRC,Afternoon,Thursday
 2024-05-16,13:00 - 15:00,Baby and me,Western Ottawa Community Resource Centre,2 MacNeil Court,West,No,English,Babies,TBD,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Afternoon,Thursday
 2024-05-16,13:15 - 15:15,Playgroup (0-6 years),Holy Trinity Catholic High School (entrance on McGibbon Drive),180 Katimavik Road,West,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Afternoon,Thursday
@@ -984,7 +984,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-05-21,10:00 - 12:00,Playgroup,"Somerset West Community Health Centre, 3rd floor",755 Somerset St W,Central,Recommended,English,Kids,N/A,https://www.swchc.on.ca/children-youth-programs/parent-support-calendar,SWCHC,Morning,Tuesday
 2024-05-21,10:15 - 11:30,Outdoor Playgroup,City View Centre,1099 Longfields Dr.,West,No,English,Kids,N/A,https://www.cityviewcentre.ca/playgroups,City View Centre,Morning,Tuesday
 2024-05-21,10:30 - 11:15,Charming Chapters Storytime,Chapters,400 Earl Grey Dr. ,West,No,English,Kids,N/A,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Morning,Tuesday
-2024-05-21,13:00 - 14:30,Cocci-bébé (10-18 mois),École Béatrice-Desloges,"1999, av. Provence",East,No,French,Babies,TBD,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Afternoon,Tuesday
+2024-05-21,13:00 - 14:30,Cocci-bébé (10-18 mois),École Béatrice-Desloges,"1999, av. Provence",East,No,French,Babies,No,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Afternoon,Tuesday
 2024-05-21,13:00 - 15:00,Parent Chat and Kids Play,Parent Resource Centre,300 Goulburn Cr,Central,No,English,Kids,N/A,https://parentresource.ca/earlyon-programs-and-services/,PRC,Afternoon,Tuesday
 2024-05-21,13:00 - 15:00,Baby and me,Carp Memorial Hall,434 Donald B. Munro Dr.,West,No,English,Babies,TBD,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Afternoon,Tuesday
 2024-05-21,13:15 - 15:15,Playgroup (0-6 years),Holy Trinity Catholic High School (entrance on McGibbon Drive),180 Katimavik Road,West,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Afternoon,Tuesday
@@ -1101,7 +1101,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-05-23,10:00 - 12:00,Greely Playgroup,Greely,"1448 Meadow Dr, Greely",South,No,English,Kids,N/A,https://www.ruralfamilyconnections.ca/programs/earlyon,Rural Family Connections,Morning,Thursday
 2024-05-23,10:00 - 12:00,Mandarin Playgroup,"Somerset West Community Health Centre, 3rd floor",755 Somerset St W,Central,Recommended,Mandarin,Kids,N/A,https://www.swchc.on.ca/children-youth-programs/parent-support-calendar,SWCHC,Morning,Thursday
 2024-05-23,12:00 - 15:00,EarlyON Playgroup,Carlington Community Health Centre (Use the door in front of Merivale) ,900 Merivale,West,No,English,Kids,N/A,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC,Afternoon,Thursday
-2024-05-23,13:00 - 14:30,Bulle parentale (0-9 mois),École Béatrice-Desloges,"1999, av. Provence",East,No,French,Babies,TBD,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Afternoon,Thursday
+2024-05-23,13:00 - 14:30,Bulle parentale (0-9 mois),École Béatrice-Desloges,"1999, av. Provence",East,No,French,Babies,No,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Afternoon,Thursday
 2024-05-23,13:00 - 15:00,Indigenous Wellness Circle (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,Yes,English,Kids,N/A,https://parentresource.ca/earlyon-programs-and-services/,PRC,Afternoon,Thursday
 2024-05-23,13:00 - 15:00,Baby and me,Western Ottawa Community Resource Centre,2 MacNeil Court,West,No,English,Babies,TBD,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Afternoon,Thursday
 2024-05-23,13:15 - 15:15,Playgroup (0-6 years),Holy Trinity Catholic High School (entrance on McGibbon Drive),180 Katimavik Road,West,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Afternoon,Thursday
@@ -1274,7 +1274,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-05-28,10:00 - 12:00,Playgroup,"Somerset West Community Health Centre, 3rd floor",755 Somerset St W,Central,Recommended,English,Kids,N/A,https://www.swchc.on.ca/children-youth-programs/parent-support-calendar,SWCHC,Morning,Tuesday
 2024-05-28,10:15 - 11:30,Outdoor Playgroup,City View Centre,1099 Longfields Dr.,West,No,English,Kids,N/A,https://www.cityviewcentre.ca/playgroups,City View Centre,Morning,Tuesday
 2024-05-28,10:30 - 11:15,Charming Chapters Storytime,Chapters,400 Earl Grey Dr. ,West,No,English,Kids,N/A,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Morning,Tuesday
-2024-05-28,13:00 - 14:30,Cocci-bébé (10-18 mois),École Béatrice-Desloges,"1999, av. Provence",East,No,French,Babies,TBD,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Afternoon,Tuesday
+2024-05-28,13:00 - 14:30,Cocci-bébé (10-18 mois),École Béatrice-Desloges,"1999, av. Provence",East,No,French,Babies,No,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Afternoon,Tuesday
 2024-05-28,13:00 - 15:00,Parent Chat and Kids Play,Parent Resource Centre,300 Goulburn Cr,Central,No,English,Kids,N/A,https://parentresource.ca/earlyon-programs-and-services/,PRC,Afternoon,Tuesday
 2024-05-28,13:00 - 15:00,Baby and me,Carp Memorial Hall,434 Donald B. Munro Dr.,West,No,English,Babies,TBD,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Afternoon,Tuesday
 2024-05-28,13:15 - 15:15,Playgroup (0-6 years),Holy Trinity Catholic High School (entrance on McGibbon Drive),180 Katimavik Road,West,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Afternoon,Tuesday
@@ -1391,7 +1391,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-05-30,10:00 - 12:00,Greely Playgroup,Greely,"1448 Meadow Dr, Greely",South,No,English,Kids,N/A,https://www.ruralfamilyconnections.ca/programs/earlyon,Rural Family Connections,Morning,Thursday
 2024-05-30,10:00 - 12:00,Mandarin Playgroup,"Somerset West Community Health Centre, 3rd floor",755 Somerset St W,Central,Recommended,Mandarin,Kids,N/A,https://www.swchc.on.ca/children-youth-programs/parent-support-calendar,SWCHC,Morning,Thursday
 2024-05-30,12:00 - 15:00,EarlyON Playgroup,Carlington Community Health Centre (Use the door in front of Merivale) ,900 Merivale,West,No,English,Kids,N/A,https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/,Carlington CHC,Afternoon,Thursday
-2024-05-30,13:00 - 14:30,Bulle parentale (0-9 mois),École Béatrice-Desloges,"1999, av. Provence",East,No,French,Babies,TBD,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Afternoon,Thursday
+2024-05-30,13:00 - 14:30,Bulle parentale (0-9 mois),École Béatrice-Desloges,"1999, av. Provence",East,No,French,Babies,No,https://lacoccinelle.com/centre-on-y-va,La Coccinelle,Afternoon,Thursday
 2024-05-30,13:00 - 15:00,Indigenous Wellness Circle (0-6 years),Parent Resource Centre,300 Goulburn Cr,Central,Yes,English,Kids,N/A,https://parentresource.ca/earlyon-programs-and-services/,PRC,Afternoon,Thursday
 2024-05-30,13:00 - 15:00,Baby and me,Western Ottawa Community Resource Centre,2 MacNeil Court,West,No,English,Babies,TBD,https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/,WOCRC,Afternoon,Thursday
 2024-05-30,13:15 - 15:15,Playgroup (0-6 years),Holy Trinity Catholic High School (entrance on McGibbon Drive),180 Katimavik Road,West,No,English,Kids,N/A,https://www.ocsb.ca/parents/child-care/,OCSB,Afternoon,Thursday
