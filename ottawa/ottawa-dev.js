@@ -1,4 +1,4 @@
-console.log('sort bug fix 1');
+console.log('today bug');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -172,13 +172,16 @@ document.getElementById('showToday').addEventListener('click', function(event) {
 
     currentSearchValue = $('#dataTable_filter input').val();
 
-    currentSearchValue = todayDayOfWeek + (currentSearchValue ? " " + currentSearchValue : "");
+    if (!currentSearchValue.includes(todayDayOfWeek)) {
 
-    // Populate the search box with today's day of the week
-    document.getElementById('dataTable_filter').querySelector('input').value = currentSearchValue;
+       currentSearchValue = todayDayOfWeek + (currentSearchValue ? " " + currentSearchValue : "");
+
+       // Populate the search box with today's day of the week
+       document.getElementById('dataTable_filter').querySelector('input').value = currentSearchValue;
     
-    // Trigger the input event to initiate the search
-    document.getElementById('dataTable_filter').querySelector('input').dispatchEvent(new Event('input'));
+       // Trigger the input event to initiate the search
+       document.getElementById('dataTable_filter').querySelector('input').dispatchEvent(new Event('input'));
+    }
 });
 
 function filterData(data, selectedAreas, selectedCategory, selectedDay, selectedAge) {
