@@ -1,4 +1,4 @@
-console.log('sort order 1');
+console.log('sort bug fix 1');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -10,7 +10,7 @@ function getQueryParam(key) {
 
 window.onload = function() {
 	// Update the path to your CSV file
-	const csvFilePath = 'https://claudielarouche.com/ottawa/data-dev.csv';
+	const csvFilePath = 'https://claudielarouche.com/ottawa/data.csv';
 
 	Papa.parse(csvFilePath, {
 		header: true,
@@ -110,7 +110,7 @@ function renderTable(data) {
                 if (facilityUrl === '#') {
                     tableHtml += '<td>N/A</td>';
                 } else {
-                    tableHtml += `<td><a href="${facilityUrl}" target="_blank">Facility Reservation Page</a> (if required)</td>`;
+                    tableHtml += `<td><a href="${facilityUrl}" target="_blank">Facility Reservation Page</a></td>`;
                 }
                 break;
 
