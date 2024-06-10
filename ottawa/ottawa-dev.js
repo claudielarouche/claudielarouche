@@ -1,5 +1,5 @@
 
-console.log('time of day filter 1');
+console.log('time of day filter 2');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -201,7 +201,7 @@ function filterData(data, selectedAreas, selectedCategory, selectedDay, selected
 	const dayCondition = selectedDay.some(day => currentDay.toLowerCase() === day.toLowerCase());
 	const ageCondition = selectedAge.some(age => currentAge.toLowerCase().includes(age.toLowerCase()));
 	const timeCondition = selectedTime.some(time => currentTime.toLowerCase().includes(time.toLowerCase()));
-
+	console.log("current time: "  + currentTime + " SelectedTime: " + currentTime + "timeCondition: " + timeCondition);
 	    
 	return areaCondition && categoryCondition && dayCondition && ageCondition && timeCondition;
     });
