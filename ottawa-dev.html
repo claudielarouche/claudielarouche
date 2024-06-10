@@ -1,7 +1,15 @@
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-	
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-YWMRD8LX5P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YWMRD8LX5P');
+</script>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>City of Ottawa Activities</title>
@@ -128,7 +136,7 @@
 			
 		
       <p>Thanks for visiting this website, enjoy!</p>
-			<h2 id="filter">Filters</h2>
+<h2 id="filter">Filters</h2>
 			<form class="form">
 
 				<!--<div class="form-group row">
@@ -188,9 +196,6 @@
 					
 				</div>
 
-				
-
-
 				<div class="form-group row">
 					<label for="selectedCategory" class="col-sm-2 col-form-label">Select Categories:</label>
 					<div class="col-sm-10">
@@ -226,23 +231,23 @@
 				</div>
 
 				<div class="form-group row">
-					<label for="selectedAge" class="col-sm-2 col-form-label">Select Age Group: (Coming Soon!!)</label>
+					<label for="selectedAge" class="col-sm-2 col-form-label">Select Age Group: </label>
 					<div class="col-sm-10">
 						<!--<button type="button" id="selectAllCategoryButton" class="btn btn-primary">Select All</button>
         					<button type="button" id="unselectAllCategoryButton" class="btn btn-secondary">Unselect All</button>-->
 						
 						<div class="checkbox">
-					            <label><input type="checkbox" id="preschoolCheckbox" class="ageCheckbox" value="Preschool" checked="" > Preschool</label>
+					            <label><input type="checkbox" id="preschoolCheckbox" class="ageCheckbox" value="Preschool" checked=""  > Preschool (0 to 5)</label>
 					        </div>
 						<div class="checkbox">
-					            <label><input type="checkbox" id="childrenCheckbox" class="ageCheckbox" value="Children" checked="" > Children</label>
+					            <label><input type="checkbox" id="childrenCheckbox" class="ageCheckbox" value="Children" checked=""  > Children (6 to 12)</label>
 					        </div>
 					        
 					        <div class="checkbox">
-					            <label><input type="checkbox" id="youthCheckbox" class="ageCheckbox" value="Youth" checked="" > Youth</label>
+					            <label><input type="checkbox" id="youthCheckbox" class="ageCheckbox" value="Youth" checked="" > Youth (13 to 17)</label>
 					        </div>
 						<div class="checkbox">
-					            <label><input type="checkbox" id="adultCheckbox" class="ageCheckbox" value="Adult" checked="" > Adult</label>
+					            <label><input type="checkbox" id="adultCheckbox" class="ageCheckbox" value="Adult" checked=""  > Adult</label>
 					        </div>
 					        
 					        <div class="checkbox">
@@ -251,6 +256,11 @@
 
 						
 					</div>
+					
+				</div>
+				<div class="form-group row">
+					<label for="selectedTime" class="col-sm-2 col-form-label">Select Time of Day: (Coming soon!!) </label>
+			
 					
 				</div>
 
@@ -318,7 +328,10 @@
 				</a>
 			</div>
 
-
+			<div class="alert alert-info mt-3" role="alert">
+				<span class="material-icons" style="vertical-align: middle;">lightbulb</span>
+				Data listed was accurate at the time of publication and is subject to change. Before attending a drop-in activity please confirm schedules, reservation processes, fees, and other details, by <strong>visiting the facility page</strong>. claudielarouche.com is not affiliated with the City of Ottawa in any way. All trademarks and copyrights are property of their respective owners.
+			</div>
 				
 			<h2>City of Ottawa Activities</h2>
 			
@@ -334,6 +347,8 @@
 
 			
 			<div id="footer">
+    
+    <footer class="text-center py-4 ">© Claudie Larouche 2024. Thanks to <a href="https://chat.openai.com/" target="_blank">ChatGPT</a> for the help building this website.</footer>
     <a href="#" id="backToTop">Back to Top</a>
 </div>
 		</div>
