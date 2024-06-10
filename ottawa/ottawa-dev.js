@@ -1,5 +1,5 @@
 
-console.log('time of day filter 2');
+console.log('time of day filter 3');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -194,7 +194,7 @@ function filterData(data, selectedAreas, selectedCategory, selectedDay, selected
 	const currentCategory = row['Category'] || '';
 	const currentDay = row['Day'] || '';
 	const currentAge = row['Age'] || '';
-	const currentTime = row['Time of Day'] || '';
+	const currentTime = row['Time of day'] || '';
 
 	const areaCondition = selectedAreas.some(area => currentArea.toLowerCase().includes(area.toLowerCase()));
         const categoryCondition = selectedCategory.some(category => currentCategory.toLowerCase() === category.toLowerCase());
