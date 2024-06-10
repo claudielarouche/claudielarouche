@@ -1,5 +1,5 @@
 
-console.log('today bug');
+console.log('time of day filter 1');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -64,7 +64,7 @@ function renderTable(data) {
     });
     tableHtml += '</tr></thead><tbody>';
 
-    const filteredData = filterData(data, selectedAreas, selectedCategory, selectedDay, selectedAge);
+    const filteredData = filterData(data, selectedAreas, selectedCategory, selectedDay, selectedAge, selectedTime);
 
     // Iterate through each row of data
     filteredData.forEach(row => {
@@ -185,57 +185,25 @@ document.getElementById('showToday').addEventListener('click', function(event) {
     }
 });
 
-function filterData(data, selectedAreas, selectedCategory, selectedDay, selectedAge) {
+function filterData(data, selectedAreas, selectedCategory, selectedDay, selectedAge, selectedTime) {
 
 
     return data.filter(row => {
-        /*const currentDate = row['Date'] || '';
-        const currentAgeGroup = row['Age Group'] || '';
-        const currentTimeOfDay = row['Time of Day'] || '';
-        const currentDayOfWeek = row['Day of Week'] || '';
-        const currentLanguage = row['Language'] || '';
-        
-	const currentBabyScale = row['Baby Scale'] || ''; */
 
 	const currentArea = row['Area'] || '';
 	const currentCategory = row['Category'] || '';
 	const currentDay = row['Day'] || '';
 	const currentAge = row['Age'] || '';
-	//const areaCondition = !selectedAreas.length || selectedAreas.some(area => currentArea.toLowerCase().includes(area.toLowerCase()));
+	const currentTime = row['Time of Day'] || '';
 
 	const areaCondition = selectedAreas.some(area => currentArea.toLowerCase().includes(area.toLowerCase()));
-	//const categoryCondition = selectedCategory.some(category => currentCategory.toLowerCase().includes(category.toLowerCase()));
         const categoryCondition = selectedCategory.some(category => currentCategory.toLowerCase() === category.toLowerCase());
 	const dayCondition = selectedDay.some(day => currentDay.toLowerCase() === day.toLowerCase());
 	const ageCondition = selectedAge.some(age => currentAge.toLowerCase().includes(age.toLowerCase()));
+	const timeCondition = selectedTime.some(time => currentTime.toLowerCase().includes(time.toLowerCase()));
 
 	    
-        /*const dateCondition = !selectedDate || currentDate === selectedDate;
-        const ageGroupCondition = !selectedAgeGroup || currentAgeGroup.includes(selectedAgeGroup);
-        const languageCondition = !selectedLanguages.length || selectedLanguages.some(lang => currentLanguage.toLowerCase().includes(lang.toLowerCase()));
-        // If babyScaleCheckbox is checked, include only rows where 'Baby Scale' is 'Yes'
-    	const babyScaleCondition = !babyScaleFilter.checked || currentBabyScale === 'Yes';
-
-        let scheduleFilterCondition = true;
-
-	   
-        switch (scheduleFilter) {
-            case 'all':
-                scheduleFilterCondition = true;
-			
-                break;
-            case 'eveningsWeekends':
-                scheduleFilterCondition = currentTimeOfDay === 'Evening' || currentDayOfWeek === 'Saturday' || currentDayOfWeek === 'Sunday';
-			
-                break;
-            case 'weekdayAMPM':
-			
-                scheduleFilterCondition = (currentDayOfWeek !== 'Saturday' && currentDayOfWeek !== 'Sunday') && (currentTimeOfDay === 'Morning' || currentTimeOfDay === 'Afternoon');
-                break;
-        }
-
-        return dateCondition && ageGroupCondition && languageCondition && areaCondition && scheduleFilterCondition && babyScaleCondition;*/
-	return areaCondition && categoryCondition && dayCondition && ageCondition;
+	return areaCondition && categoryCondition && dayCondition && ageCondition && timeCondition;
     });
 }
 
@@ -275,6 +243,14 @@ function clearAllFilters() {
         checkbox.checked = true;
 		if (!selectedAge.includes(checkbox.value)) {
 			selectedAge.push(checkbox.value);
+		}
+    });
+
+// Check all the "Select Time of day" checkboxes
+    document.querySelectorAll('.timeCheckbox').forEach(checkbox => {
+        checkbox.checked = true;
+		if (!selectedTime.includes(checkbox.value)) {
+			selectedTime.push(checkbox.value);
 		}
     });
 
@@ -389,5 +365,31 @@ document.querySelectorAll('.ageCheckbox').forEach(function (checkbox) {
     checkbox.checked = true;
     if (!selectedAge.includes(checkbox.value)) {
         selectedAge.push(checkbox.value);
+    }
+});
+
+const selectedTime = [];
+document.querySelectorAll('.timeCheckbox').forEach(function (checkbox) {
+    checkbox.addEventListener('change', function () {
+	// Store the current sorting state
+        sortingState = $('#dataTable').DataTable().state();
+        currentSearchValue = $('#dataTable_filter input').val();
+		if (checkbox.checked) {
+            if (!selectedTime.includes(checkbox.value)) {
+                selectedTime.push(checkbox.value);
+            }
+        } else {
+            const index = selectedTime.indexOf(checkbox.value);
+            if (index !== -1) {
+                selectedTime.splice(index, 1);
+            }
+        }
+        renderTable(originalData);
+    });
+
+    // Initialize with all checkboxes checked by default
+    checkbox.checked = true;
+    if (!selectedTime.includes(checkbox.value)) {
+        selectedTime.push(checkbox.value);
     }
 });
