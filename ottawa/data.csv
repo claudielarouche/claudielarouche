@@ -1,4 +1,4 @@
-r,Day,Time,Facility Name,Address,Activity Type,Registration Required,URL,Reservation,Area,Category,Age,Time of day
+Sort Order,Day,Time,Facility Name,Address,Activity Type,Registration Required,URL,Reservation,Area,Category,Age,Time of day
 1,Monday,06:00 - 08:00,Ray Friel Recreation Complex,1585 Tenth Line Road,Lane Swim,Yes,https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/ray-friel-recreation-complex,https://reservation.frontdesksuite.ca/rcfs/rayfriel/Home/Index?Culture=en&PageId=ab502679-d74d-40e9-ad5b-b2d910d058e2,East - Orleans,Swimming,Adult,AM
 1,Monday,06:00 - 21:00,Ray Friel Recreation Complex,1585 Tenth Line Road,Weight and cardio room,No,https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/ray-friel-recreation-complex,#,East - Orleans,Fitness,Adult,"AM, PM, Evening"
 1,Monday,06:15 - 08:30,Richcraft Recreation Complex-Kanata,4101 Innovation Drive,Reduced Lane Swim,No,https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/richcraft-recreation-complex-kanata,#,West - Kanata,Swimming,Adult,AM
