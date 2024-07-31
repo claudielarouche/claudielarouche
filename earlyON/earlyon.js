@@ -177,6 +177,7 @@ function renderTable(data) {
 				"visible": dayOfWeekVisible // Make the Day of Week column hidden initially
 			    }*/
 			],
+			"order": [[0, 'asc'], [1, 'asc']],
 			"language": {
 				"emptyTable": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>.",
 				"zeroRecords": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>."
