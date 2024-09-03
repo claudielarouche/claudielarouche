@@ -52,11 +52,6 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-09-18,13:30 - 15:00,Infant In-Person EarlyON Playgroup,Centrepointe CCS,75 Hemmingwood Way,West,Yes,English,Babies,Yes,https://centrepointechildcareservices.com/services/earlyon-programs/,Centrepointe CCS,Afternoon,Wednesday
 2024-09-25,13:30 - 15:00,Infant In-Person EarlyON Playgroup,Centrepointe CCS,75 Hemmingwood Way,West,Yes,English,Babies,Yes,https://centrepointechildcareservices.com/services/earlyon-programs/,Centrepointe CCS,Afternoon,Wednesday
 2024-10-02,13:30 - 15:00,Infant In-Person EarlyON Playgroup,Centrepointe CCS,75 Hemmingwood Way,West,Yes,English,Babies,Yes,https://centrepointechildcareservices.com/services/earlyon-programs/,Centrepointe CCS,Afternoon,Wednesday
-2024-09-04,13:30 - 15:00,Infant In-Person EarlyON Playgroup,Centrepointe CCS,75 Hemmingwood Way,West,Yes,English,Babies,Yes,https://centrepointechildcareservices.com/services/earlyon-programs/,Centrepointe CCS,Afternoon,Wednesday
-2024-09-11,13:30 - 15:00,Infant In-Person EarlyON Playgroup,Centrepointe CCS,75 Hemmingwood Way,West,Yes,English,Babies,Yes,https://centrepointechildcareservices.com/services/earlyon-programs/,Centrepointe CCS,Afternoon,Wednesday
-2024-09-18,13:30 - 15:00,Infant In-Person EarlyON Playgroup,Centrepointe CCS,75 Hemmingwood Way,West,Yes,English,Babies,Yes,https://centrepointechildcareservices.com/services/earlyon-programs/,Centrepointe CCS,Afternoon,Wednesday
-2024-09-25,13:30 - 15:00,Infant In-Person EarlyON Playgroup,Centrepointe CCS,75 Hemmingwood Way,West,Yes,English,Babies,Yes,https://centrepointechildcareservices.com/services/earlyon-programs/,Centrepointe CCS,Afternoon,Wednesday
-2024-10-02,13:30 - 15:00,Infant In-Person EarlyON Playgroup,Centrepointe CCS,75 Hemmingwood Way,West,Yes,English,Babies,Yes,https://centrepointechildcareservices.com/services/earlyon-programs/,Centrepointe CCS,Afternoon,Wednesday
 2024-09-06,08:45 - 10:00,Outdoor EarlyON Playgroup,City View Centre,1099 Longfields Dr.,West,No,English,Kids,No,https://www.cityviewcentre.ca/playgroups,City View Centre,Morning,Friday
 2024-09-13,08:45 - 10:00,Outdoor EarlyON Playgroup,City View Centre,1099 Longfields Dr.,West,No,English,Kids,No,https://www.cityviewcentre.ca/playgroups,City View Centre,Morning,Friday
 2024-09-20,08:45 - 10:00,Outdoor EarlyON Playgroup,City View Centre,1099 Longfields Dr.,West,No,English,Kids,No,https://www.cityviewcentre.ca/playgroups,City View Centre,Morning,Friday
@@ -100,7 +95,7 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-09-17,13:30 - 15:00,EarlyON Baby Playgroup,City View Centre,1099 Longfields Dr.,West,No,English,Babies,No,https://www.cityviewcentre.ca/playgroups,City View Centre,Afternoon,Tuesday
 2024-09-24,13:30 - 15:00,EarlyON Baby Playgroup,City View Centre,1099 Longfields Dr.,West,No,English,Babies,No,https://www.cityviewcentre.ca/playgroups,City View Centre,Afternoon,Tuesday
 2024-10-01,13:30 - 15:00,EarlyON Baby Playgroup,City View Centre,1099 Longfields Dr.,West,No,English,Babies,No,https://www.cityviewcentre.ca/playgroups,City View Centre,Afternoon,Tuesday
-2024-09-03,17:30 - 19:00,Indoor EarlyON Playgroup,City View Centre,1099 Longfields Dr.,West,No,English,Kids,No,https://www.cityviewcentre.ca/playgroups,City View Centre,Evening,Tuesday
+2024-09-03,17:30 - 19:00,EarlyON Outdoor Playgroup,City View Centre,1099 Longfields Dr.,West,No,English,Kids,No,https://www.cityviewcentre.ca/playgroups,City View Centre,Evening,Tuesday
 2024-09-10,17:30 - 19:00,Indoor EarlyON Playgroup,City View Centre,1099 Longfields Dr.,West,No,English,Kids,No,https://www.cityviewcentre.ca/playgroups,City View Centre,Evening,Tuesday
 2024-09-17,17:30 - 19:00,Indoor EarlyON Playgroup,City View Centre,1099 Longfields Dr.,West,No,English,Kids,No,https://www.cityviewcentre.ca/playgroups,City View Centre,Evening,Tuesday
 2024-09-24,17:30 - 19:00,Indoor EarlyON Playgroup,City View Centre,1099 Longfields Dr.,West,No,English,Kids,No,https://www.cityviewcentre.ca/playgroups,City View Centre,Evening,Tuesday
@@ -524,49 +519,39 @@ Date,Hours,Playgroup Name,Location Name,Location Address,Area,Registration Requi
 2024-09-16,08:30 - 13:30,EarlyON Playgroup,Carlington CHC,900 Mervale Road,West,No,English,Kids,Yes,https://carlingtonchc.com/calendar/,Carlington CHC,Morning,Monday
 2024-09-23,08:30 - 13:30,EarlyON Playgroup,Carlington CHC,900 Mervale Road,West,No,English,Kids,Yes,https://carlingtonchc.com/calendar/,Carlington CHC,Morning,Monday
 2024-09-30,08:30 - 13:30,EarlyON Playgroup,Carlington CHC,900 Mervale Road,West,No,English,Kids,Yes,https://carlingtonchc.com/calendar/,Carlington CHC,Morning,Monday
-2024-09-03,08:30 - 13:30,EarlyON Playgroup,Carlington CHC,900 Mervale Road,West,No,English,Kids,Yes,https://carlingtonchc.com/calendar/,Carlington CHC,Morning,Tuesday
 2024-09-10,08:30 - 13:30,EarlyON Playgroup,Carlington CHC,900 Mervale Road,West,No,English,Kids,Yes,https://carlingtonchc.com/calendar/,Carlington CHC,Morning,Tuesday
 2024-09-17,08:30 - 13:30,EarlyON Playgroup,Carlington CHC,900 Mervale Road,West,No,English,Kids,Yes,https://carlingtonchc.com/calendar/,Carlington CHC,Morning,Tuesday
 2024-09-24,08:30 - 13:30,EarlyON Playgroup,Carlington CHC,900 Mervale Road,West,No,English,Kids,Yes,https://carlingtonchc.com/calendar/,Carlington CHC,Morning,Tuesday
 2024-10-01,08:30 - 13:30,EarlyON Playgroup,Carlington CHC,900 Mervale Road,West,No,English,Kids,Yes,https://carlingtonchc.com/calendar/,Carlington CHC,Morning,Tuesday
-2024-09-03,15:00 - 16:00,StoryWalk (EarlyON),Harrold Place,1 Harrold Place,West,No,English,Kids,No,https://carlingtonchc.com/calendar/,Carlington CHC,Afternoon,Tuesday
 2024-09-10,15:00 - 16:00,StoryWalk (EarlyON),Harrold Place,1 Harrold Place,West,No,English,Kids,No,https://carlingtonchc.com/calendar/,Carlington CHC,Afternoon,Tuesday
 2024-09-17,15:00 - 16:00,StoryWalk (EarlyON),Harrold Place,1 Harrold Place,West,No,English,Kids,No,https://carlingtonchc.com/calendar/,Carlington CHC,Afternoon,Tuesday
 2024-09-24,15:00 - 16:00,StoryWalk (EarlyON),Harrold Place,1 Harrold Place,West,No,English,Kids,No,https://carlingtonchc.com/calendar/,Carlington CHC,Afternoon,Tuesday
 2024-10-01,15:00 - 16:00,StoryWalk (EarlyON),Harrold Place,1 Harrold Place,West,No,English,Kids,No,https://carlingtonchc.com/calendar/,Carlington CHC,Afternoon,Tuesday
-2024-09-03,09:00 - 11:00,Caldwell EarlyON Playgroup,Carlington Gym,1520 Caldwell Avenue,West,No,English,Kids,No,https://carlingtonchc.com/calendar/,Carlington CHC,Morning,Tuesday
 2024-09-10,09:00 - 11:00,Caldwell EarlyON Playgroup,Carlington Gym,1520 Caldwell Avenue,West,No,English,Kids,No,https://carlingtonchc.com/calendar/,Carlington CHC,Morning,Tuesday
 2024-09-17,09:00 - 11:00,Caldwell EarlyON Playgroup,Carlington Gym,1520 Caldwell Avenue,West,No,English,Kids,No,https://carlingtonchc.com/calendar/,Carlington CHC,Morning,Tuesday
 2024-09-24,09:00 - 11:00,Caldwell EarlyON Playgroup,Carlington Gym,1520 Caldwell Avenue,West,No,English,Kids,No,https://carlingtonchc.com/calendar/,Carlington CHC,Morning,Tuesday
 2024-10-01,09:00 - 11:00,Caldwell EarlyON Playgroup,Carlington Gym,1520 Caldwell Avenue,West,No,English,Kids,No,https://carlingtonchc.com/calendar/,Carlington CHC,Morning,Tuesday
-2024-09-04,08:30 - 13:30,EarlyON Playgroup,Carlington CHC,900 Mervale Road,West,No,English,Kids,Yes,https://carlingtonchc.com/calendar/,Carlington CHC,Morning,Wednesday
 2024-09-11,08:30 - 13:30,EarlyON Playgroup,Carlington CHC,900 Mervale Road,West,No,English,Kids,Yes,https://carlingtonchc.com/calendar/,Carlington CHC,Morning,Wednesday
 2024-09-18,08:30 - 13:30,EarlyON Playgroup,Carlington CHC,900 Mervale Road,West,No,English,Kids,Yes,https://carlingtonchc.com/calendar/,Carlington CHC,Morning,Wednesday
 2024-09-25,08:30 - 13:30,EarlyON Playgroup,Carlington CHC,900 Mervale Road,West,No,English,Kids,Yes,https://carlingtonchc.com/calendar/,Carlington CHC,Morning,Wednesday
 2024-10-02,08:30 - 13:30,EarlyON Playgroup,Carlington CHC,900 Mervale Road,West,No,English,Kids,Yes,https://carlingtonchc.com/calendar/,Carlington CHC,Morning,Wednesday
-2024-09-04,14:30 - 16:30,EarlyON Playgroup in the Park,Harrold Place,1 Harrold Place,West,No,English,Kids,No,https://carlingtonchc.com/calendar/,Carlington CHC,Afternoon,Wednesday
 2024-09-11,14:30 - 16:30,EarlyON Playgroup in the Park,Harrold Place,1 Harrold Place,West,No,English,Kids,No,https://carlingtonchc.com/calendar/,Carlington CHC,Afternoon,Wednesday
 2024-09-18,14:30 - 16:30,EarlyON Playgroup in the Park,Harrold Place,1 Harrold Place,West,No,English,Kids,No,https://carlingtonchc.com/calendar/,Carlington CHC,Afternoon,Wednesday
 2024-09-25,14:30 - 16:30,EarlyON Playgroup in the Park,Harrold Place,1 Harrold Place,West,No,English,Kids,No,https://carlingtonchc.com/calendar/,Carlington CHC,Afternoon,Wednesday
 2024-10-02,14:30 - 16:30,EarlyON Playgroup in the Park,Harrold Place,1 Harrold Place,West,No,English,Kids,No,https://carlingtonchc.com/calendar/,Carlington CHC,Afternoon,Wednesday
-2024-09-05,12:00 - 15:00,EarlyON Playgroup,Carlington CHC,900 Mervale Road,West,No,English,Kids,Yes,https://carlingtonchc.com/calendar/,Carlington CHC,Afternoon,Thursday
 2024-09-12,12:00 - 15:00,EarlyON Playgroup,Carlington CHC,900 Mervale Road,West,No,English,Kids,Yes,https://carlingtonchc.com/calendar/,Carlington CHC,Afternoon,Thursday
 2024-09-19,12:00 - 15:00,EarlyON Playgroup,Carlington CHC,900 Mervale Road,West,No,English,Kids,Yes,https://carlingtonchc.com/calendar/,Carlington CHC,Afternoon,Thursday
 2024-09-26,12:00 - 15:00,EarlyON Playgroup,Carlington CHC,900 Mervale Road,West,No,English,Kids,Yes,https://carlingtonchc.com/calendar/,Carlington CHC,Afternoon,Thursday
 2024-10-03,12:00 - 15:00,EarlyON Playgroup,Carlington CHC,900 Mervale Road,West,No,English,Kids,Yes,https://carlingtonchc.com/calendar/,Carlington CHC,Afternoon,Thursday
-2024-09-06,08:30 - 13:30,EarlyON Playgroup,Carlington CHC,900 Mervale Road,West,No,English,Kids,Yes,https://carlingtonchc.com/calendar/,Carlington CHC,Morning,Friday
 2024-09-13,08:30 - 13:30,EarlyON Playgroup,Carlington CHC,900 Mervale Road,West,No,English,Kids,Yes,https://carlingtonchc.com/calendar/,Carlington CHC,Morning,Friday
 2024-09-20,08:30 - 13:30,EarlyON Playgroup,Carlington CHC,900 Mervale Road,West,No,English,Kids,Yes,https://carlingtonchc.com/calendar/,Carlington CHC,Morning,Friday
 2024-09-27,08:30 - 13:30,EarlyON Playgroup,Carlington CHC,900 Mervale Road,West,No,English,Kids,Yes,https://carlingtonchc.com/calendar/,Carlington CHC,Morning,Friday
-2024-09-06,10:00 - 11:00,StoryWalk in the Forest (EarlyON),Hampton Park,512 Island Park Dr.,West,No,English,Kids,No,https://carlingtonchc.com/calendar/,Carlington CHC,Morning,Friday
 2024-09-13,10:00 - 11:00,StoryWalk in the Forest (EarlyON),Hampton Park,512 Island Park Dr.,West,No,English,Kids,No,https://carlingtonchc.com/calendar/,Carlington CHC,Morning,Friday
 2024-09-20,10:00 - 11:00,StoryWalk in the Forest (EarlyON),Hampton Park,512 Island Park Dr.,West,No,English,Kids,No,https://carlingtonchc.com/calendar/,Carlington CHC,Morning,Friday
 2024-09-27,10:00 - 11:00,StoryWalk in the Forest (EarlyON),Hampton Park,512 Island Park Dr.,West,No,English,Kids,No,https://carlingtonchc.com/calendar/,Carlington CHC,Morning,Friday
-2024-09-06,08:30 - 13:30,EarlyON Playgroup,Carlington CHC,900 Mervale Road,West,No,English,Kids,No,https://carlingtonchc.com/calendar/,Carlington CHC,Morning,Friday
 2024-09-13,08:30 - 13:30,EarlyON Playgroup,Carlington CHC,900 Mervale Road,West,No,English,Kids,No,https://carlingtonchc.com/calendar/,Carlington CHC,Morning,Friday
 2024-09-20,08:30 - 13:30,EarlyON Playgroup,Carlington CHC,900 Mervale Road,West,No,English,Kids,No,https://carlingtonchc.com/calendar/,Carlington CHC,Morning,Friday
 2024-09-27,08:30 - 13:30,EarlyON Playgroup,Carlington CHC,900 Mervale Road,West,No,English,Kids,No,https://carlingtonchc.com/calendar/,Carlington CHC,Morning,Friday
-2024-09-07,09:30 - 11:30,EarlyON Playgroup,Carlington CHC,900 Mervale Road,West,No,English,Kids,Yes,https://carlingtonchc.com/calendar/,Carlington CHC,Morning,Saturday
 2024-09-14,09:30 - 11:30,EarlyON Playgroup,Carlington CHC,900 Mervale Road,West,No,English,Kids,Yes,https://carlingtonchc.com/calendar/,Carlington CHC,Morning,Saturday
 2024-09-21,09:30 - 11:30,EarlyON Playgroup,Carlington CHC,900 Mervale Road,West,No,English,Kids,Yes,https://carlingtonchc.com/calendar/,Carlington CHC,Morning,Saturday
 2024-09-28,09:30 - 11:30,EarlyON Playgroup,Carlington CHC,900 Mervale Road,West,No,English,Kids,Yes,https://carlingtonchc.com/calendar/,Carlington CHC,Morning,Saturday
