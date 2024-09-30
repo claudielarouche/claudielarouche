@@ -1,7 +1,8 @@
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-	<!-- Google tag (gtag.js) -->
+		<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YWMRD8LX5P"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -10,6 +11,7 @@
 
   gtag('config', 'G-YWMRD8LX5P');
 </script>
+	
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>EarlyON Ottawa</title>
@@ -76,7 +78,6 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
 	</head>
 	<body>
-		<div class="bg-image"></div>
 		<div class="container">
 			<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
 	  <a class="navbar-brand" href="https://claudielarouche.com">Claudie's other projects</a>
@@ -88,427 +89,29 @@
 	    </ul>
 	  </div>
 	</nav>
-			<h1>EarlyON Ottawa</h1>
-			<div class="row">
-    <div class="col-md-6">
-        <div class="mt-3">
-            <a href="#csvData" class="btn btn-primary">
-                Go to playgroups
-            </a>
-        </div>
-        <div class="mt-3">
-            <a href="#filter" class="btn btn-primary">
-                Go to filters
-            </a>
-        </div>
-        <div class="mt-3">
-            <a href="#" class="btn btn-primary" id="showPlaygroupsButton">
-                Show me today's playgroups
-            </a>
-        </div>
-        <div class="mt-3">
-            <a href="#newsletter" class="btn btn-warning" id="showPlaygroupsButton">
-                Sign-up for updates
-            </a>
-        </div>
-        <div class="mt-3">
-            <a href="#other" class="btn btn-primary">
-                Other resources for parents
-            </a>
-        </div>
-	    <div class="mt-3">
-            <a href="https://forms.gle/7YHFbimGH4p5imQD8" class="btn btn-primary" target="_blank">
-                Contact me
-            </a>
-        </div>
-	    
-    </div>
-				
-    <div class="col-md-6">
-        <i>If you see me at a playgroup, please say hi!</i>
-        <img src="assets/img/claudie.png" alt="Claudie's Picture" class="img-fluid">
-    </div>
-</div>
-
 			
-			<p>Welcome to the central repository of all the EarlyON playgroups in Ottawa! Finally, a place where parents can find details about all the EarlyON playgroups in the city. EarlyON offers weekday and weekend playgroups. There are even some evening playgroups listed! </p>
-
-			<p>Are you looking for free activities for babies, toddlers or young children? Explore our comprehensive list of EarlyON playgroups near you!</p>
-			<p>Do you have feedback? Are you interested in volunteering to help keep this website up to date? Did you notice an error in the playgroups listed? I'd be happy to <a href="https://forms.gle/qGohDSaTZ9dA7XWy7" target="_blank">hear from you</a>! This tool was built by Claudie Larouche with lots of help from <a href="https://chat.openai.com/" target="_blank">ChatGPT</a>, feel free to connect on <a href="https://www.facebook.com/claudie.larouche.3" target="_blank">Facebook</a> or <a href="https://www.linkedin.com/in/claudie-larouche/" target="_blank">LinkedIn</a>!</p>
-			<p>Now that I have some good data to play with, I've started making a few <a href="https://claudielarouche.com/earlyon-charts.html">charts</a>. :)</p>
-			
-			  <!-- Add the Bootstrap call-out with a lightbulb icon -->
-			<div class="alert alert-info mt-3" role="alert">
-				<span class="material-icons" style="vertical-align: middle;">lightbulb</span>
-				Please make sure to <strong>always click on the Playgroup Name link</strong> to verify that the playgroup you are planning to visit is still running. Please note that I am not always informed of last minute cancellations.
-			</div>
-			
-			
-			
-
-			<h2>Roadmap</h2>
-			<p>Scroll to the bottom of the screen or <a href="#comingSoon">click this link to see what's coming soon!</a></p>
-			
-			
-		<!--	<h2>EarlyON Contact Information</h2>
-			<p>Scroll to the bottom of the screen or <a href="#contact">click this link to see a summary table</a> listing every EarlyON organizations, the URL to their main website, a link to their Facebook page, Eventbrite page (when appplicable) and their phone number. </p>-->
-			
-			<h2 id="filter">Filters</h2>
-			<form class="form">
-
-				<div class="form-group row">
-					<label for="selectedDate" class="col-sm-2 col-form-label">Select Date: </label>
-					<div class="col-sm-10">
-						<input type="date" id="selectedDate" class="form-control col-sm-2">
-					</div>
-				</div>
-
-				<div class="form-group row">
-					<label for="selectedArea" class="col-sm-2 col-form-label">Select Area(s):</label>
-					<div class="col-sm-10">
-						<div class="checkbox">
-							<label><input type="checkbox" id="centralCheckbox" class="areaCheckbox" value="Central" checked=""> Central</label>
-						</div>
-						<div class="checkbox">
-							<label><input type="checkbox" id="eastCheckbox" class="areaCheckbox" value="East" checked=""> East</label>
-						</div>
-						<div class="checkbox">
-							<label><input type="checkbox" id="southCheckbox" class="areaCheckbox" value="South" checked=""> South</label>
-						</div>
-						<div class="checkbox">
-							<label><input type="checkbox" id="westCheckbox" class="areaCheckbox" value="West" checked=""> West</label>
-						</div>
-					</div>
-				</div>
-
-				<div class="form-group row">
-					<label for="selectedAgeGroup" class="col-sm-2 col-form-label">Select Age Group:</label>
-					<div class="col-sm-3">
-						<select id="selectedAgeGroup" class="form-control">
-							<option value="">Show all</option>
-							<option value="Babies">Show baby playgroups only</option>
-							<option value="Kids">Show kids playgroups only</option>
-						</select>
-					</div>
-				</div>
-
-				<div class="form-group row">
-					<label for="scheduleFilter" class="col-sm-2 col-form-label">Select Schedule:</label>
-					<div class="col-sm-4">
-						<select id="scheduleFilter" class="form-control">
-							<option value="all">Show all times</option>
-							<option value="eveningsWeekends">Show evenings and weekends only</option>
-							<option value="weekdayAMPM">Show weekday AM and PM only</option>
-						</select>
-					</div>
-				</div>
-
-				<div class="form-group row">
-					<label for="languageFilter" class="col-sm-2 col-form-label">Select Language(s):</label>
-					<div class="col-sm-10">
-						<div class="checkbox">
-							<label><input type="checkbox" id="arabicCheckbox" class="languageCheckbox" value="Arabic" checked=""> Arabic</label>
-						</div>
-						<div class="checkbox">
-							<label><input type="checkbox" id="englishCheckbox" class="languageCheckbox" value="English" checked=""> English</label>
-						</div>
-						<div class="checkbox">
-							<label><input type="checkbox" id="frenchCheckbox" class="languageCheckbox" value="French" checked=""> French</label>
-						</div>
-						<div class="checkbox">
-							<label><input type="checkbox" id="mandarinCheckbox" class="languageCheckbox" value="Mandarin" checked=""> Mandarin</label>
-						</div>
-					</div>
-				</div>
-
-				<div class="form-group row">
-					<label for="selectedArea" class="col-sm-2 col-form-label">Other options</label>
-					<div class="col-sm-10">
-						<div class="checkbox">
-							<label><input type="checkbox" id="babyScaleCheckbox" class="otherOptionsCheckbox" value="babyScale"> Show only playgroups with a baby scale </label>
-						</div>
-						<!--<div class="checkbox">
-							<label><input type="checkbox" id="cancelledCheckbox" class="otherOptionsCheckbox" value="hideCancelled"> Hide cancelled playgroups</label>
-						</div>-->
-						
-					</div>
-				</div>
-				
-			</form>
-			
-			<div class="mt-3">
-				<button class="btn btn-secondary" onclick="clearAllFilters()">
-					Reset filters to default
-				</button>
-			</div>
-			<div class="mt-3">
-				<a href="#csvData" class="btn btn-primary">
-					 View playgroups
-				</a>
-			</div>
-
-			
-			<h2>Data</h2>
-			<div id="csvData"></div>
-			<p>The data from this table was taken from the various Ottawa EarlyON playgroups posted on the <a href="https://ottawa.ca/en/family-and-social-services/childrens-services/earlyon" target="_blank">Ottawa.ca website</a>. </p>
-			
-			<h2 id="contact">EarlyON Contacts </h2>
-			<p>If you notice an error in the table below, please let me know at claudielarouche@gmail.com. 
-			<div class="container mt-5">
-  <table class="table">
-    <thead class="thead-dark">
-      <tr>
-        <th>Organization Name</th>
-        <th>URL</th>
-        <th>Facebook page</th>
-        <th>Eventbrite link</th>
-        <!--<th>Generic email Address</th>
-        <th>Phone Number</th>-->
-      </tr>
-    </thead>
-    <tbody>
-	
-	<tr>
-  <td>AF Children Services</td>
-  <td><a href="https://www.afchildrensservices.ca/support-and-services/earlyon-child-and-family-centre/" target="_blank">URL</a></td>
-  <td><a href="https://www.facebook.com/EarlyONCentreAndrewFleck" target="_blank">Facebook</a></td>
-  <td>N/A</td>
-  <!--<td>EarlyOnOttawasouth@afchildrensservices.ca; </td>
-  <td><a href="tel:613-737-6369">613-737-6369</a></td>-->
-</tr>
-<tr>
-  <td>Carlington CHC</td>
-  <td><a href="https://carlingtonchc.com/programs-and-services/families/earlyon-and-child-playgroups/" target="_blank">URL</a></td>
-  <td><a href="https://www.facebook.com/profile.php?id=100064364155342" target="_blank">Facebook</a></td>
-  <td>N/A</td>
-  <!--<td>Earlyon@carlingtonchc.org; </td>
-  <td><a href="tel:613-722-4000">613-722-4000</a></td>-->
-</tr>
-<tr>
-  <td>Centrepointe Child Care Services</td>
-  <td><a href="https://centrepointechildcareservices.com/services/earlyon-programs/" target="_blank">URL</a></td>
-  <td><a href="https://www.facebook.com/centrepointechildcareservice/" target="_blank">Facebook</a></td>
-  <td><a href="https://www.eventbrite.ca/o/centrepointe-earlyon-34074345381" target="_blank">Eventbrite</a></td>
-  <!--<td>N/A</td>
-  <td>TBD</td>-->
-</tr>
-<tr>
-  <td>Centretown CHC</td>
-  <td><a href="https://www.centretownchc.org/programs/early-years-%E2%80%93-earlyon-child-and-family-centre" target="_blank">URL</a></td>
-  <td><a href="https://www.facebook.com/CentretownCHC" target="_blank">Facebook</a></td>
-  <td>N/A</td>
-  <!--<td>parent-child@centretownchc.org; </td>
-  <td><a href="tel:613-233-4443">613-233-4443</a></td>-->
-</tr>
-
-<tr>
-  <td>City View Centre</td>
-  <td><a href="https://www.cityviewcentre.ca/" target="_blank">URL</a></td>
-  <td><a href="https://www.facebook.com/profile.php?id=100063571150698" target="_blank">Facebook</a></td>
-  <td><a href="https://www.eventbrite.ca/o/earlyon-child-and-family-centre-on-y-va-centre-pour-lenfant-et-la-famille-14722954270" target="_blank">Eventbrite</a></td>
-  <!--<td>N/A</td>
-  <td>TBD</td>-->
-</tr>
-<tr>
-  <td>CRCOC</td>
-  <td><a href="https://events-evenements.crcoc.ca/events-evenements/category/early-on-y-va/" target="_blank">URL</a></td>
-  <td><a href="https://www.facebook.com/OCCRC.CRCOC/" target="_blank">Facebook</a></td>
-  <td>N/A</td>
-  <!--<td>EarlyONyva@crcoc.ca;</td>
-  <td><a href="tel:613-830-4357">613-830-4357</a></td>-->
-</tr>
-<tr>
-  <td>CSC Vanier</td>
-  <td><a href="http://www.cscvanier.com/en/family" target="_blank">URL</a></td>
-  <td><a href="https://www.facebook.com/cscvanier/" target="_blank">Facebook</a></td>
-  <td><a href="https://www.eventbrite.ca/o/centre-on-y-va-du-cscvanier-31068802831" target="_blank">Eventbrite</a></td>
-  <!--<td>earlyonyva@cscvanier.com;</td>
-  <td>TBD</td>-->
-</tr>
-<tr>
-  <td>GCCS</td>
-  <td><a href="https://gccs.ca/neighbourhood-drop-ins" target="_blank">URL</a></td>
-  <td>N/A</td>
-  <td>N/A</td>
-  <!--<td>communityoutreach@gccs.ca;</td>
-  <td>TBD</td>-->
-</tr>
-<tr>
-  <td>Grandir ensemble</td>
-  <td><a href="https://grandirensemble.ca/services-a-la-petite-enfance-et-a-la-famille/centre-on-y-va-grandir-ensemble/" target="_blank">URL</a></td>
-  <td><a href="https://www.facebook.com/profile.php?id=100072389781681" target="_blank">Facebook</a></td>
-  <td>N/A</td>
-  <!--<td>onyva@grandirensemble.ca;</td>
-  <td>TBD</td>-->
-</tr>
-<tr>
-  <td>La Coccinelle</td>
-  <td><a href="https://www.lacoccinelle.com/centre-on-y-va" target="_blank">URL</a></td>
-  <td><a href="https://www.facebook.com/serviceslacoccinelle" target="_blank">Facebook</a></td>
-  <td>N/A</td>
-  <!--<td>onyva@lacoccinelle.com;</td>
-  <td>TBD</td>-->
-</tr>
-
-
-	
-      <tr>
-        <td>Mothercraft</td>
-        <td><a href="http://mothercraft.com/venues/ontario-early-years-centre/" target="_blank">URL</a></td>
-        <td><a href="https://www.facebook.com/MothercraftOttawa" target="_blank">Facebook</a></td>
-        <td>N/A</td>        
-        <!--<td>EarlyONyva@mothercraft.com</td>
-        <td>TBD</td>-->
-      </tr>
-		<tr>
-  <td>NROCRC</td>
-  <td><a href="https://nrocrc.org/calendar/earlyon-programming4" target="_blank">URL</a></td>
-  <td><a href="https://www.facebook.com/NROCRC" target="_blank">Facebook</a></td>
-  <td>N/A</td>
-  <!--<td>N/A</td>
-  <td>TBD</td>-->
-</tr>
-
-<tr>
-  <td>OCDSB</td>
-  <td><a href="https://ocdsb.ca/cms/One.aspx?portalId=55478&pageId=212978" target="_blank">URL</a></td>
-  <td>TBD</td>
-  <td>N/A</td>
-  <!--<td>earlyon@ocdsb.ca;</td>
-  <td>TBD</td>-->
-</tr>
-<tr>
-  <td>OCSB</td>
-  <td><a href="https://www.ocsb.ca/parents/child-care/" target="_blank">URL</a></td>
-  <td>TBD</td>
-  <td>N/A</td>
-  <!--<td>Multiple email addresses</td>
-  <td>TBD</td>-->
-</tr>
-<tr>
-  <td>Odawa</td>
-  <td><a href="http://odawafc.com/programs/earlyon-children-0-6/" target="_blank">URL</a></td>
-  <td>TBD</td>
-  <td>N/A</td>
-  <!--<td>TBD</td>
-  <td>TBD</td>-->
-</tr>
-<tr>
-  <td>PQCHC</td>
-  <td><a href="http://www.pqchc.com/children-family-services/early-on/" target="_blank">URL</a></td>
-  <td><a href="https://www.facebook.com/PinecrestQueenswayCHC" target="_blank">Facebook</a></td>
-  <td><a href="https://www.eventbrite.ca/o/pinecrest-queensway-community-health-centre-26409651483" target="_blank">Eventbrite</a></td>
-  <!--<td>EarlyONyva@pqchc.com;</td>
-  <td>TBD</td>-->
-</tr>
-<tr>
-  <td>PRC</td>
-  <td><a href="https://parentresource.ca/earlyon-programs-and-services/" target="_blank">URL</a></td>
-  <td><a href="https://www.facebook.com/pages/Parent-Resource-Centre/146926692312230" target="_blank">Facebook</a></td>
-  <td>N/A</td>
-  <!--<td>information@parentresource.ca;</td>
-  <td><a href="tel:613-565-2467">613-565-2467</a></td>-->
-</tr>
-<tr>
-  <td>Rural Family Connections</td>
-  <td><a href="https://www.ruralfamilyconnections.ca/programs/earlyon" target="_blank">URL</a></td>
-  <td><a href="https://www.facebook.com/Ruralfamilyconnections" target="_blank">Facebook</a></td>
-  <td>N/A</td>
-  <!--<td>admin@ruralfamilyconnections.ca;</td>
-  <td><a href="tel:613-821-2899">613-821-2899</a></td>-->
-</tr>
-<tr>
-  <td>SEOCHC</td>
-  <td><a href="https://www.seochc.on.ca/programs-and-services/children-and-family/about-early-years-and-earlyon-services/" target="_blank">URL</a></td>
-  <td><a href="https://www.facebook.com/groups/169746887645012" target="_blank">Facebook</a></td>
-  <td>N/A</td>
-  <!--<td>office@seochc.on.ca;</td>
-  <td>TBD</td>-->
-</tr>
-<tr>
-  <td>SWCHC</td>
-  <td><a href="https://www.swchc.on.ca/children-youth-programs/parent-support-calendar" target="_blank">URL</a></td>
-  <td><a href="https://www.facebook.com/somersetwestchc" target="_blank">Facebook</a></td>
-  <td><a href="https://www.eventbrite.ca/o/somerset-west-chc-children-and-youth-31905786993" target="_blank">Eventbrite</a></td>
-  <!--<td>info@swchc.on.ca;</td>
-  <td>TBD</td>-->
-</tr>
-<tr>
-  <td>WOCRC</td>
-  <td><a href="https://wocrc.ca/program/earlyon-cfc-programs-and-workshops/" target="_blank">URL</a></td>
-  <td><a href="https://www.facebook.com/WOCRC.CRCOO" target="_blank">Facebook</a></td>
-  <td><a href="https://www.eventbrite.ca/o/wocrc-crcoo-7640619549" target="_blank">Eventbrite</a></td>
-  <!--<td>earlyonyva@wocrc.ca;</td>
-  <td><a href="tel:+16135913686,545">613-591-3686, ext. 545</a></td>-->
-</tr>
-
-
-    </tbody>
-  </table>
-</div>
-
-			<h2 id="newsletter">Stay up to date!</h2>
-
-			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfWDjzio_bwHSKPeTHnNq5Yks1cDIo4cN_nlP6Ir-lzz4AqqQ/viewform?embedded=true" width="640" height="471" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-			
+			<p><h1>Message from Claudie</h1></p>
+		<p>Dear parents of Ottawa,</p>
+		<p>I know you are busy and you don't have time for my life story. If you are looking for playgroups, follow the link to the new <a href="https://www.incredibleplaygroupfinder.ca/" target="_blank" class="btn btn-primary">Incredible Playgroup Finder</a> from Parents Resource Centre, but please come back here when you have a bit more time to read what I have to say below.</p>
+		<hr>
 		
-			<h2 id="comingSoon">Coming soon!</h2>
-			<ul>
-			<li>Add a column to indicate if the playgroup is taking place Indoors or Outdoors</li>
-			<li>Add a column to indicate if the playgroup provides snacks</li>
-			<li>Add a column to indicate if the playgroup provides coffee for parents :)</li>
-			<li>Fix the column visibility appearance (right now when you click on the button, the column to choose are hiding the "column visibility" button)</li>						
-			<li>Almost all done: Add a table to list all the EarlyON organizations' URL, Facebook page, Eventbrite page, Email address and Phone Number</li>
-			<li>Make area more specific (add Kanata, Barrhaven, Nepean, Orleans and Vanier as options)</li>
-			<li>Add ability to view playgroups on a map (Don't hold your breath, because I am using free hosting on Github Pages, this is not currently possible)</li>
-			<li>Add lots more charts on the charts page</li>
-			<li>... and maybe more! :) </li>
-			</ul>
-			
-			<h2>Completed Tasks</h2>
-			<p>Here are a few of the things I did, in no particular order: </p>
-			<ul>
-			<li>Highlight a row in red instead of deleting it when a playgroup is cancelled</li>
-			<li>Allow people to control the filter through the URL (want to try it? Try <a href="/earlyon.html?search=East">claudielarouche.com/earlyon.html?search=east</a> to see only playgroups in the East end)</li>
-			<li>Turn area filter into checkboxes instead of a drop down</li>
-			<li>Add language filter</li>
-			<li>Add a message allowing people to easily clear filter if the table returns no data</li>
-			<li>Use a consistent format for playgroup time (HH:MM - HH:MM in 24 hours clock)</li>
-			<li>Add a <a href="early-on-charts.html">charts</a> page</li>
-			<li>Create a formula in Google Sheet to automatically populate the time of day (morning, afternoon, evening) based on the hour</li>
-			<li>Create a formula in Google Sheet to automatically populate the day of week based on the date</li>
-			<li>Create a Google sheet script to automatically push the data from Google Sheet to Github pages in CSV format nightly (or on demand)</li>
-		        <li>Add a sign-up form for people to stay up to date with the EarlyON website and my future projects :) </li>
-		        <li>Create a button to let people view today's playgroups quickly </li>
-		        <li>Add a "Report a problem" button so that people can notify me more easily if a playgroup is incorrect</li>
-			<li>Merge the URL and Playgroup Name columns (turn the Playgroup Name into the link to click)</li>
-			
-			</ul>
-
-			<h2 id="other">Other resources for parents of young children in Ottawa/Gatineau</h2>
-
-			<h3>Other playgroups</h3>
-			<ul>
-				<li><a href="https://childrensvillage.on.ca/resources/drop-in-playgroup/" target="_blank">Children’s Village of Ottawa-Carleton Resource Centre</a> have free playgroups</li>
-				<li><a href="https://www.rootedfamily.ca/classes/baby-cafe" target="_blank">Baby Café</a> and <a href="https://www.rootedfamily.ca/classes/shine-through-shadows" target="_blank">Shine Through Shadows</a>, free playgroups by Rooted Family Wellness Centre</li>
-			</ul>
-			<h3>Breastfeeding</h3>
-			<ul>
-				<li><a href="https://www.lllc.ca/meetings-calendar" target="_blank">La Leche League offers multiple meetings in person and virtually.</a></li>
-			</ul>
-			<h3>Other things to do with kids</h3>
-			<ul>
-				<li>The <a href="https://biblioottawalibrary.ca/en/program" target="_blank">Ottawa library</a> offers tons of fun programs</li>
-				<li>The <a href="https://ottawa.ca/en/arts-heritage-and-events/museums-and-historic-sites/nepean-museum#section-27b2ff24-1f21-4b80-b6b1-39327c56a13f" target="blank">Nepean Museum</a> has special activities like weekend crafts</li>
-				<li>Did you know that you can get <a href="https://ottawapublichealth.ca/neighbourhoodhub" target="_blank">free dental screenings</a> in various neighbourhood clinics around the city?</li>
-			</ul>
-			
-			<div id="footer">
-    
-    <footer class="text-center py-4 ">© Claudie Larouche 2024. Thanks to <a href="https://chat.openai.com/" target="_blank">ChatGPT</a> for the help building this website.</footer>
-    <a href="#" id="backToTop">Back to Top</a>
-</div>
-		</div>
-		<script src="earlyON/earlyon.js"></script>
+		<p>From November 2023 to end of September 2024, it has been my utmost pleasure to provide a repository of all EarlyON playgroups in Ottawa. As a parent of a young boy born in December 2019, I was frustrated with having to consult 21 different websites to figure out which playgroup was happening when and where.</p>
+		<p>As a Mom who works in IT, I knew there had to be a better way. </p>
+		<p>I built the EarlyON repository (with lots of help from <a href="https://chat.openai.com/" target="_blank">ChatGPT</a>) during the evening and on weekends, on my own personal time. The time commitment never bothered me, I was driven by the knowledge that an EarlyON repository would help so many people.</p>
+		<p>And I was right. As soon as I mentioned the EarlyON Repository on the various Moms Group on Facebook, positive feedback, offers to buy me coffee, great testimonials came pouring my way. I want to thank each and every parent out there who took the time to thank me for putting this website together.</p>
+		<p>I also want to take a moment to thank all the EarlyON employees in Ottawa. The work you do for parents of Ottawa is so so so needed. Children are wonderful... but they are also a handful right ;) Having a place to go to talk to other parents who face the same issues we face, and having access to scales to weight our babies, nutritionists to discuss picky eating, nurses available to answer questions, psychologists, and all of that for FREE is unbelievable. I cannot thank the EarlyON organization enough for the wonderful work they do for parents around the city. </p>
+		<p>I want to take a minute to also thank the EarlyON employees who so patiently responded to my monthly emails I was sending them to ensure I had the most up to date information on their upcoming playgroup closure and schedule for the upcoming month. You were all very kind, and your constant words of encouragements really helped keep me motivated to pursue this project. </p>
+		<p>Pretty much the next day after my EarlyON Repository website was launched in November 2023, I was contacted by Parent Resource Centre, one of the organizations that offer EarlyON playgroups in the city.</p>
+		<p>They were impressed that I had single handedly put together a resource that they had wanted to create for years, and they wanted to meet with me to discuss how I had done it and the amount of work needed to keep it going. I offered to give them my code if they were up for doing the monthly upkeep of updating schedules as it changes.</p>
+		<p>Parent Resource Centre obtained funding from the province and ended up creating a very similar resource to mine, which they called the <a href="https://www.incredibleplaygroupfinder.ca/" target="_blank">"Incredible Playgroup Finder"</a> </p>
+		<p>When using the Incredible Playgroup Finder, you'll enjoy the same "Show today's playgroup" functionality that you probably used on the EarlyON Repository. But you'll also be thrilled to see that Parent Resource Centre managed to include a map on their Incredible Playgroup Finder, something I never got around to doing.</p>
+		<p>Although there are still some glitches with the Incredible Playgroup Finder, I know Parent Resource Centre is committed to improving it. They also have lots more information that I never had, such as whether a playgroup has wifi, parking or coffee for parents (you'll agree with me that knowing whether a playgroup offers coffee for parents or not is a deciding factor in which playgroup to visit on a given day haha).</p>
+		<p>My only regret is that although Parent Resource Centre promised to credit my work on their new tool and add a little blurb about me with my photo, they have not kept that promise. </p>
+		<p>If you have a minute, and if this website has ever been useful to you, I would really appreciate if you could send a quick note to <a href="mailto:ipf@parentresource.ca">ipf@parentresource.ca</a> to remind them about their promise (feel free to CC me at <a href="mailto:claudielarouche@gmail.com">claudielarouche@gmail.com</a>, or you can message me just to say hi!)</p>
+		<p>Now that I am no longer going to maintain the EarlyON repository on a monthly basis, I should have more time to keep my <a href="https://claudielarouche.com/">other listings</a> (like the <a href="https://claudielarouche.com/ottawa.html">Ottawa Drop-In Activities</a> for example) a bit more up to date.</p>
+		<p>I've also wanted to create a listing for the Ottawa Library activities for the longest time. And maybe a map that shows where all the daycares in Ottawa are located. And maybe another one for playgrounds... And and and... stay tuned and let me know if you have any more ideas :)</p>
+				<p>Have a wonderful day, bonne journée!!</p>
+			<p>- Claudie</p>
+			</div>
 	</body>
 </html>
