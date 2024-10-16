@@ -61,10 +61,11 @@ function renderTable(data) {
     });
     tableHtml += '</tr></thead><tbody>';
 
-    // Iterate through each row of data
-    data.forEach(row => {
-        const currentDate = row['Date'] ? row['Date'] : '';
+    const filteredData = filterData(data, selectedAreas);
 
+    // Iterate through each row of data
+    filteredData.forEach(row => {
+       
         // Start building the row with a conditional background color
         tableHtml += '<tr>';
 
@@ -129,6 +130,71 @@ function renderTable(data) {
         $('#dataTable').DataTable().order(sortingState.order).draw();
     }
 }
+
+function filterData(data, selectedAreas) {
+
+
+    return data.filter(row => {
+
+	const currentArea = row['Area'] || '';
+	
+
+	const areaCondition = selectedAreas.some(area => currentArea.toLowerCase().includes(area.toLowerCase()));
+        
+	    
+	return areaCondition;
+    });
+}
+
+function clearAllFilters() {
+    // Store the current sorting state
+    sortingState = $('#dataTable').DataTable().state();
+	
+    // Check all the "Select Area" checkboxes
+    document.querySelectorAll('.areaCheckbox').forEach(checkbox => {
+        checkbox.checked = true;
+		if (!selectedAreas.includes(checkbox.value)) {
+			selectedAreas.push(checkbox.value);
+		}
+    });
+
+
+
+    // Clear the DataTable search box
+    var dataTable = $('#dataTable').DataTable();
+    dataTable.search('').draw();
+	currentSearchValue = "";
+
+    // Render the table with cleared filters
+    renderTable(originalData);
+}
+
+const selectedAreas = [];
+
+document.querySelectorAll('.areaCheckbox').forEach(function (checkbox) {
+    checkbox.addEventListener('change', function () {
+	// Store the current sorting state
+        sortingState = $('#dataTable').DataTable().state();
+        currentSearchValue = $('#dataTable_filter input').val();
+		if (checkbox.checked) {
+            if (!selectedAreas.includes(checkbox.value)) {
+                selectedAreas.push(checkbox.value);
+            }
+        } else {
+            const index = selectedAreas.indexOf(checkbox.value);
+            if (index !== -1) {
+                selectedAreas.splice(index, 1);
+            }
+        }
+        renderTable(originalData);
+    });
+
+    // Initialize with all checkboxes checked by default
+    checkbox.checked = true;
+    if (!selectedAreas.includes(checkbox.value)) {
+        selectedAreas.push(checkbox.value);
+    }
+});
 
 let currentSearchValue = getQueryParam('search'); // Variable to store the current search value
 
