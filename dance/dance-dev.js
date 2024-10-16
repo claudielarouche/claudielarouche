@@ -1,4 +1,4 @@
-console.log('start adding filters');
+console.log('start adding filters 1');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
