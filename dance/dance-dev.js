@@ -140,7 +140,7 @@ function renderTable(data) {
 
 function filterData(data, selectedAreas) {
     // If no date, age group, languages, areas, or schedule is selected, return the original data
-    if (!selectedDate && selectedAreas.length === 0) {
+    if (selectedAreas.length === 0) {
         return data;
     }
 
