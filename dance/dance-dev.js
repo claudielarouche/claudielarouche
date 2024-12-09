@@ -1,4 +1,4 @@
-console.log('start adding filters 1');
+console.log('start adding filters 2');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -61,8 +61,16 @@ function renderTable(data) {
     });
     tableHtml += '</tr></thead><tbody>';
 
+    const filteredData = filterData(data, selectedAreas);
+
+    if (!Array.isArray(filteredData)) {
+		console.error('Error loading data: Filtered data is not an array.');
+		document.getElementById('csvData').innerHTML = 'Error loading data.';
+		return;
+	}
+
     // Iterate through each row of data
-    data.forEach(row => {
+    filteredData.forEach(row => {
         const currentDate = row['Date'] ? row['Date'] : '';
 
         // Start building the row with a conditional background color
@@ -130,6 +138,27 @@ function renderTable(data) {
     }
 }
 
+function filterData(data, selectedAreas) {
+    // If no date, age group, languages, areas, or schedule is selected, return the original data
+    if (!selectedDate && selectedAreas.length === 0) {
+        return data;
+    }
+
+    return data.filter(row => {
+       
+        const currentArea = row['Area'] || '';
+	  
+
+
+       
+        const areaCondition = !selectedAreas.length || selectedAreas.some(area => currentArea.toLowerCase().includes(area.toLowerCase()));
+	
+
+
+        return areaCondition;
+    });
+}
+
 let currentSearchValue = getQueryParam('search'); // Variable to store the current search value
 
 function clearAllFilters() {
@@ -143,4 +172,55 @@ function clearAllFilters() {
 
     // Render the table with cleared filters
     renderTable(originalData);
+}
+
+const selectedAreas = [];
+document.querySelectorAll('.areaCheckbox').forEach(function (checkbox) {
+    checkbox.addEventListener('change', function () {
+	// Store the current sorting state	
+	sortingState = $('#dataTable').DataTable().state();
+	console.log(sortingState); 
+        currentSearchValue = $('#dataTable_filter input').val();
+	if (checkbox.checked) {
+            if (!selectedAreas.includes(checkbox.value)) {
+                selectedAreas.push(checkbox.value);
+            }
+        } else {
+            const index = selectedAreas.indexOf(checkbox.value);
+            if (index !== -1) {
+                selectedAreas.splice(index, 1);
+            }
+        }
+        renderTable(originalData);
+	
+    });
+
+    // Initialize with all checkboxes checked by default
+    checkbox.checked = true;
+    if (!selectedAreas.includes(checkbox.value)) {
+        selectedAreas.push(checkbox.value);
+    }
+});
+
+function clearAllFilters() {
+    // Store the current sorting state
+    sortingState = $('#dataTable').DataTable().state();
+   
+	
+    // Check all the "Select area" checkboxes
+    document.querySelectorAll('.areaCheckbox').forEach(checkbox => {
+        checkbox.checked = true;
+		if (!selectedAreas.includes(checkbox.value)) {
+			selectedAreas.push(checkbox.value);
+		}
+    });	
+   
+    // Clear the DataTable search box
+    var dataTable = $('#dataTable').DataTable();
+    dataTable.search('').draw();
+	currentSearchValue = "";
+
+    // Render the table with cleared filters
+    renderTable(originalData);
+
 }
