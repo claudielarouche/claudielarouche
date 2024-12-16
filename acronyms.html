@@ -53,14 +53,26 @@
         }
 
         function cleanData(dataArray) {
-            return dataArray.map(row => {
-                // If 'Applied Title' is empty, replace it with the value from 'Legal Title'
+            let cleanedData = dataArray.map(row => {
+                // Set 'Applied title' from 'Legal title' if empty
                 if (!row['Applied title'] || row['Applied title'].trim() === '') {
                     row['Applied title'] = row['Legal title'] ? row['Legal title'].trim() : '';
                 }
+                // Simplify the specific long title to a shorter one
+                if (row['Applied title'] === "Registrar of the Supreme Court of Canada and that portion of the federal public administration appointed under subsection 12(2) of the Supreme Court Act") {
+                    row['Applied title'] = "Registrar of the Supreme Court of Canada";
+                }
                 return row;
-            }).filter(row => row['Applied title'] && row['Applied title'].trim() !== '' && row['Abbreviation'] && row['Abbreviation'].trim() !== '');
+            });
+        
+            // Filter out invalid entries and specific unwanted entries
+            return cleanedData.filter(row => 
+                row['Applied title'] && row['Applied title'].trim() !== '' &&
+                row['Abbreviation'] && row['Abbreviation'].trim() !== '' &&
+                row['Applied title'] !== "Treasury Board" // Exclude exact match to "Treasury Board"
+            );
         }
+
 
 
         function shuffleArray(array) {
