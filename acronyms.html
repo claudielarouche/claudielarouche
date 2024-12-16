@@ -42,7 +42,7 @@
         let score = 0;
 
         function loadData() {
-            Papa.parse('https://open.canada.ca/data/dataset/83320390-7715-43bc-a281-2049bf5d4232/resource/f0ca63e0-c15e-45b5-9656-77abe1564b1c/download/fip-registry-of-applied-titles-registre-des-titres-dusage-du-pfim-p1-20241125.csv', {
+            Papa.parse('/acronyms/acronyms.csv', {
                 download: true,
                 header: true,
                 complete: function(results) {
