@@ -53,8 +53,15 @@
         }
 
         function cleanData(dataArray) {
-            return dataArray.filter(row => row['Applied title'] && row['Applied title'].trim() !== '' && row['Abbreviation'] && row['Abbreviation'].trim() !== '');
+            return dataArray.map(row => {
+                // If 'Applied Title' is empty, replace it with the value from 'Legal Title'
+                if (!row['Applied title'] || row['Applied title'].trim() === '') {
+                    row['Applied title'] = row['Legal title'] ? row['Legal title'].trim() : '';
+                }
+                return row;
+            }).filter(row => row['Applied title'] && row['Applied title'].trim() !== '' && row['Abbreviation'] && row['Abbreviation'].trim() !== '');
         }
+
 
         function shuffleArray(array) {
             for (let i = array.length - 1; i > 0; i--) {
