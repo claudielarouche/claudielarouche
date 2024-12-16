@@ -42,12 +42,12 @@
         let score = 0;
 
         function loadData() {
-            console.log("about to load acronyms.csv");
+            console.log("about to load acronyms.csv with proper column name");
             Papa.parse('/acronyms/acronyms.csv', {
                 download: true,
                 header: true,
                 complete: function(results) {
-                    data = results.data.filter(row => row['applied title'].trim() !== '');
+                    data = results.data.filter(row => row['Applied title'].trim() !== '');
                     console.log('Data loaded', data.length, 'entries');
                 }
             });
@@ -65,7 +65,7 @@
             if (currentIndex < data.length) {
                 const entry = data[currentIndex];
                 if (document.getElementById('game-mode').value === 'guessAcronym') {
-                    document.getElementById('question').textContent = `What is the acronym for "${entry['applied title']}"?`;
+                    document.getElementById('question').textContent = `What is the acronym for "${entry['Applied title']}"?`;
                 } else {
                     document.getElementById('question').textContent = `What department does the acronym "${entry['Abbreviation']}" stand for?`;
                 }
@@ -82,7 +82,7 @@
 
         function validateAnswer() {
             const entry = data[currentIndex];
-            let correctAnswer = (document.getElementById('game-mode').value === 'guessAcronym') ? entry['Abbreviation'].toLowerCase() : entry['applied title'].toLowerCase();
+            let correctAnswer = (document.getElementById('game-mode').value === 'guessAcronym') ? entry['Abbreviation'].toLowerCase() : entry['Applied title'].toLowerCase();
             if (document.getElementById('answer').value.trim().toLowerCase() === correctAnswer) {
                 score++;
                 alert('Correct!');
