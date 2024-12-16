@@ -20,6 +20,7 @@
         <div id="game-area" class="mt-3" style="display: none;">
             <p id="question"></p>
             <input type="text" id="answer" class="form-control mb-3" onkeypress="checkEnter(event)">
+            <button id="validate-answer" class="btn btn-info">Validate Answer</button>
             <div id="feedback" class="text-info mb-3"></div>
             <button id="next-question" class="btn btn-secondary" style="display: none;">Next Question</button>
         </div>
@@ -30,6 +31,7 @@
 
     <script>
         document.getElementById('start-game').addEventListener('click', startGame);
+        document.getElementById('validate-answer').addEventListener('click', validateAnswer);
         document.getElementById('next-question').addEventListener('click', nextQuestion);
 
         let data = [];
@@ -41,7 +43,7 @@
                 download: true,
                 header: true,
                 complete: function(results) {
-                    data = results.data.filter(row => row['Applied title'] && row['Applied title'].trim() !== '');
+                    data = results.data.filter(row => row['Applied title'] && row['Applied title'].trim() !== '' && row['Abbreviation'] && row['Abbreviation'].trim() !== '');
                     shuffleArray(data); // Randomize the data
                     console.log('Data loaded', data.length, 'entries');
                 }
@@ -72,6 +74,8 @@
                 document.getElementById('answer').value = '';
                 document.getElementById('feedback').textContent = '';
                 document.getElementById('answer').focus();
+                document.getElementById('validate-answer').style.display = 'inline-block';
+                document.getElementById('next-question').style.display = 'none';
             } else {
                 document.getElementById('game-area').style.display = 'none';
                 document.getElementById('feedback').textContent = 'Game over! Click Play! to start again.';
@@ -89,13 +93,17 @@
                 document.getElementById('feedback').textContent = `Incorrect! The correct answer was "${correctAnswer}".`;
             }
             document.getElementById('score').textContent = score;
-            currentIndex++;
-            setTimeout(nextQuestion, 2000); // Go to next question after 2 seconds
+            document.getElementById('validate-answer').style.display = 'none';
+            document.getElementById('next-question').style.display = 'inline-block';
         }
 
         function checkEnter(event) {
             if (event.key === "Enter") {
-                validateAnswer();
+                if(document.getElementById('validate-answer').style.display !== 'none') {
+                    validateAnswer();
+                } else if(document.getElementById('next-question').style.display !== 'none') {
+                    nextQuestion();
+                }
             }
         }
     </script>
