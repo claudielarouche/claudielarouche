@@ -42,6 +42,7 @@
         let score = 0;
 
         function loadData() {
+            console.log("about to load acronyms.csv");
             Papa.parse('/acronyms/acronyms.csv', {
                 download: true,
                 header: true,
