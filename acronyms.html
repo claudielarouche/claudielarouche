@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YWMRD8LX5P"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-YWMRD8LX5P');
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acronym Game</title>
@@ -19,6 +10,7 @@
 <body onload="loadData()">
     <div class="container mt-5">
         <h1 class="mb-3">Government Department Acronym Game</h1>
+        <p>The data for this game was last downloaded on December 16, 2024, from the <a href="https://open.canada.ca/data/en/dataset/83320390-7715-43bc-a281-2049bf5d4232" target="_blank">Open Government website</a>. This website was built by <a href="https://claudielarouche.com/" target="_blank">Claudie Larouche</a> with help from <a href="https://openai.com/chatgpt" target="_blank">ChatGPT</a>, based on an idea from Emily Fegan. If you enjoy this game or have ideas for improvement, please send your feedback to <a href="mailto:claudielarouche@gmail.com">claudielarouche@gmail.com</a>.</p>
         <div>
             <select id="game-mode" class="form-select mb-3">
                 <option value="guessAcronym">Guess the Acronym from Department Name</option>
@@ -48,16 +40,20 @@
         let score = 0;
 
         function loadData() {
-            console.log("Next question fix");
+            console.log("more changes");
             Papa.parse('acronyms/acronyms.csv', {
                 download: true,
                 header: true,
                 complete: function(results) {
-                    data = results.data.filter(row => row['Applied title'] && row['Applied title'].trim() !== '' && row['Abbreviation'] && row['Abbreviation'].trim() !== '');
-                    shuffleArray(data); // Randomize the data
+                    data = cleanData(results.data);
+                    shuffleArray(data);
                     console.log('Data loaded', data.length, 'entries');
                 }
             });
+        }
+
+        function cleanData(dataArray) {
+            return dataArray.filter(row => row['Applied title'] && row['Applied title'].trim() !== '' && row['Abbreviation'] && row['Abbreviation'].trim() !== '');
         }
 
         function shuffleArray(array) {
@@ -68,7 +64,7 @@
         }
 
         function startGame() {
-            currentIndex = 0;
+            currentIndex = -1;
             score = 0;
             document.getElementById('score').textContent = score;
             document.getElementById('game-area').style.display = 'block';
@@ -76,7 +72,7 @@
         }
 
         function nextQuestion() {
-            currentIndex++; // Increment the index to move to the next question
+            currentIndex++;
             if (currentIndex < data.length) {
                 const entry = data[currentIndex];
                 document.getElementById('question').textContent = document.getElementById('game-mode').value === 'guessAcronym' ?
@@ -110,9 +106,9 @@
 
         function checkEnter(event) {
             if (event.key === "Enter") {
-                if(document.getElementById('validate-answer').style.display !== 'none') {
+                if (document.getElementById('validate-answer').style.display !== 'none') {
                     validateAnswer();
-                } else if(document.getElementById('next-question').style.display !== 'none') {
+                } else if (document.getElementById('next-question').style.display !== 'none') {
                     nextQuestion();
                 }
             }
