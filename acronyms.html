@@ -47,7 +47,8 @@
                 download: true,
                 header: true,
                 complete: function(results) {
-                    data = results.data.filter(row => row['Applied title'].trim() !== '');
+                    console.log('First row:', results.data[0]); // This will show you the actual keys available
+                    data = results.data.filter(row => row['Applied title'] && row['Applied title'].trim() !== '');
                     console.log('Data loaded', data.length, 'entries');
                 }
             });
