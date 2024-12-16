@@ -66,6 +66,7 @@
         }
 
         function nextQuestion() {
+            currentIndex++; // Increment the index to move to the next question
             if (currentIndex < data.length) {
                 const entry = data[currentIndex];
                 document.getElementById('question').textContent = document.getElementById('game-mode').value === 'guessAcronym' ?
