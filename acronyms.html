@@ -163,10 +163,11 @@
             if (currentIndex < data.length) {
                 document.getElementById('next-question').style.display = 'inline-block';
             } else {
-                document.getElementById('game-area').style.display = 'none';
+                //document.getElementById('game-area').style.display = 'none';
                 document.getElementById('feedback').textContent = 'Game over! Click Play! to start again.';
                 document.getElementById('start-game').textContent = 'Play Again';
-                document.getElementById('progress-display').textContent = `Game Completed: ${score}/${data.length}`;
+                //document.getElementById('progress-display').textContent = `Game Completed: ${score}/${data.length}`;
+                document.getElementById('progress-display').textContent = `Question: ${currentIndex+1}/${data.length}`;
             }
         }
 
