@@ -10,11 +10,20 @@
 <body onload="loadData()">
     <div class="container mt-5">
         <h1 class="mb-3">Government Department Acronym Game</h1>
-        <p>The data for this game was last downloaded on December 16, 2024, from the <a href="https://open.canada.ca/data/en/dataset/83320390-7715-43bc-a281-2049bf5d4232" target="_blank">Open Government website</a>. This website was built by <a href="https://claudielarouche.com/" target="_blank">Claudie Larouche</a> with help from <a href="https://openai.com/chatgpt" target="_blank">ChatGPT</a>, based on an idea from Emily Fegan. If you enjoy this game or have ideas for improvement, please send your feedback to <a href="mailto:claudielarouche@gmail.com">claudielarouche@gmail.com</a>.</p>
         <div>
+            <label for="game-mode" class="form-label">Choose the game mode:</label>
             <select id="game-mode" class="form-select mb-3">
                 <option value="guessAcronym">Guess the Acronym from Department Name</option>
                 <option value="guessName">Guess the Department Name from Acronym</option>
+            </select>
+        </div>
+        <div>
+            <label for="question-count-select" class="form-label">Choose the number of questions:</label>
+            <select id="question-count-select" class="form-select mb-3">
+                <option value="10">10 Questions</option>
+                <option value="25">25 Questions</option>
+                <option value="50">50 Questions</option>
+                <option value="all" selected>All Questions</option>
             </select>
             <button id="start-game" class="btn btn-success">Play!</button>
         </div>
@@ -40,13 +49,11 @@
         let score = 0;
 
         function loadData() {
-            console.log("more changes");
             Papa.parse('acronyms/acronyms.csv', {
                 download: true,
                 header: true,
                 complete: function(results) {
                     data = cleanData(results.data);
-                    shuffleArray(data);
                     console.log('Data loaded', data.length, 'entries');
                 }
             });
@@ -54,26 +61,20 @@
 
         function cleanData(dataArray) {
             let cleanedData = dataArray.map(row => {
-                // Set 'Applied title' from 'Legal title' if empty
                 if (!row['Applied title'] || row['Applied title'].trim() === '') {
                     row['Applied title'] = row['Legal title'] ? row['Legal title'].trim() : '';
                 }
-                // Simplify the specific long title to a shorter one
                 if (row['Applied title'] === "Registrar of the Supreme Court of Canada and that portion of the federal public administration appointed under subsection 12(2) of the Supreme Court Act") {
                     row['Applied title'] = "Registrar of the Supreme Court of Canada";
                 }
                 return row;
             });
-        
-            // Filter out invalid entries and specific unwanted entries
             return cleanedData.filter(row => 
                 row['Applied title'] && row['Applied title'].trim() !== '' &&
                 row['Abbreviation'] && row['Abbreviation'].trim() !== '' &&
-                row['Applied title'] !== "Treasury Board" // Exclude exact match to "Treasury Board"
+                row['Applied title'] !== "Treasury Board"
             );
         }
-
-
 
         function shuffleArray(array) {
             for (let i = array.length - 1; i > 0; i--) {
@@ -83,11 +84,18 @@
         }
 
         function startGame() {
-            currentIndex = -1;
+            currentIndex = -1; // Start from -1 because nextQuestion increments before displaying
             score = 0;
             document.getElementById('score').textContent = score;
             document.getElementById('game-area').style.display = 'block';
-            nextQuestion();
+
+            const totalQuestions = document.getElementById('question-count-select').value;
+            if (totalQuestions !== 'all') {
+                shuffleArray(data); // Shuffle before slicing to randomize
+                data = data.slice(0, parseInt(totalQuestions));
+            }
+
+            nextQuestion(); // Call to set first question
         }
 
         function nextQuestion() {
