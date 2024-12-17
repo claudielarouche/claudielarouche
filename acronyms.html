@@ -47,6 +47,7 @@
             </select>
             <button id="start-game" class="btn btn-success">Play!</button>
         </div>
+        <p id="progress-display">Question: 0/0</p>
         <div id="game-area" class="mt-3" style="display: none;">
             <p id="question"></p>
             <input type="text" id="answer" class="form-control mb-3" onkeypress="checkEnter(event)">
@@ -55,7 +56,7 @@
             <button id="next-question" class="btn btn-secondary" style="display: none;">Next Question</button>
         </div>
         <div id="score-area">
-            <h2>Your Score: <span id="score">0</span></h2>
+            <h2>Your Score: <span id="score">0</span>/<span id="total-questions">0</span></h2>
         </div>
     </div>
 
@@ -76,6 +77,7 @@
                 complete: function(results) {
                     data = cleanData(results.data);
                     console.log('Data loaded', data.length, 'entries');
+                    document.getElementById('question-count-select').options[3].text = `All Questions (${data.length})`;
                 }
             });
         }
@@ -105,22 +107,25 @@
         }
 
         function startGame() {
-            currentIndex = -1; // Start from -1 because nextQuestion increments before displaying
+            currentIndex = 0;
             score = 0;
             document.getElementById('score').textContent = score;
             document.getElementById('game-area').style.display = 'block';
 
             const totalQuestions = document.getElementById('question-count-select').value;
+            document.getElementById('total-questions').textContent = totalQuestions === 'all' ? data.length : totalQuestions;
+
             if (totalQuestions !== 'all') {
                 shuffleArray(data); // Shuffle before slicing to randomize
                 data = data.slice(0, parseInt(totalQuestions));
             }
 
+            document.getElementById('progress-display').textContent = `Question: ${currentIndex+1}/${data.length}`;
             nextQuestion(); // Call to set first question
         }
 
+
         function nextQuestion() {
-            currentIndex++;
             if (currentIndex < data.length) {
                 const entry = data[currentIndex];
                 document.getElementById('question').textContent = document.getElementById('game-mode').value === 'guessAcronym' ?
@@ -131,10 +136,12 @@
                 document.getElementById('answer').focus();
                 document.getElementById('validate-answer').style.display = 'inline-block';
                 document.getElementById('next-question').style.display = 'none';
+                document.getElementById('progress-display').textContent = `Question: ${currentIndex+1}/${data.length}`;
             } else {
                 document.getElementById('game-area').style.display = 'none';
                 document.getElementById('feedback').textContent = 'Game over! Click Play! to start again.';
                 document.getElementById('start-game').textContent = 'Play Again';
+                document.getElementById('progress-display').textContent = `Game Completed: ${score}/${data.length}`;
             }
         }
 
@@ -148,8 +155,16 @@
                 document.getElementById('feedback').textContent = `Incorrect! The correct answer was "${correctAnswer}".`;
             }
             document.getElementById('score').textContent = score;
+            currentIndex++;
             document.getElementById('validate-answer').style.display = 'none';
-            document.getElementById('next-question').style.display = 'inline-block';
+            if (currentIndex < data.length) {
+                document.getElementById('next-question').style.display = 'inline-block';
+            } else {
+                document.getElementById('game-area').style.display = 'none';
+                document.getElementById('feedback').textContent = 'Game over! Click Play! to start again.';
+                document.getElementById('start-game').textContent = 'Play Again';
+                document.getElementById('progress-display').textContent = `Game Completed: ${score}/${data.length}`;
+            }
         }
 
         function checkEnter(event) {
