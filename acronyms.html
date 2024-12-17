@@ -73,6 +73,7 @@
         let score = 0;
 
         function loadData() {
+            console.log("correct answer upper case");
             Papa.parse('acronyms/acronyms.csv', {
                 download: true,
                 header: true,
@@ -149,8 +150,8 @@
 
         function validateAnswer() {
             const entry = data[currentIndex];
-            let correctAnswer = document.getElementById('game-mode').value === 'guessAcronym' ? entry['Abbreviation'].toLowerCase() : entry['Applied title'].toLowerCase();
-            if (document.getElementById('answer').value.trim().toLowerCase() === correctAnswer) {
+            let correctAnswer = document.getElementById('game-mode').value === 'guessAcronym' ? entry['Abbreviation'] : entry['Applied title'];
+            if (document.getElementById('answer').value.trim().toLowerCase() === correctAnswer.toLowerCase()) {
                 score++;
                 document.getElementById('feedback').textContent = 'Correct!';
             } else {
