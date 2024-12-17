@@ -46,9 +46,10 @@
             <p id="question"></p>
             <input type="text" id="answer" class="form-control mb-3" onkeypress="checkEnter(event)">
             <button id="validate-answer" class="btn btn-info">Validate Answer</button>
-            <div id="feedback" class="text-info mb-3"></div>
-            <button id="next-question" class="btn btn-secondary" style="display: none;">Next Question</button>
+            
         </div>
+        <div id="feedback" class="text-info mb-3"></div>
+            <button id="next-question" class="btn btn-secondary" style="display: none;">Next Question</button>
         <div id="score-area">
             <h2>Your Score: <span id="score">0</span>/<span id="total-questions">0</span></h2>
         </div>
@@ -65,7 +66,7 @@
         let score = 0;
 
         function loadData() {
-            console.log("end of game changes 2");
+            console.log("end of game changes 3");
             Papa.parse('acronyms/acronyms.csv', {
                 download: true,
                 header: true,
@@ -133,7 +134,7 @@
                 document.getElementById('next-question').style.display = 'none';
                 document.getElementById('progress-display').textContent = `Question: ${currentIndex+1}/${data.length}`;
             } else {
-                //document.getElementById('game-area').style.display = 'none';
+                document.getElementById('game-area').style.display = 'none';
                 //document.getElementById('feedback').textContent = 'Game over! Click Play! to start again.';
                 document.getElementById('start-game').textContent = 'Play Again';
                 //document.getElementById('progress-display').textContent = `Game Completed: ${score}/${data.length}`;
@@ -155,7 +156,7 @@
             if (currentIndex < data.length) {
                 document.getElementById('next-question').style.display = 'inline-block';
             } else {
-                //document.getElementById('game-area').style.display = 'none';
+                document.getElementById('game-area').style.display = 'none';
                 //document.getElementById('feedback').textContent = 'Game over! Click Play! to start again.';
                 document.getElementById('start-game').textContent = 'Play Again';
                 //document.getElementById('progress-display').textContent = `Game Completed: ${score}/${data.length}`;
