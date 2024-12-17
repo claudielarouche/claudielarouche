@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acronym Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+</head>
+<body onload="loadData()">
+    <div class="bg-image"></div>  <!-- Placeholder for background image -->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+            <a class="navbar-brand" href="https://claudielarouche.com">Claudie's other projects</a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <!-- Add any additional menu items here if needed -->
+                </ul>
+            </div>
+        </nav>
+
+        <h1 class="mb-3">Government Department Acronym Game</h1>
+        <p>The data for this game was last downloaded on December 16, 2024, from the <a href="https://open.canada.ca/data/en/dataset/83320390-7715-43bc-a281-2049bf5d4232" target="_blank">Open Government website</a>. This website was built by <a href="https://claudielarouche.com/" target="_blank">Claudie Larouche</a> with help from <a href="https://openai.com/chatgpt" target="_blank">ChatGPT</a>, based on an idea from Emily Fegan. If you enjoy this game or have ideas for improvement, please send your feedback to <a href="mailto:claudielarouche@gmail.com">claudielarouche@gmail.com</a>.</p>
+        
+        <div>
+            <label for="game-mode" class="form-label">Choose the game mode:</label>
+            <select id="game-mode" class="form-select mb-3">
+                <option value="guessAcronym">Guess the Acronym from Department Name</option>
+                <option value="guessName">Guess the Department Name from Acronym</option>
+            </select>
+        </div>
+        <div>
+            <label for="question-count-select" class="form-label">Choose the number of questions:</label>
+            <select id="question-count-select" class="form-select mb-3">
+                <option value="10">10 Questions</option>
+                <option value="25">25 Questions</option>
+                <option value="50">50 Questions</option>
+                <option value="all" selected>All Questions</option>
+            </select>
+            <button id="start-game" class="btn btn-success">Play!</button>
+        </div>
+        <p id="progress-display">Question: 0/0</p>
+        <div id="game-area" class="mt-3" style="display: none;">
+            <p id="question"></p>
+            <input type="text" id="answer" class="form-control mb-3" onkeypress="checkEnter(event)">
+            <button id="validate-answer" class="btn btn-info">Validate Answer</button>
+            <div id="feedback" class="text-info mb-3"></div>
+            <button id="next-question" class="btn btn-secondary" style="display: none;">Next Question</button>
+        </div>
+        <div id="score-area">
+            <h2>Your Score: <span id="score">0</span>/<span id="total-questions">0</span></h2>
+        </div>
+    </div>
+
+
+    <script>
+        document.getElementById('start-game').addEventListener('click', startGame);
+        document.getElementById('validate-answer').addEventListener('click', validateAnswer);
+        document.getElementById('next-question').addEventListener('click', nextQuestion);
+
+        let data = [];
+        let currentIndex = 0;
+        let score = 0;
+
+        function loadData() {
+            console.log("correct answer upper case");
+            Papa.parse('acronyms/acronyms.csv', {
+                download: true,
+                header: true,
+                complete: function(results) {
+                    data = cleanData(results.data);
+                    console.log('Data loaded', data.length, 'entries');
+                    document.getElementById('question-count-select').options[3].text = `All Questions (${data.length})`;
+                }
+            });
+        }
+
+        function cleanData(dataArray) {
+            let cleanedData = dataArray.map(row => {
+                if (!row['Applied title'] || row['Applied title'].trim() === '') {
+                    row['Applied title'] = row['Legal title'] ? row['Legal title'].trim() : '';
+                }
+                if (row['Applied title'] === "Registrar of the Supreme Court of Canada and that portion of the federal public administration appointed under subsection 12(2) of the Supreme Court Act") {
+                    row['Applied title'] = "Registrar of the Supreme Court of Canada";
+                }
+                return row;
+            });
+            return cleanedData.filter(row => 
+                row['Applied title'] && row['Applied title'].trim() !== '' &&
+                row['Abbreviation'] && row['Abbreviation'].trim() !== '' &&
+                row['Applied title'] !== "Treasury Board"
+            );
+        }
+
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]]; // Swap
+            }
+        }
+
+        function startGame() {
+            currentIndex = 0;
+            score = 0;
+            document.getElementById('score').textContent = score;
+            document.getElementById('game-area').style.display = 'block';
+
+            const totalQuestions = document.getElementById('question-count-select').value;
+            document.getElementById('total-questions').textContent = totalQuestions === 'all' ? data.length : totalQuestions;
+
+            if (totalQuestions !== 'all') {
+                shuffleArray(data); // Shuffle before slicing to randomize
+                data = data.slice(0, parseInt(totalQuestions));
+            }
+
+            document.getElementById('progress-display').textContent = `Question: ${currentIndex+1}/${data.length}`;
+            nextQuestion(); // Call to set first question
+        }
+
+
+        function nextQuestion() {
+            if (currentIndex < data.length) {
+                const entry = data[currentIndex];
+                document.getElementById('question').textContent = document.getElementById('game-mode').value === 'guessAcronym' ?
+                    `What is the acronym for "${entry['Applied title']}"?` :
+                    `What department does the acronym "${entry['Abbreviation']}" stand for?`;
+                document.getElementById('answer').value = '';
+                document.getElementById('feedback').textContent = '';
+                document.getElementById('answer').focus();
+                document.getElementById('validate-answer').style.display = 'inline-block';
+                document.getElementById('next-question').style.display = 'none';
+                document.getElementById('progress-display').textContent = `Question: ${currentIndex+1}/${data.length}`;
+            } else {
+                document.getElementById('game-area').style.display = 'none';
+                document.getElementById('feedback').textContent = 'Game over! Click Play! to start again.';
+                document.getElementById('start-game').textContent = 'Play Again';
+                document.getElementById('progress-display').textContent = `Game Completed: ${score}/${data.length}`;
+            }
+        }
+
+        function validateAnswer() {
+            const entry = data[currentIndex];
+            let correctAnswer = document.getElementById('game-mode').value === 'guessAcronym' ? entry['Abbreviation'] : entry['Applied title'];
+            if (document.getElementById('answer').value.trim().toLowerCase() === correctAnswer.toLowerCase()) {
+                score++;
+                document.getElementById('feedback').textContent = 'Correct!';
+            } else {
+                document.getElementById('feedback').textContent = `Incorrect! The correct answer was "${correctAnswer}".`;
+            }
+            document.getElementById('score').textContent = score;
+            currentIndex++;
+            document.getElementById('validate-answer').style.display = 'none';
+            if (currentIndex < data.length) {
+                document.getElementById('next-question').style.display = 'inline-block';
+            } else {
+                //document.getElementById('game-area').style.display = 'none';
+                document.getElementById('feedback').textContent = 'Game over! Click Play! to start again.';
+                document.getElementById('start-game').textContent = 'Play Again';
+                //document.getElementById('progress-display').textContent = `Game Completed: ${score}/${data.length}`;
+                document.getElementById('progress-display').textContent = `Question: ${currentIndex+1}/${data.length}`;
+            }
+        }
+
+        function checkEnter(event) {
+            if (event.key === "Enter") {
+                if (document.getElementById('validate-answer').style.display !== 'none') {
+                    validateAnswer();
+                } else if (document.getElementById('next-question').style.display !== 'none') {
+                    nextQuestion();
+                }
+            }
+        }
+    </script>
+</body>
+</html>
