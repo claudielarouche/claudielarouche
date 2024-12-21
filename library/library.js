@@ -57,7 +57,7 @@ function renderTable(data) {
     let tableHtml = '<table id="dataTable"><thead><tr>';
     headers.forEach(header => {
         // Skip rendering the URL column
-        if (header !== 'URL') {
+        if (header !== 'Event URL') {
             tableHtml += `<th>${header}</th>`;
         }
     });
