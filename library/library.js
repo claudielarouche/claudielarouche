@@ -10,7 +10,7 @@ function getQueryParam(key) {
 
 window.onload = function() {
 	// Update the path to your CSV file
-	const csvFilePath = 'https://claudielarouche.com/library/data.csv';
+	const csvFilePath = 'https://claudielarouche.com/library/ottawa-library-programs.csv';
 
 	Papa.parse(csvFilePath, {
 		header: true,
@@ -63,10 +63,11 @@ function renderTable(data) {
     });
     tableHtml += '</tr></thead><tbody>';
 
-    const filteredData = filterData(data, selectedAreas, selectedDay);
+    //const filteredData = filterData(data, selectedAreas, selectedDay);
 
     // Iterate through each row of data
-    filteredData.forEach(row => {
+    //filteredData.forEach(row => {
+    data.forEach(row => {
         const currentDate = row['Date'] ? row['Date'] : '';
 
         // Start building the row with a conditional background color
@@ -74,7 +75,7 @@ function renderTable(data) {
 
         headers.forEach((header, index) => {
             // Skip rendering the URL column
-            if (header !== 'URL') {
+            if (header !== 'Event URL') {
                 switch (header) {
 		    case 'Sort Order': 	
 				    // Assign the index of the "Baby Scale" column to the babyScaleIndex variable
@@ -82,18 +83,18 @@ function renderTable(data) {
                     		    sortOrderIndex = index;					  
 				    tableHtml += `<td>${row[header]}</td>`;
 				    break;
-                    case 'Library Name':
+                    case 'Program Name':
                         // Merge URL with Pool Name to create a clickable link
-                        const url = row['URL'] ? row['URL'] : '';
-                        const libraryName = row[header] ? row[header] : '';
-                        if (url !== '' && libraryName !== '') {
-                            tableHtml += `<td><a href="${url}" target="_blank">${libraryName}</a></td>`;
+                        const url = row['Event URL'] ? row['Event URL'] : '';
+                        const programName = row[header] ? row[header] : '';
+                        if (url !== '' && programName !== '') {
+                            tableHtml += `<td><a href="${url}" target="_blank">${programName}</a></td>`;
                         } else {
-                            tableHtml += `<td>${libraryName}</td>`;
+                            tableHtml += `<td>${programName}</td>`;
                         }
                         break;
 
-                    case 'Address':
+                   /* case 'Address':
                         // Create a link with the Google Maps URL for the address
                         const address = row[header] ? row[header].trim() : '';
                         if (address !== '') {
@@ -102,7 +103,7 @@ function renderTable(data) {
                         } else {
                             tableHtml += '<td></td>';
                         }
-                        break;
+                        break;*/
 
 		default:
                         // Display other columns
@@ -151,7 +152,7 @@ function renderTable(data) {
     }
 }
 
-document.getElementById('showToday').addEventListener('click', function(event) {
+/*document.getElementById('showToday').addEventListener('click', function(event) {
     event.preventDefault(); // Prevent the default behavior of the anchor link
 
     // Scroll to the element with id 'csvData'
@@ -171,9 +172,9 @@ document.getElementById('showToday').addEventListener('click', function(event) {
     
     // Trigger the input event to initiate the search
     document.getElementById('dataTable_filter').querySelector('input').dispatchEvent(new Event('input'));
-});
+});*/
 
-function filterData(data, selectedAreas, selectedDay) {
+/*function filterData(data, selectedAreas, selectedDay) {
 
 
     return data.filter(row => {
@@ -189,7 +190,7 @@ function filterData(data, selectedAreas, selectedDay) {
 
 	return areaCondition && dayCondition;
     });
-}
+}*/
 
 
 let currentSearchValue = getQueryParam('search'); // Variable to store the current search value
@@ -199,7 +200,7 @@ function clearAllFilters() {
     sortingState = $('#dataTable').DataTable().state();
 	
     // Check all the "Select Area" checkboxes
-    document.querySelectorAll('.areaCheckbox').forEach(checkbox => {
+/*    document.querySelectorAll('.areaCheckbox').forEach(checkbox => {
         checkbox.checked = true;
 		if (!selectedAreas.includes(checkbox.value)) {
 			selectedAreas.push(checkbox.value);
@@ -214,7 +215,7 @@ function clearAllFilters() {
 		if (!selectedDay.includes(checkbox.value)) {
 			selectedDay.push(checkbox.value);
 		}
-    });
+    });*/
 
 
 
@@ -228,7 +229,7 @@ function clearAllFilters() {
     renderTable(originalData);
 }
 
-const selectedAreas = [];
+/*const selectedAreas = [];
 document.querySelectorAll('.areaCheckbox').forEach(function (checkbox) {
     checkbox.addEventListener('change', function () {
 	// Store the current sorting state
@@ -253,9 +254,9 @@ document.querySelectorAll('.areaCheckbox').forEach(function (checkbox) {
         selectedAreas.push(checkbox.value);
     }
 });
+*/
 
-
-
+/*
 const selectedDay = [];
 document.querySelectorAll('.dayCheckbox').forEach(function (checkbox) {
     checkbox.addEventListener('change', function () {
@@ -281,5 +282,5 @@ document.querySelectorAll('.dayCheckbox').forEach(function (checkbox) {
         selectedDay.push(checkbox.value);
     }
 });
-
+*/
 
