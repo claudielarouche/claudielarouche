@@ -1,4 +1,4 @@
-console.log('v6');
+console.log('v7');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -10,7 +10,7 @@ function getQueryParam(key) {
 
 window.onload = function() {
 	// Update the path to your CSV file
-	const csvFilePath = 'https://claudielarouche.com/library/ottawa-library-programs.csv';
+	const csvFilePath = 'https://claudielarouche.com/library/ottawa_library_programs.csv';
 
 	Papa.parse(csvFilePath, {
 		header: true,
