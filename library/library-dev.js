@@ -1,4 +1,4 @@
-console.log('past event v6');
+console.log('past event v7');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -307,7 +307,7 @@ function filterData(data, selectedDate) {
 	 
 
 	const today = new Date();
-	const todayNoTime = new Date(selectedDate.getFullYear(), selectedDate.getMonth(), selectedDate.getDate())
+	const todayNoTime = new Date(today.getFullYear(), today.getMonth(), today.getDate())
 	const pastCondition = endDateNoTime >= todayNoTime;
 	    
 
