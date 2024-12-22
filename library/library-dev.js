@@ -1,4 +1,4 @@
-console.log('date format v3');
+console.log('date format v4');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -198,12 +198,12 @@ function formatDate(inputString) {
 	console.log("year" + year);
 
     // Ensure all parts are present and valid
-    if (!day || !month || !year || !monthMap[month]) {
+ /*   if (!day || !month || !year || !monthMap[month]) {
         throw new Error("Invalid date components in input string.");
-    }
+    }*/
 
     // Convert the year to a full 4-digit format
-    const fullYear = year.length === 2 ? "20" + year : year;
+    const fullYear = "20" + year;
 
     // Get the numeric month from the month map
     const numericMonth = monthMap[month];
