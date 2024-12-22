@@ -1,4 +1,4 @@
-console.log('past event v2');
+console.log('past event v3');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -286,7 +286,7 @@ function filterData(data, selectedDate) {
 	const dayCondition = currentDay.toLowerCase() === todayDay.toLowerCase();    
 	    
 	//const dateCondition = (selectedDate >= currentStartDate && selectedDate <= currentEndDate);
-	    const dateCondition;
+	    const dateCondition = null;
 
 	if (!selectedDate) {
         dateCondition = true;
