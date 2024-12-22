@@ -1,4 +1,4 @@
-console.log('date format v4');
+console.log('show today v1');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -63,11 +63,13 @@ function renderTable(data) {
     });
     tableHtml += '</tr></thead><tbody>';
 
-    //const filteredData = filterData(data, selectedAreas, selectedDay);
+    const selectedDate = document.getElementById('selectedDate').value;
+
+    const filteredData = filterData(data, selectedDate);
 
     // Iterate through each row of data
     //filteredData.forEach(row => {
-    data.forEach(row => {
+    filteredData.forEach(row => {
         const currentDate = row['Date'] ? row['Date'] : '';
 
         // Start building the row with a conditional background color
@@ -209,7 +211,7 @@ function formatDate(inputString) {
     return `${fullYear}-${numericMonth}-${paddedDay}`;
 }
 
-/*document.getElementById('showToday').addEventListener('click', function(event) {
+document.getElementById('showToday').addEventListener('click', function(event) {
     event.preventDefault(); // Prevent the default behavior of the anchor link
 
     // Scroll to the element with id 'csvData'
@@ -229,25 +231,30 @@ function formatDate(inputString) {
     
     // Trigger the input event to initiate the search
     document.getElementById('dataTable_filter').querySelector('input').dispatchEvent(new Event('input'));
-});*/
+});
 
-/*function filterData(data, selectedAreas, selectedDay) {
+function filterData(data, selectedDate) {
+   // If no date is selected, return the original data
+   if (!selectedDate) {
+        return data;
+    }
 
 
     return data.filter(row => {
 
 
-	const currentArea = row['Area'] || '';	
-	const currentDay = row['Day'] || '';
+	const currentStartDate = row['Start Date'] || '';
+	const currentEndDate = row['End Date'] || '';
+	const currentDay = row['Day of Week'] || '';
 	
 
-	const areaCondition = selectedAreas.some(area => currentArea.toLowerCase().includes(area.toLowerCase()));        
 	const dayCondition = selectedDay.some(day => currentDay.toLowerCase() === day.toLowerCase());
-	
+	const dateCondition = (selectedDate <= currentStartDate && selectedDate >= currentEndDate);
 
-	return areaCondition && dayCondition;
+
+	return dayCondition && dateCondition;
     });
-}*/
+}
 
 
 let currentSearchValue = getQueryParam('search'); // Variable to store the current search value
