@@ -1,4 +1,4 @@
-console.log('past event v8');
+console.log('remove past events');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
