@@ -1,4 +1,4 @@
-console.log('show today v15');
+console.log('show today v16');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -222,7 +222,7 @@ document.getElementById('showToday').addEventListener('click', function(event) {
 
     // Get today's day of the week
    // const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    //selectedDate = new Date();
+    selectedDate = new Date();
    // const todayDayOfWeek = daysOfWeek[selectedDate.getDay()];
     // console.log("selectedDate " + selectedDate);
 
@@ -235,12 +235,12 @@ document.getElementById('showToday').addEventListener('click', function(event) {
     
     // Trigger the input event to initiate the search
     //document.getElementById('dataTable_filter').querySelector('input').dispatchEvent(new Event('input'));
-    //renderTable(originalData);
+    renderTable(originalData);
 });
 
 document.getElementById("showTodayOnly").addEventListener("change", function (event) {
     selectedDate = new Date();
-    document.getElementById('dataTable_filter').querySelector('input').dispatchEvent(new Event('input'));
+    //document.getElementById('dataTable_filter').querySelector('input').dispatchEvent(new Event('input'));
     renderTable(originalData);
 });
 
