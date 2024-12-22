@@ -273,6 +273,7 @@ function filterData(data, selectedDate) {
 	if (selectedDate !== null) {
         	const selectedDateNoTime = new Date(selectedDate.getFullYear(), selectedDate.getMonth(), selectedDate.getDate())
 		console.log("selected date is not null");
+		console.log("selected date no time " + selectedDateNoTime);
    	}
 	    
 	    
