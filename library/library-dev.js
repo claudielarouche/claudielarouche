@@ -1,4 +1,4 @@
-console.log('past event v5');
+console.log('past event v6');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -286,7 +286,7 @@ function filterData(data, selectedDate) {
 
 	//const dayCondition = selectedDate.some(day => currentDay.toLowerCase() === day.toLowerCase());
 
-	const dayCondition = null;
+	let dayCondition = null;
 	if (selectedDate) {
         	const todayDay = selectedDate.toLocaleDateString("en-US", { weekday: "long" }); // Get day of week
 		dayCondition = currentDay.toLowerCase() === todayDay.toLowerCase();    
@@ -295,7 +295,7 @@ function filterData(data, selectedDate) {
 	
 	    
 	//const dateCondition = (selectedDate >= currentStartDate && selectedDate <= currentEndDate);
-	    const dateCondition = null;
+	let dateCondition = null;
 
 	if (!selectedDate) {
        	     dateCondition = true;
