@@ -1,4 +1,4 @@
-console.log('remove past events');
+console.log('show today button added v2');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -255,9 +255,9 @@ document.getElementById("showTodayOnly").addEventListener("change", function (ev
 
 function filterData(data, selectedDate) {
    // If no date is selected, return the original data
-   /*if (!selectedDate) {
+   if (!selectedDate) {
         return data;
-    }*/
+    }
 
 
     return data.filter(row => {
@@ -269,12 +269,7 @@ function filterData(data, selectedDate) {
 
 	const startDateNoTime = new Date(currentStartDate.getFullYear(), currentStartDate.getMonth(), currentStartDate.getDate())
 	const endDateNoTime = new Date(currentEndDate.getFullYear(), currentEndDate.getMonth(), currentEndDate.getDate())
-	
-	if (selectedDate) {
-        	const selectedDateNoTime = new Date(selectedDate.getFullYear(), selectedDate.getMonth(), selectedDate.getDate())
-   	}
-	    
-	    
+	const selectedDateNoTime = new Date(selectedDate.getFullYear(), selectedDate.getMonth(), selectedDate.getDate())
 	    
 	const currentDay = row['Day of Week'] || '';
 
@@ -286,34 +281,14 @@ function filterData(data, selectedDate) {
 
 	//const dayCondition = selectedDate.some(day => currentDay.toLowerCase() === day.toLowerCase());
 
-	let dayCondition = null;
-	if (selectedDate) {
-        	const todayDay = selectedDate.toLocaleDateString("en-US", { weekday: "long" }); // Get day of week
-		dayCondition = currentDay.toLowerCase() === todayDay.toLowerCase();    
-   	}
-	
-	
+
+	const todayDay = selectedDate.toLocaleDateString("en-US", { weekday: "long" }); // Get day of week
+	const dayCondition = currentDay.toLowerCase() === todayDay.toLowerCase();    
 	    
 	//const dateCondition = (selectedDate >= currentStartDate && selectedDate <= currentEndDate);
-	let dateCondition = null;
 
-	if (!selectedDate) {
-       	     dateCondition = true;
-	     dayCondition = true;
-   	}
-	else {
-	    dateCondition = (selectedDateNoTime >= startDateNoTime && selectedDateNoTime <= endDateNoTime);
-	}
-	 
-
-	const today = new Date();
-	const todayNoTime = new Date(today.getFullYear(), today.getMonth(), today.getDate())
-	const pastCondition = endDateNoTime >= todayNoTime;
-	if (pastCondition == false){
-		console.log("past event alert");
-		console.log("start " + startDateNoTime);
-		console.log("end " + endDateNoTime);
-	} 
+	const dateCondition = (selectedDateNoTime >= startDateNoTime && selectedDateNoTime <= endDateNoTime);
+	    
 
 	const startDateCheck = selectedDate <= currentStartDate;
 	const endDateCheck = selectedDate >= currentEndDate
@@ -323,7 +298,7 @@ function filterData(data, selectedDate) {
 	console.log("endDateCheck " + endDateCheck);*/
 	
 
-	return dayCondition && dateCondition && pastCondition;
+	return dayCondition && dateCondition;
     });
 }
 
