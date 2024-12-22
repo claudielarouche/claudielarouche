@@ -1,4 +1,4 @@
-console.log('show today v4');
+console.log('show today v5');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -211,7 +211,7 @@ function formatDate(inputString) {
     return `${fullYear}-${numericMonth}-${paddedDay}`;
 }
 
-const selectedDate = null;
+let selectedDate = null;
 
 document.getElementById('showToday').addEventListener('click', function(event) {
     event.preventDefault(); // Prevent the default behavior of the anchor link
