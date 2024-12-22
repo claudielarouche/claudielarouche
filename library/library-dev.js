@@ -1,4 +1,4 @@
-console.log('remove past events v13');
+console.log('remove past events');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -272,9 +272,7 @@ function filterData(data, selectedDate) {
 	const endDateNoTime = new Date(currentEndDate.getFullYear(), currentEndDate.getMonth(), currentEndDate.getDate())
 	
 	if (selectedDate !== null) {
-        	selectedDateNoTime = new Date(selectedDate.getFullYear(), selectedDate.getMonth(), selectedDate.getDate())
-		console.log("selected date is not null");
-		console.log("selected date no time " + selectedDateNoTime);
+        	selectedDateNoTime = new Date(selectedDate.getFullYear(), selectedDate.getMonth(), selectedDate.getDate())		
    	}
 	    
 	    
@@ -305,7 +303,6 @@ function filterData(data, selectedDate) {
 	     dayCondition = true;
    	}
 	else {
-	    console.log("selected date no time " + selectedDateNoTime);
 	    dateCondition = (selectedDateNoTime >= startDateNoTime && selectedDateNoTime <= endDateNoTime);
 	}
 	 
