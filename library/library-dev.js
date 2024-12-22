@@ -1,4 +1,4 @@
-console.log('show today v6');
+console.log('show today v7');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -234,6 +234,7 @@ document.getElementById('showToday').addEventListener('click', function(event) {
     
     // Trigger the input event to initiate the search
     document.getElementById('dataTable_filter').querySelector('input').dispatchEvent(new Event('input'));
+    renderTable(originalData);
 });
 
 function filterData(data, selectedDate) {
