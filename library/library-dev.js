@@ -165,7 +165,6 @@ function renderTable(data) {
 }
 
 function formatDate(inputString) {
-    console.log("inputString " + inputString); 
     // Define a mapping for month abbreviations to their numeric values
     const monthMap = {
         Jan: "01",
@@ -184,8 +183,6 @@ function formatDate(inputString) {
 
     // Validate input and split into parts
     const parts = inputString.split("-");
-    console.log("parts" + parts);
-    console.log("parts length" + parts.length);
 	
     /*if (parts.length !== 3) {
         throw new Error("Invalid date format. Expected format: 'DD-MMM-YY'");
@@ -193,9 +190,6 @@ function formatDate(inputString) {
 
     const [day, month, year] = parts;
 
-   console.log("day" + day);
-	console.log("month" + month);
-	console.log("year" + year);
 
     // Ensure all parts are present and valid
  /*   if (!day || !month || !year || !monthMap[month]) {
