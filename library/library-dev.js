@@ -1,4 +1,4 @@
-console.log('v8');
+console.log('date format');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -83,6 +83,18 @@ function renderTable(data) {
                     		    sortOrderIndex = index;					  
 				    tableHtml += `<td>${row[header]}</td>`;
 				    break;
+		    case 'Start Date': 	
+				    // Assign the index of the "Baby Scale" column to the babyScaleIndex variable
+				// minus 1 because it is after the URL column which is not shown
+                    		    			  
+				    tableHtml += `<td>${formatDate(row[header])}</td>`;
+				    break;
+		    case 'End Date': 	
+				    // Assign the index of the "Baby Scale" column to the babyScaleIndex variable
+				// minus 1 because it is after the URL column which is not shown
+                    		    			  
+				    tableHtml += `<td>${formatDate(row[header])}</td>`;
+				    break;
                     case 'Program Name':
                         // Merge URL with Pool Name to create a clickable link
                         const url = row['Event URL'] ? row['Event URL'] : '';
@@ -150,6 +162,39 @@ function renderTable(data) {
     if (sortingState) {
         $('#dataTable').DataTable().order(sortingState.order).draw();
     }
+}
+
+function formatDate(inputString) {
+    // Define a mapping for month abbreviations to their numeric values
+    const monthMap = {
+        Jan: "01",
+        Feb: "02",
+        Mar: "03",
+        Apr: "04",
+        May: "05",
+        Jun: "06",
+        Jul: "07",
+        Aug: "08",
+        Sep: "09",
+        Oct: "10",
+        Nov: "11",
+        Dec: "12"
+    };
+
+    // Split the input string into parts: day, month, and year
+    const [day, month, year] = inputString.split("-");
+
+    // Convert the year to a full 4-digit format
+    const fullYear = year.length === 2 ? "20" + year : year;
+
+    // Get the numeric month from the month map
+    const numericMonth = monthMap[month];
+
+    // Ensure the day has two digits
+    const paddedDay = day.padStart(2, "0");
+
+    // Return the formatted date
+    return `${fullYear}-${numericMonth}-${paddedDay}`;
 }
 
 /*document.getElementById('showToday').addEventListener('click', function(event) {
@@ -283,3 +328,4 @@ document.querySelectorAll('.dayCheckbox').forEach(function (checkbox) {
     }
 });
 */
+
