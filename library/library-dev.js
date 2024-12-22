@@ -1,4 +1,4 @@
-console.log('show today v5');
+console.log('show today v6');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -246,10 +246,12 @@ function filterData(data, selectedDate) {
     return data.filter(row => {
 
 
-	const currentStartDate = row['Start Date'] || '';
-	const currentEndDate = row['End Date'] || '';
+	const currentStartDate = new Date(row['Start Date']) || '';
+	const currentEndDate = new Date(row['End Date']) || '';
 	const currentDay = row['Day of Week'] || '';
-	
+
+	    console.log("row start date" + row['Start Date']);
+	    console.log("current start date" + currentStartDate);
 
 	const dayCondition = selectedDay.some(day => currentDay.toLowerCase() === day.toLowerCase());
 	const dateCondition = (selectedDate <= currentStartDate && selectedDate >= currentEndDate);
