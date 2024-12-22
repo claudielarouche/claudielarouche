@@ -1,4 +1,4 @@
-console.log('show today button added');
+console.log('past event');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -273,11 +273,11 @@ function filterData(data, selectedDate) {
 	    
 	const currentDay = row['Day of Week'] || '';
 
-	console.log("row start date" + row['Start Date']);
+	/*console.log("row start date" + row['Start Date']);
 	console.log("current start date" + currentStartDate);
 
 	console.log("row end date" + row['End Date']);
-	console.log("current end date" + currentEndDate);
+	console.log("current end date" + currentEndDate);*/
 
 	//const dayCondition = selectedDate.some(day => currentDay.toLowerCase() === day.toLowerCase());
 
@@ -288,17 +288,21 @@ function filterData(data, selectedDate) {
 	//const dateCondition = (selectedDate >= currentStartDate && selectedDate <= currentEndDate);
 
 	const dateCondition = (selectedDateNoTime >= startDateNoTime && selectedDateNoTime <= endDateNoTime);
+
+	const today = new Date();
+	const todayNoTime = new Date(selectedDate.getFullYear(), selectedDate.getMonth(), selectedDate.getDate())
+	const pastCondition = endDateNoTime >= todayNoTime;
 	    
 
 	const startDateCheck = selectedDate <= currentStartDate;
 	const endDateCheck = selectedDate >= currentEndDate
 
-	console.log("dateCondition " + dateCondition);
+	/*console.log("dateCondition " + dateCondition);
 	console.log("startDateCheck " + startDateCheck);
-	console.log("endDateCheck " + endDateCheck);
+	console.log("endDateCheck " + endDateCheck);*/
 	
 
-	return dayCondition && dateCondition;
+	return dayCondition && dateCondition && pastCondition;
     });
 }
 
@@ -395,4 +399,3 @@ document.querySelectorAll('.dayCheckbox').forEach(function (checkbox) {
     }
 });
 */
-
