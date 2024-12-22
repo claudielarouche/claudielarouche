@@ -1,5 +1,10 @@
 Event URL,Program Name,Day of Week,Start Date,End Date,Time,Location,Address,Area,Language,Age Group,Subjects
-#,"""aaa test event",Monday,21-Dec-24,21-Dec-24,10:45am,Rideau,377 Rideau,Central,Bilingual,Family,"Hobbies and Interests, Storytime"
+#,"""aaa test event start is before, end is after",Sunday,20-Dec-24,25-Dec-24,10:45am,Rideau,377 Rideau,Central,Bilingual,Family,"Hobbies and Interests, Storytime"
+#,"""aaa test event start is on, end is after",Sunday,22-Dec-24,25-Dec-24,10:45am,Rideau,377 Rideau,Central,Bilingual,Family,"Hobbies and Interests, Storytime"
+#,"""aaa test event start is after, end is after",Sunday,23-Dec-24,25-Dec-24,10:45am,Rideau,377 Rideau,Central,Bilingual,Family,"Hobbies and Interests, Storytime"
+#,"""aaa test event start is before, end is on",Sunday,20-Dec-24,22-Dec-24,10:45am,Rideau,377 Rideau,Central,Bilingual,Family,"Hobbies and Interests, Storytime"
+#,"""aaa test event start is on, end is on",Sunday,22-Dec-24,22-Dec-24,10:45am,Rideau,377 Rideau,Central,Bilingual,Family,"Hobbies and Interests, Storytime"
+#,"""aaa test event in the past",Monday,21-Dec-24,21-Dec-24,10:45am,Rideau,377 Rideau,Central,Bilingual,Family,"Hobbies and Interests, Storytime"
 https://biblioottawalibrary.ca/en/event/noon-years-eve-d%C3%A9compte-du-jour-de-l%E2%80%99-0,Noon Year's Eve,Tuesday,31-Dec-24,31-Dec-24,10:45am,Rideau,377 Rideau,Central,Bilingual,Family,"Hobbies and Interests, Storytime"
 https://biblioottawalibrary.ca/en/event/lego%C2%AE-block-party-%C3%A7a-d%C3%A9-%E2%80%9Cbloc%E2%80%9D-63,Lego® Block Party,Monday,23-Dec-24,6-Jun-25,10:00am,Beaverbrook,2500 Campeau,West - Kanata,Bilingual,Child,Hobbies and Interests
 https://biblioottawalibrary.ca/en/event/candyland-centrepointe,CandyLand @ Centrepointe!,Monday,23-Dec-24,28-Dec-24,10:00am,Nepean Centrepointe,101 Centrepointe,West - Nepean,Bilingual,"Child, Family","Games and Gaming, Kids"
