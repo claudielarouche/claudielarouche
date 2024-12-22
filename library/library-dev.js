@@ -1,4 +1,4 @@
-console.log('show today v2');
+console.log('show today v4');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -63,7 +63,7 @@ function renderTable(data) {
     });
     tableHtml += '</tr></thead><tbody>';
 
-    //const selectedDate = document.getElementById('selectedDate').value;
+    
 
     const filteredData = filterData(data, selectedDate);
 
@@ -211,6 +211,8 @@ function formatDate(inputString) {
     return `${fullYear}-${numericMonth}-${paddedDay}`;
 }
 
+const selectedDate = null;
+
 document.getElementById('showToday').addEventListener('click', function(event) {
     event.preventDefault(); // Prevent the default behavior of the anchor link
 
@@ -219,15 +221,16 @@ document.getElementById('showToday').addEventListener('click', function(event) {
 
     // Get today's day of the week
     const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    const today = new Date();
-    const todayDayOfWeek = daysOfWeek[today.getDay()];
+    selectedDate = new Date();
+    const todayDayOfWeek = daysOfWeek[selectedDate.getDay()];
+    console.log("selectedDate " + selectedDate);
 
-    currentSearchValue = $('#dataTable_filter input').val();
+    //currentSearchValue = $('#dataTable_filter input').val();
 
-    currentSearchValue = todayDayOfWeek + (currentSearchValue ? " " + currentSearchValue : "");
+    //currentSearchValue = todayDayOfWeek + (currentSearchValue ? " " + currentSearchValue : "");
 
     // Populate the search box with today's day of the week
-    document.getElementById('dataTable_filter').querySelector('input').value = currentSearchValue;
+    //document.getElementById('dataTable_filter').querySelector('input').value = currentSearchValue;
     
     // Trigger the input event to initiate the search
     document.getElementById('dataTable_filter').querySelector('input').dispatchEvent(new Event('input'));
