@@ -1,4 +1,4 @@
-console.log('past event');
+console.log('past event v2');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -255,9 +255,9 @@ document.getElementById("showTodayOnly").addEventListener("change", function (ev
 
 function filterData(data, selectedDate) {
    // If no date is selected, return the original data
-   if (!selectedDate) {
+   /*if (!selectedDate) {
         return data;
-    }
+    }*/
 
 
     return data.filter(row => {
@@ -286,8 +286,15 @@ function filterData(data, selectedDate) {
 	const dayCondition = currentDay.toLowerCase() === todayDay.toLowerCase();    
 	    
 	//const dateCondition = (selectedDate >= currentStartDate && selectedDate <= currentEndDate);
+	    const dateCondition;
 
-	const dateCondition = (selectedDateNoTime >= startDateNoTime && selectedDateNoTime <= endDateNoTime);
+	if (!selectedDate) {
+        dateCondition = true;
+   	 }
+	    else {
+		    dateCondition = (selectedDateNoTime >= startDateNoTime && selectedDateNoTime <= endDateNoTime);
+	    }
+	 
 
 	const today = new Date();
 	const todayNoTime = new Date(selectedDate.getFullYear(), selectedDate.getMonth(), selectedDate.getDate())
