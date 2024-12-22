@@ -1,4 +1,4 @@
-console.log('past event v3');
+console.log('past event v4');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -269,7 +269,12 @@ function filterData(data, selectedDate) {
 
 	const startDateNoTime = new Date(currentStartDate.getFullYear(), currentStartDate.getMonth(), currentStartDate.getDate())
 	const endDateNoTime = new Date(currentEndDate.getFullYear(), currentEndDate.getMonth(), currentEndDate.getDate())
-	const selectedDateNoTime = new Date(selectedDate.getFullYear(), selectedDate.getMonth(), selectedDate.getDate())
+	
+	if (selectedDate) {
+        	const selectedDateNoTime = new Date(selectedDate.getFullYear(), selectedDate.getMonth(), selectedDate.getDate())
+   	}
+	    
+	    
 	    
 	const currentDay = row['Day of Week'] || '';
 
@@ -281,19 +286,21 @@ function filterData(data, selectedDate) {
 
 	//const dayCondition = selectedDate.some(day => currentDay.toLowerCase() === day.toLowerCase());
 
-
-	const todayDay = selectedDate.toLocaleDateString("en-US", { weekday: "long" }); // Get day of week
+	if (selectedDate) {
+        	const todayDay = selectedDate.toLocaleDateString("en-US", { weekday: "long" }); // Get day of week
+   	}
+	
 	const dayCondition = currentDay.toLowerCase() === todayDay.toLowerCase();    
 	    
 	//const dateCondition = (selectedDate >= currentStartDate && selectedDate <= currentEndDate);
 	    const dateCondition = null;
 
 	if (!selectedDate) {
-        dateCondition = true;
-   	 }
-	    else {
-		    dateCondition = (selectedDateNoTime >= startDateNoTime && selectedDateNoTime <= endDateNoTime);
-	    }
+       	     dateCondition = true;
+   	}
+	else {
+	    dateCondition = (selectedDateNoTime >= startDateNoTime && selectedDateNoTime <= endDateNoTime);
+	}
 	 
 
 	const today = new Date();
