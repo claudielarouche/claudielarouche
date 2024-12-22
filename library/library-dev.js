@@ -1,4 +1,4 @@
-console.log('remove past events v12');
+console.log('remove past events v13');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -265,7 +265,7 @@ function filterData(data, selectedDate) {
 
 	const currentStartDate = new Date(row['Start Date']) || '';
 	const currentEndDate = new Date(row['End Date']) || '';
-	const selectedDateNoTime = null;
+	let selectedDateNoTime = null;
 
 
 	const startDateNoTime = new Date(currentStartDate.getFullYear(), currentStartDate.getMonth(), currentStartDate.getDate())
