@@ -1,4 +1,4 @@
-console.log('show today v17');
+console.log('show today v18');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -300,6 +300,7 @@ let currentSearchValue = getQueryParam('search'); // Variable to store the curre
 function clearAllFilters() {
     // Store the current sorting state
     sortingState = $('#dataTable').DataTable().state();
+    document.getElementById("showTodayOnly").checked = false;
     selectedDate = null;
 	
     // Check all the "Select Area" checkboxes
