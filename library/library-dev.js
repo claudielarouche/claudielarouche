@@ -1,4 +1,4 @@
-console.log('date format');
+console.log('date format v1');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -165,6 +165,7 @@ function renderTable(data) {
 }
 
 function formatDate(inputString) {
+    console.log("inputString " + inputString); 
     // Define a mapping for month abbreviations to their numeric values
     const monthMap = {
         Jan: "01",
@@ -181,8 +182,18 @@ function formatDate(inputString) {
         Dec: "12"
     };
 
-    // Split the input string into parts: day, month, and year
-    const [day, month, year] = inputString.split("-");
+    // Validate input and split into parts
+    const parts = inputString.split("-");
+    if (parts.length !== 3) {
+        throw new Error("Invalid date format. Expected format: 'DD-MMM-YY'");
+    }
+
+    const [day, month, year] = parts;
+
+    // Ensure all parts are present and valid
+    if (!day || !month || !year || !monthMap[month]) {
+        throw new Error("Invalid date components in input string.");
+    }
 
     // Convert the year to a full 4-digit format
     const fullYear = year.length === 2 ? "20" + year : year;
