@@ -1,4 +1,4 @@
-console.log('show today v10');
+console.log('show today v11');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -263,7 +263,7 @@ function filterData(data, selectedDate) {
 	const todayDay = selectedDate.toLocaleDateString("en-US", { weekday: "long" }); // Get day of week
 	const dayCondition = currentDay.toLowerCase() === todayDay.toLowerCase();    
 	    
-	const dateCondition = (selectedDate <= currentStartDate && selectedDate >= currentEndDate);
+	const dateCondition = (selectedDate >= currentStartDate && selectedDate <= currentEndDate);
 	
 
 	const startDateCheck = selectedDate <= currentStartDate;
