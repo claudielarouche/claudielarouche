@@ -1,4 +1,4 @@
-console.log('remove past events');
+console.log('remove past events v10');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -270,8 +270,9 @@ function filterData(data, selectedDate) {
 	const startDateNoTime = new Date(currentStartDate.getFullYear(), currentStartDate.getMonth(), currentStartDate.getDate())
 	const endDateNoTime = new Date(currentEndDate.getFullYear(), currentEndDate.getMonth(), currentEndDate.getDate())
 	
-	if (selectedDate) {
+	if (selectedDate !== null) {
         	const selectedDateNoTime = new Date(selectedDate.getFullYear(), selectedDate.getMonth(), selectedDate.getDate())
+		console.log("selected date is not null);
    	}
 	    
 	    
@@ -287,7 +288,7 @@ function filterData(data, selectedDate) {
 	//const dayCondition = selectedDate.some(day => currentDay.toLowerCase() === day.toLowerCase());
 
 	let dayCondition = null;
-	if (selectedDate) {
+	if (selectedDate !== null) {
         	const todayDay = selectedDate.toLocaleDateString("en-US", { weekday: "long" }); // Get day of week
 		dayCondition = currentDay.toLowerCase() === todayDay.toLowerCase();    
    	}
