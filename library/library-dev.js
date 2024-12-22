@@ -1,4 +1,4 @@
-console.log('date format v2');
+console.log('date format v3');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -184,11 +184,18 @@ function formatDate(inputString) {
 
     // Validate input and split into parts
     const parts = inputString.split("-");
-    if (parts.length !== 3) {
+    console.log("parts" + parts);
+    console.log("parts length" + parts.length);
+	
+    /*if (parts.length !== 3) {
         throw new Error("Invalid date format. Expected format: 'DD-MMM-YY'");
-    }
+    }*/
 
     const [day, month, year] = parts;
+
+   console.log("day" + day);
+	console.log("month" + month);
+	console.log("year" + year);
 
     // Ensure all parts are present and valid
     if (!day || !month || !year || !monthMap[month]) {
