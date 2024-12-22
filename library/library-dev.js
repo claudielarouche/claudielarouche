@@ -1,4 +1,4 @@
-console.log('show today v20');
+console.log('show today v22');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -265,6 +265,12 @@ function filterData(data, selectedDate) {
 
 	const currentStartDate = new Date(row['Start Date']) || '';
 	const currentEndDate = new Date(row['End Date']) || '';
+
+
+	const startDateNoTime = new Date(currentStartDate.getFullYear(), currentStartDate.getMonth(), currentStartDate.getDate())
+	const endDateNoTime = new Date(currentEndDate.getFullYear(), currentEndDate.getMonth(), currentEndDate.getDate())
+	const selectedDateNoTime = new Date(selectedDate.getFullYear(), selectedDate.getMonth(), selectedDate.getDate())
+	    
 	const currentDay = row['Day of Week'] || '';
 
 	console.log("row start date" + row['Start Date']);
@@ -279,8 +285,10 @@ function filterData(data, selectedDate) {
 	const todayDay = selectedDate.toLocaleDateString("en-US", { weekday: "long" }); // Get day of week
 	const dayCondition = currentDay.toLowerCase() === todayDay.toLowerCase();    
 	    
-	const dateCondition = (selectedDate >= currentStartDate && selectedDate <= currentEndDate);
-	
+	//const dateCondition = (selectedDate >= currentStartDate && selectedDate <= currentEndDate);
+
+	const dateCondition = (selectedDateNoTime >= startDateNoTime && selectedDateNoTime <= endDateNoTime);
+	    
 
 	const startDateCheck = selectedDate <= currentStartDate;
 	const endDateCheck = selectedDate >= currentEndDate
