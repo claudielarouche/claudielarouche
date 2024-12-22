@@ -1,4 +1,4 @@
-console.log('show today v1');
+console.log('show today v2');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -63,7 +63,7 @@ function renderTable(data) {
     });
     tableHtml += '</tr></thead><tbody>';
 
-    const selectedDate = document.getElementById('selectedDate').value;
+    //const selectedDate = document.getElementById('selectedDate').value;
 
     const filteredData = filterData(data, selectedDate);
 
