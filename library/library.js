@@ -1,4 +1,4 @@
-console.log('date format fix');
+console.log('show today button added');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -63,11 +63,13 @@ function renderTable(data) {
     });
     tableHtml += '</tr></thead><tbody>';
 
-    //const filteredData = filterData(data, selectedAreas, selectedDay);
+    
+
+    const filteredData = filterData(data, selectedDate);
 
     // Iterate through each row of data
     //filteredData.forEach(row => {
-    data.forEach(row => {
+    filteredData.forEach(row => {
         const currentDate = row['Date'] ? row['Date'] : '';
 
         // Start building the row with a conditional background color
@@ -209,45 +211,96 @@ function formatDate(inputString) {
     return `${fullYear}-${numericMonth}-${paddedDay}`;
 }
 
-/*document.getElementById('showToday').addEventListener('click', function(event) {
+let selectedDate = null;
+
+document.getElementById('showToday').addEventListener('click', function(event) {
     event.preventDefault(); // Prevent the default behavior of the anchor link
+    document.getElementById("showTodayOnly").checked = true;
 
     // Scroll to the element with id 'csvData'
     document.getElementById('csvData').scrollIntoView({ behavior: 'smooth' });
 
     // Get today's day of the week
-    const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    const today = new Date();
-    const todayDayOfWeek = daysOfWeek[today.getDay()];
+   // const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    selectedDate = new Date();
+   // const todayDayOfWeek = daysOfWeek[selectedDate.getDay()];
+    // console.log("selectedDate " + selectedDate);
 
-    currentSearchValue = $('#dataTable_filter input').val();
+    //currentSearchValue = $('#dataTable_filter input').val();
 
-    currentSearchValue = todayDayOfWeek + (currentSearchValue ? " " + currentSearchValue : "");
+    //currentSearchValue = todayDayOfWeek + (currentSearchValue ? " " + currentSearchValue : "");
 
     // Populate the search box with today's day of the week
-    document.getElementById('dataTable_filter').querySelector('input').value = currentSearchValue;
+    //document.getElementById('dataTable_filter').querySelector('input').value = currentSearchValue;
     
     // Trigger the input event to initiate the search
-    document.getElementById('dataTable_filter').querySelector('input').dispatchEvent(new Event('input'));
-});*/
+    //document.getElementById('dataTable_filter').querySelector('input').dispatchEvent(new Event('input'));
+    renderTable(originalData);
+});
 
-/*function filterData(data, selectedAreas, selectedDay) {
+document.getElementById("showTodayOnly").addEventListener("change", function (event) {
+
+	const isChecked = document.getElementById("showTodayOnly").checked;
+
+	if (isChecked) {
+	    selectedDate = new Date();
+	} else {
+	    
+	    selectedDate = null;
+	}
+	
+    //document.getElementById('dataTable_filter').querySelector('input').dispatchEvent(new Event('input'));
+    renderTable(originalData);
+});
+
+function filterData(data, selectedDate) {
+   // If no date is selected, return the original data
+   if (!selectedDate) {
+        return data;
+    }
 
 
     return data.filter(row => {
 
 
-	const currentArea = row['Area'] || '';	
-	const currentDay = row['Day'] || '';
+	const currentStartDate = new Date(row['Start Date']) || '';
+	const currentEndDate = new Date(row['End Date']) || '';
+
+
+	const startDateNoTime = new Date(currentStartDate.getFullYear(), currentStartDate.getMonth(), currentStartDate.getDate())
+	const endDateNoTime = new Date(currentEndDate.getFullYear(), currentEndDate.getMonth(), currentEndDate.getDate())
+	const selectedDateNoTime = new Date(selectedDate.getFullYear(), selectedDate.getMonth(), selectedDate.getDate())
+	    
+	const currentDay = row['Day of Week'] || '';
+
+	console.log("row start date" + row['Start Date']);
+	console.log("current start date" + currentStartDate);
+
+	console.log("row end date" + row['End Date']);
+	console.log("current end date" + currentEndDate);
+
+	//const dayCondition = selectedDate.some(day => currentDay.toLowerCase() === day.toLowerCase());
+
+
+	const todayDay = selectedDate.toLocaleDateString("en-US", { weekday: "long" }); // Get day of week
+	const dayCondition = currentDay.toLowerCase() === todayDay.toLowerCase();    
+	    
+	//const dateCondition = (selectedDate >= currentStartDate && selectedDate <= currentEndDate);
+
+	const dateCondition = (selectedDateNoTime >= startDateNoTime && selectedDateNoTime <= endDateNoTime);
+	    
+
+	const startDateCheck = selectedDate <= currentStartDate;
+	const endDateCheck = selectedDate >= currentEndDate
+
+	console.log("dateCondition " + dateCondition);
+	console.log("startDateCheck " + startDateCheck);
+	console.log("endDateCheck " + endDateCheck);
 	
 
-	const areaCondition = selectedAreas.some(area => currentArea.toLowerCase().includes(area.toLowerCase()));        
-	const dayCondition = selectedDay.some(day => currentDay.toLowerCase() === day.toLowerCase());
-	
-
-	return areaCondition && dayCondition;
+	return dayCondition && dateCondition;
     });
-}*/
+}
 
 
 let currentSearchValue = getQueryParam('search'); // Variable to store the current search value
@@ -255,6 +308,8 @@ let currentSearchValue = getQueryParam('search'); // Variable to store the curre
 function clearAllFilters() {
     // Store the current sorting state
     sortingState = $('#dataTable').DataTable().state();
+    document.getElementById("showTodayOnly").checked = false;
+    selectedDate = null;
 	
     // Check all the "Select Area" checkboxes
 /*    document.querySelectorAll('.areaCheckbox').forEach(checkbox => {
