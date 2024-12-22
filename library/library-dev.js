@@ -1,4 +1,4 @@
-console.log('show today v16');
+console.log('show today v17');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -239,6 +239,15 @@ document.getElementById('showToday').addEventListener('click', function(event) {
 });
 
 document.getElementById("showTodayOnly").addEventListener("change", function (event) {
+
+	const isChecked = document.getElementById("showTodayOnly").checked;
+
+	if (isChecked) {
+	    selectedDate = new Date();
+	} else {
+	    selectedDate = null;
+	}
+	
     selectedDate = new Date();
     //document.getElementById('dataTable_filter').querySelector('input').dispatchEvent(new Event('input'));
     renderTable(originalData);
