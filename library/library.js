@@ -1,4 +1,4 @@
-console.log('remove past events');
+console.log('area filter v1');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -65,7 +65,7 @@ function renderTable(data) {
 
     
 
-    const filteredData = filterData(data, selectedDate);
+    const filteredData = filterData(data, selectedDate, selectedAreas);
 
     // Iterate through each row of data
     //filteredData.forEach(row => {
@@ -253,7 +253,7 @@ document.getElementById("showTodayOnly").addEventListener("change", function (ev
     renderTable(originalData);
 });
 
-function filterData(data, selectedDate) {
+function filterData(data, selectedDate, selectedAreas) {
    // If no date is selected, return the original data
    /*if (!selectedDate) {
         return data;
@@ -265,9 +265,11 @@ function filterData(data, selectedDate) {
 
 	const currentStartDate = new Date(row['Start Date']) || '';
 	const currentEndDate = new Date(row['End Date']) || '';
+	const currentArea = row['Area'] || '';
 	let selectedDateNoTime = null;
 
 
+	const areaCondition = !selectedAreas.length || selectedAreas.some(area => currentArea.toLowerCase().includes(area.toLowerCase()));
 	const startDateNoTime = new Date(currentStartDate.getFullYear(), currentStartDate.getMonth(), currentStartDate.getDate())
 	const endDateNoTime = new Date(currentEndDate.getFullYear(), currentEndDate.getMonth(), currentEndDate.getDate())
 	
@@ -324,7 +326,7 @@ function filterData(data, selectedDate) {
 	console.log("endDateCheck " + endDateCheck);*/
 	
 
-	return dayCondition && dateCondition && pastCondition;
+	return dayCondition && dateCondition && pastCondition && areaCondition;
     });
 }
 
@@ -338,14 +340,14 @@ function clearAllFilters() {
     selectedDate = null;
 	
     // Check all the "Select Area" checkboxes
-/*    document.querySelectorAll('.areaCheckbox').forEach(checkbox => {
+    document.querySelectorAll('.areaCheckbox').forEach(checkbox => {
         checkbox.checked = true;
 		if (!selectedAreas.includes(checkbox.value)) {
 			selectedAreas.push(checkbox.value);
 		}
     });
 
-
+/*
 
 // Check all the "Select Day" checkboxes
     document.querySelectorAll('.dayCheckbox').forEach(checkbox => {
@@ -367,7 +369,7 @@ function clearAllFilters() {
     renderTable(originalData);
 }
 
-/*const selectedAreas = [];
+const selectedAreas = [];
 document.querySelectorAll('.areaCheckbox').forEach(function (checkbox) {
     checkbox.addEventListener('change', function () {
 	// Store the current sorting state
@@ -392,7 +394,7 @@ document.querySelectorAll('.areaCheckbox').forEach(function (checkbox) {
         selectedAreas.push(checkbox.value);
     }
 });
-*/
+
 
 /*
 const selectedDay = [];
