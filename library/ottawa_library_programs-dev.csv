@@ -1,4 +1,4 @@
-Event URL,Program Name,Day of Week,Start Date,End Date,Time,Location,Address,Area,Language,Age Group,Subjects
+Event URL,Program Name,Day of Week,Start Date,End Date,Time,Location,Address,Area,Language,Audience,Subjects
 #,"""aaa test event start is before, end is after",Sunday,20-Dec-24,25-Dec-24,10:45am,Rideau,377 Rideau,Central,Bilingual,Family,"Hobbies and Interests, Storytime"
 #,"""aaa test event start is on, end is after",Sunday,22-Dec-24,25-Dec-24,10:45am,Rideau,377 Rideau,Central,Bilingual,Family,"Hobbies and Interests, Storytime"
 #,"""aaa test event start is after, end is after",Sunday,23-Dec-24,25-Dec-24,10:45am,Rideau,377 Rideau,Central,Bilingual,Family,"Hobbies and Interests, Storytime"
