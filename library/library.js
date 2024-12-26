@@ -1,4 +1,4 @@
-console.log('area filter v1');
+console.log('audience filter v1');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -65,7 +65,7 @@ function renderTable(data) {
 
     
 
-    const filteredData = filterData(data, selectedDate, selectedAreas);
+    const filteredData = filterData(data, selectedDate, selectedAreas, selectedAudience);
 
     // Iterate through each row of data
     //filteredData.forEach(row => {
@@ -253,7 +253,7 @@ document.getElementById("showTodayOnly").addEventListener("change", function (ev
     renderTable(originalData);
 });
 
-function filterData(data, selectedDate, selectedAreas) {
+function filterData(data, selectedDate, selectedAreas, selectedAudience) {
    // If no date is selected, return the original data
    /*if (!selectedDate) {
         return data;
@@ -266,10 +266,12 @@ function filterData(data, selectedDate, selectedAreas) {
 	const currentStartDate = new Date(row['Start Date']) || '';
 	const currentEndDate = new Date(row['End Date']) || '';
 	const currentArea = row['Area'] || '';
+	const currentAUdience = row['Audience'] || '';
 	let selectedDateNoTime = null;
 
 
 	const areaCondition = !selectedAreas.length || selectedAreas.some(area => currentArea.toLowerCase().includes(area.toLowerCase()));
+	const audienceCondition = !selectedAudience.length || selectedAudience.some(audience => currentAUdience.toLowerCase().includes(audience.toLowerCase()));
 	const startDateNoTime = new Date(currentStartDate.getFullYear(), currentStartDate.getMonth(), currentStartDate.getDate())
 	const endDateNoTime = new Date(currentEndDate.getFullYear(), currentEndDate.getMonth(), currentEndDate.getDate())
 	
@@ -312,11 +314,11 @@ function filterData(data, selectedDate, selectedAreas) {
 	const today = new Date();
 	const todayNoTime = new Date(today.getFullYear(), today.getMonth(), today.getDate())
 	const pastCondition = endDateNoTime >= todayNoTime;
-	if (pastCondition == false){
+	/*if (pastCondition == false){
 		console.log("past event alert");
 		console.log("start " + startDateNoTime);
 		console.log("end " + endDateNoTime);
-	} 
+	} */
 
 	const startDateCheck = selectedDate <= currentStartDate;
 	const endDateCheck = selectedDate >= currentEndDate
@@ -326,7 +328,7 @@ function filterData(data, selectedDate, selectedAreas) {
 	console.log("endDateCheck " + endDateCheck);*/
 	
 
-	return dayCondition && dateCondition && pastCondition && areaCondition;
+	return dayCondition && dateCondition && pastCondition && areaCondition && audienceCondition;
     });
 }
 
@@ -344,6 +346,14 @@ function clearAllFilters() {
         checkbox.checked = true;
 		if (!selectedAreas.includes(checkbox.value)) {
 			selectedAreas.push(checkbox.value);
+		}
+    });
+ 
+    // Check all the "Select Audience" checkboxes
+    document.querySelectorAll('.audienceCheckbox').forEach(checkbox => {
+        checkbox.checked = true;
+		if (!selectedAudience.includes(checkbox.value)) {
+			selectedAudience.push(checkbox.value);
 		}
     });
 
@@ -392,6 +402,32 @@ document.querySelectorAll('.areaCheckbox').forEach(function (checkbox) {
     checkbox.checked = true;
     if (!selectedAreas.includes(checkbox.value)) {
         selectedAreas.push(checkbox.value);
+    }
+});
+
+const selectedAudience = [];
+document.querySelectorAll('.audienceCheckbox').forEach(function (checkbox) {
+    checkbox.addEventListener('change', function () {
+	// Store the current sorting state
+        sortingState = $('#dataTable').DataTable().state();
+        currentSearchValue = $('#dataTable_filter input').val();
+		if (checkbox.checked) {
+            if (!selectedAudience.includes(checkbox.value)) {
+                selectedAudience.push(checkbox.value);
+            }
+        } else {
+            const index = selectedAudience.indexOf(checkbox.value);
+            if (index !== -1) {
+                selectedAudience.splice(index, 1);
+            }
+        }
+        renderTable(originalData);
+    });
+
+    // Initialize with all checkboxes checked by default
+    checkbox.checked = true;
+    if (!selectedAudience.includes(checkbox.value)) {
+        selectedAudience.push(checkbox.value);
     }
 });
 
