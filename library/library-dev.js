@@ -314,11 +314,11 @@ function filterData(data, selectedDate, selectedAreas, selectedAudience) {
 	const today = new Date();
 	const todayNoTime = new Date(today.getFullYear(), today.getMonth(), today.getDate())
 	const pastCondition = endDateNoTime >= todayNoTime;
-	if (pastCondition == false){
+	/*if (pastCondition == false){
 		console.log("past event alert");
 		console.log("start " + startDateNoTime);
 		console.log("end " + endDateNoTime);
-	} 
+	} */
 
 	const startDateCheck = selectedDate <= currentStartDate;
 	const endDateCheck = selectedDate >= currentEndDate
