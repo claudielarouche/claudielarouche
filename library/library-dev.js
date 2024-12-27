@@ -1,4 +1,4 @@
-console.log('date filter v4');
+console.log('date filter v5');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
