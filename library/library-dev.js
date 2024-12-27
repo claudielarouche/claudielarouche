@@ -108,7 +108,7 @@ function renderTable(data) {
                         }
                         break;
 
-                   /* case 'Address':
+                    case 'Address':
                         // Create a link with the Google Maps URL for the address
                         const address = row[header] ? row[header].trim() : '';
                         if (address !== '') {
@@ -117,7 +117,7 @@ function renderTable(data) {
                         } else {
                             tableHtml += '<td></td>';
                         }
-                        break;*/
+                        break;
 
 		default:
                         // Display other columns
@@ -429,6 +429,16 @@ document.querySelectorAll('.audienceCheckbox').forEach(function (checkbox) {
     if (!selectedAudience.includes(checkbox.value)) {
         selectedAudience.push(checkbox.value);
     }
+});
+
+// Listen for changes in date input
+document.getElementById('selectedDate').addEventListener('change', function() {
+    // Store the current sorting state
+    sortingState = $('#dataTable').DataTable().state();
+    currentSearchValue = $('#dataTable_filter input').val();
+    selectedDate = document.getElementById('selectedDate').value;
+    renderTable(originalData);
+
 });
 
 
