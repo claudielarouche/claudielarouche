@@ -1,4 +1,4 @@
-console.log('date filter v6');
+console.log('date filter v7');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -214,6 +214,8 @@ function formatDate(inputString) {
 let selectedDate = null;
 
 document.getElementById('showToday').addEventListener('click', function(event) {
+    //unselect date when show today is selected
+    document.getElementById('selectedDate').value = '';
     event.preventDefault(); // Prevent the default behavior of the anchor link
     document.getElementById("showTodayOnly").checked = true;
 
@@ -338,6 +340,7 @@ let currentSearchValue = getQueryParam('search'); // Variable to store the curre
 function clearAllFilters() {
     // Store the current sorting state
     sortingState = $('#dataTable').DataTable().state();
+    document.getElementById('selectedDate').value = '';
     document.getElementById("showTodayOnly").checked = false;
     selectedDate = null;
 	
