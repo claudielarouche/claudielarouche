@@ -1,4 +1,4 @@
-console.log('date filter v5');
+console.log('date filter v6');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -433,12 +433,17 @@ document.querySelectorAll('.audienceCheckbox').forEach(function (checkbox) {
 
 // Listen for changes in date input
 document.getElementById('selectedDate').addEventListener('change', function() {
-    // Store the current sorting state
+    //uncheck today when a new date is selected
+    document.getElementById("showTodayOnly").checked = false;
+    	// Store the current sorting state
     sortingState = $('#dataTable').DataTable().state();
     currentSearchValue = $('#dataTable_filter input').val();
     selectedDate = new Date(document.getElementById('selectedDate').value);
     selectedDate.setDate(selectedDate.getDate() + 1); // Add one day
     console.log("selectedDate: " + selectedDate);
+
+    
+	
     renderTable(originalData);
 
 });
