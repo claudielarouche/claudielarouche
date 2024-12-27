@@ -1,4 +1,4 @@
-console.log('date filter v7');
+console.log('date filter v8');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -241,6 +241,7 @@ document.getElementById('showToday').addEventListener('click', function(event) {
 });
 
 document.getElementById("showTodayOnly").addEventListener("change", function (event) {
+	document.getElementById('selectedDate').value = '';
 
 	const isChecked = document.getElementById("showTodayOnly").checked;
 
