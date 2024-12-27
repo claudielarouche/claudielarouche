@@ -1,4 +1,4 @@
-console.log('audience filter v1');
+console.log('data v2');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -10,7 +10,7 @@ function getQueryParam(key) {
 
 window.onload = function() {
 	// Update the path to your CSV file
-	const csvFilePath = 'https://claudielarouche.com/library/ottawa_library_programs.csv';
+	const csvFilePath = 'https://claudielarouche.com/library/ottawa_library_programs2.csv';
 
 	Papa.parse(csvFilePath, {
 		header: true,
