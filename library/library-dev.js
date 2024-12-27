@@ -436,7 +436,8 @@ document.getElementById('selectedDate').addEventListener('change', function() {
     // Store the current sorting state
     sortingState = $('#dataTable').DataTable().state();
     currentSearchValue = $('#dataTable_filter input').val();
-    selectedDate = new Date(document.getElementById('selectedDate').value + 1);
+    selectedDate = new Date(document.getElementById('selectedDate').value);
+    selectedDate.setDate(selectedDate.getDate() + 1); // Add one day
     console.log("selectedDate: " + selectedDate);
     renderTable(originalData);
 
