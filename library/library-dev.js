@@ -1,4 +1,4 @@
-console.log('date filter v2');
+console.log('date filter v3');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -436,7 +436,7 @@ document.getElementById('selectedDate').addEventListener('change', function() {
     // Store the current sorting state
     sortingState = $('#dataTable').DataTable().state();
     currentSearchValue = $('#dataTable_filter input').val();
-    selectedDate = new Date(document.getElementById('selectedDate').value);
+    selectedDate = new Date(document.getElementById('selectedDate').value) + 1;
     console.log("selectedDate: " + selectedDate);
     renderTable(originalData);
 
