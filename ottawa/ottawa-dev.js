@@ -1,6 +1,6 @@
 
 
-console.log('pointing to data-dev');
+console.log('pointing to data-dev less data');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
