@@ -1,5 +1,5 @@
 
-console.log('initial page v8');
+console.log('map v1');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -153,6 +153,11 @@ function renderTable(data) {
     if (sortingState) {
         $('#dataTable').DataTable().order(sortingState.order).draw();
     }
+    // Initialize the map
+    var map = initMap();
+    
+    // Add markers to the map based on the data
+    addMarkersToMap(map, data);
 }
 
 
@@ -226,3 +231,37 @@ document.querySelectorAll('.boardCheckbox').forEach(function (checkbox) {
 });
 
 
+function initMap() {
+    var map = L.map('map').setView([45.4215, -75.6972], 12); // Center on Ottawa
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    return map;
+}
+
+/*function addMarkersToMap(map, data) {
+    data.forEach(item => {
+        if (item.Latitude && item.Longitude) {
+            L.marker([item.Latitude, item.Longitude]).addTo(map)
+                .bindPopup(item['School Name']);
+        }
+    });
+}*/
+
+function addMarkersToMap(map, data) {
+    var markers = [];
+    data.forEach(item => {
+        if (item.Latitude && item.Longitude) {
+            var marker = L.marker([item.Latitude, item.Longitude]).addTo(map)
+                .bindPopup(item['School Name']);
+            markers.push(marker);
+        }
+    });
+
+    if (markers.length > 0) {
+        var group = new L.featureGroup(markers);
+        map.fitBounds(group.getBounds());
+    }
+}
