@@ -64,7 +64,7 @@ function renderTable(data) {
     });
     tableHtml += '</tr></thead><tbody>';
 
-    //const filteredData = filterData(data, selectedAreas, selectedCategory, selectedDay, selectedAge, selectedTime);
+    const filteredData = filterData(data, selectedBoard);
 
     // Iterate through each row of data
     data.forEach(row => {
@@ -180,24 +180,16 @@ function renderTable(data) {
     }
 });*/
 
-/*function filterData(data, selectedAreas, selectedCategory, selectedDay, selectedAge, selectedTime) {
+function filterData(data, selectedBoard) {
 
 
     return data.filter(row => {
 
-	const currentArea = row['Area'] || '';
-	const currentCategory = row['Category'] || '';
-	const currentDay = row['Day'] || '';
-	const currentAge = row['Age'] || '';
-	const currentTime = row['Time of day'] || '';
-
-	const areaCondition = selectedAreas.some(area => currentArea.toLowerCase().includes(area.toLowerCase()));
-        const categoryCondition = selectedCategory.some(category => currentCategory.toLowerCase() === category.toLowerCase());
-	const dayCondition = selectedDay.some(day => currentDay.toLowerCase() === day.toLowerCase());
-	const ageCondition = selectedAge.some(age => currentAge.toLowerCase().includes(age.toLowerCase()));
-	const timeCondition = selectedTime.some(time => currentTime.toLowerCase().includes(time.toLowerCase()));
-	    
-	return areaCondition && categoryCondition && dayCondition && ageCondition && timeCondition;
+	const currentBoard = row['Board'] || '';
+	
+	const boardCondition = selectedBoard.some(area => currentBoard.toLowerCase().includes(area.toLowerCase()));
+            
+	return boardCondition;
     });
 }*/
 
@@ -208,11 +200,11 @@ function clearAllFilters() {
     // Store the current sorting state
     sortingState = $('#dataTable').DataTable().state();
 	
-    // Check all the "Select Area" checkboxes
-  /*  document.querySelectorAll('.areaCheckbox').forEach(checkbox => {
+    // Check all the "Select Board" checkboxes
+   document.querySelectorAll('.boardCheckbox').forEach(checkbox => {
         checkbox.checked = true;
-		if (!selectedAreas.includes(checkbox.value)) {
-			selectedAreas.push(checkbox.value);
+		if (!selectedBoards.includes(checkbox.value)) {
+			selectedBoards.push(checkbox.value);
 		}
     });*/
 
@@ -228,20 +220,21 @@ function clearAllFilters() {
     renderTable(originalData);
 }
 
-/*const selectedAreas = [];
-document.querySelectorAll('.areaCheckbox').forEach(function (checkbox) {
+const selectedBoards = [];
+
+document.querySelectorAll('.boardCheckbox').forEach(function (checkbox) {
     checkbox.addEventListener('change', function () {
 	// Store the current sorting state
         sortingState = $('#dataTable').DataTable().state();
         currentSearchValue = $('#dataTable_filter input').val();
 		if (checkbox.checked) {
-            if (!selectedAreas.includes(checkbox.value)) {
-                selectedAreas.push(checkbox.value);
+            if (!selectedBoards.includes(checkbox.value)) {
+                selectedBoards.push(checkbox.value);
             }
         } else {
-            const index = selectedAreas.indexOf(checkbox.value);
+            const index = selectedBoards.indexOf(checkbox.value);
             if (index !== -1) {
-                selectedAreas.splice(index, 1);
+                selectedBoards.splice(index, 1);
             }
         }
         renderTable(originalData);
@@ -249,9 +242,9 @@ document.querySelectorAll('.areaCheckbox').forEach(function (checkbox) {
 
     // Initialize with all checkboxes checked by default
     checkbox.checked = true;
-    if (!selectedAreas.includes(checkbox.value)) {
-        selectedAreas.push(checkbox.value);
+    if (!selectedBoards.includes(checkbox.value)) {
+        selectedBoards.push(checkbox.value);
     }
-});*/
+});
 
 
