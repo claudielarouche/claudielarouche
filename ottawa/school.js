@@ -155,30 +155,6 @@ function renderTable(data) {
     }
 }
 
-/*document.getElementById('showToday').addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent the default behavior of the anchor link
-
-    // Scroll to the element with id 'csvData'
-    document.getElementById('csvData').scrollIntoView({ behavior: 'smooth' });
-
-    // Get today's day of the week
-    const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    const today = new Date();
-    const todayDayOfWeek = daysOfWeek[today.getDay()];
-
-    currentSearchValue = $('#dataTable_filter input').val();
-
-    if (!currentSearchValue.includes(todayDayOfWeek)) {
-
-       currentSearchValue = todayDayOfWeek + (currentSearchValue ? " " + currentSearchValue : "");
-
-       // Populate the search box with today's day of the week
-       document.getElementById('dataTable_filter').querySelector('input').value = currentSearchValue;
-    
-       // Trigger the input event to initiate the search
-       document.getElementById('dataTable_filter').querySelector('input').dispatchEvent(new Event('input'));
-    }
-});*/
 
 function filterData(data, selectedBoard) {
 
