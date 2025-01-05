@@ -1,5 +1,5 @@
 
-console.log('initial page v6');
+console.log('initial page v7');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -186,8 +186,12 @@ function filterData(data, selectedBoard) {
     return data.filter(row => {
 
 	const currentBoard = row['Board'] || '';
+	console.log("current board: " + currentBoard);
 	
 	const boardCondition = selectedBoard.some(board => currentBoard.toLowerCase().includes(board.toLowerCase()));
+
+	    
+	console.log("boardcondition: " + boardCondition);
             
 	return boardCondition;
     });
@@ -225,6 +229,7 @@ const selectedBoards = [];
 document.querySelectorAll('.boardCheckbox').forEach(function (checkbox) {
     checkbox.addEventListener('change', function () {
 	// Store the current sorting state
+	console.log("state changed");
         sortingState = $('#dataTable').DataTable().state();
         currentSearchValue = $('#dataTable_filter input').val();
 		if (checkbox.checked) {
