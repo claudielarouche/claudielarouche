@@ -1,5 +1,5 @@
 
-console.log('map v5');
+console.log('map v6');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -254,8 +254,9 @@ function addMarkersToMap(map, data) {
     var markers = [];
     data.forEach(item => {
         if (item['Latitude'] && item['Longitude']) {
-            var marker = L.marker([item['Latitude'], item['Longitude']]).addTo(map)
-                .bindPopup(item['School Name']);
+            var popupContent = `<b>${item['School Name']}</b><br>Latitude: ${item['Latitude']}<br>Longitude: ${item['Longitude']}`;
+	    var marker = L.marker([item['Latitude'], item['Longitude']]).addTo(map)
+                .bindPopup(popupContent);
             markers.push(marker);
         }
     });
