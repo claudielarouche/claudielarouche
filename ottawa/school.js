@@ -1,5 +1,5 @@
 
-console.log('initial page');
+console.log('initial page v2');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -75,7 +75,7 @@ function renderTable(data) {
 
         headers.forEach((header, index) => {
             // Skip rendering the URL column
-            if (header !== 'URL') {
+            if (header !== 'Website') {
                 switch (header) {
 		    case 'Sort Order': 	
 				    // Assign the index of the "Baby Scale" column to the babyScaleIndex variable
@@ -83,9 +83,9 @@ function renderTable(data) {
                     		    sortOrderIndex = index;					  
 				    tableHtml += `<td>${row[header]}</td>`;
 				    break;
-                    case 'Facility Name':
+                    case 'School Name':
                         // Merge URL with Pool Name to create a clickable link
-                        const url = row['URL'] ? row['URL'] : '';
+                        const url = row['Website'] ? row['Website'] : '';
                         const poolName = row[header] ? row[header] : '';
                         if (url !== '' && poolName !== '') {
                             tableHtml += `<td><a href="${url}" target="_blank">${poolName}</a></td>`;
