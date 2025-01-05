@@ -206,7 +206,7 @@ function clearAllFilters() {
 		if (!selectedBoards.includes(checkbox.value)) {
 			selectedBoards.push(checkbox.value);
 		}
-    });*/
+    });
 
 
 
