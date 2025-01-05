@@ -1,5 +1,5 @@
 
-console.log('map v1');
+console.log('map v2');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -157,7 +157,7 @@ function renderTable(data) {
     var map = initMap();
     
     // Add markers to the map based on the data
-    addMarkersToMap(map, data);
+    addMarkersToMap(map, filteredData);
 }
 
 
@@ -253,7 +253,7 @@ function initMap() {
 function addMarkersToMap(map, data) {
     var markers = [];
     data.forEach(item => {
-        if (item.Latitude && item.Longitude) {
+        if (item['Latitude'] && item['Longitude']) {
             var marker = L.marker([item.Latitude, item.Longitude]).addTo(map)
                 .bindPopup(item['School Name']);
             markers.push(marker);
