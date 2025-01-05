@@ -1,5 +1,5 @@
 
-console.log('map v12');
+console.log('map v13');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -264,7 +264,7 @@ function addMarkersToMap(data) {
             var lat = parseFloat(item['Latitude']);
             var lng = parseFloat(item['Longitude']);
             if (!isNaN(lat) && !isNaN(lng)) {
-                var popupContent = `<b>${item['School Name']}</b><br>Latitude: ${lat.toFixed(4)}<br>Longitude: ${lng.toFixed(4)}`;
+                var popupContent = `<b>${item['School Name']}</b><br>School Board: ${item['Board']}`;
                 var marker = L.marker([lat, lng])
                     .bindPopup(popupContent);
                 markersGroup.addLayer(marker); // Add new marker to the group
