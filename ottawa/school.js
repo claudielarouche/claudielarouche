@@ -1,8 +1,10 @@
 
-console.log('map v6');
+console.log('map v7');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
+var map; // Global map variable
+var markersGroup;
 
 function getQueryParam(key) {
     const params = new URLSearchParams(window.location.search);
@@ -10,6 +12,8 @@ function getQueryParam(key) {
 }
 
 window.onload = function() {
+	markersGroup = L.layerGroup().addTo(map); // Initialize once and add to map
+	initMap();
 	// Update the path to your CSV file
 	const csvFilePath = 'https://claudielarouche.com/ottawa/school.csv';
 
@@ -153,8 +157,7 @@ function renderTable(data) {
     if (sortingState) {
         $('#dataTable').DataTable().order(sortingState.order).draw();
     }
-    // Initialize the map
-    var map = initMap();
+    
     
     // Add markers to the map based on the data
     addMarkersToMap(map, filteredData);
@@ -250,19 +253,24 @@ function initMap() {
     });
 }*/
 
-function addMarkersToMap(map, data) {
-    var markers = [];
+function addMarkersToMap(data) {
+    markersGroup.clearLayers(); // Clear existing markers
+
     data.forEach(item => {
         if (item['Latitude'] && item['Longitude']) {
-            var popupContent = `<b>${item['School Name']}</b><br>Latitude: ${item['Latitude']}<br>Longitude: ${item['Longitude']}`;
-	    var marker = L.marker([item['Latitude'], item['Longitude']]).addTo(map)
-                .bindPopup(popupContent);
-            markers.push(marker);
+            var lat = parseFloat(item['Latitude']);
+            var lng = parseFloat(item['Longitude']);
+            if (!isNaN(lat) && !isNaN(lng)) {
+                var popupContent = `<b>${item['School Name']}</b><br>Latitude: ${lat.toFixed(4)}<br>Longitude: ${lng.toFixed(4)}`;
+                var marker = L.marker([lat, lng])
+                    .bindPopup(popupContent);
+                markersGroup.addLayer(marker); // Add new marker to the group
+            }
         }
     });
 
-    if (markers.length > 0) {
-        var group = new L.featureGroup(markers);
-        map.fitBounds(group.getBounds());
+    if (markersGroup.getLayers().length > 0) {
+        map.fitBounds(markersGroup.getBounds()); // Adjust view to show all markers
     }
 }
+
