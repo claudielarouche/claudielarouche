@@ -1,5 +1,5 @@
 
-console.log('map v8');
+console.log('map v9');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -13,7 +13,7 @@ function getQueryParam(key) {
 
 window.onload = function() {
 	initMap();
-	markersGroup = L.layerGroup().addTo(map); // Initialize once and add to map
+	//markersGroup = L.layerGroup().addTo(map); // Initialize once and add to map
 	
 	// Update the path to your CSV file
 	const csvFilePath = 'https://claudielarouche.com/ottawa/school.csv';
