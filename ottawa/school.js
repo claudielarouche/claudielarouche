@@ -272,8 +272,8 @@ function addMarkersToMap(data) {
         }
     });
 
-    if (markersGroup.getLayers().length > 0) {
+    /*if (markersGroup.getLayers().length > 0) {
         map.fitBounds(markersGroup.getBounds()); // Adjust view to show all markers
-    }
+    }*/
 }
 
