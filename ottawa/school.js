@@ -191,7 +191,7 @@ function filterData(data, selectedBoard) {
             
 	return boardCondition;
     });
-}*/
+}
 
 
 let currentSearchValue = getQueryParam('search'); // Variable to store the current search value
