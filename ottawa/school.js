@@ -1,5 +1,5 @@
 
-console.log('map v10');
+console.log('map v11');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -161,7 +161,7 @@ function renderTable(data) {
     
     
     // Add markers to the map based on the data
-    addMarkersToMap(map, filteredData);
+    addMarkersToMap(filteredData);
 }
 
 
