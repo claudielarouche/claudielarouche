@@ -1,5 +1,5 @@
 
-console.log('map v4');
+console.log('map v5');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
