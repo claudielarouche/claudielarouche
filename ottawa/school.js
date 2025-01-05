@@ -64,7 +64,7 @@ function renderTable(data) {
     });
     tableHtml += '</tr></thead><tbody>';
 
-    const filteredData = filterData(data, selectedBoard);
+    const filteredData = filterData(data, selectedBoards);
 
     // Iterate through each row of data
     data.forEach(row => {
