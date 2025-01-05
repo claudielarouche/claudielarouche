@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-YWMRD8LX5P"></script>
+<!--<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YWMRD8LX5P');
+</script>-->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>How to choose a school?</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<!--<link rel="stylesheet" type="text/css" href="style.css">-->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+		<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+		<script src="https://cdn.datatables.net/buttons/1.7.1/js/dataTables.buttons.min.js"></script>
+		<script src="https://cdn.datatables.net/buttons/1.7.1/js/buttons.colVis.min.js"></script>
+		
+		
+		<style>
+		
+		#dataTable thead th {
+    position: sticky;
+    top: 0;
+    background-color: #f2f2f2; /* Change the background color as needed */
+    z-index: 100;
+}
+		
+			table {
+				border-collapse: collapse;
+				width: 100%;
+				margin-top: 20px;
+			}
+
+			th,
+			td {
+				border: 1px solid #dddddd;
+			}
+
+			h2 {
+				margin-top: 20px;
+			}
+
+			label {
+				display: block;
+				margin-top: 10px;
+			}
+
+			
+			.checked {
+				text-decoration: line-through;
+			}
+			
+			td.dataTables_empty {
+				text-align: left !important;
+			}
+			.dataTables_wrapper .dataTables_filter {
+			    float: left;
+			    text-align: left;
+			}
+			.dt-button-collection {
+			    margin-top: 10px !important;
+			}
+			
+		</style>
+		<!-- Include PapaParse library -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+	</head>
+	<body>
+		<div class="bg-image"></div>
+		<div class="container">
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+	  <a class="navbar-brand" href="https://claudielarouche.com">Claudie's other projects</a>
+	  
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	      <!-- Add any additional menu items here if needed -->
+	    </ul>
+	  </div>
+	</nav>
+			
+			<h1>How to choose a school in Ottawa</h1>
+
+			<p>Selecting the right school for your child can be a stressful decision for parents, so I decided to create this resource to try and help. </p>
+      
+        
+        Ottawa hosts four main school boards, each offering unique programs and environments. Understanding these choices will help you find the best fit for your child's needs.
+			
+			<h2>1. Public vs. Private Schools</h2>
+<ul>
+    <li><strong>Public Schools:</strong> Funded by the government, public schools in Ottawa offer education at no direct cost to families and provide a range of programs including French Immersion, International Baccalaureate, and Specialist High Skills Majors. They are accessible to all students and reflect the diversity of the community.</li>
+    <li><strong>Private Schools:</strong> These schools charge tuition fees and often offer specialized programs or smaller class sizes. Some private schools have a particular educational focus, such as Montessori, arts, or science and technology, and may offer a religious curriculum as well.</li>
+</ul>
+
+<h2>2. Language of Instruction: English only, French immersion, French only, other languages </h2>
+<ul>
+    <li><strong>English Schools:</strong> Serve the majority of students and offer French as a second language starting from elementary grades. French Immersion programs are also widely available.</li>
+    <li><strong>French Schools:</strong> Aimed at students who are from French-speaking families or entitled to French-language education in Ontario. These schools are ideal for maintaining fluency in French and understanding Francophone cultures.</li>
+</ul>
+
+<h2>3. Secular vs. Catholic Education</h2>
+<ul>
+    <li><strong>Secular Schools:</strong> Both public and private secular schools focus on a non-religious curriculum but may still teach about a variety of religions and cultures as part of social studies.</li>
+    <li><strong>Catholic Schools:</strong> These institutions integrate faith into the daily school life and curriculum. They are open to students of all backgrounds who are looking for an education that includes religious instruction in the Catholic tradition.</li>
+</ul>
+		
+      
+<h2 id="filter">Filters</h2>
+			<!--<form class="form">
+
+			
+
+				<div class="form-group row">
+					<label for="selectedArea" class="col-sm-2 col-form-label">Select Area(s):</label>
+					<div class="col-sm-10">
+						<div class="checkbox">
+							<label><input type="checkbox" id="centralCheckbox" class="areaCheckbox" value="Central" checked=""> Central</label>
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" id="eastCheckbox" class="areaCheckbox" value="East" checked=""> East</label>
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" id="southCheckbox" class="areaCheckbox" value="South" checked=""> South</label>
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" id="westCheckbox" class="areaCheckbox" value="West" checked=""> West</label>
+						</div>
+					</div>
+				</div>-->
+
+				
+			
+
+				<!--<div class="form-group row">
+					<label for="selectedAgeGroup" class="col-sm-2 col-form-label">Select Age Group:</label>
+					<div class="col-sm-3">
+						<select id="selectedAgeGroup" class="form-control">
+							<option value="">Show all</option>
+							<option value="Babies">Show baby playgroups only</option>
+							<option value="Kids">Show kids playgroups only</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="form-group row">
+					<label for="scheduleFilter" class="col-sm-2 col-form-label">Select Schedule:</label>
+					<div class="col-sm-4">
+						<select id="scheduleFilter" class="form-control">
+							<option value="all">Show all times</option>
+							<option value="eveningsWeekends">Show evenings and weekends only</option>
+							<option value="weekdayAMPM">Show weekday AM and PM only</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="form-group row">
+					<label for="languageFilter" class="col-sm-2 col-form-label">Select Language(s):</label>
+					<div class="col-sm-10">
+						<div class="checkbox">
+							<label><input type="checkbox" id="arabicCheckbox" class="languageCheckbox" value="Arabic" checked=""> Arabic</label>
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" id="englishCheckbox" class="languageCheckbox" value="English" checked=""> English</label>
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" id="frenchCheckbox" class="languageCheckbox" value="French" checked=""> French</label>
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" id="mandarinCheckbox" class="languageCheckbox" value="Mandarin" checked=""> Mandarin</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group row">
+					<label for="selectedArea" class="col-sm-2 col-form-label">Other options</label>
+					<div class="col-sm-10">
+						<div class="checkbox">
+							<label><input type="checkbox" id="babyScaleCheckbox" class="otherOptionsCheckbox" value="babyScale" disabled> Show only playgroups with a baby scale (Coming soon!) </label>
+						</div>
+				
+						
+					</div>
+				</div>
+				
+			</form>
+			-->
+			<div class="mt-3">
+				<button class="btn btn-secondary" onclick="clearAllFilters()">
+					Reset filters to default
+				</button>
+			</div>
+			<div class="mt-3">
+				<a href="#csvData" class="btn btn-primary">
+					 View schools
+				</a>
+			</div>
+
+			
+				
+			<h2>List of schools</h2>
+			
+			<div id="csvData"></div>
+			
+			
+			<h2 id="newsletter">Stay up to date!</h2>
+
+			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfWDjzio_bwHSKPeTHnNq5Yks1cDIo4cN_nlP6Ir-lzz4AqqQ/viewform?embedded=true" width="640" height="471" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+			
+		
+			
+
+			
+			<div id="footer">
+    
+    <footer class="text-center py-4 ">© Claudie Larouche 2025. Thanks to <a href="https://chat.openai.com/" target="_blank">ChatGPT</a> for the help building this website.</footer>
+    <a href="#" id="backToTop">Back to Top</a>
+</div>
+		</div>
+		<script src="ottawa/school.js"></script>
+	</body>
+</html>
