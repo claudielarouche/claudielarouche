@@ -1,5 +1,5 @@
 
-console.log('map v11');
+console.log('map v12');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -140,7 +140,7 @@ function renderTable(data) {
 
 	    "columnDefs": [
 			    {
-				"targets": [4, 5, 8, 9],
+				"targets": [4, 5, 8, 9, 10],
 				"visible": false 
 			    }
 			  
