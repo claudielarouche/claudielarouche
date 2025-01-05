@@ -187,7 +187,7 @@ function filterData(data, selectedBoard) {
 
 	const currentBoard = row['Board'] || '';
 	
-	const boardCondition = selectedBoard.some(area => currentBoard.toLowerCase().includes(area.toLowerCase()));
+	const boardCondition = selectedBoard.some(board => currentBoard.toLowerCase().includes(board.toLowerCase()));
             
 	return boardCondition;
     });
