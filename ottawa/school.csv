@@ -15,7 +15,7 @@ Alta Vista Public School,Public,Elementary,1349 Randall  Ave,45.3838681,-75.6645
 Ambassadors Christian School,Private,Elementary,2031 Stittsville Main St,45.28176124,-75.9347088,(613) 400-4022,https://www.ambassadorschristianschool.ca/,N/A,,,
 Arch Street Public School,Public,Elementary,2129 Arch St,45.39198075,-75.62942123,(613) 733-0205,https://archstreetps.ocdsb.ca/,Ottawa-Carleton District School Board,,,
 Ashbury College,Private,Elementary,362 Mariposa Ave,45.4474868,-75.67658255,(613) 749-5954,https://ashbury.ca/,N/A,,,
-Assumption School,Public,Elementary,236 Lévis St,46.7312561,-72.56528834,(613) 746-4822,https://asu.ocsb.ca/,Ottawa Catholic School Board,,,
+Assumption School,Public,Elementary,236 Lévis Ave,45.43463975,-75.66025460575447,(613) 746-4822,https://asu.ocsb.ca/,Ottawa Catholic School Board,,,
 Astolot Education Centre,Private,"Elementary, Secondary",1187 Bank St,45.3921356,-75.6814067,(613) 260-5996,https://www.astolot.com/,N/A,,,
 Avalon Public School,Public,Elementary,2080 Portobello Blvd,45.4582399,-75.46677368,(613) 834-7313,https://avalonps.ocdsb.ca/,Ottawa-Carleton District School Board,,,
 Barrhaven Public School,Public,Elementary,80 Larkin  Dr,45.2812247,-75.76371362,(613) 825-2691,https://barrhavenps.ocdsb.ca/,Ottawa-Carleton District School Board,,,
@@ -76,7 +76,7 @@ Convent Glen Elementary School,Public,Elementary,1708 Grey Nuns Dr,45.47024,-75.
 Corpus Christi School,Public,Elementary,798 Lyon St South,45.40147335,-75.69108919,(613) 232-9743,,Ottawa Catholic School Board,,,
 Crystal Bay Centre for Special Education,Public,Special Education,31 Moodie Dr,45.349516,-75.84411602,(613) 828-5376,,Ottawa-Carleton District School Board,,,
 D. Roy Kennedy Public School,Public,Elementary,919 Woodroffe Ave,45.36529245,-75.76959144,(613) 728-1993,,Ottawa-Carleton District School Board,,,
-De la Salle Public High School,Public,Secondary,501 Old St-Patrick St,46.8148143,-71.2089486,(613) 789-0053,,Conseil des écoles publiques de l'Est de l'Ontario,,,French
+De la Salle Public High School,Public,Secondary,501 Old St-Patrick St,45.43493255,-75.68488013961192,(613) 789-0053,,Conseil des écoles publiques de l'Est de l'Ontario,,,French
 Des Pins Catholic Elementary School,Public,Elementary,1487 Ridgebrook Dr,45.421577,-75.605064,(613) 741-2354,,Conseil des écoles catholiques du Centre-Est,,,French
 Des Sentiers Public Elementary School,Public,Elementary,2159 Nantes St,45.45974755,-75.460676,(613) 837-9726,,Conseil des écoles publiques de l'Est de l'Ontario,,,French
 Devonshire Community Public School,Public,Elementary,100 Breezehill Ave,45.4055218,-75.71889959,(613) 729-3169,,Ottawa-Carleton District School Board,,,
@@ -115,7 +115,7 @@ Garneau Catholic High School,Public,Secondary,6588 Carrière St,45.464682,-75.52
 General Vanier Public School,Public,Elementary,1025 Harkness Ave,45.36749305,-75.67532722,(613) 731-3631,,Ottawa-Carleton District School Board,,,
 -Étienne-Cartier Catholic Elementary School,Public,Elementary,880 Thorndale Dr,45.36367225,-75.67294903,(613) 731-6007,,Conseil des écoles catholiques du Centre-Est,,,French
 s Vanier Catholic School,Public,Elementary,40 Varley Dr,45.33224445,-75.9075131,(613) 592-4371,,Ottawa Catholic School Board,,,
-Gisèle-Lalonde Public High School ,Public,Secondary,500 Millenium Blvd,46.09185383,-64.82061705,(613) 833-0018,,Conseil des écoles publiques de l'Est de l'Ontario,,,French
+Gisèle-Lalonde Public High School ,Public,Secondary,500 Millennium Blvd,45.4682722,-75.44521138006893,(613) 833-0018,,Conseil des écoles publiques de l'Est de l'Ontario,,,French
 Glashan Public School,Public,Intermediate,28 Arlington Ave,45.4094209,-75.69329194,(613) 239-2264,,Ottawa-Carleton District School Board,,,
 Glebe Collegiate Institute,Public,Secondary,212 Glebe Ave,45.40143595,-75.69743902,(613) 239-2424,,Ottawa-Carleton District School Board,,,
 Glebe Montessori School,Private,Elementary,650 Lyon St,45.403463,-75.69249097,(613) 237-3824,,N/A,,,
@@ -133,7 +133,7 @@ Henry Munro Middle School,Public,Intermediate,2105 Kender Ave,45.45778425,-75.59
 Heritage Academy,Private,Elementary,207 Bayswater Ave,45.39990705,-75.7158616,(613) 722-0133,,N/A,,,
 Heritage Public School,Public,Elementary,1375 Colonial Rd,45.42179775,-75.41634913,(613) 835-1700,,Ottawa-Carleton District School Board,,,
 Hillcrest High School,Public,Secondary,1900 Dauphin Rd,45.398682,-75.64007382,(613) 733-1755,,Ottawa-Carleton District School Board,,,
-Hilson Avenue Public School,Public,Elementary,407 Hillson Ave,40.37453357,-79.97833708,(613) 728-4607,,Ottawa-Carleton District School Board,,,
+Hilson Avenue Public School,Public,Elementary,407 Hilson Ave,45.3952788,-75.74466652873303,(613) 728-4607,,Ottawa-Carleton District School Board,,,
 Holy Cross School,Public,Elementary,2820 Springland Dr,45.3634345,-75.68519219,(613) 733-5887,,Ottawa Catholic School Board,,,
 Holy Family School,Public,Elementary,245 Owl Dr,45.35358255,-75.6629825,(613) 521-0475,,Ottawa Catholic School Board,,,
 Holy Redeemer School,Public,Elementary,75 McCurdy Dr,45.3030147,-75.90028465,(613) 591-3256,,Ottawa Catholic School Board,,,
@@ -142,7 +142,7 @@ Holy Trinity Catholic High School,Public,"Elementary, Secondary",180 Katimavik R
 Hopewell Avenue Public School,Public,Elementary,17 Hopewell Ave,45.3932176,-75.68415266,(613) 239-2348,,Ottawa-Carleton District School Board,,,
 Huntley Centennial Public School,Public,Elementary,118 Langstaff Dr,,,(613) 839-2020,,Ottawa-Carleton District School Board,,,
 IBN Batouta Private School,Private,Elementary,6479 Russell Rd,45.37006575,-75.45704368,(613) 730-6396,,N/A,,,
-Immaculata High School,Public,Secondary,140 Main St,45.97831427,-66.6535097,(613) 237-2001,,Ottawa Catholic School Board,,,
+Immaculata High School,Public,Secondary,140 Main St,45.4099645,-75.67981316880103,(613) 237-2001,,Ottawa Catholic School Board,,,
 International Student Program Office,Public,International,440 Albert St,48.33966783,-70.88106296,(613) 239-0258,,Ottawa-Carleton District School Board,,,
 Jack Donohue Public School,Public,Elementary,101 Penrith St,45.3531303,-75.9425983,(613) 271-9776,,Ottawa-Carleton District School Board,,,
 Jean-Robert-Gauthier Catholic Elementary School,Public,Elementary,651 Chapman Mills Dr,45.2707705,-75.73178552,(613) 820-0757,,Conseil des écoles catholiques du Centre-Est,,,French
@@ -180,12 +180,12 @@ MacDonald-Cartier Academy,Private,Intermediate,270 Crichton St,45.439729,-75.682
 MacSkimming Outdoor Ed. Centre,Public,Outdoor Education,3635 Hwy 174,45.5228675,-75.3494229,(613) 833-2080,,Ottawa-Carleton District School Board,,,
 Manor Park Public School,Public,Elementary,100 Braemar St,45.4502307,-75.65638775,(613) 746-8131,,Ottawa-Carleton District School Board,,,
 Manordale Public School,Public,Elementary,16 Carola St,45.32914425,-75.75974907,(613) 226-6393,,Ottawa-Carleton District School Board,,,
-Manotick  Public School,Public,Elementary,1075 Bridge St,45.97890696,-66.58963214,(613) 692-3311,,Ottawa-Carleton District School Board,,,
+Manotick  Public School,Public,Elementary,1075 Bridge St,45.229864649999996,-75.68292659498293,(613) 692-3311,,Ottawa-Carleton District School Board,,,
 Manotick Montessori,Private,Elementary,5710 Longshadow St,45.24496375,-75.64592722,(613) 692-1969,,N/A,,,
 Maple Ridge Elementary School,Public,Elementary,1000 Valin St,45.470489,-75.46184502,(613) 834-1927,,Ottawa-Carleton District School Board,,,
 March Academy,Private,Elementary,325 Sandhill Rd,45.354753,-75.9270434,(613) 592-3398,,N/A,,,
 Marie-Curie Public Elementary School,Public,Elementary,837 Quinlan Rd.,45.3986407,-75.6309429,(613) 260-1150,,Conseil des écoles publiques de l'Est de l'Ontario,,,French
-Marius-Barbeau Catholic Elementary School,Public,Elementary,1345 Nottinghill Ave,44.25706252,-76.57975048,(613) 737-4404,,Conseil des écoles catholiques du Centre-Est,,,French
+Marius-Barbeau Catholic Elementary School,Public,Elementary,1345 Notting Hill Ave,45.3715439,-75.6567975,(613) 737-4404,,Conseil des écoles catholiques du Centre-Est,,,French
 Mary Honeywell Elementary School,Public,Elementary,54 Kennevale Dr,45.2689364,-75.76740203,(613) 825-4834,,Ottawa-Carleton District School Board,,,
 Maryvale Academy of Ottawa,Private,Elementary,2191 Benjamin Ave,45.3634648,-75.76827838,(613) 321-2186,,N/A,,,
 Maurice-Lapointe Public Elementary School,Public,"Elementary, Secondary",17 Bridgestone St,,,(613) 591-8585,,Conseil des écoles publiques de l'Est de l'Ontario,,,French
@@ -194,7 +194,7 @@ Merivale High School,Public,Secondary,1755 Merivale Rd,45.3432659,-75.72705829,(
 Metcalfe Public School,Public,Elementary,2701 8th Line Rd,,,(613) 821-2261,,Ottawa-Carleton District School Board,,,
 Michaëlle-Jean Public Elementary School,Public,Elementary,11 Claridge Dr,45.28796335,-75.72675675,(613) 823-2288,,Conseil des écoles publiques de l'Est de l'Ontario,,,French
 Michel-Dupuis Public Elementary School,Public,Elementary,715 Brian Good Ave,45.2677079,-75.69352301,(613) 822-2201,,Conseil des écoles publiques de l'Est de l'Ontario,,,French
-MindWare Academy,Private,Elementary,985 Pinecrest Ave,33.10563019,-117.0905951,(613) 829-2694,,N/A,,,
+MindWare Academy,Private,Elementary,985 Pinecrest Rd,45.35401855,-75.79146129974399,(613) 829-2694,,N/A,,,
 Minto Professional and Technical Centre,Public,Secondary,801 Aviation Parkway,,,(613) 842-5319,,Conseil des écoles catholiques du Centre-Est,,,French
 Monsignor Paul Baxter School,Public,Elementary,333 Beatrice Dr.,45.281096,-75.728907,(613) 825-7544,,Ottawa Catholic School Board,,,
 Montfort Catholic Elementary School,Public,Elementary,350 Den Haag Rd,49.63241036,6.017605985,(613) 745-3310,,Conseil des écoles catholiques du Centre-Est,,,French
@@ -208,7 +208,7 @@ Omer-Deslauriers Public High School,Public,Secondary,159 Chesterton Dr,45.350583
 Orléans Montessori,Private,Elementary,1212 Arbuste Ave,45.5009485,-75.45383737,(613) 833-1442,,N/A,,,
 Orleans Wood Elementary School,Public,Elementary,7859 Decarie Dr,45.4832738,-75.52850888,(613) 837-4622,,Ottawa-Carleton District School Board,,,
 Osgoode Public School,Public,Elementary,5590 Osgoode Main St,,,(613) 826-2550,,Ottawa-Carleton District School Board,,,
-Osgoode Township High School,Public,Secondary,2800 8th Line Rd,42.83378938,-70.92182127,(613) 821-2241,,Ottawa-Carleton District School Board,,,
+Osgoode Township High School,Public,Secondary,2800 8th Line Rd,45.22867305,-75.47121791921023,(613) 821-2241,,Ottawa-Carleton District School Board,,,
 Ottawa Adventist School,Private,Elementary,2191 Benjamin Ave,45.3634648,-75.76827838,(613) 722-3770,,N/A,,,
 Ottawa Children's Treatment Centre,Public,Special Education,395 Smyth Rd,45.4018228,-75.6520999,(613) 737-0871,,Ottawa-Carleton District School Board,,,
 Ottawa Christian School,Private,Elementary,255 Tartan Dr,45.26103475,-75.76527547,(613) 825-3000,,N/A,,,
@@ -217,14 +217,14 @@ Ottawa Jewish Community School,Private,Elementary,31 Nadolny Sachs Priv,,,(613) 
 Ottawa Montessori School,Private,Elementary,335 Lindsay St,45.40777755,-75.65281318,(613) 521-5185,,N/A,,,
 Ottawa Montessori School - The Element,Private,Secondary,425 Marché Way,45.40031153,-75.68382886,(613) 862-8578,,N/A,,,
 Ottawa Technical Secondary School,Public,Secondary,485 Donald St,45.42977505,-75.64650993,(613) 745-0347,,Ottawa-Carleton District School Board,,,
-Ottawa Victory Christian Academy,Private,"Elementary, Secondary",1080 St. Pierre St,49.76431608,-97.14393348,(343) 880-4004,,N/A,,,
+Ottawa Victory Christian Academy,Private,"Elementary, Secondary",1080 St Pierre St,45.4753576,-75.52372302832033,(343) 880-4004,,N/A,,,
 Our Lady Of Fatima School,Public,Elementary,2135 Knightsbridge Rd,45.3777445,-75.77355462,(613) 722-4075,,Ottawa Catholic School Board,,,
 Our Lady Of Mount Carmel School,Public,Elementary,675 Gardenvale Rd,45.43472885,-75.63557099,(613) 745-4884,,Ottawa Catholic School Board,,,
 Our Lady Of Peace School,Public,Elementary,3877 Old Richmond Rd,45.32089555,-75.8276192,(613) 828-4037,,Ottawa Catholic School Board,,,
 Our Lady Of Victory School,Public,Elementary,1175 Soderlind St,45.350305,-75.77975013,(613) 828-5594,,Ottawa Catholic School Board,,,
 Our Lady Of Wisdom School,Public,Elementary,1565 St George St,45.4676117,-75.50094630461334,(613) 824-9700,,Ottawa Catholic School Board,,,
 Parkdale Montessori School,Private,Elementary,555B Parkdale Ave,45.3966264,-75.72600298,(613) 216-7275,,N/A,,,
-Peak Centre Academy,Private,"Elementary, Secondary",1565 Maple Grove Rd,42.08151409,-72.43045751,(613) 737-7325,,N/A,,,
+Peak Centre Academy,Private,"Elementary, Secondary",1565 Maple Grove Rd,45.2961631,-75.90969939431426,(613) 737-7325,,N/A,,,
 Pierre-Elliott-Trudeau Catholic Elementary School,Public,Elementary,601 Longfields Drive,45.2858439,-75.74374432,(613) 521-1560,,Conseil des écoles catholiques du Centre-Est,,,French
 Pierre-Savard Catholic Secondary School,Public,Secondary,1110 Longfields Dr,45.27358695,-75.73601284,(613) 820-7293,,Conseil des écoles catholiques du Centre-Est,,,French
 Pinecrest  Public School,Public,Elementary,1281 McWatters Rd,45.3443641,-75.78478218,(613) 828-5115,,Ottawa-Carleton District School Board,,,
@@ -251,7 +251,7 @@ Rockcliffe Park Public School,Public,Elementary,350 Buena Vista Rd,45.45052345,-
 Roger-Saint-Denis Catholic Elementary School,Public,Elementary,186 Barrow Cres,45.3114514,-75.88240741,(613) 521-3815,,Conseil des écoles catholiques du Centre-Est,,,French
 Roland Michener Public School,Public,Elementary,100 Penfield Dr,45.328544,-75.893243,(613) 592-2126,,Ottawa-Carleton District School Board,,,
 Sacred Heart High School,Public,Secondary,5870 Abbott St,45.2635825,-75.91021291,(613) 831-6643,,Ottawa Catholic School Board,,,
-Saint Francis of Assisi Catholic Elementary School,Public,Elementary,35 Melrose Ave,40.61875475,-74.1022773,(613) 729-1463,,Conseil des écoles catholiques du Centre-Est,,,French
+Saint Francis of Assisi Catholic Elementary School,Public,Elementary,35 Melrose Ave,45.4023726,-75.72391827760592,(613) 729-1463,,Conseil des écoles catholiques du Centre-Est,,,French
 Saint-Guillaume Catholic Elementary School,Public,Elementary,5750 Buckland Rd,45.3559641,-75.35415428,(613) 745-5981,,Conseil des écoles catholiques du Centre-Est,,,French
 Saint-Jean-Paul II Catholic Elementary School,Public,Elementary,5473 Abbott St East,45.25855382,-75.92073342,(613) 521-7858,,Conseil des écoles catholiques du Centre-Est,,,French
 Saint-Joseph d'Orléans Catholic Elementary School,Public,Elementary,6664 Carrière St,45.465923,-75.521679,(613) 745-7968,,Conseil des écoles catholiques du Centre-Est,,,French
