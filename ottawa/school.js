@@ -1,5 +1,5 @@
 
-console.log('initial page v2');
+console.log('initial page v3');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -58,7 +58,7 @@ function renderTable(data) {
     let tableHtml = '<table id="dataTable"><thead><tr>';
     headers.forEach(header => {
         // Skip rendering the URL column
-        if (header !== 'URL') {
+        if (header !== 'Website') {
             tableHtml += `<th>${header}</th>`;
         }
     });
