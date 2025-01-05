@@ -77,12 +77,7 @@ function renderTable(data) {
             // Skip rendering the URL column
             if (header !== 'Website') {
                 switch (header) {
-		    case 'Sort Order': 	
-				    // Assign the index of the "Baby Scale" column to the babyScaleIndex variable
-				// minus 1 because it is after the URL column which is not shown
-                    		    sortOrderIndex = index;					  
-				    tableHtml += `<td>${row[header]}</td>`;
-				    break;
+		    
                     case 'School Name':
                         // Merge URL with Pool Name to create a clickable link
                         const url = row['Website'] ? row['Website'] : '';
