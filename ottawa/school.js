@@ -1,5 +1,5 @@
 
-console.log('map v9');
+console.log('map v10');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -241,6 +241,8 @@ function initMap() {
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
+
+    markersGroup = L.layerGroup().addTo(map);
 
     return map;
 }
