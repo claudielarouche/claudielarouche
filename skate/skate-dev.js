@@ -1,5 +1,5 @@
 
-console.log('remove category v3');
+console.log('remove category v4');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -202,7 +202,7 @@ function filterData(data, selectedAreas, selectedDay, selectedAge, selectedTime)
 	const timeCondition = selectedTime.some(time => currentTime.toLowerCase().includes(time.toLowerCase()));
 	const skateCondition = currentCategory === "Skating";
 	    
-	return areaCondition && categoryCondition && dayCondition && ageCondition && timeCondition && skateCondition;
+	return areaCondition && dayCondition && ageCondition && timeCondition && skateCondition;
     });
 }
 
