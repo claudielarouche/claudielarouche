@@ -1,4 +1,4 @@
-Sort Order,Day,Time,Facility Name,Address,Activity Type,Registration Required,URL,Reservation,Area,Category,Age,Time of Day
+Sort Order,Day,Time,Facility Name,Address,Activity Type,Registration Required,URL,Reservation,Area,Category,Age,Time of day
 1,Monday,09:30 - 14:15,Alexander Community Centre,960 Silver Street,Pickleball,Yes,https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/alexander-community-centre,https://reservation.frontdesksuite.ca/rcfs/alexandercc/Home/Index?Culture=en&PageId=ac6aef8f-fa6c-4718-b561-a0d999d33d89,West - Nepean,Racquet Sport,Adult,"AM, PM"
 3,Wednesday,17:00 - 18:00,Bell Centennial Arena,50 Cassidy Road,Ringette (10 to 14 years),Yes,https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/bell-centennial-arena,https://reservation.frontdesksuite.ca/rcfs/bellcentennial/Home/Index?Culture=en&PageId=463ab618-f399-4fed-a245-5e90b87fe394,West - Nepean,Skating,Youth,Evening
 3,Wednesday,16:00 - 17:00,Bell Centennial Arena,50 Cassidy Road,Public skating,No,https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/bell-centennial-arena,#,West - Nepean,Skating,"Preschool, Children, Youth, Adult",PM
