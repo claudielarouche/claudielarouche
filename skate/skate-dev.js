@@ -1,5 +1,5 @@
 
-console.log('time of day filter 3');
+console.log('remove category');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -58,7 +58,7 @@ function renderTable(data) {
     let tableHtml = '<table id="dataTable"><thead><tr>';
     headers.forEach(header => {
         // Skip rendering the URL column
-        if (header !== 'URL') {
+        if (header !== 'URL' && header !== 'Category') {
             tableHtml += `<th>${header}</th>`;
         }
     });
@@ -75,7 +75,7 @@ function renderTable(data) {
 
         headers.forEach((header, index) => {
             // Skip rendering the URL column
-            if (header !== 'URL') {
+            if (header !== 'URL' && header !== 'Category') {
                 switch (header) {
 		    case 'Sort Order': 	
 				    // Assign the index of the "Baby Scale" column to the babyScaleIndex variable
@@ -197,7 +197,6 @@ function filterData(data, selectedAreas, selectedCategory, selectedDay, selected
 	const currentTime = row['Time of day'] || '';
 
 	const areaCondition = selectedAreas.some(area => currentArea.toLowerCase().includes(area.toLowerCase()));
-        const categoryCondition = selectedCategory.some(category => currentCategory.toLowerCase() === category.toLowerCase());
 	const dayCondition = selectedDay.some(day => currentDay.toLowerCase() === day.toLowerCase());
 	const ageCondition = selectedAge.some(age => currentAge.toLowerCase().includes(age.toLowerCase()));
 	const timeCondition = selectedTime.some(time => currentTime.toLowerCase().includes(time.toLowerCase()));
@@ -219,14 +218,6 @@ function clearAllFilters() {
         checkbox.checked = true;
 		if (!selectedAreas.includes(checkbox.value)) {
 			selectedAreas.push(checkbox.value);
-		}
-    });
-
-// Check all the "Select Category" checkboxes
-    document.querySelectorAll('.categoryCheckbox').forEach(checkbox => {
-        checkbox.checked = true;
-		if (!selectedCategory.includes(checkbox.value)) {
-			selectedCategory.push(checkbox.value);
 		}
     });
 
@@ -290,31 +281,7 @@ document.querySelectorAll('.areaCheckbox').forEach(function (checkbox) {
     }
 });
 
-const selectedCategory = [];
-document.querySelectorAll('.categoryCheckbox').forEach(function (checkbox) {
-    checkbox.addEventListener('change', function () {
-	// Store the current sorting state
-        sortingState = $('#dataTable').DataTable().state();
-        currentSearchValue = $('#dataTable_filter input').val();
-		if (checkbox.checked) {
-            if (!selectedCategory.includes(checkbox.value)) {
-                selectedCategory.push(checkbox.value);
-            }
-        } else {
-            const index = selectedCategory.indexOf(checkbox.value);
-            if (index !== -1) {
-                selectedCategory.splice(index, 1);
-            }
-        }
-        renderTable(originalData);
-    });
 
-    // Initialize with all checkboxes checked by default
-    checkbox.checked = true;
-    if (!selectedCategory.includes(checkbox.value)) {
-        selectedCategory.push(checkbox.value);
-    }
-});
 
 const selectedDay = [];
 document.querySelectorAll('.dayCheckbox').forEach(function (checkbox) {
