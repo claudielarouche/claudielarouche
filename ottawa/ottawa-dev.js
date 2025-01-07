@@ -1,6 +1,6 @@
 
 
-console.log('only kept 2');
+console.log('time of day');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
