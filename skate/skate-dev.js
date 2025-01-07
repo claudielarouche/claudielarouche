@@ -1,5 +1,5 @@
 
-console.log('remove category');
+console.log('remove category v2');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -64,7 +64,7 @@ function renderTable(data) {
     });
     tableHtml += '</tr></thead><tbody>';
 
-    const filteredData = filterData(data, selectedAreas, selectedCategory, selectedDay, selectedAge, selectedTime);
+    const filteredData = filterData(data, selectedAreas, selectedDay, selectedAge, selectedTime);
 
     // Iterate through each row of data
     filteredData.forEach(row => {
