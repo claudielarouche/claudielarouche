@@ -1,6 +1,6 @@
 
 
-console.log('walter baker');
+console.log('only kept 2');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
