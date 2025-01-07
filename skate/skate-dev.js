@@ -1,5 +1,5 @@
 
-console.log('remove category v2');
+console.log('remove category v3');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -185,7 +185,7 @@ document.getElementById('showToday').addEventListener('click', function(event) {
     }
 });
 
-function filterData(data, selectedAreas, selectedCategory, selectedDay, selectedAge, selectedTime) {
+function filterData(data, selectedAreas, selectedDay, selectedAge, selectedTime) {
 
 
     return data.filter(row => {
