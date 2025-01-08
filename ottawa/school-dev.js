@@ -1,10 +1,12 @@
 
-console.log('map v13');
+console.log('map v14');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
 var map; // Global map variable
 var markersGroup;
+// Global variable to hold all markers
+var allMarkers = [];
 
 function getQueryParam(key) {
     const params = new URLSearchParams(window.location.search);
@@ -236,13 +238,18 @@ document.querySelectorAll('.boardCheckbox').forEach(function (checkbox) {
 
 
 function initMap() {
-    var map = L.map('map').setView([45.4215, -75.6972], 12); // Center on Ottawa
+    var map = L.map('map').setView([45.4215, -75.6972], 12);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
     markersGroup = L.layerGroup().addTo(map);
+
+    // Setup search input listener
+    document.getElementById('mapSearchInput').addEventListener('input', function() {
+        filterMap(this.value);
+    });
 
     return map;
 }
@@ -258,6 +265,7 @@ function initMap() {
 
 function addMarkersToMap(data) {
     markersGroup.clearLayers(); // Clear existing markers
+    allMarkers = []; // Reset the allMarkers array
 
     data.forEach(item => {
         if (item['Latitude'] && item['Longitude']) {
@@ -267,12 +275,19 @@ function addMarkersToMap(data) {
                 var popupContent = `<b>${item['School Name']}</b><br>School Board: ${item['Board']}`;
                 var marker = L.marker([lat, lng])
                     .bindPopup(popupContent);
+                
                 markersGroup.addLayer(marker); // Add new marker to the group
+                allMarkers.push({ marker: marker, name: item['School Name'] }); // Store marker with name for filtering
             }
         }
     });
+}
 
-    /*if (markersGroup.getLayers().length > 0) {
-        map.fitBounds(markersGroup.getBounds()); // Adjust view to show all markers
-    }*/
+function filterMap(searchValue) {
+    markersGroup.clearLayers(); // Clear existing markers from the group
+    allMarkers.forEach(function(obj) {
+        if (obj.name.toLowerCase().includes(searchValue.toLowerCase())) {
+            markersGroup.addLayer(obj.marker); // Add marker if it matches the search
+        }
+    });
 }
