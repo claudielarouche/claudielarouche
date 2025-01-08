@@ -1,5 +1,5 @@
 
-console.log('filter map v3');
+console.log('filter map v4');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -286,8 +286,12 @@ function addMarkersToMap(data) {
 function filterMap(searchValue) {
     markersGroup.clearLayers(); // Clear existing markers from the group
 	console.log("here!");
+	console.log("search value" + searchValue);
     allMarkers.forEach(function(obj) {
+	    console.log("obj name" + obj.name);
+	    
         if (obj.name.toLowerCase().includes(searchValue.toLowerCase())) {
+		console.log("match!");
             markersGroup.addLayer(obj.marker); // Add marker if it matches the search
         }
     });
