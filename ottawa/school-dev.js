@@ -1,5 +1,5 @@
 
-console.log('filter map v4');
+console.log('filter map v5');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -164,6 +164,7 @@ function renderTable(data) {
     
     // Add markers to the map based on the data
     addMarkersToMap(filteredData);
+	filterMap();
 }
 
 
@@ -247,10 +248,10 @@ function initMap() {
     markersGroup = L.layerGroup().addTo(map);
 
      // Attach event listener to DataTable's search box
-    $('#dataTable_filter input').on('input', function() {
+  /*  $('#dataTable_filter input').on('input', function() {
         filterMap(this.value);
     });
-
+*/
     return map;
 }
 
@@ -283,14 +284,14 @@ function addMarkersToMap(data) {
     });
 }
 
-function filterMap(searchValue) {
+function filterMap() {
     markersGroup.clearLayers(); // Clear existing markers from the group
 	console.log("here!");
 	console.log("search value" + searchValue);
     allMarkers.forEach(function(obj) {
 	    console.log("obj name" + obj.name);
 	    
-        if (obj.name.toLowerCase().includes(searchValue.toLowerCase())) {
+        if (obj.name.toLowerCase().includes(currentSearchValue.toLowerCase())) {
 		console.log("match!");
             markersGroup.addLayer(obj.marker); // Add marker if it matches the search
         }
