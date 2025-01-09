@@ -1,5 +1,5 @@
 
-console.log('filter map v7');
+console.log('filter map v8');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -248,10 +248,11 @@ function initMap() {
     markersGroup = L.layerGroup().addTo(map);
 
      // Attach event listener to DataTable's search box
-  /*  $('#dataTable_filter input').on('input', function() {
-        filterMap(this.value);
+    $('#dataTable_filter input').on('input', function() {
+	    console.log("listen worked");
+        filterMap();
     });
-*/
+
     return map;
 }
 
