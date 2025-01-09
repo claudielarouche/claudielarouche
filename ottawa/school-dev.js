@@ -1,5 +1,5 @@
 
-console.log('filter map v6');
+console.log('filter map v7');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -285,15 +285,18 @@ function addMarkersToMap(data) {
 }
 
 function filterMap() {
-    markersGroup.clearLayers(); // Clear existing markers from the group
-	console.log("here!");
-	console.log("search value" + currentSearchValue);
-    allMarkers.forEach(function(obj) {
-	    console.log("obj name" + obj.name);
-	    
-        if (obj.name.toLowerCase().includes(currentSearchValue.toLowerCase())) {
-		console.log("match!");
-            markersGroup.addLayer(obj.marker); // Add marker if it matches the search
-        }
-    });
+
+	if (currentSearchValue) {
+		    markersGroup.clearLayers(); // Clear existing markers from the group
+			console.log("here!");
+			console.log("search value" + currentSearchValue);
+		    allMarkers.forEach(function(obj) {
+			    console.log("obj name" + obj.name);
+			    
+		        if (obj.name.toLowerCase().includes(currentSearchValue.toLowerCase())) {
+				console.log("match!");
+		            markersGroup.addLayer(obj.marker); // Add marker if it matches the search
+		        }
+		    });
+  }		
 }
