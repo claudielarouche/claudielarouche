@@ -1,5 +1,5 @@
 
-console.log('filter map v5');
+console.log('filter map v6');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -287,7 +287,7 @@ function addMarkersToMap(data) {
 function filterMap() {
     markersGroup.clearLayers(); // Clear existing markers from the group
 	console.log("here!");
-	console.log("search value" + searchValue);
+	console.log("search value" + currentSearchValue);
     allMarkers.forEach(function(obj) {
 	    console.log("obj name" + obj.name);
 	    
