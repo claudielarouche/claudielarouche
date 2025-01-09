@@ -88,13 +88,13 @@
 	</nav>
 			
 			<h1>List of Places to Swim in Ottawa</h1>
-			<p>PLEASE NOTE THAT THE DATA HERE IS OUTDATED, I'M SUPER SORRY! I RECOMMEND HEADING OVER TO MY MAIN <a href="https://claudielarouche.com/ottawa.html">OTTAWA ACTIVITIES LISTING</a> WHICH IS MORE UP TO DATE. MY APOLOGIES FOR THE INCONVENIENCE. EVENTUALLY, I WILL CONNECT THIS WEB PAGE TO THE SAME DATASET AS THE MAIN ACTIVITIES LISTING ONE, I JUST DIDN'T GET A CHANCE TO DO SO YET :) THANK YOU FOR YOUR UNDERSTANDING!!</p>
+			
 
 			<div class="row">
     <div class="col-md-6">
         <div class="mt-3">
             <a href="#csvData" class="btn btn-primary">
-                Go to pool listing
+                Go to listing
             </a>
         </div>
         <div class="mt-3">
@@ -102,42 +102,49 @@
                 Go to filters
             </a>
         </div>
-        <div class="mt-3">
-            <a href="#" class="btn btn-primary" id="showToday" >
-                Show me today's swim options
-            </a>
-        </div>
+
+	    <div class="mt-3">
+	            <a href="#" class="btn btn-primary" id="showToday" >
+	                Show me today's activities
+	            </a>
+	    </div>
+	    
 	    <div class="mt-3">
             <a href="#newsletter" class="btn btn-warning" >
                 Sign-up for updates
             </a>
+		    
+        </div>
+	    
+	    <div class="mt-3">
+            <a href="https://forms.gle/7YHFbimGH4p5imQD8" class="btn btn-primary" target="_blank">
+                Contact me
+            </a>
         </div>
 	     </div>
 				<div class="col-md-6">
-        <i>If you see me at the pool, please say hi!</i>
+        <i>If you see me at an arena, please say hi!</i>
         <img src="assets/img/claudie.png" alt="Claudie's Picture" class="img-fluid">
     </div>
 				 </div>
-			
+
 			<p>This tool is dedicated to <a href="https://davidsampson.ca/wp/" target="_blank">Dave Sampson</a> (<a href="https://www.linkedin.com/in/davidrsampson" target="_blank">LinkedIn</a>) who suggested it to me at a NAC concert where we bumped into each other 🙂</p>
+			
 			<p>If you see incorrect data below, please let me know at claudielarouche@gmail.com!</p>
 
 			
-			<h2>Roadmap</h2>
-			<p>Scroll to the bottom of the screen or <a href="#comingSoon">click this link to see what's coming soon!</a></p>
 			
 			
 			
 			<h2 id="filter">Filters</h2>
-     One day you will be able to filter the table below :) In the meantime, you can filter using the search box
-		<!--	<form class="form">
+			<form class="form">
 
-				<div class="form-group row">
+				<!--<div class="form-group row">
 					<label for="selectedDate" class="col-sm-2 col-form-label">Select Date: </label>
 					<div class="col-sm-10">
 						<input type="date" id="selectedDate" class="form-control col-sm-2">
 					</div>
-				</div>
+				</div>-->
 
 				<div class="form-group row">
 					<label for="selectedArea" class="col-sm-2 col-form-label">Select Area(s):</label>
@@ -158,6 +165,85 @@
 				</div>
 
 				<div class="form-group row">
+					<label for="selectedDay" class="col-sm-2 col-form-label">Select Days of the week:</label>
+					<div class="col-sm-10">
+						<!--<button type="button" id="selectAllCategoryButton" class="btn btn-primary">Select All</button>
+        					<button type="button" id="unselectAllCategoryButton" class="btn btn-secondary">Unselect All</button>-->
+						
+						<div class="checkbox">
+					            <label><input type="checkbox" id="mondayCheckbox" class="dayCheckbox" value="Monday" checked=""> Monday</label>
+					        </div>
+						<div class="checkbox">
+					            <label><input type="checkbox" id="tuesdayCheckbox" class="dayCheckbox" value="Tuesday" checked=""> Tuesday</label>
+					        </div>
+					        <div class="checkbox">
+					            <label><input type="checkbox" id="wednesdayCheckbox" class="dayCheckbox" value="Wednesday" checked=""> Wednesday</label>
+					        </div>
+					        <div class="checkbox">
+					            <label><input type="checkbox" id="thursdayCheckbox" class="dayCheckbox" value="Thursday" checked=""> Thursday</label>
+					        </div>
+					        <div class="checkbox">
+					            <label><input type="checkbox" id="fridayCheckbox" class="dayCheckbox" value="Friday" checked=""> Friday</label>
+					        </div>
+					        <div class="checkbox">
+					            <label><input type="checkbox" id="saturdayCheckbox" class="dayCheckbox" value="Saturday" checked=""> Saturday</label>
+					        </div>
+					        <div class="checkbox">
+					            <label><input type="checkbox" id="sundayCheckbox" class="dayCheckbox" value="Sunday" checked=""> Sunday</label>
+					        </div>
+						
+					</div>
+					
+				</div>
+
+				
+				<div class="form-group row">
+					<label for="selectedAge" class="col-sm-2 col-form-label">Select Age Group: </label>
+					<div class="col-sm-10">
+						<!--<button type="button" id="selectAllCategoryButton" class="btn btn-primary">Select All</button>
+        					<button type="button" id="unselectAllCategoryButton" class="btn btn-secondary">Unselect All</button>-->
+						
+						<div class="checkbox">
+					            <label><input type="checkbox" id="preschoolCheckbox" class="ageCheckbox" value="Preschool" checked=""  > Preschool (0 to 5)</label>
+					        </div>
+						<div class="checkbox">
+					            <label><input type="checkbox" id="childrenCheckbox" class="ageCheckbox" value="Children" checked=""  > Children (6 to 12)</label>
+					        </div>
+					        
+					        <div class="checkbox">
+					            <label><input type="checkbox" id="youthCheckbox" class="ageCheckbox" value="Youth" checked="" > Youth (13 to 17)</label>
+					        </div>
+						<div class="checkbox">
+					            <label><input type="checkbox" id="adultCheckbox" class="ageCheckbox" value="Adult" checked=""  > Adult</label>
+					        </div>
+					        
+					        <div class="checkbox">
+					            <label><input type="checkbox" id="50Checkbox" class="ageCheckbox" value="50+" checked="" > 50+</label>
+					        </div>
+
+						
+					</div>
+					
+				</div>
+				<div class="form-group row">
+					<label for="selectedTime" class="col-sm-2 col-form-label">Select Time of Day: </label>
+					<div class="col-sm-10">
+						<div class="checkbox">
+							<label><input type="checkbox" id="amCheckbox" class="timeCheckbox" value="AM" checked=""> AM</label>
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" id="pmCheckbox" class="timeCheckbox" value="PM" checked=""> PM</label>
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" id="eveningCheckbox" class="timeCheckbox" value="Evening" checked=""> Evening</label>
+						</div>
+
+					</div>
+			
+					
+				</div>
+
+				<!--<div class="form-group row">
 					<label for="selectedAgeGroup" class="col-sm-2 col-form-label">Select Age Group:</label>
 					<div class="col-sm-3">
 						<select id="selectedAgeGroup" class="form-control">
@@ -196,8 +282,20 @@
 						</div>
 					</div>
 				</div>
+
+				<div class="form-group row">
+					<label for="selectedArea" class="col-sm-2 col-form-label">Other options</label>
+					<div class="col-sm-10">
+						<div class="checkbox">
+							<label><input type="checkbox" id="babyScaleCheckbox" class="otherOptionsCheckbox" value="babyScale" disabled> Show only playgroups with a baby scale (Coming soon!) </label>
+						</div>
+				
+						
+					</div>
+				</div>-->
+				
 			</form>
-			
+
 			<div class="mt-3">
 				<button class="btn btn-secondary" onclick="clearAllFilters()">
 					Reset filters to default
@@ -205,12 +303,20 @@
 			</div>
 			<div class="mt-3">
 				<a href="#csvData" class="btn btn-primary">
-					 View playgroups
+					 View activities
 				</a>
-			</div>-->
+			</div>
+
+			<div class="alert alert-info mt-3" role="alert">
+				<span class="material-icons" style="vertical-align: middle;">lightbulb</span>
+				Data listed was accurate at the time of publication and is subject to change. Before attending a drop-in activity please confirm schedules, reservation processes, fees, and other details, by <strong>visiting the facility page</strong>. claudielarouche.com is not affiliated with the City of Ottawa in any way. All trademarks and copyrights are property of their respective owners.
+			</div>
 
 			
 			<h2>Swimming options</h2>
+			<p>Data last updated: 2025-01-07 </p>
+			<p>You can request an update at claudielarouche@gmail.com</p>
+			<p>Please take the "Registration Required" column with a grain of salt, that information is coded differently on different pages and my website does not always capture the information correctly. </p>
 			
 			<div id="csvData"></div>
 			
@@ -220,26 +326,12 @@
 			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfWDjzio_bwHSKPeTHnNq5Yks1cDIo4cN_nlP6Ir-lzz4AqqQ/viewform?embedded=true" width="640" height="471" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 			
 		
-			<h2 id="comingSoon">Coming soon!</h2>
-			<ul>
 			
-							
-			<li>Add a sign-up box for people to leave their email address</li>
-			<li>Add filters</li>
-			<li>... and maybe more! :) </li>
-			</ul>
-			
-			<h2>Completed Tasks</h2>
-			<p>Here are a few of the things I did, in no particular order: </p>
-			<ul>
-			<li>Create a basic swim listing web page with one pool (Minium Viable Product)</li>
-			<li>Add data from all the city pools</li>
-			</ul>
 
 			
 			<div id="footer">
     
-    <footer class="text-center py-4 ">© Claudie Larouche 2024. Thanks to <a href="https://chat.openai.com/" target="_blank">ChatGPT</a> for the help building this website.</footer>
+    <footer class="text-center py-4 ">© Claudie Larouche 2025. Thanks to <a href="https://chat.openai.com/" target="_blank">ChatGPT</a> for the help building this website.</footer>
     <a href="#" id="backToTop">Back to Top</a>
 </div>
 		</div>
