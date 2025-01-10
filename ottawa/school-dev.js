@@ -1,5 +1,5 @@
 
-console.log('filter map grok version v2');
+console.log('filter map grok version v3');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -41,6 +41,34 @@ window.onload = function() {
 			document.getElementById('csvData').innerHTML = 'Error loading data.';
 		}
 	});
+
+	$(document).ready(function() {
+        var table = $('#dataTable').DataTable({
+            // ... DataTable configuration ...
+        });
+
+        console.log("DataTable initialized.");
+
+        // Here's the change:
+        $('#dataTable_filter input[type="search"]').on('keyup', function() {
+            console.log("Keyup event triggered on search input.");
+            var searchValue = this.value;
+            console.log("Current Search Value:", searchValue);
+
+            // Filter the table
+            table.search(searchValue).draw();
+            
+            // Filter the map with the same search value
+            filterMap(searchValue);
+        });
+
+        // Additional listener for programmatic search changes
+        table.on('search.dt', function() {
+            var searchValue = table.search();
+            console.log("Programmatic search change detected:", searchValue);
+            filterMap(searchValue);
+        });
+    });
 };
 
 function renderTable(data) {
@@ -275,6 +303,7 @@ function addMarkersToMap(data) {
 }
 
 function filterMap(searchValue) {
+    console.log("Filtering map with:", searchValue);
     markersGroup.clearLayers(); // Clear existing markers
     if (searchValue) {
         searchValue = searchValue.toLowerCase();
@@ -291,27 +320,3 @@ function filterMap(searchValue) {
         });
     }
 }
-
-$(document).ready(function() {
-    var table = $('#dataTable').DataTable();
-    console.log("DataTable initialized.");
-
-    // Use keyup for better performance with typing, but you can use 'input' if needed for real-time response
-    $('#dataTable_filter input').on('keyup', function() {
-        console.log("Keyup event triggered.");
-        var searchValue = this.value;
-        console.log("Current Search Value:", searchValue);
-        
-        // Filter the table
-        table.search(searchValue).draw();
-        
-        // Filter the map with the same search value
-        filterMap(searchValue);
-    });
-
-    // Additional listener for programmatic search changes
-    table.on('search.dt', function() {
-        var searchValue = table.search();
-        filterMap(searchValue);
-    });
-});
