@@ -1,5 +1,5 @@
 
-console.log('filter map v13');
+console.log('filter map grok version');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -276,19 +276,16 @@ function addMarkersToMap(data) {
 
 function filterMap(searchValue) {
     markersGroup.clearLayers(); // Clear existing markers
-    currentSearchValue = $('#dataTable_filter input').val();
-    console.log("Filtering map with current search:", currentSearchValue);
-	console.log("Filtering map with search:", searchValue);
-
-    if (currentSearchValue) {
+    if (searchValue) {
+        searchValue = searchValue.toLowerCase();
         allMarkers.forEach(function(obj) {
-            if (obj.name.toLowerCase().includes(currentSearchValue.toLowerCase())) {
+            if (obj.name.toLowerCase().includes(searchValue)) {
                 markersGroup.addLayer(obj.marker);
                 console.log("Added marker for:", obj.name);
             }
         });
     } else {
-        // Optionally add back all markers if no search term is provided
+        // If the search is cleared or empty, add all markers back
         allMarkers.forEach(function(obj) {
             markersGroup.addLayer(obj.marker);
         });
@@ -298,12 +295,24 @@ function filterMap(searchValue) {
 $(document).ready(function() {
     console.log("Document is ready.");
 
-    var table = $('#myDataTable').DataTable();
+    var table = $('#dataTable').DataTable(); // Correct the ID here if it's 'dataTable'
     console.log("DataTable initialized.");
 
     $('#dataTable_filter input').on('input', function() {
         console.log("Input event triggered.");
-        console.log("Current Search Value:", this.value);
-        filterMap(this.value);
+        var searchValue = this.value;
+        console.log("Current Search Value:", searchValue);
+        
+        // This will filter the table
+        table.search(searchValue).draw();
+        
+        // Now filter the map with the same search value
+        filterMap(searchValue);
+    });
+
+    // Optionally, if you want to handle the case where the table is sorted or filtered by other means:
+    table.on('search.dt', function() {
+        var searchValue = table.search();
+        filterMap(searchValue);
     });
 });
