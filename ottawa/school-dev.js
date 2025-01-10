@@ -1,5 +1,5 @@
 
-console.log('filter map v8');
+console.log('filter map v9');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -248,10 +248,10 @@ function initMap() {
     markersGroup = L.layerGroup().addTo(map);
 
      // Attach event listener to DataTable's search box
-    $('#dataTable_filter input').on('input', function() {
+ /*   $('#dataTable_filter input').on('input', function() {
 	    console.log("listen worked");
         filterMap();
-    });
+    });*/
 
     return map;
 }
@@ -301,3 +301,13 @@ function filterMap() {
 		    });
   }		
 }
+
+$(document).ready(function() {
+    var table = $('#myDataTable').DataTable(); // Assuming your DataTable is initialized here
+
+    // Now bind the event
+    $('#dataTable_filter input').on('input', function() {
+        console.log("Search input changed.");
+        filterMap(this.value); // Make sure to pass the current input value to filterMap
+    });
+});
