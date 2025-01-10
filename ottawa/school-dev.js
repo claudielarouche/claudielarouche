@@ -1,5 +1,5 @@
 
-console.log('filter map v12');
+console.log('filter map v13');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -276,12 +276,13 @@ function addMarkersToMap(data) {
 
 function filterMap(searchValue) {
     markersGroup.clearLayers(); // Clear existing markers
+    currentSearchValue = $('#dataTable_filter input').val();
     console.log("Filtering map with current search:", currentSearchValue);
 	console.log("Filtering map with search:", searchValue);
 
-    if (searchValue) {
+    if (currentSearchValue) {
         allMarkers.forEach(function(obj) {
-            if (obj.name.toLowerCase().includes(searchValue.toLowerCase())) {
+            if (obj.name.toLowerCase().includes(currentSearchValue.toLowerCase())) {
                 markersGroup.addLayer(obj.marker);
                 console.log("Added marker for:", obj.name);
             }
