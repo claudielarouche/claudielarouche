@@ -1,5 +1,5 @@
 
-console.log('filter map grok version');
+console.log('filter map grok version v2');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -164,7 +164,7 @@ function renderTable(data) {
     
     // Add markers to the map based on the data
     addMarkersToMap(filteredData);
-	filterMap();
+//	filterMap();
 }
 
 
@@ -278,39 +278,38 @@ function filterMap(searchValue) {
     markersGroup.clearLayers(); // Clear existing markers
     if (searchValue) {
         searchValue = searchValue.toLowerCase();
-        allMarkers.forEach(function(obj) {
-            if (obj.name.toLowerCase().includes(searchValue)) {
-                markersGroup.addLayer(obj.marker);
-                console.log("Added marker for:", obj.name);
+        allMarkers.forEach(function(markerObj) {
+            if (markerObj.name.toLowerCase().includes(searchValue)) {
+                markersGroup.addLayer(markerObj.marker);
+                console.log("Added marker for:", markerObj.name);
             }
         });
     } else {
-        // If the search is cleared or empty, add all markers back
-        allMarkers.forEach(function(obj) {
-            markersGroup.addLayer(obj.marker);
+        // Add all markers if search is empty
+        allMarkers.forEach(function(markerObj) {
+            markersGroup.addLayer(markerObj.marker);
         });
     }
 }
 
 $(document).ready(function() {
-    console.log("Document is ready.");
-
-    var table = $('#dataTable').DataTable(); // Correct the ID here if it's 'dataTable'
+    var table = $('#dataTable').DataTable();
     console.log("DataTable initialized.");
 
-    $('#dataTable_filter input').on('input', function() {
-        console.log("Input event triggered.");
+    // Use keyup for better performance with typing, but you can use 'input' if needed for real-time response
+    $('#dataTable_filter input').on('keyup', function() {
+        console.log("Keyup event triggered.");
         var searchValue = this.value;
         console.log("Current Search Value:", searchValue);
         
-        // This will filter the table
+        // Filter the table
         table.search(searchValue).draw();
         
-        // Now filter the map with the same search value
+        // Filter the map with the same search value
         filterMap(searchValue);
     });
 
-    // Optionally, if you want to handle the case where the table is sorted or filtered by other means:
+    // Additional listener for programmatic search changes
     table.on('search.dt', function() {
         var searchValue = table.search();
         filterMap(searchValue);
