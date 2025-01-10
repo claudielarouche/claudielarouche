@@ -1,5 +1,5 @@
 
-console.log('filter map v9');
+console.log('filter map v10');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -303,11 +303,14 @@ function filterMap() {
 }
 
 $(document).ready(function() {
-    var table = $('#myDataTable').DataTable(); // Assuming your DataTable is initialized here
+    console.log("Document is ready.");
 
-    // Now bind the event
+    var table = $('#myDataTable').DataTable();
+    console.log("DataTable initialized.");
+
     $('#dataTable_filter input').on('input', function() {
-        console.log("Search input changed.");
-        filterMap(this.value); // Make sure to pass the current input value to filterMap
+        console.log("Input event triggered.");
+        console.log("Current Search Value:", this.value);
+        filterMap(this.value);
     });
 });
