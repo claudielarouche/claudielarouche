@@ -1,5 +1,5 @@
 
-console.log('filter map v10');
+console.log('filter map v11');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -247,23 +247,12 @@ function initMap() {
 
     markersGroup = L.layerGroup().addTo(map);
 
-     // Attach event listener to DataTable's search box
- /*   $('#dataTable_filter input').on('input', function() {
-	    console.log("listen worked");
-        filterMap();
-    });*/
+  
 
     return map;
 }
 
-/*function addMarkersToMap(map, data) {
-    data.forEach(item => {
-        if (item.Latitude && item.Longitude) {
-            L.marker([item.Latitude, item.Longitude]).addTo(map)
-                .bindPopup(item['School Name']);
-        }
-    });
-}*/
+
 
 function addMarkersToMap(data) {
     markersGroup.clearLayers(); // Clear existing markers
@@ -285,21 +274,23 @@ function addMarkersToMap(data) {
     });
 }
 
-function filterMap() {
+function filterMap(currentSearchValue) {
+    markersGroup.clearLayers(); // Clear existing markers
+    console.log("Filtering map with:", currentSearchValue);
 
-	if (currentSearchValue) {
-		    markersGroup.clearLayers(); // Clear existing markers from the group
-			console.log("here!");
-			console.log("search value" + currentSearchValue);
-		    allMarkers.forEach(function(obj) {
-			    console.log("obj name" + obj.name);
-			    
-		        if (obj.name.toLowerCase().includes(currentSearchValue.toLowerCase())) {
-				console.log("match!");
-		            markersGroup.addLayer(obj.marker); // Add marker if it matches the search
-		        }
-		    });
-  }		
+    if (currentSearchValue) {
+        allMarkers.forEach(function(obj) {
+            if (obj.name.toLowerCase().includes(currentSearchValue.toLowerCase())) {
+                markersGroup.addLayer(obj.marker);
+                console.log("Added marker for:", obj.name);
+            }
+        });
+    } else {
+        // Optionally add back all markers if no search term is provided
+        allMarkers.forEach(function(obj) {
+            markersGroup.addLayer(obj.marker);
+        });
+    }
 }
 
 $(document).ready(function() {
