@@ -1,5 +1,5 @@
 
-console.log('filter map v11');
+console.log('filter map v12');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -274,13 +274,14 @@ function addMarkersToMap(data) {
     });
 }
 
-function filterMap(currentSearchValue) {
+function filterMap(searchValue) {
     markersGroup.clearLayers(); // Clear existing markers
-    console.log("Filtering map with:", currentSearchValue);
+    console.log("Filtering map with current search:", currentSearchValue);
+	console.log("Filtering map with search:", searchValue);
 
-    if (currentSearchValue) {
+    if (searchValue) {
         allMarkers.forEach(function(obj) {
-            if (obj.name.toLowerCase().includes(currentSearchValue.toLowerCase())) {
+            if (obj.name.toLowerCase().includes(searchValue.toLowerCase())) {
                 markersGroup.addLayer(obj.marker);
                 console.log("Added marker for:", obj.name);
             }
