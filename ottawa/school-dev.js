@@ -46,7 +46,7 @@ window.onload = function() {
 function renderTable(data) {
     // Ensure data is an array
     if (!Array.isArray(data)) {
-        .error('Error loading data: Data is not an array.');
+        console.error('Error loading data: Data is not an array.');
         document.getElementById('csvData').innerHTML = 'Error loading data.';
         return;
     }
