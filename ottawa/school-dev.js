@@ -1,5 +1,5 @@
 
-console.log('filter map gemini v2');
+console.log('filter map redo grok v1');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -44,8 +44,8 @@ window.onload = function() {
 
 	
 
-       
-    };
+        
+    });
 };
 
 function renderTable(data) {
@@ -166,18 +166,19 @@ function renderTable(data) {
         $('#dataTable').DataTable().order(sortingState.order).draw();
     }
 
-	 // Here's the change:
-       $('#dataTable_filter input[type="search"]').on('keyup', function() {
-	  console.log("Keyup event triggered on search input.");
-	  var searchValue = this.value;
-	  console.log("Current Search Value:", searchValue);
-	
-	  // Filter the table
-	  table.search(searchValue).draw();
-	  
-	  // Filter the map with the same search value
-	  filterMap(searchValue);
-	});
+	// Here's the change:
+        $('#dataTable_filter input[type="search"]').on('keyup', function() {
+            console.log("Keyup event triggered on search input.");
+            var searchValue = this.value;
+            console.log("Current Search Value:", searchValue);
+
+            // Filter the table
+            table.search(searchValue).draw();
+            
+            // Filter the map with the same search value
+            filterMap(searchValue);
+        });
+
         // Additional listener for programmatic search changes
         table.on('search.dt', function() {
             var searchValue = table.search();
@@ -185,10 +186,9 @@ function renderTable(data) {
             filterMap(searchValue);
         });
     
-    
     // Add markers to the map based on the data
     addMarkersToMap(filteredData);
-    filterMap();
+	filterMap();
 }
 
 
