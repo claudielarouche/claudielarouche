@@ -1,5 +1,5 @@
 
-console.log('filter map grok version v3');
+console.log('filter map gemini');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -42,32 +42,9 @@ window.onload = function() {
 		}
 	});
 
-	$(document).ready(function() {
-        var table = $('#dataTable').DataTable({
-            // ... DataTable configuration ...
-        });
+	
 
-        console.log("DataTable initialized.");
-
-        // Here's the change:
-        $('#dataTable_filter input[type="search"]').on('keyup', function() {
-            console.log("Keyup event triggered on search input.");
-            var searchValue = this.value;
-            console.log("Current Search Value:", searchValue);
-
-            // Filter the table
-            table.search(searchValue).draw();
-            
-            // Filter the map with the same search value
-            filterMap(searchValue);
-        });
-
-        // Additional listener for programmatic search changes
-        table.on('search.dt', function() {
-            var searchValue = table.search();
-            console.log("Programmatic search change detected:", searchValue);
-            filterMap(searchValue);
-        });
+       
     });
 };
 
@@ -188,11 +165,30 @@ function renderTable(data) {
     if (sortingState) {
         $('#dataTable').DataTable().order(sortingState.order).draw();
     }
+
+	 // Here's the change:
+       $('#dataTable_filter input[type="search"]').on('keyup', function() {
+	  console.log("Keyup event triggered on search input.");
+	  var searchValue = this.value;
+	  console.log("Current Search Value:", searchValue);
+	
+	  // Filter the table
+	  table.search(searchValue).draw();
+	  
+	  // Filter the map with the same search value
+	  filterMap(searchValue);
+	});
+        // Additional listener for programmatic search changes
+        table.on('search.dt', function() {
+            var searchValue = table.search();
+            console.log("Programmatic search change detected:", searchValue);
+            filterMap(searchValue);
+        });
     
     
     // Add markers to the map based on the data
     addMarkersToMap(filteredData);
-//	filterMap();
+    filterMap();
 }
 
 
