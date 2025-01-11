@@ -1,10 +1,12 @@
 
-console.log('map v13');
+console.log('filter map works now');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
 var map; // Global map variable
 var markersGroup;
+// Global variable to hold all markers
+var allMarkers = [];
 
 function getQueryParam(key) {
     const params = new URLSearchParams(window.location.search);
@@ -158,10 +160,14 @@ function renderTable(data) {
     if (sortingState) {
         $('#dataTable').DataTable().order(sortingState.order).draw();
     }
-    
+
+    $('#dataTable_filter input').on('input', function() {        
+        filterMap();
+    });
     
     // Add markers to the map based on the data
     addMarkersToMap(filteredData);
+//	filterMap();
 }
 
 
@@ -236,7 +242,7 @@ document.querySelectorAll('.boardCheckbox').forEach(function (checkbox) {
 
 
 function initMap() {
-    var map = L.map('map').setView([45.4215, -75.6972], 12); // Center on Ottawa
+    var map = L.map('map').setView([45.4215, -75.6972], 12);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -244,20 +250,16 @@ function initMap() {
 
     markersGroup = L.layerGroup().addTo(map);
 
+  
+
     return map;
 }
 
-/*function addMarkersToMap(map, data) {
-    data.forEach(item => {
-        if (item.Latitude && item.Longitude) {
-            L.marker([item.Latitude, item.Longitude]).addTo(map)
-                .bindPopup(item['School Name']);
-        }
-    });
-}*/
+
 
 function addMarkersToMap(data) {
     markersGroup.clearLayers(); // Clear existing markers
+    allMarkers = []; // Reset the allMarkers array
 
     data.forEach(item => {
         if (item['Latitude'] && item['Longitude']) {
@@ -267,13 +269,28 @@ function addMarkersToMap(data) {
                 var popupContent = `<b>${item['School Name']}</b><br>School Board: ${item['Board']}`;
                 var marker = L.marker([lat, lng])
                     .bindPopup(popupContent);
+                
                 markersGroup.addLayer(marker); // Add new marker to the group
+                allMarkers.push({ marker: marker, name: item['School Name'] }); // Store marker with name for filtering
             }
         }
     });
-
-    /*if (markersGroup.getLayers().length > 0) {
-        map.fitBounds(markersGroup.getBounds()); // Adjust view to show all markers
-    }*/
 }
 
+function filterMap() {
+    markersGroup.clearLayers(); // Clear existing markers
+    currentSearchValue = $('#dataTable_filter input').val();
+
+    if (currentSearchValue) {
+        allMarkers.forEach(function(obj) {
+            if (obj.name.toLowerCase().includes(currentSearchValue.toLowerCase())) {
+                markersGroup.addLayer(obj.marker);
+            }
+        });
+    } else {
+        // Optionally add back all markers if no search term is provided
+        allMarkers.forEach(function(obj) {
+            markersGroup.addLayer(obj.marker);
+        });
+    }
+}
