@@ -1,5 +1,5 @@
 
-console.log('filter map redo grok v1');
+console.log('filter map go back in time');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -41,11 +41,6 @@ window.onload = function() {
 			document.getElementById('csvData').innerHTML = 'Error loading data.';
 		}
 	});
-
-	
-
-        
-    });
 };
 
 function renderTable(data) {
@@ -166,25 +161,11 @@ function renderTable(data) {
         $('#dataTable').DataTable().order(sortingState.order).draw();
     }
 
-	// Here's the change:
-        $('#dataTable_filter input[type="search"]').on('keyup', function() {
-            console.log("Keyup event triggered on search input.");
-            var searchValue = this.value;
-            console.log("Current Search Value:", searchValue);
-
-            // Filter the table
-            table.search(searchValue).draw();
-            
-            // Filter the map with the same search value
-            filterMap(searchValue);
-        });
-
-        // Additional listener for programmatic search changes
-        table.on('search.dt', function() {
-            var searchValue = table.search();
-            console.log("Programmatic search change detected:", searchValue);
-            filterMap(searchValue);
-        });
+    $('#dataTable_filter input').on('input', function() {
+        console.log("Input event triggered.");
+        console.log("Current Search Value:", this.value);
+        filterMap(this.value);
+    });
     
     // Add markers to the map based on the data
     addMarkersToMap(filteredData);
@@ -299,20 +280,31 @@ function addMarkersToMap(data) {
 }
 
 function filterMap(searchValue) {
-    console.log("Filtering map with:", searchValue);
     markersGroup.clearLayers(); // Clear existing markers
-    if (searchValue) {
-        searchValue = searchValue.toLowerCase();
-        allMarkers.forEach(function(markerObj) {
-            if (markerObj.name.toLowerCase().includes(searchValue)) {
-                markersGroup.addLayer(markerObj.marker);
-                console.log("Added marker for:", markerObj.name);
+    currentSearchValue = $('#dataTable_filter input').val();
+    console.log("Filtering map with current search:", currentSearchValue);
+	console.log("Filtering map with search:", searchValue);
+
+    if (currentSearchValue) {
+        allMarkers.forEach(function(obj) {
+            if (obj.name.toLowerCase().includes(currentSearchValue.toLowerCase())) {
+                markersGroup.addLayer(obj.marker);
+                console.log("Added marker for:", obj.name);
             }
         });
     } else {
-        // Add all markers if search is empty
-        allMarkers.forEach(function(markerObj) {
-            markersGroup.addLayer(markerObj.marker);
+        // Optionally add back all markers if no search term is provided
+        allMarkers.forEach(function(obj) {
+            markersGroup.addLayer(obj.marker);
         });
     }
 }
+
+/*$(document).ready(function() {
+    console.log("Document is ready.");
+
+    var table = $('#myDataTable').DataTable();
+    console.log("DataTable initialized.");
+
+    
+});*/
