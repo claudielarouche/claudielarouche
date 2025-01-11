@@ -1,5 +1,5 @@
 
-console.log('filter map gemini');
+console.log('filter map gemini v2');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -45,7 +45,7 @@ window.onload = function() {
 	
 
        
-    });
+    };
 };
 
 function renderTable(data) {
