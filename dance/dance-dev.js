@@ -132,7 +132,7 @@ function renderTable(data) {
 		"columnDefs": [
 			    {
 				    //hide lat long columns
-				"targets": [3,4],
+				"targets": [2,3],
 				"visible": false 
 			    }			  
 			],
