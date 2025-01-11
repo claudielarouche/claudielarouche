@@ -10,7 +10,7 @@ function getQueryParam(key) {
 
 window.onload = function() {
 	// Update the path to your CSV file
-	const csvFilePath = 'https://claudielarouche.com/dance/data.csv';
+	const csvFilePath = 'https://claudielarouche.com/dance/data-dev.csv';
 
 	Papa.parse(csvFilePath, {
 		header: true,
@@ -124,6 +124,13 @@ function renderTable(data) {
             "buttons": [
                 'colvis' // Column visibility button
             ],
+		"columnDefs": [
+			    {
+				    //hide lat long columns
+				"targets": [3,4],
+				"visible": false 
+			    }			  
+			],
             "language": {
                 "emptyTable": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>.",
                 "zeroRecords": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>."
