@@ -1,5 +1,5 @@
 
-console.log('filter map go back in time');
+console.log('filter map works!');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -32,12 +32,12 @@ window.onload = function() {
 				originalData = results.data;
 				renderTable(originalData);
 			} else {
-				console.error('Error loading data: Data is not an array.');
+				.error('Error loading data: Data is not an array.');
 				document.getElementById('csvData').innerHTML = 'Error loading data.';
 			}
 		},
 		error: function(error) {
-			console.error('Error fetching or parsing CSV:', error);
+			.error('Error fetching or parsing CSV:', error);
 			document.getElementById('csvData').innerHTML = 'Error loading data.';
 		}
 	});
@@ -46,7 +46,7 @@ window.onload = function() {
 function renderTable(data) {
     // Ensure data is an array
     if (!Array.isArray(data)) {
-        console.error('Error loading data: Data is not an array.');
+        .error('Error loading data: Data is not an array.');
         document.getElementById('csvData').innerHTML = 'Error loading data.';
         return;
     }
@@ -161,15 +161,13 @@ function renderTable(data) {
         $('#dataTable').DataTable().order(sortingState.order).draw();
     }
 
-    $('#dataTable_filter input').on('input', function() {
-        console.log("Input event triggered.");
-        console.log("Current Search Value:", this.value);
-        filterMap(this.value);
+    $('#dataTable_filter input').on('input', function() {        
+        filterMap();
     });
     
     // Add markers to the map based on the data
     addMarkersToMap(filteredData);
-	filterMap();
+//	filterMap();
 }
 
 
@@ -279,17 +277,14 @@ function addMarkersToMap(data) {
     });
 }
 
-function filterMap(searchValue) {
+function filterMap() {
     markersGroup.clearLayers(); // Clear existing markers
     currentSearchValue = $('#dataTable_filter input').val();
-    console.log("Filtering map with current search:", currentSearchValue);
-	console.log("Filtering map with search:", searchValue);
 
     if (currentSearchValue) {
         allMarkers.forEach(function(obj) {
             if (obj.name.toLowerCase().includes(currentSearchValue.toLowerCase())) {
                 markersGroup.addLayer(obj.marker);
-                console.log("Added marker for:", obj.name);
             }
         });
     } else {
@@ -299,12 +294,3 @@ function filterMap(searchValue) {
         });
     }
 }
-
-/*$(document).ready(function() {
-    console.log("Document is ready.");
-
-    var table = $('#myDataTable').DataTable();
-    console.log("DataTable initialized.");
-
-    
-});*/
