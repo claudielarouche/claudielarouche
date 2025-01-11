@@ -1,5 +1,5 @@
 
-console.log('filter map works maybe!');
+console.log('filter map works now?');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -32,12 +32,12 @@ window.onload = function() {
 				originalData = results.data;
 				renderTable(originalData);
 			} else {
-				.error('Error loading data: Data is not an array.');
+				console.error('Error loading data: Data is not an array.');
 				document.getElementById('csvData').innerHTML = 'Error loading data.';
 			}
 		},
 		error: function(error) {
-			.error('Error fetching or parsing CSV:', error);
+			console.error('Error fetching or parsing CSV:', error);
 			document.getElementById('csvData').innerHTML = 'Error loading data.';
 		}
 	});
