@@ -1,5 +1,5 @@
 
-console.log('filter map works!');
+console.log('filter map works maybe!');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
