@@ -182,7 +182,7 @@ function filterData(data, selectedAreas) {
 
 var currentSearchValue = getQueryParam('search'); // Variable to store the current search value
 
-const selectedAreas = [];
+var selectedAreas = [];
 document.querySelectorAll('.areaCheckbox').forEach(function (checkbox) {
     checkbox.addEventListener('change', function () {
 	// Store the current sorting state	
