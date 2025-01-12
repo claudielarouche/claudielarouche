@@ -1,6 +1,6 @@
-console.log('sorting state');
+console.log('sorting state var');
 
-let sortingState;
+var sortingState;
 let originalData = []; // Initialize as an empty array
 var map; // Global map variable
 var markersGroup;
