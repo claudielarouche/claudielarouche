@@ -1,7 +1,7 @@
 console.log('sorting state var');
 
-var sortingState;
-var originalData = []; // Initialize as an empty array
+let sortingState;
+let originalData = []; // Initialize as an empty array
 var map; // Global map variable
 var markersGroup;
 // Global variable to hold all markers
@@ -180,9 +180,9 @@ function filterData(data, selectedAreas) {
     });
 }
 
-var currentSearchValue = getQueryParam('search'); // Variable to store the current search value
+let currentSearchValue = getQueryParam('search'); // Variable to store the current search value
 
-var selectedAreas = [];
+const selectedAreas = [];
 document.querySelectorAll('.areaCheckbox').forEach(function (checkbox) {
     checkbox.addEventListener('change', function () {
 	// Store the current sorting state	
@@ -257,7 +257,7 @@ function addMarkersToMap(data) {
             var lat = parseFloat(item['Latitude']);
             var lng = parseFloat(item['Longitude']);
             if (!isNaN(lat) && !isNaN(lng)) {
-                var popupContent = `<b>${item['School Name']}</b><br>School Board: ${item['Board']}`;
+                var popupContent = `<b>${item['Name']}</b><br>Dance types: ${item['Types of dance offered']}`;
                 var marker = L.marker([lat, lng])
                     .bindPopup(popupContent);
                 
