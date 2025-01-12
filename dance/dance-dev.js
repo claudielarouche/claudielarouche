@@ -180,7 +180,7 @@ function filterData(data, selectedAreas) {
     });
 }
 
-let currentSearchValue = getQueryParam('search'); // Variable to store the current search value
+var currentSearchValue = getQueryParam('search'); // Variable to store the current search value
 
 const selectedAreas = [];
 document.querySelectorAll('.areaCheckbox').forEach(function (checkbox) {
