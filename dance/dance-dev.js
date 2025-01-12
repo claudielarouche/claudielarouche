@@ -1,4 +1,4 @@
-console.log('sorting state var');
+console.log('sorting state returning to let');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
