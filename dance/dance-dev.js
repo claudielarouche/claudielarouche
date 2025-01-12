@@ -187,7 +187,6 @@ document.querySelectorAll('.areaCheckbox').forEach(function (checkbox) {
     checkbox.addEventListener('change', function () {
 	// Store the current sorting state	
 	sortingState = $('#dataTable').DataTable().state();
-	console.log(sortingState); 
         currentSearchValue = $('#dataTable_filter input').val();
 	if (checkbox.checked) {
             if (!selectedAreas.includes(checkbox.value)) {
