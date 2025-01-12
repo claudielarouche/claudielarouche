@@ -1,4 +1,4 @@
-//console.log('add map');
+console.log('sorting state');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -48,6 +48,8 @@ function renderTable(data) {
         return;
     }
 
+    let sortOrderIndex; 
+
     // Check if data is empty
     if (data.length === 0) {
         console.warn('No data available.');
@@ -76,7 +78,7 @@ function renderTable(data) {
 
     // Iterate through each row of data
     filteredData.forEach(row => {
-        const currentDate = row['Date'] ? row['Date'] : '';
+        //const currentDate = row['Date'] ? row['Date'] : '';
 
         // Start building the row with a conditional background color
         tableHtml += '<tr>';
@@ -159,9 +161,9 @@ function renderTable(data) {
 
 function filterData(data, selectedAreas) {
     // If no date, age group, languages, areas, or schedule is selected, return the original data
-    if (selectedAreas.length === 0) {
+   /* if (selectedAreas.length === 0) {
         return data;
-    }
+    }*/
 
     return data.filter(row => {
        
@@ -179,19 +181,6 @@ function filterData(data, selectedAreas) {
 }
 
 let currentSearchValue = getQueryParam('search'); // Variable to store the current search value
-
-function clearAllFilters() {
-   // Store the current sorting state
-    sortingState = $('#dataTable').DataTable().state();
-
-    // Clear the DataTable search box
-    var dataTable = $('#dataTable').DataTable();
-    dataTable.search('').draw();
-	currentSearchValue = "";
-
-    // Render the table with cleared filters
-    renderTable(originalData);
-}
 
 const selectedAreas = [];
 document.querySelectorAll('.areaCheckbox').forEach(function (checkbox) {
