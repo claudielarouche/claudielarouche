@@ -1,7 +1,7 @@
 console.log('sorting state var');
 
 var sortingState;
-let originalData = []; // Initialize as an empty array
+var originalData = []; // Initialize as an empty array
 var map; // Global map variable
 var markersGroup;
 // Global variable to hold all markers
