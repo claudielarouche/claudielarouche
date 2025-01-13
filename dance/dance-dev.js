@@ -1,4 +1,5 @@
-console.log('sorting state returning to let');
+
+console.log('copy school');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -14,8 +15,10 @@ function getQueryParam(key) {
 
 window.onload = function() {
 	initMap();
+	//markersGroup = L.layerGroup().addTo(map); // Initialize once and add to map
+	
 	// Update the path to your CSV file
-	const csvFilePath = 'https://claudielarouche.com/dance/data-dev.csv';
+	const csvFilePath = 'https://claudielarouche.com/dance/data.csv';
 
 	Papa.parse(csvFilePath, {
 		header: true,
@@ -48,7 +51,7 @@ function renderTable(data) {
         return;
     }
 
-    let sortOrderIndex; 
+   let sortOrderIndex; 
 
     // Check if data is empty
     if (data.length === 0) {
@@ -68,24 +71,18 @@ function renderTable(data) {
     });
     tableHtml += '</tr></thead><tbody>';
 
-    const filteredData = filterData(data, selectedAreas);
-
-    if (!Array.isArray(filteredData)) {
-		console.error('Error loading data: Filtered data is not an array.');
-		document.getElementById('csvData').innerHTML = 'Error loading data.';
-		return;
-	}
+    const filteredData = filterData(data, selectedBoards);
 
     // Iterate through each row of data
     filteredData.forEach(row => {
-        //const currentDate = row['Date'] ? row['Date'] : '';
+        const currentDate = row['Date'] ? row['Date'] : '';
 
         // Start building the row with a conditional background color
         tableHtml += '<tr>';
 
-        headers.forEach(header => {
+        headers.forEach((header, index) => {
             // Skip rendering the URL column
-            if (header !== 'URL') {
+            if (header !== 'Website') {
                 switch (header) {
                     case 'Name':
                         // Merge URL with School Name to create a clickable link
@@ -131,13 +128,7 @@ function renderTable(data) {
             "buttons": [
                 'colvis' // Column visibility button
             ],
-		"columnDefs": [
-			    {
-				    //hide lat long columns
-				"targets": [2,3],
-				"visible": false 
-			    }			  
-			],
+	    "order": [0, 'asc'],
             "language": {
                 "emptyTable": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>.",
                 "zeroRecords": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>."
@@ -157,10 +148,15 @@ function renderTable(data) {
     
     // Add markers to the map based on the data
     addMarkersToMap(filteredData);
+//	filterMap();
 }
 
+
 function filterData(data, selectedAreas) {
-  
+    // If no date, age group, languages, areas, or schedule is selected, return the original data
+    if (selectedAreas.length === 0) {
+        return data;
+    }
 
     return data.filter(row => {
        
@@ -177,13 +173,39 @@ function filterData(data, selectedAreas) {
     });
 }
 
+
 let currentSearchValue = getQueryParam('search'); // Variable to store the current search value
+
+function clearAllFilters() {
+    // Store the current sorting state
+    sortingState = $('#dataTable').DataTable().state();
+	
+    // Check all the "Select Board" checkboxes
+   document.querySelectorAll('.areaCheckbox').forEach(checkbox => {
+        checkbox.checked = true;
+		if (!selectedAreas.includes(checkbox.value)) {
+			selectedAreas.push(checkbox.value);
+		}
+    });
+
+
+
+
+    // Clear the DataTable search box
+    var dataTable = $('#dataTable').DataTable();
+    dataTable.search('').draw();
+	currentSearchValue = "";
+
+    // Render the table with cleared filters
+    renderTable(originalData);
+}
 
 const selectedAreas = [];
 document.querySelectorAll('.areaCheckbox').forEach(function (checkbox) {
     checkbox.addEventListener('change', function () {
 	// Store the current sorting state	
 	sortingState = $('#dataTable').DataTable().state();
+	console.log(sortingState); 
         currentSearchValue = $('#dataTable_filter input').val();
 	if (checkbox.checked) {
             if (!selectedAreas.includes(checkbox.value)) {
@@ -206,28 +228,6 @@ document.querySelectorAll('.areaCheckbox').forEach(function (checkbox) {
     }
 });
 
-function clearAllFilters() {
-    // Store the current sorting state
-    sortingState = $('#dataTable').DataTable().state();
-   
-	
-    // Check all the "Select area" checkboxes
-    document.querySelectorAll('.areaCheckbox').forEach(checkbox => {
-        checkbox.checked = true;
-		if (!selectedAreas.includes(checkbox.value)) {
-			selectedAreas.push(checkbox.value);
-		}
-    });	
-   
-    // Clear the DataTable search box
-    var dataTable = $('#dataTable').DataTable();
-    dataTable.search('').draw();
-	currentSearchValue = "";
-
-    // Render the table with cleared filters
-    renderTable(originalData);
-
-}
 
 function initMap() {
     var map = L.map('map').setView([45.4215, -75.6972], 12);
@@ -254,7 +254,7 @@ function addMarkersToMap(data) {
             var lat = parseFloat(item['Latitude']);
             var lng = parseFloat(item['Longitude']);
             if (!isNaN(lat) && !isNaN(lng)) {
-                var popupContent = `<b>${item['Name']}</b><br>Dance types: ${item['Types of dance offered']}`;
+                var popupContent = `<b>${item['School Name']}</b><br>School Board: ${item['Board']}`;
                 var marker = L.marker([lat, lng])
                     .bindPopup(popupContent);
                 
