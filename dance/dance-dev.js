@@ -1,5 +1,5 @@
 
-console.log('copy school');
+console.log('copy school v2');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
