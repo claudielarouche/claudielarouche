@@ -1,5 +1,5 @@
 
-console.log('copy school v3');
+console.log('copy school v4');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -71,7 +71,7 @@ function renderTable(data) {
     });
     tableHtml += '</tr></thead><tbody>';
 
-    const filteredData = filterData(data, selectedBoards);
+    const filteredData = filterData(data, selectedAreas);
 
     // Iterate through each row of data
     filteredData.forEach(row => {
@@ -254,7 +254,7 @@ function addMarkersToMap(data) {
             var lat = parseFloat(item['Latitude']);
             var lng = parseFloat(item['Longitude']);
             if (!isNaN(lat) && !isNaN(lng)) {
-                var popupContent = `<b>${item['School Name']}</b><br>School Board: ${item['Board']}`;
+                var popupContent = `<b>${item['Name']}</b>`;
                 var marker = L.marker([lat, lng])
                     .bindPopup(popupContent);
                 
