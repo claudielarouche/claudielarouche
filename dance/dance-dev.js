@@ -1,5 +1,5 @@
 
-console.log('copy school v5');
+console.log('copy school v6');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -89,7 +89,7 @@ function renderTable(data) {
                         const url = row['URL'] ? row['URL'] : '';
                         const schoolName = row[header] ? row[header] : '';
                         if (url !== '' && schoolName !== '') {
-                            tableHtml += `<td><a href="${url}" target="_blank">${Name}</a></td>`;
+                            tableHtml += `<td><a href="${url}" target="_blank">${schoolName}</a></td>`;
                         } else {
                             tableHtml += `<td>${Name}</td>`;
                         }
