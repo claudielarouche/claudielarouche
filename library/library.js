@@ -1,4 +1,4 @@
-console.log('date filter v8');
+console.log('clear date');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -341,9 +341,9 @@ let currentSearchValue = getQueryParam('search'); // Variable to store the curre
 function clearAllFilters() {
     // Store the current sorting state
     sortingState = $('#dataTable').DataTable().state();
-    document.getElementById('selectedDate').value = '';
     document.getElementById("showTodayOnly").checked = false;
     selectedDate = null;
+    document.getElementById('selectedDate').value = '';
 	
     // Check all the "Select Area" checkboxes
     document.querySelectorAll('.areaCheckbox').forEach(checkbox => {
