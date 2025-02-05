@@ -1,4 +1,4 @@
-console.log('clear date v1');
+console.log('clear date v2');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -153,8 +153,8 @@ function renderTable(data) {
         [0, 'asc'] // Specify the index of the hidden column and the sorting order
     ],
             "language": {
-                "emptyTable": "No data available in table, try <a href='javascript:void(0);' onclick='AllFilters()'>resetting all filters to default</a>.",
-                "zeroRecords": "No data available in table, try <a href='javascript:void(0);' onclick='AllFilters()'>resetting all filters to default</a>."
+                "emptyTable": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>.",
+                "zeroRecords": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>."
             }
         });
     }
