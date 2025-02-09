@@ -1,6 +1,6 @@
 
 
-console.log('report a problem v2');
+console.log('report a problem v3');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -63,7 +63,7 @@ function renderTable(data) {
             tableHtml += `<th>${header}</th>`;
         }
     });
-    tableHtml += '</tr></thead><tbody>';
+    tableHtml += '<th>Actions</th></tr></thead><tbody>';
 
     const filteredData = filterData(data, selectedAreas, selectedCategory, selectedDay, selectedAge, selectedTime);
 
