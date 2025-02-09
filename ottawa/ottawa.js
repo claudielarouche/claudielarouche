@@ -1,5 +1,5 @@
 
-console.log('time of day filter 3');
+console.log('report a problem v1');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -62,7 +62,7 @@ function renderTable(data) {
             tableHtml += `<th>${header}</th>`;
         }
     });
-    tableHtml += '</tr></thead><tbody>';
+    tableHtml += '<th>Actions</th></tr></thead><tbody>';
 
     const filteredData = filterData(data, selectedAreas, selectedCategory, selectedDay, selectedAge, selectedTime);
 
@@ -122,6 +122,9 @@ function renderTable(data) {
                 }
             }
         });
+
+	tableHtml += `<td><a href="https://docs.google.com/forms/d/e/1FAIpQLScTQ6U_lnHo0kr5rGo3zSjYQwsGG5PZIfL5Eil8iVQU9UWTmg/viewform?usp=sf_link&entry.658764103=${encodeURIComponent('Ottawa Drop-Ins: ' + row['Day'] + ', ' + row['Time'] + ', ' + row['Facility Name'] + ', ' + row['Address'] + ', ' + row['Activity Type'] + ', ' + row['Registration Required'] + ', ' + row['Area'] + ', ' + row['Category'] + ', ' + row['Age'] + ', ' + row['Time of day'])}" target="_blank">Report a data issue</a></td>`;
+
 
         tableHtml += '</tr>';
     });
