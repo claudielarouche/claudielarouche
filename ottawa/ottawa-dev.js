@@ -1,6 +1,6 @@
 
 
-console.log('report a problem v1');
+console.log('report a problem v2');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -124,7 +124,9 @@ function renderTable(data) {
             }
         });
 
-	tableHtml += `<td><a href="https://docs.google.com/forms/d/e/1FAIpQLScAtAvU5WfcL2Jkk3trRwLDq4j_dW0nzcJflcHrtdbyzOaQ3w/viewform?usp=sf_link&entry.980923575=${encodeURIComponent(row['Day'])}" target="_blank">Report a data issue</a></td>`;
+	//tableHtml += `<td><a href="https://docs.google.com/forms/d/e/1FAIpQLScAtAvU5WfcL2Jkk3trRwLDq4j_dW0nzcJflcHrtdbyzOaQ3w/viewform?usp=sf_link&entry.980923575=${encodeURIComponent(row['Day'])}" target="_blank">Report a data issue</a></td>`;
+        tableHtml += `<td><a href="https://docs.google.com/forms/d/e/1FAIpQLScAtAvU5WfcL2Jkk3trRwLDq4j_dW0nzcJflcHrtdbyzOaQ3w/viewform?usp=sf_link&entry.980923575=${encodeURIComponent(row['Day'] + ' ' + row['Time'])}" target="_blank">Report a data issue</a></td>`;
+
 
         tableHtml += '</tr>';
     });
