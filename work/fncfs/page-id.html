@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Identification Tool</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .container {
+            margin-top: 20px;
+        }
+        .input-group-text {
+            min-width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Page Identification Tool</h1>
+        <p>Please use the buttons below or hit the letters A for Automation, D for DINE, R for RTL and M for Manual. 
+        Every time you press a button, the tool will take the "current page" number from the input box and place it in the correct location in the text below.
+        The text can be edited as needed. For this tool to work, please do not remove the text Automation, DINE, RTL, Manual from the final input box below.</p>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Current Page</span>
+            </div>
+            <input type="number" id="pageNumber" class="form-control" value="1">
+        </div>
+
+        <div class="btn-group mb-3" role="group" aria-label="Page Buttons">
+            <button type="button" class="btn btn-primary" onclick="addToText('Automation')">A - Automation</button>
+            <button type="button" class="btn btn-secondary" onclick="addToText('DINE')">D - DINE</button>
+            <button type="button" class="btn btn-success" onclick="addToText('RTL')">R - RTL</button>
+            <button type="button" class="btn btn-danger" onclick="addToText('Manual')">M - Manual</button>
+        </div>
+
+        <textarea class="form-control" id="finalText" rows="8">Automation: 
+DINE: 
+RTL: 
+Manual: 
+</textarea>
+    </div>
+
+    <script>
+        document.body.addEventListener('keydown', function(event) {
+            const keyName = event.key.toUpperCase();
+            if (keyName === 'A' || keyName === 'D' || keyName === 'R' || keyName === 'M') {
+                const buttonMap = {
+                    'A': 'Automation',
+                    'D': 'DINE',
+                    'R': 'RTL',
+                    'M': 'Manual'
+                };
+                addToText(buttonMap[keyName]);
+            }
+        });
+
+        function addToText(category) {
+            const pageInput = document.getElementById('pageNumber');
+            let pageNumber = parseInt(pageInput.value);
+            const finalText = document.getElementById('finalText');
+            const lines = finalText.value.split('\n');
+            const updatedLines = lines.map(line => {
+                if (line.startsWith(category + ':')) {
+                    return line + pageNumber + ', ';
+                } else {
+                    return line;
+                }
+            });
+            finalText.value = updatedLines.join('\n');
+            pageInput.value = pageNumber + 1;
+        }
+    </script>
+</body>
+</html>
