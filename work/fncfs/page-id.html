@@ -17,7 +17,7 @@
 <body>
     <div class="container">
         <h1>Page Identification Tool</h1>
-        <p>Please use the buttons below or hit the letters A for Automation, D for DINE, R for RTL and M for Manual. 
+        <p>Please use the buttons below or hit the letters A for Automation, D for DINE, R for RTL, and M for Manual. 
         Every time you press a button, the tool will take the "current page" number from the input box and place it in the correct location in the text below.
         The text can be edited as needed. For this tool to work, please do not remove the text Automation, DINE, RTL, Manual from the final input box below.</p>
 
@@ -40,6 +40,10 @@ DINE:
 RTL: 
 Manual: 
 </textarea>
+
+        <button class="btn btn-info mt-3" onclick="createFinalRecord()">Create Final Record</button>
+        <p id="recordDisplay"></p>
+        <button class="btn btn-warning mt-2" onclick="startOver()">Start Over</button>
     </div>
 
     <script>
@@ -70,6 +74,22 @@ Manual:
             });
             finalText.value = updatedLines.join('\n');
             pageInput.value = pageNumber + 1;
+        }
+
+        function createFinalRecord() {
+            let text = document.getElementById('finalText').value;
+            text = text.split('\n').map(line => {
+                if (!line.trim().endsWith(':')) { // Removes categories without any pages.
+                    return line.replace(/,\s*$/, ''); // Removes trailing commas.
+                }
+            }).filter(line => line).join(', '); // Joins lines with comma and space, removing extra line breaks.
+            document.getElementById('recordDisplay').innerText = text;
+        }
+
+        function startOver() {
+            document.getElementById('pageNumber').value = '1';
+            document.getElementById('finalText').value = 'Automation: \nDINE: \nRTL: \nManual: \n';
+            document.getElementById('recordDisplay').innerText = '';
         }
     </script>
 </body>
