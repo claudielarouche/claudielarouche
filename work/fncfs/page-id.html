@@ -57,9 +57,12 @@ TBD:
     </div>
 
     <script>
+        let historyStack = [];
         document.body.addEventListener('keydown', function(event) {
             const keyName = event.key.toUpperCase();
-            if (keyName === 'A' || keyName === 'D' || keyName === 'R' || keyName === 'M' || keyName === 'T') {
+            if ((event.ctrlKey || event.metaKey) && keyName === 'Z') {
+                undoLastAction();
+            } else if (keyName === 'A' || keyName === 'D' || keyName === 'R' || keyName === 'M' || keyName === 'T') {
                 const buttonMap = {
                     'A': 'Automation',
                     'D': 'DINE',
@@ -78,6 +81,7 @@ TBD:
             const lines = finalText.value.split('\n');
             const updatedLines = lines.map(line => {
                 if (line.startsWith(category + ':')) {
+                    historyStack.push(finalText.value); // Save the current state before updating
                     return line + pageNumber + ', ';
                 } else {
                     return line;
@@ -101,6 +105,18 @@ TBD:
             document.getElementById('pageNumber').value = '1';
             document.getElementById('finalText').value = 'Automation: \nDINE: \nRTL: \nManual: \nTBD: \n';
             document.getElementById('recordDisplay').innerText = '';
+            historyStack = []; // Clear history on start over
+        }
+
+        function undoLastAction() {
+            if (historyStack.length > 0) {
+                const previousState = historyStack.pop();
+                document.getElementById('finalText').value = previousState;
+                // Optionally decrement the page number
+                const pageInput = document.getElementById('pageNumber');
+                let currentPage = parseInt(pageInput.value);
+                pageInput.value = Math.max(1, currentPage - 1);
+            }
         }
     </script>
 </body>
