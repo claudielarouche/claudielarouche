@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YWMRD8LX5P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YWMRD8LX5P');
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Identification Tool</title>
@@ -17,9 +25,9 @@
 <body>
     <div class="container">
         <h1>Page Identification Tool</h1>
-        <p>Please use the buttons below or hit the letters A for Automation, D for DINE, R for RTL, and M for Manual. 
+        <p>Please use the buttons below or hit the letters A for Automation, D for DINE, R for RTL, M for Manual, and T for TBD. 
         Every time you press a button, the tool will take the "current page" number from the input box and place it in the correct location in the text below.
-        The text can be edited as needed. For this tool to work, please do not remove the text Automation, DINE, RTL, Manual from the final input box below.</p>
+        The text can be edited as needed. For this tool to work, please do not remove the text Automation, DINE, RTL, Manual, TBD from the final input box below.</p>
 
         <div class="input-group mb-3">
             <div class="input-group-prepend">
@@ -33,12 +41,14 @@
             <button type="button" class="btn btn-secondary" onclick="addToText('DINE')">D - DINE</button>
             <button type="button" class="btn btn-success" onclick="addToText('RTL')">R - RTL</button>
             <button type="button" class="btn btn-danger" onclick="addToText('Manual')">M - Manual</button>
+            <button type="button" class="btn btn-warning" onclick="addToText('TBD')">T - TBD</button>
         </div>
 
         <textarea class="form-control" id="finalText" rows="8">Automation: 
 DINE: 
 RTL: 
 Manual: 
+TBD: 
 </textarea>
 
         <button class="btn btn-info mt-3" onclick="createFinalRecord()">Create Final Record</button>
@@ -49,12 +59,13 @@ Manual:
     <script>
         document.body.addEventListener('keydown', function(event) {
             const keyName = event.key.toUpperCase();
-            if (keyName === 'A' || keyName === 'D' || keyName === 'R' || keyName === 'M') {
+            if (keyName === 'A' || keyName === 'D' || keyName === 'R' || keyName === 'M' || keyName === 'T') {
                 const buttonMap = {
                     'A': 'Automation',
                     'D': 'DINE',
                     'R': 'RTL',
-                    'M': 'Manual'
+                    'M': 'Manual',
+                    'T': 'TBD'
                 };
                 addToText(buttonMap[keyName]);
             }
@@ -88,7 +99,7 @@ Manual:
 
         function startOver() {
             document.getElementById('pageNumber').value = '1';
-            document.getElementById('finalText').value = 'Automation: \nDINE: \nRTL: \nManual: \n';
+            document.getElementById('finalText').value = 'Automation: \nDINE: \nRTL: \nManual: \nTBD: \n';
             document.getElementById('recordDisplay').innerText = '';
         }
     </script>
