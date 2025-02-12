@@ -53,6 +53,7 @@ TBD:
 
         <button class="btn btn-info mt-3" onclick="createFinalRecord()">Create Final Record</button>
         <p id="recordDisplay"></p>
+        <p id="instructionDisplay"></p>
         <button class="btn btn-warning mt-2" onclick="startOver()">Start Over</button>
     </div>
 
@@ -99,12 +100,45 @@ TBD:
                 }
             }).filter(line => line).join(', '); // Joins lines with comma and space, removing extra line breaks.
             document.getElementById('recordDisplay').innerText = text;
+
+            // Determine instructions based on content
+            provideInstructions(text);
         }
+
+        function provideInstructions(text) {
+			const counts = {
+				automation: (text.match(/Automation:/g) || []).length,
+				manual: (text.match(/Manual:/g) || []).length,
+				dine: (text.match(/DINE:/g) || []).length,
+				rtl: (text.match(/RTL:/g) || []).length
+			};
+			let instructions = '';
+
+			if (counts.automation > 0 && counts.dine === 0 && counts.rtl === 0 && counts.manual === 0) {
+				instructions = 'Please add the file to the <a href="https://042gc.sharepoint.com/:x:/r/sites/TemplateQCTeams/_layouts/15/Doc.aspx?sourcedoc=%7BC31D2EAA-7716-4911-8136-326EEBE64786%7D&file=Review%20Log.xlsx&action=default&mobileredirect=true&isSPOFile=1">Review log</a>.';
+			} else if (counts.dine > 0 && counts.automation === 0 && counts.rtl === 0 && counts.manual === 0) {
+				instructions = 'Please send the file to Rejected with the parser (no need to add to any log)';
+			} else if (counts.rtl > 0 && counts.automation === 0 && counts.dine === 0 && counts.manual === 0) {
+				instructions = 'Please send the file to Manual with the parser (no need to add to any log)';
+			} else if (counts.manual > 0 && counts.automation === 0 && counts.dine === 0 && counts.rtl === 0) {
+				instructions = 'Please send the file to Manual with the parser (no need to add to any log)';
+			} else if (counts.automation > 0 && (counts.dine > 0 || counts.rtl > 0) && counts.manual === 0) {
+				instructions = 'Please add the file to the <a href="https://042gc.sharepoint.com/:x:/r/sites/TemplateQCTeams/_layouts/15/Doc.aspx?sourcedoc=%7BC31D2EAA-7716-4911-8136-326EEBE64786%7D&file=Review%20Log.xlsx&action=default&mobileredirect=true&isSPOFile=1">Review Log</a>.';
+			} else if (counts.automation > 0 && counts.manual > 0) {
+				instructions = 'Please add the file to the <a href="https://042gc.sharepoint.com/:x:/r/sites/TemplateQCTeams/_layouts/15/Doc.aspx?sourcedoc=%7BC31D2EAA-7716-4911-8136-326EEBE64786%7D&file=Review%20Log.xlsx&action=default&mobileredirect=true&isSPOFile=1">Review log</a> and to the <a href="https://042gc.sharepoint.com/:x:/r/sites/TemplateQCTeams/_layouts/15/Doc.aspx?sourcedoc=%7BD74A1724-574A-4164-8475-F69449BA732F%7D&file=Files%20for%20Manual%20Team.xlsx&action=default">Manual Log</a>.';
+			} else if ((counts.dine > 0 && counts.rtl > 0) || (counts.dine > 0 && counts.manual > 0) || (counts.rtl > 0 && counts.manual > 0) || (counts.dine > 0 && counts.rtl > 0 && counts.manual > 0)) {
+				instructions = 'Please send the file to Manual with the parser (no need to add to any log)';
+			}
+
+			document.getElementById('instructionDisplay').innerHTML = instructions;
+		}
+
 
         function startOver() {
             document.getElementById('pageNumber').value = '1';
             document.getElementById('finalText').value = 'Automation: \nDINE: \nRTL: \nManual: \nTBD: \n';
             document.getElementById('recordDisplay').innerText = '';
+            document.getElementById('instructionDisplay').innerText = '';
             historyStack = []; // Clear history on start over
         }
 
@@ -121,3 +155,4 @@ TBD:
     </script>
 </body>
 </html>
+
