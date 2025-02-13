@@ -20,6 +20,9 @@
         .input-group-text {
             min-width: 100px;
         }
+	textarea {
+            overflow: hidden; /* Prevents scroll bar from appearing */
+        }
     </style>
 </head>
 <body>
@@ -44,7 +47,7 @@
             <button type="button" class="btn btn-warning" onclick="addToText('TBD')">T - TBD</button>
         </div>
 
-        <textarea class="form-control" id="finalText" rows="8">Automation: 
+        <textarea class="form-control" id="finalText" rows="8" oninput="adjustTextArea(this)">Automation: 
 DINE: 
 RTL: 
 Manual: 
@@ -140,6 +143,11 @@ TBD:
             document.getElementById('recordDisplay').innerText = '';
             document.getElementById('instructionDisplay').innerText = '';
             historyStack = []; // Clear history on start over
+        }
+
+	function adjustTextArea(textarea) {
+            textarea.style.height = ""; // Reset the height
+            textarea.style.height = Math.min(textarea.scrollHeight, window.innerHeight) + "px";
         }
 
         function undoLastAction() {
