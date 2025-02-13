@@ -92,6 +92,7 @@ TBD:
                 }
             });
             finalText.value = updatedLines.join('\n');
+            adjustTextArea(finalText); // Adjust the height of the textarea
             pageInput.value = pageNumber + 1;
         }
 
