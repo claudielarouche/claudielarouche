@@ -110,20 +110,23 @@ TBD:
     <script>
         let historyStack = [];
         document.body.addEventListener('keydown', function(event) {
-            const keyName = event.key.toUpperCase();
-            if ((event.ctrlKey || event.metaKey) && keyName === 'Z') {
-                undoLastAction();
-            } else if (keyName === 'A' || keyName === 'D' || keyName === 'R' || keyName === 'M' || keyName === 'T') {
-                const buttonMap = {
-                    'A': 'Automation',
-                    'D': 'DINE',
-                    'R': 'RTL',
-                    'M': 'Manual',
-                    'T': 'TBD'
-                };
-                addToText(buttonMap[keyName]);
-            }
-        });
+	    const keyName = event.key;
+	    if ((event.ctrlKey || event.metaKey) && keyName === 'z') {
+	        undoLastAction();
+	    } else if (keyName === '=') {  // Checking for the equal sign to perform undo
+	        undoLastAction();
+	    } else if (keyName.toUpperCase() === 'A' || keyName.toUpperCase() === 'D' || keyName.toUpperCase() === 'R' || keyName.toUpperCase() === 'M' || keyName.toUpperCase() === 'T') {
+	        const buttonMap = {
+	            'A': 'Automation',
+	            'D': 'DINE',
+	            'R': 'RTL',
+	            'M': 'Manual',
+	            'T': 'TBD'
+	        };
+	        addToText(buttonMap[keyName.toUpperCase()]);
+	    }
+	});
+
 
         function addToText(category) {
             const pageInput = document.getElementById('pageNumber');
