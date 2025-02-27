@@ -154,48 +154,46 @@ TBD:
         }
 
        function createFinalRecord() {
-	    let text = document.getElementById('finalText').value;
-	    text = text.split('\n').map(line => {
-	        if (!line.trim().endsWith(':')) { // Removes categories without any pages.
-	            return line.replace(/,\s*$/, ''); // Removes trailing commas.
-	        }
-	        return line; // Keep categories with colon intact for now.
-	    }).filter(line => line) // Remove empty lines.
-	      .map(line => {
-	        // This part will handle the range compression for numbers.
-	        if (line.includes(',')) {
-	            return line.replace(/\b(\d+)(, (\d+))+\b/g, (match) => {
-	                let nums = match.split(', ').map(Number);
-	                let ranges = [];
-	                let start = nums[0];
-	                
-	                for (let i = 1; i < nums.length; i++) {
-	                    if (nums[i] !== nums[i - 1] + 1) {
-	                        if (start === nums[i - 1]) {
-	                            ranges.push(start.toString());
-	                        } else {
-	                            ranges.push(start + '-' + nums[i - 1]);
-	                        }
-	                        start = nums[i];
-	                    }
-	                }
-	                // Push the last range or number
-	                if (start === nums[nums.length - 1]) {
-	                    ranges.push(start.toString());
-	                } else {
-	                    ranges.push(start + '-' + nums[nums.length - 1]);
-	                }
-	                return ranges.join(', ');
-	            });
-	        }
-	        return line;
-	    }).join(', ');
-	
-	    document.getElementById('recordDisplay').innerText = text;
-	
-	    // Determine instructions based on content
-	    provideInstructions(text);
-	}
+		let text = document.getElementById('finalText').value;
+		text = text.split('\n').map(line => {
+			// Keep only lines that have numbers (digits)
+			return line.match(/\d+/) ? line.replace(/,\s*$/, '') : null;
+		}).filter(line => line) // Remove null entries (lines without numbers)
+		  .map(line => {
+			// This part will handle the range compression for numbers.
+			if (line.includes(',')) {
+				return line.replace(/\b(\d+)(, (\d+))+\b/g, (match) => {
+					let nums = match.split(', ').map(Number);
+					let ranges = [];
+					let start = nums[0];
+		
+					for (let i = 1; i < nums.length; i++) {
+						if (nums[i] !== nums[i - 1] + 1) {
+							if (start === nums[i - 1]) {
+								ranges.push(start.toString());
+							} else {
+								ranges.push(start + '-' + nums[i - 1]);
+							}
+							start = nums[i];
+						}
+					}
+					// Push the last range or number
+					if (start === nums[nums.length - 1]) {
+						ranges.push(start.toString());
+					} else {
+						ranges.push(start + '-' + nums[nums.length - 1]);
+					}
+					return ranges.join(', ');
+				});
+			}
+			return line;
+		}).join(', ');
+		
+		document.getElementById('recordDisplay').innerText = text;
+		
+		// Determine instructions based on content
+		provideInstructions(text);
+		}
 
         function provideInstructions(text) {
 			const counts = {
