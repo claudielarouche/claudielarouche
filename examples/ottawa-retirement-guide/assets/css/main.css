@@ -1,0 +1,261 @@
+/*
+ * Author: Carlos Alvarez
+ * URL: http://alvarez.is
+ *
+ * Project Name: Onassis - Free Bootstrap 3 Theme
+ * Version: 1.0
+ * URL: http://blacktie.co
+ */
+
+body {
+  background-color: #f2f2f2;
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway";
+    font-weight: 300;
+    color: #333;
+}
+
+
+/* Paragraph & Typographic */
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+.centered {
+    text-align: center;
+}
+
+/* Links */
+a {
+    color: #fff;
+    word-wrap: break-word;
+
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+    color: #FF5500;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+/* ==========================================================================
+   Wrap Sections
+   ========================================================================== */
+
+.headerwrap {
+	background:url(../img/laurier-2.jpg) no-repeat center top ;
+    background-color: #27343F;
+	margin-top: -10px;
+	padding-top:20px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 800px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.headerwrap .container {
+    margin-top: 200px;
+}
+
+.headerwrap h1 {
+	color: white;
+	font-size: 90px;
+	font-weight: 700;
+	letter-spacing: 3px;
+}
+
+.headerwrap h2 {
+	color: white;
+	font-size: 50px;
+	font-weight: 100;
+	letter-spacing: 2px;
+}
+.headerwrap h3 {
+	color: white;
+}
+.headerwrap h4 {
+	color: white;
+}
+
+/* Portfolio Wrap */
+
+/* White Wrap */
+
+.w {
+	background: #ffffff;
+	padding-top: 35px;
+	padding-bottom: 55px;
+	text-align: center;
+}
+
+.w h3 {
+	font-weight: 700;
+	color: #7b7b7b;
+	letter-spacing: 1px;
+}
+
+.w bold {
+	color: #2f2f2f;
+}
+
+
+/* Grey Wrap */
+
+.g {
+	background: #f2f2f2;
+	padding-top: 35px;
+	padding-bottom: 35px;
+	text-align: center;
+}
+
+/* Dark Grey Wrap */
+.dg {
+    /*background: #e0e0e0;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	text-align: center;*/
+	background: url(../img/Optimized-parlament_final_crop2.jpg) no-repeat center top;
+	margin-top: -10px;
+	padding-top:20px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 730px;
+	width: 100%;
+	color: #fff;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.dg h2,h4,h3 {
+	color: #fff;
+}
+.dg h2 {
+	margin-top: 450px;
+}
+
+/* Footer Wrap */
+
+.g img{
+    margin: 70px auto;
+}
+
+/* Mailchimp Sign-up*/
+
+.mce_inline_error {
+    display: none !important;
+}
+
+#mce-EMAIL{
+    display: block !important;
+}
+
+#mc-embedded-subscribe{
+    font-size: 26px;
+}
+
+#mce-error-response a {
+    color: #d2322d;
+}
+
+/* Copyright Wrap */
+
+.c {
+	background: #222222;
+	padding-top: 15px;
+	text-align: center;
+}
+
+.c p {
+	color: white
+
+}
+
+
+.team {
+	padding-top: 20px;
+}
+
+.team:hover {
+	background: white;
+}
+
+.team a {
+	padding-right: 10px;
+	padding-left: 10px;
+}
+ header  {
+	color: #fff;
+}
+.h-button {
+	background-color: #FF5500;
+	color: #fff;
+	border:none;
+	width: 50px;
+	height: 27px;
+	margin-top: 5px;
+
+} 
+#dg
+@media screen and (max-width: 768px) {
+	#headerwrap h1 {
+		font-size: 30px!important;
+	}
+}
+i {
+  color:#FF5500;
+}
