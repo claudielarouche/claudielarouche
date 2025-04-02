@@ -1,0 +1,266 @@
+
+body {
+	background-color: #f2f2f2;
+	font-family: "Lato";
+	font-weight: 300;
+	font-size: 16px;
+	color: #555;
+
+	-webkit-font-smoothing: antialiased;
+	-webkit-overflow-scrolling: touch;
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Raleway";
+	font-weight: 300;
+	color: #333;
+}
+
+
+/* Paragraph & Typographic */
+p {
+	line-height: 28px;
+	margin-bottom: 25px;
+}
+
+.centered {
+	text-align: center;
+}
+
+/* Links */
+a {
+	color: #f85c37;
+	word-wrap: break-word;
+
+	-webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-o-transition: color 0.1s ease-in, background 0.1s ease-in;
+	transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+	color: #7b7b7b;
+	text-decoration: none;
+	outline: 0;
+}
+
+a:before,
+a:after {
+	-webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-o-transition: color 0.1s ease-in, background 0.1s ease-in;
+	transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+
+/* ==========================================================================
+   Wrap Sections
+   ========================================================================== */
+
+   #headerwrap {
+   	background: url(../img/vegetables-2.jpg) no-repeat center top;
+   	margin-top: -10px;
+   	padding-top:20px;
+   	text-align:center;
+   	background-attachment: relative;
+   	background-position: center center;
+   	min-height: 700px;
+   	width: 100%;
+
+   	-webkit-background-size: 100%;
+   	-moz-background-size: 100%;
+   	-o-background-size: 100%;
+   	background-size: 100%;
+
+   	-webkit-background-size: cover;
+   	-moz-background-size: cover;
+   	-o-background-size: cover;
+   	background-size: cover;
+   }
+
+   #headerwrap h1 {
+   	margin-top: 60px;
+   	color: white;
+   	font-size: 70px;
+   	font-weight: 700;
+   	letter-spacing: 3px;
+   }
+
+   #headerwrap h2 {
+   	color: white;
+   	font-size: 33px;
+   	font-weight: 600;
+   	letter-spacing: 2px;
+    /*margin-top: 60px;*/
+   }
+#headerwrap h3{
+    color: white;
+   	font-size: 25px;
+   	font-weight: 600;
+   	letter-spacing: 2px;
+}
+
+#headerwrap .coming-soon{
+    padding-top: 50px;
+}
+
+.btn-danger{
+    background-color: #FF5500;
+}
+
+   /* Portfolio Wrap */
+   #portfoliowrap {
+   	background: url(../img/lane.jpg) no-repeat center top;
+   	margin-top: 0px;
+   	padding-top:290px;
+   	text-align:center;
+   	background-attachment: relative;
+   	background-position: center center;
+   	min-height: 700px;
+   	width: 100%;
+
+   	-webkit-background-size: 100%;
+   	-moz-background-size: 100%;
+   	-o-background-size: 100%;
+   	background-size: 100%;
+
+   	-webkit-background-size: cover;
+   	-moz-background-size: cover;
+   	-o-background-size: cover;
+   	background-size: cover;
+   }
+
+
+   #portfoliowrap h3 {
+   	color: #ffffff;
+    font-size: 33px;
+   	font-weight: 600;
+   }
+
+   .port-space {
+   	padding-bottom: 20px;
+   }
+
+
+   /* White Wrap */
+
+   #w {
+   	/*background: #ffffff;*/
+    background: #e0e0e0;
+   	padding-top: 35px;
+   	padding-bottom: 35px;
+   	text-align: center;
+   }
+
+   #w h3 {
+   	font-weight: 500;
+   	color: #333;
+   	letter-spacing: 1px;
+   	font-size: 25px;
+   }
+
+   #w bold {
+   	color: #2f2f2f;
+   }
+
+
+   /* Grey Wrap */
+
+   #g {
+   	background: #f2f2f2;
+   	padding-top: 35px;
+   	padding-bottom: 35px;
+   	text-align: center;
+   }
+   #g h4 {
+   	color: #000!important;
+   	font-size: 18px;
+   }
+
+   /* Dark Grey Wrap */
+   #dg {
+   	background: #e0e0e0;
+   	padding-top: 70px;
+   	padding-bottom: 70px;
+   	text-align: center;
+   }
+   #dg h4 {
+   	color:#000;
+   	font-size: 25px;
+   }
+   #dg h3 {
+   	color:#000;
+   	font-size: 25px;
+   }
+
+   /* Footer Wrap */
+
+   #f {
+   	background: #2f2f2f;
+   	padding-top: 70px;
+   	padding-bottom: 70px;
+   	text-align: center
+   }
+
+   #f h3 {
+   	color: white;	
+   }
+
+   #f i {
+   	font-size: 90px;
+   	color: white;
+   	padding-left: 10px;
+   	padding-right: 10px;
+   }
+
+   /* Copyright Wrap */
+
+   #c {
+   	background: #222222;
+   	padding-top: 15px;
+   	text-align: center;
+   }
+
+   #c p {
+   	color: white
+   }
+
+   /* item Wrap */
+
+   /* C O S T U M E */
+   .h-button {
+   	background-color: #FF5500;
+   	color: #fff;
+   	border:none;
+   	width: 50px;
+   	height: 27px;
+   	margin-top: 5px;
+
+   } 
+
+/* Mailchimp */
+
+.mce_inline_error {
+    display: none !important;
+}
+
+#mce-EMAIL{
+    display: block !important;
+}
+
+#mc-embedded-subscribe{
+    font-size: 26px;
+}

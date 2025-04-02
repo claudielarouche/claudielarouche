@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="assets/img/favicon.ico">
+
+	<title>The Vegetarian Manual</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="assets/css/bootstrap.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="assets/css/main.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/Chart.js"></script>
+	<!-- <script src="assets/js/modernizr.custom.js"></script> -->
+	
+
+	
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+      <![endif]-->
+  </head>
+
+  <body data-spy="scroll" data-offset="0" data-target="#theMenu">
+
+  	<!-- ========== HEADER SECTION ========== -->
+  	<section id="home" name="home"></section>
+  	<div id="headerwrap">
+  		<div class="container">
+  			<h1>Are you ready to take the leap and become vegetarian?</h1>
+  			<h2>Unsure where to start?</h2>
+  			<h4>We understand how you feel, we were there too!</h4>
+            
+            
+            <div class="coming-soon">
+                <h2>The Vegetarian Manual is coming soon.</h2>
+                <h3>Make sure you don't miss the release!</h3>
+                <h2>Sign-up here to be notified of our progress.</h2>
+                
+                
+                <div id="mc_embed_signup"> 
+                    <form action="//vegetarianmanual.us7.list-manage.com/subscribe/post?u=4c7afdf760b0672e0b5871e4d&amp;id=4c0421ca6f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <div id="mc_embed_signup_scroll">
+                            <div class="mc-field-group">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-sm-4"></div>
+                                        <div class="col-sm-4">
+                                            <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="Your e-mail">
+                                        </div>
+                                        <div class="col-sm-4"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="mce-responses" class="clear">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>    
+                            <div style="position: absolute; left: -5000px;">
+                                <input type="text" name="b_4c7afdf760b0672e0b5871e4d_6bc7d12ee9" tabindex="-1" value="">
+                            </div>
+                            <div class="clear">
+                                <input type="submit" value="Sign Up!" name="subscribe" id="mc-embedded-subscribe" class="btn btn-danger">                    
+                            </div>                                       
+                        </div>
+                    </form>
+                 </div> 
+
+
+
+            </div>
+            
+  		</div><!-- /container -->
+  	</div><!-- /headerwrap -->
+
+      
+    
+
+  	<!-- ========== SERVICES - GREY SECTION ========== -->
+  	<section id="services" name="services"></section>
+  	<div id="g">
+  		<div class="container">
+  			<div class="row">
+  				<br>
+  				<div class="col-lg-2 col-lg-offset-1">
+  					<i class="fa fa-pencil fa-3x"></i>
+  					<h4>Written by a team of vegetarian and vegan </h4>
+  				</div>
+  				<div class="col-lg-2">
+  					<i class="fa fa-search fa-3x"></i>
+  					<h4>Tons of research simplified </h4>
+  				</div>
+  				<div class="col-lg-2">
+  					<i class="fa fa-check-square fa-3x"></i>
+  					<h4>Tips and tricks for new or seasoned vegetarians </h4>
+  				</div>
+  				<div class="col-lg-2">
+  					<i class="fa fa-cutlery fa-3x"></i>
+  					<h4>Useful recipes </h4>
+  				</div>
+  				<div class="col-lg-2">
+  					<i class="fa fa-mobile fa-3x"></i>
+  					<h4>E-book version available </h4>
+  				</div>
+  				<br>
+  				<br>
+  			</div>
+  		</div><!-- /container -->
+  	</div><!-- /g -->
+
+  	<!-- ========== CHARTS - DARK GREY SECTION ========== -->
+  	<div id="dg">
+  		<div class="container">
+  			<div class="row">
+  				<h3>Health facts</h3>
+  				<br>
+  				<br>
+  				<div class="col-lg-3">
+  					<canvas id="javascript" height="130" width="130"></canvas>
+  					<br>
+  					<h2> <strong>49 %</strong> </h2> 
+  					<h4>Protein in spinach</h4>
+  					<br>
+  					<script>
+  						var doughnutData = [
+  						{
+  							value: 51,
+  							color:"#00BD2C"
+  						},
+  						{
+  							value : 49,
+  							color : "#ecf0f1"
+  						}
+  						];
+  						var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
+  					</script>
+
+  				</div>
+  				<div class="col-lg-3">
+  					<canvas id="bootstrap" height="130" width="130"></canvas>
+  					<br>
+  					<h2> <strong>9%</strong> </h2> 
+  					<h4>Fat in broccoli</h4>
+  					<br>
+  					<script>
+  						var doughnutData = [
+  						{
+  							value: 9,
+  							color:"#00BD2C"
+  						},
+  						{
+  							value : 91,
+  							color : "#ecf0f1"
+  						}
+  						];
+  						var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
+  					</script>
+  				</div>
+  				<div class="col-lg-3">
+  					<canvas id="newveg" height="130" width="130"></canvas>
+  					<br>
+  					<h2> <strong>45%</strong> </h2> 
+  					<h4>Carbs in Paprika</h4>
+  					<br>
+  					<script>
+  						var doughnutData = [
+  						{
+  							value: 45,
+  							color:"#00BD2C"
+  						},
+  						{
+  							value : 55,
+  							color : "#ecf0f1"
+  						}
+  						];
+  						var myDoughnut = new Chart(document.getElementById("newveg").getContext("2d")).Doughnut(doughnutData);
+  					</script>
+  				</div>
+  				<div class="col-lg-3">
+  					<canvas id="newveg1" height="130" width="130"></canvas>
+  					<br>
+  					<h2> <strong>96%</strong> </h2> 
+  					<h4>Water in cucumber</h4>
+  					<br>
+  					<script>
+  						var doughnutData = [
+  						{
+  							value: 96,
+  							color:"#00BD2C"
+  						},
+  						{
+  							value : 4,
+  							color : "#ecf0f1"
+  						}
+  						];
+  						var myDoughnut = new Chart(document.getElementById("newveg1").getContext("2d")).Doughnut(doughnutData);
+  					</script>
+  				</div>
+
+  			</div>	
+  		</div><!-- /container -->
+  	</div><!-- /dg -->
+
+  	<section id="portfolio" name="portfolio"></section>
+  	<div id="portfoliowrap">
+  		<div class="container">
+  			<div class="row">
+                <h3>Hours of work and research were put into this manual! </h3>
+                <h3>Our aim is to help YOU help the planet and stop killing animals.</h3>
+  			</div>	
+  		</div><!-- /container -->
+  	</div><!-- /portfoliowrap -->
+
+  	<!-- ========== WHITE SECTION ========== -->
+  	<div id="w">
+  		<div class="container">
+  			<div class="row">
+  				<div class="col-lg-8 col-lg-offset-2">
+  					<h3>Interested in contributing?</h3>
+  					<h3>Send us your comments and suggestions!</h3>
+  					<h3><bold><a href="mailto:info@vegetarianmanual.com">info@vegetarianmanual.com</a><bold></h3>
+  				</div>
+  			</div>
+  		</div><!-- /container -->
+  	</div><!-- /w -->
+
+  	<div id="c">
+  		<div class="container">
+  			<p>Copyright © 2015 <a href="http://vegetarianmanual.com">The Vegetarian Manual</a></p>
+
+  		</div>
+  	</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- <script src="assets/js/classie.js"></script> -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!--<script src="assets/js/smoothscroll.js"></script> -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
