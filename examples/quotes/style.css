@@ -1,0 +1,34 @@
+body {
+    background-image: url("bg.jpg");
+    background-repeat: repeat;
+	font-size: 20px;
+}
+
+blockquote {
+ /* background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";*/
+  border-left: none;
+}
+blockquote:before {
+  /*color: #ccc;*/
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+
+.main-content{
+	padding-top: 60px;
+}
+
+.well{
+	box-shadow: 10px 10px 5px #888888;
+	border-radius: 10px;
+}

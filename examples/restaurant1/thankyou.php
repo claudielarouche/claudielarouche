@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Restaurant Template 1">
+    <meta name="author" content="Claudie Larouche">
+	
+	<link rel="icon" 
+      type="image/png" 
+      href="images/restaurant.png">
+
+    <title>Restaurant Template 1 | Claudie Web Design</title>
+
+    <!-- Bootstrap Core CSS -->
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via  -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  
+  	<?php 
+					$name = $_POST['personName'];
+					$email = $_POST['email'];
+					$message = $_POST['message'];
+					$from = 'New Contact Form'; 
+					$to = 'claudie@claudiewebdesign.com';
+					$subject = 'Message from Contact Form ';
+					
+					$headers .= "From: no-reply@claudiewebdesign.com\r\n" . "X-Mailer: php";
+					$headers .= "MIME-Version: 1.0\r\n";
+					$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+					
+					
+					$body = "Name: $name\nE-mail address: $email\n\nMessage:\n $message\n\nThank you!";
+			 
+				 
+					// If there are no errors, send the email
+
+					mail ($to, $subject, $body, $headers);
+				
+				?>
+  
+  	<!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <!--<div class="navbar-header"><a class="navbar-brand" href="index.html"><img src="images/sushi-32px.png"></a>-->
+			<div class="navbar-header"><a class="navbar-brand" href="index.html"><i class="fa fa-cutlery brand"></i></a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+					<li>
+                        <a href="index.html"><i class="fa fa-home iconNav"></i>Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html"><i class="fa fa-heart iconNav"></i>About</a>
+                    </li>
+                    <li>
+                        <a href="menu.html"><i class="fa fa-cutlery iconNav"></i>Menu</a>
+                    </li>
+                    <li>
+                        <a href="contact.html"><i class="fa fa-envelope iconNav"></i>Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+	
+		<div class="col-lg-10 hero jumbotron" id="page-content-wrapper">
+             <h1>Thank you!</h1>
+             <p>Thank you for contacting us, we will be in touch shortly!</p>
+			 			 
+        </div>
+
+	
+    	<div id="sidebar-wrapper" class="col-lg-2">
+    		 <hr>
+    		 <h4 class="text-center">Opening hours</h4>
+    		 <hr>		 
+			 <div class="text-center">
+    	 	 <h5>Monday to Friday</h5>
+    		 <p>8:00 AM to 8:00 PM</p>
+    		 <h5>Saturday</h5>
+    		 <p>11:00 AM to 11:00 PM</p>
+    		 <h5>Sunday</h5>
+    		 <p>8:00 AM to 10:00 PM</p>
+			 </div>
+    		 <hr>
+    		 <h4 class="text-center">Follow us!</h4>
+    		 <hr>	
+			 <div class="text-center">	 
+			 	  <a href="#"><i class="fa fa-facebook fa-2x social"></i></a>
+			 	  <a href="#"><i class="fa fa-twitter fa-2x social"></i></a>
+			 	  <a href="#"><i class="fa fa-linkedin fa-2x social"></i></a>
+			 </div>
+			 <hr>
+    		 
+    	</div>
+    
+        
+	
+	    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>
