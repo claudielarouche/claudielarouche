@@ -1,0 +1,58 @@
+.ms-dialog .s4-notdlg {display:none !important}
+
+.ms-hidden,a.ms-skip,a:hover.ms-skip,a:visited.ms-skip,a.ms-TurnOnAcc,a.ms-SkiptoMainContent,a.ms-SkiptoNavigation {
+    position:absolute;
+    top:-2000px;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    z-index:3;
+    word-wrap:normal;
+}
+
+a:active.ms-skip,a:focus.ms-skip,a:active.ms-TurnOnAcc,a:focus.ms-TurnOnAcc,a.ms-TurnOffAcc,a:active.ms-SkiptoMainContent,a:focus.ms-SkiptoMainContent,a:active.ms-SkiptoNavigation,a:focus.ms-SkiptoNavigation { 
+    position:absolute; 
+    top:2px; 
+    width:auto; 
+    height:auto; 
+    background-color:white;
+    border-color:black;
+    border-width:1px;
+    border-style:solid;
+    color:black; 
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-left:4px;
+    padding-right:4px;
+    z-index:12;
+} 
+a.ms-skip,a.ms-TurnOnAcc {
+    left:2px;
+}
+a.ms-TurnOffAcc {
+    right:150px;
+}
+a.ms-SkiptoMainContent {
+    right:2px;
+}
+a.ms-SkiptoNavigation {
+    right:50%;
+}
+
+span#TurnOffAccessibility a.ms-acclink {
+    width:auto; 
+    height:1.1em; 
+    background-color:white;
+    border-color:black;
+    border-width:1px;
+    border-style:solid;
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-left:4px;
+    padding-right:4px;	
+    color:black; 
+    position:absolute;
+    z-index:3;
+    top:2px;
+    right:2px;
+}

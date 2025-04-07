@@ -1,0 +1,41 @@
+/* _localBinding */
+/* Contains CSS for generated tables */
+table.iws_table { border-collapse:collapse; border-style: solid; }
+
+table.iws_table .white { background: white; }
+table.iws_table .gray { background: gray; }
+table.iws_table .bold { font-weight: bold; }
+
+table.iws_brown .dark { background: #8d6731; color: White; }
+table.iws_brown .mid { background: #b19a78; color: White; }
+table.iws_brown .light { background: #f0eae1; }
+table.iws_burgundy .dark { background: #751611; color: White; }
+table.iws_burgundy .mid { background: #b67875; color: White; }
+table.iws_burgundy .light { background: #f3dad8 }
+table.iws_green .dark { background: #4e6c49; color: White;  }
+table.iws_green .mid { background: #87a583; color: White; }
+table.iws_green .light { background: #deeedc;}
+table.iws_grey .dark { background: #424242; color: White; }
+table.iws_grey .mid { background: #838383; color: White; }
+table.iws_grey .light { background: #ececec; }
+table.iws_purple .dark { background: #554255; color: White; }
+table.iws_purple .mid { background: #aa86aa; color: White; }
+table.iws_purple .light { background: #f3e9f3; }
+table.iws_slate .dark { background: #325884; color: White; }
+table.iws_slate .mid { background: #638cbb; color: White; }
+table.iws_slate .light { background: #d1e4fa; }
+table.iws_scheme1 .dark { background: #669999; color: White; }
+table.iws_scheme1 .mid { background: #ff9900; color: White; }
+table.iws_scheme1 .light { background: #f1f1eb; }
+table.iws_scheme2 .dark { background: #669966; color: White; }
+table.iws_scheme2 .mid { background: #cccc00; color: White; }
+table.iws_scheme2 .light { background: #fdfee3; }
+table.iws_scheme3 .dark { background: #993300; color: White; }
+table.iws_scheme3 .mid { background: #ff6600; color: White; }
+table.iws_scheme3 .light { background: #fdfee3; }
+table.iws_scheme4 .dark { background: #336699; color: White; }
+table.iws_scheme4 .mid { background: #ff6600; color: White; }
+table.iws_scheme4 .light { background: #fffef0; }
+
+
+

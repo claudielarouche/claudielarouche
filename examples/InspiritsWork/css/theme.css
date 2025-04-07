@@ -1,0 +1,394 @@
+
+
+.BG_Null
+{
+}
+.BG_Base
+{
+	background-color:#6699CC;
+}
+.BG_VeryLight
+{
+	background-color:#ffffff;
+}
+.BG_Light
+{
+	background-color:#64B1B1;
+}
+.BG_Mid
+{
+	background-color:#003366;
+}
+.BG_Dark
+{
+	background-color:#509EB6;
+}
+.BG_VeryDark
+{
+	background-color:#000000;
+}
+
+
+
+.F_VeryLight
+{
+	color:#ffffff;
+}
+.F_Light
+{
+	color:#64B1B1;
+}
+.F_Mid
+{
+	color:#003366;
+}
+.F_Dark
+{
+	color:#509EB6;
+}
+.F_VeryDark
+{
+	color:#000000;
+}
+   
+
+body
+{
+	text-align:Center;
+	background-color:#FFFFFF;
+  
+  background-image: url(../images/background-image.Jpeg);
+  background-position: left top;
+  background-repeat: repeat-x;
+  
+	font-family:Arial, Geneva, sans-serif;
+	font-size:10pt;
+	color:#000000;
+}
+
+
+
+
+.MS_MasterFrame
+{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+td, th
+{
+  font-family:Arial, Geneva, sans-serif;
+  font-size:10pt;
+}
+
+
+.MS_MasterFrame
+{
+	width:780px;
+}
+   
+.MSC_SiteWidth,.MS_MasterHeader,.MS_MasterGlobalLinks,.MS_MasterPrimaryNav,.MS_MasterFooter,.MS_MasterTopAD,.MS_MasterBottomAD
+{
+	width:100%;
+}
+
+
+
+.MSC_HeaderFrame
+{
+	background:#509EB6;
+	width:100%;
+}
+
+.MSC_HeaderDescription
+{
+	font-size:12px;
+	margin:0px;
+}
+	
+
+
+.MSC_GlobalLinkSpace
+{
+	padding:10px;
+	font-size:10pt;
+	color:#ffffff;
+}
+.MSC_GlobalLink
+{
+	font-size:10pt;
+	color:#ffffff;
+	text-decoration:none;
+	font-weight:bold;
+}
+.MSC_GlobalLink:hover
+{
+	font-size:10pt;
+	color:#ffffff;
+	text-decoration:underline;
+	font-weight:bold;
+}
+.MSC_GlobalLink:visited
+{
+	font-size:10pt;
+	color:#ffffff;
+	text-decoration:none;
+	font-weight:bold;
+}
+.MSC_GlobalLinkSpace
+{
+	font-size:10pt;
+}
+
+
+	
+.MSC_PrimaryNavFrame
+{
+	background:#3D8991;
+	width:100%;
+	margin:1px 0px 5px 0px;
+	text-align:left;
+}
+
+.rtl .MSC_PrimaryNavFrame
+{
+	text-align:right;
+}
+
+.MSC_PrimaryNavLink
+{
+	color:#ffffff;
+	font-size:12px;
+	text-decoration:none;
+}
+.MSC_PrimaryNavLink:hover
+{
+	color:#ffffff;
+	font-size:12px;
+}
+.MSC_PrimaryNavLink:visited
+{
+	color:#ffffff;
+	font-size:12px;
+	text-decoration:none;
+}
+.MSC_PrimaryNavLinkFrame-On
+{
+	background:#E3FAE7;
+	white-space:nowrap;
+	padding:5px 10px 5px 10px;
+}
+.MSC_PrimaryNavLink-On
+{
+	color:#325884;
+	font-size:12px;
+	text-decoration:none;
+	font-weight:bold;
+}
+.MSC_PrimaryNavLink-On:hover
+{
+	color:#325884;
+	font-size:12px;
+	font-weight:bold;
+}
+.MSC_PrimaryNavLink-On:visited
+{
+	color:#325884;
+	font-size:12px;
+	text-decoration:none;
+	font-weight:bold;
+}
+.MSC_PrimaryNavLeftSpace
+{
+	width:1px;
+	white-space:nowrap;
+	background:#000000;
+	font-size:1px;
+}
+.MSC_PrimaryNavRightSpace
+{
+	width:1px;
+	background:#FFF2D5;
+	white-space:nowrap;
+	font-size:1px;
+}
+.MSC_PrimaryNavTopSpace
+{
+	height:1px;
+	background:#000000;
+}
+.MSC_PrimaryNavBottomSpace
+{
+	height:1px;
+	background:#FFF2D5;
+}
+
+
+
+.MS_MasterLeftNav
+{
+	background:#FFF2D5;
+}
+.MSC_TextStyle
+{
+  text-align:left;
+}
+.rtl .MSC_TextStyle
+{
+  text-align:right;
+}
+
+.MSC_SecondaryNavFrame
+{
+	background:#E3FAE7;
+	width:100%;
+	text-align:left;
+}
+.rtl .MSC_SecondaryNavFrame
+{
+	text-align:right;
+}
+.MSC_SecondaryNavLink
+{
+	color:#325884;
+	font-size:10pt;
+	text-decoration:none;
+}
+.MSC_SecondaryNavLink:hover
+{
+	color:#325884;
+	font-size:10pt;
+}
+.MSC_SecondaryNavLink:visited
+{
+	color:#325884;
+	font-size:10pt;
+	text-decoration:none;
+}
+.MSC_SecondaryNavLeftSpace
+{
+	font-size:1px;
+	background:#3D8991;
+	width:1px;
+	white-space:nowrap;
+}
+.MSC_SecondaryNavRightSpace
+{
+	font-size:1px;
+	background:#ffffff;
+	width:1px;
+	white-space:nowrap;
+}
+.MSC_SecondaryNavTopSpace
+{
+	background:#3D8991;
+	height:1px;
+}
+.MSC_SecondaryNavBottomSpace
+{
+	background:#ffffff;
+	height:1px;
+}
+.MSC_SecondaryNavLeftFrame-On
+{
+	padding:5px;
+	background:#ffffff;
+}
+.MSC_SecondaryNavLinkFrame-On
+{
+	white-space:nowrap;
+	padding:5px;
+	background:#ffffff;
+}
+.MSC_SecondaryNavLink-On
+{
+	padding:5px;
+	font-size:10pt;
+	font-weight:bold;
+	color:#325884;
+	text-decoration:none;
+}
+.MSC_SecondaryNavLink-On:hover
+{
+	padding:5px;
+	font-size:10pt;
+	font-weight:bold;
+	color:#325884;
+}
+.MSC_SecondaryNavLink-On:visited
+{
+	padding:5px;
+	font-size:10pt;
+	font-weight:bold;
+	color:#325884;
+	text-decoration:none;
+}
+   
+
+
+.MS_MasterBody
+{
+	background:#ffffff;
+}
+.MSC_Body
+{
+	padding:10px;
+	text-align:left;
+	background:#ffffff;
+	height:100%;
+}
+.rtl .MSC_Body
+{
+	text-align:right;
+}
+
+
+.MSC_FooterFrame
+{
+	background:#3D8991;
+	padding:5px;
+	text-align:center;
+}
+.MSC_FooterLink
+{
+	color:#ffffff;
+	font-size:10pt;
+	text-decoration:none;
+}
+.MSC_FooterLink:hover
+{
+	color:#ffffff;
+	font-size:10pt;
+	text-decoration:underline;
+}
+.MSC_FooterLink:visited
+{
+	color:#ffffff;
+	font-size:10pt;
+	text-decoration:none;
+}
+.MSC_FooterLinkSpacer
+{
+	color:#ffffff;
+	font-size:10pt;
+}
+.MSC_FooterText
+{
+	color:#ffffff;
+	font-size:10pt;
+}
+
+
+
+.MSC_CollectDataTable,.MSC_CollectDataTable
+{
+	font-size:10pt;
+}
+
+
+    
+.MSC_ECBorder
+{
+  border-color:  #003366;
+}
