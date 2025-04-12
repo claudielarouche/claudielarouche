@@ -1,7 +1,7 @@
 ---
 title: Ottawa Library Program Aggregator
 description: A tool to browse and filter all public library events in Ottawa
-image: /redesign/assets/img/library.jpg
+image: https://claudielarouche.com/assets/img/library.jpg
 tags: [Ottawa]
 permalink: /projects/library/
 layout: page
