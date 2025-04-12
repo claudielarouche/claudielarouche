@@ -1,0 +1,113 @@
+.projects-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+/* Make the content area wider on desktops */
+.wrapper {
+  max-width: 1200px; /* You can go up to 1440px if you like */
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+/* Still looks nice on tablets */
+@media (max-width: 1024px) {
+  .wrapper {
+    max-width: 90%;
+  }
+}
+
+/* On phones, take up almost the full screen */
+@media (max-width: 768px) {
+  .wrapper {
+    max-width: 95%;
+    padding: 1rem;
+  }
+}
+
+#dataTable thead th {
+  position: sticky;
+  top: 0;
+  background-color: #f2f2f2; /* Change the background color as needed */
+  z-index: 100;
+}
+  
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #dddddd;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+
+.checked {
+  text-decoration: line-through;
+}
+
+td.dataTables_empty {
+  text-align: left !important;
+}
+.dataTables_wrapper .dataTables_filter {
+    float: left;
+    text-align: left;
+}
+.dt-button-collection {
+    margin-top: 10px !important;
+}
+
+/* Category styling */
+
+/*.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.project-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: #fff;
+  transition: box-shadow 0.2s;
+}
+
+.project-card:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}*/

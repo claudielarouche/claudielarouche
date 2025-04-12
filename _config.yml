@@ -1,0 +1,18 @@
+title: Claudie Larouche
+description: Thanks to ChatGPT for the help with this website!
+author: Claudie Larouche
+email: claudielarouche@gmail.com
+theme: minima
+
+include:
+  - assets
+
+minima:
+  hide_site_feed_link: true
+
+header_pages:
+  - about.md
+
+collections:
+  projects:
+    output: true
