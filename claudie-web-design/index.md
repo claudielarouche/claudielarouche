@@ -8,7 +8,7 @@ permalink: /claudie-web-design/
 
 <link href="https://fonts.googleapis.com/css?family=Over+the+Rainbow" rel="stylesheet">
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
-<style type="text/css">
+<style>
 img.wp-smiley,
 img.emoji {
 display: inline !important;
