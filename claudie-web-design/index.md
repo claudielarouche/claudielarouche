@@ -66,12 +66,7 @@ background: #333;
 <a rel="home" href="https://claudielaroche.com"></a>
 </div>
 
-<!-- TODO: HERE PUT THE BACK TO CLAUDIE LAROUCHE CODE  -->
 
-
-			<!--<div id="header-links" class="main-navigation">
-			<div id="header-links-inner" class="header-links">
-				<ul id="menu-main-menu" class="menu"><li id="menu-item-40" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40"><a href="http://www.claudielarouche.com/claudie-web-design.html">Home</a></li>
 <li id="menu-item-371" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-371"><a href="https://claudiewebdesign.com/getting-started/">Getting Started</a></li>
 <li id="menu-item-38" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-38"><a href="https://claudiewebdesign.com/about-me/">About</a>
 <ul class="sub-menu">
@@ -84,10 +79,7 @@ background: #333;
 <li id="menu-item-50" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50"><a href="https://claudiewebdesign.com/contact-me/">Contact me</a></li>
 <li id="menu-item-392" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-392"><a href="https://claudiewebdesign.com/free-wordpress-manual/">FREE WordPress Manual</a></li>
 </ul>			</div>
-			</div>-->
-			<!-- #header-links .main-navigation -->
-
-			<!--<div id="header-responsive"><a class="btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse" tabindex="0"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><div id="header-responsive-inner" class="responsive-links nav-collapse collapse"><ul id="menu-main-menu-1" class=""><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40"><a href="http://www.claudiewebdesign.com">Home</a></li>
+			</div>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-371"><a href="https://claudiewebdesign.com/getting-started/">Getting Started</a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-38"><a href="https://claudiewebdesign.com/about-me/">About</a>
 <ul class="sub-menu">
