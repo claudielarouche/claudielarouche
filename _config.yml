@@ -1,7 +1,9 @@
 title: Claudie Larouche
-description: Thanks to ChatGPT for the help with this website!
+description: A website demonstrating my Ottawa and work-related projects
 author: Claudie Larouche
+url: "https://claudielarouche.com"
 email: claudielarouche@gmail.com
+lang: "en"
 theme: minima
 
 include:
