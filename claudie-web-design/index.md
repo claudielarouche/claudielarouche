@@ -13,16 +13,6 @@ permalink: /claudie-web-design/
 <link rel='stylesheet' id='thinkup-google-fonts-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
 <link rel='stylesheet' id='prettyPhoto-css'  href='/claudie-web-design/css/prettyPhoto.css?ver=3.1.6' type='text/css' media='all' />
 <link rel='stylesheet' id='thinkup-bootstrap-css'  href='/claudie-web-design/css/bootstrap.min.css?ver=2.3.2' type='text/css' media='all' />
-<style type="text/css">.broken_link, a.broken_link {
-	text-decoration: line-through;
-}</style>		
-<style type="text/css" id="wp-custom-css">
-body{
-color: #333;
-}
-.themebutton:hover, button:hover, html input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
-background: #333;
-}		</style>
 
 <div id="body-core" class="hfeed site">
 
