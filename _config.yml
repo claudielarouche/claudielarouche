@@ -18,6 +18,8 @@ header_pages:
 collections:
   projects:
     output: true
+  csps:
+    output: true
 
 google_analytics: G-YWMRD8LX5P
 
