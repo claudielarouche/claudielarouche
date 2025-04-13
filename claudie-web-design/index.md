@@ -20,56 +20,7 @@ permalink: /claudie-web-design/
 
 <div class="custom-header"><img src="claudie-web-design/images/cropped-cropped-web-400894.jpg" width="1600" height="200" alt=""></div>
 
-<div id="pre-header">
-<div class="wrap-safari">
-<div id="pre-header-core" class="main-navigation">
 
-
-<div id="pre-header-search">	<form method="get" class="searchform" action="https://claudiewebdesign.com/" role="search">
-<input type="text" class="search" name="s" value="" placeholder="Search" />
-<input type="submit" class="searchsubmit" name="submit" value="Search" />
-</form></div>
-<div id="pre-header-social"><ul><li class="social facebook"><a href="https://www.facebook.com/claudie.larouche.3" data-tip="bottom" data-original-title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li><li class="social google"><a href="https://plus.google.com/109298382086531669454/posts" data-tip="bottom" data-original-title="Google+" target="_blank"><i class="fa fa-google-plus"></i></a></li><li class="social linkedin"><a href="https://www.linkedin.com/in/claudie-larouche" data-tip="bottom" data-original-title="LinkedIn" target="_blank"><i class="fa fa-linkedin"></i></a></li></ul></div>
-</div>
-</div>
-</div>
-<!-- #pre-header -->
-
-<div id="header">
-<div id="header-core">
-
-<div id="logo">
-<a rel="home" href="https://claudielaroche.com"></a>
-</div>
-
-
-<li id="menu-item-371" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-371"><a href="https://claudiewebdesign.com/getting-started/">Getting Started</a></li>
-<li id="menu-item-38" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-38"><a href="https://claudiewebdesign.com/about-me/">About</a>
-<ul class="sub-menu">
-	<li id="menu-item-455" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-455"><a href="https://claudiewebdesign.com/about-me/">About Claudie Larouche</a></li>
-	<li id="menu-item-456" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-456"><a href="https://claudiewebdesign.com/partners/">Partners</a></li>
-</ul>
-</li>
-<li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37"><a href="https://claudiewebdesign.com/pricing/">Pricing</a></li>
-<li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-58 current_page_item menu-item-69"><a href="https://claudiewebdesign.com/portfolio/" aria-current="page">Portfolio</a></li>
-<li id="menu-item-50" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50"><a href="https://claudiewebdesign.com/contact-me/">Contact me</a></li>
-<li id="menu-item-392" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-392"><a href="https://claudiewebdesign.com/free-wordpress-manual/">FREE WordPress Manual</a></li>
-</ul>			</div>
-			</div>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-371"><a href="https://claudiewebdesign.com/getting-started/">Getting Started</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-38"><a href="https://claudiewebdesign.com/about-me/">About</a>
-<ul class="sub-menu">
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-455"><a href="https://claudiewebdesign.com/about-me/">&nbsp; &nbsp; &nbsp; &nbsp; &#45; About Claudie Larouche</a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-456"><a href="https://claudiewebdesign.com/partners/">&nbsp; &nbsp; &nbsp; &nbsp; &#45; Partners</a></li>
-</ul>
-</li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37"><a href="https://claudiewebdesign.com/pricing/">Pricing</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-58 current_page_item menu-item-69"><a href="https://claudiewebdesign.com/portfolio/" aria-current="page">Portfolio</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50"><a href="https://claudiewebdesign.com/contact-me/">Contact me</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-392"><a href="https://claudiewebdesign.com/free-wordpress-manual/">FREE WordPress Manual</a></li>
-</ul></div></div>--><!-- #header-responsive -->
-</div>
-</div>
 <!-- #header -->
 </header>
 <!-- header -->
