@@ -17,17 +17,25 @@ Unfortunately, Claudie Web Design no longer exists, but I am leaving this page h
 
 ### Puddle Jump Coaching
 
+![Puddle Jump Coaching](/assets/img/puddlejumpcoaching.png)
+
 Tonya Pomerantz has worked as an employment professional and career and life coach for over ten years. She has helped thousands (yes, thousands) of people successfully look for jobs, transition to a second career or determine how to move to the next step in their life or career path.
 
 ### ONA Local 83
+
+![ONA Local 83](/assets/img/onalocal83.png)
 
 The Ontario Nurses’ Association is a proactive union committed to improving the economic welfare and quality of work-life for our members, to enable them to provide high-quality health care.
 
 ### My Wealthy Advisor
 
+![My Wealthy Advisor](/assets/img/mywealthyadvisor.png)
+
 Just like when you go to your doctor, Kimberley Day believes in listening to your needs and goals so she can make a personal “diagnosis” in language that you understand. And long after your appointment, and your plan is in place, you can count on her to be familiar with your history and provide answers to future questions and concerns.
 
 ### Saguenay Youth Study
+
+![Saguenay Youth Study](/assets/img/Saguenay-Youth-Study.jpg)
 
 The Saguenay Youth Study (SYS) is carried out in a population with a known founder effect, namely in French Canadians living in the Saguenay Lac Saint-Jean region of Quebec, Canada.
 
@@ -35,17 +43,25 @@ The Saguenay Youth Study (SYS) is a two-generational study of adolescents and th
 
 ### McGregor Quality Painting
 
+![McGregor Quality Painting](/assets/img/mcgregorqualitypainting.png)
+
 McGregor Quality Painting provides custom residential painting and decorating services in Ottawa and surrounding areas. Established in 1993 by Gord McGregor, the company has successfully managed thousands of small-to-large scale projects emphasizing thorough preparation, superior quality, customer service excellence, and competitive pricing. Gord carries out all projects in an efficient and meticulous manner to ensure no compromise.
 
 ### Cameron Wallace
+
+![Cameron Wallace](/assets/img/cameronwallace.png)
 
 Cameron Wallace is a young soccer player from Ottawa.
 
 ### Bytown Reiki
 
+![Bytown Reiki](/assets/img/bytownreiki.png)
+
 Eleanor Aronoff helps people achieve their personal and health goals through guided Reiki sessions. Whether your focus is on health, finances, career, relationships or spirituality, Reiki is a wonderful modality to gently yet effectively support you in reaching your goals.
 
 ### Spa Passion by Rachelle
+
+![Spa Passion by Rachelle](/assets/img/spapassionbyrachelle.png)
 
 Spa Passion by Rachelle is a day spa located in the heart of Orleans, which also offers mobile spa services for personal home services and special events, as well as professional beauty consulting services. In addition, Spa Passion by Rachelle now offers education sessions for young ladies from 10 to 18 years old.
 
