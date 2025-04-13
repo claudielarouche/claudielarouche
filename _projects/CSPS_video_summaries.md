@@ -22,7 +22,7 @@ Although I am a public servant myself, please note that I am not affiliated with
   {% assign sorted = site.csps | sort: "title" %}
   {% for summary in sorted %}
     <li>
-      <a href="{{ summary.url }}">{{ summary.date }}-{{ summary.title }}</a><br>
+      <a href="{{ summary.url }}">{{ summary.date | date: "%Y-%m-%d" }}-{{ summary.title }}</a><br>
       <small>{{ summary.description }}</small>
     </li>
   {% endfor %}
