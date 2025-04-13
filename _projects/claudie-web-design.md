@@ -5,7 +5,7 @@ image: https://claudielarouche.com/assets/img/web.png
 tags: [Archive]
 permalink: /projects/claudie-web-design/
 layout: page
-published: false
+published: true
 ---
 
 ## Portfolio
