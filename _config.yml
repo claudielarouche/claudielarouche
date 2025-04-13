@@ -23,3 +23,6 @@ google_analytics: G-YWMRD8LX5P
 
 twitter_username: claudielarouche
 github_username: claudielarouche
+
+plugins:
+  - jekyll-sitemap
