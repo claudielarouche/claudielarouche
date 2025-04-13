@@ -3,104 +3,9 @@ layout: page
 title: Claudie Web Design
 permalink: /claudie-web-design/
 ---
-<!DOCTYPE html>
-
-<html lang="en-US">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width" />
-<link rel="profile" href="//gmpg.org/xfn/11" />
-<link href="https://fonts.googleapis.com/css?family=Over+the+Rainbow" rel="stylesheet">
 
 
 
-	<!-- This site is optimized with the Yoast SEO plugin v14.7 - https://yoast.com/wordpress/plugins/seo/ -->
-	<title>Portfolio - Claudie Web Design</title>
-	<meta name="robots" content="index, follow" />
-	<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-	<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-	<meta property="og:locale" content="en_US" />
-	<meta property="og:type" content="article" />
-	<meta property="og:title" content="Portfolio - Claudie Web Design" />
-	<meta property="og:description" content="Websites I have developed Puddle Jump Coaching Tonya Pomerantz has worked as an employment professional and career and life coach for over ten years. She has helped thousands (yes, thousands) of people successfully look for jobs, transition to a second career or determine how to move to the next step in their life or careerRead More" />
-	<meta property="og:url" content="http://claudielarouche.com/claudie-web-design.html" />
-	<meta property="og:site_name" content="Claudie Web Design" />
-	<meta property="article:modified_time" content="2022-11-13T17:50:29+00:00" />
-	
-
-
-<link rel='dns-prefetch' href='//fonts.googleapis.com' />
-<link rel='dns-prefetch' href='//s.w.org' />
-<!--
-		<script type="text/javascript">
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/claudiewebdesign.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.3.14"}};
-			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
-		</script>-->
-		<style type="text/css">
-img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 .07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
-}
-</style>
-	<link rel='stylesheet' id='wp-block-library-css'  href='/claudie-web-design/css/dist/block-library/style.min.css?ver=5.3.14' type='text/css' media='all' />
-<!--<link rel='stylesheet' id='contact-form-7-css'  href='https://claudiewebdesign.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.2.2' type='text/css' media='all' />-->
-<link rel='stylesheet' id='parent-style-css'  href='/claudie-web-design/css/themes/minamaze/style.css?ver=5.3.14' type='text/css' media='all' />
-<link rel='stylesheet' id='thinkup-google-fonts-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
-<link rel='stylesheet' id='prettyPhoto-css'  href='/claudie-web-design/css/prettyPhoto.css?ver=3.1.6' type='text/css' media='all' />
-<link rel='stylesheet' id='thinkup-bootstrap-css'  href='/claudie-web-design/css/bootstrap.min.css?ver=2.3.2' type='text/css' media='all' />
-<!--<link rel='stylesheet' id='dashicons-css'  href='https://claudiewebdesign.com/wp-includes/css/dashicons.min.css?ver=5.3.14' type='text/css' media='all' />
-<link rel='stylesheet' id='font-awesome-css'  href='https://claudiewebdesign.com/wp-content/themes/minamaze/lib/extentions/font-awesome/css/font-awesome.min.css?ver=4.7.0' type='text/css' media='all' />
-<link rel='stylesheet' id='thinkup-shortcodes-css'  href='https://claudiewebdesign.com/wp-content/themes/minamaze/styles/style-shortcodes.css?ver=1.8.3' type='text/css' media='all' />
-<link rel='stylesheet' id='thinkup-style-css'  href='https://claudiewebdesign.com/wp-content/themes/childofminamaze/style.css?ver=1.8.3' type='text/css' media='all' />
-<link rel='stylesheet' id='thinkup-responsive-css'  href='https://claudiewebdesign.com/wp-content/themes/minamaze/styles/style-responsive.css?ver=1.8.3' type='text/css' media='all' />
-<script type='text/javascript' src='https://claudiewebdesign.com/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
-<script type='text/javascript' src='https://claudiewebdesign.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
-<link rel='https://api.w.org/' href='https://claudiewebdesign.com/wp-json/' />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://claudiewebdesign.com/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://claudiewebdesign.com/wp-includes/wlwmanifest.xml" />
-<meta name="generator" content="WordPress 5.3.14" />
-<link rel='shortlink' href='https://claudiewebdesign.com/?p=58' />
-<link rel="alternate" type="application/json+oembed" href="https://claudiewebdesign.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fclaudiewebdesign.com%2Fportfolio%2F" />
-<link rel="alternate" type="text/xml+oembed" href="https://claudiewebdesign.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fclaudiewebdesign.com%2Fportfolio%2F&#038;format=xml" />-->
-<style type="text/css">.broken_link, a.broken_link {
-	text-decoration: line-through;
-}</style>		<style type="text/css" id="wp-custom-css">
-			/*
-You can add your own CSS here.
-
-Click the help icon above to learn more.
-*/
-
-body{
-   color: #333;
-}
-
-.themebutton:hover, button:hover, html input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
-    background: #333;
-}		</style>
-		
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-58893818-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
-</head>
-
-<body class="page-template-default page page-id-58 layout-sidebar-none layout-responsive header-style1">
 <div id="body-core" class="hfeed site">
 
 	<header id="site-header">
@@ -350,5 +255,4 @@ var wpcf7 = {"apiSettings":{"root":"https:\/\/claudiewebdesign.com\/wp-json\/con
 <script type='text/javascript' src='https://claudiewebdesign.com/wp-content/themes/minamaze/lib/scripts/plugins/ResponsiveSlides/responsiveslides-call.js?ver=1.8.3'></script>
 <script type='text/javascript' src='https://claudiewebdesign.com/wp-includes/js/wp-embed.min.js?ver=5.3.14'></script>
 -->
-</body>
-</html>
+
