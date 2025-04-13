@@ -8,20 +8,6 @@ permalink: /claudie-web-design/
 
 <link href="https://fonts.googleapis.com/css?family=Over+the+Rainbow" rel="stylesheet">
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
-<style>
-	img.wp-smiley,
-	img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 .07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
-	}
-</style>
 <link rel='stylesheet' id='wp-block-library-css'  href='/claudie-web-design/css/dist/block-library/style.min.css?ver=5.3.14' type='text/css' media='all' />
 <link rel='stylesheet' id='parent-style-css'  href='/claudie-web-design/css/themes/minamaze/style.css?ver=5.3.14' type='text/css' media='all' />
 <link rel='stylesheet' id='thinkup-google-fonts-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
