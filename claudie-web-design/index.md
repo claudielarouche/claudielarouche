@@ -180,7 +180,7 @@ Why not let RnR save you time and energy by sourcing high quality, reliable staf
 <div id="sub-footer">
 <div id="sub-footer-core">	
 
-		<!-- #footer-menu -->
+<!-- #footer-menu -->
 
 <div class="copyright">
 Copyright &copy; 2023 <a href="https://claudielarouche.com/claudie-web-design.html" title="Claudie Web Design"> Claudie Web Design</a>.
