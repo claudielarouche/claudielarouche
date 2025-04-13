@@ -8,6 +8,8 @@ layout: page
 published: true
 ---
 
+<link rel="stylesheet" href="{{ "/assets/css/custom.css" | relative_url }}">
+
 ![My web design image](/assets/img/cropped-cropped-web-400894.jpg)
 
 ## Portfolio
@@ -49,6 +51,8 @@ Spa Passion by Rachelle is a day spa located in the heart of Orleans, which also
 
 ### GlassMate Window Solutions
 
+![Glassmate](/assets/img/glassmate.png)
+
 GlassMate Window Solutions is a local company in Ottawa. Their goal is to build a continuous long-term business relationship with their client by providing services such as:
 
 - Window Cleaning
@@ -61,15 +65,21 @@ Protection of the environment is also one of their top priorities. They plant on
 
 ### Bowen Therapy Ottawa
 
+![Bowen Therapy Ottawa](/assets/img/bowentherapyottawa.png)
+
 Bette Madigan, founder and director of the Bowen Therapy Ottawa clinic, helps women and men get lasting relief from chronic back pain, shoulder pain, sciatica and more. For nearly 10 years, she has been helping her clients reduce and eliminate all symptoms of pain, take control of their health, and reclaim their lives. As a certified Bowen therapy practitioner, Bette has personally conducted thousands of sessions for women and men who suffer pain caused by joint and muscle conditions, the aftermath of injuries or accidents, surgical procedures, and other challenges.
 
 ### Lesbian Outdoor Group
+
+![Lesbian Outdoor Group](/assets/img/lesbianoutdoorgroup.png)
 
 The Lesbian Outdoor Group (LOG) provides opportunities for lesbians in the Ottawa-Gatineau region to enjoy the great outdoors and to socialize indoors too! Members organize a wide variety of indoor and outdoor activities for the benefit of other members.
 
 In LOG, lesbians get together year-round for hikes in the Gatineau hills, potluck gatherings, snowshoe walks, a yearly picnic and even a warm-the-winter dance.
 
 ### Mirevint
+
+![Mirevint](/assets/img/mireving.png)
 
 The Ministry of revival International (MIREVINT) is a Christian community, which has eight churches in R D Congo and a church in Kitwe in Zambia. Come live a life-changing experience with God through:
 
@@ -79,9 +89,13 @@ Healing and deliverance.
 
 ### Knowing Field Designs
 
+![Knowing Field Designs](/assets/img/knowingfielddesigns.png)
+
 Knowing Field Designs offers systemic facilitation in all its services —coaching, consulting and trainings. Systemic facilitators embody the living system principles of belonging, rank and balance. We are able to shift perspectives, see the big picture, and notice the hidden dynamics/patterns within the system while allowing the natural health within an aligned system to emerge
 
 ### Rideau River Music
+
+![Rideau River Music](/assets/img/rideaurivermusic.png)
 
 Located in Smiths Falls Ontario, Canada, Rideau River Music has been providing musical needs to the town and area for over 30 years.
 
@@ -89,11 +103,15 @@ Located in Smiths Falls Ontario, Canada, Rideau River Music has been providing m
 
 ### Hometown Sports Grill
 
+![Hometown Sports Grill](/assets/img/hometownsportsgrill.png)
+
 Hometown Sports Grill is the place locals flock to watch sporting events in HDTV—recently named by CBC as one of Ottawa’s best sportsbars. Expect a warm welcome, great service and exceptional food.
 
 For over 15 years, Hometown has been operating an all ages, fan-friendly sportsbar at this location. We are an all ages fan-friendly sports restaurant. Learn more about us and our community. Stop by any time—the big game is always on!
 
 ### RNR Staffing
+
+![RNR Staffing](/assets/img/rnrstaffing.png)
 
 Looking for Great Staff?
 Why not let RnR save you time and energy by sourcing high quality, reliable staff to meet your business needs. Get started by requesting a free estimate. Once you’ve answered a few questions about your needs, we’ll get back to you with a customized quote.
