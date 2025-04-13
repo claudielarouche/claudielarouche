@@ -8,6 +8,8 @@ layout: page
 published: true
 ---
 
+![My web design image](/assets/img/cropped-cropped-web-400894.jpg)
+
 ## Portfolio
 Unfortunately, Claudie Web Design no longer exists, but I am leaving this page here for posterity :) Below, you will see some websites I have designed. Further down, please find websites on which I have contributed. 
 
