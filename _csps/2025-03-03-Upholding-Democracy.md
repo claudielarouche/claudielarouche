@@ -1,5 +1,5 @@
 ---
-title: Upholding Democracy, Serving Canadians: Understanding Our Role as Public Servants
+title: Upholding Democracy Serving Canadians Understanding Our Role as Public Servants
 description: This video captures a symposium focused on the core values and ethics of the Canadian public service, featuring discussions on navigating contemporary challenges such as AI and evolving societal expectations, with insights from senior leaders and public servants at various levels.
 video_url: https://www.youtube.com/watch?v=GyK-JLvcP-c
 date: 2025-03-03
