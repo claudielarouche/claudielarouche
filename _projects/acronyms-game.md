@@ -8,6 +8,7 @@ layout: page
 ---
 
 <script src="{{ "/assets/js/acronym-game.js" | relative_url }}"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <!--
 <meta http-equiv="refresh" content="0; url=https://claudielarouche.com/acronyms.html">
