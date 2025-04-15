@@ -8,8 +8,8 @@ layout: page
   📚 <a href="{{ '/projects/csps-videos/' | relative_url }}">Back to all CSPS summaries</a>
 </div>
 
-*Title*: ({{ page.title }})  
-*Date*: ({{ page.date | date: "%Y-%m-%d" }})  
+**Title**: ({{ page.title }})  
+**Date**: ({{ page.date | date: "%Y-%m-%d" }})  
 
 {{ content }}
 
