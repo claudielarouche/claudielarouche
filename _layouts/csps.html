@@ -8,9 +8,14 @@ layout: page
   📚 <a href="{{ '/projects/csps-videos/' | relative_url }}">Back to all CSPS summaries</a>
 </div>
 
-**Title**: ({{ page.title }})  
-**Date**: ({{ page.date | date: "%Y-%m-%d" }})  
+<div class="meta">
+    <p><strong>Title</strong>: {{ page.title }}</p>
+    <p><strong>Date</strong>: {{ page.date | date: "%Y-%m-%d" }}</p>
+</div>
+
 
 {{ content }}
 
-[Watch the full video]({ page.url })
+{% if page.video_url %}
+   <p><a href="{{ page.video_url }}" target="_blank">🎥 Watch the full video</a></p>
+{% endif %}
