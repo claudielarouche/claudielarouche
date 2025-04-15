@@ -43,8 +43,9 @@ The data for this game was last downloaded on December 16, 2024, from the <a hre
 </div>
 <div id="feedback" class="text-info mb-3"></div>
 <button id="next-question" class="btn btn-secondary" style="display: none;">Next Question</button>
-<script src="{{ "/assets/js/acronyms-game.js" | relative_url }}"></script>
 <div id="score-area">
 <h2>Your Score: <span id="score">0</span>/<span id="total-questions">0</span></h2>
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+<script src="{{ "/assets/js/acronyms-game.js" | relative_url }}"></script>
