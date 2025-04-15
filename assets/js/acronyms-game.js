@@ -114,3 +114,7 @@ document.getElementById('start-game').addEventListener('click', startGame);
                 }
             }
         }
+
+window.addEventListener("DOMContentLoaded", function () {
+  loadData();
+});
