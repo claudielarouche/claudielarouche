@@ -7,7 +7,7 @@ permalink: /projects/acronym-game/
 layout: page
 ---
 
-<script src="{{ "/assets/js/acronyms-game.js" | relative_url }}"></script>
+
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <!--
@@ -43,6 +43,7 @@ The data for this game was last downloaded on December 16, 2024, from the <a hre
 </div>
 <div id="feedback" class="text-info mb-3"></div>
 <button id="next-question" class="btn btn-secondary" style="display: none;">Next Question</button>
+<script src="{{ "/assets/js/acronyms-game.js" | relative_url }}"></script>
 <div id="score-area">
 <h2>Your Score: <span id="score">0</span>/<span id="total-questions">0</span></h2>
 </div>
