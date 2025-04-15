@@ -8,7 +8,7 @@ document.getElementById('start-game').addEventListener('click', startGame);
 
         function loadData() {
             console.log("end of game changes 3");
-            Papa.parse('acronyms/acronyms.csv', {
+            Papa.parse('http://claudielarouche.com/assets/data/acronyms.csv', {
                 download: true,
                 header: true,
                 complete: function(results) {
