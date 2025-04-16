@@ -47,6 +47,8 @@ DINE:
 RTL: 
 Manual: 
 TBD: 
+
+Pivot: 
 </textarea>
 
 <button class="btn btn-info mt-3" onclick="createFinalRecord()">Create Final Record</button>
