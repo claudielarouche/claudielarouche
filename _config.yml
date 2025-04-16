@@ -20,6 +20,8 @@ collections:
     output: true
   csps:
     output: true
+  dev-projects:
+    output: true
 
 google_analytics: G-YWMRD8LX5P
 
