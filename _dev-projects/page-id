@@ -109,6 +109,4 @@ TBD:
 
 </div>
 
-    <script>
-        
-    </script>
+<script type="text/javascript" src="{{ "/assets/js/page-id.js" | relative_url }}"></script>
