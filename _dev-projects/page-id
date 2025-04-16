@@ -59,9 +59,8 @@ Pivot:
 <button class="btn btn-warning mt-2" onclick="startOver()">Start Over</button>
 
 <div>
-## RTL/DINE/Manual Reference
-
-### RTL
+<h2 class="mb-3 mt-2 pb-1 border-bottom">RTL/DINE/Manual Reference</h2>
+<h3 class="mt-4 mb-2">RTL</h3>
 <ul>
 <li>If we don’t know if it’s been paid (any pages with child information, but no costing info)</li>
 <li>Approval letters and acceptance letters</li>
