@@ -20,6 +20,7 @@ let historyStack = [];
 
 
         function addToText(category) {
+		console.log(category);
 		if (category == "Pivot")
 		{
 			console.log("Pivot pressed")
