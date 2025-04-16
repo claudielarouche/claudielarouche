@@ -87,7 +87,7 @@ let historyStack = [];
 
 	        text = text.replace(/(Pivot)/g, '<br><br>$1');
 		
-		document.getElementById('recordDisplay').innerText = text;
+		document.getElementById('recordDisplay').innerHTML = text;
 		
 		// Determine instructions based on content
 		provideInstructions(text);
