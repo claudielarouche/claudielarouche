@@ -39,6 +39,7 @@ The text can be edited as needed. For this tool to work, please do not remove th
 <button type="button" class="btn btn-success" onclick="addToText('RTL')">R - RTL</button>
 <button type="button" class="btn btn-danger" onclick="addToText('Manual')">M - Manual</button>
 <button type="button" class="btn btn-warning" onclick="addToText('TBD')">T - TBD</button>
+<button type="button" class="btn btn-info" onclick="addToText('Pivot')">P - Pivot</button>
 </div>
 
 <textarea class="form-control" id="finalText" rows="8" oninput="adjustTextArea(this)">Automation: 
