@@ -20,13 +20,15 @@ overflow: hidden; /* Prevents scroll bar from appearing */
 }
 </style>
 
-<div class="container">
+
 
 Please use the buttons below or hit the letters A for Automation, D for DINE, R for RTL, M for Manual, and T for TBD. 
 Every time you press a button, the tool will take the "current page" number from the input box and place it in the correct location in the text below.
 The text can be edited as needed. For this tool to work, please do not remove the text Automation, DINE, RTL, Manual, TBD from the final input box below.
 
 Use the P button to identify pages that are rotated (it will not increase page count). You can send the list to Max to redo the OCR on those pages. Please note that the undo function works a bit funky around page rotation because pressing P does not increase page count.
+
+<div class="container">
 
 <div class="input-group mb-3">
 <div class="input-group-prepend">
