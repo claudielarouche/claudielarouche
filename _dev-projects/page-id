@@ -26,6 +26,8 @@ Please use the buttons below or hit the letters A for Automation, D for DINE, R 
 Every time you press a button, the tool will take the "current page" number from the input box and place it in the correct location in the text below.
 The text can be edited as needed. For this tool to work, please do not remove the text Automation, DINE, RTL, Manual, TBD from the final input box below.
 
+Use the P button to identify pages that are rotated (it will not increase page count). You can send the list to Max to redo the OCR on those pages. Please note that the undo function works a bit funky around page rotation because pressing P does not increase page count.
+
 <div class="input-group mb-3">
 <div class="input-group-prepend">
 <span class="input-group-text">Current Page</span>
@@ -57,8 +59,9 @@ Pivot:
 <button class="btn btn-warning mt-2" onclick="startOver()">Start Over</button>
 
 <div>
-<h2 class="mb-3 mt-2 pb-1 border-bottom">RTL/DINE/Manual Reference</h2>
-<h3 class="mt-4 mb-2">RTL</h3>
+## RTL/DINE/Manual Reference
+
+### RTL
 <ul>
 <li>If we don’t know if it’s been paid (any pages with child information, but no costing info)</li>
 <li>Approval letters and acceptance letters</li>
