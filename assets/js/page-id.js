@@ -1,3 +1,4 @@
+console.log("application starting");
 let historyStack = [];
         document.body.addEventListener('keydown', function(event) {
 	    const keyName = event.key;
@@ -20,7 +21,7 @@ let historyStack = [];
 
 
         function addToText(category) {
-		console.log(category);
+		console.log("category pressed:" + category);
 		if (category == "Pivot")
 		{
 			console.log("Pivot pressed")
