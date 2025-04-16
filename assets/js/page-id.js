@@ -1,4 +1,4 @@
-console.log("application starting");
+console.log("application starting v2");
 let historyStack = [];
         document.body.addEventListener('keydown', function(event) {
 	    const keyName = event.key;
@@ -82,6 +82,8 @@ let historyStack = [];
 			}
 			return line;
 		}).join(', ');
+
+	        text = text.replace(/(Pivot)/g, '<br><br>$1');
 		
 		document.getElementById('recordDisplay').innerText = text;
 		
