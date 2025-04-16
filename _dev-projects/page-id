@@ -21,10 +21,10 @@ overflow: hidden; /* Prevents scroll bar from appearing */
 </style>
 
 <div class="container">
-<h1>Page Identification Tool</h1>
-<p>Please use the buttons below or hit the letters A for Automation, D for DINE, R for RTL, M for Manual, and T for TBD. 
+
+Please use the buttons below or hit the letters A for Automation, D for DINE, R for RTL, M for Manual, and T for TBD. 
 Every time you press a button, the tool will take the "current page" number from the input box and place it in the correct location in the text below.
-The text can be edited as needed. For this tool to work, please do not remove the text Automation, DINE, RTL, Manual, TBD from the final input box below.</p>
+The text can be edited as needed. For this tool to work, please do not remove the text Automation, DINE, RTL, Manual, TBD from the final input box below.
 
 <div class="input-group mb-3">
 <div class="input-group-prepend">
