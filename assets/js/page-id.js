@@ -30,7 +30,9 @@ let historyStack = [];
 	            const lines = finalText.value.split('\n');
 	            const updatedLines = lines.map(line => {
 	                if (line.startsWith(category + ':')) {
-	                    historyStack.push(finalText.value); // Save the current state before updating
+			    if (category != "Pivot"){
+	                        historyStack.push(finalText.value); // Save the current state before updating
+			    }
 	                    return line + pageNumber + ', ';
 	                } else {
 	                    return line;
