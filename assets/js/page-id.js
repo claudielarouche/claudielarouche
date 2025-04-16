@@ -21,7 +21,7 @@ let historyStack = [];
 
 
         function addToText(category) {
-		console.log("category pressed:" + category);
+		
 		
 
 	            const pageInput = document.getElementById('pageNumber');
@@ -85,7 +85,7 @@ let historyStack = [];
 			return line;
 		}).join(', ');
 
-	        text = text.replace(/(Pivot)/g, '<br><br>$1');
+	        text = text.replace(/, (Pivot)/g, '<br><br>$1');
 		
 		document.getElementById('recordDisplay').innerHTML = text;
 		
@@ -124,7 +124,7 @@ let historyStack = [];
 
         function startOver() {
             document.getElementById('pageNumber').value = '1';
-            document.getElementById('finalText').value = 'Automation: \nDINE: \nRTL: \nManual: \nTBD: \n\nPivot:';
+            document.getElementById('finalText').value = 'Automation: \nDINE: \nRTL: \nManual: \nTBD: \n\nPivot: ';
             document.getElementById('recordDisplay').innerText = '';
             document.getElementById('instructionDisplay').innerText = '';
             historyStack = []; // Clear history on start over
