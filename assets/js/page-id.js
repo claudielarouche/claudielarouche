@@ -22,11 +22,8 @@ let historyStack = [];
 
         function addToText(category) {
 		console.log("category pressed:" + category);
-		if (category == "Pivot")
-		{
-			console.log("Pivot pressed")
-		}
-		else{
+		
+
 	            const pageInput = document.getElementById('pageNumber');
 	            let pageNumber = parseInt(pageInput.value);
 	            const finalText = document.getElementById('finalText');
@@ -41,8 +38,13 @@ let historyStack = [];
 	            });
 	            finalText.value = updatedLines.join('\n');
 	            adjustTextArea(finalText); // Adjust the height of the textarea
-	            pageInput.value = pageNumber + 1;
+			if (category != "Pivot")
+		{
+			pageInput.value = pageNumber + 1;
+			
 		}
+	            
+		
         }
 
        function createFinalRecord() {
