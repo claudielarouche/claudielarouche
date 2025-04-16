@@ -5,13 +5,14 @@ let historyStack = [];
 	        undoLastAction();
 	    } else if (keyName === '=') {  // Checking for the equal sign to perform undo
 	        undoLastAction();
-	    } else if (keyName.toUpperCase() === 'A' || keyName.toUpperCase() === 'D' || keyName.toUpperCase() === 'R' || keyName.toUpperCase() === 'M' || keyName.toUpperCase() === 'T') {
+	    } else if (keyName.toUpperCase() === 'A' || keyName.toUpperCase() === 'D' || keyName.toUpperCase() === 'R' || keyName.toUpperCase() === 'M' || keyName.toUpperCase() === 'T' || keyName.toUpperCase() === 'P') {
 	        const buttonMap = {
 	            'A': 'Automation',
 	            'D': 'DINE',
 	            'R': 'RTL',
 	            'M': 'Manual',
-	            'T': 'TBD'
+	            'T': 'TBD',
+		    'P': 'Pivot'
 	        };
 	        addToText(buttonMap[keyName.toUpperCase()]);
 	    }
@@ -19,21 +20,27 @@ let historyStack = [];
 
 
         function addToText(category) {
-            const pageInput = document.getElementById('pageNumber');
-            let pageNumber = parseInt(pageInput.value);
-            const finalText = document.getElementById('finalText');
-            const lines = finalText.value.split('\n');
-            const updatedLines = lines.map(line => {
-                if (line.startsWith(category + ':')) {
-                    historyStack.push(finalText.value); // Save the current state before updating
-                    return line + pageNumber + ', ';
-                } else {
-                    return line;
-                }
-            });
-            finalText.value = updatedLines.join('\n');
-            adjustTextArea(finalText); // Adjust the height of the textarea
-            pageInput.value = pageNumber + 1;
+		if (category == "Pivot")
+		{
+			console.log("Pivot pressed")
+		}
+		else{
+	            const pageInput = document.getElementById('pageNumber');
+	            let pageNumber = parseInt(pageInput.value);
+	            const finalText = document.getElementById('finalText');
+	            const lines = finalText.value.split('\n');
+	            const updatedLines = lines.map(line => {
+	                if (line.startsWith(category + ':')) {
+	                    historyStack.push(finalText.value); // Save the current state before updating
+	                    return line + pageNumber + ', ';
+	                } else {
+	                    return line;
+	                }
+	            });
+	            finalText.value = updatedLines.join('\n');
+	            adjustTextArea(finalText); // Adjust the height of the textarea
+	            pageInput.value = pageNumber + 1;
+		}
         }
 
        function createFinalRecord() {
@@ -109,7 +116,7 @@ let historyStack = [];
 
         function startOver() {
             document.getElementById('pageNumber').value = '1';
-            document.getElementById('finalText').value = 'Automation: \nDINE: \nRTL: \nManual: \nTBD: \n';
+            document.getElementById('finalText').value = 'Automation: \nDINE: \nRTL: \nManual: \nTBD: \n\nPivot:';
             document.getElementById('recordDisplay').innerText = '';
             document.getElementById('instructionDisplay').innerText = '';
             historyStack = []; // Clear history on start over
