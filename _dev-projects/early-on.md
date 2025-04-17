@@ -11,7 +11,49 @@ layout: dev
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
+<style>
 
+#dataTable thead th {
+position: sticky;
+top: 0;
+background-color: #f2f2f2; /* Change the background color as needed */
+z-index: 100;
+}
+
+table {
+border-collapse: collapse;
+width: 100%;
+margin-top: 20px;
+}
+
+th,
+td {
+border: 1px solid #dddddd;
+}
+
+h2 {
+margin-top: 20px;
+}
+
+label {
+display: block;
+margin-top: 10px;
+}
+
+
+.checked {
+text-decoration: line-through;
+}
+
+td.dataTables_empty {
+text-align: left !important;
+}
+
+.dataTables_wrapper .dataTables_filter {
+float: left;
+text-align: left;
+}
+</style>
 
 From November 2023 to October 2024, I maintained the EarlyON Playgroup Repository, a searchable and up-to-date listing of EarlyON programs in Ottawa. My goal was to make it easier for parents to find playgroup information without having to search through 21 different websites. This resource was updated monthly and served many families during its year-long run.
 
