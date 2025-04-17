@@ -2,6 +2,7 @@
 layout: page
 title: Media Appearances
 permalink: /media/
+published: false
 ---
 
 # Media Appearances
