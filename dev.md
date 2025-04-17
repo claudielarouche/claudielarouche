@@ -1,6 +1,6 @@
 ---
 layout: page
-seo: false
+exclude_ga: true
 ---
 
 ## Dev Projects
