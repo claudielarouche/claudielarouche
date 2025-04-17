@@ -14,8 +14,118 @@ In October 2024, the Parent Resource Centre launched the [Incredible Playgroup F
 ## 📂 View the Historical Repository
 
 <details>
-  <summary>Click to expand</summary>
-  <p>To be completed</p>
+<summary>Click to expand</summary>
+<div class="mt-3">
+<a href="#csvData" class="btn btn-primary">
+Go to the data
+</a>
+</div>
+
+<!-- Add the Bootstrap call-out with a lightbulb icon -->
+<div class="alert alert-info mt-3" role="alert">
+<span class="material-icons" style="vertical-align: middle;">lightbulb</span>
+Please make sure to <strong>always click on the link</strong> to verify that the playgroup you are planning to visit is still running. Please note that I am not always informed of last minute cancellations.
+</div>
+
+<h2>Filters</h2>
+<form class="form">
+
+<div class="form-group row">
+<label for="selectedDate" class="col-sm-2 col-form-label">Select Date:</label>
+<div class="col-sm-10">
+<input type="date" id="selectedDate" class="form-control col-sm-2">
+</div>
+</div>
+
+<div class="form-group row">
+<label for="selectedArea" class="col-sm-2 col-form-label">Select Area(s):</label>
+<div class="col-sm-10">
+<div class="checkbox">
+<label><input type="checkbox" id="centralCheckbox" class="areaCheckbox" value="Central" checked=""> Central</label>
+</div>
+<div class="checkbox">
+<label><input type="checkbox" id="eastCheckbox" class="areaCheckbox" value="East" checked=""> East</label>
+</div>
+<div class="checkbox">
+<label><input type="checkbox" id="southCheckbox" class="areaCheckbox" value="South" checked=""> South</label>
+</div>
+<div class="checkbox">
+<label><input type="checkbox" id="westCheckbox" class="areaCheckbox" value="West" checked=""> West</label>
+</div>
+</div>
+</div>
+
+<div class="form-group row">
+<label for="selectedAgeGroup" class="col-sm-2 col-form-label">Select Age Group:</label>
+<div class="col-sm-3">
+<select id="selectedAgeGroup" class="form-control">
+<option value="">Show all</option>
+<option value="Babies">Show baby playgroups only</option>
+<option value="Kids">Show kids playgroups only</option>
+</select>
+</div>
+</div>
+
+<div class="form-group row">
+<label for="scheduleFilter" class="col-sm-2 col-form-label">Select Schedule:</label>
+<div class="col-sm-4">
+<select id="scheduleFilter" class="form-control">
+<option value="all">Show all times</option>
+<option value="eveningsWeekends">Show evenings and weekends only</option>
+<option value="weekdayAMPM">Show weekday AM and PM only</option>
+</select>
+</div>
+</div>
+
+<div class="form-group row">
+<label for="languageFilter" class="col-sm-2 col-form-label">Select Language(s):</label>
+<div class="col-sm-10">
+<div class="checkbox">
+<label><input type="checkbox" id="arabicCheckbox" class="languageCheckbox" value="Arabic" checked=""> Arabic</label>
+</div>
+<div class="checkbox">
+<label><input type="checkbox" id="englishCheckbox" class="languageCheckbox" value="English" checked=""> English</label>
+</div>
+<div class="checkbox">
+<label><input type="checkbox" id="frenchCheckbox" class="languageCheckbox" value="French" checked=""> French</label>
+</div>
+<div class="checkbox">
+<label><input type="checkbox" id="mandarinCheckbox" class="languageCheckbox" value="Mandarin" checked=""> Mandarin</label>
+</div>
+</div>
+</div>
+</form>
+
+<div class="mt-3">
+<button class="btn btn-secondary" onclick="clearAllFilters()">
+Reset filters to default
+</button>
+</div>
+<div class="mt-3">
+<a href="#csvData" class="btn btn-primary">
+Go to the data
+</a>
+</div>
+
+
+<h2>Data</h2>
+<div id="csvData"></div>
+<p>The data from this table was taken from the various Ottawa EarlyON playgroups posted on the <a href="https://ottawa.ca/en/family-and-social-services/childrens-services/earlyon" target="_blank">Ottawa.ca website</a>. </p>
+
+<div class="row">
+<div class="col-sm-2">
+<label for="pageLength">Rows per page:</label>
+</div>
+<div class="col-sm-2">
+<select id="pageLength" class="form-control">
+<option value="25">25</option>
+<option value="50">50</option>
+<option value="100" selected>100</option>
+<option value="-1">All rows</option>
+<!-- Add more options as needed -->
+</select>
+</div>
+</div>
 </details>
 
 ## 🛠 How It Was Built
