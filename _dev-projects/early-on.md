@@ -175,4 +175,4 @@ Thank you to everyone who used and shared this resource. If you're interested in
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
-<script src="{{ "/assets/js/acronyms-game.js" | relative_url }}"></script>
+<script src="{{ "/assets/js/earlyon.js" | relative_url }}"></script>
