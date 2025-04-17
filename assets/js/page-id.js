@@ -30,9 +30,9 @@ let historyStack = [];
 	            const lines = finalText.value.split('\n');
 	            const updatedLines = lines.map(line => {
 	                if (line.startsWith(category + ':')) {
-			    if (category != "Pivot"){
-	                        historyStack.push({ text: finalText.value, category: category }); // Save the current state before updating
-			    }
+			    
+	                    historyStack.push({ text: finalText.value, category: category }); // Save the current state before updating
+			    
 	                    return line + pageNumber + ', ';
 	                } else {
 	                    return line;
@@ -41,10 +41,10 @@ let historyStack = [];
 	            finalText.value = updatedLines.join('\n');
 	            adjustTextArea(finalText); // Adjust the height of the textarea
 			if (category != "Pivot")
-		{
-			pageInput.value = pageNumber + 1;
-			
-		}
+			{
+				pageInput.value = pageNumber + 1;
+				
+			}
 	            
 		
         }
