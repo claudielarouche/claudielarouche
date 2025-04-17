@@ -185,8 +185,23 @@ Then I'd save the Google Sheet to Github pages.
 > *“I used it every week to plan which centres to visit. The search feature was amazing.”*  
 > — Community Volunteer
 -->
-To be completed
+> *“THANK YOU for the schedules you have created. I never went to the early ON groups because I always found it too much "effort" to figure out where/when/what etc. With the data set you have created, I have turned into an Early ON snob and go at least twice a week and love it! Thank you!”*
 
+> *“Hi Claudie! I just wanted to say thank you so much for the Early On mast list. It has made such a difference for me :) I was wondering if I could send you a Starbucks or timmies gift card just to say thanks! You've single handily lifted me out of postpartum depression lol”*
+
+> *“Who are you? You're like a Mom superhero”*
+
+> *“This is amazing!!! I have wanted to see one of these lists built for years, but didn’t have the background to do it myself. The families are going to really appreciate this valuable resource.”*
+
+> *“Hi Claudie, I just want to say thank you so much for putting this all together! I work for EarlyON and parents are always asking for guidance in finding other playgroups that fit their unique schedule and needs. Our location doesn't always have what they are looking for and I have found that getting information on other EarlyOn programs is very complicated and time consuming. There is a serious lack of collaboration between EarlyON groups, and this is exactly what we need. So, thank you so much! I will be using this site a lot! Let me know if there's anything I can do to help. All the best.”*
+
+> *“I love what you’ve done with your webpage!! Thank you so much for creating this useful tool. It’s so overwhelming trying to figure out all the dates and times and locations of playgroups - I’m adding your page to my bookmarks for easy access. Thank you!!”*
+
+> *“Encore une fois merci pour ce travail exhaustif et qui fait une très grande différence dans le taux de participation aux activités de nos centres. Nous entendons très souvent les nouveaux clients dire qu’ils ont connu notre centre grâce à votre page Web. C’est une chance inouïe que vous partagiez toute cette information avec la communauté d’Ottawa. Merci infiniment !!!”*
+
+> *“Hi Claudie Thank you so much for this great resource. Both staff and Parents love it. We have even created a QR code for your website that we give out or parents can scan it. I am attaching a copy for your records. Also feel free to distribute it.”*
+
+> *“Thank you so much for all your hard work and dedication to the community. The website is very impressive and so helpful to families.”*
 ---
 
 ## ✉️ Final Notes
