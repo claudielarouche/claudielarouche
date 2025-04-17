@@ -150,7 +150,7 @@ Reset filters to default
 
 </details>
 
-## 🛠 How It Was Built
+## 🛠 How the EarlyON Repository Was Built
 
 It all started with a simple question to ChatGPT: "Can you help me build a Javascript and HTML website that reads off of a CSV file and presents the data on the screen?" It took 5 or 6 different attempts after that initial question, but finally ChatGPT and I found a way to make it work. 
 
@@ -207,7 +207,7 @@ Then I'd save the Google Sheet to Github pages.
 
 ## ✉️ Final Notes
 
-Thank you to everyone who used and shared this resource. If you're interested in building a similar tool or want to collaborate on community-driven solutions, feel free to reach out.
+Thank you to everyone who used and shared the EarlyON Repository! If you have ideas of similar tools or want to collaborate on community-driven solutions, feel free to reach out! Claudielarouche@gmail.com
 
 — Claudie Larouche  
 
