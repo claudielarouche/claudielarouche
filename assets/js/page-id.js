@@ -31,7 +31,7 @@ let historyStack = [];
 	            const updatedLines = lines.map(line => {
 	                if (line.startsWith(category + ':')) {
 			    if (category != "Pivot"){
-	                        historyStack.push(finalText.value); // Save the current state before updating
+	                        historyStack.push({ text: finalText.value, category: category }); // Save the current state before updating
 			    }
 	                    return line + pageNumber + ', ';
 	                } else {
@@ -136,12 +136,15 @@ let historyStack = [];
         }
 
         function undoLastAction() {
-            if (historyStack.length > 0) {
-                const previousState = historyStack.pop();
-                document.getElementById('finalText').value = previousState;
-                // Optionally decrement the page number
-                const pageInput = document.getElementById('pageNumber');
-                let currentPage = parseInt(pageInput.value);
-                pageInput.value = Math.max(1, currentPage - 1);
-            }
-        }
+	    if (historyStack.length > 0) {
+	        const { text, category } = historyStack.pop();
+	        document.getElementById('finalText').value = text;
+	        
+	        if (category !== 'Pivot') {
+	            const pageInput = document.getElementById('pageNumber');
+	            let currentPage = parseInt(pageInput.value);
+	            pageInput.value = Math.max(1, currentPage - 1);
+	        }
+	    }
+	}
+
