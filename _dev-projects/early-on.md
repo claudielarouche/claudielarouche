@@ -7,6 +7,12 @@ permalink: /dev-projects/early-on/
 layout: dev
 ---
 
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+
 From November 2023 to October 2024, I maintained the EarlyON Playgroup Repository, a searchable and up-to-date listing of EarlyON programs in Ottawa. My goal was to make it easier for parents to find playgroup information without having to search through 21 different websites. This resource was updated monthly and served many families during its year-long run.
 
 In October 2024, the Parent Resource Centre launched the [Incredible Playgroup Finder](https://incredibleplaygroupfinder.ca), a centralized and more permanent tool built on the same goal: to support Ottawa families. 
@@ -173,6 +179,9 @@ Thank you to everyone who used and shared this resource. If you're interested in
 
 — Claudie Larouche  
 
-
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.7.1/js/dataTables.buttons.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.7.1/js/buttons.colVis.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
 <script src="{{ "/assets/js/earlyon.js" | relative_url }}"></script>
