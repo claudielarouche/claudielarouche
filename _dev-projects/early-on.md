@@ -67,7 +67,7 @@ In October 2024, the Parent Resource Centre launched the [Incredible Playgroup F
 <!-- Add the Bootstrap call-out with a lightbulb icon -->
 <div class="alert alert-danger mt-3" role="alert">
 <span class="material-icons" style="vertical-align: middle;">lightbulb</span>
-Please note that this is a demo of what the EarlyON Repository used to look like, not a list of current playgroups. The date range is 2024-01-02 to 2024-01-5</div>
+Please note that this is a demo of what the EarlyON Repository used to look like, not a list of current playgroups. The date range is 2024-01-02 to 2024-01-05</div>
 
 <h2>Filters</h2>
 <form class="form">
