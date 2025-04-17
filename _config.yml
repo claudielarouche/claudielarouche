@@ -30,3 +30,10 @@ github_username: claudielarouche
 
 plugins:
   - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: "_dev-projects"
+    values:
+      sitemap: false
+      exclude_ga: true
