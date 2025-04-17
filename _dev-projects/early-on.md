@@ -13,7 +13,10 @@ In October 2024, the Parent Resource Centre launched the [Incredible Playgroup F
 
 ## 📂 View the Historical Repository
 
-TO BE COMPLETED 
+<details>
+  <summary>Click to expand</summary>
+  <p>To be completed</p>
+</details>
 
 ## 🛠 How It Was Built
 
@@ -40,7 +43,7 @@ Then I'd save the Google Sheet to Github pages.
 ---
 
 ## 💬 Testimonials
-
+<!--
 > *“This tool was a lifesaver during my maternity leave. I could finally plan outings without endlessly scrolling through Facebook pages.”*  
 > — Local Parent
 
@@ -49,8 +52,8 @@ Then I'd save the Google Sheet to Github pages.
 
 > *“I used it every week to plan which centres to visit. The search feature was amazing.”*  
 > — Community Volunteer
-
-*Have feedback or want to share your experience with the site? Feel free to [contact me](/contact/).*
+-->
+To be completed
 
 ---
 
