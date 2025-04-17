@@ -57,9 +57,12 @@ To be completed
 
 ---
 
-## ✉️ Final Note
+## ✉️ Final Notes
 
 Thank you to everyone who used and shared this resource. If you're interested in building a similar tool or want to collaborate on community-driven solutions, feel free to reach out.
 
 — Claudie Larouche  
-*Project lead and developer, EarlyON Repository*
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+<script src="{{ "/assets/js/acronyms-game.js" | relative_url }}"></script>
