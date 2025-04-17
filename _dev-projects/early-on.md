@@ -202,6 +202,7 @@ Then I'd save the Google Sheet to Github pages.
 > *“Hi Claudie Thank you so much for this great resource. Both staff and Parents love it. We have even created a QR code for your website that we give out or parents can scan it. I am attaching a copy for your records. Also feel free to distribute it.”*
 
 > *“Thank you so much for all your hard work and dedication to the community. The website is very impressive and so helpful to families.”*
+
 ---
 
 ## ✉️ Final Notes
