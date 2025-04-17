@@ -5,7 +5,7 @@ let originalData = []; // Initialize as an empty array
 
 window.onload = function() {
 	// Update the path to your CSV file
-	const csvFilePath = 'https://claudielarouche.com/asset/earlyon.csv';
+	const csvFilePath = 'https://claudielarouche.com/assets/data/earlyon.csv';
 
 	Papa.parse(csvFilePath, {
 		header: true,
