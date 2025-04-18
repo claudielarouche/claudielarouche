@@ -39,7 +39,8 @@ Here are some interviews I have given, articles written about my projects, etc.
 ## 🎙️ As It Happens (CBC National Radio)  
 **Type:** Pre-recorded interview  
 **Date:** April 26, 2024  
-**Details:** My segment starts at 35:50  
+**Details:** My segment starts at 35:50 
+
 [Listen to the clip](https://www.cbc.ca/listen/live-radio/1-2-as-it-happens/clip/16058997-a-thousand-steps-forward-one-step-back)
 
 ---
