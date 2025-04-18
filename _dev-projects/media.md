@@ -5,7 +5,9 @@ permalink: /media/
 image: /assets/img/media-banner.jpg
 ---
 
+<!--
 ![Media Appearances]({{ page.image | relative_url }})
+-->
 
 # Media Appearances
 
