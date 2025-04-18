@@ -1,7 +1,7 @@
 ---
 layout: dev
 title: Media Appearances
-permalink: /media/
+permalink: /dev-projects/media/
 image: /assets/img/media-banner.jpg
 ---
 
