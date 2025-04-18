@@ -9,8 +9,6 @@ image: /assets/img/media-banner.jpg
 ![Media Appearances]({{ page.image | relative_url }})
 -->
 
-# Media Appearances
-
 Here are some interviews I have given, articles written about my projects, etc. 
 
 ---
