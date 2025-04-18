@@ -11,10 +11,10 @@ image: /assets/img/media-banner.jpg
 
 # Media Appearances
 
-Here are some interviews, articles, and features where I've shared my work or insights.
+Here are some interviews I have given, articles written about my projects, etc. 
 
 ---
-
+<!--
 ## 📰 CTV News Article  
 **Title:** "This Ottawa parent was frustrated by the city of Ottawa’s website, so she built her own"  
 **Date:** May 2, 2024  
@@ -35,14 +35,15 @@ Here are some interviews, articles, and features where I've shared my work or in
 [Watch the segment](https://ottawa.ctvnews.ca/video/c2913823-building-a-new-website-for-city-activities)
 
 ---
-
+-->
 ## 🎙️ As It Happens (CBC National Radio)  
 **Type:** Pre-recorded interview  
 **Date:** April 26, 2024  
+**Details:** My segment starts at 35:50 or so
 [Listen to the clip](https://www.cbc.ca/listen/live-radio/1-2-as-it-happens/clip/16058997-a-thousand-steps-forward-one-step-back)
 
 ---
-
+<!--
 ## 📺 CBC Ottawa Evening News  
 **Type:** TV news segment  
 **Date:** April 25, 2024  
@@ -50,12 +51,11 @@ Here are some interviews, articles, and features where I've shared my work or in
 [Watch the segment](https://www.cbc.ca/player/play/video/1.7185600)
 
 ---
-
+-->
 ## 🎙️ CBC Ottawa Morning – Live Interview  
 **Type:** Radio interview  
 **Date:** April 25, 2024  
 [Listen to the episode (MP3)](https://mp3.cbc.ca/radio/CBC_Radio_VMS/659/278/dave-lPnVVWZO-20240425_1714053249695.mp3)  
-[Listen on CBC](https://www.cbc.ca/listen/live-radio/1-100-ottawa-morning)
 
 ---
 
@@ -69,7 +69,6 @@ Here are some interviews, articles, and features where I've shared my work or in
 ## 🎙️ Les matins d’ici (Radio-Canada) – Entrevue en direct  
 **Type:** Radio interview  
 **Date:** April 25, 2024  
-[Page de l’épisode](https://ici.radio-canada.ca/ohdio/premiere/emissions/les-matins-d-ici/episodes/752540/rattrapage-jeudi-25-avril-2024)  
 [Segment de l’entrevue](https://ici.radio-canada.ca/ohdio/premiere/emissions/Les-matins-d-ici/segments/entrevue/495095/intelligence-artificielle-inscription-loisirs-activites-ottawa)
 
 ---
