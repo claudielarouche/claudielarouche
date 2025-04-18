@@ -14,7 +14,7 @@ minima:
 
 header_pages:
   - about.md
-  - media.md
+  - pages/media.md
 
 collections:
   projects:
