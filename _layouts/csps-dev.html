@@ -13,8 +13,16 @@ layout: page
     <p><strong>Date</strong>: {{ page.date | date: "%Y-%m-%d" }}</p>
 </div>
 
+<!-- does not work
 <iframe width="560" height="315" src="{{ page.video_url }}" 
   title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+-->
+
+{% assign video_id = page.video_url | split: 'v=' | last %}
+
+<iframe width="560" height="315"
+  src="https://www.youtube.com/embed/{{ video_id }}"
+  frameborder="0" allowfullscreen></iframe>
 
 
 {{ content }}
