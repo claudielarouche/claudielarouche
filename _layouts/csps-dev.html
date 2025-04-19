@@ -7,14 +7,13 @@ layout: page
 </div>
 
 <div class="meta">
-    <p><strong>Title</strong>: {{ page.title }}</p>
-    <p><strong>Date</strong>: {{ page.date | date: "%Y-%m-%d" }}</p>
+  <p><strong>Title</strong>: {{ page.title }}</p>
+  <p><strong>Date</strong>: {{ page.date | date: "%Y-%m-%d" }}</p>
+  {% if page.duration %}
+    <p><strong>Duration</strong>: {{ page.duration }}</p>
+  {% endif %}
 </div>
 
-<!-- does not work
-<iframe width="560" height="315" src="{{ page.video_url }}" 
-  title="YouTube video player" frameborder="0" allowfullscreen></iframe>
--->
 
 {% if page.video_url contains "youtube.com/watch?v=" %}
   {% assign video_id = page.video_url | split: 'v=' | last | split: '&' | first %}
