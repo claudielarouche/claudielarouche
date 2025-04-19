@@ -18,7 +18,21 @@ layout: page
   title="YouTube video player" frameborder="0" allowfullscreen></iframe>
 -->
 
-{% assign video_id = page.video_url | split: 'v=' | last %}
+{% if page.video_url contains "youtube.com/watch?v=" %}
+  {% assign video_id = page.video_url | split: 'v=' | last | split: '&' | first %}
+  <div class="ratio ratio-16x9 mb-4">
+    <iframe 
+      src="https://www.youtube.com/embed/{{ video_id }}"
+      title="YouTube video"
+      allowfullscreen>
+    </iframe>
+  </div>
+{% else %}
+  <div class="alert alert-warning" role="alert">
+    Video not available or invalid YouTube link.
+  </div>
+{% endif %}
+
 
 <iframe width="560" height="315"
   src="https://www.youtube.com/embed/{{ video_id }}"
