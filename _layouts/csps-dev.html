@@ -1,0 +1,25 @@
+
+---
+layout: page
+---
+
+<link rel="stylesheet" href="{{ "/assets/css/custom.css" | relative_url }}">
+
+<div class="csps-callout" style="border: 1px solid #ccc; padding: 1rem; margin-bottom: 2rem; background-color: #f9f9f9; border-radius: 6px;">
+  📚 <a href="{{ '/projects/csps-videos/' | relative_url }}">Back to all CSPS summaries</a>
+</div>
+
+<div class="meta">
+    <p><strong>Title</strong>: {{ page.title }}</p>
+    <p><strong>Date</strong>: {{ page.date | date: "%Y-%m-%d" }}</p>
+</div>
+
+<iframe width="560" height="315" src="{{ page.url }}" 
+  title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+
+
+{{ content }}
+
+{% if page.video_url %}
+   <p><a href="{{ page.video_url }}" target="_blank">🎥 Watch the full video</a></p>
+{% endif %}
