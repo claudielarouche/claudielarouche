@@ -1,5 +1,5 @@
 ---
-layout: dev
+layout: dev 
 title: All Actionable Advice
 permalink: /dev-projects/actionable-advice/
 ---
@@ -11,7 +11,7 @@ This page brings together every actionable insight shared in the video summaries
 ---
 
 <ul>
-  {% for summary in site.csps %}
+  {% for summary in site.dev-projects %} <!-- replace with site.csps when going to prod -->
     {% if summary.advice %}
       {% for item in summary.advice %}
         <li>
