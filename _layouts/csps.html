@@ -2,20 +2,39 @@
 layout: page
 ---
 
-<link rel="stylesheet" href="{{ "/assets/css/custom.css" | relative_url }}">
-
 <div class="csps-callout" style="border: 1px solid #ccc; padding: 1rem; margin-bottom: 2rem; background-color: #f9f9f9; border-radius: 6px;">
   📚 <a href="{{ '/projects/csps-videos/' | relative_url }}">Back to all CSPS summaries</a>
 </div>
 
 <div class="meta">
-    <p><strong>Title</strong>: {{ page.title }}</p>
-    <p><strong>Date</strong>: {{ page.date | date: "%Y-%m-%d" }}</p>
+  <p><strong>Title</strong>: {{ page.title }}</p>
+  <p><strong>Date</strong>: {{ page.date | date: "%Y-%m-%d" }}</p>
+  {% if page.duration %}
+    <p><strong>Duration</strong>: {{ page.duration }}</p>
+  {% endif %}
 </div>
 
 
-{{ content }}
-
-{% if page.video_url %}
-   <p><a href="{{ page.video_url }}" target="_blank">🎥 Watch the full video</a></p>
+{% if page.video_url contains "youtube.com/watch?v=" %}
+  {% assign video_id = page.video_url | split: 'v=' | last | split: '&' | first %}
+{% elsif page.video_url contains "youtu.be/" %}
+  {% assign video_id = page.video_url | split: 'youtu.be/' | last | split: '?' | first %}
+{% else %}
+  {% assign video_id = nil %}
 {% endif %}
+
+{% if video_id %}
+  <div class="ratio ratio-16x9 mb-4">
+    <iframe 
+      src="https://www.youtube.com/embed/{{ video_id }}"
+      title="YouTube video"
+      allowfullscreen>
+    </iframe>
+  </div>
+{% else %}
+  <div class="alert alert-warning" role="alert">
+    Video not available.
+  </div>
+{% endif %}
+
+{{ content }}
