@@ -1,19 +1,11 @@
 ---
-title: Acronyms Game
+title: Government of Canada Acronyms Game
 description: How well do you know your acronyms?
 image: https://claudielarouche.com/assets/img/acronyms.jpg
 tags: [Other]
 permalink: /projects/acronym-game/
 layout: page
 ---
-
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<!--
-<meta http-equiv="refresh" content="0; url=https://claudielarouche.com/acronyms.html">
-<p>If you are not redirected, <a href="https://claudielarouche.com/acronyms.html">click here</a>.</p>
--->
 
 The data for this game was last downloaded on December 16, 2024, from the <a href="https://open.canada.ca/data/en/dataset/83320390-7715-43bc-a281-2049bf5d4232" target="_blank">Open Government website</a>. This website was built by <a href="https://claudielarouche.com/" target="_blank">Claudie Larouche</a> with help from <a href="https://openai.com/chatgpt" target="_blank">ChatGPT</a>, based on an idea from Emily Fegan. If you enjoy this game or have ideas for improvement, please send your feedback to <a href="mailto:claudielarouche@gmail.com">claudielarouche@gmail.com</a>.
         
