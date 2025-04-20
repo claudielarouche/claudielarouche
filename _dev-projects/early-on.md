@@ -7,80 +7,9 @@ permalink: /dev-projects/early-on/
 layout: dev
 ---
 
-<!--
-<style>
-
-#dataTable thead th {
-position: sticky;
-top: 0;
-background-color: #f2f2f2; /* Change the background color as needed */
-z-index: 100;
-}
-
-table {
-border-collapse: collapse;
-width: 100%;
-margin-top: 20px;
-}
-
-th,
-td {
-border: 1px solid #dddddd;
-}
-
-h2 {
-margin-top: 20px;
-}
-
-label {
-display: block;
-margin-top: 10px;
-}
-
-
-.checked {
-text-decoration: line-through;
-}
-
-td.dataTables_empty {
-text-align: left !important;
-}
-
-.dataTables_wrapper .dataTables_filter {
-float: left;
-text-align: left;
-}
-  /* Base alert */
-.alert {
-  position: relative;
-  padding: 0.75rem 1.25rem;
-  margin-bottom: 1rem;
-  border: 1px solid transparent;
-  border-radius: 0.25rem;
-}
-
-/* Danger variant */
-.alert-danger {
-  color: #842029;
-  background-color: #f8d7da;
-  border-color: #f5c2c7;
-}
-
-/* Margin-top spacing (mt-3) */
-.mt-3 {
-  margin-top: 1rem !important;
-}
-
-  .dataTables_paginate{
-    display: none;
-  }
-
-  
-</style>-->
-
 From November 2023 to October 2024, I maintained the EarlyON Playgroup Repository, a searchable and up-to-date listing of EarlyON programs in Ottawa. My goal was to make it easier for parents to find playgroup information without having to search through 21 different websites. This resource was updated monthly and served many families during its year-long run.
 
-In October 2024, the Parent Resource Centre launched the [Incredible Playgroup Finder](https://incredibleplaygroupfinder.ca), a centralized and more permanent tool built on the same goal: to support Ottawa families. 
+In October 2024, the Parent Resource Centre launched the [Incredible Playgroup Finder](https://incredibleplaygroupfinder.ca){:target="_blank" rel="noopener"}, a centralized and more permanent tool built on the same goal: to support Ottawa families. 
 
 ## 📂 View the Historical Repository
 
