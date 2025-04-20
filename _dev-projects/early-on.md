@@ -7,9 +7,6 @@ permalink: /dev-projects/early-on/
 layout: dev
 ---
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 <style>
 
@@ -53,6 +50,28 @@ text-align: left !important;
 float: left;
 text-align: left;
 }
+  /* Base alert */
+.alert {
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+/* Danger variant */
+.alert-danger {
+  color: #842029;
+  background-color: #f8d7da;
+  border-color: #f5c2c7;
+}
+
+/* Margin-top spacing (mt-3) */
+.mt-3 {
+  margin-top: 1rem !important;
+}
+
+  
 </style>
 
 From November 2023 to October 2024, I maintained the EarlyON Playgroup Repository, a searchable and up-to-date listing of EarlyON programs in Ottawa. My goal was to make it easier for parents to find playgroup information without having to search through 21 different websites. This resource was updated monthly and served many families during its year-long run.
@@ -66,7 +85,6 @@ In October 2024, the Parent Resource Centre launched the [Incredible Playgroup F
 
 <!-- Add the Bootstrap call-out with a lightbulb icon -->
 <div class="alert alert-danger mt-3" role="alert">
-<span class="material-icons" style="vertical-align: middle;">lightbulb</span>
 Please note that this is a demo of what the EarlyON Repository used to look like, not a list of current playgroups. The date range is 2024-01-02 to 2024-01-05</div>
 
 <h2>Filters</h2>
