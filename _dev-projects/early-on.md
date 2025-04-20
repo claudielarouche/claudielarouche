@@ -7,7 +7,7 @@ permalink: /dev-projects/early-on/
 layout: dev
 ---
 
-
+<!--
 <style>
 
 #dataTable thead th {
@@ -71,8 +71,12 @@ text-align: left;
   margin-top: 1rem !important;
 }
 
+  .dataTables_paginate{
+    display: none;
+  }
+
   
-</style>
+</style>-->
 
 From November 2023 to October 2024, I maintained the EarlyON Playgroup Repository, a searchable and up-to-date listing of EarlyON programs in Ottawa. My goal was to make it easier for parents to find playgroup information without having to search through 21 different websites. This resource was updated monthly and served many families during its year-long run.
 
