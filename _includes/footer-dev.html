@@ -1,48 +1,35 @@
-<footer class="bg-light py-5 site-footer h-card">
-  <!-- Microformats URL (hidden visually) -->
-  <data class="u-url d-none" href="{{ "/" | relative_url }}"></data>
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
-  <div class="container">
-    <!-- Site title as heading -->
-    <h2 class="h5 mb-4">{{ site.title | escape }}</h2>
+  <div class="wrapper">
 
-    <div class="row">
-      <!-- Column 1: Contact info -->
-      <div class="col-md-4 mb-4 footer-col footer-col-1">
-        <ul class="list-unstyled contact-list mb-0">
-          <li class="p-name mb-2">
+    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">
             {%- if site.author -%}
               {{ site.author | escape }}
             {%- else -%}
               {{ site.title | escape }}
             {%- endif -%}
-          </li>
-          {%- if site.email -%}
-            <li>
-              <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
             </li>
-          {%- endif -%}
+            {%- if site.email -%}
+            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            {%- endif -%}
         </ul>
       </div>
 
-      <!-- Column 2: Social include -->
-       <div class="col-md-4 mb-4 footer-col footer-col-2
-                  d-flex align-items-center justify-content-center justify-content-md-start">
-        <!-- Optionally wrap in a UL for horizontal spacing -->
-        <ul class="list-inline mb-0">
-          {% include social.html %}
-        </ul>
+      <div class="footer-col footer-col-2">
+        {%- include social.html -%}
       </div>
 
-      <!-- Column 3: Site description -->
-      <div class="col-md-4 mb-4 footer-col footer-col-3">
-        <p class="mb-0">{{ site.description | escape }}</p>
+      <div class="footer-col footer-col-3">
+        <p>{{- site.description | escape -}}</p>
       </div>
     </div>
 
-    <!-- Optional copyright / year -->
-    <div class="text-center small mt-4">
-      &copy; {{ site.time | date: "%Y" }} {{ site.author | default: site.title | escape }}
-    </div>
   </div>
+
 </footer>
