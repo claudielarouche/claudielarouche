@@ -114,7 +114,8 @@ td.dataTables_empty {
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-/* Base alert */
+/* BEGIN EarlyON Page */
+/* Base alert  */
 .alert {
   position: relative;
   padding: 0.75rem 1.25rem;
@@ -135,6 +136,17 @@ td.dataTables_empty {
   margin-top: 1rem !important;
 }
 
+/* light grey every other row */
+#dataTable tbody tr:nth-child(odd) td {
+  background-color: #f9f9f9;
+}
+
+/* white on the alternating rows */
+#dataTable tbody tr:nth-child(even) td {
+  background-color: #ffffff;
+}
+
+/* END EarlyON page */
 
 /* Category styling */
 
