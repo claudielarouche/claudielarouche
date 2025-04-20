@@ -1,5 +1,5 @@
 ---
-layout: home-dev
+layout: dev
 title: Home-dev
 permalink: dev-projects/home
 ---
