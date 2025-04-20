@@ -26,8 +26,12 @@
       </div>
 
       <!-- Column 2: Social include -->
-      <div class="col-md-4 mb-4 footer-col footer-col-2">
-        {% include social.html %}
+       <div class="col-md-4 mb-4 footer-col footer-col-2
+                  d-flex align-items-center justify-content-center justify-content-md-start">
+        <!-- Optionally wrap in a UL for horizontal spacing -->
+        <ul class="list-inline mb-0">
+          {% include social.html %}
+        </ul>
       </div>
 
       <!-- Column 3: Site description -->
