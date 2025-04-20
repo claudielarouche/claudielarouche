@@ -7,57 +7,9 @@ permalink: /projects/early-on/
 layout: page
 ---
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-<style>
-
-#dataTable thead th {
-position: sticky;
-top: 0;
-background-color: #f2f2f2; /* Change the background color as needed */
-z-index: 100;
-}
-
-table {
-border-collapse: collapse;
-width: 100%;
-margin-top: 20px;
-}
-
-th,
-td {
-border: 1px solid #dddddd;
-}
-
-h2 {
-margin-top: 20px;
-}
-
-label {
-display: block;
-margin-top: 10px;
-}
-
-
-.checked {
-text-decoration: line-through;
-}
-
-td.dataTables_empty {
-text-align: left !important;
-}
-
-.dataTables_wrapper .dataTables_filter {
-float: left;
-text-align: left;
-}
-</style>
-
 From November 2023 to October 2024, I maintained the EarlyON Playgroup Repository, a searchable and up-to-date listing of EarlyON programs in Ottawa. My goal was to make it easier for parents to find playgroup information without having to search through 21 different websites. This resource was updated monthly and served many families during its year-long run.
 
-In October 2024, the Parent Resource Centre launched the [Incredible Playgroup Finder](https://incredibleplaygroupfinder.ca), a centralized and more permanent tool built on the same goal: to support Ottawa families. 
+In October 2024, the Parent Resource Centre launched the [Incredible Playgroup Finder](https://incredibleplaygroupfinder.ca){:target="_blank" rel="noopener"}, a centralized and more permanent tool built on the same goal: to support Ottawa families. 
 
 ## 📂 View the Historical Repository
 
@@ -66,7 +18,6 @@ In October 2024, the Parent Resource Centre launched the [Incredible Playgroup F
 
 <!-- Add the Bootstrap call-out with a lightbulb icon -->
 <div class="alert alert-danger mt-3" role="alert">
-<span class="material-icons" style="vertical-align: middle;">lightbulb</span>
 Please note that this is a demo of what the EarlyON Repository used to look like, not a list of current playgroups. The date range is 2024-01-02 to 2024-01-05</div>
 
 <h2>Filters</h2>
@@ -217,4 +168,3 @@ Thank you to everyone who used and shared the EarlyON Repository! If you have id
 <script src="https://cdn.datatables.net/buttons/1.7.1/js/buttons.colVis.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
 <script src="{{ "/assets/js/earlyon.js" | relative_url }}"></script>
-
