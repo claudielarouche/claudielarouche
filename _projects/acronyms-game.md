@@ -39,5 +39,27 @@ The data for this game was last downloaded on December 16, 2024, from the <a hre
 <h2>Your Score: <span id="score">0</span>/<span id="total-questions">0</span></h2>
 </div>
 
+<hr>
+
+## How this game was built
+
+To build this game, I used the column called “Abbreviation” to identify the acronym. However, for the long form of the name, I had to be a bit more creative.
+- If a value existed under “Applied Title”, that is the one I used.
+- If a value did not exist under “Applied Title”, I used “Legal Title” instead
+
+The following organizations are excluded because they don’t have a value under “Abbreviation”:
+
+- Leaders’ Debates Commission
+- National Security and Intelligence Review Agency Secretariat
+- Office of the Intelligence Commissioner
+- Canada Emission Reduction Incentives Agency
+- Invest in Canada Hub
+
+The organization called “Treasury Board” with Abbreviation of “TB” was removed since we have “Treasury Board Secretariat” / “TBS”. I’ve never heard of TB only, have you??
+
+“Registrar of the Supreme Court of Canada and that portion of the federal public administration appointed under subsection 12(2) of the Supreme Court Act” was renamed to “Registrar of the Supreme Court of Canada”. You’re welcome.
+
+There are 2 entries for “Offices of the Information and Privacy Commissioners of Canada”. One with Abbreviation “OPC”, the other with “OIC”. Which one is correct? Your guess is as good as mine, but I suspect they are both incorrect haha.
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
 <script src="{{ "/assets/js/acronyms-game.js" | relative_url }}"></script>
