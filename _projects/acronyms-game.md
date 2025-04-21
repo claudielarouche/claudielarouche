@@ -63,3 +63,9 @@ The organization called “Treasury Board” with Abbreviation of “TB” was r
 “Registrar of the Supreme Court of Canada and that portion of the federal public administration appointed under subsection 12(2) of the Supreme Court Act” was renamed to “Registrar of the Supreme Court of Canada”. You’re welcome.
 
 There are 2 entries for “Offices of the Information and Privacy Commissioners of Canada”. One with Abbreviation “OPC”, the other with “OIC”. Since there is no way you could know which is which in the quiz, I removed them both :) 
+
+## Thank you!
+
+![Claudie Larouche](https://claudielarouche.com/assets/img/claudie.png)
+
+Thank you for playing the Government of Canada Acronyms Game. If you think of another fun game I could create, feel free to reach out at Claudielarouche@gmail.com. 

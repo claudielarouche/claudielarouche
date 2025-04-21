@@ -4,8 +4,6 @@ title: About
 permalink: /about/
 ---
 
-<link rel="stylesheet" href="{{ "/assets/css/custom.css" | relative_url }}">
-
 ![Claudie Larouche](https://claudielarouche.com/assets/img/claudie.png)
 
 ## Hi, I'm Claudie 👋
