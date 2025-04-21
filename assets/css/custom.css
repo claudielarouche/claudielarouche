@@ -247,6 +247,31 @@ td.dataTables_empty {
 
 /* END ACRONYM GAME */
 
+/* START LIA CALCULATOR */
+
+.alert-info {
+  color: #0c5460;
+  background-color: #d1ecf1;
+  border-color: #bee5eb;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: .5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+/* END LIA CALCULATOR */
+
 /* Category styling */
 
 /*.project-list {
