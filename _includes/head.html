@@ -21,7 +21,12 @@
       {% endif %}
     {% endif %}
     <link rel="stylesheet" href="{{ "/assets/css/custom.css" | relative_url }}">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+    {% if page.css %}
+      {% for sheet in page.css %}
+        <link rel="stylesheet" href="{{ sheet | relative_url }}">
+      {% endfor %}
+    {% endif %}
+    <!--<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">-->
 
 
   </head>

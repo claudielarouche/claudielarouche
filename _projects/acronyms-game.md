@@ -5,6 +5,9 @@ image: https://claudielarouche.com/assets/img/acronyms.jpg
 tags: [Other]
 permalink: /projects/acronym-game/
 layout: page
+js:
+  - /assets/js/acronyms-game.js
+  - https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js
 ---
 
 The data for this game was last downloaded on December 16, 2024, from the <a href="https://open.canada.ca/data/en/dataset/83320390-7715-43bc-a281-2049bf5d4232" target="_blank">Open Government website</a>. This website was built by <a href="https://claudielarouche.com/" target="_blank">Claudie Larouche</a> with help from <a href="https://openai.com/chatgpt" target="_blank">ChatGPT</a>, based on an idea from Emily Fegan. If you enjoy this game or have ideas for improvement, please send your feedback to <a href="mailto:claudielarouche@gmail.com">claudielarouche@gmail.com</a>.
@@ -61,5 +64,7 @@ The organization called “Treasury Board” with Abbreviation of “TB” was r
 
 There are 2 entries for “Offices of the Information and Privacy Commissioners of Canada”. One with Abbreviation “OPC”, the other with “OIC”. Since there is no way you could know which is which in the quiz, I removed them both :) 
 
+<!-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
 <script src="{{ "/assets/js/acronyms-game.js" | relative_url }}"></script>
+-->
