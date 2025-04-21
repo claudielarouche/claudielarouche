@@ -261,10 +261,10 @@ td.dataTables_empty {
   border-color: #007bff;
 }
 
-label {
+/*label {
   display: inline-block;
   margin-bottom: .5rem;
-}
+}*/
 
 .form-group {
   margin-bottom: 1rem;
