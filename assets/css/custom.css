@@ -225,6 +225,10 @@ td.dataTables_empty {
     appearance: none;
 }
 
+.mb-3 {
+    margin-bottom: 1rem !important;
+}
+
 
 /* END ACRONYM GAME */
 
