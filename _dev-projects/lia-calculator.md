@@ -5,6 +5,8 @@ image: https://claudielarouche.com/assets/img/browser.png
 tags: [Other]
 permalink: /dev-projects/lia-calculator/
 layout: dev
+js:
+  - /assets/js/lia.js
 ---
 
 <form>
