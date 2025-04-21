@@ -18,7 +18,7 @@ layout: dev
 </div>
 <button type="button" class="btn btn-primary" onclick="calculate()">Calculate</button>
 </form>
-<div class="alert alert-info mt-3" role="alert" id="result">
+<div class="alert alert-info mt-3" role="alert" id="result"></div>
 
 ## Frequently Asked Questions
 
