@@ -1,87 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YWMRD8LX5P"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-YWMRD8LX5P');
-</script>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Leave with Income Averaging Calculator</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-		<!--<link rel="stylesheet" type="text/css" href="style.css">-->
-		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-		<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
-		<script src="https://cdn.datatables.net/buttons/1.7.1/js/dataTables.buttons.min.js"></script>
-		<script src="https://cdn.datatables.net/buttons/1.7.1/js/buttons.colVis.min.js"></script>
-</head>
-<body>
-<div class="container">
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="https://claudielarouche.com">Check out Claudie's other projects and tools</a>
-  </nav>
-  
-    <h1>Leave with Income Averaging Calculator</h1>
-    <a href="lia-calculator-fr.html">Français</a><br><br>
-    <form>
-      <div class="form-group">
-        <label for="salary">Yearly Salary:</label>
-        <input type="number" class="form-control" id="salary" placeholder="Enter yearly salary">
-      </div>
-      <div class="form-group">
-        <label for="days">Number of Work Days during your leave period (please include statutory holidays but do not include weekends):</label>
-        <input type="number" class="form-control" id="days" placeholder="Enter number of days">
-      </div>
-      <button type="button" class="btn btn-primary" onclick="calculate()">Calculate</button>
-    </form>
-    <div class="alert alert-info mt-3" role="alert" id="result">
-    <!-- Result content will be dynamically added here -->
-  </div>
-    <div class="faq">
-      <h2>Frequently Asked Questions</h2>
-      <div class="card">
-        <div class="card-body">
-          <h3>Q: Is this tool official?</h3>
-          <p>A: Not at all, so please don't make financial decisions based on this tool! This tool was built using answers about pay impact I received from a very friendly employee of Public Works when they processed my own leave with income averaging.</p>
-		  <h3>Q: What is the calculation used by this tool?</h3>
-      <p>A: The calculator takes your yearly salary and divides it by 260.88 in order to get your daily salary. We then take this amount and multiply it by the number of days of leave, which gives us the entire "cost" of the leave. That cost is then divided by 26, to give you the impact on your pay every 2 weeks. The amount is gross, not net, and there might be other factors at play in your specific case (bilingual bonus, acting pay, etc.) This tool is simply meant to help you in your decision making process and the true impact on your paycheck will not be identical to the amount provided here.</p>
-	  
-	  <h3>Q: Why should I include statutory holidays?</h3>
-      <p>A: Statutory holidays that are within the leave must be included, because if we do not work the day before or after said holiday, we are not entitled to be paid for it.</p>
-	  
-  
-      <h3>Q: How long did it take to build this tool?</h3>
-      <p>A: 5 minutes to ask ChatGPT to write the HTML, Javascript and CSS code (here is my <a href="https://docs.google.com/document/d/1sz9yac5InRktp9m2QwTKSSW51gREkNAgNHQT4FeMteQ/edit?usp=sharing" target="_blank">conversation with ChatGPT </a> in case you're interested). 10 minutes to write this FAQ. 5 minutes to publish it online ;) </p>
-	  
-	  <h3>Q: Can I share this tool with my colleagues?</h3>
-      <p>A: Absolutely! </p>
-	  
-	  <h3>Q: Who built this tool?</h3>
-      <p>A: It was built with love by <a href="https://www.linkedin.com/in/claudie-larouche/" target="_blank">Claudie Larouche</a> with help from ChatGPT. I'd be happy to connect! </p>
-        </div>
-      </div>
-      <!-- Other FAQ entries go here -->
-    </div>
-  </div>
-    <script>
-        function calculate() {
-    var salary = parseFloat(document.getElementById("salary").value);
-    var days = parseFloat(document.getElementById("days").value);
-
-    var impact = (salary * days) / 260.88 / 26;
-    var totalCost = impact * 26;
-
-    document.getElementById("result").innerHTML = "Impact on pay: Your biweekly paycheck will be reduced by $" + impact.toFixed(2) + " <br>The total cost of your leave will be $" + totalCost.toFixed(2);
-}
-    </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="0; url=https://claudielarouche.com/projects/lia-calculator/" />
+    <title>Redirecting...</title>
+  </head>
+  <body>
+    <p>If you are not redirected, <a href="https://claudielarouche.com/projects/lia-calculator/">click here</a>.</p>
+  </body>
 </html>
