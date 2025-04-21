@@ -13,7 +13,7 @@ minima:
   hide_site_feed_link: true
 
 header_pages:
-  - about.md
+  - pages/about.md
   - pages/media.md
 
 collections:
