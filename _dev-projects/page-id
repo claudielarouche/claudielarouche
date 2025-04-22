@@ -7,7 +7,6 @@ permalink: /projects/page-id/
 layout: page
 sitemap: false
 css: 
-  - https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css
   - /assets/css/page-id.css
 ---
 
