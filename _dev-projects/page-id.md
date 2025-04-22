@@ -53,14 +53,20 @@ Pivot:
 
 ## RTL/DINE/Manual Reference
 
+### Invoices
+
+- If there are no names: DINE
+- If the invoice has maintenance cost and days, Manual
+- If the invoice is paid: Manual
+- If it's unclear the invoice is paid or not: RTL
+- Saskatchewan: All invoices should be marked Manual, except for hotels, flight companies, taxis etc
+
 ### RTL
 
 - If we don’t know if it’s been paid (any pages with child information, but no costing info)
 - Approval letters and acceptance letters
 - Request form
 - Child care notification form
-- Invoice (but not sure if paid or not) - Except for SK (see below)
-  - SK: All invoices should be marked Manual, except for hotels, flight companies, taxis etc
 - Authorization of funding (Autorisation de dépenses)
 - Request for funding
 - Legal documentation
@@ -80,29 +86,28 @@ Pivot:
 - Clothing request form
 - SK - Community Event
 - Elder Services
-- (requests are pretty much always RTL
+- (requests are pretty much always RTL)
+- Fee requisition
 
-<h3 class="mt-4 mb-2">DINE</h3>
-<ul>
-<li>Files with passwords are DINE.</li>
-<li>Pages with no names</li>
-<li>Pages with only adult names</li>
-<li>If there is no indication that the child is in care</li>
-<li>Aide à domicile / Home Care Services (8420) -> This is for adults</li>
-</ul>
-<h3 class="mt-4 mb-2">Manual</h3>
-<ul>
-<li>Chèques at the top with details under (SK)</li>
-<li>Saskatchewan: If you see anything with "Questionable", although it looks super easy to parse, it always goes to Manual</li>
-<li>SK: Maintenance monthly report</li>
-<li>SK - Invoices</li>
-<li>Manitoba - Accompanying Schedule to DOCFS Billing, Explanations for Other Expensitures</li>  
-</ul>
-<h3 class="mt-4 mb-2">Automation</h3>
-<ul>
-<li>Manitoba - General Ledget by Child Report</li>
-</ul>
-<h3 class="mt-4 mb-2">TBD</h3>
-<ul>
-<li>If you are unsure what a page should be identified as, ask Stéphane or Julia.</li>
-</ul>
+### DINE
+
+- Files with passwords are DINE.
+- Pages with no names
+- Pages with only adult names
+- If there is no indication that the child is in care
+- Aide à domicile / Home Care Services (8420) -> This is for adults
+
+### Manual
+
+- Chèques at the top with details under (SK)
+- Saskatchewan: If you see anything with "Questionable", although it looks super easy to parse, it always goes to Manual
+- Saskatchewan: Maintenance monthly report
+- Manitoba - Accompanying Schedule to DOCFS Billing, Explanations for Other Expensitures
+
+### Automation
+
+- Manitoba - General Ledget by Child Report
+
+### TBD
+
+- If you are unsure what a page should be identified as, ask Stéphane or Julia.
