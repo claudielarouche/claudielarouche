@@ -4,7 +4,7 @@ description: To be completed
 image: 
 tags: [hidden]
 permalink: /projects/page-id/
-layout: page
+layout: dev
 sitemap: false
 css: 
   - /assets/css/page-id.css
