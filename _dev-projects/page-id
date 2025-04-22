@@ -49,38 +49,37 @@ Pivot:
 <button class="btn btn-warning mt-2" onclick="startOver()">Start Over</button>
 
 
-<h2 class="mb-3 mt-2 pb-1 border-bottom">RTL/DINE/Manual Reference</h2>
-<h3 class="mt-4 mb-2">RTL</h3>
-<ul>
-<li>If we don’t know if it’s been paid (any pages with child information, but no costing info)</li>
-<li>Approval letters and acceptance letters</li>
-<li>Request form</li>
-<li>Child care notification form</li>
-<li>Invoice (but not sure if paid or not) - Except for SK (see below)</li>
-<ul>
-<li>SK: All invoices should be marked Manual, except for hotels, flight companies, taxis etc</li>
-</ul>
-<li>Authorization of funding (Autorisation de dépenses)</li>
-<li>Request for funding</li>
-<li>Legal documentation</li>
-<li>“Special Needs Requests”</li>
-<li>Travel claim</li>
-<li>Memos</li>
-<li>Babysitting receipts</li>
-<li>Notice of admission forms</li>
-<li>Notice of discharge forms</li>
-<li>Purchase Authority Slip</li>
-<li>Initial Placement Forms (IPF)</li>
-<li>Determination of eligibility forms</li>
-<li>Financial home visit form</li>
-<li>If there is no indication child is in care, it is RTL.</li>
-<li>Foster parent placement form</li>
-<li>Requisition for goods and services</li>
-<li>Clothing request form</li>
-<li>SK - Community Event</li>
-<li>Elder Services</li>
-<li>(requests are pretty much always RTL)</li>
-</ul>
+## RTL/DINE/Manual Reference
+
+### RTL
+
+- If we don’t know if it’s been paid (any pages with child information, but no costing info)
+- Approval letters and acceptance letters
+- Request form
+- Child care notification form
+- Invoice (but not sure if paid or not) - Except for SK (see below)
+  - SK: All invoices should be marked Manual, except for hotels, flight companies, taxis etc
+- Authorization of funding (Autorisation de dépenses)
+- Request for funding
+- Legal documentation
+- “Special Needs Requests”
+- Travel claim
+- Memos
+- Babysitting receipts
+- Notice of admission forms
+- Notice of discharge forms
+- Purchase Authority Slip
+- Initial Placement Forms (IPF)
+- Determination of eligibility forms
+- Financial home visit form
+- If there is no indication child is in care, it is RTL.
+- Foster parent placement form
+- Requisition for goods and services
+- Clothing request form
+- SK - Community Event
+- Elder Services
+- (requests are pretty much always RTL
+
 <h3 class="mt-4 mb-2">DINE</h3>
 <ul>
 <li>Files with passwords are DINE.</li>
