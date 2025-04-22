@@ -8,6 +8,8 @@ layout: dev
 sitemap: false
 css: 
   - /assets/css/page-id.css
+js: 
+  - /assets/js/page-id.js
 ---
 
 Please use the buttons below or hit the letters A for Automation, D for DINE, R for RTL, M for Manual, and T for TBD. 
@@ -16,14 +18,10 @@ The text can be edited as needed. For this tool to work, please do not remove th
 <br><br>
 Use the P button to identify pages that are rotated (it will not increase page count). You can send the list to Max to redo the OCR on those pages.
 
-
-
-<div class="input-group mb-3">
-<div class="input-group-prepend">
 <span class="input-group-text">Current Page</span>
-</div>
+
 <input type="number" id="pageNumber" class="form-control" value="1">
-</div>
+
 
 <div class="btn-group mb-3" role="group" aria-label="Page Buttons">
 <button type="button" class="btn btn-primary" onclick="addToText('Automation')">A - Automation</button>
@@ -104,8 +102,3 @@ Pivot:
 <ul>
 <li>If you are unsure what a page should be identified as, ask Stéphane or Julia.</li>
 </ul>
-
-
-</div>
-
-<script type="text/javascript" src="{{ "/assets/js/page-id.js" | relative_url }}"></script>
