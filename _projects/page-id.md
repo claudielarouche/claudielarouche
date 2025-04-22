@@ -109,7 +109,7 @@ Pivot:
 
 ### Automation
 
-- Manitoba - General Ledget by Child Report
+- Manitoba - General Ledger by Child Report
 
 ### TBD
 
