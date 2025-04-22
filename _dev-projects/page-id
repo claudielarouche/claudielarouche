@@ -2,31 +2,20 @@
 title: Page Identification Tool
 description: To be completed
 image: 
-tags: []
-permalink: /dev-projects/page-id/
-layout: dev
+tags: [hidden]
+permalink: /projects/page-id/
+layout: page
+sitemap: false
+css: 
+  - https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css
+  - /assets/css/page-id.css
 ---
-
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-<style>
-.container {
-margin-top: 20px;
-}
-.input-group-text {
-min-width: 100px;
-}
-textarea {
-overflow: hidden; /* Prevents scroll bar from appearing */
-}
-</style>
-
-
 
 Please use the buttons below or hit the letters A for Automation, D for DINE, R for RTL, M for Manual, and T for TBD. 
 Every time you press a button, the tool will take the "current page" number from the input box and place it in the correct location in the text below.
 The text can be edited as needed. For this tool to work, please do not remove the text Automation, DINE, RTL, Manual, TBD from the final input box below.
-
-Use the P button to identify pages that are rotated (it will not increase page count). You can send the list to Max to redo the OCR on those pages. Please note that the undo function works a bit funky around page rotation because pressing P does not increase page count.
+<br><br>
+Use the P button to identify pages that are rotated (it will not increase page count). You can send the list to Max to redo the OCR on those pages.
 
 <div class="container">
 
@@ -107,6 +96,11 @@ Pivot:
 <li>Saskatchewan: If you see anything with "Questionable", although it looks super easy to parse, it always goes to Manual</li>
 <li>SK: Maintenance monthly report</li>
 <li>SK - Invoices</li>
+<li>Manitoba - Accompanying Schedule to DOCFS Billing, Explanations for Other Expensitures</li>  
+</ul>
+<h3 class="mt-4 mb-2">Automation</h3>
+<ul>
+<li>Manitoba - General Ledget by Child Report</li>
 </ul>
 <h3 class="mt-4 mb-2">TBD</h3>
 <ul>
