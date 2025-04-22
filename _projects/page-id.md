@@ -63,6 +63,7 @@ Pivot:
 
 ### RTL
 
+- As a general rule, if the cost only falls in "other cost" category, it would be RTL
 - Approval letters and acceptance letters
 - Request form
 - Child care notification form
