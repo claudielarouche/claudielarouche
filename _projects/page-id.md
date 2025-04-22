@@ -110,6 +110,10 @@ Pivot:
 <li>SK - Invoices</li>
 <li>Manitoba - Accompanying Schedule to DOCFS Billing, Explanations for Other Expensitures</li>  
 </ul>
+<h3 class="mt-4 mb-2">Automation</h3>
+<ul>
+<li>Manitoba - General Ledget by Child Report</li>
+</ul>
 <h3 class="mt-4 mb-2">TBD</h3>
 <ul>
 <li>If you are unsure what a page should be identified as, ask Stéphane or Julia.</li>
