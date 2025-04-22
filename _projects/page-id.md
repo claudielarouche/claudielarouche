@@ -90,6 +90,7 @@ Pivot:
 - (requests are pretty much always RTL)
 - Fee requisition
 - Support worker timesheet
+- Support / Respite worker report
 
 ### DINE
 
