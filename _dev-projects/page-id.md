@@ -56,7 +56,7 @@ Pivot:
 ### Invoices
 
 - If there are no names: DINE
-- If the invoice has maintenance cost and days, Manual
+- If the invoice has maintenance cost and days: Manual
 - If the invoice is paid: Manual
 - If it's unclear the invoice is paid or not: RTL
 - Saskatchewan: All invoices should be marked Manual, except for hotels, flight companies, taxis etc
