@@ -63,10 +63,10 @@ Pivot:
 
 ### RTL
 
-- If we don’t know if it’s been paid (any pages with child information, but no costing info)
 - Approval letters and acceptance letters
 - Request form
 - Child care notification form
+- Child care instruction sheet
 - Authorization of funding (Autorisation de dépenses)
 - Request for funding
 - Legal documentation
@@ -88,6 +88,7 @@ Pivot:
 - Elder Services
 - (requests are pretty much always RTL)
 - Fee requisition
+- Support worker timesheet
 
 ### DINE
 
