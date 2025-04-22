@@ -108,6 +108,7 @@ Pivot:
 <li>Saskatchewan: If you see anything with "Questionable", although it looks super easy to parse, it always goes to Manual</li>
 <li>SK: Maintenance monthly report</li>
 <li>SK - Invoices</li>
+<li>Manitoba - Accompanying Schedule to DOCFS Billing, Explanations for Other Expensitures</li>  
 </ul>
 <h3 class="mt-4 mb-2">TBD</h3>
 <ul>
