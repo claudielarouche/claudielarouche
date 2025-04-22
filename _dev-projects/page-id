@@ -16,7 +16,7 @@ The text can be edited as needed. For this tool to work, please do not remove th
 <br><br>
 Use the P button to identify pages that are rotated (it will not increase page count). You can send the list to Max to redo the OCR on those pages.
 
-<div class="container">
+
 
 <div class="input-group mb-3">
 <div class="input-group-prepend">
@@ -48,7 +48,7 @@ Pivot:
 <p id="instructionDisplay"></p>
 <button class="btn btn-warning mt-2" onclick="startOver()">Start Over</button>
 
-<div>
+
 <h2 class="mb-3 mt-2 pb-1 border-bottom">RTL/DINE/Manual Reference</h2>
 <h3 class="mt-4 mb-2">RTL</h3>
 <ul>
@@ -105,7 +105,7 @@ Pivot:
 <ul>
 <li>If you are unsure what a page should be identified as, ask Stéphane or Julia.</li>
 </ul>
-</div>
+
 
 </div>
 
