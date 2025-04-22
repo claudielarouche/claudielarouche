@@ -1,0 +1,9 @@
+.container {
+margin-top: 20px;
+}
+.input-group-text {
+min-width: 100px;
+}
+textarea {
+overflow: hidden; /* Prevents scroll bar from appearing */
+}
