@@ -18,9 +18,13 @@ The text can be edited as needed. For this tool to work, please do not remove th
 <br><br>
 Use the P button to identify pages that are rotated (it will not increase page count). You can send the list to Max to redo the OCR on those pages.
 
+<div class="input-group mb-3">
+<div class="input-group-prepend">
 <span class="input-group-text">Current Page</span>
-
+</div>
 <input type="number" id="pageNumber" class="form-control" value="1">
+</div>
+
 
 
 <div class="btn-group mb-3" role="group" aria-label="Page Buttons">
