@@ -7,3 +7,15 @@ min-width: 100px;
 textarea {
 overflow: hidden; /* Prevents scroll bar from appearing */
 }
+
+.btn-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-warning {
+    color: #212529;
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
