@@ -25,13 +25,14 @@ This page brings together every actionable insight shared in the video summaries
 -->
 <!-- THis loop doesn't actually work-->
 <ul class="all-advice">
-  {% for doc in site.csps %}
-    {% assign v = site.data.csps_videos[doc.data.video_id] %}
-    {% if v.advice and v.advice.size > 0 %}
+  {% for doc in site.collections.csps.docs %}
+    {% assign id = doc.data.video_id %}
+    {% assign v  = site.data.csps_videos[id] %}
+    {% if v and v.advice and v.advice.size > 0 %}
       <li class="video-block">
         <h2>
-          <!-- use doc.url instead of reconstructing from date+slug -->
-          <a href="{{ doc.url }}">{{ v.short_title }}</a>
+          <!-- doc.url is the page’s actual output path -->
+          <a href="{{ doc.url }}">{{ v.long_title }}</a>
           <small>({{ v.date_published | date: "%Y-%m-%d" }})</small>
         </h2>
         <ul>
