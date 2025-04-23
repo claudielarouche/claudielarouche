@@ -2,23 +2,25 @@
 layout: page
 ---
 
+{% assign v = site.data.csps_videos[page.video_id] %}
+
 <div class="csps-callout" style="border: 1px solid #ccc; padding: 1rem; margin-bottom: 2rem; background-color: #f9f9f9; border-radius: 6px;">
   📚 <a href="{{ '/projects/csps-videos/' | relative_url }}">Back to all CSPS summaries</a>
 </div>
 
 <div class="meta">
-  <p><strong>Title</strong>: {{ page.title }}</p>
-  <p><strong>Date</strong>: {{ page.date | date: "%Y-%m-%d" }}</p>
-  {% if page.duration %}
-    <p><strong>Duration</strong>: {{ page.duration }}</p>
+  <p><strong>Title</strong>: {{ v.long_title }}</p>
+  <p><strong>Date</strong>: {{ v.date_published | date: "%Y-%m-%d" }}</p>
+  {% if v.duration %}
+    <p><strong>Duration</strong>: {{ v.duration }}</p>
   {% endif %}
 </div>
 
 
-{% if page.video_url contains "youtube.com/watch?v=" %}
-  {% assign video_id = page.video_url | split: 'v=' | last | split: '&' | first %}
-{% elsif page.video_url contains "youtu.be/" %}
-  {% assign video_id = page.video_url | split: 'youtu.be/' | last | split: '?' | first %}
+{% if v.source_url contains "youtube.com/watch?v=" %}
+  {% assign video_id = v.source_url | split: 'v=' | last | split: '&' | first %}
+{% elsif v.source_url contains "youtu.be/" %}
+  {% assign video_id = v.source_url | split: 'youtu.be/' | last | split: '?' | first %}
 {% else %}
   {% assign video_id = nil %}
 {% endif %}
@@ -38,3 +40,15 @@ layout: page
 {% endif %}
 
 {{ content }}
+
+<!-- Actionable advice -->
+  {% if v.advice and v.advice.size > 0 %}
+    <section class="actionable-advice">
+      <h2>Actionable Advice</h2>
+      <ul>
+        {% for tip in v.advice %}
+          <li>{{ tip }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}

@@ -1,9 +1,5 @@
 ---
-title: Exploring the Use of Artificial Intelligence in the Public Service
-description: This video explores the ethical and practical considerations of integrating artificial intelligence into the Canadian public service.
-video_url: https://www.youtube.com/watch?v=UiiVWeE45wE&t=5s
-date: 2025-03-03
-tags: [AI]
+video_id: UiiVWeE45wE
 layout: csps
 ---
 
