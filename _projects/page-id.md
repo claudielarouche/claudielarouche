@@ -104,7 +104,7 @@ Pivot:
 
 - Chèques at the top with details under (SK)
 - Saskatchewan: If you see anything with "Questionable", although it looks super easy to parse, it always goes to Manual
-- Saskatchewan: Maintenance monthly report
+- Maintenance monthly report
 - Manitoba - Accompanying Schedule to DOCFS Billing, Explanations for Other Expensitures
 
 ### Automation
