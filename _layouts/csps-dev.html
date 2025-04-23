@@ -9,7 +9,7 @@ layout: page
 </div>
 
 <div class="meta">
-  <p><strong>Title</strong>: {{ v.title }}</p>
+  <p><strong>Title</strong>: {{ v.long_title }}</p>
   <p><strong>Date</strong>: {{ v.date_published | date: "%Y-%m-%d" }}</p>
   {% if v.duration %}
     <p><strong>Duration</strong>: {{ v.duration }}</p>
@@ -24,6 +24,9 @@ layout: page
 {% else %}
   {% assign video_id = nil %}
 {% endif %}
+
+v.source_url = {{v.source_url}}
+viceo_id = {{ video_id }}
 
 {% if video_id %}
   <div class="ratio ratio-16x9 mb-4">
