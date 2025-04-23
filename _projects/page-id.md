@@ -91,6 +91,7 @@ Pivot:
 - Fee requisition
 - Support worker timesheet
 - Support / Respite worker report
+- Application for Age of Majority Allowance
 
 ### DINE
 
