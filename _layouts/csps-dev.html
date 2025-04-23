@@ -19,14 +19,11 @@ layout: page
 
 {% if v.source_url contains "youtube.com/watch?v=" %}
   {% assign video_id = v.source_url | split: 'v=' | last | split: '&' | first %}
-{% elsif v.video_url contains "youtu.be/" %}
+{% elsif v.source_url contains "youtu.be/" %}
   {% assign video_id = v.source_url | split: 'youtu.be/' | last | split: '?' | first %}
 {% else %}
   {% assign video_id = nil %}
 {% endif %}
-
-v.source_url = {{v.source_url}}
-viceo_id = {{ video_id }}
 
 {% if video_id %}
   <div class="ratio ratio-16x9 mb-4">
