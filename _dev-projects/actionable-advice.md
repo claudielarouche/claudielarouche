@@ -23,12 +23,12 @@ This page brings together every actionable insight shared in the video summaries
 -->
 
 <ul class="all-advice">
-  {% for entry in site.data.csps_videos %}
-    {% assign id = entry[0] %}
-    {% assign v  = entry[1] %}
+  {% for doc in site.csps %}
+    {% assign v = site.data.csps_videos[doc.data.video_id] %}
     {% if v.advice and v.advice.size > 0 %}
       <li class="video-block">
         <h2>
+          <!-- use doc.url instead of reconstructing from date+slug -->
           <a href="{{ doc.url }}">{{ v.short_title }}</a>
           <small>({{ v.date_published | date: "%Y-%m-%d" }})</small>
         </h2>
