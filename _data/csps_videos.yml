@@ -1,13 +1,13 @@
 UiiVWeE45wE:
   short_title: "AI in Public Service"
-  long_title:  "Exploring the Use of Artificial Intelligence in the Public Service
+  long_title:  "Exploring the Use of Artificial Intelligence in the Public Service"
   source_url:  "https://youtu.be/UiiVWeE45wE"
   collection:  ""
   date_published: 2025-03-03
   duration:    "1h 59m 55s"
   advice:      []
   tags:
-  - "AI"
+    - "AI"
 
 JogXHgPXhVs:
   short_title: "Results and Delivery Unit"
@@ -21,9 +21,9 @@ JogXHgPXhVs:
     - "Think beyond headline goals and identify short-term indicators that predict long-term success."
     - "Foster strong relationships with provincial governments and appeal to the Canadian people to create a demand for the agreed-upon agenda"
   tags:
-  - "policy"
-  - "data"
-  - "results"
+    - "policy"
+    - "data"
+    - "results"
 
 GyK-JLvcP-c:
   short_title: "Upholding Democracy"
@@ -38,5 +38,5 @@ GyK-JLvcP-c:
     - "Create space for managers to learn and network"
     - "Communicate how decisions are made and ensure values are reflected."
   tags:
-  - "values"
-  - "ethics"
+    - "values"
+    - "ethics"
