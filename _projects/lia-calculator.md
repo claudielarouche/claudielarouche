@@ -2,7 +2,7 @@
 title: Leave with Income Averaging (LIA) Calculator
 description: A calculator to calculate the cost of Leave with Income Averaging (LIA)
 image: https://claudielarouche.com/assets/img/browser.png
-tags: [Other]
+tags: [Work]
 permalink: /projects/lia-calculator/
 layout: page
 js:
