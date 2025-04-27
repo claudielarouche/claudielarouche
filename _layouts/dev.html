@@ -20,7 +20,7 @@ exclude_ga: true
 {% assign related = site.projects
   | where_exp: "p", "p.tags contains primary_tag"
   | where_exp: "p", "p.title != page.title"
-  | shuffle %}
+%}
 
 {% if related.size > 0 %}
  <h2>Other projects you might be interested in</h2>
