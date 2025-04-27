@@ -26,19 +26,16 @@ exclude_ga: true
 
 <h2> Other projects you might be interested in </h2>
 
-
-{% for p in related %}
-  <div class="projects-gallery">
-    <div class="project-card">
-      
+<div class="projects-gallery">
+{% for p in related %}  
+    <div class="project-card">      
         <a href="{{ p.url | relative_url }}">{{ p.title }}
           <img src="{{ p.image }}" alt="{{ p.title }}" />
           <h3>{{ p.title }}</h3>
-        </a>
-      
+        </a>      
     </div>
-</div>
 {% endfor %}
+</div>
 
 {% endif %}
 
