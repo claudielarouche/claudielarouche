@@ -17,37 +17,27 @@ exclude_ga: true
 
 {{ content }}
 
-{%- comment -%}
-  Safely pull in tags (default to an empty array if nil)
-  and only proceed if we actually have at least one tag
-  and the Jekyll collection `projects` exists.
-{%- endcomment -%}
-{% assign tags = page.tags | default: [] %}
+{% assign related = site.projects
+  | where_exp: "p", "p.tags contains primary_tag"
+  | where_exp: "p", "p.title != page.title"
+  | shuffle %}
 
-{% if tags.size > 0 and site.projects %}
-  {% assign primary_tag = tags[0] %}
-
-  {% assign related = site.projects
-     | where_exp: "p", "p.tags contains primary_tag"
-     | where_exp: "p", "p.title != page.title"
-  %}
-
-  {% if related.size > 0 %}
-    <h2>Other projects you might be interested in</h2>
-    <div class="projects-gallery">
-      {% for p in related %}
-        <div class="project-card">
-          <a href="{{ p.url | relative_url }}">
-            {% if p.image %}
-              <img src="{{ p.image | relative_url }}" alt="{{ p.title }}" />
-            {% endif %}
-            <h3>{{ p.title }}</h3>
-          </a>
-        </div>
-      {% endfor %}
-    </div>
-  {% endif %}
+{% if related.size > 0 %}
+ <h2>Other projects you might be interested in</h2>
+ <div class="projects-gallery">
+   {% for p in related limit:3 %}
+     <div class="project-card">
+       <a href="{{ p.url | relative_url }}">
+         {% if p.image %}
+           <img src="{{ p.image | relative_url }}" alt="{{ p.title }}" />
+         {% endif %}
+         <h3>{{ p.title }}</h3>
+       </a>
+     </div>
+   {% endfor %}
+ </div>
 {% endif %}
+
 
 <!--
 Previous version
