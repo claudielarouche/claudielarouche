@@ -2,12 +2,15 @@
 title: Leave with Income Averaging (LIA) Calculator
 description: A calculator to calculate the cost of Leave with Income Averaging (LIA)
 image: https://claudielarouche.com/assets/img/browser.png
+image_hero: https://claudielarouche.com/assets/img/browser.png
 tags: [Work]
 permalink: /projects/lia-calculator/
 layout: page
 js:
   - /assets/js/lia.js
 ---
+
+Calculate how much Leave with Income Averaging will cost you. Please note that the math used is for Government of Canada employees and may not work for other jobs. 
 
 <form>
 <div class="form-group">
@@ -21,6 +24,11 @@ js:
 <button type="button" class="btn btn-primary" onclick="calculate()">Calculate</button>
 </form>
 <div class="alert alert-info mt-3" role="alert" id="result"></div>
+
+## Related resources
+
+- [Leave with income averaging (Canada.ca)](https://www.canada.ca/en/public-services-procurement/services/pay-pension/pay-administration/access-update-pay-details/pay-changes-in-your-life/taking-leave/leave-with-income-averaging.html)
+- [Leave without pay information package (Canada.ca)](https://www.tpsgc-pwgsc.gc.ca/remuneration-compensation/services-pension-services/pension/info/ticnp-lwpip-eng.html#no9)
 
 ## Frequently Asked Questions
 
