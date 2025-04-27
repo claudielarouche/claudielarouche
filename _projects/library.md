@@ -3,6 +3,7 @@ title: City of Ottawa Library Programs
 description: A tool to browse and filter all public library events in Ottawa
 image: https://claudielarouche.com/assets/img/library-small.jpg
 image_hero: https://claudielarouche.com/assets/img/library-small.jpg
+permalink: /projects/library/
 tags: [Ottawa]
 layout: page
 js:
