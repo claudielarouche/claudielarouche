@@ -23,7 +23,7 @@ troubleshooting:
 {{ current_cat }}
 
 {% assign related = site.projects
-  | where_exp: "p", "p.tags contains primary_tag"
+  | where_exp: "p", "p.tags contains current_cat"
   | where_exp: "p", "p.url != page.url" %}
 
 {% if related.size > 0 %}
