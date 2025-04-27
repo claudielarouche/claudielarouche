@@ -116,8 +116,8 @@ View schedule
 Please make sure to <strong>always click on the Program Name link</strong> to verify that the schedule on this web page is accurate. Please note that I am not informed of last minute cancellations.
 </div>
 
-<h2>Library Activities</h2>
-<p>Data last updated: 2025-04-20 (Data is updated approximately every Sunday)</p>
+## Library Activities
+Data last updated: 2025-04-27 (Data is updated approximately every Sunday)
 
 <label>
 <input type="checkbox" id="showTodayOnly" name="showTodayOnly">
