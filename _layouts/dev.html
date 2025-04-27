@@ -17,9 +17,12 @@ exclude_ga: true
 
 {{ content }}
 
+{% assign primary_tag = page.tags[0] %}
+
+
 {% assign related = site.projects
-  | where_exp: "p", "p.tags contains primary_tag"
-  | where_exp: "p", "p.title != page.title"
+   | where_exp: "p", "p.tags contains primary_tag"
+   | where_exp: "p", "p.title != page.title"
 %}
 
 {% if related.size > 0 %}
