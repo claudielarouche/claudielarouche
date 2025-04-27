@@ -2,6 +2,7 @@
 title: City of Ottawa Library Programs
 description: A tool to browse and filter all public library events in Ottawa
 image: https://claudielarouche.com/assets/img/library.jpg
+image-hero: https://claudielarouche.com/assets/img/library.jpg
 tags: [Ottawa]
 layout: dev
 js:
@@ -14,7 +15,6 @@ js:
 css: 
   - https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css
   - https://fonts.googleapis.com/icon?family=Material+Icons
-
 ---
 
 

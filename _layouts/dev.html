@@ -7,10 +7,12 @@ exclude_ga: true
   📚 NOTE: THIS IS A DEV PAGE
 </div>
 
-{% if page.image %}
+
+{% if page.image-hero %}
   <div class="project-banner">
-    <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" />
+    <img src="{{ page.image-hero | relative_url }}" alt="{{ page.title }}" />
   </div>
 {% endif %}
+
 
 {{ content }}
