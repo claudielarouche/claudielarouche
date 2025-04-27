@@ -10,7 +10,7 @@ function getQueryParam(key) {
 
 window.onload = function() {
 	// Update the path to your CSV file
-	const csvFilePath = 'https://claudielarouche.com/library/ottawa-library-programs.csv';
+	const csvFilePath = 'https://claudielarouche.com/data/ottawa-library-programs.csv';
 
 	Papa.parse(csvFilePath, {
 		header: true,
