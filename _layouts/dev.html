@@ -28,9 +28,44 @@ exclude_ga: true
 
 <ul>
   {% for p in related %}
-    <li>
-      <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
-    </li>
+    <div class="projects-gallery">
+      <div class="project-card">
+        <li>
+          <a href="{{ p.url | relative_url }}">{{ p.title }}
+            <img src="{{ project.image }}" alt="{{ project.title }}" />
+            <h3>{{ project.title }}</h3>
+          </a>
+        </li>
+      </div>
+  </div>
   {% endfor %}
 </ul>
 {% endif %}
+
+<!--
+
+(from Home page)
+
+{% assign categories = "Ottawa,Work,Other,Archive" | split: "," %}
+
+{% for category in categories %}
+  <h2>{{ category }} Projects</h2>
+  <div class="projects-gallery">
+    {% assign filtered = site.projects | where_exp: "item", "item.tags contains category" %}
+    {% if filtered.size > 0 %}
+      {% for project in filtered %}
+        <div class="project-card">
+          <a href="{{ project.url }}">
+            <img src="{{ project.image }}" alt="{{ project.title }}" />
+            <h3>{{ project.title }}</h3>
+          </a>
+          <p>{{ project.description }}</p>
+        </div>
+      {% endfor %}
+    {% else %}
+      <p>No projects in this category yet.</p>
+    {% endif %}
+  </div>
+{% endfor %}
+
+-->
