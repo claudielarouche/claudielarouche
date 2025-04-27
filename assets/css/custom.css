@@ -67,6 +67,7 @@ h2 {
 label {
   display: block;
   margin-top: 10px;
+  margin-bottom: .5rem;
 }
 
 
@@ -78,8 +79,8 @@ td.dataTables_empty {
   text-align: left !important;
 }
 .dataTables_wrapper .dataTables_filter {
-    float: left;
-    text-align: left;
+    float: left !important;
+    text-align: left !important;
 }
 .dt-button-collection {
     margin-top: 10px !important;

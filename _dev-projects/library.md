@@ -17,11 +17,8 @@ css:
 
 ---
 
-<div class="bg-image"></div>
-<div class="container">
-			
-<h1>Ottawa Library Programs</h1>
 
+			
 <div class="row">
 <div class="col-md-6">
 <div class="mt-3">
@@ -149,15 +146,3 @@ Show Today Only
 </label>
 
 <div id="csvData"></div>
-
-
-
-
-
-
-
-
-<div id="footer">
-<a href="#" id="backToTop">Back to Top</a>
-</div>
-</div>
