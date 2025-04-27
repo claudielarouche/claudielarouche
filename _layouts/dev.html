@@ -17,26 +17,14 @@ exclude_ga: true
 
 {{ content }}
 
-{{!-- DEBUG: show what tags the page actually has --}}
-<div class="debug-info">
-  <strong>DEBUG:</strong> page.tags = {{ page.tags | jsonify }}<br>
-  <strong>DEBUG:</strong> total projects = {{ site.projects | size }}<br>
-</div>
+
 
 {% assign primary_tag = page.tags[0] %}
-<div class="debug-info">
-  <strong>DEBUG:</strong> primary_tag = {{ primary_tag }}<br>
-</div>
+
 
 {% assign related = site.projects
    | where_exp: "p", "p.tags contains primary_tag"
    | where_exp: "p", "p.url != page.url" %}
-<div class="debug-info">
-  <strong>DEBUG:</strong> related count = {{ related | size }}<br>
-  {% for p in related %}
-    • {{ p.title }}<br>
-  {% endfor %}
-</div>
 
 {% if related.size > 0 %}
   <h2>Other projects you might be interested in</h2>
