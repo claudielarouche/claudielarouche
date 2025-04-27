@@ -16,3 +16,20 @@ exclude_ga: true
 
 
 {{ content }}
+
+{% assign current_cat = page.category %}
+{% assign related = site.projects 
+  | where: "category", current_cat 
+  | where_exp: "p", "p.url != page.url" %}
+
+{% if related.size > 0 %}
+## Other projects you might be interested in
+
+<ul>
+  {% for p in related %}
+    <li>
+      <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+{% endif %}
