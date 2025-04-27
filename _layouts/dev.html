@@ -18,6 +18,10 @@ exclude_ga: true
 {{ content }}
 
 {% assign current_cat = page.tags %}
+
+troubleshooting:
+{{ current_cat }}
+
 {% assign related = site.projects
   | where_exp: "p", "p.tags contains primary_tag"
   | where_exp: "p", "p.url != page.url" %}
