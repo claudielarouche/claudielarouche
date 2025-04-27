@@ -213,6 +213,12 @@ td.dataTables_empty {
     border-color: #6c757d;
 }
 
+.btn-warning {
+  color: #212529;
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
 .form-select {
     display: block;
     width: 100%;
