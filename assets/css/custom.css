@@ -332,14 +332,9 @@ td.dataTables_empty {
 
 /* — date-picker styling — */
 input[type="date"] {
-  display: block;
+  
   width: auto;
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  border: 1px solid #ccc;
-  border-radius: 0.25rem;
-  margin-top: 0.25rem;
+  
 }
 
 /* — stack all checkboxes vertically — */
