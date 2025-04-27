@@ -1,4 +1,3 @@
-
 ---
 layout: default
 ---
@@ -9,9 +8,9 @@ layout: default
   </header>
 
   <div class="post-content">
-    {% if page.image-hero %}
+    {% if page.image_hero %}
       <div class="project-banner">
-        <img src="{{ page.image-hero | relative_url }}" alt="{{ page.title }}" />
+        <img src="{{ page.image_hero | relative_url }}" alt="{{ page.title }}" />
       </div>
     {% endif %}
     {{ content }}
