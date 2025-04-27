@@ -334,6 +334,8 @@ td.dataTables_empty {
 input[type="date"] {
   
   width: auto;
+  min-width: 140px;    /* never smaller than 140px wide */
+  min-height: 2.5rem;  /* about 40px tall */
   
 }
 
