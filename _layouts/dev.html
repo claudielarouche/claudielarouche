@@ -30,7 +30,6 @@ exclude_ga: true
   {% assign related = site.projects
      | where_exp: "p", "p.tags contains primary_tag"
      | where_exp: "p", "p.title != page.title"
-     | shuffle
      | first: 3 %}
 
   {% if related.size > 0 %}
