@@ -1,8 +1,8 @@
 ---
 title: City of Ottawa Library Programs
 description: A tool to browse and filter all public library events in Ottawa
-image: https://claudielarouche.com/assets/img/library.jpg
-image-hero: https://claudielarouche.com/assets/img/library.jpg
+image: https://claudielarouche.com/assets/img/library-small.jpg
+image-hero: https://claudielarouche.com/assets/img/library-big.jpg
 tags: [Ottawa]
 layout: dev
 js:
@@ -18,47 +18,25 @@ css:
 ---
 
 
+Photo by <a href="https://unsplash.com/@trnavskauni?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Trnava University</a> on <a href="https://unsplash.com/photos/brown-wooden-book-shelf-with-books-BEEyeib-am8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+      
 			
-<div class="row">
-<div class="col-md-6">
-<div class="mt-3">
-<a href="#csvData" class="btn btn-primary">
-Go to listing
-</a>
-</div>
-<div class="mt-3">
-<a href="#filter" class="btn btn-primary" >
-Go to filters
-</a>
-</div>
+<a href="#csvData" class="btn btn-primary">Go to listing</a>
 
-<div class="mt-3">
-<a href="#" class="btn btn-primary" id="showToday" >
-Show me today's programs
-</a>
-</div>
+<a href="#filter" class="btn btn-primary" >Go to filters</a>
 
-<div class="mt-3">
-<a href="#newsletter" class="btn btn-warning" >
-Sign-up for updates
-</a>
+<a href="#" class="btn btn-primary" id="showToday" >Show me today's programs</a>
 
-</div>
+<a href="#newsletter" class="btn btn-warning" >Sign-up for updates</a>
 
-<div class="mt-3">
-<a href="https://forms.gle/7YHFbimGH4p5imQD8" class="btn btn-primary" target="_blank">
-Contact me
-</a>
-</div>
-</div>
-<div class="col-md-6">
-<i>If you see me at the library, please say hi!</i>
-<img src="https://claudielarouche.com/assets/img/claudie.png" alt="Claudie's Picture" class="img-fluid">
-</div>
-</div>
+<a href="https://forms.gle/7YHFbimGH4p5imQD8" class="btn btn-primary" target="_blank">Contact me</a>
 
-<h2 id="filter">Filters</h2>
-<p>Please note that you can also use the "search" box directly on the data table to filter the data.</p>
+
+
+## Filters
+
+Please note that you can also use the "search" box directly on the data table to filter the data.
+
 <form class="form">
 
 <div class="form-group row">
