@@ -56,7 +56,7 @@ Contact me
 </div>
 <div class="col-md-6">
 <i>If you see me at the library, please say hi!</i>
-<img src="assets/img/claudie.png" alt="Claudie's Picture" class="img-fluid">
+<img src="https://claudielarouche.com/assets/img/claudie.png" alt="Claudie's Picture" class="img-fluid">
 </div>
 </div>
 
