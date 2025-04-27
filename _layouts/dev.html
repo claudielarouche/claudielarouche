@@ -18,7 +18,7 @@ exclude_ga: true
 {{ content }}
 
 {% if site.collections.projects and page.tags and page.tags.size > 0 %}
-
+Entered the first if
   {%- assign primary_tag = page.tags[0] -%}
 
   {%- assign related = site.collections.projects.docs
