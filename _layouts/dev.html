@@ -17,31 +17,43 @@ exclude_ga: true
 
 {{ content }}
 
-{% assign current_cat = page.tags %}
-
-troubleshooting:
-{{ current_cat }}
-
-{% assign related = site.projects
-  | where_exp: "p", "p.tags contains current_cat"
-  | where_exp: "p", "p.url != page.url" %}
-
-{% if related.size > 0 %}
-
-<h2> Other projects you might be interested in </h2>
-
-<div class="projects-gallery">
-{% for p in related %}  
-    <div class="project-card">      
-        <a href="{{ p.url | relative_url }}">{{ p.title }}
-          <img src="{{ p.image }}" alt="{{ p.title }}" />
-          <h3>{{ p.title }}</h3>
-        </a>      
-    </div>
-{% endfor %}
+{{!-- DEBUG: show what tags the page actually has --}}
+<div class="debug-info">
+  <strong>DEBUG:</strong> page.tags = {{ page.tags | jsonify }}<br>
+  <strong>DEBUG:</strong> total projects = {{ site.projects | size }}<br>
 </div>
 
+{% assign primary_tag = page.tags[0] %}
+<div class="debug-info">
+  <strong>DEBUG:</strong> primary_tag = {{ primary_tag }}<br>
+</div>
+
+{% assign related = site.projects
+   | where_exp: "p", "p.tags contains primary_tag"
+   | where_exp: "p", "p.url != page.url" %}
+<div class="debug-info">
+  <strong>DEBUG:</strong> related count = {{ related | size }}<br>
+  {% for p in related %}
+    • {{ p.title }}<br>
+  {% endfor %}
+</div>
+
+{% if related.size > 0 %}
+  <h2>Other projects you might be interested in</h2>
+  <div class="projects-gallery">
+    {% for p in related %}
+      <div class="project-card">
+        <a href="{{ p.url | relative_url }}">
+          {% if p.image %}
+            <img src="{{ p.image | relative_url }}" alt="{{ p.title }}" />
+          {% endif %}
+          <h3>{{ p.title }}</h3>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
 {% endif %}
+
 
 <!--
 
