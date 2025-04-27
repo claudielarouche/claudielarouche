@@ -305,3 +305,59 @@ td.dataTables_empty {
   height: auto;
   border-radius: 4px;
 }*/
+
+/* START OF ALL WEBSITES WITH A FORM FOR FILTERS*/
+
+
+/* — each “row” of label + control — */
+.form-group.row {
+  display: flex;
+  align-items: flex-start;   /* keep items top-aligned */
+  margin-bottom: 1.5rem;
+}
+
+/* — labels (col-sm-2) — */
+.col-form-label {
+  flex: 0 0 20%;
+  max-width: 20%;
+  font-weight: 600;
+  padding-right: 0.5rem;
+}
+
+/* — input container (col-sm-10) — */
+.col-sm-10 {
+  flex: 1;
+  max-width: 80%;
+}
+
+/* — date-picker styling — */
+input[type="date"] {
+  display: block;
+  width: auto;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  margin-top: 0.25rem;
+}
+
+/* — stack all checkboxes vertically — */
+.col-sm-10 .checkbox {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* — checkbox label + input alignment — */
+.checkbox label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+.checkbox input[type="checkbox"] {
+  margin: 0;
+}
+
+
+/* END OF ALL WEBSITES WITH A FORM FOR FILTERS */
