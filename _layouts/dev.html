@@ -17,39 +17,37 @@ exclude_ga: true
 
 {{ content }}
 
-{% if site.projects and page.tags and page.tags.size > 0 %}
-Entered the first if
-  {%- assign primary_tag = page.tags[0] -%}
+{%- comment -%}
+  Safely pull in tags (default to an empty array if nil)
+  and only proceed if we actually have at least one tag
+  and the Jekyll collection `projects` exists.
+{%- endcomment -%}
+{% assign tags = page.tags | default: [] %}
 
-  {%- assign related = site.collections.projects.docs
-       | where_exp: "p", "p.data.tags contains primary_tag"
-       | where_exp: "p", "p.url != page.url"
-       | shuffle
-       | first: 3 -%}
+{% if tags.size > 0 and site.projects %}
+  {% assign primary_tag = tags[0] %}
 
-  {%- if related.size > 0 -%}
+  {% assign related = site.projects
+     | where_exp: "p", "p.tags contains primary_tag"
+     | where_exp: "p", "p.title != page.title"
+     | shuffle
+     | first: 3 %}
+
+  {% if related.size > 0 %}
     <h2>Other projects you might be interested in</h2>
     <div class="projects-gallery">
       {% for p in related %}
         <div class="project-card">
           <a href="{{ p.url | relative_url }}">
-            {% if p.data.image %}
-              <img src="{{ p.data.image | relative_url }}" alt="{{ p.data.title }}" />
+            {% if p.image %}
+              <img src="{{ p.image | relative_url }}" alt="{{ p.title }}" />
             {% endif %}
-            <h3>{{ p.data.title }}</h3>
+            <h3>{{ p.title }}</h3>
           </a>
         </div>
       {% endfor %}
     </div>
-  {%- else -%}
-    <!-- DEBUG: no related projects found -->
-  {%- endif -%}
-
-{% else %}
-  <!-- DEBUG:
-       {% if site.collections.projects %}✔ projects collection{% else %}⚠ no projects collection{% endif %}
-       {% if page.tags and page.tags.size > 0 %}✔ page has tags: {{ page.tags | jsonify }}{% else %}⚠ page.tags missing{% endif %}
-  -->
+  {% endif %}
 {% endif %}
 
 <!--
