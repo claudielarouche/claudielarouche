@@ -27,8 +27,8 @@ Calculate how much Leave with Income Averaging will cost you. Please note that t
 
 ## Related resources
 
-- [Leave with income averaging (Canada.ca)](https://www.canada.ca/en/public-services-procurement/services/pay-pension/pay-administration/access-update-pay-details/pay-changes-in-your-life/taking-leave/leave-with-income-averaging.html)
-- [Leave without pay information package (Canada.ca)](https://www.tpsgc-pwgsc.gc.ca/remuneration-compensation/services-pension-services/pension/info/ticnp-lwpip-eng.html#no9)
+- [Leave with income averaging (Canada.ca)](https://www.canada.ca/en/public-services-procurement/services/pay-pension/pay-administration/access-update-pay-details/pay-changes-in-your-life/taking-leave/leave-with-income-averaging.html){:target="_blank" rel="noopener noreferrer"}
+- [Leave without pay information package (Canada.ca)](https://www.tpsgc-pwgsc.gc.ca/remuneration-compensation/services-pension-services/pension/info/ticnp-lwpip-eng.html){:target="_blank" rel="noopener noreferrer"}
 
 ## Frequently Asked Questions
 
