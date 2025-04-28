@@ -17,6 +17,17 @@ exclude_ga: true
 
 {{ content }}
 
+<h2> Feedback </h2>
+
+{% assign form_src = "https://docs.google.com/forms/d/e/1FAIpQLScZjMPv-2JNEJoDJYL1wHIpmXE1Z_rCB_5GMlNyVT-hZiNb4Q/viewform?embedded=true" %}
+{% assign project_field = "entry.628049688" %}
+<iframe
+  src="{{ form_src }}&amp;{{ project_field }}={{ page.title | uri_escape }}"
+  width="100%" height="160" frameborder="0" marginheight="0" marginwidth="0">
+  Loading…
+</iframe>
+
+
 
 <!-- THIS CODE WORKS, only shows 3
 {% assign primary_tag = page.tags[0] %}
