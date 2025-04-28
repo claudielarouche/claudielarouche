@@ -55,3 +55,18 @@ layout: page
       </ul>
     </section>
   {% endif %}
+
+## Feedback
+
+{% assign form_base = "https://docs.google.com/forms/d/e/1FAIpQLScZjMPv-2JNEJoDJYL1wHIpmXE1Z_rCB_5GMlNyVT-hZiNb4Q/viewform?embedded=true" %}
+{% assign project_field = "entry.628049688" %}
+{% assign form_url = form_base | append: "&" | append: project_field | append: "=" | append: page.title | uri_escape %}
+
+<p>
+  <a class="btn btn-primary" 
+    href="{{ form_url }}" 
+    target="_blank" 
+    rel="noopener noreferrer">
+    Was this page useful? Please provide your feedback!
+  </a>
+</p>
