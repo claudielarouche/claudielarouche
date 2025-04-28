@@ -63,6 +63,8 @@ Pivot:
 
 ### RTL
 
+Only for pages that have children names. If no children name, the page should be marked DINE.
+
 - As a general rule, if the cost only falls in "other cost" category, it would be RTL
 - Approval letters and acceptance letters
 - Request form
@@ -92,6 +94,7 @@ Pivot:
 - Support worker timesheet
 - Support worker report / Respite worker report
 - Application for Age of Majority Allowance
+- Respite timesheet
 - Child assessment & Service Plan (this one has not been confirmed by Julia, please let me know if I am mistaken :) 
 
 ### DINE
