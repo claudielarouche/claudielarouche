@@ -90,7 +90,7 @@ Pivot:
 - (requests are pretty much always RTL)
 - Fee requisition
 - Support worker timesheet
-- Support / Respite worker report
+- Support worker report / Respite worker report
 - Application for Age of Majority Allowance
 - Child assessment & Service Plan (this one has not been confirmed by Julia, please let me know if I am mistaken :) 
 
