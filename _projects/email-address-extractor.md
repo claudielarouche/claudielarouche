@@ -4,7 +4,7 @@ description: Paste any paragrah of text, let the tool extract all the email addr
 image: https://claudielarouche.com/assets/img/letters.jpg
 tags: [Work]
 permalink: /projects/email-address-extractor/
-layout: page
+layout: projects
 ---
 
 <meta http-equiv="refresh" content="0; url=https://claudielarouche.com/work/email.html">

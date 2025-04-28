@@ -1,0 +1,34 @@
+---
+layout: page
+---
+
+{% if page.image-hero %}
+  <div class="project-banner">
+    <img src="{{ page.image-hero | relative_url }}" alt="{{ page.title }}" />
+  </div>
+{% endif %}
+
+{{ content }}
+
+{% assign primary_tag = page.tags[0] %}
+
+{% assign related = site.projects
+   | where_exp: "p", "p.tags contains primary_tag"
+   | where_exp: "p", "p.title != page.title"
+%}
+
+{% if related.size > 0 %}
+  <h2>Other projects you might be interested in</h2>
+  <div class="projects-gallery">
+    {% for p in related %}
+      <div class="project-card">
+        <a href="{{ p.url | relative_url }}">
+          {% if p.image %}
+            <img src="{{ p.image | relative_url }}" alt="{{ p.title }}" />
+          {% endif %}
+          <h3>{{ p.title }}</h3>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+{% endif %}

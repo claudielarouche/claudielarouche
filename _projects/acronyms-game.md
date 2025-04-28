@@ -4,7 +4,7 @@ description: How well do you know your acronyms?
 image: https://claudielarouche.com/assets/img/acronyms.jpg
 tags: [Other]
 permalink: /projects/acronym-game/
-layout: page
+layout: projects
 js:
   - /assets/js/acronyms-game.js
   - https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js

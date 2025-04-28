@@ -5,7 +5,7 @@ image: https://claudielarouche.com/assets/img/library-small.jpg
 image_hero: https://claudielarouche.com/assets/img/library-small.jpg
 permalink: /projects/library/
 tags: [Ottawa]
-layout: page
+layout: projects
 js:
   - https://code.jquery.com/jquery-3.6.0.min.js
   - https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js

@@ -4,7 +4,7 @@ description: This used to provide a listing of all the playgroups in Ottawa. You
 image: https://claudielarouche.com/assets/img/kids.png
 tags: [Ottawa]
 permalink: /projects/early-on/
-layout: page
+layout: projects
 css:
     - https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css
 ---

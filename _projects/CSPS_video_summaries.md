@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: projects
 title: CSPS (Canada School of Public Service) Video Summaries
 permalink: /projects/csps-videos/
 description: A list of CSPS Youtube video and a summary of each

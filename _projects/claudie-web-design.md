@@ -4,7 +4,7 @@ description: I used to have a web design side business :) This is my portfolio
 image: https://claudielarouche.com/assets/img/web.png
 tags: [Archive]
 permalink: /projects/claudie-web-design/
-layout: page
+layout: projects
 published: true
 ---
 

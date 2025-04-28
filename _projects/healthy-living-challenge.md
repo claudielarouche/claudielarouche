@@ -4,7 +4,7 @@ description: 52 challenges over the course of an entire year.
 image: https://claudielarouche.com/assets/img/food.jpg
 tags: [Other]
 permalink: /projects/healthy-living-challenge/
-layout: page
+layout: projects
 published: true
 ---
 

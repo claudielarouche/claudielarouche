@@ -5,7 +5,7 @@ image: https://claudielarouche.com/assets/img/browser.png
 image_hero: https://claudielarouche.com/assets/img/browser.png
 tags: [Work]
 permalink: /projects/lia-calculator/
-layout: page
+layout: projects
 js:
   - /assets/js/lia.js
 ---
