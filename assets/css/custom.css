@@ -358,3 +358,13 @@ input[type="date"] {
 
 
 /* END OF ALL WEBSITES WITH A FORM FOR FILTERS */
+
+/* START CSPS */
+
+.callout{
+  border:1px solid #ccc; 
+  padding:1rem; 
+  margin-bottom:2rem; 
+  background-color:#f9f9f9; 
+  border-radius:6px;
+}
