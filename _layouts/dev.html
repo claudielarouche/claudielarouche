@@ -17,36 +17,8 @@ exclude_ga: true
 
 {{ content }}
 
-{% assign tags = page.tags | default: [] %}
 
-{% if tags.size > 0 and site.projects %}
-  {% assign primary_tag = tags[0] %}
-
-  {%- assign related = site.projects
-     | where_exp: "p", "p.tags contains primary_tag"
-     | where_exp: "p", "p.title != page.title" -%}
-
-  {% if related.size > 0 %}
-    {%- assign shuffled = related | sample: related.size -%}
-
-    <h2>Other projects you might be interested in</h2>
-    <div class="projects-gallery">
-      {% for p in shuffled limit:3 %}
-        <div class="project-card">
-          <a href="{{ p.url | relative_url }}">
-            {% if p.image %}
-              <img src="{{ p.image | relative_url }}" alt="{{ p.title }}" />
-            {% endif %}
-            <h3>{{ p.title }}</h3>
-          </a>
-        </div>
-      {% endfor %}
-    </div>
-  {% endif %}
-{% endif %}
-
-
-<!-- THIS CODE WORKS 
+<!-- THIS CODE WORKS, only shows 3
 {% assign primary_tag = page.tags[0] %}
 
 
@@ -72,8 +44,8 @@ exclude_ga: true
 {% endif %}
 
 -->
-<!--
-Previous version
+
+
 {% assign primary_tag = page.tags[0] %}
 
 
@@ -98,7 +70,7 @@ Previous version
   </div>
 {% endif %}
 
--->
+
 <!--
 
 (from Home page)
