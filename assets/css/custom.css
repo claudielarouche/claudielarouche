@@ -319,7 +319,7 @@ td.dataTables_empty {
 /* — labels (col-sm-2) — */
 .col-form-label {
   flex: 0 0 20%;
-  max-width: 20%;
+
   font-weight: 600;
   padding-right: 0.5rem;
 }
