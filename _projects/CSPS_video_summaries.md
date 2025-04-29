@@ -12,6 +12,7 @@ Welcome! Below you will find concise summaries of the highlights and insights fr
 
 Although I am a public servant myself, please note that I am not affiliated with the School, and the summaries are independently created and not officially sanctioned by the Canada School of Public Service.
 
+<!-- 
 {% assign all_tags = site.csps | map: "tags" | join: "," | split: "," | uniq | sort %}
 
 <ul>
@@ -20,6 +21,20 @@ Although I am a public servant myself, please note that I am not affiliated with
     <li>
       <a href="{{ summary.url }}">{{ summary.date | date: "%Y-%m-%d" }} – {{ summary.title }}</a><br>
       <small>{{ summary.description }}</small>
+    </li>
+  {% endfor %}
+</ul>
+-->
+
+<ul>
+  {% assign sorted_csps = site.csps | sort: "date" | reverse %}
+  {% for summary in sorted_csps %}
+    {%- assign meta = site.data.csps_videos[ summary.video_id ] -%}
+    <li>
+      <a href="{{ summary.url }}">
+        {{ summary.date | date: "%Y-%m-%d" }} – {{ meta.long_title }}
+      </a><br>
+      <small>{{ meta.description }}</small>
     </li>
   {% endfor %}
 </ul>
