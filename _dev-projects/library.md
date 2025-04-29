@@ -2,7 +2,8 @@
 title: City of Ottawa Library Programs
 description: A tool to browse and filter all public library events in Ottawa
 image: https://claudielarouche.com/assets/img/library-small.jpg
-image-hero: https://claudielarouche.com/assets/img/library-small.jpg
+image_hero: https://claudielarouche.com/assets/img/library-small.jpg
+permalink: /projects/library/
 tags: [Ottawa]
 layout: dev
 js:
@@ -11,7 +12,7 @@ js:
   - https://cdn.datatables.net/buttons/1.7.1/js/dataTables.buttons.min.js
   - https://cdn.datatables.net/buttons/1.7.1/js/buttons.colVis.min.js
   - https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js
-  - /assets/js/library.js
+  - /assets/js/library-dev.js
 css: 
   - https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css
   - https://fonts.googleapis.com/icon?family=Material+Icons
@@ -115,8 +116,8 @@ View schedule
 Please make sure to <strong>always click on the Program Name link</strong> to verify that the schedule on this web page is accurate. Please note that I am not informed of last minute cancellations.
 </div>
 
-<h2>Library Activities</h2>
-<p>Data last updated: 2025-04-20 (Data is updated approximately every Sunday)</p>
+## Library Activities
+Data last updated: 2025-04-27 (Data is updated approximately every Sunday)
 
 <label>
 <input type="checkbox" id="showTodayOnly" name="showTodayOnly">

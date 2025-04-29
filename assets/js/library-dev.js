@@ -1,4 +1,4 @@
-console.log('clear date');
+console.log('filter out past days');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -62,8 +62,6 @@ function renderTable(data) {
         }
     });
     tableHtml += '</tr></thead><tbody>';
-
-    
 
     const filteredData = filterData(data, selectedDate, selectedAreas, selectedAudience);
 
@@ -149,7 +147,7 @@ function renderTable(data) {
 			    }
 			  
 			],
-		"order": [[0, 'asc'], [4, 'asc']],
+		"order": [[2, 'asc'], [4, 'asc']],
             "language": {
                 "emptyTable": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>.",
                 "zeroRecords": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>."
@@ -250,16 +248,10 @@ document.getElementById("showTodayOnly").addEventListener("change", function (ev
 	    selectedDate = null;
 	}
 	
-    //document.getElementById('dataTable_filter').querySelector('input').dispatchEvent(new Event('input'));
     renderTable(originalData);
 });
 
 function filterData(data, selectedDate, selectedAreas, selectedAudience) {
-   // If no date is selected, return the original data
-   /*if (!selectedDate) {
-        return data;
-    }*/
-
 
     return data.filter(row => {
 
@@ -359,19 +351,6 @@ function clearAllFilters() {
 		}
     });
 
-/*
-
-// Check all the "Select Day" checkboxes
-    document.querySelectorAll('.dayCheckbox').forEach(checkbox => {
-        checkbox.checked = true;
-		if (!selectedDay.includes(checkbox.value)) {
-			selectedDay.push(checkbox.value);
-		}
-    });*/
-
-
-
-
     // Clear the DataTable search box
     var dataTable = $('#dataTable').DataTable();
     dataTable.search('').draw();
@@ -443,38 +422,7 @@ document.getElementById('selectedDate').addEventListener('change', function() {
     selectedDate = new Date(document.getElementById('selectedDate').value);
     selectedDate.setDate(selectedDate.getDate() + 1); // Add one day
     console.log("selectedDate: " + selectedDate);
-
     
-	
     renderTable(originalData);
 
 });
-
-
-/*
-const selectedDay = [];
-document.querySelectorAll('.dayCheckbox').forEach(function (checkbox) {
-    checkbox.addEventListener('change', function () {
-	// Store the current sorting state
-        sortingState = $('#dataTable').DataTable().state();
-        currentSearchValue = $('#dataTable_filter input').val();
-		if (checkbox.checked) {
-            if (!selectedDay.includes(checkbox.value)) {
-                selectedDay.push(checkbox.value);
-            }
-        } else {
-            const index = selectedDay.indexOf(checkbox.value);
-            if (index !== -1) {
-                selectedDay.splice(index, 1);
-            }
-        }
-        renderTable(originalData);
-    });
-
-    // Initialize with all checkboxes checked by default
-    checkbox.checked = true;
-    if (!selectedDay.includes(checkbox.value)) {
-        selectedDay.push(checkbox.value);
-    }
-});
-*/
