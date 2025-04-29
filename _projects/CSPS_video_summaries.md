@@ -18,7 +18,7 @@ Although I am a public servant myself, please note that I am not affiliated with
   {% assign sorted_csps = site.csps | sort: "date" | reverse %}
   {% for summary in sorted_csps %}
     <li>
-      <a href="{{ summary.url }}">{{ summary.date | date: "%Y-%m-%d" }} – {{ summary.title }}</a><br>
+      <a href="{{ summary.url }}">{{ summary.date | date: "%Y-%m-%d" }} – {{ summary.long_title }}</a><br>
       <small>{{ summary.description }}</small>
     </li>
   {% endfor %}
