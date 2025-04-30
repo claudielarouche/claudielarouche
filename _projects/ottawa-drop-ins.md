@@ -3,7 +3,7 @@ title: City of Ottawa Drop-Ins
 description: Racquet sports, gym sports, swimming, skating, etc.
 image: https://claudielarouche.com/assets/img/bonus.jpg
 tags: [Ottawa]
-permalink: /projects/healthy-living-challenge/
+permalink: /projects/ottawa-drop-ins/
 layout: page
 ---
 
