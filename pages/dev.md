@@ -26,4 +26,4 @@ permalink: /dev
 
 ## Test section
 
-[Change Log](change.md)
+[Change Log](/change-log)
