@@ -1,7 +1,6 @@
 ---
 layout: dev
 title: Testimonials
-permalink: /testimonials/
 ---
 
 <div class="testimonial">
