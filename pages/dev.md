@@ -2,11 +2,9 @@
 layout: page
 exclude_ga: true
 sitemap: false
+permalink: /dev
 ---
 
-## Dev Projects
-
-<h2>Development Projects</h2>
 <div class="projects-gallery">
   {% assign dev_projects = site.dev-projects %}
   {% if dev_projects.size > 0 %}
@@ -25,3 +23,7 @@ sitemap: false
     <p>No development projects yet.</p>
   {% endif %}
 </div>
+
+## Test section
+
+[Change Log](change.md)
