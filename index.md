@@ -39,6 +39,8 @@ title: Home
   
 </div>
 
+[Change Log](/change-log)
+
 
 <!-- Old Structure 
 ## My City of Ottawa Projects
