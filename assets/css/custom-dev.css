@@ -19,3 +19,9 @@
     background-color: #c82333;
     border-color: #bd2130;
 }
+
+.btn-success:hover {
+    color: #fff;
+    background-color: #218838;
+    border-color: #1e7e34;
+}
