@@ -39,6 +39,8 @@ title: Home
   
 </div>
 
+<br/>
+
 [Change Log](/change-log)
 
 
