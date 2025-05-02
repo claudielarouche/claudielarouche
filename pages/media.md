@@ -9,9 +9,21 @@ image: /assets/img/media-banner.jpg
 ![Media Appearances]({{ page.image | relative_url }})
 -->
 
-Here are some interviews I have given, articles written about my projects, etc. 
+Here are some interviews I have given, articles written about my projects, conference participations etc. 
 
 ---
+
+## Drupalcamp Ottawa - EvolveUX 
+**Type:** Quick Feedback Session  
+**Date:** May 2, 2025  
+**Details:** An interactive, engaging, and collaborative space where designers, developers, and digital professionals come together to learn, share, and improve their projects.
+
+## Presentation for R-Ladies Ottawa  
+**Type:** 45 minutes Presentation
+**Date:** March 18, 2025
+**Details:** Claudie will show you how anyone can leverage AI for social good. Whether you're a seasoned developer or a tech-curious individual, Claudie's story will inspire you to think creatively and use technology to solve real-life problems.
+[View the presentation on R-Ladies Global Youtube Channel](https://www.youtube.com/watch?v=p78AW7ZdNGI)
+
 <!--
 ## 📰 CTV News Article  
 **Title:** "This Ottawa parent was frustrated by the city of Ottawa’s website, so she built her own"  
