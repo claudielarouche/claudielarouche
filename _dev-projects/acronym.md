@@ -5,6 +5,8 @@ image: https://claudielarouche.com/assets/img/acronyms.jpg
 tags: [Other]
 permalink: /dev-projects/acronym-game/
 layout: dev
+css: 
+    - /assets/css/custom-dev.css
 ---
 
 The data for this game was last downloaded on December 16, 2024, from the <a href="https://open.canada.ca/data/en/dataset/83320390-7715-43bc-a281-2049bf5d4232" target="_blank">Open Government website</a>. This website was built by <a href="https://claudielarouche.com/" target="_blank">Claudie Larouche</a> with help from <a href="https://openai.com/chatgpt" target="_blank">ChatGPT</a>, based on an idea from Emily Fegan. If you enjoy this game or have ideas for improvement, please send your feedback to <a href="mailto:claudielarouche@gmail.com">claudielarouche@gmail.com</a>.
