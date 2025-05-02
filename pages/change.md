@@ -8,3 +8,4 @@ permalink: /change-log/
 
 - Created the change log page!
 - Added css code for Bootstrap buttons
+(before that I did tons of stuff but I didn't keep track sorry! ;)
