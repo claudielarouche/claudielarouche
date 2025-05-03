@@ -21,9 +21,9 @@ Here are some interviews I have given, articles written about my projects, confe
 ![Ad for R-Ladies talk](/assets/img/R-Ladies-Ad.jpg)
 ![Presentation at R-Ladies talk](/assets/img/R-Ladies-Talk.png)
 
-**Type:** 45 minutes Presentation
-**Date:** March 18, 2025
-**Details:** Claudie will show you how anyone can leverage AI for social good. Whether you're a seasoned developer or a tech-curious individual, Claudie's story will inspire you to think creatively and use technology to solve real-life problems.
+**Type:** 45 minutes Presentation  
+**Date:** March 18, 2025  
+**Details:** Claudie will show you how anyone can leverage AI for social good. Whether you're a seasoned developer or a tech-curious individual, Claudie's story will inspire you to think creatively and use technology to solve real-life problems.  
 [View the presentation on R-Ladies Global Youtube Channel](https://www.youtube.com/watch?v=p78AW7ZdNGI)
 
 ---
