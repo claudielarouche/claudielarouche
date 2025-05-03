@@ -24,7 +24,7 @@ Photo by <a href="https://unsplash.com/@trnavskauni?utm_content=creditCopyText&u
 			
 <a href="#csvData" class="btn btn-primary">Go to listing</a>
 
-<a href="#filter" class="btn btn-primary" >Go to filters</a>
+<a href="#filters" class="btn btn-primary" >Go to filters</a>
 
 <a href="#" class="btn btn-primary" id="showToday" >Show me today's programs</a>
 
