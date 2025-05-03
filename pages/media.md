@@ -38,7 +38,10 @@ Here are some interviews I have given, articles written about my projects, confe
 
 ---
 
-## 📺 CTV Morning Live Ottawa  
+## 📺 CTV Morning Show Ottawa  
+
+![Claudie at CTV Morning Show](/assets/img/CTV-Morning-Show-Claudie.jpg)
+
 **Type:** TV morning show appearance  
 **Date:** May 1, 2024  
 (link no longer available)
