@@ -1,3 +1,9 @@
+/* Hero img all sites */
+.post-content img {
+  display: inline;
+}
+
+/*HOME START*/
 .projects-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -19,6 +25,8 @@
   width: 100%;
   border-radius: 4px;
 }
+
+/* HOME END */
 
 /* Make the content area wider on desktops */
 .wrapper {
