@@ -5,47 +5,46 @@ permalink: /media/
 image: /assets/img/media-banner.jpg
 ---
 
-<!--
-![Media Appearances]({{ page.image | relative_url }})
--->
-
 Here are some interviews I have given, articles written about my projects, conference participations etc. 
 
 ---
 
-## Drupalcamp Ottawa - EvolveUX 
+## 📣 Drupalcamp Ottawa - EvolveUX 
 **Type:** Quick Feedback Session  
 **Date:** May 2, 2025  
 **Details:** An interactive, engaging, and collaborative space where designers, developers, and digital professionals come together to learn, share, and improve their projects.
 
-## Presentation for R-Ladies Ottawa  
+---
+
+## 📣 Presentation for R-Ladies Ottawa  
 **Type:** 45 minutes Presentation
 **Date:** March 18, 2025
 **Details:** Claudie will show you how anyone can leverage AI for social good. Whether you're a seasoned developer or a tech-curious individual, Claudie's story will inspire you to think creatively and use technology to solve real-life problems.
 [View the presentation on R-Ladies Global Youtube Channel](https://www.youtube.com/watch?v=p78AW7ZdNGI)
 
-<!--
+---
+
 ## 📰 CTV News Article  
 **Title:** "This Ottawa parent was frustrated by the city of Ottawa’s website, so she built her own"  
 **Date:** May 2, 2024  
-[Read the article](https://ottawa.ctvnews.ca/this-ottawa-parent-was-frustrated-by-the-city-of-ottawa-s-website-so-she-built-her-own-1.6873832)
+(link no longer available)
 
 ---
 
 ## 🎙️ CFRA – Ottawa at Work Interview  
 **Type:** Radio interview  
 **Date:** May 2, 2024  
-[Listen to the interview](https://www.iheart.com/podcast/962-ottawa-at-work-with-patric-159294472/episode/oaw-a-bit-of-a-nightmare-172889723/)
+(link no longer available)
 
 ---
 
 ## 📺 CTV Morning Live Ottawa  
 **Type:** TV morning show appearance  
 **Date:** May 1, 2024  
-[Watch the segment](https://ottawa.ctvnews.ca/video/c2913823-building-a-new-website-for-city-activities)
+(link no longer available)
 
 ---
--->
+
 ## 🎙️ As It Happens (CBC National Radio)  
 **Type:** Pre-recorded interview  
 **Date:** April 26, 2024  
@@ -53,15 +52,14 @@ Here are some interviews I have given, articles written about my projects, confe
 [Listen to the clip](https://www.cbc.ca/listen/live-radio/1-2-as-it-happens/clip/16058997-a-thousand-steps-forward-one-step-back)
 
 ---
-<!--
+
 ## 📺 CBC Ottawa Evening News  
 **Type:** TV news segment  
 **Date:** April 25, 2024  
-**Details:** I appear at the very beginning of the video and again around the 9:10 mark.  
-[Watch the segment](https://www.cbc.ca/player/play/video/1.7185600)
+(link no longer available)
 
 ---
--->
+
 ## 🎙️ CBC Ottawa Morning – Live Interview  
 **Type:** Radio interview  
 **Date:** April 25, 2024  
@@ -86,7 +84,7 @@ Here are some interviews I have given, articles written about my projects, confe
 ## 📰 Radio-Canada (Article)  
 **Title:** "Une mère de famille d’Ottawa crée un outil pour trouver des activités"  
 **Date:** April 25, 2024  
-[Lire l’article](https://ici.radio-canada.ca/nouvelle/2067653/trouver-activite-ottawa-programme)
+[Read the article](https://ici.radio-canada.ca/nouvelle/2067653/trouver-activite-ottawa-programme)
 
 ---
 
