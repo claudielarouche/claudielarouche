@@ -18,8 +18,8 @@ Here are some interviews I have given, articles written about my projects, confe
 
 ## 📣 Presentation for R-Ladies Ottawa  
 
-![Claudie at CTV Morning Show](/assets/img/R-Ladies-Ad.jpg)
-![Claudie at CTV Morning Show](/assets/img/R-Ladies-Talk.png)
+![Ad for R-Ladies talk](/assets/img/R-Ladies-Ad.jpg)
+![Presentation at R-Ladies talk](/assets/img/R-Ladies-Talk.png)
 
 **Type:** 45 minutes Presentation
 **Date:** March 18, 2025
@@ -82,6 +82,9 @@ Here are some interviews I have given, articles written about my projects, confe
 ---
 
 ## 🎙️ Les matins d’ici (Radio-Canada) – Entrevue en direct  
+
+![Radio-Canada Article](/assets/img/radio-canada.png)
+
 **Type:** Radio interview  
 **Date:** April 25, 2024  
 [Segment de l’entrevue](https://ici.radio-canada.ca/ohdio/premiere/emissions/Les-matins-d-ici/segments/entrevue/495095/intelligence-artificielle-inscription-loisirs-activites-ottawa)
