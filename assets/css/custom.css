@@ -1,8 +1,3 @@
-/* Hero img all sites */
-.post-content img {
-  display: inline;
-}
-
 /*HOME START*/
 .projects-gallery {
   display: flex;
@@ -124,7 +119,7 @@ td.dataTables_empty {
 }
 
 .post-content img {
-  display: block;        /* make sure it’s a block-level element */
+  display: inline;        /* make sure it’s a block-level element */
   margin: 1.5rem auto;   /* 1.5rem top & bottom, auto left & right */
 }
 
