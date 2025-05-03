@@ -10,7 +10,7 @@ Here are some interviews I have given, articles written about my projects, confe
 ---
 
 ## 📣 Drupalcamp Ottawa - EvolveUX 
-**Type:** Quick Feedback Session  
+**Type:** Quick Feedback Session about my [City of Ottawa Library Programs](/projects/library) website
 **Date:** May 2, 2025  
 **Details:** An interactive, engaging, and collaborative space where designers, developers, and digital professionals come together to learn, share, and improve their projects.
 
