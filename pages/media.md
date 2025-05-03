@@ -17,6 +17,10 @@ Here are some interviews I have given, articles written about my projects, confe
 ---
 
 ## 📣 Presentation for R-Ladies Ottawa  
+
+![Claudie at CTV Morning Show](/assets/img/R-Ladies-Ad.jpg)
+![Claudie at CTV Morning Show](/assets/img/R-Ladies-Talk.png)
+
 **Type:** 45 minutes Presentation
 **Date:** March 18, 2025
 **Details:** Claudie will show you how anyone can leverage AI for social good. Whether you're a seasoned developer or a tech-curious individual, Claudie's story will inspire you to think creatively and use technology to solve real-life problems.
