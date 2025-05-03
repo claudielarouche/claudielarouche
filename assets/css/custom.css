@@ -355,9 +355,7 @@ input[type="date"] {
   margin: 0;
 }
 
-a:not(.btn):visited {
-  color: #1756a9;
-}
+
 
 /* END OF ALL WEBSITES WITH A FORM FOR FILTERS */
 
@@ -405,10 +403,18 @@ a:not(.btn):visited {
   border-color: #0062cc;
 }
 
+a.btn-primary:visited {
+  color: #fff ;       /* default .btn-primary text color */
+}
+
 .btn-warning:hover {
   color: #212529;
   background-color: #e0a800;
   border-color: #d39e00;
+}
+
+a.btn-warning:visited {
+  color: #212529 ;    /* default .btn-warning text color */
 }
 
 .btn-danger:hover {
@@ -423,6 +429,23 @@ a:not(.btn):visited {
   border-color: #1e7e34;
 }
 
+a.btn-success:visited {
+  color: #fff ;      
+}
+
+
 .btn:focus, .btn:hover {
   text-decoration: none;
 }
+
+
+.btn-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+a.btn-danger:visited {
+  color: #fff ;       
+}
+
