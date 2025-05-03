@@ -355,6 +355,9 @@ input[type="date"] {
   margin: 0;
 }
 
+a:not(.btn):visited {
+  color: #1756a9;
+}
 
 /* END OF ALL WEBSITES WITH A FORM FOR FILTERS */
 
