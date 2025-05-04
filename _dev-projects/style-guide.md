@@ -86,3 +86,4 @@ Normal paragraph text with **bold**, *italic*, ~~strikethrough~~, and `inline co
 function hello(name) {
   console.log("Hello, " + name);
 }
+```
