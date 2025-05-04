@@ -4,7 +4,7 @@ description: Sytle Guide for claudielarouche.com
 image: https://claudielarouche.com/assets/img/art-supplies.jpg
 image-hero: https://claudielarouche.com/assets/img/art-supplies.jpg
 tags: [work]
-permalink: /dev-projects/free-agent/
+permalink: /dev-projects/style-guide/
 layout: dev
 ---
 
