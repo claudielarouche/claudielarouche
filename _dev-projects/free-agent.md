@@ -13,8 +13,8 @@ Photo by <a href="https://unsplash.com/@nickmorrison?utm_content=creditCopyText&
 
 ## What Is the Free Agent Program?
 
-The **Free Agent Program** is an innovative initiative within the Government of Canada designed to connect highly skilled public servants with short-term, high-impact projects across departments and agencies. As a Free Agent, I bring specialized expertise in IT project management, data analysis, and digital service design to help teams accelerate their goals, share best practices, and deliver value faster.  
-> _Learn more about the program:_ [Free Agent Program overview][free-agent-link]
+The **Free Agent Program** is an innovative approach to talent mobility within the Government of Canada. This approach allows pre-qualified federal employees, known as “Free Agents,” to support Government of Canada departments quickly and easily with their work. As a Free Agent, I bring specialized expertise in IT project management, data analysis, and digital service design to help teams accelerate their goals, share best practices, and deliver value faster.  
+> _Learn more about Canada's Free Agent program:_ [Free Agent Program overview][free-agent-link]
 
 ## My Free Agent Journey
 
@@ -32,7 +32,7 @@ Since joining the program in **[Month Year]**, I have had the opportunity to wor
    – Summary of tasks (e.g., YAML data structuring for Jekyll site).  
    – Results: [e.g., Improved site performance and SEO].
 
-> _See more details on my project portfolio:_ [Projects page](/projects/)
+> _See more details on my project portfolio:_ [Projects page](/)
 
 ## Why Work with Me?
 
@@ -47,21 +47,19 @@ Since joining the program in **[Month Year]**, I have had the opportunity to wor
 
 ## How to Hire Me
 
-I’m available for short-term engagements (2–6 months) or one-off “sprint” assignments. To discuss your needs and explore how I can help:
+To discuss your needs and explore how I can help:
 
-1. **Book a 15-minute discovery call** via email:  
-   [your.email@domain.gc.ca](mailto:your.email@domain.gc.ca)
+1. **Book a 15-minute chat** via email:  
+   [claudielarouche@gmail.com](mailto:claudielarouche@gmail.com)
 
 2. **Connect on LinkedIn** for full professional background and endorsements:  
    [View my LinkedIn profile][linkedin-link]
-
-3. **Check my availability** and fee schedule:  
-   – Standard daily rate: [$$$]  
-   – Travel and accommodation: negotiable  
 
 ---
 
 > _I look forward to partnering with your team to deliver impactful, citizen-centric solutions!_
 
-[free-agent-link]: https://www.canada.ca/en/government/system/digital-government/free-agent-program.html  
-[linkedin-link]: https://www.linkedin.com/in/claudielarouche/  
+[free-agent-link]: https://www.canada.ca/en/treasury-board-secretariat/topics/staffing/public-service-workforce/free-agents.html
+[become-a-free-agent]: https://www.canada.ca/en/treasury-board-secretariat/topics/staffing/public-service-workforce/free-agents/become.html
+[hire-a-free-agent]: https://www.canada.ca/en/treasury-board-secretariat/topics/staffing/public-service-workforce/free-agents/hire.html
+[linkedin-link]: https://www.linkedin.com/in/claudie-larouche/
