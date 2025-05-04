@@ -40,3 +40,8 @@ defaults:
     values:
       sitemap: false
       exclude_ga: true
+
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
