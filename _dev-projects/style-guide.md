@@ -9,8 +9,6 @@ layout: dev
 ---
 
 Photo by <a href="https://unsplash.com/@jennie_ra?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jennie Razumnaya</a> on <a href="https://unsplash.com/photos/a-group-of-brushes-XbcfTH69aAc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-      
-      
 
 This page demonstrates **Minima theme capabilities** and custom enhancements with simple CSS.
 
@@ -23,13 +21,28 @@ This page demonstrates **Minima theme capabilities** and custom enhancements wit
 ### H3 Heading
 #### H4 Heading
 
+```
+# H1 Heading
+## H2 Heading
+### H3 Heading
+#### H4 Heading
+```
+
 ---
 
 ## Paragraph and Text Formatting
 
 Normal paragraph text with **bold**, *italic*, ~~strikethrough~~, and `inline code`.
 
+```
+Normal paragraph text with **bold**, *italic*, ~~strikethrough~~, and `inline code`.
+```
+
 > Example blockquote for callout.
+
+```
+> Example blockquote for callout.
+```
 
 ---
 
@@ -42,29 +55,52 @@ Normal paragraph text with **bold**, *italic*, ~~strikethrough~~, and `inline co
   - Nested Item
 - Item Three
 
+```
+- Item One
+- Item Two
+  - Nested Item
+- Item Three
+```
+
 ### Ordered
 
 1. Step One
 2. Step Two
 3. Step Three
 
+```
+1. Step One
+2. Step Two
+3. Step Three
+```
+
 ---
 
 ## Links and Buttons
 
-[Standard Link](https://example.com)
+[Standard Link](https://claudielarouche.com)
 
-<a href="https://example.com" class="button">Primary Button</a>
+```
+[Standard Link](https://claudielarouche.com)
+```
 
-<a href="https://example.com" class="button secondary">Secondary Button</a>
+[Standard Link Opening in new window](https://claudielarouche.com){:target="_blank" rel="noopener noreferrer"}
 
-<a href="https://example.com" class="button danger">Danger Button</a>
+```
+[Standard Link Opening in new window](https://claudielarouche.com){:target="_blank" rel="noopener noreferrer"}
+```
+
+<a href="https://example.com" class="btn">Primary Button</a>
+
+<a href="https://example.com" class="btn btn-secondary">Secondary Button</a>
+
+<a href="https://example.com" class="btn btn-danger">Danger Button</a>
 
 ---
 
 ## Images
 
-![Example Image](https://via.placeholder.com/600x200.png?text=Sample+Image)
+![Example Image](https://placehold.co/600x300?text=Sample+Image)
 
 ---
 
@@ -78,10 +114,19 @@ Normal paragraph text with **bold**, *italic*, ~~strikethrough~~, and `inline co
 
 ---
 
-## Code Blocks
+## Other Code Blocks
 
 ```javascript
 function hello(name) {
   console.log("Hello, " + name);
 }
+```
+
+```
+&#96;&#96;&#96;
+javascript
+function hello(name) {
+  console.log("Hello, " + name);
+}
+&#96;&#96;&#96;
 ```
