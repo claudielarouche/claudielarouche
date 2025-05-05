@@ -53,6 +53,7 @@ Since joining the program in May 2017, I have had the opportunity to work on a v
   - Consult with OEE clients to anticipate and analyze evolving web and IM requirements. Provide expert advice and convey directions and recommendations to develop strategies and options to meet objectives. Consult and collaborate with CIOSB and/or CPS to find solutions to existing or potential issues.
   - Supervise a minimum of 1 staff member.
 
+<!-- 
 Leave with income averaging: June 1st 2019 to August 31st 2019
 
 Sick leave related to pregnancy: September 1st, 2019 to December 14, 2019
@@ -60,6 +61,7 @@ Sick leave related to pregnancy: September 1st, 2019 to December 14, 2019
 Parental Leave, December 14, 2019 to September 4, 2020
 
 {: start="4" }
+-->
 4. **Fisheries and Ocean Canada**  September 8, 2020 to March 31st, 2021
 - Main Tasks
   - Provide strategic advice to align resources, internal initiatives, values, and corporate vision with legislated requirements, mandated priorities, within existing authorities
