@@ -54,20 +54,20 @@ Since joining the program in May 2017, I have had the opportunity to work on a v
   - Supervise a minimum of 1 staff member.
 
 4. **Fisheries and Ocean Canada**  September 8, 2020 to March 31st, 2021
-- Main Tasks
-  - Provide strategic advice to align resources, internal initiatives, values, and corporate vision with legislated requirements, mandated priorities, within existing authorities
-  - Collaborate with the Product Owners in managing customer expectations for project deliverables, managing stakeholder communications, and helping to implement an effective system of project governance  
-  - Work with product managers to:  
-    - Plan and coordinate deliverables across products  
-    - Update plans with any new information as data collections and organised  
-    - Contribute with input from product managers to tracking and reporting on backlog for sprint planning  
-    - Contribute with input from product managers to ensure retrospectives are completed and activities results are tracked/completed  
-    - Scope the iteration and testing activities  
-  - Manage stakeholder relationships, communications and meetings  
-- Specific skills needed 
-  - Experience with digital transformation
-  - Experience with client and stakeholder relationship in a complex digital file
-  - Experience on open data initiatives and associated staff change management issues  
+  - Main Tasks
+    - Provide strategic advice to align resources, internal initiatives, values, and corporate vision with legislated requirements, mandated priorities, within existing authorities
+    - Collaborate with the Product Owners in managing customer expectations for project deliverables, managing stakeholder communications, and helping to implement an effective system of project governance  
+    - Work with product managers to:  
+      - Plan and coordinate deliverables across products  
+      - Update plans with any new information as data collections and organised  
+      - Contribute with input from product managers to tracking and reporting on backlog for sprint planning  
+      - Contribute with input from product managers to ensure retrospectives are completed and activities results are tracked/completed  
+      - Scope the iteration and testing activities  
+    - Manage stakeholder relationships, communications and meetings  
+  - Specific skills needed 
+    - Experience with digital transformation
+    - Experience with client and stakeholder relationship in a complex digital file
+    - Experience on open data initiatives and associated staff change management issues  
 
 5. **Indigenous Services Canada** July 2, 2021 to May 31st, 2022
 - Main Tasks
