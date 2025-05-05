@@ -44,6 +44,14 @@ Normal paragraph text with **bold**, *italic*, ~~strikethrough~~, and `inline co
 > Example blockquote for callout.
 ```
 
+## Escaping characters
+
+\*Not italic\*
+
+```
+\*Not italic\*
+```
+
 ---
 
 ## Lists
@@ -74,6 +82,16 @@ Normal paragraph text with **bold**, *italic*, ~~strikethrough~~, and `inline co
 3. Step Three
 ```
 
+### Task list
+
+- [x] Task done
+- [ ] Task not done
+
+```
+- [x] Task done
+- [ ] Task not done
+```
+
 ---
 
 ## Links and Buttons
@@ -90,17 +108,14 @@ Normal paragraph text with **bold**, *italic*, ~~strikethrough~~, and `inline co
 [Standard Link Opening in new window](https://claudielarouche.com){:target="_blank" rel="noopener noreferrer"}
 ```
 
-<a href="https://example.com" class="btn">Primary Button</a>
-
-<a href="https://example.com" class="btn btn-secondary">Secondary Button</a>
-
-<a href="https://example.com" class="btn btn-danger">Danger Button</a>
-
 ---
 
 ## Images
 
 ![Example Image](https://placehold.co/600x300?text=Sample+Image)
+```
+![Example Image](https://placehold.co/600x300?text=Sample+Image)
+```
 
 ---
 
@@ -111,6 +126,15 @@ Normal paragraph text with **bold**, *italic*, ~~strikethrough~~, and `inline co
 | Widget A | $10 | Yes |
 | Widget B | $20 | No |
 | Widget C | $15 | Yes |
+
+
+```
+| Product | Price | Available |
+|---------|-------|-----------|
+| Widget A | $10 | Yes |
+| Widget B | $20 | No |
+| Widget C | $15 | Yes |
+```
 
 ---
 
@@ -128,3 +152,45 @@ function hello(name) {
   console.log("Hello, " + name);
 }
 &#96;&#96;&#96;
+
+## Horizontal Rule (Separator)
+
+---
+
+```
+---
+```
+
+## Footnote
+
+Here is a sentence.[^1]
+
+[^1]: This is the footnote.
+
+```
+Here is a sentence.[^1]
+
+[^1]: This is the footnote.
+```
+
+## Front matter (Jekyll)
+
+```
+---
+layout: page
+title: My Page
+permalink: /mypage/
+---
+```
+
+## Add Markdown in the middle of HTML
+
+<div>
+{{ "**Bold text**" | markdownify }}
+</div>
+
+```
+<div>
+{{ "**Bold text**" | markdownify }}
+</div>
+```
