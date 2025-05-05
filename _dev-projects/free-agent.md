@@ -61,8 +61,7 @@ Parental Leave, December 14, 2019 to September 4, 2020
 
 {: start="4" }
 4. **Fisheries and Ocean Canada**  September 8, 2020 to March 31st, 2021
-
-- **Main Tasks**
+- Main Tasks
   - Provide strategic advice to align resources, internal initiatives, values, and corporate vision with legislated requirements, mandated priorities, within existing authorities
   - Collaborate with the Product Owners in managing customer expectations for project deliverables, managing stakeholder communications, and helping to implement an effective system of project governance  
   - Work with product managers to:  
@@ -72,45 +71,42 @@ Parental Leave, December 14, 2019 to September 4, 2020
     - Contribute with input from product managers to ensure retrospectives are completed and activities results are tracked/completed  
     - Scope the iteration and testing activities  
   - Manage stakeholder relationships, communications and meetings  
-
-- **Specific skills needed**  
+- Specific skills needed 
   - Experience with digital transformation
   - Experience with client and stakeholder relationship in a complex digital file
   - Experience on open data initiatives and associated staff change management issues
 
 5. **Indigenous Services Canada** July 2, 2021 to May 31st, 2022
-Main Tasks: 
-- Help to implement a $332.8 million investment to help ensure that Indigenous communities can continue to provide the same level of community programs and services to their members following pandemic-related declines in own-source revenues, as well as tax revenues.
-- Support Operations team and Policy team to complete their workplan for 2021-2022 e.g.
-  - Develop a Dashboard for the Strategic Partnerships Initiative in collaboration with ISC’s data team
-  - Contribute to dashboard/reporting/storytelling on the Own-source revenue investment
-  - Contribute to engagement regarding the Strategic Partnerships Initiative with Other Government Departments, Indigenous organizations, Provincial/Territorial Governments etc.
-  - Assist with hosting SPI workshop in 2021-2022
+- Main Tasks
+  - Help to implement a $332.8 million investment to help ensure that Indigenous communities can continue to provide the same level of community programs and services to their members following pandemic-related declines in own-source revenues, as well as tax revenues.
+  - Support Operations team and Policy team to complete their workplan for 2021-2022 e.g.
+    - Develop a Dashboard for the Strategic Partnerships Initiative in collaboration with ISC’s data team
+    - Contribute to dashboard/reporting/storytelling on the Own-source revenue investment
+    - Contribute to engagement regarding the Strategic Partnerships Initiative with Other Government Departments, Indigenous organizations, Provincial/Territorial Governments etc.
+    - Assist with hosting SPI workshop in 2021-2022
 
 Leave with income averaging: June 1st, 2022 to August 31st, 2022
 
 {: start="6" }
 6. **Indigenous Services Canada** September 1st, 2022 to March 31st, 2023 (continuation of assignment number 5)  
-Accomplishments: 
-
-- SPI Reporting Solution: https://www.gcpedia.gc.ca/wiki/SPI_Reporting_Solution (this link only works on the Government of Canada network)
-  - A reporting solution built with Power BI used to slice and dice data from 2010 to 2023, built so that it’s easy to maintain for non-technical user
-  - The Reporting Solution was used to gather important data for the 2022 Annual Report
-- Navigator Dashboard: https://www.gcpedia.gc.ca/wiki/ISC_Navigator_Dashboard_Instructions (this link only works on the Government of Canada network)
-- OSR Dashboard: https://www.gcpedia.gc.ca/wiki/OSR_Dashboard (this link only works on the Government of Canada network)
+- Accomplishments
+  - SPI Reporting Solution: https://www.gcpedia.gc.ca/wiki/SPI_Reporting_Solution (this link only works on the Government of Canada network)
+    - A reporting solution built with Power BI used to slice and dice data from 2010 to 2023, built so that it’s easy to maintain for non-technical user
+    - The Reporting Solution was used to gather important data for the 2022 Annual Report
+  - Navigator Dashboard: https://www.gcpedia.gc.ca/wiki/ISC_Navigator_Dashboard_Instructions (this link only works on the Government of Canada network)
+  - OSR Dashboard: https://www.gcpedia.gc.ca/wiki/OSR_Dashboard (this link only works on the Government of Canada network)
 
 7. **Indigenous Services Canada**, April 1st, 2023 to May 31st 2023  
-**Main Tasks**: 
-- Developing JSON templates to automate data entry in a database
-- Train future resources that will be hired to help on the data entry automation/Quality Control
-- Document the template development process
-- Attend regular meetings with the Automation and Quality Control teams to share updates and troubleshoot problems encountered
-
-**Specific skills needed**:
-- Advanced computer literacy
-- Knowledge of JSON
-- Knowledge of regular expressions
-- Experience developing technical documentation
+- Main Tasks
+  - Developing JSON templates to automate data entry in a database
+  - Train future resources that will be hired to help on the data entry automation/Quality Control
+  - Document the template development process
+  - Attend regular meetings with the Automation and Quality Control teams to share updates and troubleshoot problems encountered
+- Specific skills needed
+  - Advanced computer literacy
+  - Knowledge of JSON
+  - Knowledge of regular expressions
+  - Experience developing technical documentation
 
 Leave with income averaging, June 1st, 2023 to September 1st, 2023
 
@@ -118,11 +114,11 @@ Dual assignment - 7 (above) and 8 (below) - September 2nd, 2024 to June 9th, 202
 
 {: start="8" }
 8. **Indigenous Services Canada**  
-Main Tasks
-- Develop data visualization tools for Indigenous procurement data with information from proactive disclosure of contracting and other sources
-- Support ISC in developing annual reporting and trend analysis, including publicly available data visualization tools from departments’ procurement plans and
+- Main Tasks
+  - Develop data visualization tools for Indigenous procurement data with information from proactive disclosure of contracting and other sources
+  - Support ISC in developing annual reporting and trend analysis, including publicly available data visualization tools from departments’ procurement plans and
 reporting on 5% Indigenous procurement targets
-- In partnership with Indigenous organizations, PSPC, TBS and other departments work to develop best practices, support pilots projects and/or proof of concepts and
+  - In partnership with Indigenous organizations, PSPC, TBS and other departments work to develop best practices, support pilots projects and/or proof of concepts and
 support experimentation and co-development of future Indigenous procurement data strategies
 
 Leave with income averaging, June 10, 2024 to September 10, 2024
