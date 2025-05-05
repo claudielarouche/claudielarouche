@@ -108,22 +108,23 @@ Accomplishments
 
 Leave with income averaging, June 1st, 2023 to September 1st, 2023
 
-Activities under this Agreement shall commence on October 16, 2023, and conclude
-on December 28, 2023, or at completion of the work described in Annex A.
+Dual assignment - 7 (above) and 8 (below) - September 2nd, 2024 to June 9th, 2024
 
-8. **Indigenous Services Canada**, April 1st, 2023 to May 31st 2023
-Main Tasks (4 – 6 bullets/items)
-● Develop data visualization tools for Indigenous procurement data with information
-from proactive disclosure of contracting and other sources
-● Support ISC in developing annual reporting and trend analysis, including publicly
-available data visualization tools from departments’ procurement plans and
+8. **Indigenous Services Canada**
+Main Tasks
+- Develop data visualization tools for Indigenous procurement data with information from proactive disclosure of contracting and other sources
+- Support ISC in developing annual reporting and trend analysis, including publicly available data visualization tools from departments’ procurement plans and
 reporting on 5% Indigenous procurement targets
-● In partnership with Indigenous organizations, PSPC, TBS and other departments work
-to develop best practices, support pilots projects and/or proof of concepts and
-support experimentation and co-development of future Indigenous procurement
-data strategies
+- In partnership with Indigenous organizations, PSPC, TBS and other departments work to develop best practices, support pilots projects and/or proof of concepts and
+support experimentation and co-development of future Indigenous procurement data strategies
+
+Leave with income averaging, June 10, 2024 to September 10, 2024
+
+Dual assignment (7 and 8) - September 11, 2025 to June 6, 2025
 
 Leave with income averaging, June 9, 2025 to September 9, 2025
+
+To be determined :) 
 
 
 > _See other sides projects I've been working on:_ [Projects page](/)
@@ -131,13 +132,16 @@ Leave with income averaging, June 9, 2025 to September 9, 2025
 ## Why Work with Me?
 
 - **Cross-Departmental Perspective**  
-  I’ve collaborated with teams in IT, procurement, and communications, giving me a broad view of government processes and the ability to bridge gaps between units.
+  I’ve collaborated with teams in IM, IT, HR, ATIP, Communications, Corporate Reporting and more! This has given me a broad view of government processes and the ability to bridge gaps between units.
 
 - **Agile and Collaborative**  
   I use agile methods to deliver iterative improvements, ensuring stakeholders see value early and can course-correct quickly.
 
 - **Technical & Strategic Expertise**  
-  From Jekyll site architecture to Power BI reporting and Python automation, I combine deep technical skills with strategic planning to drive outcomes.
+  From Power BI reporting to Python automation, I have developed solid technical skills over the years. I combine them with strategic planning to drive outcomes.
+
+- **Initiative**
+  Show me a problem, I will propose a solution!
 
 ## How to Hire Me
 
