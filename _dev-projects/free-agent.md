@@ -82,12 +82,12 @@ Leave with income averaging: June 1st, 2022 to August 31st, 2022
 
 {: start="6" }
 6. **Indigenous Services Canada** September 1st, 2022 to March 31st, 2023 (continuation of assignment number 5)  
-- Accomplishments
-  - SPI Reporting Solution: [SPI Reporting Solution on GCPedia](https://www.gcpedia.gc.ca/wiki/SPI_Reporting_Solution){:target="_blank" rel="noopener noreferrer"} (this link only works on the Government of Canada network)
-    - A reporting solution built with Power BI used to slice and dice data from 2010 to 2023, built so that it’s easy to maintain for non-technical user
-    - The Reporting Solution was used to gather important data for the 2022 Annual Report
-  - Navigator Dashboard: [Navigator Dashboard on GCPedia](https://www.gcpedia.gc.ca/wiki/ISC_Navigator_Dashboard_Instructions){:target="_blank" rel="noopener noreferrer"} (this link only works on the Government of Canada network)
-  - OSR Dashboard: [OSR Dashbard on GCPedia](https://www.gcpedia.gc.ca/wiki/OSR_Dashboard){:target="_blank" rel="noopener noreferrer"} (this link only works on the Government of Canada network)
+   - Accomplishments
+      - SPI Reporting Solution: [SPI Reporting Solution on GCPedia](https://www.gcpedia.gc.ca/wiki/SPI_Reporting_Solution){:target="_blank" rel="noopener noreferrer"} (this link only works on the Government of Canada network)
+      - A reporting solution built with Power BI used to slice and dice data from 2010 to 2023, built so that it’s easy to maintain for non-technical user
+      - The Reporting Solution was used to gather important data for the 2022 Annual Report
+   - Navigator Dashboard: [Navigator Dashboard on GCPedia](https://www.gcpedia.gc.ca/wiki/ISC_Navigator_Dashboard_Instructions){:target="_blank" rel="noopener noreferrer"} (this link only works on the Government of Canada network)
+   - OSR Dashboard: [OSR Dashbard on GCPedia](https://www.gcpedia.gc.ca/wiki/OSR_Dashboard){:target="_blank" rel="noopener noreferrer"} (this link only works on the Government of Canada network)
 
 7. **Indigenous Services Canada**, April 1st, 2023 to May 31st 2023  
 - Main Tasks
