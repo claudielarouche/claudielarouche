@@ -80,21 +80,21 @@ Parental Leave, December 14, 2019 to September 4, 2020
 - Main Tasks
   - Help to implement a $332.8 million investment to help ensure that Indigenous communities can continue to provide the same level of community programs and services to their members following pandemic-related declines in own-source revenues, as well as tax revenues.
   - Support Operations team and Policy team to complete their workplan for 2021-2022 e.g.
-    - Develop a Dashboard for the Strategic Partnerships Initiative in collaboration with ISC’s data team
-    - Contribute to dashboard/reporting/storytelling on the Own-source revenue investment
-    - Contribute to engagement regarding the Strategic Partnerships Initiative with Other Government Departments, Indigenous organizations, Provincial/Territorial Governments etc.
-    - Assist with hosting SPI workshop in 2021-2022
+  - Develop a Dashboard for the Strategic Partnerships Initiative in collaboration with ISC’s data team
+  - Contribute to dashboard/reporting/storytelling on the Own-source revenue investment
+  - Contribute to engagement regarding the Strategic Partnerships Initiative with Other Government Departments, Indigenous organizations, Provincial/Territorial Governments etc.
+  - Assist with hosting SPI workshop in 2021-2022
 
 Leave with income averaging: June 1st, 2022 to August 31st, 2022
 
 {: start="6" }
 6. **Indigenous Services Canada** September 1st, 2022 to March 31st, 2023 (continuation of assignment number 5)  
 - Accomplishments
-  - SPI Reporting Solution: https://www.gcpedia.gc.ca/wiki/SPI_Reporting_Solution (this link only works on the Government of Canada network)
+  - SPI Reporting Solution: [SPI Reporting Solution on GCPedia](https://www.gcpedia.gc.ca/wiki/SPI_Reporting_Solution){:target="_blank" rel="noopener noreferrer"} (this link only works on the Government of Canada network)
     - A reporting solution built with Power BI used to slice and dice data from 2010 to 2023, built so that it’s easy to maintain for non-technical user
     - The Reporting Solution was used to gather important data for the 2022 Annual Report
-  - Navigator Dashboard: https://www.gcpedia.gc.ca/wiki/ISC_Navigator_Dashboard_Instructions (this link only works on the Government of Canada network)
-  - OSR Dashboard: https://www.gcpedia.gc.ca/wiki/OSR_Dashboard (this link only works on the Government of Canada network)
+  - Navigator Dashboard: [Navigator Dashboard on GCPedia](https://www.gcpedia.gc.ca/wiki/ISC_Navigator_Dashboard_Instructions){:target="_blank" rel="noopener noreferrer"} (this link only works on the Government of Canada network)
+  - OSR Dashboard: [OSR Dashbard on GCPedia](https://www.gcpedia.gc.ca/wiki/OSR_Dashboard){:target="_blank" rel="noopener noreferrer"} (this link only works on the Government of Canada network)
 
 7. **Indigenous Services Canada**, April 1st, 2023 to May 31st 2023  
 - Main Tasks
