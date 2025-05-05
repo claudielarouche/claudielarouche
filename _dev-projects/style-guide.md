@@ -191,6 +191,8 @@ permalink: /mypage/
 
 ```
 <div>
+{% raw %}
 {{ "**Bold text**" | markdownify }}
+{% endraw %}
 </div>
 ```
