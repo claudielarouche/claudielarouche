@@ -162,7 +162,3 @@ To discuss your needs and explore how I can help:
 [become-a-free-agent]: https://www.canada.ca/en/treasury-board-secretariat/topics/staffing/public-service-workforce/free-agents/become.html
 [hire-a-free-agent]: https://www.canada.ca/en/treasury-board-secretariat/topics/staffing/public-service-workforce/free-agents/hire.html
 [linkedin-link]: https://www.linkedin.com/in/claudie-larouche/
-
-<!-- 
-
--->
