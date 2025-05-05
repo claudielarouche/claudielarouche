@@ -43,7 +43,7 @@ Since joining the program in May 2017, I have had the opportunity to work on a v
 - Supporting Tasks
   - Provide support to Heat technical support team during Heat tool upgrade
 
-3. **[Natural Resources Canada]**  February 16, 2018 to May 31 2019
+3. **Natural Resources Canada**  February 16, 2018 to May 31 2019
 - Work Objectives
   - Plan, manage and deliver the Office of Energy Efficiency (OEE) web and Information Management (IM) services for the OEE, including the development and provision of training and awareness sessions to the Branch employees and management.
   - Provide analysis, coordination, input, advice and recommendations in the development of the overall Branch strategic business and operational plans for current and future delivery of the OEE web communications and IM projects.
