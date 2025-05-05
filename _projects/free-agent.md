@@ -2,7 +2,7 @@
 title: Claudie Larouche - Free Agent
 description: This page talks about the projects I've done as part of the Free Agent program (Government of Canada) and how to hire me
 image: https://claudielarouche.com/assets/img/free-agent.jpg
-image-hero: https://claudielarouche.com/assets/img/free-agent.jpg
+image_hero: https://claudielarouche.com/assets/img/free-agent.jpg
 tags: [Work]
 permalink: /projects/free-agent/
 layout: page
