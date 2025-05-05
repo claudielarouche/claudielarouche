@@ -92,9 +92,10 @@ Leave with income averaging: June 1st, 2022 to August 31st, 2022
 {: start="6" }
 6. **Indigenous Services Canada** September 1st, 2022 to March 31st, 2023 (continuation of assignment number 5)  
 Accomplishments: 
+
 - SPI Reporting Solution: https://www.gcpedia.gc.ca/wiki/SPI_Reporting_Solution (this link only works on the Government of Canada network)
-    - A reporting solution built with Power BI used to slice and dice data from 2010 to 2023, built so that it’s easy to maintain for non-technical user
-    - The Reporting Solution was used to gather important data for the 2022 Annual Report
+  - A reporting solution built with Power BI used to slice and dice data from 2010 to 2023, built so that it’s easy to maintain for non-technical user
+  - The Reporting Solution was used to gather important data for the 2022 Annual Report
 - Navigator Dashboard: https://www.gcpedia.gc.ca/wiki/ISC_Navigator_Dashboard_Instructions (this link only works on the Government of Canada network)
 - OSR Dashboard: https://www.gcpedia.gc.ca/wiki/OSR_Dashboard (this link only works on the Government of Canada network)
 
@@ -104,6 +105,7 @@ Accomplishments:
 - Train future resources that will be hired to help on the data entry automation/Quality Control
 - Document the template development process
 - Attend regular meetings with the Automation and Quality Control teams to share updates and troubleshoot problems encountered
+
 **Specific skills needed**:
 - Advanced computer literacy
 - Knowledge of JSON
@@ -129,7 +131,7 @@ Dual assignment (7 and 8) - September 11, 2025 to June 6, 2025
 
 Leave with income averaging, June 9, 2025 to September 9, 2025
 
-September 10 onward: To be determined :) 
+September 10, 2025 onward: To be determined :) 
 
 
 > _See other sides projects I've been working on:_ [Projects page](/)
