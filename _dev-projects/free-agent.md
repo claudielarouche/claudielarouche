@@ -59,17 +59,18 @@ Sick leave related to pregnancy: September 1st, 2019 to December 14, 2019
 
 Parental Leave, December 14, 2019 to September 4, 2020
 
+{: start="4" }
 4. **Fisheries and Ocean Canada**  September 8, 2020 to March 31st, 2021
 - **Main Tasks**
   - Provide strategic advice to align resources, internal initiatives, values, and corporate vision with legislated requirements, mandated priorities, within existing authorities
   - Collaborate with the Product Owners in managing customer expectations for project deliverables, managing stakeholder communications, and helping to implement an effective system of project governance
-- Work with product managers to:
-  - Plan and coordinate deliverables across products
-  - Update plans with any new information as data collections and organised
-  - Contribute with input from product managers to tracking and reporting on backlog for sprint planning
-  - Contribute with input from product managers to ensure retrospectives are completed and activities results are tracked/completed
-  - Scope the iteration and testing activities
-- Manage stakeholder relationships, communications and meetings
+  - Work with product managers to:
+    - Plan and coordinate deliverables across products
+    - Update plans with any new information as data collections and organised
+    - Contribute with input from product managers to tracking and reporting on backlog for sprint planning
+    - Contribute with input from product managers to ensure retrospectives are completed and activities results are tracked/completed
+    - Scope the iteration and testing activities
+  - Manage stakeholder relationships, communications and meetings
 - **Specific skills needed**
   - Experience with digital transformation
   - Experience with client and stakeholder relationship in a complex digital file
@@ -86,15 +87,16 @@ Main Tasks:
 
 Leave with income averaging: June 1st, 2022 to August 31st, 2022
 
-6. **Indigenous Services Canada** September 1st, 2022 to March 31st, 2023 (continuation of assignment number 5)
-Accomplishments
+{: start="6" }
+6. **Indigenous Services Canada** September 1st, 2022 to March 31st, 2023 (continuation of assignment number 5)  
+Accomplishments: 
 - SPI Reporting Solution: https://www.gcpedia.gc.ca/wiki/SPI_Reporting_Solution (this link only works on the Government of Canada network)
     - A reporting solution built with Power BI used to slice and dice data from 2010 to 2023, built so that it’s easy to maintain for non-technical user
     - The Reporting Solution was used to gather important data for the 2022 Annual Report
 - Navigator Dashboard: https://www.gcpedia.gc.ca/wiki/ISC_Navigator_Dashboard_Instructions (this link only works on the Government of Canada network)
 - OSR Dashboard: https://www.gcpedia.gc.ca/wiki/OSR_Dashboard (this link only works on the Government of Canada network)
 
-7. **Indigenous Services Canada**, April 1st, 2023 to May 31st 2023
+7. **Indigenous Services Canada**, April 1st, 2023 to May 31st 2023  
 **Main Tasks**: 
 - Developing JSON templates to automate data entry in a database
 - Train future resources that will be hired to help on the data entry automation/Quality Control
@@ -110,7 +112,8 @@ Leave with income averaging, June 1st, 2023 to September 1st, 2023
 
 Dual assignment - 7 (above) and 8 (below) - September 2nd, 2024 to June 9th, 2024
 
-8. **Indigenous Services Canada**
+{: start="8" }
+8. **Indigenous Services Canada**  
 Main Tasks
 - Develop data visualization tools for Indigenous procurement data with information from proactive disclosure of contracting and other sources
 - Support ISC in developing annual reporting and trend analysis, including publicly available data visualization tools from departments’ procurement plans and
@@ -124,7 +127,7 @@ Dual assignment (7 and 8) - September 11, 2025 to June 6, 2025
 
 Leave with income averaging, June 9, 2025 to September 9, 2025
 
-To be determined :) 
+September 10 onward: To be determined :) 
 
 
 > _See other sides projects I've been working on:_ [Projects page](/)
@@ -152,8 +155,6 @@ To discuss your needs and explore how I can help:
 
 2. **Connect on LinkedIn** for full professional background and endorsements:  
    [View my LinkedIn profile][linkedin-link]{:target="_blank" rel="noopener noreferrer"}
-
----
 
 > _I look forward to partnering with your team to deliver impactful, citizen-centric solutions!_
 
