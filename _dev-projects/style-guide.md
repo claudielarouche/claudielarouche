@@ -147,10 +147,10 @@ function hello(name) {
 ```
 
 
-&#96;&#96;&#96;javascript  <br>
-function hello(name) {  <br>
-  console.log("Hello, " + name);  <br>
-}  <br>
+&#96;&#96;&#96;javascript  
+function hello(name) {  
+  console.log("Hello, " + name);  
+}  
 &#96;&#96;&#96;
 
 ## Horizontal Rule (Separator)
