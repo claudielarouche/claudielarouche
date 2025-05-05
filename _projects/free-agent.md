@@ -3,9 +3,9 @@ title: Claudie Larouche - Free Agent
 description: This page talks about the projects I've done as part of the Free Agent program (Government of Canada) and how to hire me
 image: https://claudielarouche.com/assets/img/free-agent.jpg
 image-hero: https://claudielarouche.com/assets/img/free-agent.jpg
-tags: [work]
-permalink: /dev-projects/free-agent/
-layout: dev
+tags: [Work]
+permalink: /projects/free-agent/
+layout: page
 ---
 
 Photo by <a href="https://unsplash.com/@nickmorrison?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Nick Morrison</a> on <a href="https://unsplash.com/photos/macbook-pro-near-white-open-book-FHnnjk1Yj7Y?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
@@ -14,7 +14,9 @@ Photo by <a href="https://unsplash.com/@nickmorrison?utm_content=creditCopyText&
 ## What Is the Free Agent Program?
 
 The **Free Agent Program** is an innovative approach to talent mobility within the Government of Canada. This approach allows pre-qualified federal employees, known as “Free Agents,” to support Government of Canada departments quickly and easily with their work. As a Free Agent, I bring specialized expertise in IT project management, data analysis, and digital service design to help teams accelerate their goals, share best practices, and deliver value faster.  
-> _Learn more about Canada's Free Agent program:_ [Free Agent Program overview][free-agent-link]{:target="_blank" rel="noopener noreferrer"}
+> _Learn more about Canada's Free Agent program:_ 
+  - [Free Agent Program overview][free-agent-link]{:target="_blank" rel="noopener noreferrer"}
+  - [Hire a Free Agent][hire-a-free-agent]{:target="_blank" rel="noopener noreferrer"}
 
 ## My Free Agent Journey
 
@@ -126,8 +128,6 @@ Leave with income averaging, June 10, 2024 to September 10, 2024
 Dual assignment (7 and 8) - September 11, 2025 to June 6, 2025
 
 Leave with income averaging, June 9, 2025 to September 9, 2025
-
-September 10, 2025 onward: To be determined :) 
 
 
 > _See other sides projects I've been working on:_ [Projects page](/)
