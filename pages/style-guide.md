@@ -216,10 +216,3 @@ Here is the hidden content that will show when expanded.
 </details>
 ```
 
-## Test
-
-@claudielarouche :+1: This PR looks great - it's ready to merge! :shipit:
-
-```
-@claudielarouche :+1: This PR looks great - it's ready to merge! :shipit:
-```
