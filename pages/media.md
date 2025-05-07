@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Media Appearances
+title: Media and Public Appearances
 permalink: /media/
 image: /assets/img/media-banner.jpg
 ---
@@ -12,7 +12,8 @@ Here are some interviews I have given, articles written about my projects, confe
 ## 📣 Drupalcamp Ottawa - EvolveUX 
 **Type:** Quick Feedback Session about my [City of Ottawa Library Programs](/projects/library) website  
 **Date:** May 2, 2025  
-**Details:** An interactive, engaging, and collaborative space where designers, developers, and digital professionals come together to learn, share, and improve their projects.
+**Details:** An interactive, engaging, and collaborative space where designers, developers, and digital professionals come together to learn, share, and improve their projects.  
+[DrupalCamp Ottawa 2025](https://www.drupal.org/community/events/drupalcamp-ottawa-2025-2025-05-02){:target="_blank" rel="noopener noreferrer"}
 
 ---
 
@@ -24,7 +25,7 @@ Here are some interviews I have given, articles written about my projects, confe
 **Type:** 45 minutes Presentation  
 **Date:** March 18, 2025  
 **Details:** Claudie will show you how anyone can leverage AI for social good. Whether you're a seasoned developer or a tech-curious individual, Claudie's story will inspire you to think creatively and use technology to solve real-life problems.  
-[View the presentation on R-Ladies Global Youtube Channel](https://www.youtube.com/watch?v=p78AW7ZdNGI)
+[View the presentation on R-Ladies Global Youtube Channel](https://www.youtube.com/watch?v=p78AW7ZdNGI){:target="_blank" rel="noopener noreferrer"}
 
 ---
 
@@ -44,7 +45,7 @@ Here are some interviews I have given, articles written about my projects, confe
 
 ## 📺 CTV Morning Show Ottawa  
 
-![Claudie at CTV Morning Show](/assets/img/CTV-Morning-Show-Claudie.jpg)
+![Claudie at CTV Morning Show](/assets/img/CTV-Morning-Show-Claudie.jpg){:target="_blank" rel="noopener noreferrer"}
 
 **Type:** TV morning show appearance  
 **Date:** May 1, 2024  
@@ -56,7 +57,7 @@ Here are some interviews I have given, articles written about my projects, confe
 **Type:** Pre-recorded interview  
 **Date:** April 26, 2024  
 **Details:** My segment starts at 35:50  
-[Listen to the clip](https://www.cbc.ca/listen/live-radio/1-2-as-it-happens/clip/16058997-a-thousand-steps-forward-one-step-back)
+[Listen to the clip](https://www.cbc.ca/listen/live-radio/1-2-as-it-happens/clip/16058997-a-thousand-steps-forward-one-step-back){:target="_blank" rel="noopener noreferrer"}
 
 ---
 
@@ -70,14 +71,14 @@ Here are some interviews I have given, articles written about my projects, confe
 ## 🎙️ CBC Ottawa Morning – Live Interview  
 **Type:** Radio interview  
 **Date:** April 25, 2024  
-[Listen to the episode (MP3)](https://mp3.cbc.ca/radio/CBC_Radio_VMS/659/278/dave-lPnVVWZO-20240425_1714053249695.mp3)  
+[Listen to the episode (MP3)](https://mp3.cbc.ca/radio/CBC_Radio_VMS/659/278/dave-lPnVVWZO-20240425_1714053249695.mp3){:target="_blank" rel="noopener noreferrer"}
 
 ---
 
 ## 📰 CBC News (Online Article)  
 **Title:** "This Ottawa parent was frustrated by the city’s website. So she built her own."  
 **Date:** April 25, 2024  
-[Read the article](https://www.cbc.ca/news/canada/ottawa/ottawa-recreation-schedule-booking-app-website-1.7183398)
+[Read the article](https://www.cbc.ca/news/canada/ottawa/ottawa-recreation-schedule-booking-app-website-1.7183398){:target="_blank" rel="noopener noreferrer"}
 
 ---
 
@@ -87,17 +88,17 @@ Here are some interviews I have given, articles written about my projects, confe
 
 **Type:** Radio interview  
 **Date:** April 25, 2024  
-[Segment de l’entrevue](https://ici.radio-canada.ca/ohdio/premiere/emissions/Les-matins-d-ici/segments/entrevue/495095/intelligence-artificielle-inscription-loisirs-activites-ottawa)
+[Segment de l’entrevue](https://ici.radio-canada.ca/ohdio/premiere/emissions/Les-matins-d-ici/segments/entrevue/495095/intelligence-artificielle-inscription-loisirs-activites-ottawa){:target="_blank" rel="noopener noreferrer"}
 
 ---
 
 ## 📰 Radio-Canada (Article)  
 **Title:** "Une mère de famille d’Ottawa crée un outil pour trouver des activités"  
 **Date:** April 25, 2024  
-[Read the article](https://ici.radio-canada.ca/nouvelle/2067653/trouver-activite-ottawa-programme)
+[Read the article](https://ici.radio-canada.ca/nouvelle/2067653/trouver-activite-ottawa-programme){:target="_blank" rel="noopener noreferrer"}
 
 ---
 
 ## 📰 Reddit Ottawa – CBC article featured  
 **Type:** Reddit thread sharing CBC story  
-[View the Reddit post](https://www.reddit.com/r/ottawa/s/4gQiJiqtYm)
+[View the Reddit post](https://www.reddit.com/r/ottawa/s/4gQiJiqtYm){:target="_blank" rel="noopener noreferrer"}
