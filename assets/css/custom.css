@@ -452,3 +452,29 @@ a.btn-danger:visited {
   color: #fff ;       
 }
 
+/* BEGIN ALERT (STYLE GUIDE) */
+
+.admonition {
+  border-left: 4px solid #ccc;
+  padding: 1em;
+  margin: 1em 0;
+  background: #f9f9f9;
+  border-radius: 6px;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5em;
+}
+
+.admonition-icon {
+  font-size: 1.5em;
+  line-height: 1;
+}
+
+.admonition.note { border-color: #2196f3; }
+.admonition.tip { border-color: #4caf50; }
+.admonition.important { border-color: #9c27b0; }
+.admonition.warning { border-color: #ff9800; }
+.admonition.caution { border-color: #f44336; }
+
+
+/* END ALERT */

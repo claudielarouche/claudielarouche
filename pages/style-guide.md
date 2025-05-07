@@ -218,34 +218,18 @@ Here is the hidden content that will show when expanded.
 
 ## Alerts
 
-> [!NOTE]
-> Useful information that users should know, even when skimming content.
+{% include admonition.html type="Note" icon="ℹ️" content="Highlights information that users should take into account." %}
+{% include admonition.html type="Tip" icon="💡" content="Optional information to help a user be more successful." %}
+{% include admonition.html type="Important" icon="❗" content="Crucial information necessary for users to succeed." %}
+{% include admonition.html type="Warning" icon="⚠️" content="Critical content demanding immediate user attention." %}
+{% include admonition.html type="Caution" icon="🚫" content="Negative potential consequences of an action." %}
 
-> [!TIP]
-> Helpful advice for doing things better or more easily.
-
-> [!IMPORTANT]
-> Key information users need to know to achieve their goal.
-
-> [!WARNING]
-> Urgent info that needs immediate user attention to avoid problems.
-
-> [!CAUTION]
-> Advises about risks or negative outcomes of certain actions.
 
 ```
-> [!NOTE]
-> Useful information that users should know, even when skimming content.
+{% include admonition.html type="Note" icon="ℹ️" content="Highlights information that users should take into account." %}
+{% include admonition.html type="Tip" icon="💡" content="Optional information to help a user be more successful." %}
+{% include admonition.html type="Important" icon="❗" content="Crucial information necessary for users to succeed." %}
+{% include admonition.html type="Warning" icon="⚠️" content="Critical content demanding immediate user attention." %}
+{% include admonition.html type="Caution" icon="🚫" content="Negative potential consequences of an action." %}
 
-> [!TIP]
-> Helpful advice for doing things better or more easily.
-
-> [!IMPORTANT]
-> Key information users need to know to achieve their goal.
-
-> [!WARNING]
-> Urgent info that needs immediate user attention to avoid problems.
-
-> [!CAUTION]
-> Advises about risks or negative outcomes of certain actions.
 ```
