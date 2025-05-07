@@ -24,6 +24,7 @@ permalink: /dev
   {% endif %}
 </div>
 
-## Test section
+## Direct link to useful pages
 
 [Change Log](/change-log)
+[Style Guide](/style-guide)
