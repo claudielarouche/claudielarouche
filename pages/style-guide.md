@@ -224,3 +224,12 @@ Here is the hidden content that will show when expanded.
 {% include admonition.html type="Warning" icon="⚠️" content="Critical content demanding immediate user attention." %}
 {% include admonition.html type="Caution" icon="🚫" content="Negative potential consequences of an action." %}
 
+```
+{% raw %}
+{% include admonition.html type="Note" icon="ℹ️" content="Highlights information that users should take into account." %}
+{% include admonition.html type="Tip" icon="💡" content="Optional information to help a user be more successful." %}
+{% include admonition.html type="Important" icon="❗" content="Crucial information necessary for users to succeed." %}
+{% include admonition.html type="Warning" icon="⚠️" content="Critical content demanding immediate user attention." %}
+{% include admonition.html type="Caution" icon="🚫" content="Negative potential consequences of an action." %}
+{% endraw %}
+```
