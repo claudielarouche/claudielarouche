@@ -15,7 +15,7 @@ Here are some interviews I have given, articles written about my projects, confe
 ---
 
 ## 📣 Presentation for Ottawa Python Authors Meetup
-![Python Meetup](/assets/img/Python-Meetup-2025.jpg)
+![Python Meetup](/assets/img/Python-Meetup-2025.jpg)  
 **Type:** 45 minutes presentation  
 **Date:** May 6, 2025  
 [Meetup event](https://www.meetup.com/ottawapython/events/307545401/)  
@@ -23,7 +23,7 @@ Here are some interviews I have given, articles written about my projects, confe
 ---
 
 ## 📣 Drupalcamp Ottawa - EvolveUX 
-![Drupal Camp](/assets/img/drupal-camp-2025.jpg)
+![Drupal Camp](/assets/img/drupal-camp-2025.jpg)  
 **Type:** Quick Feedback Session about my [City of Ottawa Library Programs](/projects/library) website  
 **Date:** May 2, 2025  
 **Details:** An interactive, engaging, and collaborative space where designers, developers, and digital professionals come together to learn, share, and improve their projects.  
@@ -90,6 +90,7 @@ Here are some interviews I have given, articles written about my projects, confe
 ---
 
 ## 📰 CBC News (Online Article)  
+![CBC Article](/assets/img/cbc-article.png)  
 **Title:** "This Ottawa parent was frustrated by the city’s website. So she built her own."  
 **Date:** April 25, 2024  
 [Read the article](https://www.cbc.ca/news/canada/ottawa/ottawa-recreation-schedule-booking-app-website-1.7183398){:target="_blank" rel="noopener noreferrer"}
@@ -97,16 +98,15 @@ Here are some interviews I have given, articles written about my projects, confe
 ---
 
 ## 🎙️ Les matins d’ici (Radio-Canada) – Entrevue en direct  
-
-![Radio-Canada Article](/assets/img/radio-canada.png)
-
+![CBC Article](/assets/img/cbc-french.png)  
 **Type:** Radio interview  
 **Date:** April 25, 2024  
-[Segment de l’entrevue](https://ici.radio-canada.ca/ohdio/premiere/emissions/Les-matins-d-ici/segments/entrevue/495095/intelligence-artificielle-inscription-loisirs-activites-ottawa){:target="_blank" rel="noopener noreferrer"}
+[Listen to the interview (French)](https://ici.radio-canada.ca/ohdio/premiere/emissions/Les-matins-d-ici/segments/entrevue/495095/intelligence-artificielle-inscription-loisirs-activites-ottawa){:target="_blank" rel="noopener noreferrer"}
 
 ---
 
 ## 📰 Radio-Canada (Article)  
+![CBC Article](/assets/img/cbc-french-2.png)  
 **Title:** "Une mère de famille d’Ottawa crée un outil pour trouver des activités"  
 **Date:** April 25, 2024  
 [Read the article](https://ici.radio-canada.ca/nouvelle/2067653/trouver-activite-ottawa-programme){:target="_blank" rel="noopener noreferrer"}
@@ -114,5 +114,6 @@ Here are some interviews I have given, articles written about my projects, confe
 ---
 
 ## 📰 Reddit Ottawa – CBC article featured  
+![CBC Article](/assets/img/reddit.png)  
 **Type:** Reddit thread sharing CBC story  
 [View the Reddit post](https://www.reddit.com/r/ottawa/s/4gQiJiqtYm){:target="_blank" rel="noopener noreferrer"}
