@@ -137,6 +137,7 @@ Only for pages that have children names. If no children name, the page should be
 - [Ongoing Work ](https://042gc.sharepoint.com/:x:/r/sites/TemplateQCTeams/_layouts/15/Doc.aspx?sourcedoc=%7B4905D2E6-1FF1-4156-B398-A1F9F03A6270%7D&file=Ongoing%20Work%20Log.xlsx&action=default&mobileredirect=true)
 - [Reconversion Request](https://042gc.sharepoint.com/:x:/r/sites/TemplateQCTeams/_layouts/15/Doc.aspx?sourcedoc=%7BC93FDB7E-68F3-4DA9-91E6-08177F162AE7%7D&file=Reconvertion%20Request.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1)
 - [Parser Help, Tips & Tricks](https://042gc.sharepoint.com/:w:/r/sites/TemplateQCTeams/_layouts/15/Doc2.aspx?action=edit&sourcedoc=%7Ba7b32396-d5c4-4f24-b757-6dcf4281ee9a%7D&wdOrigin=TEAMS-MAGLEV.teamsSdk_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1705342160507&web=1)
+- [Manual Log](https://042gc.sharepoint.com/:x:/r/sites/TemplateQCTeams/_layouts/15/Doc.aspx?sourcedoc=%7BD74A1724-574A-4164-8475-F69449BA732F%7D&file=Files%20for%20Manual%20Team.xlsx&action=default)
 - The spreadsheet for Types of Care by Region is now live on F:\Data\Types of care.xls
 
 ### Other
