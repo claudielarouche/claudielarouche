@@ -119,3 +119,29 @@ Only for pages that have children names. If no children name, the page should be
 ### TBD
 
 - If you are unsure what a page should be identified as, ask Stéphane or Julia.
+
+---
+
+## Other notes
+
+### DOB
+- DOBs with years before 1971 should not be included. 
+- Any child over the age of 21 will cause an import error.
+
+### Reporting Period
+- If the file has Billing Month and Billing Period, take Billing Period.
+
+### Useful links
+
+- [Review Log](https://042gc.sharepoint.com/:x:/r/sites/TemplateQCTeams/_layouts/15/Doc.aspx?sourcedoc=%7BC31D2EAA-7716-4911-8136-326EEBE64786%7D&file=Review%20Log.xlsx&action=default&mobileredirect=true)
+- [Ongoing Work ](https://042gc.sharepoint.com/:x:/r/sites/TemplateQCTeams/_layouts/15/Doc.aspx?sourcedoc=%7B4905D2E6-1FF1-4156-B398-A1F9F03A6270%7D&file=Ongoing%20Work%20Log.xlsx&action=default&mobileredirect=true)
+- [Reconversion Request](https://042gc.sharepoint.com/:x:/r/sites/TemplateQCTeams/_layouts/15/Doc.aspx?sourcedoc=%7BC93FDB7E-68F3-4DA9-91E6-08177F162AE7%7D&file=Reconvertion%20Request.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1)
+- [Parser Help, Tips & Tricks](https://042gc.sharepoint.com/:w:/r/sites/TemplateQCTeams/_layouts/15/Doc2.aspx?action=edit&sourcedoc=%7Ba7b32396-d5c4-4f24-b757-6dcf4281ee9a%7D&wdOrigin=TEAMS-MAGLEV.teamsSdk_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1705342160507&web=1)
+- The spreadsheet for Types of Care by Region is now live on F:\Data\Types of care.xls
+
+### Other
+
+- No need to capture legal status
+- NIC = Not in care
+- GH should stand for Group Home (in care is yes)
+- Children living off reserve are funded provincially. Children living on reserve are funded federally. There is potential that documents may have handwritten notes that provide clarity as to who is responsible for funding the child. We are only capturing information for federally funded children.
