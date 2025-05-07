@@ -3,7 +3,10 @@ layout: page
 title: Media and Public Appearances
 permalink: /media/
 image: /assets/img/media-banner.jpg
+image_hero: /assets/img/media-banner.jpg
 ---
+
+![Media](https://claudielarouche.com/assets/img/media-banner.jpg)
 
 Here are some interviews I have given, articles written about my projects, conference participations etc. 
 
@@ -13,7 +16,16 @@ Here are some interviews I have given, articles written about my projects, confe
 
 ---
 
+## 📣 Presentation for Ottawa Python Authors Meetup
+![Python Meetup](/assets/img/Python-Meetup-2025.jpg)
+**Type:** 45 minutes presentation  
+**Date:** May 6, 2025  
+[Meetup event](https://www.meetup.com/ottawapython/events/307545401/)  
+
+---
+
 ## 📣 Drupalcamp Ottawa - EvolveUX 
+![Drupal Camp](/assets/img/drupal-camp-2025.jpg)
 **Type:** Quick Feedback Session about my [City of Ottawa Library Programs](/projects/library) website  
 **Date:** May 2, 2025  
 **Details:** An interactive, engaging, and collaborative space where designers, developers, and digital professionals come together to learn, share, and improve their projects.  
