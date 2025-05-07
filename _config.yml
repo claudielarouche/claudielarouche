@@ -35,6 +35,14 @@ plugins:
   - jekyll-sitemap
 
 defaults:
+  # 1) All pages with layout “dev” skip GA
+  - scope:
+      path: ""        # every page in the site
+      layout: "dev"
+    values:
+      exclude_ga: true
+
+  # 2) All files under _dev-projects get sitemap disabled & skip GA
   - scope:
       path: "_dev-projects"
     values:
