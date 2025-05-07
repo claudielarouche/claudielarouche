@@ -218,8 +218,6 @@ Here is the hidden content that will show when expanded.
 
 ## Alerts
 
-## Alerts
-
 {% capture note_content %}
 Highlights information that users should take into account.
 {% endcapture %}
