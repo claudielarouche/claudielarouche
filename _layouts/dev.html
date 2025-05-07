@@ -1,6 +1,5 @@
 ---
 layout: page
-exclude_ga: true
 ---
 
 <div class="callout" style="border: 1px solid #ccc; padding: 1rem; margin-bottom: 2rem; background-color: #f9f9f9; border-radius: 6px;">
@@ -33,34 +32,6 @@ exclude_ga: true
 </p>
 
 
-<!-- THIS CODE WORKS, only shows 3
-{% assign primary_tag = page.tags[0] %}
-
-
-{% assign related = site.projects
-   | where_exp: "p", "p.tags contains primary_tag"
-   | where_exp: "p", "p.title != page.title"
-%}
-
-{% if related.size > 0 %}
- <h2>Other projects you might be interested in</h2>
- <div class="projects-gallery">
-   {% for p in related limit:3 %}
-     <div class="project-card">
-       <a href="{{ p.url | relative_url }}">
-         {% if p.image %}
-           <img src="{{ p.image | relative_url }}" alt="{{ p.title }}" />
-         {% endif %}
-         <h3>{{ p.title }}</h3>
-       </a>
-     </div>
-   {% endfor %}
- </div>
-{% endif %}
-
--->
-
-
 {% assign primary_tag = page.tags[0] %}
 
 
@@ -84,32 +55,3 @@ exclude_ga: true
     {% endfor %}
   </div>
 {% endif %}
-
-
-<!--
-
-(from Home page)
-
-{% assign categories = "Ottawa,Work,Other,Archive" | split: "," %}
-
-{% for category in categories %}
-  <h2>{{ category }} Projects</h2>
-  <div class="projects-gallery">
-    {% assign filtered = site.projects | where_exp: "item", "item.tags contains category" %}
-    {% if filtered.size > 0 %}
-      {% for project in filtered %}
-        <div class="project-card">
-          <a href="{{ project.url }}">
-            <img src="{{ project.image }}" alt="{{ project.title }}" />
-            <h3>{{ project.title }}</h3>
-          </a>
-          <p>{{ project.description }}</p>
-        </div>
-      {% endfor %}
-    {% else %}
-      <p>No projects in this category yet.</p>
-    {% endif %}
-  </div>
-{% endfor %}
-
--->
