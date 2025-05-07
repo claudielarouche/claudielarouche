@@ -4,7 +4,7 @@ description: Sytle Guide for claudielarouche.com
 image: https://claudielarouche.com/assets/img/art-supplies.jpg
 image-hero: https://claudielarouche.com/assets/img/art-supplies.jpg
 tags: [work]
-permalink: /dev-projects/style-guide/
+permalink: /style-guide/
 layout: dev
 ---
 
@@ -196,4 +196,32 @@ permalink: /mypage/
 {{ "**Bold text**" | markdownify }}
 {% endraw %}
 </div>
+```
+
+## Open-Collapse section
+
+<details>
+<summary>Click to expand</summary>
+
+Here is the hidden content that will show when expanded.
+
+You can put **Markdown** inside here too — like **bold text**, lists, etc.
+
+- Item 1
+- Item 2
+
+</details>
+
+```
+<details>
+<summary>Click to expand</summary>
+
+Here is the hidden content that will show when expanded.
+
+You can put **Markdown** inside here too — like **bold text**, lists, etc.
+
+- Item 1
+- Item 2
+
+</details>
 ```
