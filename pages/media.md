@@ -68,6 +68,7 @@ Here are some interviews I have given, articles written about my projects, confe
 ---
 
 ## 🎙️ As It Happens (CBC National Radio)  
+![As It Happens](/assets/img/as-it-happens.png)  
 **Type:** Pre-recorded interview  
 **Date:** April 26, 2024  
 **Details:** My segment starts at 35:50  
