@@ -205,11 +205,6 @@ permalink: /mypage/
 
 Here is the hidden content that will show when expanded.
 
-You can put **Markdown** inside here too — like **bold text**, lists, etc.
-
-- Item 1
-- Item 2
-
 </details>
 
 ```
@@ -217,11 +212,6 @@ You can put **Markdown** inside here too — like **bold text**, lists, etc.
 <summary>Click to expand</summary>
 
 Here is the hidden content that will show when expanded.
-
-You can put **Markdown** inside here too — like **bold text**, lists, etc.
-
-- Item 1
-- Item 2
 
 </details>
 ```
