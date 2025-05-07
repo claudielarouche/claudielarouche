@@ -7,6 +7,10 @@ image: /assets/img/media-banner.jpg
 
 Here are some interviews I have given, articles written about my projects, conference participations etc. 
 
+{% comment %}
+  Images on this page should be about 600x450
+{% endcomment %}
+
 ---
 
 ## 📣 Drupalcamp Ottawa - EvolveUX 
