@@ -218,18 +218,62 @@ Here is the hidden content that will show when expanded.
 
 ## Alerts
 
-{% include admonition.html type="Note" icon="ℹ️" content="Highlights information that users should take into account." %}
-{% include admonition.html type="Tip" icon="💡" content="Optional information to help a user be more successful." %}
-{% include admonition.html type="Important" icon="❗" content="Crucial information necessary for users to succeed." %}
-{% include admonition.html type="Warning" icon="⚠️" content="Critical content demanding immediate user attention." %}
-{% include admonition.html type="Caution" icon="🚫" content="Negative potential consequences of an action." %}
+## Alerts
+
+{% capture note_content %}
+Highlights information that users should take into account.
+{% endcapture %}
+{% include admonition.html type="Note" icon="ℹ️" content=note_content %}
+
+{% capture tip_content %}
+Optional information to help a user be more successful.
+{% endcapture %}
+{% include admonition.html type="Tip" icon="💡" content=tip_content %}
+
+{% capture important_content %}
+Crucial information necessary for users to succeed.
+{% endcapture %}
+{% include admonition.html type="Important" icon="❗" content=important_content %}
+
+{% capture warning_content %}
+Critical content demanding immediate user attention.
+{% endcapture %}
+{% include admonition.html type="Warning" icon="⚠️" content=warning_content %}
+
+{% capture caution_content %}
+Negative potential consequences of an action.
+{% endcapture %}
+{% include admonition.html type="Caution" icon="🚫" content=caution_content %}
+
 
 ```
 {% raw %}
-{% include admonition.html type="Note" icon="ℹ️" content="Highlights information that users should take into account." %}
-{% include admonition.html type="Tip" icon="💡" content="Optional information to help a user be more successful." %}
-{% include admonition.html type="Important" icon="❗" content="Crucial information necessary for users to succeed." %}
-{% include admonition.html type="Warning" icon="⚠️" content="Critical content demanding immediate user attention." %}
-{% include admonition.html type="Caution" icon="🚫" content="Negative potential consequences of an action." %}
+## Alerts
+
+{% capture note_content %}
+Highlights information that users should take into account.
+{% endcapture %}
+{% include admonition.html type="Note" icon="ℹ️" content=note_content %}
+
+{% capture tip_content %}
+Optional information to help a user be more successful.
+{% endcapture %}
+{% include admonition.html type="Tip" icon="💡" content=tip_content %}
+
+{% capture important_content %}
+Crucial information necessary for users to succeed.
+{% endcapture %}
+{% include admonition.html type="Important" icon="❗" content=important_content %}
+
+{% capture warning_content %}
+Critical content demanding immediate user attention.
+{% endcapture %}
+{% include admonition.html type="Warning" icon="⚠️" content=warning_content %}
+
+{% capture caution_content %}
+Negative potential consequences of an action.
+{% endcapture %}
+{% include admonition.html type="Caution" icon="🚫" content=caution_content %}
+
 {% endraw %}
 ```
