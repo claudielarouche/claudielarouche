@@ -6,8 +6,6 @@ image: /assets/img/media-banner.jpg
 image_hero: /assets/img/media-banner.jpg
 ---
 
-![Media](https://claudielarouche.com/assets/img/media-banner.jpg)
-
 Here are some interviews I have given, articles written about my projects, conference participations etc. 
 
 {% comment %}
