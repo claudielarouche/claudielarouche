@@ -4,7 +4,7 @@ description: A subset of the City of Ottawa Drop-Ins, but just for skating!
 image: https://claudielarouche.com/assets/img/skating.jpg
 image_hero: https://claudielarouche.com/assets/img/skating.jpg
 tags: [Ottawa]
-permalink: /dev/ottawa-skate/
+permalink: /projects/ottawa-skate/
 layout: projects
 js:
   - https://code.jquery.com/jquery-3.6.0.min.js

@@ -4,7 +4,7 @@ description: A subset of the City of Ottawa Drop-Ins, but just for swimming!
 image: https://claudielarouche.com/assets/img/swim.jpg
 image_hero: https://claudielarouche.com/assets/img/swim.jpg
 tags: [Ottawa]
-permalink: /d-projects/ottawa-swim/
+permalink: /projects/ottawa-swim/
 layout: projects
 js:
   - https://code.jquery.com/jquery-3.6.0.min.js
