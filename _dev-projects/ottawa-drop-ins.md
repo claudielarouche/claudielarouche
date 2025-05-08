@@ -20,7 +20,7 @@ css:
 
 Photo by <a href="https://unsplash.com/@lightupphotos?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Cristina Anne Costello</a> on <a href="https://unsplash.com/photos/black-and-yellow-tennis-racket-JfOh7yA6XuM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 
-{% include activity-nav.html %}      
+{% include ottawa-drop-ins-nav.html %}      
 
 <a href="#csvData" class="btn btn-primary">Go to listing</a>
 
