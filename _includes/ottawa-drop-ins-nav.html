@@ -1,7 +1,7 @@
 <nav class="activity-nav">
     <ul>
       {% assign current = page.slug | default: page.activity | default: page.url | split:"/" | last %}
-      {% for item in site.data.activities %}
+      {% for item in site.data.ottawa-drop-ins %}
         <li class="activity-nav__item">
           {% if item.slug == current %}
             <!-- not clickable when “active” -->
