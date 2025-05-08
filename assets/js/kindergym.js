@@ -191,7 +191,7 @@ function filterData(data, selectedAreas, selectedDay, selectedTime) {
     return data.filter(row => {
 
 	const currentArea = row['Area'] || '';
-	const currentCategory = row['Category'] || '';
+	const currentCategory = row['Activity Type'] || '';
 	const currentDay = row['Day'] || '';
 	const currentAge = row['Age'] || '';
 	const currentTime = row['Time of day'] || '';
@@ -200,7 +200,7 @@ function filterData(data, selectedAreas, selectedDay, selectedTime) {
 	const dayCondition = selectedDay.some(day => currentDay.toLowerCase() === day.toLowerCase());
 	
 	const timeCondition = selectedTime.some(time => currentTime.toLowerCase().includes(time.toLowerCase()));
-	const skateCondition = currentCategory === "Skating";
+	const skateCondition = currentCategory === "Kindergym";
 	    
 	return areaCondition && dayCondition && timeCondition && skateCondition;
     });
