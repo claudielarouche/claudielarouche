@@ -194,6 +194,5 @@ Data listed was accurate at the time of publication and is subject to change. Be
 
 Data last updated: 2025-05-04 (Data is updated approximately every Sunday)  
 You can request an update at claudielarouche@gmail.com  
-Please take the "Registration Required" column with a grain of salt, that information is coded differently on different pages and my website does not always capture the information correctly.  
 
 <div id="csvData"></div>
