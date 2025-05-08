@@ -7,7 +7,6 @@
 - name: "Swimming"
   url: "/projects/ottawa-swim/"
   slug: "ottawa-swim"
-#- name: "Kindergym"
-#  url: "/activities/kindergym/"
-#  slug: "kindergym"
-# add more here as you need…
+- name: "Kindergym"
+  url: "/activities/kindergym/"
+  slug: "kindergym"
