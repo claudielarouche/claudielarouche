@@ -57,7 +57,7 @@ function renderTable(data) {
 
     let tableHtml = '<table id="dataTable"><thead><tr>';
     headers.forEach(header => {
-        // Skip rendering the URL column
+        // Skip rendering a few columns
         if (header !== 'URL' && header !== 'Category' && header !== 'Age' && header !== 'Activity Type') {
             tableHtml += `<th>${header}</th>`;
         }
@@ -75,7 +75,7 @@ function renderTable(data) {
 
         headers.forEach((header, index) => {
             // Skip rendering the URL column
-            if (header !== 'URL' && header !== 'Category') {
+            if (header !== 'URL' && header !== 'Category' && header !== 'Age' && header !== 'Activity Type') {
                 switch (header) {
 		    case 'Sort Order': 	
 				    // Assign the index of the "Baby Scale" column to the babyScaleIndex variable
