@@ -1,0 +1,13 @@
+- name: "All Drop-ins"
+  url: "/projects/ottawa-drop-in/"
+  slug: "ottawa-drop-in"
+- name: "Skating"
+  url: "/projects/skating/"
+  slug: "skating"
+- name: "Swimming"
+  url: "/projects/swimming/"
+  slug: "swimming"
+#- name: "Kindergym"
+#  url: "/activities/kindergym/"
+#  slug: "kindergym"
+# add more here as you need…

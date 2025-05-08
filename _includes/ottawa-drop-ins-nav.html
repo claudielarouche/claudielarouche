@@ -1,0 +1,18 @@
+<nav class="activity-nav">
+    <ul>
+      {% assign current = page.slug | default: page.activity | default: page.url | split:"/" | last %}
+      {% for item in site.data.activities %}
+        <li class="activity-nav__item">
+          {% if item.slug == current %}
+            <!-- not clickable when “active” -->
+            <span class="activity-nav__current">{{ item.name }}</span>
+          {% else %}
+            <a href="{{ item.url | relative_url }}" class="activity-nav__link">
+              {{ item.name }}
+            </a>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+  
