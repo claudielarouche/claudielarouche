@@ -20,6 +20,8 @@ css:
 
 {% include ottawa-drop-ins-nav.html %}      
 
+<br>
+
 <a href="#csvData" class="btn btn-primary">Go to listing</a>
 
 <a href="#filters" class="btn btn-primary" >Go to filters</a>
