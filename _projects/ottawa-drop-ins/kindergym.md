@@ -4,7 +4,7 @@ description: A subset of the City of Ottawa Drop-Ins, but just for kindergym!
 image: https://claudielarouche.com/assets/img/kindergym.jpg
 image_hero: https://claudielarouche.com/assets/img/kindergym.jpg
 tags: [Ottawa]
-permalink: /projects/ottawa-kindergym/
+permalink: /projects/kindergym/
 layout: projects
 js:
   - https://code.jquery.com/jquery-3.6.0.min.js
