@@ -58,7 +58,7 @@ function renderTable(data) {
     let tableHtml = '<table id="dataTable"><thead><tr>';
     headers.forEach(header => {
         // Skip rendering the URL column
-        if (header !== 'URL' && header !== 'Category') {
+        if (header !== 'URL' && header !== 'Category' && header !== 'Age' && header !== 'Activity Type') {
             tableHtml += `<th>${header}</th>`;
         }
     });

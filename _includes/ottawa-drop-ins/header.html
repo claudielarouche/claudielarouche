@@ -1,0 +1,29 @@
+<nav class="activity-nav">
+  {% assign current = page.slug | default: page.activity | default: page.url | split:"/" | last %}
+  {% for item in site.data.ottawa-drop-ins %}
+    {% if item.slug == current %}
+      <span class="activity-nav__current">{{ item.name }}</span>
+    {% else %}
+      <a href="{{ item.url | relative_url }}" class="activity-nav__link">{{ item.name }}</a>
+    {% endif %}
+    {% unless forloop.last %} | {% endunless %}
+  {% endfor %}
+</nav>
+
+<br>
+
+<a href="#csvData" class="btn btn-primary">Go to listing</a>
+
+<a href="#filters" class="btn btn-primary" >Go to filters</a>
+
+<a href="#" class="btn btn-primary" id="showToday" >Show me today's programs</a>
+
+<a href="#newsletter" class="btn btn-warning" >Sign-up for updates</a>
+
+<a href="https://forms.gle/7YHFbimGH4p5imQD8" class="btn btn-primary" target="_blank">Contact me</a>
+
+## Filters
+
+Please note that you can also use the "search" box directly on the data table to filter the data.
+
+<form class="form">

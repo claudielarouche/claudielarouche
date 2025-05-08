@@ -18,17 +18,7 @@ css:
   - https://fonts.googleapis.com/icon?family=Material+Icons
 ---
 
-{% include ottawa-drop-ins-nav.html %}      
-
-<br>
-
-{% include ottawa-drop-ins/top-buttons.html %}      
-
-## Filters
-
-Please note that you can also use the "search" box directly on the data table to filter the data.
-
-<form class="form">
+{% include ottawa-drop-ins/header.html %}      
 
 {% include filter-area.html %}   
 
@@ -36,14 +26,11 @@ Please note that you can also use the "search" box directly on the data table to
 
 {% include filter-time-of-day.html %}   
 
-
-</form>
-
 {% include view-data-reset-filter.html %}   
 
 {% include ottawa-drop-ins/alert-info.html %}  
 
-## City of Ottawa Activities
+## Kindergym Schedule
 
 {% include ottawa-drop-ins/last-updated.html %}  
 
