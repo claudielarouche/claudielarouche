@@ -11,7 +11,7 @@ function getQueryParam(key) {
 
 window.onload = function() {
 	// Update the path to your CSV file
-	const csvFilePath = '../assets/data/ottawa-drop-ins.csv';
+	const csvFilePath = 'https://claudielarouche.com/assets/data/ottawa-drop-ins.csv';
 
 	Papa.parse(csvFilePath, {
 		header: true,
