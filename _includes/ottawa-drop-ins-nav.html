@@ -1,0 +1,11 @@
+<nav class="activity-nav">
+    {% assign current = page.slug | default: page.activity | default: page.url | split:"/" | last %}
+    {% for item in site.data.ottawa-drop-ins %}
+      {% if item.slug == current %}
+        <span class="activity-nav__current">{{ item.name }}</span>
+      {% else %}
+        <a href="{{ item.url | relative_url }}" class="activity-nav__link">{{ item.name }}</a>
+      {% endif %}
+      {% unless forloop.last %} | {% endunless %}
+    {% endfor %}
+  </nav>
