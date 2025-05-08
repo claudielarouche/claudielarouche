@@ -30,7 +30,7 @@ Please note that you can also use the "search" box directly on the data table to
 
 <form class="form">
 
-{% include filter=area.html %}   
+{% include filter-area.html %}   
 
 <div class="form-group row">
 <label for="selectedDay" class="col-sm-2 col-form-label">Select Days of the week:</label>
