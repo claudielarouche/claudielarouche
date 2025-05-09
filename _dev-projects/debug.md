@@ -31,7 +31,7 @@ title: GA Debug
   {% endfor %}
 </ul>
 
-<!--
+
 <h2>Sitemap and SEO Audit</h2>
 <table>
   <thead>
@@ -49,11 +49,11 @@ title: GA Debug
     {% endfor %}
   </tbody>
 </table>
--->
 
+
+<!--
 <h2>Sitemap and SEO Audit</h2>
 
-<!-- Filter UI -->
 <div style="margin-bottom: 1em;">
   <label for="filter-url">URL contains:</label>
   <input type="text" id="filter-url" placeholder="e.g. /projects">
@@ -76,7 +76,7 @@ title: GA Debug
   </select>
 </div>
 
-<!-- Table -->
+
 <table id="seo-table">
   <thead>
     <tr><th>URL</th><th>Title</th><th>noindex</th><th>sitemap</th></tr>
@@ -134,16 +134,7 @@ document.addEventListener('DOMContentLoaded', function () {
   noindexSelect.addEventListener('change', filterTable);
 });
 </script>
-
-
-<h2>Images Referenced</h2>
-<ul>
-  {% for page in site.pages %}
-    {% if page.content contains 'img' %}
-      <li><a href="{{ page.url }}">{{ page.url }}</a> contains images</li>
-    {% endif %}
-  {% endfor %}
-</ul>
+-->
 
 <h2>Collections</h2>
 <ul>
