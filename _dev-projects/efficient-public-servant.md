@@ -8,9 +8,6 @@ permalink: /dev-projects/efficient-public-servant/
 layout: dev
 ---
 
-
-
-
 ## About
 
 Welcome to "The Efficient Public Servant"! Our mission is to help public servants like you work smarter, not harder, by providing practical tips and strategies for improving your productivity, organization, and communication skills. Our videos cover a wide range of topics, from using common office tools like Microsoft Outlook, Word, Excel, PowerPoint, and Teams, to developing essential skills such as time management, teamwork, and leadership. Whether you're a seasoned public servant or just starting your career, we're here to help you achieve your goals and make a positive impact in your organization and community. So join our community today and let's start making a difference together!
