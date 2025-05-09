@@ -278,6 +278,8 @@ Negative potential consequences of an action.
 
 ## Embed a Youtube video
 
+### Big
+
 <div class="video">
   <iframe 
     src="https://www.youtube.com/embed/p78AW7ZdNGI"
@@ -286,6 +288,8 @@ Negative potential consequences of an action.
   </iframe>
 </div>
 
+<br>
+
 ```
 <div class="video">
   <iframe 
@@ -293,5 +297,19 @@ Negative potential consequences of an action.
     title="YouTube video"
     allowfullscreen>
   </iframe>
+</div>
+```
+
+### Small
+
+<div class="embed-responsive embed-responsive-16by9">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/KrUL8vR17u4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+<br>
+
+```
+<div class="embed-responsive embed-responsive-16by9">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/KrUL8vR17u4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 ```
