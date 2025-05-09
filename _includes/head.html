@@ -6,13 +6,13 @@
 
     <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
     {%- feed_meta -%}
-    {% if jekyll.environment == "production" %}
-      {% if site.google_analytics %}
-        {% unless page.exclude_ga %}
-          {% include google-analytics.html %}
-        {% endunless %}
-      {% endif %}
+
+    {% if site.google_analytics %}
+      {% unless page.exclude_ga %}
+        {% include google-analytics.html %}
+      {% endunless %}
     {% endif %}
+
     <link rel="stylesheet" href="{{ "/assets/css/custom.css" | relative_url }}">
     {% if page.css %}
       {% for sheet in page.css %}
