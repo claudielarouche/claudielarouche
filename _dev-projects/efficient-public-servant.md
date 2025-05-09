@@ -11,12 +11,12 @@ layout: dev
 
 
 <section class="hero-section">
-			<div class="container">
-				<h1>The Efficient Public Servant</h1>
-				<p>Boost Your Productivity and Efficiency as a Public Servant.</p>
-			</div>
-		</section>
-		<section id="about" class="section-about">
+    <div class="container">
+        <h1>The Efficient Public Servant</h1>
+        <p>Boost Your Productivity and Efficiency as a Public Servant.</p>
+    </div>
+</section>
+<section id="about" class="section-about">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
