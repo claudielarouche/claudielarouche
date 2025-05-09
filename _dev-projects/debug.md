@@ -31,6 +31,7 @@ title: GA Debug
   {% endfor %}
 </ul>
 
+<!--
 <h2>Sitemap and SEO Audit</h2>
 <table>
   <thead>
@@ -48,6 +49,92 @@ title: GA Debug
     {% endfor %}
   </tbody>
 </table>
+-->
+
+<h2>Sitemap and SEO Audit</h2>
+
+<!-- Filter UI -->
+<div style="margin-bottom: 1em;">
+  <label for="filter-url">URL contains:</label>
+  <input type="text" id="filter-url" placeholder="e.g. /projects">
+
+  <label for="filter-title">Title contains:</label>
+  <input type="text" id="filter-title" placeholder="e.g. Ottawa">
+
+  <label for="filter-sitemap">Sitemap:</label>
+  <select id="filter-sitemap">
+    <option value="">Any</option>
+    <option value="true">true</option>
+    <option value="false">false</option>
+  </select>
+
+  <label for="filter-noindex">Noindex:</label>
+  <select id="filter-noindex">
+    <option value="">Any</option>
+    <option value="true">true</option>
+    <option value="false">false</option>
+  </select>
+</div>
+
+<!-- Table -->
+<table id="seo-table">
+  <thead>
+    <tr><th>URL</th><th>Title</th><th>noindex</th><th>sitemap</th></tr>
+  </thead>
+  <tbody>
+    {% assign all_docs = site.pages | concat: site.posts %}
+    {% for doc in all_docs %}
+      <tr>
+        <td>{{ doc.url }}</td>
+        <td>{{ doc.title | default: "(no title)" }}</td>
+        <td>{{ doc.noindex | default: false }}</td>
+        <td>{{ doc.sitemap | default: true }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const urlInput = document.getElementById('filter-url');
+  const titleInput = document.getElementById('filter-title');
+  const sitemapSelect = document.getElementById('filter-sitemap');
+  const noindexSelect = document.getElementById('filter-noindex');
+  const table = document.getElementById('seo-table');
+  const rows = table.querySelectorAll('tbody tr');
+
+  function filterTable() {
+    const urlFilter = urlInput.value.toLowerCase();
+    const titleFilter = titleInput.value.toLowerCase();
+    const sitemapFilter = sitemapSelect.value;
+    const noindexFilter = noindexSelect.value;
+
+    rows.forEach(row => {
+      const url = row.cells[0].textContent.toLowerCase();
+      const title = row.cells[1].textContent.toLowerCase();
+      const noindex = row.cells[2].textContent;
+      const sitemap = row.cells[3].textContent;
+
+      const matchesUrl = url.includes(urlFilter);
+      const matchesTitle = title.includes(titleFilter);
+      const matchesSitemap = sitemapFilter === "" || sitemap === sitemapFilter;
+      const matchesNoindex = noindexFilter === "" || noindex === noindexFilter;
+
+      if (matchesUrl && matchesTitle && matchesSitemap && matchesNoindex) {
+        row.style.display = "";
+      } else {
+        row.style.display = "none";
+      }
+    });
+  }
+
+  urlInput.addEventListener('input', filterTable);
+  titleInput.addEventListener('input', filterTable);
+  sitemapSelect.addEventListener('change', filterTable);
+  noindexSelect.addEventListener('change', filterTable);
+});
+</script>
+
 
 <h2>Images Referenced</h2>
 <ul>
