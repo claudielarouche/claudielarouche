@@ -29,6 +29,7 @@ layout: dev
 			</div>
 		</div>
 	</div>
+</section>
 <section id="latest-videos" class="section-services">
 	<div class="container">
 		<h2>Our Latest Videos</h2>
