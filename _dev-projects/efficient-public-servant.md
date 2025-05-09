@@ -8,48 +8,7 @@ permalink: /dev-projects/efficient-public-servant/
 layout: dev
 ---
 
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>The Efficient Public Servant - Claudie Larouche</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-		<link rel="stylesheet" href="style.css">
-	</head>
-	<body>
-		<div class="bg-image"></div>
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="#">Efficient Public Servant</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#latest-videos">Latest Videos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#subscribe">Subscribe &amp; Follow</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#testimonials">Testimonials</a>
-        </li>
-		<li class="nav-item">
-          <a class="nav-link" href="#faq">FAQ</a>
-        </li>
-      </ul>
-      <div class="navbar-nav">
-        <span class="navbar-text mx-2">|</span>
-        <a class="nav-link" href="index.html">Back to Claudie's Projects</a>
-      </div>
-    </div>
-  </div>
-</nav>
+
 
 <section class="hero-section">
 			<div class="container">
@@ -66,7 +25,7 @@ layout: dev
 				<a href="https://www.youtube.com/watch?v=R6aueKiDYVc&list=PL2PsmJC9DKmhlN_Z9ELsciKbF2EnLl67d" class="btn btn-primary" target="_blank">Visit Our YouTube Channel</a>
 			</div>
 			<div class="col-md-6">
-				<img src="assets/img/productive-person.jpg" alt="Efficient Public Servant Banner">
+				<img src="https://claudielarouche.com/assets/img/productive-person.jpg" alt="Efficient Public Servant Banner">
 			</div>
 		</div>
 	</div>
