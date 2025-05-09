@@ -275,3 +275,23 @@ Negative potential consequences of an action.
 
 {% endraw %}
 ```
+
+## Embed a Youtube video
+
+<div class="video">
+  <iframe 
+    src="https://www.youtube.com/embed/p78AW7ZdNGI"
+    title="YouTube video"
+    allowfullscreen>
+  </iframe>
+</div>
+
+```
+<div class="video">
+  <iframe 
+    src="https://www.youtube.com/embed/p78AW7ZdNGI"
+    title="YouTube video"
+    allowfullscreen>
+  </iframe>
+</div>
+```
