@@ -1,4 +1,3 @@
-
 ---
 title: The Efficient Public Servant
 description: Tips and tricks to work more efficiently as a public servant
