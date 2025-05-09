@@ -8,9 +8,9 @@
     {%- feed_meta -%}
 
     {% if site.google_analytics %}
-      {% unless page.exclude_ga %}
-        {% include google-analytics.html %}
-      {% endunless %}
+      
+      {% include google-analytics.html %}
+     
     {% endif %}
 
     <link rel="stylesheet" href="{{ "/assets/css/custom.css" | relative_url }}">
