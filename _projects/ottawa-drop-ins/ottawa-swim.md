@@ -156,7 +156,7 @@ Data listed was accurate at the time of publication and is subject to change. Be
 
 ## City of Ottawa Activities
 
-Data last updated: 2025-05-04 (Data is updated approximately every Sunday)  
+Data last updated: 2025-05-10 (Data is updated approximately every Saturday)  
 You can request an update at claudielarouche@gmail.com  
 
 <div id="csvData"></div>
