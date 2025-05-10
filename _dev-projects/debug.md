@@ -39,16 +39,22 @@ title: GA Debug
   </thead>
   <tbody>
     {% assign all_docs = site.pages | concat: site.posts %}
+    {% for collection in site.collections %}
+      {% assign all_docs = all_docs | concat: collection.docs %}
+    {% endfor %}
+
+    {% assign all_docs = all_docs | uniq | sort: "url" %}
     {% for doc in all_docs %}
       <tr>
         <td><a href="{{ doc.url }}">{{ doc.url }}</a></td>
         <td>{{ doc.title | default: "(no title)" }}</td>
         <td>{% if doc.noindex %}✅{% endif %}</td>
-        <td>{{ doc.sitemap }}</td>
+        <td>{{ doc.sitemap | default: "true" }}</td>
       </tr>
     {% endfor %}
   </tbody>
 </table>
+
 
 
 <!--
