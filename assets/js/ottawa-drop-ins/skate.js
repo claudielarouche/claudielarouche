@@ -360,3 +360,20 @@ document.querySelectorAll('.timeCheckbox').forEach(function (checkbox) {
         selectedTime.push(checkbox.value);
     }
 });
+
+// wait until the DOM is fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+const selectAllBtn = document.getElementById('selectAllCategoryButton');
+const unselectAllBtn = document.getElementById('unselectAllCategoryButton');
+const checkboxes = document.querySelectorAll('.ageCheckbox');
+
+selectAllBtn.addEventListener('click', function() {
+    checkboxes.forEach(cb => cb.checked = true);
+    console.log('Select All clicked');
+});
+
+unselectAllBtn.addEventListener('click', function() {
+    checkboxes.forEach(cb => cb.checked = false);
+    console.log('Unselect All clicked');
+});
+});
