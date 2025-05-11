@@ -13,7 +13,7 @@ js:
   - https://cdn.datatables.net/buttons/1.7.1/js/buttons.colVis.min.js
   - https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js
   - /assets/js/ottawa-drop-ins/skate.js
-  - /assets/js/ottawa-drop-ins/common.js
+
 css: 
   - https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css
   - https://fonts.googleapis.com/icon?family=Material+Icons
