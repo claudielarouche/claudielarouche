@@ -32,7 +32,7 @@ css:
 
 {% include ottawa-drop-ins/alert-info.html %}  
 
-## Skating Schedule
+## City of Ottawa Skating Schedule
 
 {% include ottawa-drop-ins/last-updated.html %}  
 
