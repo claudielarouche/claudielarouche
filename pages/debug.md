@@ -1,6 +1,7 @@
 ---
 layout: dev
-title: GA Debug
+title: Debug
+permalink: /debug/
 ---
 
 

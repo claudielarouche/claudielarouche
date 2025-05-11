@@ -27,4 +27,5 @@ permalink: /dev
 ## Direct link to useful pages
 
 [Change Log](/change-log)  
-[Style Guide](/style-guide)
+[Style Guide](/style-guide)  
+[Debug](/debug)  
