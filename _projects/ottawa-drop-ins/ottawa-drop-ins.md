@@ -30,7 +30,6 @@ Photo by <a href="https://unsplash.com/@lightupphotos?utm_content=creditCopyText
 
 {% include ottawa-drop-ins/filter-age-group.html %}   
 
-
 {% include filter-time-of-day.html %}   
 
 {% include view-data-reset-filter.html %}   
