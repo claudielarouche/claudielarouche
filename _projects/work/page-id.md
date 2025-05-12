@@ -90,7 +90,7 @@ Only for pages that have children names. If no children name, the page should be
 - SK - Community Event
 - Elder Services
 - (requests are pretty much always RTL)
-- Fee Requisition / Cheque Requisition
+- Fee Requisition / Cheque Requisition (if paid, Manual instead)
 - Support worker timesheet
 - Support worker report / Respite worker report
 - Application for Age of Majority Allowance
@@ -108,6 +108,7 @@ Only for pages that have children names. If no children name, the page should be
 ### Manual
 
 - Chèques at the top with details under (SK)
+- Cheque Requisition (only if paid)
 - Saskatchewan: If you see anything with "Questionable", although it looks super easy to parse, it always goes to Manual
 - Maintenance monthly report
 - Manitoba - Accompanying Schedule to DOCFS Billing, Explanations for Other Expensitures
