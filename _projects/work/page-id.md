@@ -90,7 +90,7 @@ Only for pages that have children names. If no children name, the page should be
 - SK - Community Event
 - Elder Services
 - (requests are pretty much always RTL)
-- Fee requisition
+- Fee Requisition / Cheque Requisition
 - Support worker timesheet
 - Support worker report / Respite worker report
 - Application for Age of Majority Allowance
