@@ -4,7 +4,7 @@ title: Debug
 permalink: /debug/
 ---
 
-
+Debug page, also a quick test for skipping builds
 
 <h2>Site Info</h2>
 <ul>
