@@ -139,7 +139,7 @@ Only for pages that have children names. If no children name, the page should be
 - [Reconversion Request](https://042gc.sharepoint.com/:x:/r/sites/TemplateQCTeams/_layouts/15/Doc.aspx?sourcedoc=%7BC93FDB7E-68F3-4DA9-91E6-08177F162AE7%7D&file=Reconvertion%20Request.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1){:target="_blank" rel="noopener noreferrer"}
 - [Parser Help, Tips & Tricks](https://042gc.sharepoint.com/:w:/r/sites/TemplateQCTeams/_layouts/15/Doc2.aspx?action=edit&sourcedoc=%7Ba7b32396-d5c4-4f24-b757-6dcf4281ee9a%7D&wdOrigin=TEAMS-MAGLEV.teamsSdk_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1705342160507&web=1){:target="_blank" rel="noopener noreferrer"}
 - [Manual Log](https://042gc.sharepoint.com/:x:/r/sites/TemplateQCTeams/_layouts/15/Doc.aspx?sourcedoc=%7BD74A1724-574A-4164-8475-F69449BA732F%7D&file=Files%20for%20Manual%20Team.xlsx&action=default){:target="_blank" rel="noopener noreferrer"}
-- The spreadsheet for Types of Care by Region is now live on F:\Data\Types of care.xls
+- Spreadsheet for Types of Care by Region F:\Data\Types of care.xls
 
 ### Other
 
@@ -147,3 +147,4 @@ Only for pages that have children names. If no children name, the page should be
 - NIC = Not in care
 - GH should stand for Group Home (in care is yes)
 - Children living off reserve are funded provincially. Children living on reserve are funded federally. There is potential that documents may have handwritten notes that provide clarity as to who is responsible for funding the child. We are only capturing information for federally funded children.
+- When parsing start and end date, make sure it is the start and end date of the reporting period. Sometimes admission, placement, discharge, etc. dates are being populated in the start and end dates, which should not be the case.
