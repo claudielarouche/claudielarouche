@@ -110,6 +110,7 @@ Only for pages that have children names. If no children name, the page should be
 
 - Chèques at the top with details under (SK)
 - Cheque Requisition (only if paid)
+- Any time there's info about ineligible expenditures (i.e. negative costs), it is either manual or automation because this will affect determination of eligibility for compensation
 - Saskatchewan: If you see anything with "Questionable", although it looks super easy to parse, it always goes to Manual
 - Saskatchewan: Maintenance monthly report
 - Manitoba: Accompanying Schedule to DOCFS Billing, Explanations for Other Expensitures
