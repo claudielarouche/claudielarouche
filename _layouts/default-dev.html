@@ -31,8 +31,11 @@
 
 
     {%- include footer-dev.html -%}
-<!-- Bootstrap JS bundle (includes Popper) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    {% if page.js %}
+      {% for script in page.js %}
+        <script src="{{ script | relative_url }}"></script>
+      {% endfor %}
+    {% endif %}
 
   </body>
 
