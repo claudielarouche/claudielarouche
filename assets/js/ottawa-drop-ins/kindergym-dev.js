@@ -330,3 +330,24 @@ document.querySelectorAll('.timeCheckbox').forEach(function (checkbox) {
         selectedTime.push(checkbox.value);
     }
 });
+
+// wait until the DOM is fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+    const selectAllAreasBtn = document.getElementById('selectAllAreasButton');
+    const unselectAllAreasBtn = document.getElementById('unselectAllAresaButton');
+    const areasCheckboxes = document.querySelectorAll('.areaCheckbox');
+
+    selectAllAreasBtn.addEventListener('click', function() {
+        areasCheckboxes.forEach(cb => {
+            cb.checked = true;
+            cb.dispatchEvent(new Event('change', { bubbles: true }));
+        });
+    });
+
+    unselectAllAreasBtn.addEventListener('click', function() {
+        areasCheckboxes.forEach(cb => {
+            cb.checked = false;
+            cb.dispatchEvent(new Event('change', { bubbles: true }));
+        });
+    });
+});
