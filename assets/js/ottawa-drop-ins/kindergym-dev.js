@@ -334,7 +334,7 @@ document.querySelectorAll('.timeCheckbox').forEach(function (checkbox) {
 // wait until the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', function() {
     const selectAllAreasBtn = document.getElementById('selectAllAreasButton');
-    const unselectAllAreasBtn = document.getElementById('unselectAllAresaButton');
+    const unselectAllAreasBtn = document.getElementById('unselectAllAreasButton');
     const areasCheckboxes = document.querySelectorAll('.areaCheckbox');
 
     selectAllAreasBtn.addEventListener('click', function() {
