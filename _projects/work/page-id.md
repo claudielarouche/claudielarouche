@@ -111,8 +111,8 @@ Only for pages that have children names. If no children name, the page should be
 - Chèques at the top with details under (SK)
 - Cheque Requisition (only if paid)
 - Saskatchewan: If you see anything with "Questionable", although it looks super easy to parse, it always goes to Manual
-- Maintenance monthly report
-- Manitoba - Accompanying Schedule to DOCFS Billing, Explanations for Other Expensitures
+- Saskatchewan: Maintenance monthly report
+- Manitoba: Accompanying Schedule to DOCFS Billing, Explanations for Other Expensitures
 
 ### Automation
 
