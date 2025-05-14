@@ -2,6 +2,7 @@
 layout: dev
 title: Debug
 permalink: /debug/
+exclude_ga: true
 ---
 
 Debug page, also a quick test for skipping builds
