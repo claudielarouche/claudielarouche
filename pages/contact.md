@@ -3,7 +3,7 @@ title: Contact Claudie Larouche
 description: How to get in touch with Claudie Larouche
 image: 
 image_hero: 
-layout: dev
+layout: page
 ---
 
 ![Claudie Larouche](https://claudielarouche.com/assets/img/claudie.png)
