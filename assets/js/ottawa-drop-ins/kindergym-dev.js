@@ -1,5 +1,5 @@
 
-console.log('remove category v4');
+console.log('start development');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
