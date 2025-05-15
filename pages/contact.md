@@ -4,6 +4,7 @@ description: How to get in touch with Claudie Larouche
 image: 
 image_hero: 
 layout: page
+permalink: /contact/
 ---
 
 ![Claudie Larouche](https://claudielarouche.com/assets/img/claudie.png)
