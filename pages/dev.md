@@ -11,7 +11,7 @@ title: Pages under development
   {% if dev_projects.size > 0 %}
     {% for project in dev_projects %}
       <div class="project-card">
-        <a href="{{ project.url }}">
+        <a href="{{ project.url | relative_url }}">
           {% if project.image %}
             <img src="{{ project.image }}" alt="{{ project.title }}">
           {% endif %}
