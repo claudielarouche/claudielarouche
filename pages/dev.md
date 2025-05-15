@@ -3,6 +3,7 @@ layout: page
 exclude_ga: true
 sitemap: false
 permalink: /dev
+title: Pages under development
 ---
 
 <div class="projects-gallery">
