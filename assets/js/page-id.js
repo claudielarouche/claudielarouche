@@ -85,7 +85,7 @@ let historyStack = [];
 			return line;
 		}).join(', ');
 
-	        text = text.replace(/, (Pivot)/g, '<br><br>$1');
+	        text = text.replace(/, (Pivot)/g, '<br><br>$1 Please add to <a href="https://042gc.sharepoint.com/:x:/r/sites/TemplateQCTeams/_layouts/15/Doc.aspx?sourcedoc=%7BC93FDB7E-68F3-4DA9-91E6-08177F162AE7%7D&file=Reconvertion%20Request.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1" target="_blank">Reconverstion Request</a>.');
 		
 		document.getElementById('recordDisplay').innerHTML = text;
 		
