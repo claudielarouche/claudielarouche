@@ -108,6 +108,13 @@ Normal paragraph text with **bold**, *italic*, ~~strikethrough~~, and `inline co
 [Standard Link Opening in new window](https://claudielarouche.com){:target="_blank" rel="noopener noreferrer"}
 ```
 
+For internal links, always use relative_url like this:
+```
+<a href="{{ "/foo/bar/" | relative_url }}">My Page</a>
+<link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+<img src="{{ "/assets/img/logo.png" | relative_url }}" alt="logo">
+```
+
 ---
 
 ## Images
