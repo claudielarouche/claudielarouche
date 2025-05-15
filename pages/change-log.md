@@ -17,5 +17,7 @@ permalink: /change-log/
 - The 4 City of Ottawa drop-in pages are now coded using "components" instead of HTML code within the page.
 - Darn the library website changed again! I had to fix my Python script
 - A few days later, I realized I had a bunch of duplicate events in my library data. So I opened the dataset in Notepad++ to do Edit > Line Operation > Remove duplicate, then I re-uploaded the dataset to Github where my website is hosted. 
-- I decided to change host! I am now using Netlify instead of Github Pages. For now, I am using the free version. The reason for the switch is that I want to be able to sell stuff, which was not really allowed on Gihub Pages. 
+- I decided to change host! I am now using Netlify instead of Github Pages. For now, I am using the free version. The reason for the switch is that I want to be able to eventually sell something, which was not really allowed on Github Pages. 
+- I added "Select All" and "Unselect All" buttons on the filters for the library programs page
+- I created a simple Contact page
 - (before that I did tons of stuff but I didn't keep track sorry! ;)
