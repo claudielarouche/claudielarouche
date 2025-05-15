@@ -416,4 +416,80 @@ document.addEventListener('DOMContentLoaded', function() {
             cb.dispatchEvent(new Event('change', { bubbles: true }));
         });
     });
+
+    // === Days ===
+    const selectAllDaysBtn   = document.getElementById('selectAllDaysButton');
+    const unselectAllDaysBtn = document.getElementById('unselectAllDaysButton');
+    const daysCheckboxes     = document.querySelectorAll('.dayCheckbox');
+
+    selectAllDaysBtn.addEventListener('click', function() {
+        daysCheckboxes.forEach(cb => {
+            cb.checked = true;
+            cb.dispatchEvent(new Event('change', { bubbles: true }));
+        });
+    });
+
+    unselectAllDaysBtn.addEventListener('click', function() {
+        daysCheckboxes.forEach(cb => {
+            cb.checked = false;
+            cb.dispatchEvent(new Event('change', { bubbles: true }));
+        });
+    });
+
+    // === Time ===
+    const selectAllTimesBtn   = document.getElementById('selectAllTimesButton');
+    const unselectAllTimesBtn = document.getElementById('unselectAllTimesButton');
+    const timesCheckboxes     = document.querySelectorAll('.timeCheckbox');
+
+    selectAllTimesBtn.addEventListener('click', function() {
+        timesCheckboxes.forEach(cb => {
+            cb.checked = true;
+            cb.dispatchEvent(new Event('change', { bubbles: true }));
+        });
+    });
+
+    unselectAllTimesBtn.addEventListener('click', function() {
+        timesCheckboxes.forEach(cb => {
+            cb.checked = false;
+            cb.dispatchEvent(new Event('change', { bubbles: true }));
+        });
+    });
+
+    // === Age ===
+    const selectAllAgesBtn   = document.getElementById('selectAllAgesButton');
+    const unselectAllAgesBtn = document.getElementById('unselectAllAgesButton');
+    const agesCheckboxes     = document.querySelectorAll('.ageCheckbox');
+
+    selectAllAgesBtn.addEventListener('click', function() {
+        agesCheckboxes.forEach(cb => {
+            cb.checked = true;
+            cb.dispatchEvent(new Event('change', { bubbles: true }));
+        });
+    });
+
+    unselectAllAgesBtn.addEventListener('click', function() {
+        agesCheckboxes.forEach(cb => {
+            cb.checked = false;
+            cb.dispatchEvent(new Event('change', { bubbles: true }));
+        });
+    });
+
+    // === Category ===
+    const selectAllCategoriesBtn   = document.getElementById('selectAllCategoriesButton');
+    const unselectAllCategoriesBtn = document.getElementById('unselectAllCategoriesButton');
+    const categoriesCheckboxes     = document.querySelectorAll('.categoryCheckbox');
+
+    selectAllCategoriesBtn.addEventListener('click', function() {
+        categoriesCheckboxes.forEach(cb => {
+            cb.checked = true;
+            cb.dispatchEvent(new Event('change', { bubbles: true }));
+        });
+    });
+
+    unselectAllCategoriesBtn.addEventListener('click', function() {
+        categoriesCheckboxes.forEach(cb => {
+            cb.checked = false;
+            cb.dispatchEvent(new Event('change', { bubbles: true }));
+        });
+    });
 });

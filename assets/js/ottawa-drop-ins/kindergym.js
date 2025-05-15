@@ -351,4 +351,43 @@ document.addEventListener('DOMContentLoaded', function() {
             cb.dispatchEvent(new Event('change', { bubbles: true }));
         });
     });
+
+    // === Days ===
+    const selectAllDaysBtn   = document.getElementById('selectAllDaysButton');
+    const unselectAllDaysBtn = document.getElementById('unselectAllDaysButton');
+    const daysCheckboxes     = document.querySelectorAll('.dayCheckbox');
+
+    selectAllDaysBtn.addEventListener('click', function() {
+        daysCheckboxes.forEach(cb => {
+            cb.checked = true;
+            cb.dispatchEvent(new Event('change', { bubbles: true }));
+        });
+    });
+
+    unselectAllDaysBtn.addEventListener('click', function() {
+        daysCheckboxes.forEach(cb => {
+            cb.checked = false;
+            cb.dispatchEvent(new Event('change', { bubbles: true }));
+        });
+    });
+
+    // === Time ===
+    const selectAllTimesBtn   = document.getElementById('selectAllTimesButton');
+    const unselectAllTimesBtn = document.getElementById('unselectAllTimesButton');
+    const timesCheckboxes     = document.querySelectorAll('.timeCheckbox');
+
+    selectAllTimesBtn.addEventListener('click', function() {
+        timesCheckboxes.forEach(cb => {
+            cb.checked = true;
+            cb.dispatchEvent(new Event('change', { bubbles: true }));
+        });
+    });
+
+    unselectAllTimesBtn.addEventListener('click', function() {
+        timesCheckboxes.forEach(cb => {
+            cb.checked = false;
+            cb.dispatchEvent(new Event('change', { bubbles: true }));
+        });
+    });
+
 });
