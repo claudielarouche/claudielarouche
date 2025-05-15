@@ -12,7 +12,7 @@ title: Home
     {% if filtered.size > 0 %}
       {% for project in filtered %}
         <div class="project-card">
-          <a href="{{ project.url }}">
+          <a href="{{ project.url | relative_url }}">
             <img src="{{ project.image }}" alt="{{ project.title }}" />
             <h3>{{ project.title }}</h3>
           </a>
