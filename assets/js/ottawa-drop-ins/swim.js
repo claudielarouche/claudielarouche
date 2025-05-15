@@ -1,4 +1,5 @@
-
+---
+---
 console.log('use main data source');
 
 let sortingState;
@@ -11,7 +12,7 @@ function getQueryParam(key) {
 
 window.onload = function() {
 	// Update the path to your CSV file
-	const csvFilePath = 'https://claudielarouche.com/assets/data/ottawa-drop-ins.csv';
+	const csvFilePath = '{{ "/assets/data/ottawa-drop-ins.csv" | relative_url }}';
 
 	Papa.parse(csvFilePath, {
 		header: true,

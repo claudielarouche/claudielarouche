@@ -1,3 +1,6 @@
+---
+---
+
 document.getElementById('start-game').addEventListener('click', startGame);
         document.getElementById('validate-answer').addEventListener('click', validateAnswer);
         document.getElementById('next-question').addEventListener('click', nextQuestion);
@@ -8,7 +11,7 @@ document.getElementById('start-game').addEventListener('click', startGame);
 
         function loadData() {
             console.log("end of game changes 3");
-            Papa.parse('https://claudielarouche.com/assets/data/acronyms.csv', {
+            Papa.parse('{{ "assets/data/acronyms.csv" | relative_url }}', {
                 download: true,
                 header: true,
                 complete: function(results) {
