@@ -501,4 +501,23 @@ document.addEventListener('DOMContentLoaded', function() {
             cb.dispatchEvent(new Event('change', { bubbles: true }));
         });
     });
+
+        // === Audiences ===
+    const selectAllAudiencesBtn   = document.getElementById('selectAllAudiencesButton');
+    const unselectAllAudiencesBtn = document.getElementById('unselectAllAudiencesButton');
+    const audiencesCheckboxes     = document.querySelectorAll('.audienceCheckbox');
+
+    selectAllAudiencesBtn.addEventListener('click', function() {
+        audiencesCheckboxes.forEach(cb => {
+            cb.checked = true;
+            cb.dispatchEvent(new Event('change', { bubbles: true }));
+        });
+    });
+
+    unselectAllAudiencesBtn.addEventListener('click', function() {
+        audiencesCheckboxes.forEach(cb => {
+            cb.checked = false;
+            cb.dispatchEvent(new Event('change', { bubbles: true }));
+        });
+    });
 });
