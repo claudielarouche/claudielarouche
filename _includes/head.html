@@ -9,9 +9,11 @@
     {% if jekyll.environment == "production" %}
       {% if site.google_analytics %}
         
-        {% unless page.exclude_ga %}
-          {% include google-analytics.html %}
-        {% endunless %}
+        {% if site.baseurl == "" %}
+          {% unless page.exclude_ga %}
+            {% include google-analytics.html %}
+          {% endunless %}
+        {% endif %}
       
       {% endif %}
     {% endif %}
