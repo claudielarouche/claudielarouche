@@ -1,5 +1,5 @@
 ---
-title: Contact Claudie Larouche
+title: Contact
 description: How to get in touch with Claudie Larouche
 image: 
 image_hero: 
