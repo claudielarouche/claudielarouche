@@ -33,7 +33,6 @@ Photo by <a href="https://unsplash.com/@trnavskauni?utm_content=creditCopyText&u
 <a href="https://forms.gle/7YHFbimGH4p5imQD8" class="btn btn-primary" target="_blank">Contact me</a>
 
 
-
 ## Filters
 
 Please note that you can also use the "search" box directly on the data table to filter the data.
