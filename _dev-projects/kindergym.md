@@ -22,7 +22,7 @@ css:
 
 {% include ottawa-drop-ins/header.html %}      
 
-{% include filter-area-dev.html %}   
+{% include filter-area.html %}   
 
 {% include filter-days-of-week.html %}   
 
