@@ -51,6 +51,8 @@ Please note that you can also use the "search" box directly on the data table to
 <div class="form-group row">
 <label for="selectedAudience" class="col-sm-2 col-form-label">Select Audience(s):</label>
 <div class="col-sm-10">
+<button type="button" id="selectAllAudiencesButton" class="btn btn-primary">Select All</button>
+<button type="button" id="unselectAllAudiencesButton" class="btn btn-secondary">Unselect All</button>
 <div class="checkbox">
 <label><input type="checkbox" id="babyCheckbox" class="audienceCheckbox" value="Baby" checked=""> Baby</label>
 </div>
