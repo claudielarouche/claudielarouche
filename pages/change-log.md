@@ -22,4 +22,5 @@ permalink: /change-log/
 - I decided to change host! I am now using [Netlify](https://www.netlify.com/){:target="_blank" rel="noopener noreferrer"} instead of [Github Pages](https://pages.github.com/){:target="_blank" rel="noopener noreferrer"}. For now, I am using the free version. The reason for the switch is that I want to be able to eventually sell something / add ads, which was not really allowed on Github Pages. 
 - I added "Select All" and "Unselect All" buttons on the filters for the library programs page and all the City of Ottawa drop-ins pages ([All drop-ins](https://claudielarouche.com/projects/ottawa-drop-ins/), [skating](https://claudielarouche.com/projects/ottawa-skate/), [swimming](https://claudielarouche.com/projects/ottawa-swim/), [kindergym](https://claudielarouche.com/projects/kindergym/))
 - I created a simple [Contact](https://claudielarouche.com/contact/) page
+- Added a spot on the City of Ottawa drop-in pages for a message to appear on top of every page (useful for example when a special holiday is affecting the schedule, like the Victoria Day  weekend for example)
 - (before that I did tons of stuff but I didn't keep track sorry! ;)
