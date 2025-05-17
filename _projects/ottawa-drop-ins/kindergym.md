@@ -18,6 +18,8 @@ css:
   - https://fonts.googleapis.com/icon?family=Material+Icons
 ---
 
+{% include ottawa-drop-ins/message.html %}     
+
 **What is Kindergym?**: Play, run, climb, and jump to burn some energy. Children ages 0 to 5 must be supervised by a caregiver while they have free play with a variety of sports equipment and toys in City of Ottawa gymnasiums.
 
 {% include ottawa-drop-ins/header.html %}      

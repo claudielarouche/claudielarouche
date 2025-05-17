@@ -18,6 +18,8 @@ css:
   - https://fonts.googleapis.com/icon?family=Material+Icons
 ---
 
+{% include ottawa-drop-ins/message.html %}    
+
 {% include ottawa-drop-ins/header.html %}      
 
 {% include filter-area.html %}   

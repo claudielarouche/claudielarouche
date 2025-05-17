@@ -18,6 +18,8 @@ css:
   - https://fonts.googleapis.com/icon?family=Material+Icons
 ---
 
+{% include ottawa-drop-ins/message.html %}    
+
 This tool is dedicated to [Dave Sampson](https://davidsampson.ca/wp/){:target="_blank" rel="noopener noreferrer"} ([LinkedIn](https://www.linkedin.com/in/davidrsampson){:target="_blank" rel="noopener noreferrer"}) who suggested it to me at a NAC concert where we bumped into each other 🙂
 
 {% include ottawa-drop-ins/header.html %}      
