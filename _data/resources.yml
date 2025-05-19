@@ -4,20 +4,62 @@
     - Area
     - Description
   items:
-    - ["The Play Group Collective", "Almonte", "From Wednesday to Saturday, 9:30am-3:00pm, come and enjoy our casual drop-in play sessions with your child on your own schedule, no booking required!"]
-    - ["Ikea", "West - Nepean", "Play area in the cafeteria (Småland)"]
-    - ["Cosmic Adventures", "East - Vanier", "TBC"]
-    - ["Little Monkeys", "TBC", "TBC"]
-    - ["White Pine Books in Arnprior", "", "There are couches, a play kitchen and a few other things to play with."]
-    - ["Zack’s Diner in Carleton Place", "", "Has a play kitchen and bbq."]
-    - ["Funhaven", "", ""]
-    - ["Village Dunnds", "", "Play area and you can bring food and drink over from the restaurant"]
-    - ["Mini Space Kids in Kanata", "Kanata", "Bubble Tea / Cafe with Pho, nuggets, burgers etc"]
-    - ["To the Moon and Back", "Almonte", ""]
-    - ["Bobino Bagel", "Gatineau", ""]
-    - ["BubbleSea", "", ""]
-    - ["Science and Tech Museum", "", "There’s a confined area for under 24 months and the bigger area during the day you can sit and watch."]
-    - ["Aviation Museum", "", ""]
+    - name: "The Play Group Collective"
+      url: "https://www.theplaygroupcollective.com/"
+      area: "Almonte"
+      description: "From Wednesday to Saturday, 9:30am-3:00pm, come and enjoy our casual drop-in play sessions with your child on your own schedule, no booking required!"
+    - name: "Ikea"
+      url: "https://www.ikea.com/ca/en/stores/ottawa/"
+      area: "West - Nepean"
+      description: "Play area in the cafeteria (Småland)"
+    - name: "Cosmic Adventures"
+      url: ""
+      area: "East - Vanier"
+      description: "TBC"
+    - name: "Little Monkeys"
+      url: ""
+      area: "TBC"
+      description: "TBC"
+    - name: "White Pine Books in Arnprior"
+      url: ""
+      area: ""
+      description: "There are couches, a play kitchen and a few other things to play with."
+    - name: "Zack’s Diner in Carleton Place"
+      url: ""
+      area: ""
+      description: "Has a play kitchen and bbq."
+    - name: "Funhaven"
+      url: ""
+      area: ""
+      description: ""
+    - name: "Village Dunnds"
+      url: ""
+      area: ""
+      description: "Play area and you can bring food and drink over from the restaurant"
+    - name: "Mini Space Kids in Kanata"
+      url: ""
+      area: "Kanata"
+      description: "Bubble Tea / Cafe with Pho, nuggets, burgers etc"
+    - name: "To the Moon and Back"
+      url: ""
+      area: "Almonte"
+      description: ""
+    - name: "Bobino Bagel"
+      url: ""
+      area: "Gatineau"
+      description: ""
+    - name: "BubbleSea"
+      url: ""
+      area: ""
+      description: ""
+    - name: "Science and Tech Museum"
+      url: ""
+      area: ""
+      description: "There’s a confined area for under 24 months and the bigger area during the day you can sit and watch."
+    - name: "Aviation Museum"
+      url: ""
+      area: ""
+      description: ""
 
 - category: "List of McDonalds with Play Structure"
   headings:
@@ -25,8 +67,23 @@
     - Address
     - Area
   items:
-    - ["Bells Corners", "", ""]
-    - ["South Keys", "", ""]
-    - ["Orleans", "", ""]
-    - ["St-Joseph, Gatineau", "", "Gatineau"]
-    - ["Innes and St Laurent", "", "East - Vanier"]
+    - name: "McDonald’s"
+      url: ""
+      address: "Bells Corners"
+      area: ""
+    - name: "McDonald’s"
+      url: ""
+      address: "South Keys"
+      area: ""
+    - name: "McDonald’s"
+      url: ""
+      address: "Orleans"
+      area: ""
+    - name: "McDonald’s"
+      url: ""
+      address: "St-Joseph, Gatineau"
+      area: "Gatineau"
+    - name: "McDonald’s"
+      url: ""
+      address: "Innes and St Laurent"
+      area: "East - Vanier"

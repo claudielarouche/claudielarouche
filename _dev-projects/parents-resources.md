@@ -10,16 +10,11 @@ layout: dev
 
 Becoming a parent / being a parent can be a bit overwhelming at times! That is why I decided to create this repository of allllllllllllllllll the awwesome resources that exist throughout the city to help parents. If you notice anything missing, please let me know!
 
----
-layout: page
-title: Resources for Parents
----
-
 ## Table of Contents
 
 <ul>
   {% for table in site.data.resources %}
-    <li><a href="#{{ table.category | slugify }}">{{ table.category }}</a></li>
+    <li><a href="#{{ table.category | slugify }}"></a></li>
   {% endfor %}
 </ul>
 
@@ -35,14 +30,18 @@ title: Resources for Parents
     </tr>
   </thead>
   <tbody>
-    {% for row in table.items %}
+    {% for item in table.items %}
       <tr>
-        {% for cell in row %}
-          <td>{{ cell }}</td>
-        {% endfor %}
+        <!-- make the name a clickable link -->
+        <td>
+          [{{ item.name }}]({{ item.url }}){:target="_blank" rel="noopener noreferrer"}
+        </td>
+        <td>{{ item.area }}</td>
+        <td>{{ item.description }}</td>
       </tr>
     {% endfor %}
   </tbody>
 </table>
+
 
 {% endfor %}
