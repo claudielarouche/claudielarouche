@@ -94,15 +94,31 @@ function renderTable(data) {
                         break;
 
                     case 'Location Address':
-                        // Create a link with the Google Maps URL for the address
-                        const address = row[header] ? row[header].trim() : '';
-                        if (address !== '') {
-                            const googleMapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)},+Ottawa,+Canada`;
-                            tableHtml += `<td><a href="${googleMapsLink}" target="_blank">${address}</a></td>`;
+                        // Raw cell value (may contain multiple comma-separated addresses)
+                        const raw = row[header] ? row[header].trim() : '';
+
+                        if (raw !== '') {
+                            // 1. Split on commas, trim each, and drop any empty entries
+                            const addresses = raw
+                            .split(',')
+                            .map(addr => addr.trim())
+                            .filter(addr => addr.length > 0);
+
+                            // 2. Map each to an <a> tag with the Google Maps URL
+                            const links = addresses.map(addr => {
+                            const url =
+                                `https://www.google.com/maps/search/?api=1&query=` +
+                                `${encodeURIComponent(addr)},+Ottawa,+Canada`;
+                            return `<a href="${url}" target="_blank">${addr}</a>`;
+                            });
+
+                            // 3. Join them back with commas (or use '<br>' for line breaks)
+                            tableHtml += `<td>${links.join(', ')}</td>`;
                         } else {
                             tableHtml += '<td></td>';
                         }
                         break;
+
 
                     default:
                         // Display other columns
@@ -149,14 +165,9 @@ function filterData(data, selectedAreas) {
     return data.filter(row => {
        
         const currentArea = row['Area'] || '';
-	  
-
-
        
         const areaCondition = !selectedAreas.length || selectedAreas.some(area => currentArea.toLowerCase().includes(area.toLowerCase()));
 	
-
-
         return areaCondition;
     });
 }
