@@ -5,23 +5,32 @@ image: https://claudielarouche.com/assets/img/school.jpg
 tags: [Ottawa]
 permalink: /dev-projects/ottawa-schools/
 layout: dev
+js:
+  - https://code.jquery.com/jquery-3.6.0.min.js
+  - https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js
+  - https://cdn.datatables.net/buttons/1.7.1/js/dataTables.buttons.min.js
+  - https://cdn.datatables.net/buttons/1.7.1/js/buttons.colVis.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js
+  - /assets/js/schools.js
+css: 
+  - https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css
+  - https://fonts.googleapis.com/icon?family=Material+Icons
 ---
 
 <h1>How to choose a school in Ottawa</h1>
 
-
-<div class="row">
-<div class="col-md-6">
 <div class="mt-3">
 <a href="#csvData" class="btn btn-primary">
     Go to school listing
 </a>
 </div>
+
 <div class="mt-3">
 <a href="#filters" class="btn btn-primary" >
     Go to filters
 </a>
 </div>
+
 <div class="mt-3">
 <a href="#map" class="btn btn-primary" >
     Go to map
@@ -39,7 +48,6 @@ layout: dev
 <a href="#newsletter" class="btn btn-warning" >
     Sign-up for updates
 </a>
-
 </div>
 
 <div class="mt-3">
@@ -47,12 +55,7 @@ layout: dev
     Contact me
 </a>
 </div>
-</div>
-    <div class="col-md-6">
-<i>If you see me in Ottawa, please say hi!</i>
-<img src="assets/img/claudie.png" alt="Claudie's Picture" class="img-fluid">
-</div>
-</div>
+
 
 Selecting the right school for your child can be a stressful decision for parents, so I decided to create this resource to try and help.  
 
