@@ -1,6 +1,7 @@
 ---
-layout: dev
+layout: page
 title: Personal Projects
+permalink: /personal-projects/
 ---
 
 

@@ -14,8 +14,10 @@ minima:
 
 header_pages:
   - pages/about.md
+  - pages/personal-projects.md
+  - pages/work-projects.md
   - pages/media.md
-  - pages/contact.md
+  - pages/contact.md  
 
 collections:
   projects:

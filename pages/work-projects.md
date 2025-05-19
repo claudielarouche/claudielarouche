@@ -1,6 +1,7 @@
 ---
-layout: dev
+layout: page
 title: Work Projects
+permalink: /work-projects/
 ---
 
 
