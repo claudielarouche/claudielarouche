@@ -1,4 +1,5 @@
-
+---
+---
 console.log('move to Jekyll');
 
 let sortingState;
@@ -11,7 +12,7 @@ function getQueryParam(key) {
 
 window.onload = function() {
 	// Update the path to your CSV file
-	const csvFilePath = 'https://claudielarouche.com/dance/data.csv';
+	const csvFilePath = '{{ "/assets/data/dance.csv" | relative_url }}';
 
 	Papa.parse(csvFilePath, {
 		header: true,
