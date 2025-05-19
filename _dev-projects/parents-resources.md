@@ -34,8 +34,7 @@ Becoming a parent / being a parent can be a bit overwhelming at times! That is w
       <tr>
         <!-- make the name a clickable link -->
         <td>
-        {{ "[#{item.name}](#{item.url}){:target=\"_blank\" rel=\"noopener noreferrer\"}" 
-            | markdownify }}
+          <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.name }}</a>
         </td>
         <td>{{ item.area }}</td>
         <td>{{ item.description }}</td>
