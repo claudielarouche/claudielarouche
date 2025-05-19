@@ -1,7 +1,7 @@
 ---
 layout: dev
 title: Ottawa Adult Dance Classes Repository
-permalink: /dev-projects/ottawa-adult-dance-classes-bkp/
+permalink: /dev-projects/ottawa-adult-dance-classes/
 description: A listing of adult dance classes in Ottawa
 tags: [Ottawa]
 image: https://claudielarouche.com/assets/img/dance.jpg
@@ -22,23 +22,7 @@ A list of adult dance classes in Ottawa.
 <form class="form">
 			
 
-<div class="form-group row">
-<label for="selectedArea" class="col-sm-2 col-form-label">Select Area(s):</label>
-<div class="col-sm-10">
-<div class="checkbox">
-<label><input type="checkbox" id="centralCheckbox" class="areaCheckbox" value="Central" checked=""> Central</label>
-</div>
-<div class="checkbox">
-<label><input type="checkbox" id="eastCheckbox" class="areaCheckbox" value="East" checked=""> East</label>
-</div>
-<div class="checkbox">
-<label><input type="checkbox" id="southCheckbox" class="areaCheckbox" value="South" checked=""> South</label>
-</div>
-<div class="checkbox">
-<label><input type="checkbox" id="westCheckbox" class="areaCheckbox" value="West" checked=""> West</label>
-</div>
-</div>
-</div>
+{% include filter-area.html %}   
 
 
 </form>
