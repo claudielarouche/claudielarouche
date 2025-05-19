@@ -21,6 +21,8 @@ Becoming a parent / being a parent can be a bit overwhelming at times! That is w
 {% for table in site.data.resources %}
 ### {{ table.category }} 
 
+[Back to top](#page-title)
+
 <table class="resource-table">
   <thead>
     <tr>
