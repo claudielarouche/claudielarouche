@@ -14,12 +14,12 @@ Becoming a parent / being a parent can be a bit overwhelming at times! That is w
 
 <ul>
   {% for table in site.data.resources %}
-    <li><a href="#{{ table.category | slugify }}"></a></li>
+    <li><a href="#{{ table.category | slugify }}">{{ table.category }}</a></li>
   {% endfor %}
 </ul>
 
 {% for table in site.data.resources %}
-### {{ table.category }} {#{{ table.category | slugify }}#}
+### {{ table.category }} 
 
 <table>
   <thead>
