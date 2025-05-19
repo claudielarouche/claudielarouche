@@ -6,6 +6,7 @@ image-hero: https://claudielarouche.com/assets/img/art-supplies.jpg
 tags: [work]
 permalink: /style-guide/
 layout: dev
+exclude_ga: true
 ---
 
 Photo by <a href="https://unsplash.com/@jennie_ra?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jennie Razumnaya</a> on <a href="https://unsplash.com/photos/a-group-of-brushes-XbcfTH69aAc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
