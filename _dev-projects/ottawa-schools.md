@@ -11,10 +11,12 @@ js:
   - https://cdn.datatables.net/buttons/1.7.1/js/dataTables.buttons.min.js
   - https://cdn.datatables.net/buttons/1.7.1/js/buttons.colVis.min.js
   - https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js
+  - https://unpkg.com/leaflet/dist/leaflet.js
   - /assets/js/schools.js
 css: 
   - https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css
   - https://fonts.googleapis.com/icon?family=Material+Icons
+  - https://unpkg.com/leaflet/dist/leaflet.css
 ---
 
 <h1>How to choose a school in Ottawa</h1>
