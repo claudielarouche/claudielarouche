@@ -32,6 +32,6 @@ If you like this tool, please let me know by sending me a quick email at claudie
 <br>
 <button onclick="extractEmails()">Extract Email Addresses</button>
 <button onclick="clearInput()">Clear</button>
-</div>
+
 <div id="output"></div>
-</div>
+
