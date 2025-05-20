@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Media and Public Appearances
+title: Media
 permalink: /media/
 image: /assets/img/media-banner.jpg
 image_hero: /assets/img/media-banner.jpg
