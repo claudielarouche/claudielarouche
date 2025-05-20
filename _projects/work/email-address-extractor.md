@@ -20,7 +20,9 @@ Enter any paragraph of text in the box below. The tool will find all the email a
 Email addresses are all separated by a semi-colon so that you can quickly paste them in your email client to send a quick message out.  
 
 If you like this tool, please let me know by sending me a quick email at claudielarouche@gmail.com  
-<label for="textInput">Enter text:</label>
+
+<label for="textInput">Enter text:</label>  
+
 <textarea id="textInput" rows="10" cols="100"></textarea>
 <br>
 <button onclick="extractEmails()">Extract Email Addresses</button>
