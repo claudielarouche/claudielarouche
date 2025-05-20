@@ -488,3 +488,12 @@ a.btn-danger:visited {
 
 
 /* END ALERT */
+
+
+/* BEGIN EMAIL EXTRACTOR */
+
+button, textarea{
+    font-family: inherit;
+}
+
+/* END EMAIL EXTRACTOR */

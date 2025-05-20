@@ -1,79 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YWMRD8LX5P"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-YWMRD8LX5P');
-</script>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Email Addresses Extractor</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-		<!--<link rel="stylesheet" type="text/css" href="style.css">-->
-		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-		<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
-		<script src="https://cdn.datatables.net/buttons/1.7.1/js/dataTables.buttons.min.js"></script>
-		<script src="https://cdn.datatables.net/buttons/1.7.1/js/buttons.colVis.min.js"></script>
-<style>
-    #output {
-        margin-top: 20px;
-        font-size: 16px;
-    }
-</style>
-</head>
-<body>
-	<div class="container">
-	<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
-	  <a class="navbar-brand" href="https://claudielarouche.com">Claudie's other projects</a>
-	
-
-	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	    <ul class="navbar-nav mr-auto">
-	      <!-- Add any additional menu items here if needed -->
-	    </ul>
-	  </div>
-	</nav>
-    <div>
-	<h1>Email Addresses Extractor</h1>
-	<h2>How to use</h2>
-	<p>Enter any paragraph of text in the box below. The tool will find all the email addresses from the block of text and show them on the screen so that you can easily copy paste them. Duplicates are removed.</p>
-	<p>Email addresses are all separated by a semi-colon so that you can quickly paste them in your email client to send a quick message out.</p>
-	<p>If you like this tool, please let me know by sending me a quick email at claudielarouche@gmail.com</p>
-        <label for="textInput">Enter text:</label><br>
-        <textarea id="textInput" rows="10" cols="100"></textarea>
-        <br>
-		<button onclick="extractEmails()">Extract Email Addresses</button>
-		<button onclick="clearInput()">Clear</button>
-    </div>
-    <div id="output"></div>
-	</div>
-    <script>
-        function extractEmails() {
-            const inputText = document.getElementById('textInput').value;
-            const regex = /(?:\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b)/g;
-            let matches = inputText.match(regex);
-            if (matches) {
-                // Remove duplicates
-                const uniqueMatches = [...new Set(matches.map(email => email.toLowerCase()))];
-                document.getElementById('output').textContent = uniqueMatches.join('; ');
-            } else {
-                document.getElementById('output').textContent = "No email addresses found.";
-            }
-        }
-		
-		function clearInput() {
-            document.getElementById('textInput').value = "";
-            document.getElementById('output').textContent = "";
-        }
-    </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="0; url=https://claudielarouche.com/projects/email-address-extractor/" />
+    <title>Redirecting...</title>
+  </head>
+  <body>
+    <p>If you are not redirected, <a href="https://claudielarouche.com/projects/email-address-extractor/">click here</a>.</p>
+  </body>
 </html>
