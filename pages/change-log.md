@@ -26,4 +26,5 @@ permalink: /change-log/
 - I moved my [repository of adult dance classes](https://claudielarouche.com/projects/ottawa-adult-dance-classes/) to the new look and feel. While I was at it, I changed the code so that if there are multiple addresses for one school, they all get their individual Google Maps link. 
 - There are a few new drop-in activities that the City of Ottawa added that didn't exist before, so I had to update my code to ensure they were correctly categorized on my [City of Ottawa drop-in pages](https://claudielarouche.com/projects/ottawa-drop-ins/). The new activities are: Billiards, Ukulele, Open Paint Studio, Geriatric Jazz Band and Sport Conditioning
 - Created a separate page for all my work projects and one separate page for my personal projects, and then I updated the website menu. Now that I'm using Jekyll, the whole thing took only about 3 seconds it was awesome :) I love Jekyll!!
+- Moved the [email address extractor](https://claudielarouche.com/projects/email-address-extractor/) to the new look and feel
 - (before that I did tons of stuff but I didn't keep track sorry! ;)
