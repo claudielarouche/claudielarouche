@@ -113,13 +113,13 @@ I was hoping to automatically extract the information from the 21 different webs
 
 Thankfully, most playgroups follow the same logic week after week. 
 
-So what I ended up doing is basically emailing every organization to ask them if they had any planned changes to the schedule for the following month or planned closure. 
+So I initially manually extracted the logic of each playgroup that I placed in Google Sheets. Then, once a month, I emailed every EarlyON organization to ask them if they had any planned changes to the schedule for the following month or planned closure. 
 
-Then I'd make the appropriate changes in a Google Sheet document. 
+Once everyone responded, I generated a final Google Sheet schedule for the month based on the weekly logic and planned closure. 
 
-Then I'd export the Google Sheet to CSV. 
+Then I exported the Google Sheet to CSV. 
 
-Then I'd save the Google Sheet to Github pages. 
+Then I saved the Google Sheet to Github pages where my website is hosted. 
 
 ...and then the data was up to date for another month :) 
 
