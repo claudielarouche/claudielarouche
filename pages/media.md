@@ -15,8 +15,8 @@ Here are some interviews I have given, articles written about my projects, confe
 ---
 
 ## 📣 Presentation for Civic Tech Meetup
-![Civic Tech Ad](/assets/img/civic-tech-ad.jpg)  
-![Civic Tech Talk](/assets/img/civic-tech-Claudie.jpg)  
+![Civic Tech Ad]({{ '/assets/img/civic-tech-ad.jpg' | relative_url }})  
+![Civic Tech Talk]({{ '/assets/img/civic-tech-Claudie.jpg' | relative_url }})  
 **Type:** 15 minutes presentation  
 **Date:** May 21, 2025  
 [Meetup event](https://www.meetup.com/yow_ct/events/307537719/){:target="_blank" rel="noopener noreferrer"}  
@@ -24,7 +24,7 @@ Here are some interviews I have given, articles written about my projects, confe
 ---
 
 ## 📣 Presentation for Ottawa Python Authors Meetup
-![Python Meetup](/assets/img/Python-Meetup-2025.jpg)  
+![Python Meetup]({{ '/assets/img/Python-Meetup-2025.jpg' | relative_url }})  
 **Type:** 45 minutes presentation  
 **Date:** May 6, 2025  
 [Meetup event](https://www.meetup.com/ottawapython/events/307545401/){:target="_blank" rel="noopener noreferrer"}  
@@ -32,7 +32,7 @@ Here are some interviews I have given, articles written about my projects, confe
 ---
 
 ## 📣 Drupalcamp Ottawa - EvolveUX 
-![Drupal Camp](/assets/img/drupal-camp-2025.jpg)  
+![Drupal Camp]({{ '/assets/img/drupal-camp-2025.jpg' | relative_url }})  
 **Type:** Quick Feedback Session about my [City of Ottawa Library Programs](/projects/library) website  
 **Date:** May 2, 2025  
 **Details:** An interactive, engaging, and collaborative space where designers, developers, and digital professionals come together to learn, share, and improve their projects.  
@@ -42,8 +42,8 @@ Here are some interviews I have given, articles written about my projects, confe
 
 ## 📣 Presentation for R-Ladies Ottawa  
 
-![Ad for R-Ladies talk](/assets/img/R-Ladies-Ad.jpg)
-![Presentation at R-Ladies talk](/assets/img/R-Ladies-Talk.png)
+![Ad for R-Ladies talk]({{ '/assets/img/R-Ladies-Ad.jpg' | relative_url }})  
+![Presentation at R-Ladies talk]({{ '/assets/img/R-Ladies-Talk.png' | relative_url }})
 
 **Type:** 45 minutes Presentation  
 **Date:** March 18, 2025  
