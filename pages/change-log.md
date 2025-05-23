@@ -28,4 +28,6 @@ permalink: /change-log/
 - Created a separate page for all my work projects and one separate page for my personal projects, and then I updated the website menu. Now that I'm using Jekyll, the whole thing took only about 3 seconds it was awesome :) I love Jekyll!!
 - Moved the [email address extractor](https://claudielarouche.com/projects/email-address-extractor/) to the new look and feel
 - I received questions about how reservations work with the City of Ottawa drop-ins, so I added a note to explain that on all the City of Ottawa drop-in pages.
+- I did a presentation at the Civic Tech Ottawa Meetup, so I added a few pictures of the event to the media page
+- OMG! On May 23, 2025, I received my VERY FIRST coffee (there's a link to buy me a coffee in the footer of my website). I am super excited!
 - (before that I did tons of stuff but I didn't keep track sorry! ;)
