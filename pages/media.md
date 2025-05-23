@@ -68,7 +68,7 @@ Here are some interviews I have given, articles written about my projects, confe
 
 ## 📺 CTV Morning Show Ottawa  
 
-![Claudie at CTV Morning Show](/assets/img/CTV-Morning-Show-Claudie.jpg){:target="_blank" rel="noopener noreferrer"}
+![Claudie at CTV Morning Show]({{ '/assets/img/CTV-Morning-Show-Claudie.jpg' | relative_url }})  
 
 **Type:** TV morning show appearance  
 **Date:** May 1, 2024  
@@ -77,7 +77,7 @@ Here are some interviews I have given, articles written about my projects, confe
 ---
 
 ## 🎙️ As It Happens (CBC National Radio)  
-![As It Happens](/assets/img/as-it-happens.png)  
+![As It Happens]({{ '/assets/img/as-it-happens.png' | relative_url }})  
 **Type:** Pre-recorded interview  
 **Date:** April 26, 2024  
 **Details:** My segment starts at 35:50  
@@ -100,7 +100,7 @@ Here are some interviews I have given, articles written about my projects, confe
 ---
 
 ## 📰 CBC News (Online Article)  
-![CBC Article](/assets/img/cbc-article.png)  
+![CBC Article]({{ '/assets/img/cbc-article.png' | relative_url }})  
 **Title:** "This Ottawa parent was frustrated by the city’s website. So she built her own."  
 **Date:** April 25, 2024  
 [Read the article](https://www.cbc.ca/news/canada/ottawa/ottawa-recreation-schedule-booking-app-website-1.7183398){:target="_blank" rel="noopener noreferrer"}
@@ -108,7 +108,7 @@ Here are some interviews I have given, articles written about my projects, confe
 ---
 
 ## 🎙️ Les matins d’ici (Radio-Canada) – Entrevue en direct  
-![CBC Article](/assets/img/cbc-french.png)  
+![CBC Article]({{ '/assets/img/cbc-french.png' | relative_url }})  
 **Type:** Radio interview  
 **Date:** April 25, 2024  
 [Listen to the interview (French)](https://ici.radio-canada.ca/ohdio/premiere/emissions/Les-matins-d-ici/segments/entrevue/495095/intelligence-artificielle-inscription-loisirs-activites-ottawa){:target="_blank" rel="noopener noreferrer"}
@@ -116,7 +116,7 @@ Here are some interviews I have given, articles written about my projects, confe
 ---
 
 ## 📰 Radio-Canada (Article)  
-![CBC Article](/assets/img/cbc-french-2.png)  
+![CBC Article]({{ '/assets/img/cbc-french-2.png' | relative_url }})  
 **Title:** "Une mère de famille d’Ottawa crée un outil pour trouver des activités"  
 **Date:** April 25, 2024  
 [Read the article](https://ici.radio-canada.ca/nouvelle/2067653/trouver-activite-ottawa-programme){:target="_blank" rel="noopener noreferrer"}
@@ -124,6 +124,6 @@ Here are some interviews I have given, articles written about my projects, confe
 ---
 
 ## 📰 Reddit Ottawa – CBC article featured  
-![CBC Article](/assets/img/reddit.png)  
+![CBC Article]({{ '/assets/img/reddit.png' | relative_url }})  
 **Type:** Reddit thread sharing CBC story  
 [View the Reddit post](https://www.reddit.com/r/ottawa/s/4gQiJiqtYm){:target="_blank" rel="noopener noreferrer"}
