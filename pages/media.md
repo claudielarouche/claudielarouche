@@ -14,11 +14,20 @@ Here are some interviews I have given, articles written about my projects, confe
 
 ---
 
+## 📣 Presentation for Civic Tech Meetup
+![Civic Tech Ad](/assets/img/civic-tech-ad.jpg)  
+![Civic Tech Talk](/assets/img/civic-tech-Claudie.jpg)  
+**Type:** 15 minutes presentation  
+**Date:** May 21, 2025  
+[Meetup event](https://www.meetup.com/yow_ct/events/307537719/){:target="_blank" rel="noopener noreferrer"}  
+
+---
+
 ## 📣 Presentation for Ottawa Python Authors Meetup
 ![Python Meetup](/assets/img/Python-Meetup-2025.jpg)  
 **Type:** 45 minutes presentation  
 **Date:** May 6, 2025  
-[Meetup event](https://www.meetup.com/ottawapython/events/307545401/)  
+[Meetup event](https://www.meetup.com/ottawapython/events/307545401/){:target="_blank" rel="noopener noreferrer"}  
 
 ---
 
