@@ -28,7 +28,7 @@ For example, here's how you would format text:
 Normal paragraph text with **bold**, *italic*, ~~strikethrough~~, and `inline code`.
 ```
 
-And the result: 
+And the result:  
 Normal paragraph text with **bold**, *italic*, ~~strikethrough~~, and `inline code`.
 
 And here is an example of a pre-programmed component. In this case, the URL, text, colour and size are all customizable:
@@ -43,6 +43,7 @@ And here is an example of a pre-programmed component. In this case, the URL, tex
 %}
 {% endraw %}
 ```
+And the result:  
 
 {% include custom_button.html
    url="http://claudielarouche.com"
