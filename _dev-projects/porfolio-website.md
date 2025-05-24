@@ -36,19 +36,19 @@ And here is an example of a pre-programmed component. In this case, the URL, tex
 ```
 {% raw %}
 {% include button.html
-   url="mailto:claudielarouche@gmail.com"
-   text="Email Me"
+   url="http://claudielarouche.com"
+   text="Go somewhere fun"
    color="red"
-   size="small"
+   size="medium"
 %}
 {% endraw %}
 ```
 
 {% include custom_button.html
-   url="mailto:claudielarouche@gmail.com"
-   text="Email Me"
+   url="http://claudielarouche.com"
+   text="Go somewhere fun"
    color="danger"
-   size="small"
+   size="medium"
 %}
 
 ## What you get
