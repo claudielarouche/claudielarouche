@@ -31,7 +31,7 @@ Normal paragraph text with **bold**, *italic*, ~~strikethrough~~, and `inline co
 And the result: 
 Normal paragraph text with **bold**, *italic*, ~~strikethrough~~, and `inline code`.
 
-And here is an example of a pre-programmed component:
+And here is an example of a pre-programmed component. In this case, the URL, text, colour and size are all customizable:
 
 ```
 {% include button.html
@@ -55,3 +55,24 @@ You can visit [Claudie's Portfolio Website Example](https://claudielarouche.gith
 
 ## Cost
 
+| Product | Price | 
+|---------|-------|-----------|
+| Initial Setup | $100 | 
+| Hosting fee | $0 | 
+| Custom domain fee (optional) | Approximately $20 per year |
+
+## Frequently Asked Questions
+
+### How long will it take for my portfolio website to be setup
+
+Once a purchase is made, my commitment to you is to have everything ready to use within a week.
+
+### Do you provide training on how to customize my website?
+
+All the documentation you will need to customize your website is located here. [TODO: Add link]  
+
+If you still need one-on-one assistance, you can hire me for an hourly fee.
+
+### How is it possible that there is no recurring hosting fee? 
+
+Your portfolio website will be hosted for free on Github Pages [TODO: Add link]. Please make sure you read Github Pages guidelines (for example, you shouldn't be directly selling products or )
