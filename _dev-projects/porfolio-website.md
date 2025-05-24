@@ -9,7 +9,6 @@ layout: dev
 ---
 
 Todo: 
-- Create instructions for the creation of Github account
 - Create the product in Paypal and add a link to purchase it (fix 2nd step under how it works)
 - Add more content to the demo website
 - Add a few more "buy now" buttons
@@ -25,7 +24,7 @@ I would be thrilled to help!
   - Click Sign up.
   - Follow the prompts to create your personal account.
 
-2. You purchase your Portfolio Website here (and include the link to your github account)
+2. Purchase your Portfolio Website here (you'll need to include your Github username)
 
 3. I set up your portfolio website and give you all the access you need. You can use a Github URL which costs nothing, or you can use a custom URL which would cost you about $20 a year. 
 
