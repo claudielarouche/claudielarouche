@@ -78,3 +78,7 @@ If you still need one-on-one assistance, you can hire me for an hourly fee.
 ### How is it possible that there is no recurring hosting fee? 
 
 Your portfolio website will be hosted for free on Github Pages [TODO: Add link]. Please make sure you read Github Pages guidelines (for example, you shouldn't be directly selling products or )
+
+### What if I need a custom component that does not currently exist?
+
+You can purchase additional components any time. For each additional component, I will provide a quote beforehand. But the beauty of it is that if I create a component for one client, I can make it available to ALL clients. New components will be added over time and the documentation page will be updated to demonstrate how to use the component. 
