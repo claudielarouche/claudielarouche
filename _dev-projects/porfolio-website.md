@@ -34,12 +34,14 @@ Normal paragraph text with **bold**, *italic*, ~~strikethrough~~, and `inline co
 And here is an example of a pre-programmed component. In this case, the URL, text, colour and size are all customizable:
 
 ```
+{% raw %}
 {% include button.html
    url="mailto:claudielarouche@gmail.com"
    text="Email Me"
    color="red"
    size="small"
 %}
+{% endraw %}
 ```
 
 {% include custom_button.html
