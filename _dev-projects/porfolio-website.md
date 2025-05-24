@@ -34,10 +34,10 @@ Normal paragraph text with **bold**, *italic*, ~~strikethrough~~, and `inline co
 And here is an example of a pre-programmed component:
 
 ```
-{% include custom_button.html
+{% include button.html
    url="mailto:claudielarouche@gmail.com"
    text="Email Me"
-   color="blue"
+   color="red"
    size="small"
 %}
 ```
@@ -45,7 +45,7 @@ And here is an example of a pre-programmed component:
 {% include custom_button.html
    url="mailto:claudielarouche@gmail.com"
    text="Email Me"
-   color="blue"
+   color="danger"
    size="small"
 %}
 
