@@ -20,7 +20,10 @@ I would be thrilled to help!
 
 ## How it works
 
-1. You create a Github account (instructions coming soon)
+1. You create a Github account
+  - Navigate to [https://github.com/](https://github.com/){:target="_blank" rel="noopener noreferrer"}.
+  - Click Sign up.
+  - Follow the prompts to create your personal account.
 
 2. You purchase your Portfolio Website here (and include the link to your github account)
 
