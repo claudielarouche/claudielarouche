@@ -54,7 +54,7 @@ And the result:
 
 ## What you get
 
-You can visit [Claudie's Portfolio Website Example](https://claudielarouche.github.io/portfolio-test/) to see a demo of the type of website you get. 
+You can visit [Claudie's Portfolio Website Example](https://claudielarouche.github.io/portfolio-test/){:target="_blank" rel="noopener noreferrer"} to see a demo of the type of website you get. 
 
 ## Cost
 
@@ -83,3 +83,11 @@ Your portfolio website will be hosted for free on [Github Pages](https://pages.g
 ### What if I need a custom component that does not currently exist?
 
 You can purchase additional components any time. For each additional component, I will provide a quote beforehand. But the beauty of it is that if I create a component for one client, I can make it available to ALL clients. New components will be added over time and the documentation page will be updated to demonstrate how to use the component. 
+
+### Can I add new pages to my website?
+
+Yes! As many as you want! And you can customize which page(s) appears in your top menu
+
+### Can I create a blog?
+
+Yes! Your portfolio website also supports blogs
