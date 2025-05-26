@@ -5,7 +5,7 @@ image:
 image_hero: 
 permalink: /dev-projects/portfolio-website/
 tags: [Products]
-layout: dev
+layout: product-dev
 ---
 
 Todo: 
@@ -64,6 +64,13 @@ And the result:
 
 You can visit [Claudie's Portfolio Website Example](https://claudielarouche.github.io/portfolio-test/){:target="_blank" rel="noopener noreferrer"} to see a demo of the type of website you get. 
 
+<div id="paypal-container-YXRHGMZRBGPTQ"></div>
+<script>
+  paypal.HostedButtons({
+    hostedButtonId: "YXRHGMZRBGPTQ",
+  }).render("#paypal-container-YXRHGMZRBGPTQ")
+</script>
+
 ## Cost
 
 | Product | Price | 
@@ -71,6 +78,13 @@ You can visit [Claudie's Portfolio Website Example](https://claudielarouche.gith
 | Initial Setup | $100 | 
 | Hosting fee | $0 | 
 | Custom domain fee (optional) | Approximately $20 per year |
+
+<div id="paypal-container-YXRHGMZRBGPTQ"></div>
+<script>
+  paypal.HostedButtons({
+    hostedButtonId: "YXRHGMZRBGPTQ",
+  }).render("#paypal-container-YXRHGMZRBGPTQ")
+</script>
 
 ## Frequently Asked Questions
 
@@ -99,3 +113,10 @@ Yes! As many as you want! And you can customize which page(s) appears in your to
 ### Can I create a blog?
 
 Yes! Your portfolio website also supports blogs
+
+<div id="paypal-container-YXRHGMZRBGPTQ"></div>
+<script>
+  paypal.HostedButtons({
+    hostedButtonId: "YXRHGMZRBGPTQ",
+  }).render("#paypal-container-YXRHGMZRBGPTQ")
+</script>

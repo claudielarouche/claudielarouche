@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head-product.html -%}
+
+  <body>
+
+    {%- include header-dev.html -%}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper container py-4">
+        {{ content }}
+      </div>
+    </main>
+
+      <section class="feedback-section">
+    <div class="form-wrapper">
+      <h2 id="newsletter">Stay up to date!</h2>
+      <iframe 
+        src="https://docs.google.com/forms/d/e/1FAIpQLSfWDjzio_bwHSKPeTHnNq5Yks1cDIo4cN_nlP6Ir-lzz4AqqQ/viewform?embedded=true" 
+        width="100%" 
+        height="500" 
+        frameborder="0" 
+        marginheight="0" 
+        marginwidth="0">
+        Loading…
+      </iframe>
+    </div>
+  </section>
+
+
+    {%- include footer-dev.html -%}
+    {% if page.js %}
+      {% for script in page.js %}
+        <script src="{{ script | relative_url }}"></script>
+      {% endfor %}
+    {% endif %}
+
+  </body>
+
+</html>
+

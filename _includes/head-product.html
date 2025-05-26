@@ -1,0 +1,33 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {%- seo -%}
+
+    <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+    {%- feed_meta -%}
+    {% if jekyll.environment == "production" %}
+      {% if site.google_analytics %}
+        
+        {% if site.baseurl != "/claudielarouche" %}
+          {% unless page.exclude_ga %}
+            {% include google-analytics.html %}
+          {% endunless %}
+        {% endif %}
+      
+      {% endif %}
+    {% endif %}
+    <link rel="stylesheet" href="{{ "/assets/css/custom.css" | relative_url }}">
+    {% if page.css %}
+      {% for sheet in page.css %}
+        <link rel="stylesheet" href="{{ sheet | relative_url }}">
+      {% endfor %}
+    {% endif %}
+
+    <script 
+    src="https://www.paypal.com/sdk/js?client-id=BAAYn0_mqCkYOG2x-RVuDfh1oXeRayMzK_RTXAlf678I86JFzrYumYxome3qMmg5zltfjINqkxPTUCwCak&components=hosted-buttons&disable-funding=venmo&currency=CAD">
+    </script>
+
+  </head>
+
+
