@@ -9,27 +9,21 @@ layout: dev
 ---
 
 Todo: 
-- Create the product in Paypal and add a link to purchase it
 - Add more content to the demo website (blog post and add images and different formating in the text)
-- Add "buy now" buttons
 - Write documentation
 
 Do you like my website? Would you like to have a similar website for your own projects?  
 
-I would be thrilled to help!  
+I would be thrilled to help setting it up for a very reasonable price and **no ongoing cost**!
 
-## How to set it up
+## What you get
 
-1. Create a Github account
-  - Navigate to [https://github.com/](https://github.com/){:target="_blank" rel="noopener noreferrer"}.
-  - Click Sign up.
-  - Follow the prompts to create your personal account.
+A website that is:
+- Easy to update
+- Customizable
+- With a clean look and feel
 
-2. Purchase your Portfolio Website (keep scrolling). You'll need to include your Github username.
-
-3. Next, I'll set up your portfolio website and give you all the access you need. You can use a Github URL which costs nothing, or you can use a custom URL which would cost you about $20 a year. 
-
-4. Create the content for your website by creating pages in Markdown and by adding pre-programmed components. 
+You don't need to know HTML, but you will need to know Markdown. 
 
 For example, here's how text formatting works in Markdown: 
 
@@ -63,9 +57,22 @@ And the result:
 
 ## Demo
 
-You can visit [Claudie's Portfolio Website Example](https://claudielarouche.github.io/portfolio-test/){:target="_blank" rel="noopener noreferrer"} to see a demo of the type of website you get. 
+You can visit [Claudie's Portfolio Website Example](https://claudielarouche.github.io/portfolio-test/){:target="_blank" rel="noopener noreferrer"} to see a demo of the type of website you get and what the content would look like. 
 
+## How to set it up
 
+Are you convinced? Here are the 4 steps to follow in order to set it up. 
+
+1. Create a Github account
+  - Navigate to [https://github.com/](https://github.com/){:target="_blank" rel="noopener noreferrer"}.
+  - Click Sign up.
+  - Follow the prompts to create your personal account.
+
+2. Purchase your Portfolio Website (keep scrolling). Please include your Github username during the checkout process (but no worries if you forget, I'll get in touch)
+
+3. Next, I'll set up your portfolio website and give you all the access you need. You can use a Github URL which costs nothing, or you can use a custom URL which would cost you about $20 a year. 
+
+4. Create the content for your website by creating pages in Markdown and by adding pre-programmed components. 
 
 ## Cost
 
@@ -75,15 +82,12 @@ You can visit [Claudie's Portfolio Website Example](https://claudielarouche.gith
 | Hosting fee | $0 | 
 | Custom domain fee (optional) | Approximately $20 per year |
 
-
-
 <style>.pp-YXRHGMZRBGPTQ{text-align:center;border:none;border-radius:0.25rem;min-width:11.625rem;padding:0 2rem;height:2.625rem;font-weight:bold;background-color:#FFD140;color:#000000;font-family:"Helvetica Neue",Arial,sans-serif;font-size:1rem;line-height:1.25rem;cursor:pointer;}</style>
 <form action="https://www.paypal.com/ncp/payment/YXRHGMZRBGPTQ" method="post" target="_blank" style="display:inline-grid;justify-items:center;align-content:start;gap:0.5rem;">
     <input class="pp-YXRHGMZRBGPTQ" type="submit" value="Buy Now" />
     <img src="https://www.paypalobjects.com/images/Debit_Credit_APM.svg" alt="cards" />
     <section style="font-size: 0.75rem;"> Powered by <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg" alt="paypal" style="height:0.875rem;vertical-align:middle;"/></section>
 </form>
-
 
 ## Frequently Asked Questions
 
@@ -115,7 +119,7 @@ Yes! Your portfolio website also supports blogs
 
 ### What if I change my mind and I want a refund after all?
 
-No problem, just ask and I will send you a refund. 
+If you are not happy with the product, I provide refunds if it is requested within 60 days of purchase.
 
 <style>.pp-YXRHGMZRBGPTQ{text-align:center;border:none;border-radius:0.25rem;min-width:11.625rem;padding:0 2rem;height:2.625rem;font-weight:bold;background-color:#FFD140;color:#000000;font-family:"Helvetica Neue",Arial,sans-serif;font-size:1rem;line-height:1.25rem;cursor:pointer;}</style>
 <form action="https://www.paypal.com/ncp/payment/YXRHGMZRBGPTQ" method="post" target="_blank" style="display:inline-grid;justify-items:center;align-content:start;gap:0.5rem;">
