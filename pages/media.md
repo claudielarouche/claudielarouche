@@ -15,8 +15,8 @@ Here are some interviews I have given, articles written about my projects, confe
 ---
 
 ## 📣 Presentation for Civic Tech
-![Civic Tech ad](/assets/img/civic-tech-ad.jpg)  
-![Civic Tech Presentation](/assets/img/civic-tech-Claudie.jpg)  
+![Civic Tech ad]({{ '/assets/img/civic-tech-ad.jpg' | relative_url }})  
+![Civic Tech Presentation]({{ '/assets/img/civic-tech-Claudie.jpg' | relative_url }})  
 **Type:** 15 minutes presentation  
 **Date:** May 21, 2025  
 [Meetup event](https://www.meetup.com/yow_ct/events/307537719){:target="_blank" rel="noopener noreferrer"}    
