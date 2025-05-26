@@ -81,9 +81,9 @@ You can visit [Claudie's Portfolio Website Example](https://claudielarouche.gith
 
 <style>.pp-YXRHGMZRBGPTQ{text-align:center;border:none;border-radius:0.25rem;min-width:11.625rem;padding:0 2rem;height:2.625rem;font-weight:bold;background-color:#FFD140;color:#000000;font-family:"Helvetica Neue",Arial,sans-serif;font-size:1rem;line-height:1.25rem;cursor:pointer;}</style>
 <form action="https://www.paypal.com/ncp/payment/YXRHGMZRBGPTQ" method="post" target="_blank" style="display:inline-grid;justify-items:center;align-content:start;gap:0.5rem;">
-  <input class="pp-YXRHGMZRBGPTQ" type="submit" value="Buy Now" />
-  <img src=https://www.paypalobjects.com/images/Debit_Credit_APM.svg alt="cards" />
-  <section style="font-size: 0.75rem;"> Powered by <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg" alt="paypal" style="height:0.875rem;vertical-align:middle;"/></section>
+<input class="pp-YXRHGMZRBGPTQ" type="submit" value="Buy Now" />
+<img src=https://www.paypalobjects.com/images/Debit_Credit_APM.svg alt="cards" />
+<section style="font-size: 0.75rem;"> Powered by <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg" alt="paypal" style="height:0.875rem;vertical-align:middle;"/></section>
 </form>
 
 ## Frequently Asked Questions
@@ -114,9 +114,3 @@ Yes! As many as you want! And you can customize which page(s) appears in your to
 
 Yes! Your portfolio website also supports blogs
 
-<div id="paypal-container-YXRHGMZRBGPTQ"></div>
-<script>
-  paypal.HostedButtons({
-    hostedButtonId: "YXRHGMZRBGPTQ",
-  }).render("#paypal-container-YXRHGMZRBGPTQ")
-</script>
