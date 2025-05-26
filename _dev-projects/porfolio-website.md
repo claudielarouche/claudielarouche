@@ -9,28 +9,29 @@ layout: dev
 ---
 
 Todo: 
-- Create the product in Paypal and add a link to purchase it (fix 2nd step under how it works)
-- Add more content to the demo website
-- Add a few more "buy now" buttons
+- Create the product in Paypal and add a link to purchase it
+- Add more content to the demo website (blog post and add images and different formating in the text)
+- Add "buy now" buttons
+- Write documentation
 
-Do you like my website? Would you like to build your own for your own projects?  
+Do you like my website? Would you like to have a similar website for your own projects?  
 
 I would be thrilled to help!  
 
-## How it works
+## How to set it up
 
-1. You create a Github account
+1. Create a Github account
   - Navigate to [https://github.com/](https://github.com/){:target="_blank" rel="noopener noreferrer"}.
   - Click Sign up.
   - Follow the prompts to create your personal account.
 
-2. Purchase your Portfolio Website here (you'll need to include your Github username)
+2. Purchase your Portfolio Website (keep scrolling). You'll need to include your Github username.
 
-3. I set up your portfolio website and give you all the access you need. You can use a Github URL which costs nothing, or you can use a custom URL which would cost you about $20 a year. 
+3. Next, I'll set up your portfolio website and give you all the access you need. You can use a Github URL which costs nothing, or you can use a custom URL which would cost you about $20 a year. 
 
-4. You create the content of your website by creating pages in Markdown and by adding pre-programmed components. 
+4. Create the content for your website by creating pages in Markdown and by adding pre-programmed components. 
 
-For example, here's how you would format text:
+For example, here's how text formatting works in Markdown: 
 
 ```
 Normal paragraph text with **bold**, *italic*, ~~strikethrough~~, and `inline code`.
@@ -60,7 +61,7 @@ And the result:
    size="medium"
 %}
 
-## What you get
+## Demo
 
 You can visit [Claudie's Portfolio Website Example](https://claudielarouche.github.io/portfolio-test/){:target="_blank" rel="noopener noreferrer"} to see a demo of the type of website you get. 
 
