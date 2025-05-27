@@ -1,18 +1,15 @@
 ---
 title: Porfolio Website
 description: Your own portfolio website hosted on Github Pages
-image:
-image_hero: 
-permalink: /dev-projects/portfolio-website/
+image: https://claudielarouche.com/assets/img/projects.jpg
+image_hero: https://claudielarouche.com/assets/img/projects.jpg
+permalink: /projects/portfolio-website/
 tags: [Products]
-layout: dev
+layout: page
+sitemap: false
 ---
 
-Todo: 
-- Add more content to the demo website (blog post and add images and different formating in the text)
-- Write documentation
-
-Do you like my website? Would you like to have a similar website for your own projects?  
+Have you been enjoying my website? Would you like to have a similar website for your own projects?  
 
 I would be thrilled to help setting it up for a very reasonable price and **no ongoing cost**!
 
@@ -23,7 +20,7 @@ A website that is:
 - Customizable
 - With a clean look and feel
 
-You don't need to know HTML, but you will need to know Markdown. 
+You don't need to know HTML, but you will need to learn Markdown. I promise it is easy! And I'll provide tons of documentation. 
 
 For example, here's how text formatting works in Markdown: 
 
@@ -59,9 +56,9 @@ And the result:
 
 You can visit [Claudie's Portfolio Website Example](https://claudielarouche.github.io/portfolio-test/){:target="_blank" rel="noopener noreferrer"} to see a demo of the type of website you get and what the content would look like. 
 
-## How to set it up
+## Setup
 
-Are you convinced? Here are the 4 steps to follow in order to set it up. 
+Are you convinced? Here are the 4 steps to follow in order to set up your own portfolio website.
 
 1. Create a Github account
   - Navigate to [https://github.com/](https://github.com/){:target="_blank" rel="noopener noreferrer"}.
