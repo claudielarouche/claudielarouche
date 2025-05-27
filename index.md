@@ -6,7 +6,7 @@ title: Home
 {% assign categories = "Ottawa,Work,Other,Products,Archive" | split: "," %}
 
 {% for category in categories %}
-  <h2>{{ category }} Projects</h2>
+  <h2>{{ category }}</h2>
   <div class="projects-gallery">
     {% assign filtered = site.projects | where_exp: "item", "item.tags contains category" %}
     {% if filtered.size > 0 %}
