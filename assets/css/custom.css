@@ -497,3 +497,9 @@ button, textarea{
 }
 
 /* END EMAIL EXTRACTOR */
+
+/* reset for paragraphs in footer columns */
+.footer-col p {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
