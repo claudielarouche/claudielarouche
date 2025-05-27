@@ -20,7 +20,7 @@ A website that is:
 - Customizable
 - With a clean look and feel
 
-You don't need to know HTML, but you will need to learn Markdown. I promise it is easy! And I'll provide tons of documentation. 
+You don't need to know HTML, but you will need to learn Markdown. I promise it is easy! And I'll provide tons of documentation (Coming soon!).
 
 For example, here's how text formatting works in Markdown: 
 
@@ -30,27 +30,6 @@ Normal paragraph text with **bold**, *italic*, ~~strikethrough~~, and `inline co
 
 And the result:  
 Normal paragraph text with **bold**, *italic*, ~~strikethrough~~, and `inline code`.
-
-And here is an example of a pre-programmed component. In this case, the URL, text, colour and size are all customizable:
-
-```
-{% raw %}
-{% include button.html
-   url="http://claudielarouche.com"
-   text="Go somewhere fun"
-   color="red"
-   size="medium"
-%}
-{% endraw %}
-```
-And the result:  
-
-{% include custom_button.html
-   url="http://claudielarouche.com"
-   text="Go somewhere fun"
-   color="danger"
-   size="medium"
-%}
 
 ## Demo
 
