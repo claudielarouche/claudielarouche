@@ -17,7 +17,8 @@ addTimeButton.addEventListener("click", () => {
     `;
     if (timeCount > 1) {
         const deleteButton = document.createElement("button");
-        deleteButton.classList.add("deleteTime");
+        deleteButton.classList.add("btn");
+        deleteButton.classList.add("btn-danger");
         deleteButton.textContent = "Delete";
         deleteButton.addEventListener("click", () => {
             newTimeInputDiv.remove();
