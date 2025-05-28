@@ -3,9 +3,9 @@ title: Time difference calculator
 description: Use this calculator to help sum up leave needed when you work multiple blocks during a day
 image: https://claudielarouche.com/assets/img/clocks.jpg
 image_hero: https://claudielarouche.com/assets/img/clocks.jpg
-tags: [Work, hidden]
-permalink: /dev-projects/time-diff/
-layout: dev
+tags: [hidden]
+permalink: /projects/time-diff/
+layout: projects
 js:
   - https://code.jquery.com/jquery-3.6.0.min.js
   - /assets/js/time-diff.js
