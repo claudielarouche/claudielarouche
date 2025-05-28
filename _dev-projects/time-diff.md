@@ -1,19 +1,19 @@
 ---
 title: Time difference calculator
 description: Use this calculator to help sum up leave needed when you work multiple blocks during a day
-image: 
-image_hero: 
+image: https://claudielarouche.com/assets/img/clocks.jpg
+image_hero: https://claudielarouche.com/assets/img/clocks.jpg
 tags: [Work]
 permalink: /dev-projects/time-diff/
 layout: dev
 js:
   - https://code.jquery.com/jquery-3.6.0.min.js
-  - /assets/js/ottawa-drop-ins/time-diff.js
+  - /assets/js/time-diff.js
 css: 
   - https://fonts.googleapis.com/icon?family=Material+Icons
 ---
 
-<button id="addTime">Add More Time Boxes</button>
+<button type="button" class="btn btn-success" id="addTime">Add More Time Boxes</button>
 
 <div id="timeInputs">
     <div class="time-inputs">
@@ -24,7 +24,7 @@ css:
     </div>
 </div>
 
-<button id="calculate">Calculate</button>
+<button type="button" class="btn btn-primary" id="calculate">Calculate</button>
 
 <div id="totalTime"></div>
 

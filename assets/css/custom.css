@@ -503,3 +503,12 @@ button, textarea{
   margin-top: 0;
   margin-bottom: 1.5rem;
 }
+
+/* START TIME DIFF */
+
+.time-inputs > label {
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+
+/* END TIME DIFF */
