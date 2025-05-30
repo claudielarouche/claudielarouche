@@ -26,6 +26,8 @@ css:
 
 <button type="button" class="btn btn-primary" id="calculate">Calculate</button>
 
+<button type="button" class="btn btn-warning" id="reset">Start Over</button>
+
 <div id="totalTime"></div>
 
 ## Why was this tool created

@@ -2,6 +2,9 @@ const addTimeButton = document.getElementById("addTime");
 const calculateButton = document.getElementById("calculate");
 const timeInputs = document.getElementById("timeInputs");
 const totalTimeDisplay = document.getElementById("totalTime");
+const resetButton = document.getElementById("reset");
+
+
 
 addTimeButton.addEventListener("click", () => {
     const newTimeInputDiv = document.createElement("div");
@@ -71,6 +74,27 @@ function initializeTimepickers() {
         });
     });
 }
+
+resetButton.addEventListener("click", () => {
+    // Remove all dynamically added time input rows
+    const allRows = document.querySelectorAll(".time-inputs");
+    
+    allRows.forEach((row, index) => {
+        if (index === 0) {
+            // Reset the first row's inputs
+            const start = row.querySelector(".start-time");
+            const end = row.querySelector(".end-time");
+            if (start) start.value = '';
+            if (end) end.value = '';
+        } else {
+            // Remove dynamically added rows
+            row.remove();
+        }
+    });
+
+    // Clear the output
+    totalTimeDisplay.innerHTML = '';
+});
 
 // Initialize on page load
 initializeTimepickers();
