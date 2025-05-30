@@ -18,9 +18,9 @@ css:
 <div id="timeInputs">
     <div class="time-inputs">
         <label for="start1">Start Time:</label>
-        <input type="time" id="start1" name="start1" class="timepicker">
+        <input type="time" id="start1" name="start1" class="timepicker start-time">
         <label for="end1">End Time:</label>
-        <input type="time" id="end1" name="end1" class="timepicker">
+        <input type="time" id="end1" name="end1" class="timepicker end-time">
     </div>
 </div>
 
