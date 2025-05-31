@@ -1,5 +1,5 @@
 ---
-title: Time difference calculator
+title: Time Difference Calculator
 description: Use this calculator to help sum up leave needed when you work multiple blocks during a day
 image: https://claudielarouche.com/assets/img/clocks.jpg
 image_hero: https://claudielarouche.com/assets/img/clocks.jpg
