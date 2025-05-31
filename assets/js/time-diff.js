@@ -11,6 +11,37 @@ flatpickr(".timepicker", {
 });
 
 addTimeButton.addEventListener("click", () => {
+    const fieldset = document.createElement("fieldset");
+    fieldset.classList.add("time-inputs");
+
+    fieldset.innerHTML = `
+        <legend>Time Block</legend>
+        <label>Start Time:</label>
+        <input type="text" class="timepicker start-time">
+        <label>End Time:</label>
+        <input type="text" class="timepicker end-time">
+    `;
+
+    const deleteButton = document.createElement("button");
+    deleteButton.classList.add("deleteTime", "btn", "btn-danger");
+    deleteButton.textContent = "Delete";
+    deleteButton.addEventListener("click", () => {
+        fieldset.remove();
+    });
+
+    fieldset.appendChild(deleteButton);
+    timeInputs.appendChild(fieldset);
+
+    flatpickr(fieldset.querySelectorAll(".timepicker"), {
+        enableTime: true,
+        noCalendar: true,
+        dateFormat: "H:i",
+    });
+});
+
+
+/*
+addTimeButton.addEventListener("click", () => {
     const newTimeInputDiv = document.createElement("div");
     newTimeInputDiv.classList.add("time-inputs");
     newTimeInputDiv.innerHTML = `
@@ -40,7 +71,7 @@ addTimeButton.addEventListener("click", () => {
         dateFormat: "H:i",
     });
 
-});
+});*/
 
 calculateButton.addEventListener("click", () => {
     let totalTimeInMilliseconds = 0;
