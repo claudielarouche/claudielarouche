@@ -4,7 +4,11 @@ const timeInputs = document.getElementById("timeInputs");
 const totalTimeDisplay = document.getElementById("totalTime");
 const resetButton = document.getElementById("reset");
 
-
+flatpickr(".timepicker", {
+    enableTime: true,
+    noCalendar: true,
+    dateFormat: "H:i",
+});
 
 addTimeButton.addEventListener("click", () => {
     const newTimeInputDiv = document.createElement("div");

@@ -8,9 +8,11 @@ permalink: /projects/time-diff/
 layout: projects
 js:
   - https://code.jquery.com/jquery-3.6.0.min.js
+  - https://cdn.jsdelivr.net/npm/flatpickr
   - /assets/js/time-diff.js
 css: 
   - https://fonts.googleapis.com/icon?family=Material+Icons
+  - https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css
 ---
 
 <button type="button" class="btn btn-success" id="addTime">Add More Time Boxes</button>
