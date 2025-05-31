@@ -15,9 +15,9 @@ addTimeButton.addEventListener("click", () => {
     newTimeInputDiv.classList.add("time-inputs");
     newTimeInputDiv.innerHTML = `
         <label>Start Time:</label>
-        <input type="time" class="timepicker start-time">
+        <input type="text" class="timepicker start-time">
         <label>End Time:</label>
-        <input type="time" class="timepicker end-time">
+        <input type="text" class="timepicker end-time">
     `;
 
     const deleteButton = document.createElement("button");
@@ -30,7 +30,14 @@ addTimeButton.addEventListener("click", () => {
     newTimeInputDiv.appendChild(deleteButton);
     timeInputs.appendChild(newTimeInputDiv);
 
-    initializeTimepickers(); // Optional: if you use time picker library
+
+
+    flatpickr(newTimeInputDiv.querySelectorAll(".timepicker"), {
+        enableTime: true,
+        noCalendar: true,
+        dateFormat: "H:i",
+    });
+
 });
 
 calculateButton.addEventListener("click", () => {
@@ -68,16 +75,7 @@ function parseTime(timeString) {
     return hours * 3600000 + minutes * 60000;
 }
 
-function initializeTimepickers() {
-    const timepickers = document.querySelectorAll('.timepicker');
-    timepickers.forEach((timepicker) => {
-        timepicker.addEventListener('focus', () => {
-            if (!timepicker.value) {
-                // Set default time if needed
-            }
-        });
-    });
-}
+
 
 resetButton.addEventListener("click", () => {
     // Remove all dynamically added time input rows
@@ -100,5 +98,3 @@ resetButton.addEventListener("click", () => {
     totalTimeDisplay.innerHTML = '';
 });
 
-// Initialize on page load
-initializeTimepickers();
