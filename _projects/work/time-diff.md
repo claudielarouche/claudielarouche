@@ -26,8 +26,8 @@ css:
     </fieldset>
   </div>
   <div class="button-group">
-    <button type="button" class="btn btn-success" id="addTime">Add More Time Boxes</button>
     <button type="button" class="btn btn-primary" id="calculate">Calculate</button>
+    <button type="button" class="btn btn-success" id="addTime">Add More Time Boxes</button>
     <button type="button" class="btn btn-warning" id="reset">Start Over</button>
   </div>
 </form>
