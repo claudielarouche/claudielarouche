@@ -88,11 +88,18 @@ calculateButton.addEventListener("click", () => {
 
         if (startTime != null && endTime != null) {
             const timeDiff = endTime - startTime;
-            totalTimeInMilliseconds += timeDiff;
-            const hours = Math.floor(timeDiff / (1000 * 60 * 60));
-            const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
-            const decimalHours = timeDiff / (1000 * 60 * 60);
-            timeDetails += `${startValue} to ${endValue}: ${hours} hours and ${minutes} minutes (${decimalHours.toFixed(2)} hours)<br>`;
+
+            if (timeDiff < 0) {
+                hasNegative = true;
+                timeDetails += `<span style="color:red;">⚠️ ${startValue} to ${endValue}: End time is before start time</span><br>`;
+            } else {
+
+                totalTimeInMilliseconds += timeDiff;
+                const hours = Math.floor(timeDiff / (1000 * 60 * 60));
+                const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+                const decimalHours = timeDiff / (1000 * 60 * 60);
+                timeDetails += `${startValue} to ${endValue}: ${hours} hours and ${minutes} minutes (${decimalHours.toFixed(2)} hours)<br>`;
+            }
         }
     });
 
