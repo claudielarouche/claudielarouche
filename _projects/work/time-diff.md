@@ -18,16 +18,18 @@ css:
 <form id="timeCalcForm">
   <div id="timeInputs">
     <fieldset class="time-inputs">
+      <legend>Time Block</legend>
       <label for="start1">Start Time:</label>
       <input type="text" id="start1" name="start1" class="timepicker start-time">
       <label for="end1">End Time:</label>
       <input type="text" id="end1" name="end1" class="timepicker end-time">
     </fieldset>
   </div>
-
-  <button type="button" class="btn btn-success" id="addTime">Add More Time Boxes</button>
-  <button type="button" class="btn btn-primary" id="calculate">Calculate</button>
-  <button type="button" class="btn btn-warning" id="reset">Start Over</button>
+  <div class="button-group">
+    <button type="button" class="btn btn-success" id="addTime">Add More Time Boxes</button>
+    <button type="button" class="btn btn-primary" id="calculate">Calculate</button>
+    <button type="button" class="btn btn-warning" id="reset">Start Over</button>
+  </div>
 </form>
 
 <div id="totalTime" class="mt-4"></div>

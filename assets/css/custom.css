@@ -511,4 +511,10 @@ button, textarea{
     margin-bottom: .5rem;
 }
 
+.button-group {
+  margin-top: 1.5rem;  /* Adjust as needed */
+  margin-bottom: 1.5rem;
+}
+
+
 /* END TIME DIFF */
