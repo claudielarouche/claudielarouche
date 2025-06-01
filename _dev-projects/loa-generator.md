@@ -16,7 +16,7 @@ Content coming soon
 
 If you have any questions or requests for modifications, please contact Claudie at Claudielarouche@gmail.com  
 
-<!-->
+<!--
 <h2>Coming soon</h2>
 <ul>
 <li>Change all email addresses into clickable links</li>
