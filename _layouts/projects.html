@@ -32,18 +32,20 @@ layout: page
    | where_exp: "p", "p.title != page.title"
 %}
 
-{% if related.size > 0 %}
-  <h2>Other projects you might be interested in</h2>
-  <div class="projects-gallery">
-    {% for p in related %}
-      <div class="project-card">
-        <a href="{{ p.url | relative_url }}">
-          {% if p.image %}
-            <img src="{{ p.image | relative_url }}" alt="{{ p.title }}" />
-          {% endif %}
-          <h3>{{ p.title }}</h3>
-        </a>
-      </div>
-    {% endfor %}
-  </div>
-{% endif %}
+{% unless page.tags contains "hidden" %}
+  {% if related.size > 0 %}
+    <h2>Other projects you might be interested in</h2>
+    <div class="projects-gallery">
+      {% for p in related %}
+        <div class="project-card">
+          <a href="{{ p.url | relative_url }}">
+            {% if p.image %}
+              <img src="{{ p.image | relative_url }}" alt="{{ p.title }}" />
+            {% endif %}
+            <h3>{{ p.title }}</h3>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+{% endunless %}
