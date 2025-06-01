@@ -214,7 +214,7 @@ Supporting Task 3</textarea>
 
 <p>The linguistic profile of the position is confirmed to be <strong><span id="linguisticProfileDisplay">CBC/CBC</span></strong>, which the home department confirms the Free Agent currently meets.</p>
 
-<p>3.7 <strong>Security</strong>: The host department confirms that the security requirement of the position is <strong><span id="clearanceDisplay">secret clearance<span></strong>, which the home department confirms the Free Agent currently meets.</p>
+<p>3.7 <strong>Security</strong>: The host department confirms that the security requirement of the position is <strong><span id="clearanceDisplay">secret clearance</span></strong>, which the home department confirms the Free Agent currently meets.</p>
 
 <p>3.8 <strong>Overtime</strong>: If a Free Agent accrues overtime approved by the host manager during the period covered by the Agreement, the Free Agent can take time in lieu, which <strong>must be taken during the assignment</strong> and must not replace regular vacation leave as provided in section 3.4.</p>
 
@@ -312,6 +312,3 @@ Natural Resources Canada | Ressources naturelles Canada<br>
 
 <p id="supportingTasksParagraph"><strong>Supporting Tasks </strong></p>
 <div id="supportingTasksDisplay"></div>
-
-</div>
-
