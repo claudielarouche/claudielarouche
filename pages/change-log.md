@@ -30,4 +30,6 @@ permalink: /change-log/
 - I received questions about how reservations work with the City of Ottawa drop-ins, so I added a note to explain that on all the City of Ottawa drop-in pages.
 - I did a presentation at the Civic Tech Ottawa Meetup, so I added a few pictures of the event to the media page
 - OMG! On May 23, 2025, I received my VERY FIRST coffee (there's a link to buy me a coffee in the footer of my website). I am super excited!
+- I hope people won't be overly annoyed with me but I decided to add ads to my website and create a bit of revenue (so I can reinvest in the website to make it even better!)
+- I redid my [time difference tool](https://claudielarouche.com/projects/time-diff/) on the new look and feel (and actually fixed a few bugs while I was at it)
 - (before that I did tons of stuff but I didn't keep track sorry! ;)
