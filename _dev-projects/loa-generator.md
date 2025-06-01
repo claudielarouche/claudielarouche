@@ -1,8 +1,8 @@
 ---
 title: Letter of Agreement Generator
 description: Letter of Agreement Generator for the Free Agent Program
-image: https://claudielarouche.com/assets/img/kindergym.jpg
-image_hero: https://claudielarouche.com/assets/img/kindergym.jpg
+image: https://claudielarouche.com/assets/img/printer.jpg
+image_hero: https://claudielarouche.com/assets/img/printer.jpg
 tags: [hidden]
 permalink: /dev-projects/loa-generator/
 layout: dev
