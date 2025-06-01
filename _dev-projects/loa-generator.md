@@ -153,16 +153,16 @@ If you have any questions or requests for modifications, please contact Claudie 
         <label for="mainTasks" class="col-sm-2 col-form-label">Main Tasks:</label>
         <div class="col-sm-10">
             <textarea class="form-control" id="mainTasks" name="mainTasks" rows="10">Main Task 1
-            Main Task 2
-            Main Task 3</textarea>
+Main Task 2
+Main Task 3</textarea>
         </div>
     </div>
     <div class="form-group row">
         <label for="supportingTasks" class="col-sm-2 col-form-label">Supporting Tasks (optional):</label>
         <div class="col-sm-10">
             <textarea class="form-control" id="supportingTasks" name="supportingTasks" rows="10">Supporting Task 1
-            Supporting Task 2
-            Supporting Task 3</textarea>
+Supporting Task 2
+Supporting Task 3</textarea>
         </div>
     </div>
     <button type="button" class="btn btn-primary" onclick="generateAgreement()">Generate Letter of Agreement</button>
