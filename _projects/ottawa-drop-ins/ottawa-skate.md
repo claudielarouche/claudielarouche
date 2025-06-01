@@ -20,7 +20,7 @@ css:
 
 {% include ottawa-drop-ins/message.html %}    
 
-Please see [OttawaPublicSkating.ca](https://www.ottawapublicskating.ca/){:target="_blank" rel="noopener noreferrer"} for another great resource for finding skating timeslots in Ottawa.
+Please see [OttawaPublicSkating.ca](https://www.ottawapublicskating.ca/){:target="_blank" rel="noopener noreferrer"} for another great resource for finding skating timeslots in Ottawa.  
 
 {% include ottawa-drop-ins/header.html %}      
 
