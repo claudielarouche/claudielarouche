@@ -4,21 +4,29 @@ description: Letter of Agreement Generator for the Free Agent Program
 image: https://claudielarouche.com/assets/img/printer.jpg
 image_hero: https://claudielarouche.com/assets/img/printer.jpg
 tags: [hidden]
-permalink: /dev-projects/loa-generator/
-layout: dev
+permalink: /projects/loa-generator/
+layout: projects
 js:
   - https://code.jquery.com/jquery-3.5.1.slim.min.js
   - /assets/js/loa-generator.js
 css: 
 ---
 
-If you have any questions or requests for modifications, please contact Claudie at Claudielarouche@gmail.com  
+If you have any questions or requests for modifications, please contact Claudie at claudielarouche@gmail.com  
+
+## How to use this tool
+
+1. In the form below, replace the example values with the correct ones. If you don't know one of the values, you can put TBD until it is figured out
+2. Click on "Generate Letter of Agreement" 
+3. The Letter of Agreement content will appear on the screen below the form. Take that content, copy it to the clipboard and paste it in Word
+4. The Letter of Agreement can then be saved as a PDF form for signatures (make sure you replace all the TBD values before saving to PDF)
+5. If you want to save the LOA content and work on it later, you can click on "Save Form Data". This will save a JSON file to your computer
+6. Later, when you want to continue working on the LOA you previously saved, click on "Load Form Data" and select the JSON file you saved in step 5. The form content will be replaced with all the values you had previously entered, so that you can continue working on that particular LOA. 
 
 <!--
 <h2>Coming soon</h2>
 <ul>
 <li>Change all email addresses into clickable links</li>
-<li>Create different versions for different home departments</li>
 <li>Maybe more! Submit your ideas to Claudie! </li>
 </ul>
 -->
