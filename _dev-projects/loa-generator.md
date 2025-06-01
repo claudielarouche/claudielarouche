@@ -12,9 +12,6 @@ js:
 css: 
 ---
 
-Content coming soon
-
-
 If you have any questions or requests for modifications, please contact Claudie at Claudielarouche@gmail.com  
 
 <!--
@@ -23,7 +20,6 @@ If you have any questions or requests for modifications, please contact Claudie 
 <li>Change all email addresses into clickable links</li>
 <li>Create different versions for different home departments</li>
 <li>Maybe more! Submit your ideas to Claudie! </li>
-
 </ul>
 -->
 <form id="agreementForm">
