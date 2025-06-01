@@ -162,12 +162,14 @@ Supporting Task 2
 Supporting Task 3</textarea>
         </div>
     </div>
-    <button type="button" class="btn btn-primary" onclick="generateAgreement()">Generate Letter of Agreement</button>
-	<!-- Save button -->
-    <button type="button" class="btn btn-success" onclick="saveFormData()">Save Form Data</button>
-    <!-- Load button -->
-    <input type="file" id="fileInput" style="display: none;">
-    <button type="button" class="btn btn-info" onclick="loadFormData()">Load Form Data</button>
+    <div class="button-group">
+        <button type="button" class="btn btn-primary" onclick="generateAgreement()">Generate Letter of Agreement</button>
+	    <!-- Save button -->
+        <button type="button" class="btn btn-success" onclick="saveFormData()">Save Form Data</button>
+        <!-- Load button -->
+        <input type="file" id="fileInput" style="display: none;">
+        <button type="button" class="btn btn-info" onclick="loadFormData()">Load Form Data</button>
+    </div>
 
 	
 </form>
