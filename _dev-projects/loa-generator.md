@@ -8,7 +8,7 @@ permalink: /dev-projects/loa-generator/
 layout: dev
 js:
   - https://code.jquery.com/jquery-3.5.1.slim.min.js
-  - /assets/js/ottawa-drop-ins/loa-generator.js
+  - /assets/js/loa-generator.js
 css: 
 ---
 
