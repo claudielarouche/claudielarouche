@@ -53,7 +53,8 @@
     resultsDiv.innerHTML = 'Loading URLs...';
 
     try {
-      const response = await fetch('/claudielarouche/assets/data/drr-dp-analyzer.csv'); // Adjust path if needed
+      const response = await fetch('/claudielarouche/assets/data/drr-dp-analyzer.csv'); // path on Github Pages
+      //const response = await fetch('/assets/data/drr-dp-analyzer.csv'); // Path on Netlify
       const csvText = await response.text();
       const lines = csvText.split('\n').filter(Boolean);
       const headers = lines[0].split(',');
@@ -89,7 +90,28 @@
       resultsDiv.innerHTML = '';
 
       if (data.error) {
-        resultsDiv.innerHTML = `<p style="color: red;">${data.error}</p>`;
+        resultsDiv.innerHTML = `<p style="color: red; font-weight: bold; padding: 10px; background-color: #ffe6e6; border: 1px solid #ff9999; border-radius: 5px;">${data.error}</p>`;
+
+        // If there are partial results, show them too
+        if (data.results && data.results.length > 0) {
+          const partialResultsDiv = document.createElement('div');
+          partialResultsDiv.innerHTML = '<h3>Partial Results (before abort):</h3>';
+
+          data.results.forEach(result => {
+            const container = document.createElement('div');
+            container.className = 'result';
+            container.innerHTML = `
+              <strong>URL:</strong> ${result.url}<br>
+              <strong>H1:</strong> ${result.h1}<br>
+              <strong>Matched Content:</strong><br>
+              <div>${result.text}</div>
+            `;
+            partialResultsDiv.appendChild(container);
+            partialResultsDiv.appendChild(document.createElement('hr'));
+          });
+
+          resultsDiv.appendChild(partialResultsDiv);
+        }
         return;
       }
 
