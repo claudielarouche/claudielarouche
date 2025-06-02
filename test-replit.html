@@ -53,7 +53,7 @@
     resultsDiv.innerHTML = 'Loading URLs...';
 
     try {
-      const response = await fetch('/assets/data/drr-dp-analyzer.csv'); // Adjust path if needed
+      const response = await fetch('/claudielarouche/assets/data/drr-dp-analyzer.csv'); // Adjust path if needed
       const csvText = await response.text();
       const lines = csvText.split('\n').filter(Boolean);
       const headers = lines[0].split(',');
