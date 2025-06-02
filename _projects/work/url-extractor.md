@@ -16,7 +16,7 @@ css:
 
 Enter the link of a webpage in the box below and click "Analyze". You can use the default value as an example. The tool will analyze the page and extract all the links in that page, listing them below, one line per URL.  
 
-If this tool is not working, could you please kindly inform me at claudielarouche@gmail.com? Thank you!
+If this tool is not working, could you please kindly inform me at claudielarouche@gmail.com? Thank you!  
 
 <label for="urlInput">Enter a URL:</label><br>
 <input type="text" id="urlInput" value="https://www.canada.ca/en/treasury-board-secretariat/services/departmental-performance-reports/2023-24-departmental-results-reports.html" size="50">
