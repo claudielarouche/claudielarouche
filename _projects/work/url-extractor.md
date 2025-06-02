@@ -16,15 +16,9 @@ css:
 
 Enter the link of a webpage in the box below and click "Analyze". You can use the default value as an example. The tool will analyze the page and extract all the links in that page, listing them below, one line per URL.  
 
-Unfortunately, I am unable to extract content from all web pages, sorry about that!
+<label for="urlInput">Enter a URL:</label><br>
+<input type="text" id="urlInput" placeholder="https://www.canada.ca/en/treasury-board-secretariat/services/departmental-performance-reports/2023-24-departmental-results-reports.html" size="50">
+<button onclick="fetchLinks()">Analyze</button>
 
-
-<label for="urlInput">Enter URL:</label>
-<input type="text" id="urlInput" value="https://www.canada.ca/en/treasury-board-secretariat/services/departmental-performance-reports/2023-24-departmental-results-reports.html">
-<button onclick="analyze()">Analyze</button>
-<div id="result"></div>
-
-
-
-
-
+<p id="status"></p>
+<ul id="linkList"></ul>
