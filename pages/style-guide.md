@@ -117,6 +117,13 @@ For internal links, always use relative_url like this:
 <img src="{{ "/assets/img/logo.png" | relative_url }}" alt="logo">
 ```
 
+Mailto link: [claudielarouche@gmail.com](mailto:claudielarouche@gmail.com)
+
+
+```
+Mailto link: [claudielarouche@gmail.com](mailto:claudielarouche@gmail.com)
+```
+
 ---
 
 ## Images
