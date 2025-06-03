@@ -1,8 +1,8 @@
 ---
 title:  Departmental Results Reports / Departmental Plans Analyzer
 description: Extract content from Government of Canada Departmental Results Reports or Departmental Plans for ease of analyzing
-image: 
-image_hero: 
+image: https://claudielarouche.com/assets/img/paper.jpg
+image_hero: https://claudielarouche.com/assets/img/paper.jpg
 tags: [Work]
 permalink: /dev-projects/drr-dp-analyzer/
 layout: dev
