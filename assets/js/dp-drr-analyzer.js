@@ -1,3 +1,5 @@
+---
+---
 function selectAll() {
   const checkboxes = document.querySelectorAll('#urlCheckboxes input[type="checkbox"]');
   checkboxes.forEach(checkbox => checkbox.checked = true);
@@ -23,8 +25,7 @@ function getDepartmentName(url) {
     urlListDiv.innerHTML = 'Loading URLs...';
 
     try {
-      /*const response = await fetch('/assets/data/drr-dp-analyzer.csv'); // Netlify version */
-      const response = await fetch('/claudielarouche/assets/data/drr-dp-analyzer.csv'); // Github pages version
+      const response = await fetch('{{ "/assets/data/drr-dp-analyzer.csv"| relative_url }}'); // Github pages version
       const csvText = await response.text();
 
       const parsed = Papa.parse(csvText, { header: true, skipEmptyLines: true });
