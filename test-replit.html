@@ -9,11 +9,6 @@
       margin: 2rem;
       background: #f9f9f9;
     }
-    textarea, input {
-      width: 100%;
-      padding: 0.5rem;
-      margin-bottom: 1rem;
-    }
     button {
       padding: 0.5rem 1rem;
       font-size: 1rem;
@@ -39,7 +34,12 @@
   <option value="Departmental Result Reports 2023-24">Departmental Result Reports 2023-24</option>
 </select>
 
-<div id="urlList" style="margin-top: 1rem;"></div>
+<div>
+  <button onclick="selectAll()">Select All</button>
+  <button onclick="unselectAll()">Unselect All</button>
+</div>
+<div id="urlCheckboxes"></div> <!-- this holds all the checkboxes -->
+
 
 <label for="searchText">Search for heading containing:</label>
 <input type="text" id="searchText" value="contracts awarded to Indigenous businesses"/>
@@ -50,6 +50,35 @@
 
 
   <script>
+
+    const urlCheckboxes = document.getElementById('urlCheckboxes');
+urlCheckboxes.innerHTML = '';
+allUrls.forEach((entry, index) => {
+  const checkbox = document.createElement('input');
+  checkbox.type = 'checkbox';
+  checkbox.id = `url-${index}`;
+  checkbox.value = entry.url;
+
+  const label = document.createElement('label');
+  label.htmlFor = `url-${index}`;
+  label.innerText = entry.department;
+
+  urlCheckboxes.appendChild(checkbox);
+  urlCheckboxes.appendChild(label);
+  urlCheckboxes.appendChild(document.createElement('br'));
+});
+
+function selectAll() {
+  const checkboxes = document.querySelectorAll('#urlCheckboxes input[type="checkbox"]');
+  checkboxes.forEach(checkbox => checkbox.checked = true);
+}
+
+function unselectAll() {
+  const checkboxes = document.querySelectorAll('#urlCheckboxes input[type="checkbox"]');
+  checkboxes.forEach(checkbox => checkbox.checked = false);
+}
+
+
 
 function getDepartmentName(url) {
   const match = allUrls.find(entry => entry.url === url);
