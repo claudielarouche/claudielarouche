@@ -81,22 +81,8 @@ function getDepartmentName(url) {
       /*const response = await fetch('/assets/data/drr-dp-analyzer.csv'); // Netlify version */
       const response = await fetch('/claudielarouche/assets/data/drr-dp-analyzer.csv'); // Github pages version
       const csvText = await response.text();
-      /*const lines = csvText.split('\n').filter(Boolean);
-      const headers = lines[0].split(',');*/
 
       const parsed = Papa.parse(csvText, { header: true, skipEmptyLines: true });
-
-      /*allUrls = lines
-        .slice(1)
-        .map(line => {
-          const parts = line.split(',');
-          return {
-            category: parts[0].trim(),
-            department: parts[1] ? parts[1].trim() : '', // if 3rd column exists
-            url: parts[2].trim()
-          };
-        })
-        .filter(entry => entry.category === category);*/
 
       allUrls = parsed.data
       .filter(row => row['category']?.trim() === category)
@@ -178,8 +164,8 @@ function getDepartmentName(url) {
             const container = document.createElement('div');
             container.className = 'result';
             container.innerHTML = `
-              <strong>URL:</strong> ${result.url}<br>
-              <strong>H1:</strong> ${result.h1}<br>
+              <strong>URL:</strong> <a href="${result.url}" target="_blank" rel="noopener noreferrer">${result.url}</a><br>
+              <strong>Department:</strong> ${getDepartmentName(result.url)}<br>
               <strong>Matched Content:</strong><br>
               <div>${result.text}</div>
             `;
@@ -197,7 +183,7 @@ function getDepartmentName(url) {
           const container = document.createElement('div');
           container.className = 'result';
           container.innerHTML = `
-            <strong>URL:</strong> ${result.url}<br>
+            <strong>URL:</strong> <a href="${result.url}" target="_blank" rel="noopener noreferrer">${result.url}</a><br>
             <strong>Department Name:</strong> ${getDepartmentName(result.url)}<br>
             <strong>Matched Content:</strong><br>
             <div>${result.text}</div>
