@@ -30,7 +30,6 @@
   <h1>Web Scraper</h1>
   <label for="datasetSelect">Choose a dataset:</label>
 <select id="datasetSelect" onchange="loadUrls()">
-  <option value="">-- Select --</option>
   <option value="Departmental Result Reports 2023-24">Departmental Result Reports 2023-24</option>
 </select>
 
@@ -111,7 +110,7 @@ function getDepartmentName(url) {
 
         const label = document.createElement('label');
         label.htmlFor = checkbox.id;
-        label.innerText = entry.url;
+        label.innerText = entry.department;
 
         urlListDiv.appendChild(checkbox);
         urlListDiv.appendChild(label);
@@ -203,6 +202,8 @@ function getDepartmentName(url) {
       resultsDiv.innerHTML = `<p style="color: red;">Failed to scrape URLs.</p>`;
     }
   }
+  window.addEventListener('DOMContentLoaded', loadUrls);
+
 </script>
 
 
