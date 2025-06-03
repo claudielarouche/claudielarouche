@@ -34,32 +34,42 @@
 
   <h1>Web Scraper</h1>
   <label for="datasetSelect">Choose a dataset:</label>
-<select id="datasetSelect">
+<select id="datasetSelect" onchange="loadUrls()">
+  <option value="">-- Select --</option>
   <option value="Departmental Result Reports 2023-24">Departmental Result Reports 2023-24</option>
 </select>
 
-  <label for="searchText">Search for heading containing:</label>
-  <input type="text" id="searchText" value="contracts awarded to Indigenous businesses"/>
+<div id="urlList" style="margin-top: 1rem;"></div>
 
-  <button onclick="scrape()">Scrape</button>
+<label for="searchText">Search for heading containing:</label>
+<input type="text" id="searchText" value="contracts awarded to Indigenous businesses"/>
 
-  <div id="results"></div>
+<button onclick="scrape()">Scrape</button>
+
+<div id="results"></div>
+
 
   <script>
-    async function scrape() {
+
+function getDepartmentName(url) {
+  const match = allUrls.find(entry => entry.url === url);
+  return match ? match.department : 'Unknown Department';
+}
+
+  let allUrls = [];
+
+  async function loadUrls() {
     const category = document.getElementById('datasetSelect').value;
-    const searchText = document.getElementById('searchText').value.trim();
-    const resultsDiv = document.getElementById('results');
-    resultsDiv.innerHTML = 'Loading URLs...';
+    const urlListDiv = document.getElementById('urlList');
+    urlListDiv.innerHTML = 'Loading URLs...';
 
     try {
-      const response = await fetch('/claudielarouche/assets/data/drr-dp-analyzer.csv'); // path on Github Pages
-      //const response = await fetch('/assets/data/drr-dp-analyzer.csv'); // Path on Netlify
+      const response = await fetch('/assets/data/datasets.csv'); // Adjust if needed
       const csvText = await response.text();
       const lines = csvText.split('\n').filter(Boolean);
       const headers = lines[0].split(',');
 
-      const urls = lines
+      allUrls = lines
         .slice(1)
         .map(line => {
           const parts = line.split(',');
@@ -68,14 +78,55 @@
             url: parts[1].trim()
           };
         })
-        .filter(entry => entry.category === category)
-        .map(entry => entry.url);
+        .filter(entry => entry.category === category);
 
-      if (urls.length === 0) {
-        resultsDiv.innerHTML = `<p style="color: red;">No URLs found for "${category}".</p>`;
+      if (allUrls.length === 0) {
+        urlListDiv.innerHTML = `<p style="color: red;">No URLs found for "${category}".</p>`;
         return;
       }
 
+      // Render checkboxes
+      urlListDiv.innerHTML = '<strong>Select URLs to scrape:</strong><br/>';
+      allUrls.forEach((entry, index) => {
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.id = `url-${index}`;
+        checkbox.value = entry.url;
+        checkbox.checked = true;
+
+        const label = document.createElement('label');
+        label.htmlFor = checkbox.id;
+        label.innerText = entry.url;
+
+        urlListDiv.appendChild(checkbox);
+        urlListDiv.appendChild(label);
+        urlListDiv.appendChild(document.createElement('br'));
+      });
+
+    } catch (err) {
+      urlListDiv.innerHTML = `<p style="color: red;">Error loading URL list.</p>`;
+    }
+  }
+
+  async function scrape() {
+    const searchText = document.getElementById('searchText').value.trim();
+    const resultsDiv = document.getElementById('results');
+    resultsDiv.innerHTML = 'Preparing request...';
+
+    // Collect selected URLs
+    const urls = allUrls
+      .map((entry, index) => {
+        const checkbox = document.getElementById(`url-${index}`);
+        return checkbox.checked ? checkbox.value : null;
+      })
+      .filter(Boolean);
+
+    if (urls.length === 0) {
+      resultsDiv.innerHTML = '<p style="color: red;">Please select at least one URL.</p>';
+      return;
+    }
+
+    try {
       resultsDiv.innerHTML = 'Scraping...';
 
       const scrapeResponse = await fetch("https://dp-drr-analyzer-claudielarouche.replit.app/scrape", {
@@ -121,7 +172,7 @@
           container.className = 'result';
           container.innerHTML = `
             <strong>URL:</strong> ${result.url}<br>
-            <strong>H1:</strong> ${result.h1}<br>
+            <strong>Department Name:</strong> ${getDepartmentName(result.url)}<br>
             <strong>Matched Content:</strong><br>
             <div>${result.text}</div>
           `;
@@ -134,10 +185,11 @@
 
     } catch (error) {
       console.error("Error:", error);
-      resultsDiv.innerHTML = `<p style="color: red;">Failed to load or parse the CSV.</p>`;
+      resultsDiv.innerHTML = `<p style="color: red;">Failed to scrape URLs.</p>`;
     }
   }
-  </script>
+</script>
+
 
 </body>
 </html>
