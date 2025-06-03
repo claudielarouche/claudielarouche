@@ -51,23 +51,7 @@
 
   <script>
 
-    const urlCheckboxes = document.getElementById('urlCheckboxes');
-urlCheckboxes.innerHTML = '';
-allUrls.forEach((entry, index) => {
-  const checkbox = document.createElement('input');
-  checkbox.type = 'checkbox';
-  checkbox.id = `url-${index}`;
-  checkbox.value = entry.url;
-
-  const label = document.createElement('label');
-  label.htmlFor = `url-${index}`;
-  label.innerText = entry.department;
-
-  urlCheckboxes.appendChild(checkbox);
-  urlCheckboxes.appendChild(label);
-  urlCheckboxes.appendChild(document.createElement('br'));
-});
-
+    
 function selectAll() {
   const checkboxes = document.querySelectorAll('#urlCheckboxes input[type="checkbox"]');
   checkboxes.forEach(checkbox => checkbox.checked = true);
@@ -89,7 +73,7 @@ function getDepartmentName(url) {
 
   async function loadUrls() {
     const category = document.getElementById('datasetSelect').value;
-    const urlListDiv = document.getElementById('urlList');
+    const urlListDiv = document.getElementById('urlCheckboxes');
     urlListDiv.innerHTML = 'Loading URLs...';
 
     try {
@@ -105,7 +89,8 @@ function getDepartmentName(url) {
           const parts = line.split(',');
           return {
             category: parts[0].trim(),
-            url: parts[1].trim()
+            department: parts[1] ? parts[1].trim() : '', // if 3rd column exists
+            url: parts[2].trim()
           };
         })
         .filter(entry => entry.category === category);
