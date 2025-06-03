@@ -64,8 +64,8 @@ function getDepartmentName(url) {
     urlListDiv.innerHTML = 'Loading URLs...';
 
     try {
-      /*const response = await fetch('/assets/data/datasets.csv'); // Netlify version */
-      const response = await fetch('/claudielarouche/assets/data/datasets.csv'); // Github pages version
+      /*const response = await fetch('/assets/data/drr-dp-analyzer.csv'); // Netlify version */
+      const response = await fetch('/claudielarouche/assets/data/drr-dp-analyzer.csv'); // Github pages version
       const csvText = await response.text();
       const lines = csvText.split('\n').filter(Boolean);
       const headers = lines[0].split(',');
