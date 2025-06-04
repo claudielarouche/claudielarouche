@@ -9,7 +9,7 @@ permalink: /change-log/
 - I redid the [URL Extractor](https://claudielarouche.com/projects/url-extractor/) on the new look and feel
 - I tried putting Google Ads on my website to try and get a bit of revenue. Unfortunately the ads were really bizarre and I decided to remove them after all. 
 - Up until this point, some images on the home page were not consistent. It was probably driving some people crazy haha. Worry not, as of June 3, it is now resolved :) 
-- For the past few evenings I've been working on a Python tool to extract content from Departmental Plans and Departmental Results Reports. It isn't working super well and I'm considering giving up. I will give it a few days to think about it. 
+- For a few evenings, I've been working on a Python tool to extract content from Government of Canada Departmental Plans and Departmental Results Reports (the idea was that someone could see on one web page the same section from 80+ different plans). It isn't working super well and I'm considering giving up. I will give it a few days to think about it. 
 
 ## May 2025
 
