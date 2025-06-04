@@ -4,6 +4,10 @@ title: Change Log
 permalink: /change-log/
 ---
 
+Hello!  
+
+The purpose of this page is simply to let you all know what I've been working on! :) Enjoy!
+
 ## June 2025
 
 - I redid the [URL Extractor](https://claudielarouche.com/projects/url-extractor/) on the new look and feel
