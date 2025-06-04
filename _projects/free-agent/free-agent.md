@@ -18,6 +18,32 @@ The **Free Agent Program** is an innovative approach to talent mobility within t
   - [Free Agent Program overview][free-agent-link]{:target="_blank" rel="noopener noreferrer"}
   - [Hire a Free Agent][hire-a-free-agent]{:target="_blank" rel="noopener noreferrer"}
 
+## Why Work with Me?
+
+- **Cross-Departmental Perspective**  
+  I’ve collaborated with teams in IM, IT, HR, ATIP, Communications, Corporate Reporting and more! This has given me a broad view of government processes and the ability to bridge gaps between units.
+
+- **Agile and Collaborative**  
+  I use agile methods to deliver iterative improvements, ensuring stakeholders see value early and can course-correct quickly.
+
+- **Technical & Strategic Expertise**  
+  From Power BI reporting to Python automation, I have developed solid technical skills over the years. I combine them with strategic planning to drive outcomes.
+
+- **Initiative**
+  Show me a problem, I will propose a solution!
+
+## How to Hire Me
+
+To discuss your needs and explore how I can help:
+
+1. **Book a 15-minute chat** via email:  
+   [claudielarouche@gmail.com](mailto:claudielarouche@gmail.com)
+
+2. **Connect on LinkedIn** for full professional background and endorsements:  
+   [View my LinkedIn profile][linkedin-link]{:target="_blank" rel="noopener noreferrer"}
+
+> _I look forward to partnering with your team to deliver impactful, citizen-centric solutions!_
+
 ## My Free Agent Journey
 
 Since joining the program in May 2017, I have had the opportunity to work on a variety of exciting projects:
@@ -132,31 +158,6 @@ Leave with income averaging, June 9, 2025 to September 9, 2025
 
 > _See other sides projects I've been working on:_ [Projects page](/)
 
-## Why Work with Me?
-
-- **Cross-Departmental Perspective**  
-  I’ve collaborated with teams in IM, IT, HR, ATIP, Communications, Corporate Reporting and more! This has given me a broad view of government processes and the ability to bridge gaps between units.
-
-- **Agile and Collaborative**  
-  I use agile methods to deliver iterative improvements, ensuring stakeholders see value early and can course-correct quickly.
-
-- **Technical & Strategic Expertise**  
-  From Power BI reporting to Python automation, I have developed solid technical skills over the years. I combine them with strategic planning to drive outcomes.
-
-- **Initiative**
-  Show me a problem, I will propose a solution!
-
-## How to Hire Me
-
-To discuss your needs and explore how I can help:
-
-1. **Book a 15-minute chat** via email:  
-   [claudielarouche@gmail.com](mailto:claudielarouche@gmail.com)
-
-2. **Connect on LinkedIn** for full professional background and endorsements:  
-   [View my LinkedIn profile][linkedin-link]{:target="_blank" rel="noopener noreferrer"}
-
-> _I look forward to partnering with your team to deliver impactful, citizen-centric solutions!_
 
 [free-agent-link]: https://www.canada.ca/en/treasury-board-secretariat/topics/staffing/public-service-workforce/free-agents.html
 [become-a-free-agent]: https://www.canada.ca/en/treasury-board-secretariat/topics/staffing/public-service-workforce/free-agents/become.html
