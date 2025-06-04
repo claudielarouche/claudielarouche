@@ -84,66 +84,76 @@ function getDepartmentName(url) {
       return;
     }
 
-    try {
-      resultsDiv.innerHTML = 'Extracting...';
+    const BATCH_SIZE = 5;
+    let total = urls.length;
+    let processed = 0;
 
-      const scrapeResponse = await fetch("https://dp-drr-analyzer-claudielarouche.replit.app/scrape", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({ urls, searchText })
-      });
+    for (let i = 0; i < urls.length; i += BATCH_SIZE) {
+    const batch = urls.slice(i, i + BATCH_SIZE);
+      try {
+        resultsDiv.innerHTML = 'Extracting...';
 
-      const data = await scrapeResponse.json();
-      resultsDiv.innerHTML = '';
+        const scrapeResponse = await fetch("https://dp-drr-analyzer-claudielarouche.replit.app/scrape", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({ urls, searchText })
+        });
 
-      if (data.error) {
-        resultsDiv.innerHTML = `<p style="color: red; font-weight: bold; padding: 10px; background-color: #ffe6e6; border: 1px solid #ff9999; border-radius: 5px;">${data.error}</p>`;
+        const data = await scrapeResponse.json();
+        resultsDiv.innerHTML = '';
 
-        // If there are partial results, show them too
-        if (data.results && data.results.length > 0) {
-          const partialResultsDiv = document.createElement('div');
-          partialResultsDiv.innerHTML = '<h3>Partial Results (before abort):</h3>';
+        if (data.error) {
+          resultsDiv.innerHTML = `<p style="color: red; font-weight: bold; padding: 10px; background-color: #ffe6e6; border: 1px solid #ff9999; border-radius: 5px;">${data.error}</p>`;
 
+          // If there are partial results, show them too
+          if (data.results && data.results.length > 0) {
+            const partialResultsDiv = document.createElement('div');
+            partialResultsDiv.innerHTML = '<h3>Partial Results (before abort):</h3>';
+
+            data.results.forEach(result => {
+              const container = document.createElement('div');
+              container.className = 'result';
+              container.innerHTML = `
+                <strong>URL:</strong> <a href="${result.url}" target="_blank" rel="noopener noreferrer">${result.url}</a><br>
+                <strong>Department:</strong> ${getDepartmentName(result.url)}<br>
+                <strong>Matched Content:</strong><br>
+                <div>${result.text}</div>
+              `;
+              partialResultsDiv.appendChild(container);
+              partialResultsDiv.appendChild(document.createElement('hr'));
+            });
+
+            resultsDiv.appendChild(partialResultsDiv);
+          }
+          return;
+        }
+
+        if (data.results) {
           data.results.forEach(result => {
             const container = document.createElement('div');
             container.className = 'result';
             container.innerHTML = `
               <strong>URL:</strong> <a href="${result.url}" target="_blank" rel="noopener noreferrer">${result.url}</a><br>
-              <strong>Department:</strong> ${getDepartmentName(result.url)}<br>
+              <strong>Department Name:</strong> ${getDepartmentName(result.url)}<br>
               <strong>Matched Content:</strong><br>
               <div>${result.text}</div>
             `;
-            partialResultsDiv.appendChild(container);
-            partialResultsDiv.appendChild(document.createElement('hr'));
+            resultsDiv.appendChild(container);
+            resultsDiv.appendChild(document.createElement('hr'));
           });
-
-          resultsDiv.appendChild(partialResultsDiv);
+        } else {
+          resultsDiv.innerHTML = 'No results found.';
         }
-        return;
-      }
 
-      if (data.results) {
-        data.results.forEach(result => {
-          const container = document.createElement('div');
-          container.className = 'result';
-          container.innerHTML = `
-            <strong>URL:</strong> <a href="${result.url}" target="_blank" rel="noopener noreferrer">${result.url}</a><br>
-            <strong>Department Name:</strong> ${getDepartmentName(result.url)}<br>
-            <strong>Matched Content:</strong><br>
-            <div>${result.text}</div>
-          `;
-          resultsDiv.appendChild(container);
-          resultsDiv.appendChild(document.createElement('hr'));
-        });
-      } else {
-        resultsDiv.innerHTML = 'No results found.';
+      } catch (error) {
+        console.error("Error:", error);
+        resultsDiv.innerHTML = `<p style="color: red;">Failed to scrape URLs.</p>`;
       }
-
-    } catch (error) {
-      console.error("Error:", error);
-      resultsDiv.innerHTML = `<p style="color: red;">Failed to scrape URLs.</p>`;
-    }
+      processed += batch.length;
+    const progress = Math.round((processed / total) * 100);
+    resultsDiv.insertAdjacentHTML('afterbegin', `<p><strong>Progress:</strong> ${processed} of ${total} (${progress}%)</p>`);
+  }
   }
   window.addEventListener('DOMContentLoaded', loadUrls);
