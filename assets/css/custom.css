@@ -8,6 +8,11 @@ hr {
   margin: 2rem 0;
 }
 
+.dataTables_wrapper .dataTables_filter input {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 /*HOME START*/
 .projects-gallery {
   display: flex;
