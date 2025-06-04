@@ -31,7 +31,7 @@ If you like this tool, please let me know by sending me a quick email at claudie
 
 <div id="output"></div>
 
-<div id="copyContainer" style="display: inline-block; margin-left: 10px;">
+<div id="copyContainer" >
   <button onclick="copyOutput()">Copy All</button>
   <span id="copyMessage" style="margin-left: 8px; color: green;"></span>
 </div>
