@@ -292,6 +292,28 @@ Negative potential consequences of an action.
 {% endraw %}
 ```
 
+## Buttons
+
+<div class="btn-group mb-3" role="group" aria-label="Page Buttons">
+<button type="button" class="btn btn-primary" onclick="addToText('Automation')">A - Automation</button>
+<button type="button" class="btn btn-secondary" onclick="addToText('DINE')">D - DINE</button>
+<button type="button" class="btn btn-success" onclick="addToText('RTL')">R - RTL</button>
+<button type="button" class="btn btn-danger" onclick="addToText('Manual')">M - Manual</button>
+<button type="button" class="btn btn-warning" onclick="addToText('TBD')">T - TBD</button>
+<button type="button" class="btn btn-info" onclick="addToText('Pivot')">P - Pivot</button>
+</div>
+
+```
+<div class="btn-group mb-3" role="group" aria-label="Page Buttons">
+<button type="button" class="btn btn-primary" onclick="addToText('Automation')">A - Automation</button>
+<button type="button" class="btn btn-secondary" onclick="addToText('DINE')">D - DINE</button>
+<button type="button" class="btn btn-success" onclick="addToText('RTL')">R - RTL</button>
+<button type="button" class="btn btn-danger" onclick="addToText('Manual')">M - Manual</button>
+<button type="button" class="btn btn-warning" onclick="addToText('TBD')">T - TBD</button>
+<button type="button" class="btn btn-info" onclick="addToText('Pivot')">P - Pivot</button>
+</div>
+```
+
 ## Embed a Youtube video
 
 ### Big
