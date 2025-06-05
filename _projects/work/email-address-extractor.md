@@ -26,13 +26,14 @@ If you like this tool, please let me know by sending me a quick email at claudie
 <textarea id="textInput" rows="10" cols="100"></textarea>
 
 <div class="btn-group mb-3" role="group" aria-label="Buttons">
-  <button type="button" class="btn btn-primary" onclick="extractEmails()">Extract Email Addresses</button>
-  <div id="copyContainer" >
-    <button type="button" class="btn btn-warning" onclick="copyOutput()">Copy</button>
-    <span id="copyMessage" style="margin-left: 8px; color: green;"></span>
-  </div>
+  <button type="button" class="btn btn-primary" onclick="extractEmails()">Extract Email Addresses</button>  
+  <button type="button" class="btn btn-warning" onclick="copyOutput()">Copy</button>
   <button type="button" class="btn btn-danger" onclick="clearInput()">Clear</button>
 </div>
 
 <div id="output"></div>
+
+<div id="copyContainer" >
+  <span id="copyMessage" style="margin-left: 8px; color: green;"></span>
+</div>
 
