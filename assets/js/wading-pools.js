@@ -253,7 +253,7 @@ function addMarkersToMap(data) {
             var lat = parseFloat(item['Latitude']);
             var lng = parseFloat(item['Longitude']);
             if (!isNaN(lat) && !isNaN(lng)) {
-                var popupContent = `<b>${item['School Name']}</b><br>School Board: ${item['Board']}`;
+                var popupContent = `<b>${item['Name']}</b><br>Monday: ${item['Monday']}<br>Tuesday: ${item['Tuesday']}<br>Wednesday: ${item['Wednesday']}<br>Thursday: ${item['Thursday']}<br>Friday: ${item['Friday']}<br>Saturday: ${item['Saturday']}<br>Sunday: ${item['Sunday']}`;
                 var marker = L.marker([lat, lng])
                     .bindPopup(popupContent);
                 
