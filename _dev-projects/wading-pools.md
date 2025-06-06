@@ -25,11 +25,11 @@ css:
 </a>
 </div>
 
-<div class="mt-3">
+<!--<div class="mt-3">
 <a href="#filters" class="btn btn-primary" >
     Go to filters
 </a>
-</div>
+</div>-->
 
 <div class="mt-3">
 <a href="#map" class="btn btn-primary" >
@@ -52,11 +52,11 @@ css:
 
 
 	
-      
+  <!--    
 ## Filters
 
 
-<!--<form class="form">
+<form class="form">
 
 			
 
@@ -82,7 +82,7 @@ css:
 </div>
 
 </form>
--->
+
 <div class="mt-3">
 <button class="btn btn-secondary" onclick="clearAllFilters()">
     Reset filters to default
@@ -92,7 +92,7 @@ css:
 <a href="#csvData" class="btn btn-primary">
         View data
 </a>
-</div>
+</div>-->
 
 <div id="map" style="height: 400px; width: 100%;"></div>
 
