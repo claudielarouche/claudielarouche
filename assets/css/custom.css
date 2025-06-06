@@ -523,3 +523,11 @@ button, textarea{
 
 
 /* END TIME DIFF */
+
+/* BEGIN MAP*/
+
+#map {
+    margin-top: 1em;
+}
+
+/* END MAP */
