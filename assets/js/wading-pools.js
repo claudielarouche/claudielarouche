@@ -127,13 +127,13 @@ function renderTable(data) {
                 'colvis' // Column visibility button
             ],
 
-      /*  "columnDefs": [
+        "columnDefs": [
                 {
-                "targets": [4, 5, 8, 9, 10],
+                "targets": [0, 1, 2, 3, 4],
                 "visible": false 
                 }
               
-            ],*/
+            ],
         "order": [0, 'asc'],
             "language": {
                 "emptyTable": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>.",
