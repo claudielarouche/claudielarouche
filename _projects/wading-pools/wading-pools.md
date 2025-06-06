@@ -4,7 +4,7 @@ description: A list of all the wading pools in Ottawa!
 image: https://claudielarouche.com/assets/img/wading-pool.jpg
 tags: [Ottawa]
 permalink: /projects/wading-pools/
-layout: dev
+layout: projects
 js:
   - https://code.jquery.com/jquery-3.6.0.min.js
   - https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js
