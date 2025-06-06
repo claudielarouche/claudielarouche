@@ -1,4 +1,4 @@
-Lat,Long,OBJECTID,PARK_ID,FACILITYID,Name,Address,Area,Accessible,Open,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+Latitude,Longitude,OBJECTID,PARK_ID,FACILITYID,Name,Address,Area,Accessible,Open,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
 45.4364202,-75.6485304,1,291,3567,St-Laurent,525 Côté St.,,yes/oui,yes/oui,11 am to 6 pm,Noon to 7 pm,Noon to 7 pm,Noon to 7 pm,11 am to 6 pm,Noon to 5 pm,Closed
 45.4423254,-75.6692704,2,1032,26075,Optimiste Park,43 Ste-Cécile St.,,yes/oui,yes/oui,Closed,Noon to 7 pm,Noon to 7 pm,Noon to 7 pm,11 am to 6 pm,Noon to 5 pm,Noon to 5 pm
 45.4336512,-75.695716,3,208,3511,Bingham Park,145 Cathcart St,,no/non,yes/oui,11 am to 6 pm,Closed,Noon to 7 pm,Noon to 7 pm,11 am to 6 pm,Noon to 5 pm,Noon to 5 pm
