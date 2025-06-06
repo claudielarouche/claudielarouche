@@ -98,6 +98,11 @@ css:
 
 ## List of Wading Pools
 
+{% capture important_content %}
+Please note that the wading pools are not open yet. Page last updated: 2025-06-06
+{% endcapture %}
+{% include admonition.html type="Important" icon="❗" content=important_content %}
+
 <div id="csvData"></div>
 
 Data source: [City of Ottawa Open Data](https://open.ottawa.ca/datasets/7a66e4301c60460c97f0d7c2830fb855_11/explore?location=45.271605%2C-75.773591%2C1.63)  
