@@ -258,7 +258,7 @@ function addMarkersToMap(data) {
                     .bindPopup(popupContent);
                 
                 markersGroup.addLayer(marker); // Add new marker to the group
-                allMarkers.push({ marker: marker, name: item['School Name'] }); // Store marker with name for filtering
+                allMarkers.push({ marker: marker, name: item['Name'] }); // Store marker with name for filtering
             }
         }
     });
