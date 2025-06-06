@@ -1,5 +1,5 @@
 ---
-title: City of Wading Pools
+title: City of Ottawa Wading Pools
 description: A list of all the wading pools in Ottawa!
 image: https://claudielarouche.com/assets/img/wading-pool.jpg
 tags: [Ottawa]
