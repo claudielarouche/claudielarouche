@@ -38,13 +38,6 @@ css:
 </div>
 
 <div class="mt-3">
-<a href="#faq" class="btn btn-primary" >
-    Frequently Asked Questions
-</a>
-</div>
-
-
-<div class="mt-3">
 <a href="#newsletter" class="btn btn-warning" >
     Sign-up for updates
 </a>
