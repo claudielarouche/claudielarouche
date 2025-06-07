@@ -17,9 +17,7 @@ css:
   - https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css
   - https://fonts.googleapis.com/icon?family=Material+Icons
 ---
-
-Photo by <a href="https://unsplash.com/@lightupphotos?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Cristina Anne Costello</a> on <a href="https://unsplash.com/photos/black-and-yellow-tennis-racket-JfOh7yA6XuM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-      
+     
 {% include ottawa-drop-ins/message.html %}    
 
 {% include ottawa-drop-ins/header.html %}        
