@@ -25,11 +25,11 @@ css:
 </a>
 </div>
 
-<!--<div class="mt-3">
+<div class="mt-3">
 <a href="#filters" class="btn btn-primary" >
     Go to filters
 </a>
-</div>-->
+</div>
 
 <div class="mt-3">
 <a href="#map" class="btn btn-primary" >
@@ -50,36 +50,15 @@ css:
 </div>
 
 
-
-	
-<!--      
+   
 ## Filters
 
 
 <form class="form">
 
 			
+{% include filter-area.html %}  
 
-<div class="form-group row">
-    <label for="selectedBoard" class="col-sm-2 col-form-label">Select School Board(s):</label>
-    <div class="col-sm-10">
-        <div class="checkbox">
-            <label><input type="checkbox" id="ocdsbCheckbox" class="boardCheckbox" value="Ottawa-Carleton District School Board" checked=""> Ottawa-Carleton District School Board (OCDSB)</label>
-        </div>
-        <div class="checkbox">
-            <label><input type="checkbox" id="ocsbCheckbox" class="boardCheckbox" value="Ottawa Catholic School Board" checked=""> Ottawa Catholic School Board (OCSB)</label>
-        </div>
-        <div class="checkbox">
-            <label><input type="checkbox" id="cepeoCheckbox" class="boardCheckbox" value="Conseil des écoles publiques de l'Est de l'Ontario" checked=""> Conseil des écoles publiques de l'Est de l'Ontario (CEPEO)</label>
-        </div>
-        <div class="checkbox">
-            <label><input type="checkbox" id="cecceCheckbox" class="boardCheckbox" value="Conseil des écoles catholiques du Centre-Est" checked=""> Conseil des écoles catholiques du Centre-Est (CECCE)</label>
-        </div>
-        <div class="checkbox">
-            <label><input type="checkbox" id="privateCheckbox" class="boardCheckbox" value="N/A" checked=""> Private Schools (N/A)</label>
-        </div>
-    </div>
-</div>
 
 </form>
 
@@ -92,7 +71,7 @@ css:
 <a href="#csvData" class="btn btn-primary">
         View data
 </a>
-</div>-->
+</div>
 
 <div id="map" style="height: 400px; width: 100%;"></div>
 
@@ -102,6 +81,8 @@ css:
 Please note that the wading pools are not open yet. Page last updated: 2025-06-06
 {% endcapture %}
 {% include admonition.html type="Important" icon="❗" content=important_content %}
+
+To reduce the size of the table below, the table only show today's schedule by default. To see the schedule for other days, please click on the "Column visibility" button and add any days you wish to see. You can also view the full schedule of any individual wading pool by clicking on its pin on the map.
 
 <div id="csvData"></div>
 
