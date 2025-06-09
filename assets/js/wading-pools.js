@@ -74,10 +74,7 @@ function renderTable(data) {
 
     tableHtml += '<th>Actions</th></tr></thead><tbody>';
 
-    //const filteredData = filterData(data, selectedBoards);
-
-    const filteredData = data;
-
+    const filteredData = filterData(data, selectedAreas);    
 
     // Iterate through each row of data
     filteredData.forEach(row => {
@@ -184,20 +181,20 @@ function renderTable(data) {
 }
 
 
-/*function filterData(data, selectedBoard) {
+function filterData(data, selectedArea) {
 
 
     return data.filter(row => {
 
-    const currentBoard = row['Board'] || '';
+    const currentArea = row['Area'] || '';
     
-    const boardCondition = selectedBoard.some(board => currentBoard.toLowerCase().includes(board.toLowerCase()));
+    const areaCondition = selectedArea.some(board => currentArea.toLowerCase().includes(board.toLowerCase()));
 
         
             
-    return boardCondition;
+    return areaCondition;
     });
-}*/
+}
 
 
 let currentSearchValue = getQueryParam('search'); // Variable to store the current search value
@@ -207,12 +204,12 @@ function clearAllFilters() {
     sortingState = $('#dataTable').DataTable().state();
     
     // Check all the "Select Board" checkboxes
- /*  document.querySelectorAll('.boardCheckbox').forEach(checkbox => {
+   document.querySelectorAll('.areaCheckbox').forEach(checkbox => {
         checkbox.checked = true;
-        if (!selectedBoards.includes(checkbox.value)) {
-            selectedBoards.push(checkbox.value);
+        if (!selectedAreas.includes(checkbox.value)) {
+            selectedAreas.push(checkbox.value);
         }
-    });*/
+    });
 
 
 
@@ -226,21 +223,21 @@ function clearAllFilters() {
     renderTable(originalData);
 }
 
-//const selectedBoards = [];
+const selectedAreas = [];
 
-/*document.querySelectorAll('.boardCheckbox').forEach(function (checkbox) {
+document.querySelectorAll('.areaCheckbox').forEach(function (checkbox) {
     checkbox.addEventListener('change', function () {
     // Store the current sorting state
         sortingState = $('#dataTable').DataTable().state();
         currentSearchValue = $('#dataTable_filter input').val();
         if (checkbox.checked) {
-            if (!selectedBoards.includes(checkbox.value)) {
-                selectedBoards.push(checkbox.value);
+            if (!selectedAreas.includes(checkbox.value)) {
+                selectedAreas.push(checkbox.value);
             }
         } else {
-            const index = selectedBoards.indexOf(checkbox.value);
+            const index = selectedAreas.indexOf(checkbox.value);
             if (index !== -1) {
-                selectedBoards.splice(index, 1);
+                selectedAreas.splice(index, 1);
             }
         }
         renderTable(originalData);
@@ -248,10 +245,10 @@ function clearAllFilters() {
 
     // Initialize with all checkboxes checked by default
     checkbox.checked = true;
-    if (!selectedBoards.includes(checkbox.value)) {
-        selectedBoards.push(checkbox.value);
+    if (!selectedAreas.includes(checkbox.value)) {
+        selectedAreas.push(checkbox.value);
     }
-});*/
+});
 
 
 function initMap() {
