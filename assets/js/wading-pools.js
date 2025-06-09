@@ -146,17 +146,21 @@ function renderTable(data) {
     }
 
     // 🌞 Keep only today's day column
+    const table = $('#dataTable').DataTable();
 
     const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     const today = new Date().getDay(); // 0 = Sunday, ..., 6 = Saturday
+    console.log("today: " + today);
     const todayName = days[today];
+    console.log("todayName: " + todayName);
 
-    const columnHeaders = $('#dataTable').columns().header().toArray().map(th => th.textContent.trim());
+    const columnHeaders = table.columns().header().toArray().map(th => th.textContent.trim());
 
     days.forEach(day => {
         const columnIndex = columnHeaders.findIndex(header => header.toLowerCase() === day.toLowerCase());
+
         if (columnIndex !== -1) {
-            $('#dataTable').column(columnIndex).visible(day === todayName);
+            table.column(columnIndex).visible(day === todayName);
         }
     });
     
