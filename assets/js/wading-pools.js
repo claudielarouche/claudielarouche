@@ -158,6 +158,9 @@ function renderTable(data) {
 
     days.forEach(day => {
         const columnIndex = columnHeaders.findIndex(header => header.toLowerCase() === day.toLowerCase());
+        console.log("day: " + day);
+        const result_of_today = day === todayName;
+        console.log("day === todayName: " + result_of_today);
 
         if (columnIndex !== -1) {
             table.column(columnIndex).visible(day === todayName);
