@@ -71,7 +71,8 @@ function renderTable(data) {
             tableHtml += `<th>${header}</th>`;
         }
     });
-    tableHtml += '</tr></thead><tbody>';
+
+    tableHtml += '<th>Actions</th></tr></thead><tbody>';
 
     //const filteredData = filterData(data, selectedBoards);
 
@@ -111,6 +112,8 @@ function renderTable(data) {
                 }
             }
         });
+
+        tableHtml += `<td><a href="https://docs.google.com/forms/d/e/1FAIpQLScTQ6U_lnHo0kr5rGo3zSjYQwsGG5PZIfL5Eil8iVQU9UWTmg/viewform?usp=sf_link&entry.658764103=${encodeURIComponent('Ottawa Wading Pools: ' + row['Name'] + ', ' + row['Address'] + ', ' + row['Area'] + ', ' + row['Accessible'] + ', ' + row['Open'] + ', ' + row['Monday'] + ', ' + row['Tuesday'] + ', ' + row['Wednesday'] + ', ' + row['Thursday'] + ', ' + row['Friday'] + ', ' + row['Saturday'] + ', ' + row['Sunday'] + ', ' + row['Washroom'])}" target="_blank">Report a data issue</a></td>`;
 
         tableHtml += '</tr>';
     });

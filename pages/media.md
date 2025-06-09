@@ -6,11 +6,17 @@ image: /assets/img/media-banner.jpg
 image_hero: /assets/img/media-banner.jpg
 ---
 
-Here are some interviews I have given, articles written about my projects, conference participations etc. 
+Here are some interviews I have given, articles written about my projects, conference participations etc. I'm always happy to give a talk!
 
 {% comment %}
   Images on this page should be about 600x450
 {% endcomment %}
+
+## 📣 Presentation for Busy Moms Expo
+![Busy Mom Expo]({{ '/assets/img/busy-mom-expo.jpg' | relative_url }})  
+**Type:** 20 minutes presentation  
+**Date:** June 7, 2025  
+**Details:** In this practical and inspiring session, Claudie Larouche shares time-saving tools, local resources, and creative strategies to help busy Ottawa moms become more efficient. You’ll leave with fresh ideas you can use right away and inspiration to make everyday life a little easier.
 
 ---
 
