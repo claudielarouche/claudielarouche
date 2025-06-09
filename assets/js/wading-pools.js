@@ -147,17 +147,17 @@ function renderTable(data) {
 
     const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     const today = new Date().getDay(); // 0 = Sunday, ..., 6 = Saturday
-    console.log("today: " + today);
+
     const todayName = days[today];
-    console.log("todayName: " + todayName);
+
 
     const columnHeaders = table.columns().header().toArray().map(th => th.textContent.trim());
 
     days.forEach(day => {
         const columnIndex = columnHeaders.findIndex(header => header.toLowerCase() === day.toLowerCase());
-        console.log("day: " + day);
+
         const result_of_today = day === todayName;
-        console.log("day === todayName: " + result_of_today);
+
 
         if (columnIndex !== -1) {
             table.column(columnIndex).visible(day === todayName);
