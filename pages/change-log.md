@@ -18,6 +18,8 @@ The purpose of this page is simply to let you all know what I've been working on
 - Released a new project! A list of all the [wading pools in Ottawa](https://claudielarouche.com/projects/wading-pools/). At first there was a bug when filtering the table but I (or I should say ChatGPT haha) managed to fix it. I used my lat-long tool (I will add the link once it's properly published) to figure out the latitude and longitude of the wading pools so I could place them all on a map
 - Using the map, I figured out the area of the city for each wading pool and added that information to my dataset. I also added a washroom column which I'm hoping fellow Moms will help me complete eventually :) 
 - I gave a talk at the Busy Moms Expo which was super fun!
+- Added a "report a data problem" column to the [wading pools page](https://claudielarouche.com/projects/wading-pools/). I also hid all days of the week aside from today by default. 
+- I emailed the city of Ottawa to confirm the opening date of the wading pools. 
 
 ## May 2025
 
