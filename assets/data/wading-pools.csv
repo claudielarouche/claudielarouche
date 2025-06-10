@@ -5,13 +5,13 @@ Latitude,Longitude,OBJECTID,PARK_ID,FACILITYID,Name,Address,Area,Monday,Tuesday,
 45.4227935,-75.6772578,4,1010,3564,Sandy Hill Park,250 Somerset St. E.,Central,11 am to 6 pm,Noon to 7 pm,Noon to 7 pm,Closed,11 am to 6 pm,Noon to 5 pm,Noon to 5 pm,No,TBD,No
 45.4258166,-75.6713142,5,881,26063,Strathcona Park,25 Range Rd.,Central,Closed,Noon to 7 pm,Noon to 7 pm,Noon to 7 pm,11 am to 6 pm,Noon to 5 pm,Noon to 5 pm,No,TBD,No
 45.4207922,-75.6681165,6,660,3521,Dutchie's Hole Park,154 Mann Ave.,Central,11 am to 6 pm,Closed,Noon to 7 pm,Noon to 7 pm,11 am to 6 pm,Noon to 5 pm,Noon to 5 pm,No,TBD,No
-45.3832996,-75.7658526,7,1163,3548,McKellar Park,539 Wavell Ave.,West - Nepean,10:00 am to 5:00 pm,11:30 am to 6:30 pm,Closed,10:00 am to 5:00 pm,11:30 am to 6:30 pm,Closed,10:00 am to 5:00 pm,No,TBD,No
+45.3832996,-75.7658526,7,1163,3548,McKellar Park,539 Wavell Ave.,West - Nepean,10:00 am to 5:00 pm,11:30 am to 6:30 pm,Closed,10:00 am to 5:00 pm,11:30 am to 6:30 pm,Closed,10:00 am to 5:00 pm,No,Yes,No
 45.4098752,-75.7135305,8,375,3520,Chaudiere Park,68 Elm St.,Central,11 am to 6 pm,Noon to 7 pm,Noon to 7 pm,Noon to 7 pm,Closed,Noon to 5 pm,Noon to 5 pm,No,TBD,Yes
 45.3754113,-75.7725695,9,621,3575,Woodroffe Park,180 Lockhart Ave.,West - Nepean,11:30 am to 6:30 pm,Closed,10:30 am to 5:30 pm,11:30 am to 6:30 pm,10:30 am to 5:30 pm,10:00 am to 5:00 pm,Closed,No,TBD,No
 45.393975,-75.752236,10,376,3544,Lions Park,294 Elmgrove Ave.,West - Nepean,11 am to 6 pm,Noon to 7 pm,Noon to 7 pm,Noon to 7 pm,11 am to 6 pm,Closed,Closed,No,TBD,No
 45.3806378,-75.7312216,11,1003,3503,Alexander Park,960 Silver St.,West - Nepean,11 am to 6 pm,Noon to 7 pm,Closed,Noon to 7 pm,11 am to 6 pm,Noon to 5 pm,Noon to 5 pm,No,TBD,No
-45.3765509,-75.7404221,12,584,3509,Raven Park,1500 Larose Ave.,West - Nepean,11 am to 6 pm,Closed,Noon to 7 pm,Noon to 7 pm,11 am to 6 pm,Noon to 5 pm,Noon to 5 pm,No,TBD,No
-45.404329,-75.7449789,13,170,3519,Champlain Park,140 Carleton Ave.,West - Nepean,11 am to 6 pm,Noon to 7 pm,Closed,Noon to 7 pm,11 am to 6 pm,Noon to 5 pm,Noon to 5 pm,No,TBD,No
+45.3765509,-75.7404221,12,584,3509,Raven Park,1500 Larose Ave.,West - Nepean,11 am to 6 pm,Closed,Noon to 7 pm,Noon to 7 pm,11 am to 6 pm,Noon to 5 pm,Noon to 5 pm,No,Yes,No
+45.404329,-75.7449789,13,170,3519,Champlain Park,140 Carleton Ave.,West - Nepean,11 am to 6 pm,Noon to 7 pm,Closed,Noon to 7 pm,11 am to 6 pm,Noon to 5 pm,Noon to 5 pm,No,Yes,No
 45.3993526,-75.711495,14,92,3524,Ev Tremblay Park,108 Beech St.,Central,Closed,Noon to 7 pm,Noon to 7 pm,Noon to 7 pm,11 am to 6 pm,Noon to 5 pm,Noon to 5 pm,No,TBD,No
 45.3779959,-75.7246229,15,1113,3550,Meadowvale Terrace Park,1205 Trenton Ave.,West - Nepean,Closed,Noon to 7 pm,Noon to 7 pm,Noon to 7 pm,11 am to 6 pm,Noon to 5 pm,Closed,No,TBD,No
 45.3832847,-75.6664373,16,880,3504,Alta Vista Park,1309 Randall Ave.,South,Closed,Noon to 7 pm,Noon to 7 pm,Noon to 7 pm,11 am to 6 pm,Noon to 5 pm,Noon to 5 pm,No,TBD,No
@@ -20,7 +20,7 @@ Latitude,Longitude,OBJECTID,PARK_ID,FACILITYID,Name,Address,Area,Monday,Tuesday,
 45.4053263,-75.6433212,19,328,3507,Balena Park,1640 Devon St.,East - Vanier,11 am to 6 pm,Noon to 7 pm,Noon to 7 pm,Noon to 7 pm,Closed,Noon to 5 pm,Noon to 5 pm,No,TBD,No
 45.4074883,-75.6728574,20,249,3513,Brantwood Park,120 Clegg St.,Central,Closed,Noon to 7 pm,Noon to 7 pm,Noon to 7 pm,11 am to 6 pm,Noon to 5 pm,Noon to 5 pm,No,TBD,No
 45.4025097,-75.6267897,21,1046,3502,Alda Burt Park,1816 St Laurent Blvd.,East - Vanier,11 am to 6 pm,Noon to 7 pm,Noon to 7 pm,Noon to 7 pm,11 am to 6 pm,Noon to 5 pm,Closed,No,TBD,No
-45.383244,-75.7538598,22,338,3572,Dovercourt Recreation Complex,411 Dovercourt Ave.,West - Nepean,10:00 am to 5:00 pm,10:00 am to 5:00 pm,10:00 am to 5:00 pm,10:00 am to 5:00 pm,10:00 am to 5:00 pm,Closed,Closed,No,TBD,No
+45.383244,-75.7538598,22,338,3572,Dovercourt Recreation Complex,411 Dovercourt Ave.,West - Nepean,10:00 am to 5:00 pm,10:00 am to 5:00 pm,10:00 am to 5:00 pm,10:00 am to 5:00 pm,10:00 am to 5:00 pm,Closed,Closed,No,Yes,No
 45.3959726,-75.6261382,23,832,3573,Weston Park,955 Pleasant Park Rd.,South,Closed,Noon to 7 pm,Noon to 7 pm,Noon to 7 pm,11 am to 6 pm,Noon to 5 pm,Noon to 5 pm,No,TBD,No
 45.3606482,-75.7993549,24,182,3515,Britannia Park,2844 Ahearn Ave.,West - Nepean,Closed,Noon to 7 pm,Noon to 7 pm,Noon to 7 pm,11 am to 6 pm,Noon to 5 pm,Noon to 5 pm,No,TBD,No
 45.357162,-75.7901476,25,22,3576,Frank Ryan Park,950 Alpine Ave.,West - Nepean,11 am to 6 pm,Noon to 7 pm,Closed,Noon to 7 pm,11 am to 6 pm,Noon to 5 pm,Noon to 5 pm,No,TBD,No
