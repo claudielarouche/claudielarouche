@@ -20,7 +20,7 @@ The purpose of this page is simply to let you all know what I've been working on
 - I gave a talk at the Busy Moms Expo which was super fun!
 - Added a "report a data problem" column to the [wading pools page](https://claudielarouche.com/projects/wading-pools/). I also hid all days of the week aside from today by default. 
 - I emailed the city of Ottawa to confirm the opening date of the wading pools. 
-- A friend informed me that some of the wading pools are now open during the weekend. So I actually updated the wading pool listing so that it shows exactly which pool is open on the weekend and what time, and I changed the data to mark everything else as "closed". I also added some logic in the Javascript code so that the map icon shows as red when the pool is closed that day and green when it's open. 
+- A friend informed me that some of the wading pools are now open during the weekend. So I actually updated the wading pool listing so that it shows exactly which pool is open on the weekend and what time, and I changed the data to mark everything else as "closed". I also added some logic in the Javascript code so that the map icon shows as red when the pool is closed that day and green when it's open.  
 
 ## May 2025
 
