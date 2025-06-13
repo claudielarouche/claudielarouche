@@ -1,5 +1,5 @@
 Latitude,Longitude,OBJECTID,PARK_ID,FACILITYID,Name,Address,Area,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday,Washroom,Accessible
-45.4364202,-75.6485304,1,291,3567,St-Laurent,525 Côté St.,East -  Vanier,Closed,Closed,Closed,Closed,Open,Closed,Closed,TBD,Yes
+45.4364202,-75.6485304,1,291,3567,St-Laurent,525 Côté St.,East -  Vanier,Closed,Closed,Closed,Closed,Closed,Closed,Closed,TBD,Yes
 45.4423254,-75.6692704,2,1032,26075,Optimiste Park,43 Ste-Cécile St.,East -  Vanier,Closed,Closed,Closed,Closed,Closed,Closed,Closed,TBD,Yes
 45.4336512,-75.695716,3,208,3511,Bingham Park,145 Cathcart St,Central,Closed,Closed,Closed,Closed,Closed,Closed,Closed,TBD,No
 45.4227935,-75.6772578,4,1010,3564,Sandy Hill Park,250 Somerset St. E.,Central,Closed,Closed,Closed,Closed,Closed,Closed,Closed,TBD,No
