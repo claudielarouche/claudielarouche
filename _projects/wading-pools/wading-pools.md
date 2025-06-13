@@ -19,19 +19,6 @@ css:
   - https://unpkg.com/leaflet/dist/leaflet.css
 ---
 
-The following wading pools will open for weekends only starting June 14, noon to 5 pm.
-
-- Alexander
-- Alvin Heights
-- Britannia
-- Dutchies
-- Marlene Catteral
-- McNabb
-- Pushman
-- Rideauview
-- St Paul’s
-- Sylvia Holden (Landsdowne)
-
 <div class="mt-3">
 <a href="#csvData" class="btn btn-primary">
     Go to wading pool listing
@@ -89,11 +76,6 @@ The following wading pools will open for weekends only starting June 14, noon to
 <div id="map" style="height: 400px; width: 100%;"></div>
 
 ## List of Wading Pools
-
-{% capture important_content %}
-Please note that the wading pools are not open yet. Page last updated: 2025-06-06
-{% endcapture %}
-{% include admonition.html type="Important" icon="❗" content=important_content %}
 
 To reduce the size of the table below, the table only show today's schedule by default. To see the schedule for other days, please click on the "Column visibility" button and add any days you wish to see. You can also view the full schedule of any individual wading pool by clicking on its pin on the map.
 

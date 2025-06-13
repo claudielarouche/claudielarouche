@@ -271,18 +271,38 @@ function addMarkersToMap(data) {
     markersGroup.clearLayers(); // Clear existing markers
     allMarkers = []; // Reset the allMarkers array
 
+    const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    const today = new Date().getDay(); // 0 = Sunday, ..., 6 = Saturday
+    const todayName = days[today];
+
     data.forEach(item => {
         if (item['Latitude'] && item['Longitude']) {
-            var lat = parseFloat(item['Latitude']);
-            var lng = parseFloat(item['Longitude']);
-            if (!isNaN(lat) && !isNaN(lng)) {
-                var popupContent = `<b>${item['Name']}</b><br>Monday: ${item['Monday']}<br>Tuesday: ${item['Tuesday']}<br>Wednesday: ${item['Wednesday']}<br>Thursday: ${item['Thursday']}<br>Friday: ${item['Friday']}<br>Saturday: ${item['Saturday']}<br>Sunday: ${item['Sunday']}`;
-                var marker = L.marker([lat, lng])
-                    .bindPopup(popupContent);
-                
-                markersGroup.addLayer(marker); // Add new marker to the group
-                allMarkers.push({ marker: marker, name: item['Name'] }); // Store marker with name for filtering
-            }
+            const todayStatus = (item[todayName] || '').toLowerCase();
+            const isClosed = todayStatus.includes('closed');
+
+            // Create a colored icon
+            const markerIcon = L.icon({
+                iconUrl: isClosed ? 'https://maps.google.com/mapfiles/ms/icons/red-dot.png'
+                                    : 'https://maps.google.com/mapfiles/ms/icons/green-dot.png',
+                iconSize: [32, 32],
+                iconAnchor: [16, 32],
+                popupAnchor: [0, -32]
+            });
+
+            var popupContent = `<b>${item['Name']}</b><br>
+                Monday: ${item['Monday']}<br>
+                Tuesday: ${item['Tuesday']}<br>
+                Wednesday: ${item['Wednesday']}<br>
+                Thursday: ${item['Thursday']}<br>
+                Friday: ${item['Friday']}<br>
+                Saturday: ${item['Saturday']}<br>
+                Sunday: ${item['Sunday']}`;
+
+            var marker = L.marker([lat, lng], { icon: markerIcon })
+                .bindPopup(popupContent);
+
+            markersGroup.addLayer(marker); // Add new marker to the group
+            allMarkers.push({ marker: marker, name: item['Name'] }); // Store marker with name for filtering
         }
     });
 }
