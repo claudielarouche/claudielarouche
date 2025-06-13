@@ -74,6 +74,7 @@ css:
 </div>
 
 <div id="map" style="height: 400px; width: 100%;"></div>
+Legend: ![Closed](https://maps.google.com/mapfiles/ms/icons/red-dot.png) The pool is closed today ![Open](https://maps.google.com/mapfiles/ms/icons/green-dot.png) The pool is open today  
 
 ## List of Wading Pools
 
