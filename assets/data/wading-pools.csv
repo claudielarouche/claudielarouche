@@ -1,6 +1,6 @@
 Latitude,Longitude,OBJECTID,PARK_ID,FACILITYID,Name,Address,Area,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday,Washroom,Accessible
-45.4364202,-75.6485304,1,291,3567,St-Laurent,525 Côté St.,East -  Vanier,Closed,Closed,Closed,Closed,Closed,Closed,Closed,TBD,Yes
-45.4423254,-75.6692704,2,1032,26075,Optimiste Park,43 Ste-Cécile St.,East -  Vanier,Closed,Closed,Closed,Closed,Closed,Closed,Closed,TBD,Yes
+45.4364202,-75.6485304,1,291,3567,St-Laurent,525 Côté St.,East - Vanier,Closed,Closed,Closed,Closed,Closed,Closed,Closed,Yes,Yes
+45.4423254,-75.6692704,2,1032,26075,Optimiste Park,43 Ste-Cécile St.,East - Vanier,Closed,Closed,Closed,Closed,Closed,Closed,Closed,TBD,Yes
 45.4336512,-75.695716,3,208,3511,Bingham Park,145 Cathcart St,Central,Closed,Closed,Closed,Closed,Closed,Closed,Closed,TBD,No
 45.4227935,-75.6772578,4,1010,3564,Sandy Hill Park,250 Somerset St. E.,Central,Closed,Closed,Closed,Closed,Closed,Closed,Closed,TBD,No
 45.4258166,-75.6713142,5,881,26063,Strathcona Park,25 Range Rd.,Central,Closed,Closed,Closed,Closed,Closed,Closed,Closed,TBD,No
@@ -15,7 +15,7 @@ Latitude,Longitude,OBJECTID,PARK_ID,FACILITYID,Name,Address,Area,Monday,Tuesday,
 45.3993526,-75.711495,14,92,3524,Ev Tremblay Park,108 Beech St.,Central,Closed,Closed,Closed,Closed,Closed,Closed,Closed,TBD,No
 45.3779959,-75.7246229,15,1113,3550,Meadowvale Terrace Park,1205 Trenton Ave.,West - Nepean,Closed,Closed,Closed,Closed,Closed,Closed,Closed,TBD,No
 45.3832847,-75.6664373,16,880,3504,Alta Vista Park,1309 Randall Ave.,South,Closed,Closed,Closed,Closed,Closed,Closed,Closed,TBD,No
-45.4174251,-75.6453744,17,48,3518,Cecil Morrison Park,1332 Avenue N.,East -  Vanier,Closed,Closed,Closed,Closed,Closed,Closed,Closed,TBD,No
+45.4174251,-75.6453744,17,48,3518,Cecil Morrison Park,1332 Avenue N.,East - Vanier,Closed,Closed,Closed,Closed,Closed,Closed,Closed,TBD,No
 45.3792917,-75.6771369,18,479,3533,Heron Park,999 Heron Rd.,South,Closed,Closed,Closed,Closed,Closed,Closed,Closed,TBD,No
 45.4053263,-75.6433212,19,328,3507,Balena Park,1640 Devon St.,East - Vanier,Closed,Closed,Closed,Closed,Closed,Closed,Closed,TBD,No
 45.4074883,-75.6728574,20,249,3513,Brantwood Park,120 Clegg St.,Central,Closed,Closed,Closed,Closed,Closed,Closed,Closed,TBD,No
