@@ -303,9 +303,9 @@ function addMarkersToMap(data) {
                     ? `<a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}, Ottawa, Canada" target="_blank">${address}</a><br>` 
                     : '';
 
-                var popupContent = `
-                    ${addressLink}<br>
+                var popupContent = `                    
                     <b>${item['Name']}</b><br>
+                    ${addressLink}
                     Monday: ${item['Monday']}<br>
                     Tuesday: ${item['Tuesday']}<br>
                     Wednesday: ${item['Wednesday']}<br>
