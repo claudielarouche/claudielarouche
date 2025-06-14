@@ -298,7 +298,14 @@ function addMarkersToMap(data) {
                     popupAnchor: [0, -32]
                 });
 
-                var popupContent = `<b>${item['Name']}</b><br>
+                var address = item['Address'] ? item['Address'].trim() : '';
+                var addressLink = address 
+                    ? `<a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}, Ottawa, Canada" target="_blank">${address}</a><br>` 
+                    : '';
+
+                var popupContent = `
+                    ${addressLink}<br>
+                    <b>${item['Name']}</b><br>
                     Monday: ${item['Monday']}<br>
                     Tuesday: ${item['Tuesday']}<br>
                     Wednesday: ${item['Wednesday']}<br>
