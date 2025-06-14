@@ -109,6 +109,8 @@ If any of the data below is incorrect, please contact me at claudielarouche@gmai
 
 ## List of schools
 
+Please note that this table contains information licensed under the [Open Government Licence – City of Ottawa](https://ottawa.ca/en/city-hall/open-transparent-and-accountable-government/open-data){:target="_blank" rel="noopener noreferrer"}.
+
 <div id="csvData"></div>
 
 ## Frequently Asked Questions {#faq}

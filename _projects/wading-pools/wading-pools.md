@@ -78,6 +78,8 @@ Legend: ![Closed](https://maps.google.com/mapfiles/ms/icons/red-dot.png) The poo
 
 ## List of Wading Pools
 
+Please note that this table contains information licensed under the [Open Government Licence – City of Ottawa](https://ottawa.ca/en/city-hall/open-transparent-and-accountable-government/open-data){:target="_blank" rel="noopener noreferrer"}.
+
 To reduce the size of the table below, the table only show today's schedule by default. To see the schedule for other days, please click on the "Column visibility" button and add any days you wish to see. You can also view the full schedule of any individual wading pool by clicking on its pin on the map.
 
 <div id="csvData"></div>
