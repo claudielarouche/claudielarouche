@@ -1,8 +1,8 @@
 ---
 title: LRT Station Finder
 description: Find the closest LRT station to you
-image: https://claudielarouche.com/assets/img/kindergym.jpg
-image_hero: https://claudielarouche.com/assets/img/kindergym.jpg
+image: https://claudielarouche.com/assets/img/train.jpg
+image_hero: https://claudielarouche.com/assets/img/train.jpg
 tags: [Ottawa]
 permalink: /dev-projects/lrt/
 layout: dev
