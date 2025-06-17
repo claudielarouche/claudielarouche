@@ -78,11 +78,17 @@ async function findClosestStations() {
 
     const combined = lrtStations.map((station, i) => ({
         name: station.name,
+        lat: station.lat,
+        lng: station.lng,
         walkText: `${walking[i].distance.text} (${walking[i].duration.text})`,
         walkValue: walking[i].distance.value,
+        walkURL: `https://www.google.com/maps/dir/?api=1&origin=${origin.lat},${origin.lng}&destination=${station.lat},${station.lng}&travelmode=walking`,
         driveText: `${driving[i].distance.text} (${driving[i].duration.text})`,
-        cycleText: `${cycling[i].distance.text} (${cycling[i].duration.text})`
+        driveURL: `https://www.google.com/maps/dir/?api=1&origin=${origin.lat},${origin.lng}&destination=${station.lat},${station.lng}&travelmode=driving`,
+        cycleText: `${cycling[i].distance.text} (${cycling[i].duration.text})`,
+        cycleURL: `https://www.google.com/maps/dir/?api=1&origin=${origin.lat},${origin.lng}&destination=${station.lat},${station.lng}&travelmode=bicycling`
     }));
+
 
     combined.sort((a, b) => a.walkValue - b.walkValue);
 
@@ -95,12 +101,12 @@ async function findClosestStations() {
                 <th>Cycling</th>
                 </tr>`;
     combined.forEach(station => {
-    html += `<tr>
-        <td>${station.name}</td>
-        <td>${station.walkText}</td>
-        <td>${station.driveText}</td>
-        <td>${station.cycleText}</td>
-    </tr>`;
+        html += `<tr>
+            <td>${station.name}</td>
+            <td><a href="${station.walkURL}" target="_blank">${station.walkText}</a></td>
+            <td><a href="${station.driveURL}" target="_blank">${station.driveText}</a></td>
+            <td><a href="${station.cycleURL}" target="_blank">${station.cycleText}</a></td>
+        </tr>`;
     });
     html += `</table>`;
     resultsDiv.innerHTML = html;
