@@ -25,14 +25,23 @@ const lrtStations = [
 ];
 
 async function geocodeAddress(address) {
-    const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(address)}`;
-    const response = await fetch(url);
-    const data = await response.json();
-    if (!data.length) throw new Error("Address not found.");
-    return {
-    lat: data[0].lat,
-    lng: data[0].lon
-    };
+  const response = await fetch("/.netlify/functions/get-coordinates", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ address })
+  });
+
+  const data = await response.json();
+  if (!data.results || !data.results.length) throw new Error("Address not found.");
+
+  const location = data.results[0].geometry.location;
+  const formatted = data.results[0].formatted_address;
+
+  return {
+    lat: location.lat,
+    lng: location.lng,
+    formattedAddress: formatted
+  };
 }
 
 async function getDistances(origin, destinations, mode) {
@@ -58,6 +67,8 @@ async function findClosestStations() {
 
     try {
     const origin = await geocodeAddress(address);
+    const formatted = origin.formattedAddress;
+    
     const walking = await getDistances(origin, lrtStations, "walking");
     const driving = await getDistances(origin, lrtStations, "driving");
     const cycling = await getDistances(origin, lrtStations, "bicycling");
@@ -73,6 +84,7 @@ async function findClosestStations() {
     combined.sort((a, b) => a.walkValue - b.walkValue);
 
     let html = `<h3>All LRT Stations Sorted by Walking Distance</h3><table>
+                <p><strong>Address:</strong> ${formatted}</p>
                 <tr>
                 <th>Station</th>
                 <th>Walking</th>
