@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Closest LRT Stations</title>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+    #map { height: 400px; margin-top: 10px; }
+    table { border-collapse: collapse; width: 100%; margin-top: 10px; }
+    th, td { border: 1px solid #ccc; padding: 6px; }
+  </style>
+</head>
+<body>
+  <h2>Find the 3 Closest LRT Stations</h2>
+  <input id="addressInput" type="text" size="50" placeholder="Enter your address">
+  <button onclick="findClosestStations()">Calculate</button>
+
+  <div id="results"></div>
+  <div id="map"></div>
+
+  <script>
+    const lrtStations = [
+      { name: "Bayview", lat: 45.4115, lon: -75.7181 },
+      { name: "Lyon", lat: 45.4162, lon: -75.7073 },
+      { name: "Parliament", lat: 45.4203, lon: -75.7006 },
+      { name: "Rideau", lat: 45.4260, lon: -75.6870 },
+      { name: "uOttawa", lat: 45.4244, lon: -75.6831 }
+    ];
+
+    const map = L.map('map').setView([45.4215, -75.6972], 13);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    lrtStations.forEach(station => {
+      L.marker([station.lat, station.lon]).addTo(map).bindPopup(station.name);
+    });
+
+    function haversine(lat1, lon1, lat2, lon2) {
+      const toRad = x => x * Math.PI / 180;
+      const R = 6371e3; // Earth radius in meters
+      const dLat = toRad(lat2 - lat1);
+      const dLon = toRad(lon2 - lon1);
+      const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+                Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) *
+                Math.sin(dLon/2) * Math.sin(dLon/2);
+      const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+      return R * c; // in meters
+    }
+
+    async function geocode(address) {
+      const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(address)}`;
+      const response = await fetch(url);
+      const data = await response.json();
+      if (!data.length) throw new Error("Address not found.");
+      return {
+        lat: parseFloat(data[0].lat),
+        lon: parseFloat(data[0].lon)
+      };
+    }
+
+    async function findClosestStations() {
+      const address = document.getElementById("addressInput").value;
+      const resultsDiv = document.getElementById("results");
+      resultsDiv.innerHTML = "Loading...";
+
+      try {
+        const userLoc = await geocode(address);
+        L.marker([userLoc.lat, userLoc.lon], { color: 'blue' })
+          .addTo(map).bindPopup("Your Location").openPopup();
+        map.setView([userLoc.lat, userLoc.lon], 14);
+
+        const distances = lrtStations.map(station => {
+          const distance = haversine(userLoc.lat, userLoc.lon, station.lat, station.lon);
+          return {
+            ...station,
+            meters: distance,
+            walkMins: Math.round(distance / 80),   // walking: ~80m/min
+            driveMins: Math.round(distance / 500)  // driving: ~500m/min
+          };
+        });
+
+        distances.sort((a, b) => a.meters - b.meters);
+        const top3 = distances.slice(0, 3);
+
+        let html = `<h3>Closest Stations</h3><table><tr><th>Name</th><th>Walking (~min)</th><th>Driving (~min)</th></tr>`;
+        top3.forEach(station => {
+          html += `<tr><td>${station.name}</td><td>${station.walkMins} min</td><td>${station.driveMins} min</td></tr>`;
+        });
+        html += `</table>`;
+        resultsDiv.innerHTML = html;
+
+      } catch (err) {
+        resultsDiv.innerHTML = `<span style="color:red;">Error: ${err.message}</span>`;
+      }
+    }
+  </script>
+</body>
+</html>
