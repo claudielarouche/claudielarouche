@@ -18,11 +18,19 @@
 
   <script>
     const lrtStations = [
-      { name: "Bayview", lat: 45.4115, lng: -75.7181 },
-      { name: "Lyon", lat: 45.4162, lng: -75.7073 },
-      { name: "Parliament", lat: 45.4203, lng: -75.7006 },
-      { name: "Rideau", lat: 45.4260, lng: -75.6870 },
-      { name: "uOttawa", lat: 45.4244, lng: -75.6831 }
+        ["Tunney's Pasture", 45.4218, -75.7106],
+        ["Bayview",         45.4115, -75.7181],
+        ["Pimisi",          45.4148, -75.7102],
+        ["Lyon",            45.4186, -75.7051],  // updated coordinates :contentReference[oaicite:1]{index=1}
+        ["Parliament",      45.4203, -75.7006],
+        ["Rideau",          45.4260, -75.6870],
+        ["uOttawa",         45.4244, -75.6831],
+        ["Lees",            45.4298, -75.6761],
+        ["Hurdman",         45.4298, -75.6517],
+        ["Tremblay",        45.4271, -75.6380],
+        ["St‑Laurent",      45.4333, -75.5876],
+        ["Cyrville",        45.4348, -75.5479],
+        ["Blair",           45.4318, -75.4790]
     ];
 
     async function geocodeAddress(address) {
