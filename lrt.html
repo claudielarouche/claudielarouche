@@ -61,20 +61,33 @@
         const origin = await geocodeAddress(address);
         const walking = await getDistances(origin, lrtStations, "walking");
         const driving = await getDistances(origin, lrtStations, "driving");
+        const cycling = await getDistances(origin, lrtStations, "bicycling");
 
         const combined = lrtStations.map((station, i) => ({
-          name: station.name,
-          walkText: walking[i].distance.text,
-          walkValue: walking[i].distance.value,
-          driveText: driving[i].distance.text
+            name: station.name,
+            walkText: `${walking[i].distance.text} (${walking[i].duration.text})`,
+            walkValue: walking[i].distance.value,
+            driveText: `${driving[i].distance.text} (${driving[i].duration.text})`,
+            cycleText: `${cycling[i].distance.text} (${cycling[i].duration.text})`
         }));
 
         combined.sort((a, b) => a.walkValue - b.walkValue);
         const top3 = combined.slice(0, 3);
 
-        let html = `<h3>Closest LRT Stations</h3><table><tr><th>Station</th><th>Walking Distance</th><th>Driving Distance</th></tr>`;
+        let html = `<h3>Closest LRT Stations</h3><table>
+                    <tr>
+                        <th>Station</th>
+                        <th>Walking</th>
+                        <th>Driving</th>
+                        <th>Cycling</th>
+                    </tr>`;
         top3.forEach(station => {
-          html += `<tr><td>${station.name}</td><td>${station.walkText}</td><td>${station.driveText}</td></tr>`;
+            html += `<tr>
+                <td>${station.name}</td>
+                <td>${station.walkText}</td>
+                <td>${station.driveText}</td>
+                <td>${station.cycleText}</td>
+            </tr>`;
         });
         html += `</table>`;
         resultsDiv.innerHTML = html;
