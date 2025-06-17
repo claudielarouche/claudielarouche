@@ -43,7 +43,7 @@
         { name: "Uplands", lat: 45.3290, lng: -75.6250 },
         { name: "Airport", lat: 45.3333, lng: -75.6319 }
     ];
-
+ 
     async function geocodeAddress(address) {
       const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(address)}`;
       const response = await fetch(url);
