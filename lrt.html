@@ -91,22 +91,21 @@
         }));
 
         combined.sort((a, b) => a.walkValue - b.walkValue);
-        const top3 = combined.slice(0, 3);
 
-        let html = `<h3>Closest LRT Stations</h3><table>
+        let html = `<h3>All LRT Stations Sorted by Walking Distance</h3><table>
                     <tr>
-                        <th>Station</th>
-                        <th>Walking</th>
-                        <th>Driving</th>
-                        <th>Cycling</th>
+                    <th>Station</th>
+                    <th>Walking</th>
+                    <th>Driving</th>
+                    <th>Cycling</th>
                     </tr>`;
-        top3.forEach(station => {
-            html += `<tr>
-                <td>${station.name}</td>
-                <td>${station.walkText}</td>
-                <td>${station.driveText}</td>
-                <td>${station.cycleText}</td>
-            </tr>`;
+        combined.forEach(station => {
+        html += `<tr>
+            <td>${station.name}</td>
+            <td>${station.walkText}</td>
+            <td>${station.driveText}</td>
+            <td>${station.cycleText}</td>
+        </tr>`;
         });
         html += `</table>`;
         resultsDiv.innerHTML = html;
