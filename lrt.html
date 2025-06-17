@@ -48,6 +48,7 @@
       });
 
       const data = await response.json();
+      console.log("Distance Matrix API response:", data); // 🔍 log here
       return data.rows[0].elements;
     }
 
