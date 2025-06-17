@@ -62,11 +62,14 @@ async function getDistances(origin, destinations, mode) {
 
 async function findClosestStations() {
     const address = document.getElementById("addressInput").value;
+
+    const fullAddress = address.includes("Ottawa") ? address : `${address}, Ottawa, ON, Canada`;
+
     const resultsDiv = document.getElementById("results");
     resultsDiv.innerHTML = "Loading...";
 
     try {
-    const origin = await geocodeAddress(address);
+    const origin = await geocodeAddress(fullAddress);
     const formatted = origin.formattedAddress;
     
     const walking = await getDistances(origin, lrtStations, "walking");
