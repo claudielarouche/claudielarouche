@@ -1,4 +1,4 @@
-﻿Latitude,Longitude,OBJECTID,PARK_ID,FACILITYID,Park Name,Park Address,Baby Swing,Picnic Table,Zip Line,Water Play,Water Fountain,Fencing,Accessible swing / ramp,Base (sand / rubber / wood chips),Parking,Note / Special Feature
+﻿Latitude,Longitude,OBJECTID,PARK_ID,FACILITYID,Name,Address,Baby Swing,Picnic Table,Zip Line,Water Play,Water Fountain,Fencing,Accessibility,Base,Parking,Note
 45.320302,-75.892515,13,112,31154,Billy Bishop Park,1 Bishops Mills Way,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
 45.3859678,-75.7300339,751,467,56867,Harrold Place Park,1 Harrold Place,Yes,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
 45.3983025,-75.6940595,338,373,31478,Capital Park,10 Ella Street,Yes,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
@@ -296,7 +296,7 @@
 45.1232318,-75.7209455,403,390,56747,Farmstead Ridge Park,2448 Church Street,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
 45.1834573,-75.8441866,798,2646,52359,Meynell Park,245 Meynell Road,Yes,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
 45.2761713,-75.6975632,1413,2381,34644,River's Bend Park,245 Riversedge Crescent,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
-42.7890288,-86.1362771,340,792,31888,Carillon Park,246 Park Street,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4380019,-75.6611329,340,792,31888,Carillon Park,246 Park Street,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
 45.3221963,-75.7407734,1154,105,31138,Merivale Gardens Park,25 Bie Street,Yes,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
 45.298665,-75.900895,1383,424,31549,Gesner Court Park,25 Gesner Court,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
 45.4258166,-75.6713142,1591,881,31995,Strathcona Park,25 Range Road,Yes,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
