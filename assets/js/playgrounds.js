@@ -288,13 +288,13 @@ function addMarkersToMap(data) {
 
                 
 
-                var address = item['Address'] ? item['Address'].trim() : '';
+                var address = item['Park Address'] ? item['Address'].trim() : '';
                 var addressLink = address 
                     ? `<a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}, Ottawa, Canada" target="_blank">${address}</a><br>` 
                     : '';
 
                 var popupContent = `                    
-                    <b>${item['Name']}</b><br>
+                    <b>${item['Park Name']}</b><br>
                     ${addressLink}`;
 
                 var marker = L.marker([lat, lng])
