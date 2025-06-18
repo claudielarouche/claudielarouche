@@ -297,7 +297,7 @@ function addMarkersToMap(data) {
                     <b>${item['Name']}</b><br>
                     ${addressLink}`;
 
-                var marker = L.marker([lat, lng], { icon: markerIcon })
+                var marker = L.marker([lat, lng])
                     .bindPopup(popupContent);
 
                 markersGroup.addLayer(marker); // Add new marker to the group
