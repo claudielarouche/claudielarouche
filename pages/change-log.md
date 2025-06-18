@@ -22,6 +22,8 @@ The purpose of this page is simply to let you all know what I've been working on
 - I emailed the city of Ottawa to confirm the opening date of the wading pools. They have not responded :( 
 - A friend informed me that some of the wading pools are now open during the weekend. So I actually updated the [wading pool listing](https://claudielarouche.com/projects/wading-pools/) so that it shows exactly which pool is open on the weekend and what time, and I changed the data to mark everything else as "closed". I also added some logic in the Javascript code so that the map icon shows as red when the pool is closed that day and green when it's open.  
 - Spent an entire evening cleaning up the City of Ottawa Playgrounds dataset, and I'm only about 1/10th of the way there :( This is a bigger project than I anticipated! (the reason there is so much cleanup needed is because the city included things that are not particularly important, and then there were lots of parks listed multiple times, probably because they have multiple structures. Personally I think each park should only be listed once.)
+- Oopsie! Back in February, someone had filled my "Report a data problem" form for the City of Ottawa drop-in page to say that this activity shouldn't be tagged to preschool: "Ottawa Drop-Ins: Saturday, 16:45 - 18:15, Minto Recreation Complex - Barrhaven, 3500 Cambrian Road, Open gym - family 
+(children ages 6 to 12)". I had missed that message entirely. Whoever they are, they are absolutely correct so finally, 4 months later, I fixed the data (better late than never lol)
 
 ## May 2025
 
