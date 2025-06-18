@@ -288,7 +288,7 @@ function addMarkersToMap(data) {
 
                 
 
-                var address = item['Park Address'] ? item['Address'].trim() : '';
+                var address = item['Park Address'] ? item['Park Address'].trim() : '';
                 var addressLink = address 
                     ? `<a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}, Ottawa, Canada" target="_blank">${address}</a><br>` 
                     : '';
