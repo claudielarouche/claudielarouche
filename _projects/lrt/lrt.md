@@ -5,7 +5,7 @@ image: https://claudielarouche.com/assets/img/train.jpg
 image_hero: https://claudielarouche.com/assets/img/train.jpg
 tags: [Work in progress]
 permalink: /projects/lrt/
-layout: dev
+layout: projects
 js:
   - https://code.jquery.com/jquery-3.6.0.min.js
   - /assets/js/lrt.js
