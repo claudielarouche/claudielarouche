@@ -1,11 +1,11 @@
 ---
-title: LRT Station Finder
-description: Find the closest LRT station to you
+title: Find the nearest LRT
+description: Find the nearest LRT station to any address in Ottawa
 image: https://claudielarouche.com/assets/img/train.jpg
 image_hero: https://claudielarouche.com/assets/img/train.jpg
-tags: [Ottawa]
-permalink: /dev-projects/lrt/
-layout: dev
+tags: [Work in progress]
+permalink: /projects/lrt/
+layout: hidden
 js:
   - https://code.jquery.com/jquery-3.6.0.min.js
   - /assets/js/lrt.js
