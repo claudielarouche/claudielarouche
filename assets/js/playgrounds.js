@@ -338,7 +338,7 @@ function addMarkersToMap(data) {
                 }
 
                 const formUrl = `https://docs.google.com/forms/d/e/1FAIpQLSdqjDjAsXrFFNz8JzLTYAoKO8GgWlDecYKcGArzvT_MtfpAAw/viewform?usp=pp_url&${queryParams.join("&")}`;
-                const submitLink = `<a href="${formUrl}" target="_blank">Submit data</a><br>`;
+                const submitLink = `<a href="${formUrl}" target="_blank"><strong>Submit data</strong></a><br>`;
 
                 
 
