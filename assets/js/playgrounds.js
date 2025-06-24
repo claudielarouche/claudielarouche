@@ -341,7 +341,7 @@ function addMarkersToMap(data) {
                 const submitLink = `<a href="${formUrl}" target="_blank">Submit data</a><br>`;
 
                 // Compose popup content
-                let popupContent = `<b>${row['Name']}</b><br>${addressLink}${submitLink}`;
+                popupContent += `${submitLink}`;
 
                 fields.forEach(function(field) {
                     if (item[field] && item[field].trim() !== '') {
