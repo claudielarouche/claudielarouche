@@ -111,13 +111,39 @@ function renderTable(data) {
             }
         });
 
-        const reportValues = headers
-            .map(header => `${header}: ${row[header]}`)
-            .join(', ');
+        const formBaseUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdqjDjAsXrFFNz8JzLTYAoKO8GgWlDecYKcGArzvT_MtfpAAw/viewform?usp=pp_url";
 
-        const reportUrl = `https://docs.google.com/forms/d/e/1FAIpQLScTQ6U_lnHo0kr5rGo3zSjYQwsGG5PZIfL5Eil8iVQU9UWTmg/viewform?usp=sf_link&entry.658764103=${encodeURIComponent('Ottawa Wading Pools: ' + reportValues)}`;
+        // Map your columns to their corresponding Google Form entry IDs
+        const formEntries = {
+            "Name": "474032074",
+            "Address": "784475966",
+            "Washroom": "628270855",
+            "Picnic Table": "375545763",
+            "Zip Line": "1608430546",
+            "Baby Swing": "203282536",
+            "Water Play": "979858938",
+            "Water Fountain": "1510322977",
+            "Fenced area": "1159338706",
+            "Accessibility": "1895477988",
+            "Base": "1429659451",
+            "Parking": "1966588714",
+            "Note": "TBD" // Update this if you get a valid entry ID
+        };
 
-        tableHtml += `<td><a href="${reportUrl}" target="_blank">Report a data issue</a></td>`;
+        // Build the URL with pre-filled values
+        let queryParams = [];
+
+        for (let field in formEntries) {
+            const entryId = formEntries[field];
+            const value = item[field] || ''; // assumes `item` is your row object
+            queryParams.push(`entry.${entryId}=${encodeURIComponent(value)}`);
+        }
+
+        const formUrl = `${formBaseUrl}&${queryParams.join("&")}`;
+
+        // Add the button to your table
+        tableHtml += `<td><a href="${formUrl}" target="_blank">Submit data</a></td>`;
+
         
         tableHtml += '</tr>';
     });
