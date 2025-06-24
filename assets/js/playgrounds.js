@@ -264,24 +264,40 @@ function addMarkersToMap(data) {
             var lat = parseFloat(item['Latitude']);
             var lng = parseFloat(item['Longitude']);
             if (!isNaN(lat) && !isNaN(lng)) {
-
-                
-
                 var address = item['Address'] ? item['Address'].trim() : '';
                 var addressLink = address 
                     ? `<a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}, Ottawa, Canada" target="_blank">${address}</a><br>` 
                     : '';
 
-                var popupContent = `                    
-                    <b>${item['Name']}</b><br>
-                    ${addressLink}`;
+                var popupContent = `<b>${item['Name']}</b><br>${addressLink}`;
 
-                var marker = L.marker([lat, lng])
-                    .bindPopup(popupContent);
+                // Fields to include in the popup
+                var fields = [
+                    'Washroom',
+                    'Picnic Table',
+                    'Zip Line',
+                    'Baby Swing',
+                    'Water Play',
+                    'Water Fountain',
+                    'Fenced area',
+                    'Accessibility',
+                    'Base',
+                    'Parking',
+                    'Note'
+                ];
+
+                fields.forEach(function(field) {
+                    if (item[field] && item[field].trim() !== '') {
+                        popupContent += `<b>${field}:</b> ${item[field]}<br>`;
+                    }
+                });
+
+                var marker = L.marker([lat, lng]).bindPopup(popupContent);
 
                 markersGroup.addLayer(marker); // Add new marker to the group
                 allMarkers.push({ marker: marker, name: item['Name'] }); // Store marker with name for filtering
             }
+
         }
     });
 }
