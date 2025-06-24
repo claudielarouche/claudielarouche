@@ -13,7 +13,7 @@ css:
   - https://fonts.googleapis.com/icon?family=Material+Icons
 ---
 
-<input id="addressInput" type="text" placeholder="Enter your address" size="50">
+<input id="addressInput" type="text" placeholder="Enter an address" size="50">
 <button onclick="findClosestStations()">Calculate</button>
 <div id="results"></div>
 
