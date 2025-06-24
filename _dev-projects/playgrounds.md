@@ -2,9 +2,9 @@
 title: City of Ottawa Playgrounds
 description: A map and list of all the playgrounds in Ottawa!
 image: https://claudielarouche.com/assets/img/playground.jpg
-tags: [Ottawa]
-permalink: /dev-projects/playgrounds/
-layout: dev
+tags: [Under Construction]
+permalink: /projects/playgrounds/
+layout: projects
 js:
   - https://code.jquery.com/jquery-3.6.0.min.js
   - https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js
@@ -19,6 +19,11 @@ css:
   - https://unpkg.com/leaflet/dist/leaflet.css
 ---
 
+<div class="admonition note">
+  <p><span class="admonition-icon">ℹ️</span>
+  <strong>Please Note that this page is still under construction, thank you for your patience! Please help me fill the missing data by submitting information about the parks you are familiar with. </strong></p>
+</div>
+
 <div class="mt-3">
 <a href="#csvData" class="btn btn-primary">
     Go to playgrounds listing
@@ -27,7 +32,7 @@ css:
 
 <div class="mt-3">
 <a href="#filters" class="btn btn-primary" >
-    Go to filters
+    Go to filters (coming soon!)
 </a>
 </div>
 
