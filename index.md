@@ -3,7 +3,7 @@ layout: home
 title: Home
 ---
 
-{% assign categories = "Ottawa,Work,Other,Products,Archive" | split: "," %}
+{% assign categories = "Ottawa,Work,Other,Products,Archive,Under Construction" | split: "," %}
 
 {% for category in categories %}
   <h2>{{ category }}</h2>
