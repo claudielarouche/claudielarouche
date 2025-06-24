@@ -21,7 +21,7 @@ css:
 
 <div class="admonition note">
   <p><span class="admonition-icon">ℹ️</span>
-  <strong>Please Note that this page is still under construction, thank you for your patience! Please help me fill the missing data by submitting information about the parks you are familiar with. </strong></p>
+  <strong>Please Note</strong>: This page is still under construction, thank you for your patience! Please help me fill the missing data by submitting information about the parks you are familiar with (the link to submit data is in the map or in the table, thanks!). </p>
 </div>
 
 <div class="mt-3">
