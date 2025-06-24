@@ -333,7 +333,7 @@ function addMarkersToMap(data) {
 
                 for (let fieldName  in formEntries) {
                     const entryId = formEntries[fieldName ];
-                    const value = row[fieldName ] ? row[fieldName ].toString().trim() : '';
+                    const value = item[fieldName ] ? item[fieldName ].toString().trim() : '';
                     queryParams.push(`entry.${entryId}=${encodeURIComponent(value)}`);
                 }
 
