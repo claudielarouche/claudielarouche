@@ -127,7 +127,7 @@ function renderTable(data) {
             "Accessibility": "1895477988",
             "Base": "1429659451",
             "Parking": "1966588714",
-            "Note": "2049526552" // Update this if you get a valid entry ID
+            "Note": "2049526552" 
         };
 
         // Build the URL with pre-filled values
@@ -297,6 +297,23 @@ function addMarkersToMap(data) {
 
                 var popupContent = `<b>${item['Name']}</b><br>${addressLink}`;
 
+                // Map column names to Google Form entry IDs
+                const formEntries = {
+                    "Name": "474032074",
+                    "Address": "784475966",
+                    "Washroom": "628270855",
+                    "Picnic Table": "375545763",
+                    "Zip Line": "1608430546",
+                    "Baby Swing": "203282536",
+                    "Water Play": "979858938",
+                    "Water Fountain": "1510322977",
+                    "Fenced area": "1159338706",
+                    "Accessibility": "1895477988",
+                    "Base": "1429659451",
+                    "Parking": "1966588714",
+                    "Note": "2049526552" // Replace if you get a real entry ID
+                };
+
                 // Fields to include in the popup
                 var fields = [
                     'Washroom',
@@ -311,6 +328,20 @@ function addMarkersToMap(data) {
                     'Parking',
                     'Note'
                 ];
+
+                const queryParams = [];
+
+                for (let fieldName  in formEntries) {
+                    const entryId = formEntries[fieldName ];
+                    const value = row[fieldName ] ? row[fieldName ].toString().trim() : '';
+                    queryParams.push(`entry.${entryId}=${encodeURIComponent(value)}`);
+                }
+
+                const formUrl = `https://docs.google.com/forms/d/e/1FAIpQLSdqjDjAsXrFFNz8JzLTYAoKO8GgWlDecYKcGArzvT_MtfpAAw/viewform?usp=pp_url&${queryParams.join("&")}`;
+                const submitLink = `<a href="${formUrl}" target="_blank">Submit data</a><br>`;
+
+                // Compose popup content
+                let popupContent = `<b>${row['Name']}</b><br>${addressLink}${submitLink}`;
 
                 fields.forEach(function(field) {
                     if (item[field] && item[field].trim() !== '') {
