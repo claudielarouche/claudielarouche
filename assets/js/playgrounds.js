@@ -135,7 +135,7 @@ function renderTable(data) {
 
         for (let field in formEntries) {
             const entryId = formEntries[field];
-            const value = item[field] || ''; // assumes `item` is your row object
+            const value = row[field] || ''; // assumes `item` is your row object
             queryParams.push(`entry.${entryId}=${encodeURIComponent(value)}`);
         }
 
