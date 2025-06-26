@@ -359,7 +359,7 @@ function addMarkersToMap(data) {
 
         }
     });
-}
+} 
 
 function filterMap() {
     markersGroup.clearLayers(); // Clear existing markers
