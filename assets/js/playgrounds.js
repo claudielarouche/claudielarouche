@@ -354,7 +354,7 @@ function addMarkersToMap(data) {
                 var marker = L.marker([lat, lng]).bindPopup(popupContent);
 
                 markersGroup.addLayer(marker); // Add new marker to the group
-                allMarkers.push({ marker: marker, name: item['Name'] }); // Store marker with name for filtering
+                allMarkers.push({ marker: marker, data: item }); //store all data for filtering
             }
 
         }
@@ -363,21 +363,22 @@ function addMarkersToMap(data) {
 
 function filterMap() {
     markersGroup.clearLayers(); // Clear existing markers
-    currentSearchValue = $('#dataTable_filter input').val();
+    currentSearchValue = $('#dataTable_filter input').val().toLowerCase();
 
     if (currentSearchValue) {
         allMarkers.forEach(function(obj) {
-            if (obj.name.toLowerCase().includes(currentSearchValue.toLowerCase())) {
+            const values = Object.values(obj.data).join(" ").toLowerCase();
+            if (values.includes(currentSearchValue)) {
                 markersGroup.addLayer(obj.marker);
             }
         });
     } else {
-        // Optionally add back all markers if no search term is provided
         allMarkers.forEach(function(obj) {
             markersGroup.addLayer(obj.marker);
         });
     }
 }
+
 
 /*
 document.addEventListener('DOMContentLoaded', function() {
