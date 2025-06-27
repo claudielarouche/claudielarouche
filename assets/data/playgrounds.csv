@@ -218,7 +218,7 @@
 45.4439303,-75.5984454,1698,378,31490,Ridge Park,1943 Elmridge Drive,TBD,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
 45.4052214,-75.7280811,83,196,31245,Stirling-Carruthers Park,195 Carruthers Avenue,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
 45.368395,-75.657833,210,260,31338,Frank J. Licari Park,1990 Cochrane Street / 1274 Vancouver Avenue,TBD,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
-45.3944254,-75.6759854,59,1186,32302,Windsor Park Ottawa,1B Windsor Avenue,TBD,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3944254,-75.6759854,59,1186,32302,Windsor Park Ottawa,1B Windsor Avenue,No,Yes - Not Covered,No,Yes,None,No,No,None,Sand,No,Tire swing
 45.3332624,-75.7559748,264,93,31121,Beechcliffe Park,2 Beechcliffe Street,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
 45.2665208,-75.9349697,1253,1632,32445,Laumann Park,2 Laumann Court,No,No,No,No,None,No,Yes,None,Sand,No,Only a small playstructure
 ,,437,351,31447,Green Briar Park,2 Rochon Way,TBD,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
@@ -463,7 +463,7 @@
 45.2680766,-75.7769834,759,2130,35023,Fosterbrook Park,428 Fosterbrook Way,TBD,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
 45.1927881,-75.8467508,1230,2372,36201,Richmond Oaks Park,43 Rochelle Drive,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
 45.4424237,-75.6693514,1073,1032,32153,Optimiste Park,43 Ste. Cécile Street,Yes - Seasonal,Yes - Not Covered,No,Yes,Wading Pool,Yes - Seasonal,No,Accessible swing,Mulch,TBD,Bathroom and water fountain at Genest Pool
-45.4282227,-75.6191583,,,,Biley A. Blax Park,4303 Halmont Dr. ,Yes - Seasonal,Yes - Covered,No,Yes,Splash Pad,Yes,No,None,Sand,Yes,"The parking is close to city park drive, but the playground is off of palmerston drive "
+45.4282227,-75.6191583,,,,Biley A. Blax Park,4303 Halmont Dr. ,Yes - Seasonal,Yes - Covered,No,Yes,Splash Pad,Yes,No,None,Sand,Yes,"The parking is close to city park drive, but the playground is off of Palmerston drive "
 ,,422,1002,32119,Joan O'Malley Park,4310 Shoreline Drive,Yes - Permanent,No,No,No,None,Yes,No,None,Sand,Yes,
 ,,918,2467,35787,Brigatine Park,434 Brigatine Avenue,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
 45.4091485,-75.7026158,1121,812,31930,McNabb Park,435 Bronson Avenue,Yes - Permanent,Yes - Covered,No,Yes,Wading Pool,No,Yes,TBD,Sand,Yes,
@@ -479,7 +479,7 @@
 45.3984326,-75.6835457,157,52,35119,Lansdowne Park,450 Queen Elizabeth Driveway,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
 45.2428665,-75.9148748,1675,2409,35227,Traditions Park,459 West Ridge Drive,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
 45.2906885,-75.8959902,1547,562,31686,Kincardine Park,46 Kincardine Drive,TBD,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
-45.4296534,-75.6479294,1681,335,31416,St. Paul's Park,469 Donald Street,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4296534,-75.6479294,1681,335,31416,St. Paul's Park,469 Donald Street,No,Yes - Covered,No,No,Wading Pool,No,No,None,Sand,No,Partial fence
 45.2910232,-75.8851498,1440,902,32612,Rickey Place Park,47 Rickey Place,TBD,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
 45.2264666,-75.6957271,805,2367,34635,Millers Point Park,474 Lockmaster Crescent,TBD,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
 45.3058815,-75.8859616,718,825,32512,Hewitt Park,474 Pickford Drive,TBD,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
