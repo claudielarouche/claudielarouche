@@ -4,7 +4,7 @@ description: A quick explanation on how I built the City of Ottawa Drop-In Websi
 image: https://claudielarouche.com/assets/img/racquets.jpg
 image_hero: https://claudielarouche.com/assets/img/racquets.jpg
 permalink: /projects/ottawa-drop-ins/how-i-built-this-tool
-layout: projects
+layout: page
 
 ---
 
