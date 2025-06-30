@@ -74,8 +74,8 @@ function renderTable(data) {
 
     tableHtml += '<th>Actions</th></tr></thead><tbody>';
 
-    //const filteredData = filterData(data, selectedAreas);    
-    const filteredData = data;
+    const filteredData = filterData(data, selectedFeatures);    
+    //const filteredData = data;
 
     // Iterate through each row of data
     filteredData.forEach(row => {
@@ -192,21 +192,18 @@ function renderTable(data) {
 //	filterMap();
 }
 
-/*
-function filterData(data, selectedArea) {
 
-
+function filterData(data, selectedFeatures) {
     return data.filter(row => {
-
-    const currentArea = row['Area'] || '';
-    
-    const areaCondition = selectedArea.some(board => currentArea.toLowerCase().includes(board.toLowerCase()));
-
-        
-            
-    return areaCondition;
+        for (let feature of selectedFeatures) {
+            const cellValue = (row[feature] || '').toLowerCase();
+            if (!cellValue.includes('yes')) {
+                return false; // Skip rows where the feature does not contain "yes"
+            }
+        }
+        return true; // All selected features matched
     });
-}*/
+}
 
 
 let currentSearchValue = getQueryParam('search'); // Variable to store the current search value
@@ -234,34 +231,34 @@ function clearAllFilters() {
     // Render the table with cleared filters
     renderTable(originalData);
 }
-/*
-const selectedAreas = [];
 
-document.querySelectorAll('.areaCheckbox').forEach(function (checkbox) {
+const selectedFeatures = [];
+
+document.querySelectorAll('.featureCheckbox').forEach(function (checkbox) {
     checkbox.addEventListener('change', function () {
     // Store the current sorting state
         sortingState = $('#dataTable').DataTable().state();
         currentSearchValue = $('#dataTable_filter input').val();
         if (checkbox.checked) {
-            if (!selectedAreas.includes(checkbox.value)) {
-                selectedAreas.push(checkbox.value);
+            if (!selectedFeatures.includes(checkbox.value)) {
+                selectedFeatures.push(checkbox.value);
             }
         } else {
-            const index = selectedAreas.indexOf(checkbox.value);
+            const index = selectedFeatures.indexOf(checkbox.value);
             if (index !== -1) {
-                selectedAreas.splice(index, 1);
+                selectedFeatures.splice(index, 1);
             }
         }
         renderTable(originalData);
     });
 
-    // Initialize with all checkboxes checked by default
-    checkbox.checked = true;
-    if (!selectedAreas.includes(checkbox.value)) {
-        selectedAreas.push(checkbox.value);
-    }
+    // Initialize with all checkboxes unchecked by default
+    checkbox.checked = false;
+    /*if (!selectedFeatures.includes(checkbox.value)) {
+        selectedFeatures.push(checkbox.value);
+    }*/
 });
-*/
+
 
 function initMap() {
     map = L.map('map').setView([45.4215, -75.6972], 12);
@@ -380,23 +377,23 @@ function filterMap() {
 }
 
 
-/*
-document.addEventListener('DOMContentLoaded', function() {
-    const selectAllAreasBtn = document.getElementById('selectAllAreasButton');
-    const unselectAllAreasBtn = document.getElementById('unselectAllAreasButton');
-    const areasCheckboxes = document.querySelectorAll('.areaCheckbox');
 
-    selectAllAreasBtn.addEventListener('click', function() {
-        areasCheckboxes.forEach(cb => {
+document.addEventListener('DOMContentLoaded', function() {
+    const selectAllFeaturesButton = document.getElementById('selectAllAreasButton');
+    const unselectAllFeaturesButton = document.getElementById('unselectAllAreasButton');
+    const featuresCheckboxes = document.querySelectorAll('.featureCheckbox');
+
+    selectAllFeaturesButton.addEventListener('click', function() {
+        featuresCheckboxes.forEach(cb => {
             cb.checked = true;
             cb.dispatchEvent(new Event('change', { bubbles: true }));
         });
     });
 
-    unselectAllAreasBtn.addEventListener('click', function() {
-        areasCheckboxes.forEach(cb => {
+    unselectAllFeaturesButton.addEventListener('click', function() {
+        featuresCheckboxes.forEach(cb => {
             cb.checked = false;
             cb.dispatchEvent(new Event('change', { bubbles: true }));
         });
     });  
-});*/
+});
