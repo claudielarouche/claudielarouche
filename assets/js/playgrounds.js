@@ -219,8 +219,6 @@ function clearAllFilters() {
     });
 
 
-
-
     // Clear the DataTable search box
     var dataTable = $('#dataTable').DataTable();
     dataTable.search('').draw();
