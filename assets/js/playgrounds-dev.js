@@ -194,16 +194,14 @@ function renderTable(data) {
 
 
 function filterData(data, selectedFeatures) {
-
-
     return data.filter(row => {
         for (let feature of selectedFeatures) {
-            // If the feature is selected but the corresponding value in the row is not "Yes", exclude it
-            if ((row[feature] || '').trim().toLowerCase() !== 'yes') {
-                return false;
+            const cellValue = (row[feature] || '').toLowerCase();
+            if (!cellValue.includes('yes')) {
+                return false; // Skip rows where the feature does not contain "yes"
             }
         }
-        return true; // Only include rows that match all selected features
+        return true; // All selected features matched
     });
 }
 
