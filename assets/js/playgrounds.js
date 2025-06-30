@@ -379,8 +379,8 @@ function filterMap() {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    const selectAllFeaturesButton = document.getElementById('selectAllAreasButton');
-    const unselectAllFeaturesButton = document.getElementById('unselectAllAreasButton');
+    const selectAllFeaturesButton = document.getElementById('selectAllFeaturesButton');
+    const unselectAllFeaturesButton = document.getElementById('unselectAllFeaturesButton');
     const featuresCheckboxes = document.querySelectorAll('.featureCheckbox');
 
     selectAllFeaturesButton.addEventListener('click', function() {
