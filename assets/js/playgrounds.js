@@ -212,12 +212,10 @@ function clearAllFilters() {
     // Store the current sorting state
     sortingState = $('#dataTable').DataTable().state();
     
-    // Check all the "Select Board" checkboxes
-   document.querySelectorAll('.areaCheckbox').forEach(checkbox => {
-        checkbox.checked = true;
-        if (!selectedAreas.includes(checkbox.value)) {
-            selectedAreas.push(checkbox.value);
-        }
+    // Unchecl all the "Select Feature" checkboxes
+   document.querySelectorAll('.featureCheckbox').forEach(checkbox => {
+        checkbox.checked = false;
+        selectedFeatures.length = 0; // clear the array
     });
 
 
