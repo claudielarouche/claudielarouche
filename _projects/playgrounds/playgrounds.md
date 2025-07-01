@@ -63,20 +63,23 @@ css:
 <form class="form">
 
 <div class="form-group row">
-<label for="selectedFeature" class="col-sm-2 col-form-label">Only include parks that have:</label>
-<div class="col-sm-10">
-<button type="button" id="selectAllFeaturesButton" class="btn btn-primary">Select All</button>
-<button type="button" id="unselectAllFeaturesButton" class="btn btn-secondary">Unselect All</button>
-<div class="checkbox">
-<label><input type="checkbox" id="washroomCheckbox" class="featureCheckbox" value="Washroom" checked=""> Washroom</label>
-</div>
-<div class="checkbox">
-<label><input type="checkbox" id="picnicCheckbox" class="featureCheckbox" value="Picnic Table" checked=""> Picnic Table</label>
-</div>
-<div class="checkbox">
-<label><input type="checkbox" id="fenceCheckbox" class="featureCheckbox" value="Fenced area" checked=""> Fenced Area</label>
-</div>
-</div>
+  <label for="selectedFeature" class="col-sm-2 col-form-label">Only include parks that have:</label>
+  <div class="col-sm-10">
+    <button type="button" id="selectAllFeaturesButton" class="btn btn-primary">Select All</button>
+    <button type="button" id="unselectAllFeaturesButton" class="btn btn-secondary">Unselect All</button>
+    <div class="checkbox">
+      <label><input type="checkbox" id="washroomCheckbox" class="featureCheckbox" value="Washroom" checked=""> Washroom</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" id="picnicCheckbox" class="featureCheckbox" value="Picnic Table" checked=""> Picnic Table</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" id="fenceCheckbox" class="featureCheckbox" value="Fenced area" checked=""> Fenced Area</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" id="splashPadCheckbox" class="featureCheckbox" value="Splash Pad" checked=""> Splash Pad</label>
+    </div>
+  </div>
 </div>
 
 </form>
