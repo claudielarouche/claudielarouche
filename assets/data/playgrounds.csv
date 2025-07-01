@@ -155,7 +155,7 @@
 45.3648945,-75.6567934,1093,596,31728,Ledbury Park and Pavilion,1250 Ledbury Avenue,TBD,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
 45.346972,-75.7840673,1149,1022,32142,Kilreen Park,1250 Southwood Drive,TBD,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
 45.3514314,-75.9413687,535,1615,32527,W.C. Bowes Park,1251 Halton Terrace,TBD,TBD,TBD,Yes,Splash Pad,TBD,No,TBD,TBD,TBD,
-45.4752745,-75.5255118,1226,1053,32168,Pierre Rocque Park,1257 Joseph-Drouin Avenue,TBD,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4752745,-75.5255118,1226,1053,32168,Pierre Rocque Park,1257 Joseph-Drouin Avenue,No,TBD,No,Yes,None,No,No,TBD,Sand,Yes,Horseshoes and tennis courts and Baseball diamonds nearby
 45.3547709,-75.9202615,871,1000,32530,Ravenscroft Park,126 Shirley's Brook Drive,TBD,TBD,TBD,Yes,TBD,TBD,No,TBD,TBD,TBD,
 45.3765323,-75.6634954,767,919,56739,Edgehill Park,1264 Ridgemont Avenue,TBD,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
 45.3546645,-75.7661072,1579,3,31005,Kenson Park,1265 Adirondack Drive,TBD,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
@@ -317,7 +317,7 @@
 45.2869764,-75.9206678,279,1983,36238,Bandmaster Park,230 Mistral Way,TBD,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
 45.1308329,-75.7101571,628,273,31350,Alfred Taylor Recreation Facility - North Gower,2300 Community Way,TBD,TBD,TBD,Yes,TBD,TBD,Yes,TBD,TBD,TBD,
 45.3974593,-75.6144015,900,1021,32140,Sheffield Glen Park,2320 Southvale Crescent,TBD,TBD,TBD,TBD,Splash Pad,TBD,TBD,TBD,TBD,TBD,
-45.385357,-75.6461496,1448,1146,32254,Rabbi Bulka Kindness Park,2330 Virginia Drive,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.385357,-75.6461496,1448,1146,32254,Rabbi Bulka Kindness Park,2330 Virginia Drive,Yes - Seasonal,Yes - Covered,No,Yes,None,No,No,Accessible swing,Mulch,No,Obstacle course/challenge. Best suited for 7/8+ up to adults. Picnic table is accessible via paved walkways
 45.350018,-75.7784794,1461,830,31943,Ridgeview Park,2331 Edwin Crescent,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
 45.1298045,-75.7165154,692,813,31931,Horace Seabrook Park,2346 Perkins Drive,TBD,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
 45.3812878,-75.6585305,1056,778,31882,Orlando Park,2347 Orlando Avenue,TBD,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
@@ -569,7 +569,7 @@
 45.2715565,-75.9413496,101,1669,36249,Echowoods Park,66 Lloydalex Crescent,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
 45.288771,-75.6648429,127,2493,49007,Boothfield Park,660 Boothfield Street,TBD,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
 45.2729665,-75.6991157,1282,925,32029,Claudette Cain Park,660 River Road,TBD,Yes - Not Covered,No,Yes,Splash Pad,TBD,No,None,Sand,Yes,
-45.478079,-75.5317329,311,107,31144,Bilberry Park,6600 Bilberry Drive,TBD,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.478079,-75.5317329,311,107,31144,Bilberry Park,6600 Bilberry Drive,No,No,No,Yes,None,No,No,TBD,Sand,Yes,Track from school nearby
 45.4663702,-75.5235869,1128,195,31243,Laurier Carrière Park,6601 Carrière Street,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
 45.1560721,-75.6535689,1498,1294,32326,Whittle-Winter Park,6621 Dorack Drive,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
 45.243968,-75.5669857,1624,2471,35789,Calwood Park,6641 Calwood Avenue,TBD,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
@@ -615,7 +615,7 @@
 45.3755029,-76.3166392,1156,2283,35287,Recreational Trail,751 West Hunt Club Road,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
 45.2823436,-75.7621268,821,582,57745,Larkin Park,76 Larkin Drive,TBD,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
 45.4463022,-75.4739871,789,2286,36221,Parkland (760 Lakeridge Drive),760 Lakeridge Drive,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
-45.486804,-75.5159183,256,1322,32337,Robert Park,760 Vinette Crescent,TBD,TBD,TBD,TBD,TBD,TBD,Yes,TBD,TBD,TBD,
+45.486804,-75.5159183,256,1322,32337,Robert Park,760 Vinette Crescent,No,Yes - Not Covered,No,No,None,No,Yes,None,Sand,No,
 45.028127,-75.746744,850,985,35461,Rideau Country Estates South Park,7630 Settler's Way,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
 45.0736745,-75.6431969,559,1314,32332,Reeve Craig Park,7747 Greenline Road,TBD,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
 45.1599463,-75.4623381,1595,914,32014,Vernon Park,7814 Lawrence Street,TBD,TBD,TBD,Yes,TBD,TBD,Yes,TBD,TBD,TBD,
@@ -657,10 +657,10 @@
 45.3503365,-75.7999659,468,17,31021,Barwell Park,921 Alenmede Crescent,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
 45.2619953,-75.7691903,988,1070,32195,Clarke Fields Park,93 Houlahan Street,TBD,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
 45.4072573,-75.714392,1580,840,32712,Plouffe Park,930 Somerset Street West,TBD,TBD,TBD,TBD,Splash Pad,TBD,TBD,TBD,TBD,TBD,
-45.4868815,-75.5079738,481,1324,32344,Big Bird Park,936 Lawnsberry Drive,TBD,TBD,TBD,TBD,Splash Pad,TBD,Yes,TBD,TBD,TBD,
+45.4868815,-75.5079738,481,1324,32344,Big Bird Park,936 Lawnsberry Drive,No,Yes - Not Covered,No,Yes,Splash Pad,No,No,TBD,Sand,No,Dog park nearby
 45.3000089,-75.8546868,1605,1302,32328,Mattawa Park,94 Steeple Chase Drive,TBD,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
 45.3958235,-75.6253881,130,832,31949,Weston Park,955 Pleasant Park Road,TBD,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
-45.482928,-75.5336907,1564,106,31143,Luc Major Park,956 Bilberry Drive,TBD,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.482928,-75.5336907,1564,106,31143,Luc Major Park,956 Bilberry Drive,No,No,No,Yes,None,No,No,TBD,Sand,Yes,There is parking but not very much!
 45.2829262,-75.8493392,494,1671,32796,Scisson's Park,96 Bridle Park Drive,TBD,TBD,TBD,Yes,TBD,TBD,Yes,TBD,TBD,TBD,
 45.3739241,-75.6132185,646,544,31671,Karsh Park,96 Topley Crescent,TBD,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
 45.2774941,-75.687191,1231,363,31461,Rideauview Park,960 Eiffel Avenue,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
@@ -710,3 +710,4 @@
 45.267778,-75.69548,417,2499,35613,Summerhill Park,560 Summerhill Street,Yes - Seasonal,Yes - Covered,No,Yes,Splash Pad,No,No,Accessible swing,Mulch,No,
 45.2660653,-75.5511726,923,2488,35827,Greely Village Park,7292 Parkway Road,Yes - Seasonal,Yes - Covered,No,,None,No,No,TBD,Mulch,Yes,"Soccer field, tennis court, basketball court, skate park and a pond with a walking trail"
 45.3567357,-75.7885149,562,22,31026,Frank Ryan Park,950 Alpine Avenue,Yes - Seasonal,Yes - Covered,No,Yes,Wading Pool,No,No,None,Sand,Yes,"Basketball courts, large fields, baseball fields"
+45.4854618,-75.5114832,,,,Marsha Park,855 A Lawnsberry Drive,No,No,No,No,None,No,No,None,Sand,Yes,"Beside a school, so parking is for school. Soccer field, tennis court and hockey rink."
