@@ -77,6 +77,10 @@ css:
 <label><input type="checkbox" id="fenceCheckbox" class="featureCheckbox" value="Fenced area" checked=""> Fenced Area</label>
 </div>
 </div>
+<div class="checkbox">
+<label><input type="checkbox" id="splashPadCheckbox" class="featureCheckbox" value="Splash Pad" checked=""> Splash Pad</label>
+</div>
+</div>
 </div>
 
 </form>

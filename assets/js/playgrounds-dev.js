@@ -196,15 +196,37 @@ function renderTable(data) {
 function filterData(data, selectedFeatures) {
     return data.filter(row => {
         for (let feature of selectedFeatures) {
-            const cellValue = (row[feature] || '').toLowerCase();
-            if (!cellValue.includes('yes')) {
-                return false; // Skip rows where the feature does not contain "yes"
+            switch (feature) {
+                case "Splash Pad":
+                    {
+                        const waterPlayValue = (row["Water Play"] || '').toLowerCase();
+                        if (!waterPlayValue.includes("splash pad")) {
+                            return false;
+                        }
+                        break;
+                    }
+
+                // Add future special cases here, for example:
+                // case "Accessible":
+                //     const accessValue = (row["Accessibility"] || '').toLowerCase();
+                //     if (!accessValue.includes("wheelchair")) {
+                //         return false;
+                //     }
+                //     break;
+
+                default:
+                    {
+                        const value = (row[feature] || '').toLowerCase();
+                        if (!value.includes("yes")) {
+                            return false;
+                        }
+                        break;
+                    }
             }
         }
-        return true; // All selected features matched
+        return true;
     });
 }
-
 
 let currentSearchValue = getQueryParam('search'); // Variable to store the current search value
 
