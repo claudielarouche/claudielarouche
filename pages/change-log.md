@@ -8,26 +8,9 @@ Hello!
 
 The purpose of this page is simply to let you all know what I've been working on! :) Enjoy!
 
-## June 2025
-
-- I redid the [URL Extractor](https://claudielarouche.com/projects/url-extractor/) on the new look and feel
-- I tried putting Google Ads on my website to try and get a bit of revenue. Unfortunately the ads were really bizarre and I decided to remove them after all. 
-- Up until this point, some images on the home page were not consistent. It was probably driving some people crazy haha. Worry not, as of June 3, it is now resolved :) 
-- For a few evenings, I've been working on a Python tool to extract content from Government of Canada Departmental Plans and Departmental Results Reports (the idea was that someone could see on one web page the same section from 80+ different plans). It isn't working super well and I'm considering giving up. I will give it a few days to think about it. 
-- Added a "Copy" button to the [Email extractor tool](https://claudielarouche.com/projects/email-address-extractor/) so that people can easily copy and paste the output (not sure why I didn't do that earlier haha)
-- Released a new project! A list of all the [wading pools in Ottawa](https://claudielarouche.com/projects/wading-pools/). At first there was a bug when filtering the table but I (or I should say ChatGPT haha) managed to fix it. I used my lat-long tool (I will add the link once it's properly published) to figure out the latitude and longitude of the wading pools so I could place them all on a map
-- Using the map, I figured out the area of the city for each wading pool and added that information to my dataset. I also added a washroom column which I'm hoping fellow Moms will help me complete eventually :) 
-- I gave a talk at the Busy Moms Expo which was super fun!
-- Added a "report a data problem" column to the [wading pools page](https://claudielarouche.com/projects/wading-pools/). I also hid all days of the week aside from today by default. I also turned the icon red if the pool is closed today and green if it's open. 
-- I emailed the city of Ottawa to confirm the opening date of the wading pools. They have not responded :( 
-- A friend informed me that some of the wading pools are now open during the weekend. So I actually updated the [wading pool listing](https://claudielarouche.com/projects/wading-pools/) so that it shows exactly which pool is open on the weekend and what time, and I changed the data to mark everything else as "closed". I also added some logic in the Javascript code so that the map icon shows as red when the pool is closed that day and green when it's open.  
-- Spent an entire evening cleaning up the City of Ottawa Playgrounds dataset, and I'm only about 1/10th of the way there :( This is a bigger project than I anticipated! (the reason there is so much cleanup needed is because the city included things that are not particularly important, and then there were lots of parks listed multiple times, probably because they have multiple structures. As parents, we don't need to see multiple lines for the same park even if a park has multiple structures).
-- Oopsie! Back in February, someone had filled my "Report a data problem" form for the City of Ottawa drop-in page to say that this activity shouldn't be tagged to preschool: "Ottawa Drop-Ins: Saturday, 16:45 - 18:15, Minto Recreation Complex - Barrhaven, 3500 Cambrian Road, Open gym - family 
-(children ages 6 to 12)". I had missed that message entirely. Whoever they are, they are absolutely correct so finally, 4 months later, I fixed the data (better late than never lol)
-- After a few evenings of hard work, I finished removing duplicates from the playground dataset. I went to bed way too late. I published a "work in progress" project for the playgrounds and a bunch of Moms on Facebook helped me gather data for over 100 parks which is amazing! However, there are still about 600 to go. It will take a while but maybe by the time my son is 18 we'll have them all documented ;) 
-
 ## May 2025
 
+- (before May 2025, I did tons of stuff but I didn't keep track sorry! ;)
 - Created the change log page!
 - Added css code for Bootstrap buttons
 - The City of Ottawa Library website was changed. All events are now starting with https://booking.biblioottawalibrary.ca/ whereas before they were under https://biblioottawalibrary.ca/ I had to change my CSV file where all the data is located, and also the Python script that I run weekly to update the data. Thankfully the whole exercise took only about 5 minutes, phew! :) 
@@ -53,4 +36,32 @@ The purpose of this page is simply to let you all know what I've been working on
 - I did a presentation at the Civic Tech Ottawa Meetup, so I added a few pictures of the event to the media page
 - OMG! On May 23, 2025, I received my VERY FIRST coffee (there's a link to buy me a coffee in the footer of my website). I am super excited!
 - I redid my [time difference tool](https://claudielarouche.com/projects/time-diff/) on the new look and feel (and actually fixed a few bugs while I was at it)
-- (before that I did tons of stuff but I didn't keep track sorry! ;)
+
+## June 2025
+
+- I redid the [URL Extractor](https://claudielarouche.com/projects/url-extractor/) on the new look and feel
+- I tried putting Google Ads on my website to try and get a bit of revenue. Unfortunately the ads were really bizarre and I decided to remove them after all. 
+- Up until this point, some images on the home page were not consistent. It was probably driving some people crazy haha. Worry not, as of June 3, it is now resolved :) 
+- For a few evenings, I've been working on a Python tool to extract content from Government of Canada Departmental Plans and Departmental Results Reports (the idea was that someone could see on one web page the same section from 80+ different plans). It isn't working super well and I'm considering giving up. I will give it a few days to think about it. 
+- Added a "Copy" button to the [Email extractor tool](https://claudielarouche.com/projects/email-address-extractor/) so that people can easily copy and paste the output (not sure why I didn't do that earlier haha)
+- Released a new project! A list of all the [wading pools in Ottawa](https://claudielarouche.com/projects/wading-pools/). At first there was a bug when filtering the table but I (or I should say ChatGPT haha) managed to fix it. I used my lat-long tool (I will add the link once it's properly published) to figure out the latitude and longitude of the wading pools so I could place them all on a map
+- Using the map, I figured out the area of the city for each wading pool and added that information to my dataset. I also added a washroom column which I'm hoping fellow Moms will help me complete eventually :) 
+- I gave a talk at the Busy Moms Expo which was super fun!
+- Added a "report a data problem" column to the [wading pools page](https://claudielarouche.com/projects/wading-pools/). I also hid all days of the week aside from today by default. I also turned the icon red if the pool is closed today and green if it's open. 
+- I emailed the city of Ottawa to confirm the opening date of the wading pools. They have not responded :( 
+- A friend informed me that some of the wading pools are now open during the weekend. So I actually updated the [wading pool listing](https://claudielarouche.com/projects/wading-pools/) so that it shows exactly which pool is open on the weekend and what time, and I changed the data to mark everything else as "closed". I also added some logic in the Javascript code so that the map icon shows as red when the pool is closed that day and green when it's open.  
+- Spent an entire evening cleaning up the City of Ottawa Playgrounds dataset, and I'm only about 1/10th of the way there :( This is a bigger project than I anticipated! (the reason there is so much cleanup needed is because the city included things that are not particularly important, and then there were lots of parks listed multiple times, probably because they have multiple structures. As parents, we don't need to see multiple lines for the same park even if a park has multiple structures).
+- Oopsie! Back in February, someone had filled my "Report a data problem" form for the City of Ottawa drop-in page to say that this activity shouldn't be tagged to preschool: "Ottawa Drop-Ins: Saturday, 16:45 - 18:15, Minto Recreation Complex - Barrhaven, 3500 Cambrian Road, Open gym - family 
+(children ages 6 to 12)". I had missed that message entirely. Whoever they are, they are absolutely correct so finally, 4 months later, I fixed the data (better late than never lol)
+- After a few evenings of hard work, I finished removing duplicates from the playground dataset. I went to bed way too late. I published a "work in progress" project for the playgrounds and a bunch of Moms on Facebook helped me gather data for over 100 parks which is amazing! However, there are still about 600 to go. It will take a while but maybe by the time my son is 18 we'll have them all documented ;) 
+- I also posted my playground project to LinkedIn and got a few more parks documented that way, thank you to whoever helped! I am getting information about new parks little by little now and try to add them within 24 hours of receiving the information.
+- I linked my playground data with the splash pad dataset from the city, so that I could document all the parks that have a splash pad. 
+- I added 3 filters to the playground page: 
+  - Washroom
+  - Picnic Table
+  - Fenced Area
+- I updated the wading pool data toward the end of June. Some pools opened on June 23, some on June 24, some on June 29, some on June 30... I tried to keep up and add the right schedule on the day the pool opened (or the night before) although I have to admit it was not done perfectly :) 
+
+## July 2025
+
+- I added a splash pad filter on my playground page. I'm very happy about that one as I think it will be super useful for parents to be able to see only parks with splash pads quickly. There are a few parks I will have to manually check as they were listed by the city as having a splash pad but Moms had reported that there was no splash pad. Not sure who is right :) 
