@@ -667,7 +667,7 @@
 45.2774941,-75.687191,1708,363,31463,Rideauview Park,960 Eiffel Avenue,TBD,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
 45.3802755,-75.731595,31,1003,32122,Alexander Park,960 Silver Street,TBD,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
 45.3959186,-75.6973981,95,144,31195,Senator Eugene Forsey Park,964 Bronson Avenue,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
-45.360973,-75.7765769,1340,797,31901,Whitehaven / George C. Brown Park,970 Parkhaven Avenue,TBD,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.360973,-75.7765769,1340,797,31901,Whitehaven / George C. Brown Park,970 Parkhaven Avenue,Yes - Seasonal,Yes - Not Covered,No,Yes,Splash Pad,No,TBD,TBD,Sand,No,
 45.4342639,-75.5637181,472,514,31640,Bearbrook Park and Pool,99 Bearbrook Road,TBD,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
 45.284439,-75.7052282,790,2347,36255,Furness Park,99 Furness Way,TBD,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
 45.3149916,-75.8400638,1441,847,31960,Priam Way Park,99 Priam Way,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
@@ -676,7 +676,7 @@
 45.3772781,-75.6739849,458,479,31613,Heron Park,999 Heron Road,TBD,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
 45.3860957,-75.7297448,751,467,56867,Harrold Place Park,1 Harrold Place,Yes - Permanent,Yes - Covered,No,Yes,Splash Pad,No,Yes,TBD,TBD,TBD,
 45.4696753,-76.2053169,23,2458,32248,Egbert Reitsma Parkette,100 Clifford Campbell Street,Yes - Permanent,No,No,Yes,None,No,No,Accessible swing,Mulch,Yes,
-45.3423092,-75.7676493,1638,220,31271,Centrepointe Park,260 Centrepointe Drive,Yes - Permanent,No,No,Yes,Splash Pad,TBD,No,Accessible swing,Sand,Yes,
+45.3423092,-75.7676493,1638,220,31271,Centrepointe Park,260 Centrepointe Drive,Yes - Permanent,No,No,Yes,Splash Pad,TBD,No,Accessible swing,Sand,Yes,The accessible swing is not the usual kind. Works for wheelchairs
 45.3611414,-75.7980097,364,182,31229,Britannia Park,2805 Carling Avenue,Yes - Permanent,Yes - Covered,No,Yes,None,Yes - Permanent,No,None,Sand,Yes,Beach access. Seasonal restaurant. Rentals. Two kids playgrounds. Huge beach.
 45.3359837,-75.7308986,1612,1190,32309,Tanglewood Park,30 Woodfield Drive,Yes - Permanent,Yes - Not Covered,No,Yes,None,No,No,None,Sand,No,Washroom is at the community centre
 45.3526399,-75.8139338,1557,186,31240,Andrew Haydon Park,3127 Carling Avenue,Yes - Permanent,Yes - Not Covered,No,No,None,Yes - Permanent,No,None,Sand,Yes,The splash beside is spray only. Lots of climbing structures on the park to the east. Huge walkable area
@@ -711,3 +711,4 @@
 45.2660653,-75.5511726,923,2488,35827,Greely Village Park,7292 Parkway Road,Yes - Seasonal,Yes - Covered,No,,None,No,No,TBD,Mulch,Yes,"Soccer field, tennis court, basketball court, skate park and a pond with a walking trail"
 45.3567357,-75.7885149,562,22,31026,Frank Ryan Park,950 Alpine Avenue,Yes - Seasonal,Yes - Covered,No,Yes,Wading Pool,No,No,None,Sand,Yes,"Basketball courts, large fields, baseball fields"
 45.4854618,-75.5114832,,,,Marsha Park,855 A Lawnsberry Drive,No,No,No,No,None,No,No,None,Sand,Yes,"Beside a school, so parking is for school. Soccer field, tennis court and hockey rink."
+45.450792,-75.5922589,,,,Loyola Park,2166 Loyola Ave.,No,No,No,No,Splash Pad,No,No,None,N/A,No,"This park only has a splash pad, no play structure"

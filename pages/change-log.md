@@ -64,4 +64,5 @@ The purpose of this page is simply to let you all know what I've been working on
 
 ## July 2025
 
-- I added a splash pad filter on my playground page. I'm very happy about that one as I think it will be super useful for parents to be able to see only parks with splash pads quickly. There are a few parks I will have to manually check as they were listed by the city as having a splash pad but Moms had reported that there was no splash pad. Not sure who is right :) 
+- I added a splash pad filter on my playground page. I'm very happy about that one as I think it will be super useful for parents to be able to see only parks with splash pads quickly. There are a few parks I will have to manually check as they were listed by the city as having a splash pad but Moms had reported that there was no splash pad. Not sure who is right :) I also learnt on Canada that some parks have splash pads only but no play structures (like Loyola park for example). That one is not on my list of park but it should be I suppose (with a note that there is no play structure).
+- I finished updating the schedule of the wading pools, now that all of them are open. Next update will be when they close, toward the end of August. I ended up removing the 6 wading pools that are within a City of Ottawa outdoors pool (because those ones are not free to visit, whereas all the others are). 
