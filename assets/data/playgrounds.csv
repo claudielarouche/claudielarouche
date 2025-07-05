@@ -16,7 +16,7 @@
 45.4661111,-75.4464385,838,1333,32838,Cumberland Millennium Sports Park,100 Millennium Boulevard,TBD,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
 45.3755029,-76.3166392,348,1645,32459,Recreational Trail,100 Tapiola Crescent,TBD,TBD,TBD,TBD,TBD,TBD,No,TBD,TBD,TBD,
 45.3286679,-75.9019848,633,1700,32791,Beaverbrook Pool Park,1002 Beaverbrook Road,TBD,TBD,TBD,Yes,TBD,TBD,Yes,TBD,TBD,TBD,
-45.4029314,-75.7232566,1494,1168,32278,Hintonburg Park,101 Duhamel Street,TBD,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.4029314,-75.7232566,1494,1168,32278,Hintonburg Park,101 Duhamel Street,No,Yes - Not Covered,No,Yes,Splash Pad,No,Yes,Structure with ramp,Sand,No,Proximity to Hintonburg Community Centre. Fenced but not gated.
 45.2769344,-75.8864877,265,2484,35135,Blackstone Park,101 Tapadero Avenue,TBD,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
 45.2656678,-75.7551056,478,2395,34628,Barrhaven Mews Park,1010 Andora Avenue,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
 45.3670879,-75.6769605,728,466,31594,Pauline Vanier Park,1015 Harkness Avenue,Yes - Seasonal,Yes - Not Covered,No,Yes,Wading Pool,No,No,None,Sand,Yes,
@@ -319,7 +319,7 @@
 45.3423092,-75.7676493,1638,220,31271,Centrepointe Park,260 Centrepointe Drive,Yes - Permanent,No,No,Yes,Splash Pad,TBD,No,Accessible swing,Sand,Yes,The accessible swing is not the usual kind. Works for wheelchairs
 45.4993268,-76.092897,841,1334,32374,Constance Buckham's Bay Community Centre Park,262 Len Purcell Drive,TBD,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
 45.3673395,-75.7931543,1179,141,31741,Lincoln Heights Park,265 Britannia Road,TBD,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
-45.3980755,-75.7188971,548,385,31509,Princess Margriet Park,265 Fairmont Avenue,TBD,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3980755,-75.7188971,548,385,31509,Princess Margriet Park,265 Fairmont Avenue,No,Yes - Covered,No,Yes,None,No,No,None,Sand,No,"Tennis/pickleball court, space for dogs to socialize (leashed), open field space."
 45.2886534,-75.9229278,847,2414,35561,Par-La-Ville Park,265 Par-La-Ville Circle,TBD,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
 45.4290931,-75.4849875,1491,715,31823,Lavalee Plaza Park,2655 Monique Avenue,TBD,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
 45.515369,-75.3840565,1308,827,57025,Hillside Estates Park,2660 Pierrette Drive,TBD,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
@@ -351,7 +351,7 @@
 45.358765,-75.8055031,754,470,31604,Grandeur Park,2915 Haughton Avenue,TBD,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
 45.3159704,-75.6042014,1173,2040,36248,Dragonfly Park,2920 Findlay Creek Drive,TBD,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
 45.3717326,-75.6548206,1683,12,32823,Walkley Albion Park,2930 Albion Road North,TBD,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
-45.4025093,-75.727228,1259,197,32711,McCormick Park,294 Carruthers Avenue,TBD,TBD,TBD,TBD,TBD,TBD,Yes,TBD,TBD,TBD,
+45.4025093,-75.727228,1259,197,32711,McCormick Park,294 Carruthers Avenue,No,Yes - Covered,No,No,None,No,Yes,None,Sand,No,
 45.394589,-75.7525979,1011,376,31482,Lion's Park,294 Elmgrove Avenue,TBD,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
 45.4629575,-75.9721692,131,1594,32565,Dunrobin Shores Park,2940 Barlow Crescent,TBD,TBD,TBD,TBD,TBD,TBD,No,TBD,TBD,TBD,
 45.3958329,-75.7556948,492,239,31302,Roy Duncan Park,295 Churchill Avenue North,TBD,TBD,TBD,TBD,Splash Pad,TBD,TBD,TBD,TBD,TBD,
@@ -691,7 +691,7 @@
 45.3270052,-75.5919039,962,2500,52749,Littlerock Park,920 Littlerock St,No,Yes - Covered,No,Yes,Splash Pad,No,No,None,Mulch,No,
 45.3503365,-75.7999659,468,17,31021,Barwell Park,921 Alenmede Crescent,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
 45.2619953,-75.7691903,988,1070,32195,Clarke Fields Park,93 Houlahan Street,TBD,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
-45.4072573,-75.714392,1580,840,32712,Plouffe Park,930 Somerset Street West,TBD,TBD,TBD,TBD,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.4072573,-75.714392,1580,840,32712,Plouffe Park,930 Somerset Street West,Yes - Permanent,Yes - Not Covered,No,No,Splash Pad,Yes - Seasonal,Yes,None,Sand,Yes,Adjacent to community centre with indoor pool and washrooms.
 45.4868815,-75.5079738,481,1324,32344,Big Bird Park,936 Lawnsberry Drive,No,Yes - Not Covered,No,Yes,Splash Pad,No,No,TBD,Sand,No,Dog park nearby
 45.3000089,-75.8546868,1605,1302,32328,Mattawa Park,94 Steeple Chase Drive,TBD,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
 45.3567357,-75.7885149,562,22,31026,Frank Ryan Park,950 Alpine Avenue,Yes - Seasonal,Yes - Covered,No,Yes,Wading Pool,No,No,None,Sand,Yes,"Basketball courts, large fields, baseball fields"
