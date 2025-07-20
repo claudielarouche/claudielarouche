@@ -89,12 +89,12 @@
 45.1995785,-75.839578,999,1668,56813,Grovewoods Park,13 Grovewood Lane,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
 45.2725196,-75.9043356,1506,1625,32444,Slate Park,13 Slate Street,No,Yes - Not Covered,Yes,None,No,No,None,Sand,No,
 45.327088,-75.9205761,715,1801,34621,Walden Park,130 Walden Drive,TBD,TBD,TBD,Splash Pad,TBD,TBD,TBD,TBD,TBD,
-45.3836893,-75.6664353,626,880,31993,Alta Vista Park,1309 Randall Avenue,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3836893,-75.6664353,626,880,31993,Alta Vista Park,1309 Randall Avenue,Yes - Seasonal,Yes - Covered,Yes,Wading Pool,TBD,No,Accessible swing,Sand,No,"Backs onto field with baseball diamond that has a skating rink in the winter. The filed is often used to exercise dogs off leash, especially in the evening."
 45.2547771,-75.589266,1438,1103,32221,Tintern Park,1314 Tintern Drive,TBD,TBD,No,TBD,TBD,TBD,TBD,TBD,TBD,
 45.4289371,-75.6225127,1150,759,34647,Palmerston Park,1326 Ogilvie Road,No,Yes - Not Covered,Yes,None,No,No,None,Sand,No,There is a small spraying pole
 45.37044,-75.6308042,30,1665,32510,Firefly Park,133 Duntroon Circle,TBD,TBD,Yes,TBD,TBD,No,TBD,TBD,TBD,
 45.417287,-75.6456081,149,48,31068,Cecil Morrison Park,1332 Avenue N,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
-45.387997,-75.6688819,183,95,31122,Applewood Park,134 Begonia Avenue,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.387997,-75.6688819,183,95,31122,Applewood Park,134 Begonia Avenue,No,TBD,Yes,None,No,No,TBD,Sand,No,
 45.333697,-75.7755041,725,449,31576,Craig Henry Park,135 Craig Henry Drive,TBD,TBD,Yes,TBD,TBD,No,TBD,TBD,TBD,
 45.2770573,-75.7590125,334,997,32106,Burnett Park,135 Sherway Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
 45.3493425,-75.9376453,1186,80,31108,Klondike Road Park,1365 Halton Terrace,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
@@ -304,7 +304,7 @@
 45.2988136,-75.9007666,1383,424,31549,Gesner Court Park,25 Gesner Court,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
 45.4263247,-75.6716488,1591,881,31995,Strathcona Park,25 Range Road,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
 45.2356365,-75.9117022,731,1175,32287,Healey's Heath Park,25 West Healey Avenue,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
-45.3960452,-75.7326632,1534,495,31622,Fisher Park,250 Holland Avenue,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.3960452,-75.7326632,1534,495,31622,Fisher Park,250 Holland Avenue,Yes - Seasonal,Yes - Covered,Yes,Splash Pad,No,No,Accessible swing and structure with ramp,Mulch,No,There is a sandbox but the sand is in a bad state
 45.363179,-75.6300833,864,631,31758,Bruff Park,250 Lorry Greenberg Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
 45.4222719,-75.6772141,355,1010,32133,Annie Pootoogook Park,250 Somerset Street,TBD,TBD,Yes,TBD,TBD,Yes,TBD,TBD,TBD,
 45.2424881,-75.7341629,658,2506,52955,River Mist Park,2520 River Mist Road,No,Yes - Covered,Yes,None,No,No,Accessible swing,Mulch,No,"Also has a sand pit section, and a very short wooded trail loop. Zip line"
@@ -325,7 +325,7 @@
 45.515369,-75.3840565,1308,827,57025,Hillside Estates Park,2660 Pierrette Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
 45.2374461,-75.4660995,419,435,31563,Joe Rowan Park,2665 Glenwood Drive,No,Yes - Covered,Yes,None,No,No,None,Sand,Yes,"Large grass fields, covered gazebo area with multiple picnic tables, basketball court. Zip line"
 45.3883695,-75.7482762,1049,243,31312,Clare Gardens Park,269 Clare Street,No,Yes - Not Covered,Yes,None,No,No,None,Sand,No,
-45.442875,-75.6092418,1147,379,31492,Kinsmen Park,27 Elvina Street,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.442875,-75.6092418,1147,379,31492,Kinsmen Park,27 Elvina Street,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,No,Park currently not accessible as it is under construction (as of 2025-07-07)
 45.2626528,-75.9347368,432,1506,32381,Crossing Bridge Park,27 Hobin Street,No,No,Yes,None,No,Yes,None,Multiple,No,
 45.4408514,-75.9542389,1233,828,32567,Pinhey's Point Park,270 Pinhey Point Road,TBD,TBD,TBD,TBD,TBD,No,TBD,TBD,TBD,
 45.4491058,-75.6776033,691,1142,32253,Village Green Park,270 Springfield Road,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
@@ -622,7 +622,7 @@
 45.343752,-76.0257514,17,2490,34980,Doug Rivington Park,701 Meadowridge Circle,No,Yes - Covered,Yes,None,No,TBD,TBD,TBD,No,
 45.26183,-75.5662248,456,289,32636,Herb Johnston Park,7035 Cosgrove Avenue,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
 45.2522519,-75.5556262,973,1664,32497,Shadow Ridge Park,7064 Donwel Drive,TBD,TBD,Yes,TBD,TBD,No,TBD,TBD,TBD,
-45.4503867,-75.6316289,1033,2599,49237,Eugène Martineau Park,710 Mikinak Road,TBD,TBD,TBD,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.4503867,-75.6316289,1033,2599,49237,Eugène Martineau Park,710 Mikinak Road,No,Yes - Not Covered,Yes,Splash Pad,TBD,No,Accessible swing,Mulch,Yes,"Zip line, more for older kids lots of climbing stuctures"
 45.3204177,-75.5987972,333,1666,32810,Butterfly Park,711 Long Point Circle,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
 45.3692621,-75.6123287,16,337,56501,Dossetter Park,72 Dossetter Way,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
 45.3352937,-75.7445568,1160,1191,32310,Medhurst Park,72 Medhurst Drive,TBD,Yes - Not Covered,Yes,None,No,No,None,Sand,No,They are supposed to be installing a splash pad by next summer so some of the info will change (2025-06-25). There is parking but not right at the park. Zip line
