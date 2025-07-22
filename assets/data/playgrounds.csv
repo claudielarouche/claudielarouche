@@ -199,7 +199,7 @@
 45.4788288,-75.4586027,79,2380,34999,Cardinal Creek Community Park,1825 Trim Road,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
 45.290459,-75.8782465,1176,206,32613,Clarence Maheral Park,183 Old Colony Road / 170 Castlefrank Road,TBD,TBD,Yes,TBD,TBD,No,TBD,TBD,TBD,
 45.401448,-75.6305316,1240,971,32077,Hutton Park,1830 Hutton Avenue,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
-45.4434464,-75.6041039,384,377,31486,Elmridge Park,1841 Elmridge Drive,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.4434464,-75.6041039,384,377,31486,Elmridge Park,1841 Elmridge Drive,No,Yes - Not Covered,Yes,Splash Pad,No,No,None,Sand,Yes,Tennis club and basketball court nearby
 45.3682025,-75.6275437,1382,1566,32410,Winterwood Park,1844 Johnston Road,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
 45.420976,-75.6014834,1450,1067,32187,Stonehenge Park,1851 Stonehenge Crescent,TBD,TBD,TBD,Splash Pad,TBD,TBD,TBD,TBD,TBD,
 45.4521805,-75.5191934,1134,1005,32128,St. François Park,1855 Simard Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
@@ -390,7 +390,7 @@
 45.3481536,-75.6830004,177,1122,35481,Uplands Park,3165 Uplands Drive,No,Yes - Not Covered,Yes,None,No,No,Accessible swing,Multiple,No,Tennis Courts and Basketball Hoop
 45.4546779,-75.4789779,746,2120,36237,Aquaview Park,318 Aquaview Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
 45.27894,-75.7459251,1105,1320,32334,North Harrow Park,32 North Harrow Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
-45.4414535,-75.6587443,1286,1033,35140,Nault Park,325 St. Denis Street,TBD,TBD,Yes,Splash Pad,TBD,Yes,TBD,TBD,TBD,Partially fenced
+45.4414535,-75.6587443,1286,1033,35140,Nault Park,325 St. Denis Street,No,Yes - Not Covered,Yes,Splash Pad,No,No,None,Sand,No,Partially fenced
 45.2563021,-75.7334312,833,2394,35237,Tucana Park,325 Tucana Way,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
 45.3519451,-75.8299278,1558,187,32654,Dick Bell Park,3259 Carling Avenue,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
 45.2502278,-75.9190105,1066,374,31480,Mary Durling Park,33 Brae Crescent,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
@@ -658,7 +658,7 @@
 45.2826065,-75.7292393,436,870,31975,Stinson Park,80 Queensbury Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
 45.2830315,-75.8420624,1711,1633,32619,Sawyer's Meadow Park,80 Sawyer Way,No,Yes - Covered,Yes,None,No,No,None,Sand,Yes,Great structure for toddlers
 45.2877687,-75.9255479,1028,2429,36243,Campobello Park,800 Campobello Drive,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
-45.3705195,-75.6861118,1172,1029,32147,Paget Park,801 Springland Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3705195,-75.6861118,1172,1029,32147,Paget Park,801 Springland Drive,Yes - Seasonal,Yes - Not Covered,Yes,None,No,No,None,Sand,No,
 45.3406983,-75.7252095,1199,2523,49157,Nepean Pond Park,81 Colonnade Road North,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
 45.2684074,-75.9122816,1626,1500,32378,Paul Lindsay Park,81 Trailway Circle,TBD,TBD,Yes,TBD,TBD,Yes,TBD,TBD,TBD,
 45.2625781,-75.7555544,653,2620,53705,Clarity Park,825 Clarity Avenue,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
