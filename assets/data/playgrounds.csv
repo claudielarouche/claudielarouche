@@ -147,13 +147,13 @@
 45.4501043;-75.5392774;1352;326;31402;Chapel Hill Park;1556 Forest Valley Drive;Yes - Seasonal;Yes - Covered;Yes;Splash Pad;Yes - Permanent;No;None;Sand;No;Plenty of street parking. Portable toilet next to splash pad. Gazebo with a picnic table, plus other uncovered picnic tables. Baseball diamond, basketball court, soccer field, tennis courts, basketball court, waterbottle fill station and drinking fountain.
 45.3612559;-75.9782942;281;1612;32525;Bannockburn Park;1557 Landel Drive;TBD;TBD;Yes;TBD;TBD;No;TBD;TBD;TBD;
 45.3736226;-75.6477689;1306;474;31606;Heatherington Park;1560 Heatherington Road;TBD;TBD;TBD;Splash Pad;TBD;TBD;TBD;TBD;TBD;
-45.4630443;-75.5232872;1023;224;31276;Garneau Park;1567 Champneuf Drive;No;TBD;Yes;None;No;No;TBD;Sand;No;baseball diamonds
+45.4630443;-75.5232872;1023;224;31276;Garneau Park;1567 Champneuf Drive;No;No;Yes;None;No;No;None;Sand;No;baseball diamonds
 45.4395142;-75.6890488;1637;576;32816;Stanley Park;1575 Lakeshore Drive;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.4273972;-75.6072138;1120;46;31063;Queensway Park;1580 Telesat Court;TBD;TBD;TBD;Splash Pad;TBD;TBD;TBD;TBD;TBD;
 45.2924796;-75.8770265;1486;204;31249;Hope Cloutier Park;159 Old Colony Road;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.4099532;-75.659692;234;23;31030;Dale Park;1590 Alta Vista Drive;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.4681357;-75.5396189;370;1326;32353;Grey Nuns Park;1595 Grey Nuns Drive;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
-45.4777588;-75.4726337;1194;1128;35249;Varennes Park;1595 Varennes Boulevard;No;Yes - Not Covered;Yes;None;No;Yes;TBD;Sand;No;Soccer field
+45.4777588;-75.4726337;1194;1128;35249;Varennes Park;1595 Varennes Boulevard;No;Yes - Not Covered;Yes;None;No;No;TBD;Sand;No;Soccer field
 45.362235;-75.7246849;676;804;31915;Parthia Park;16 Parthia Avenue;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.3486408;-75.742278;1295;311;31372;Doug Frobel Park;16 Rowley Avenue;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.3989516;-75.7499182;1171;577;31700;Mahoney Park;160 Lanark Avenue;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
@@ -171,7 +171,7 @@
 45.4755325;-75.4669924;700;1729;32832;Frenette Park;1654 Frenette Street;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.4153122;-75.6865835;1351;415;31540;St. Luke's Park;166 Frank Street;Yes - Seasonal;Yes - Not Covered;Yes;Wading Pool;No;Yes;Accessible swing;Multiple;No;Street parking around - basketball court and outside gym annexed to it
 45.3594685;-75.702334;342;31;31039;Carleton Heights Park;1665 Apeldoorn Avenue;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
-45.463361;-75.5130323;990;1076;32587;Marcel Bériault Park;1691 Sunview Drive;No;Yes - Not Covered;Yes;Splash Pad;No;No;Accessible swing and structure with ramp;Multiple;No;Splash pad is only a sprinkler post
+45.463361;-75.5130323;990;1076;32587;Marcel Bériault Park;1691 Sunview Drive;No;Yes - Not Covered;Yes;Splash Pad;No;Yes;Accessible swing and structure with ramp;Multiple;No;Splash pad is only a sprinkler post
 45.3592292;-75.7326761;1007;595;31724;Gilbey Park;17 Gilbey Drive;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.3700265;-75.6253191;1346;1567;32412;Hummingbird Park;17 Upwood Street;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.4565745;-75.5231642;465;67;31086;Barrington Park;1705 Orléans Boulevard;TBD;TBD;Yes;Splash Pad;TBD;TBD;TBD;TBD;TBD;
@@ -196,14 +196,14 @@
 45.3888335;-75.6500462;546;831;31945;Playfair Park;1801 Playfair Drive;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.4024406;-75.626048;35;1046;32159;Alda Burt Park;1816 St-Laurent Boulevard;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.4194656;-75.604231;986;1068;32191;Woodburn Park;1819 Stonehenge Crescent;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
-45.4788288;-75.4586027;79;2380;34999;Cardinal Creek Community Park;1825 Trim Road;Yes - Seasonal;Yes - Covered;Yes;Splash Pad;No;No;Accessible swing and structure with ramp;Mulch;Yes;Soccer fields, basketball court, walking paths, multiple picnic tables and benches
+45.4788288;-75.4586027;79;2380;34999;Cardinal Creek Community Park;1825 Trim Road;Yes - Seasonal;Yes - Covered;Yes;Splash Pad;No;No;Accessible swing and structure with ramp;Mulch;Yes;Soccer fields, basketball court, walking paths, multiple picnic tables and benches, volley ball net on sand
 45.290459;-75.8782465;1176;206;32613;Clarence Maheral Park;183 Old Colony Road / 170 Castlefrank Road;TBD;TBD;Yes;TBD;TBD;No;TBD;TBD;TBD;
 45.401448;-75.6305316;1240;971;32077;Hutton Park;1830 Hutton Avenue;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.4434464;-75.6041039;384;377;31486;Elmridge Park;1841 Elmridge Drive;No;Yes - Not Covered;Yes;Splash Pad;No;No;None;Sand;Yes;Tennis club and basketball court nearby
 45.3682025;-75.6275437;1382;1566;32410;Winterwood Park;1844 Johnston Road;TBD;TBD;Yes;Splash Pad;TBD;TBD;TBD;TBD;TBD;
 45.420976;-75.6014834;1450;1067;32187;Stonehenge Park;1851 Stonehenge Crescent;TBD;TBD;TBD;Splash Pad;TBD;TBD;TBD;TBD;TBD;
 45.4521805;-75.5191934;1134;1005;32128;St. François Park;1855 Simard Drive;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
-45.4552515;-75.515596;1476;344;31433;Champagne Park;1861 Markwell Crescent;TBD;TBD;TBD;Splash Pad;TBD;TBD;TBD;TBD;TBD;
+45.4552515;-75.515596;1476;344;31433;Champagne Park;1861 Markwell Crescent;No;Yes - Not Covered;Yes;Splash Pad;Yes - Permanent;No;Accessible swing;Multiple;No;Sledding area for winter. Separate sandbox. Splash pad is a single post
 45.4810959;-75.4654329;128;1680;32557;Cassia Circle Park;1876 Cassia Circle;No;Yes - Not Covered;Yes;None;No;No;None;Sand;No;
 45.4404314;-75.5987306;1373;35;31052;Appleford Park;1879 Appleford Street;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.4724564;-75.4811919;615;325;31398;Des Pionniers Park;1880 Carrigan Drive;No;No;Yes;None;No;Yes;Structure with ramp;Multiple;No;Multiple play structures
@@ -570,7 +570,7 @@
 45.4504464;-75.5300982;947;701;31815;Roy Park;6210 Meadowglen Drive;No;Yes - Covered;Yes;Splash Pad;TBD;TBD;None;Sand;Yes;Zip line
 45.4759472;-75.5518392;22;779;31885;Hiawatha Park;6218 Voyageur Drive;TBD;TBD;Yes;Splash Pad;TBD;TBD;TBD;TBD;TBD;
 45.455542;-75.6045437;1119;587;31716;La Verendrye Park;625 La Verendrye Drive;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
-45.4572669;-75.5304687;1562;501;31632;Louis Perrault Park;6250 Beauséjour Drive;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
+45.4572669;-75.5304687;1562;501;31632;Louis Perrault Park;6250 Beauséjour Drive;No;No;Yes;None;No;No;Accessible swing;Mulch;No;
 45.3767398;-75.9552283;764;903;32012;March Central Community Centre and Park;630 Cameron Harvey Drive;TBD;TBD;TBD;TBD;TBD;Yes;TBD;TBD;TBD;
 45.2701251;-75.8982406;293;2640;53223;Putney Woodland Park;631 Putney Crescent;No;Yes - Not Covered;No;None;No;No;None;Mulch;No;
 45.454196;-75.5231869;129;1147;32255;Cathedral Park;6347 Viseneau Drive;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;
@@ -590,7 +590,7 @@
 45.288771;-75.6648429;127;2493;49007;Boothfield Park;660 Boothfield Street;TBD;TBD;Yes;Splash Pad;TBD;TBD;TBD;TBD;TBD;
 45.2729665;-75.6991157;1282;925;32029;Claudette Cain Park;660 River Road;TBD;Yes - Not Covered;Yes;Splash Pad;TBD;No;None;Sand;Yes;
 45.478079;-75.5317329;311;107;31144;Bilberry Park;6600 Bilberry Drive;No;No;Yes;None;No;No;TBD;Sand;Yes;Track from school nearby
-45.4663702;-75.5235869;1128;195;31243;Laurier Carrière Park;6601 Carrière Street;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;
+45.4663702;-75.5235869;1128;195;31243;Laurier Carrière Park;6601 Carrière Street;No;Yes - Not Covered;Yes;None;No;No;TBD;Multiple;No;Next to baseball diamond and soccer field and bocce courts. Has a separate sandbox.
 45.1560721;-75.6535689;1498;1294;32326;Whittle-Winter Park;6621 Dorack Drive;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;
 45.243968;-75.5669857;1624;2471;35789;Calwood Park;6641 Calwood Avenue;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.2476765;-75.7241275;1449;2255;36225;Kilbirnie Park;665 Kilbirnie Drive;TBD;TBD;TBD;Splash Pad;TBD;TBD;TBD;TBD;TBD;
