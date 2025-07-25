@@ -7,13 +7,13 @@
 45.2812595;-75.8724245;920;2469;34658;Kristina Kiss Park;100 Akerson Road;Yes - Seasonal;Yes - Covered;Yes;Splash Pad;No;No;TBD;TBD;Yes;
 45.4528172;-75.662437;1329;132;31175;Manor Park;100 Braemar Street;TBD;TBD;Yes;Splash Pad;TBD;Yes;TBD;TBD;TBD;
 45.3869773;-75.6889644;120;134;31180;Brewer Park;100 Brewer Way;Yes - Seasonal;Yes - Covered;Yes;Splash Pad;Yes - Seasonal;No;Accessible swing;Multiple;Yes;Zip line
-45.294492;-75.9038763;703;1157;32264;Walter Baker Park;100 Charlie Rogers Place;TBD;TBD;Yes;Splash Pad;TBD;TBD;TBD;TBD;TBD;
+45.294492;-75.9038763;703;1157;32264;Walter Baker Park;100 Charlie Rogers Place;No;Yes - Not Covered;Yes;Splash Pad;No;No;None;Sand;Yes;Gazebo areas to have parties
 45.4696753;-76.2053169;23;2458;32248;Egbert Reitsma Parkette;100 Clifford Campbell Street;Yes - Permanent;No;Yes;None;No;No;Accessible swing;Mulch;Yes;
 45.2778858;-75.7662326;1368;383;31498;Mowat Farm Park;100 Fable Street;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.2769313;-75.7122657;956;1652;32481;Grovehurst Park;100 Grovehurst Drive;TBD;TBD;TBD;TBD;TBD;No;TBD;TBD;TBD;
 45.3241827;-75.583471;683;2625;57551;Bert Dowler Park;100 Highgarden Terrace;TBD;Yes - Covered;Yes;Splash Pad;No;No;Accessible swing;Sand;Yes;
 45.352483;-75.6968546;1643;609;31733;Geoff Wightman Park;100 Kamloops Avenue;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
-45.4661111;-75.4464385;838;1333;32838;Cumberland Millennium Sports Park;100 Millennium Boulevard;TBD;TBD;Yes;Splash Pad;TBD;TBD;TBD;TBD;TBD;
+45.4661111;-75.4464385;838;1333;32838;Cumberland Millennium Sports Park;100 Millennium Boulevard;Yes - Seasonal;Yes - Covered;Yes;Splash Pad;Yes - Permanent;TBD;TBD;Multiple;Yes;Soccer fields, two play structures
 45.3755029;-76.3166392;348;1645;32459;Recreational Trail;100 Tapiola Crescent;TBD;TBD;TBD;TBD;TBD;No;TBD;TBD;TBD;
 45.3286679;-75.9019848;633;1700;32791;Beaverbrook Pool Park;1002 Beaverbrook Road;TBD;TBD;Yes;TBD;TBD;Yes;TBD;TBD;TBD;
 45.4029314;-75.7232566;1494;1168;32278;Hintonburg Park;101 Duhamel Street;No;Yes - Not Covered;Yes;Splash Pad;No;Yes;Structure with ramp;Sand;No;Proximity to Hintonburg Community Centre. Fenced but not gated.
@@ -174,7 +174,7 @@
 45.463361;-75.5130323;990;1076;32587;Marcel Bériault Park;1691 Sunview Drive;No;Yes - Not Covered;Yes;Splash Pad;No;Yes;Accessible swing and structure with ramp;Multiple;No;Splash pad is only a sprinkler post
 45.3592292;-75.7326761;1007;595;31724;Gilbey Park;17 Gilbey Drive;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.3700265;-75.6253191;1346;1567;32412;Hummingbird Park;17 Upwood Street;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
-45.4565745;-75.5231642;465;67;31086;Barrington Park;1705 Orléans Boulevard;TBD;TBD;Yes;Splash Pad;TBD;TBD;TBD;TBD;TBD;
+45.4565745;-75.5231642;465;67;31086;Barrington Park;1705 Orléans Boulevard;No;Yes - Not Covered;Yes;Splash Pad;No;No;None;Sand;Yes;Volley ball court, ice rink, soccer field
 45.3206744;-75.9405591;235;2553;52337;Devonian Park;171 Escarpment Crescent;TBD;TBD;Yes;Splash Pad;TBD;TBD;TBD;TBD;TBD;
 45.3527344;-75.6260104;939;1031;32151;Russell Boyd Park;1735 St. Bernard Street;TBD;TBD;Yes;Splash Pad;TBD;TBD;TBD;TBD;TBD;
 45.3048725;-75.9349067;39;2517;35803;Arcadia Park;175 Calvington Avenue;TBD;TBD;Yes;TBD;TBD;No;TBD;TBD;TBD;
@@ -202,7 +202,7 @@
 45.4434464;-75.6041039;384;377;31486;Elmridge Park;1841 Elmridge Drive;No;Yes - Not Covered;Yes;Splash Pad;No;No;None;Sand;Yes;Tennis club and basketball court nearby
 45.3682025;-75.6275437;1382;1566;32410;Winterwood Park;1844 Johnston Road;TBD;TBD;Yes;Splash Pad;TBD;TBD;TBD;TBD;TBD;
 45.420976;-75.6014834;1450;1067;32187;Stonehenge Park;1851 Stonehenge Crescent;TBD;TBD;TBD;Splash Pad;TBD;TBD;TBD;TBD;TBD;
-45.4521805;-75.5191934;1134;1005;32128;St. François Park;1855 Simard Drive;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
+45.4521805;-75.5191934;1134;1005;32128;St. François Park;1855 Simard Drive;No;No;Yes;None;No;No;None;Sand;No;There is 2 play structures, one for toddlers and one for bigger kids. Tennis court, basketball hoops and the basket ball court turns into an ice rink in winter. Small hill for toddler sleds
 45.4552515;-75.515596;1476;344;31433;Champagne Park;1861 Markwell Crescent;No;Yes - Not Covered;Yes;Splash Pad;Yes - Permanent;No;Accessible swing;Multiple;No;Sledding area for winter. Separate sandbox. Splash pad is a single post
 45.4810959;-75.4654329;128;1680;32557;Cassia Circle Park;1876 Cassia Circle;No;Yes - Not Covered;Yes;None;No;No;None;Sand;No;
 45.4404314;-75.5987306;1373;35;31052;Appleford Park;1879 Appleford Street;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
@@ -217,7 +217,7 @@
 45.4614098;-75.5046256;388;1328;32360;Cardinal Farm Park;1921 Wildflower Drive;No;Yes - Not Covered;Yes;None;No;Yes;None;Multiple;No;
 45.4439303;-75.5984454;1698;378;31490;Ridge Park;1943 Elmridge Drive;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.4052214;-75.7280811;83;196;31245;Stirling-Carruthers Park;195 Carruthers Avenue;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;
-45.368395;-75.657833;210;260;31338;Frank J. Licari Park;1990 Cochrane Street / 1274 Vancouver Avenue;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
+45.368395;-75.657833;210;260;31338;Frank J. Licari Park;1990 Cochrane Street / 1274 Vancouver Avenue;No;Yes - Covered;Yes;Wading Pool;No;No;None;Sand;No;"Baseball diamond; there may be a washroom when the wading pool is open"
 45.3944254;-75.6759854;59;1186;32302;Windsor Park Ottawa;1B Windsor Avenue;Yes - Seasonal;Yes - Not Covered;Yes;Wading Pool;Yes - Seasonal;No;None;Sand;Yes;Massive area with 2 play structures, a wading pool and building for washrooms. Tire swing. Dedicated parking is at the end of Windsor avenue, holds 15-20 cars but is a 5 min walk from the playstructure and wading pool (you have to cross a large field)
 45.3332624;-75.7559748;264;93;31121;Beechcliffe Park;2 Beechcliffe Street;TBD;TBD;TBD;Splash Pad;TBD;TBD;TBD;TBD;TBD;
 45.2665208;-75.9349697;1253;1632;32445;Laumann Park;2 Laumann Court;No;No;No;None;No;Yes;None;Sand;No;Only a small playstructure
@@ -238,9 +238,9 @@
 45.347426;-75.6662896;1168;1119;32236;Cahill Park;206 Twyford Street;No;No;Yes;None;No;No;None;Multiple;No;
 45.2385379;-75.744965;;;;Elevation Park;2063 Elevation Rd;No;Yes - Covered;Yes;None;No;No;Accessible swing;Mulch;No;Also has a baseball diamond/soccer field space
 45.3651867;-75.7625781;1187;102;32438;Kingsmere Park;2074 Benjamin Avenue;TBD;TBD;Yes;TBD;TBD;No;TBD;TBD;TBD;
-45.4617772;-75.4737052;701;1730;32835;Mariah Park;2081 Ricardo Street;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
+45.4617772;-75.4737052;701;1730;32835;Mariah Park;2081 Ricardo Street;No;No;Yes;None;No;No;None;Sand;No;
 45.3531998;-75.7717411;55;566;31689;Parkway Park;2095 Kingsley Road;TBD;TBD;Yes;Splash Pad;TBD;Yes;TBD;TBD;TBD;
-45.4610589;-75.4561586;1385;1960;36219;Provence Park;2095 Provence Avenue;TBD;TBD;TBD;Splash Pad;TBD;TBD;TBD;TBD;TBD;
+45.4610589;-75.4561586;1385;1960;36219;Provence Park;2095 Provence Avenue;No;Yes - Covered;Yes;Splash Pad;No;No;None;Multiple;Yes;Soccer fields, tennis/pickleball court, basketball court
 45.3359119;-75.7935091;1182;2;34661;Leslie Park;21 A Dayton Crescent;TBD;TBD;Yes;Splash Pad;TBD;TBD;TBD;TBD;TBD;
 45.2687595;-75.9096013;194;545;31674;Forest Creek Park;21 Amy Street;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.4484833;-75.4645732;123;2464;35365;Boisdale Park;210 Émerillon Ridge;No;Yes - Covered;Yes;None;No;No;TBD;Mulch;No;
@@ -270,7 +270,7 @@
 45.3922151;-75.7423515;641;519;31644;Iona Park;223 Iona Street;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.3659859;-75.7416112;625;1584;32818;Alphabet Park;225 Scout Street;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.349283;-75.7743064;666;1109;36228;Pinecrest Recreation Complex and Park;2250 Torquay Avenue;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;
-45.2678573;-75.7299145;214;2396;35057;Foot Guards Park;226 Leamington Way;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
+45.2678573;-75.7299145;214;2396;35057;Foot Guards Park;226 Leamington Way;No;Yes - Covered;Yes;None;No;No;TBD;Multiple;No;Huge open field
 45.4465465;-75.4836145;967;2527;52609;Henri-Rocque Park;229 Hepatica Way;TBD;TBD;Yes;Splash Pad;TBD;No;TBD;TBD;TBD;
 45.2779325;-75.9277647;302;20;31024;Bryanston Gate Park;23 Alon Street;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.285707;-75.8008452;778;1264;32646;Cedarhill Estates Park;23 Cedarhill Drive;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;
@@ -388,7 +388,7 @@
 45.2684512;-75.8839784;1031;2585;35917;Mark Yakabuski Park;315 Haliburton Heights;No;Yes - Covered;Yes;Splash Pad;No;No;Accessible swing;Mulch;No;
 45.2336257;-75.4165638;1577;1213;32319;Kenmore Bicentennial Park;3151 York's Corners Rd;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.3481536;-75.6830004;177;1122;35481;Uplands Park;3165 Uplands Drive;No;Yes - Not Covered;Yes;None;No;No;Accessible swing;Multiple;No;Tennis Courts and Basketball Hoop
-45.4546779;-75.4789779;746;2120;36237;Aquaview Park;318 Aquaview Drive;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
+45.4546779;-75.4789779;746;2120;36237;Aquaview Park;318 Aquaview Drive;TBD;TBD;Yes;None;No;No;None;Sand;Yes;Soccer field
 45.27894;-75.7459251;1105;1320;32334;North Harrow Park;32 North Harrow Drive;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.4414535;-75.6587443;1286;1033;35140;Nault Park;325 St. Denis Street;No;Yes - Not Covered;Yes;Splash Pad;No;No;None;Sand;No;Partially fenced
 45.2563021;-75.7334312;833;2394;35237;Tucana Park;325 Tucana Way;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;
@@ -467,7 +467,7 @@
 45.4282227;-75.6191583;;;;Biley A. Blax Park;4303 Halmont Dr. ;Yes - Seasonal;Yes - Covered;Yes;Splash Pad;Yes;No;None;Sand;Yes;The parking is close to city park drive, but the playground is off of Palmerston drive 
 45.2772444;-75.6870068;422;1002;32119;Joan O'Malley Park;4310 Shoreline Drive;Yes - Permanent;No;No;None;Yes;No;None;Sand;Yes;
 45.2866722;-75.9142548;918;2467;35787;Brigatine Park;434 Brigatine Avenue;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;
-45.4091485;-75.7026158;1121;812;31930;McNabb Park;435 Bronson Avenue;Yes - Permanent;Yes - Covered;Yes;Wading Pool;No;Yes;TBD;Sand;Yes;
+45.4091485;-75.7026158;1121;812;31930;McNabb Park;435 Bronson Avenue;Yes - Permanent;Yes - Covered;Yes;Wading Pool;No;Yes;TBD;Sand;Yes;Soccer field, skate park, dog park next door. 
 45.312366;-75.5965029;352;2562;52385;Anishà Park;4355 Kelly Farm Drive;No;Yes - Covered;Yes;Splash Pad;No;TBD;TBD;TBD;No;
 45.275052;-75.6908867;212;1001;32115;Four Seasons Park;4386 Spratt Road;TBD;TBD;Yes;Splash Pad;TBD;TBD;TBD;TBD;TBD;
 45.2673091;-75.7612976;1489;1087;32209;Houlahan Park and West Houlahan Park;44 Tartan Drive;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
@@ -515,7 +515,7 @@
 45.4364202;-75.6485304;1114;291;31359;St-Laurent Complex / Don Gamble Community Centre;525 Côté Street;Yes - Permanent;Yes - Not Covered;Yes;Wading Pool;Yes - Permanent;No;TBD;TBD;Yes;Washrooms and water fountain inside St-Laurent Complex
 45.2886877;-75.9174838;1408;2171;36206;Rosehill Park;528 Rosehill Avenue;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;
 45.3151247;-75.7311962;599;49;31071;Grenfell Glen Park;53 Avonlea Road;Yes - Seasonal;Yes - Covered;Yes;None;No;No;None;Sand;No;Baseball field, tennis court, rink in winter time with a hut. Portapotties may not be permanent. Nearby walking trails connect to park.
-45.294104;-75.8538609;1001;1672;32542;Brian Parsons Park;53 Black Tern Crescent;No;TBD;TBD;None;No;No;TBD;TBD;Yes;Soccer field, playstructure with sand beneath. Paved path loops around the play structure and field.
+45.294104;-75.8538609;1001;1672;32542;Brian Parsons Park;53 Black Tern Crescent;No;No;No;None;No;No;None;Sand;Yes;Soccer field, playstructure with sand beneath. Paved path loops around the play structure and field.
 45.4513391;-75.4897027;1321;2434;35329;Ouellette Park;530 Strasbourg Street;No;Yes - Covered;Yes;Splash Pad;Yes;No;Accessible swing;Multiple;Yes;
 45.233981;-75.6960485;930;691;31792;George McLean Park;5348 McLean Crescent;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.383005;-75.7655617;1258;1163;32271;McKellar Park;539 Wavell Avenue;Yes - Seasonal;TBD;Yes;Wading Pool;TBD;No;TBD;Multiple;Yes;Large field for soccer, etc. Tennis courts. Baseball diamond. Basketball court. Access to bathrooms and water fountain when the fieldhouse is open.
@@ -534,7 +534,7 @@
 45.3308675;-75.9076842;574;1129;32244;Varley Park;56 Varley Drive;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;
 45.3694148;-75.737535;885;1587;32424;Madison Park;56 Whitestone Drive;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.2863565;-75.7000276;929;1638;32766;Blair Park;56 Winding Way;TBD;TBD;Yes;TBD;TBD;No;TBD;TBD;TBD;
-45.4417649;-75.4942249;1050;2649;54789;Hunsdeep Rangar Park;560 Décoeur Drive;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
+45.4417649;-75.4942249;1050;2649;54789;Hunsdeep Rangar Park;560 Décoeur Drive;No;Yes - Covered;Yes;None;No;No;Accessible swing;Mulch;No;There is a small sand box beside the park. There’s also a large open green space beside the park.
 45.2430416;-75.9089918;1135;2540;52335;Howard A. Maguire Park;560 Parade Drive;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.267778;-75.69548;417;2499;35613;Summerhill Park;560 Summerhill Street;Yes - Seasonal;Yes - Covered;Yes;Splash Pad;No;No;Accessible swing;Mulch;No;
 45.230017;-75.6406314;398;976;32084;Harold Barnhart Park;5650 Scobie Crescent;No;No;Yes;None;No;No;TBD;TBD;Yes;Zip line
@@ -573,7 +573,7 @@
 45.4572669;-75.5304687;1562;501;31632;Louis Perrault Park;6250 Beauséjour Drive;No;No;Yes;None;No;No;Accessible swing;Mulch;No;
 45.3767398;-75.9552283;764;903;32012;March Central Community Centre and Park;630 Cameron Harvey Drive;TBD;TBD;TBD;TBD;TBD;Yes;TBD;TBD;TBD;
 45.2701251;-75.8982406;293;2640;53223;Putney Woodland Park;631 Putney Crescent;No;Yes - Not Covered;No;None;No;No;None;Mulch;No;
-45.454196;-75.5231869;129;1147;32255;Cathedral Park;6347 Viseneau Drive;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;
+45.454196;-75.5231869;129;1147;32255;Cathedral Park;6347 Viseneau Drive;No;Yes - Not Covered;No;None;No;No;None;Sand;No;Play structure is appropriate for toddlers and small children. There is 2 benches for sitting and a large field for running and playing
 45.272784;-75.7849357;413;2503;52567;Havencrest Woods Park;636 Barry Helman Crescent;TBD;TBD;No;TBD;TBD;No;TBD;TBD;TBD;
 45.436406;-75.5702517;508;216;31268;Joshua Bradley Park;64 Centrepark Drive;No;Yes - Not Covered;Yes;None;No;No;None;TBD;No;
 45.4020713;-75.6820395;1041;51;31073;Sylvia Holden Park;641 O'Connor Street;Yes - Seasonal;Yes - Not Covered;Yes;Wading Pool;Yes - Seasonal;No;TBD;Sand;TBD;Basketball court. There is a decent sized field that is sometimes used by local soccer camps. Most of the park is in the full sun, all day.
@@ -584,7 +584,7 @@
 45.2446398;-75.5945838;513;853;31970;Josie Anselmo Memorial Park;6499 Princiotta Street;No;Yes - Covered;Yes;None;No;No;Accessible swing;Mulch;No;
 45.2673828;-75.9505667;926;1629;32520;Ladybirds Park;65 Sirocco Crescent;TBD;TBD;TBD;TBD;TBD;No;TBD;TBD;TBD;
 45.2891842;-75.8555321;1416;137;31190;Deevy Pines Park;65 Stonehaven Drive;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
-45.4442835;-75.490894;1035;2612;53381;Don Boudria Park;655 Décoeur Drive;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
+45.4442835;-75.490894;1035;2612;53381;Don Boudria Park;655 Décoeur Drive;Yes - Seasonal;Yes - Covered;Yes;None;No;No;Accessible swing;Mulch;Yes;There is a baseball diamond beside the park and an enclosed dog park.
 45.4573905;-75.5104854;1297;321;31392;Delorme Park;6591 Delorme Avenue;No;No;Yes;Splash Pad;No;No;None;Sand;No;
 45.2715565;-75.9413496;101;1669;36249;Echowoods Park;66 Lloydalex Crescent;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;
 45.288771;-75.6648429;127;2493;49007;Boothfield Park;660 Boothfield Street;TBD;TBD;Yes;Splash Pad;TBD;TBD;TBD;TBD;TBD;
