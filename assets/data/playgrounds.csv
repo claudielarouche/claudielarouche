@@ -21,7 +21,7 @@
 45.2656678;-75.7551056;478;2395;34628;Barrhaven Mews Park;1010 Andora Avenue;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;
 45.3670879;-75.6769605;728;466;31594;Pauline Vanier Park;1015 Harkness Avenue;Yes - Seasonal;Yes - Not Covered;Yes;Wading Pool;No;No;None;Sand;Yes;
 45.2769895;-75.9334446;426;1741;34646;Pioneer Plains Park;1018 Stittsville Main Street;No;Yes - Covered;Yes;None;No;No;None;Sand;Yes;Near water & soccer field
-45.3586498;-75.9287899;714;1746;36241;Brookshire Park;1027 Klondike Road;TBD;TBD;TBD;Splash Pad;TBD;TBD;TBD;TBD;TBD;
+45.3586498;-75.9287899;714;1746;36241;Brookshire Park;1027 Klondike Road;TBD;Yes - Covered;TBD;Splash Pad;TBD;TBD;TBD;TBD;Yes;Soccer field, basketball court
 45.3668902;-75.6351396;1077;1721;32829;Ladybug Park;103 Inverkip Avenue;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.3166055;-75.8230743;38;36;31054;Arbeatha Park;105 Arbeatha Street;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.425425;-75.5193566;919;2468;56753;Fountainhead Park;105 Felicity Crescent;No;Yes - Covered;Yes;Splash Pad;No;Yes;None;Mulch;No;Big field beside the park, great for soccer play. In the winter, there’s a bit of a small hill where kids can sled.
@@ -177,7 +177,7 @@
 45.4565745;-75.5231642;465;67;31086;Barrington Park;1705 Orléans Boulevard;No;Yes - Not Covered;Yes;Splash Pad;No;No;None;Sand;Yes;Volley ball court, ice rink, soccer field
 45.3206744;-75.9405591;235;2553;52337;Devonian Park;171 Escarpment Crescent;TBD;TBD;Yes;Splash Pad;TBD;TBD;TBD;TBD;TBD;
 45.3527344;-75.6260104;939;1031;32151;Russell Boyd Park;1735 St. Bernard Street;TBD;TBD;Yes;Splash Pad;TBD;TBD;TBD;TBD;TBD;
-45.3048725;-75.9349067;39;2517;35803;Arcadia Park;175 Calvington Avenue;TBD;TBD;Yes;TBD;TBD;No;TBD;TBD;TBD;
+45.3048725;-75.9349067;39;2517;35803;Arcadia Park;175 Calvington Avenue;No;Yes - Covered;Yes;None;No;No;TBD;Multiple;No;Soccer field
 45.2750396;-75.7424717;716;1889;36205;Rodeo Park;175 Rodeo Drive;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;
 45.3501866;-75.8090299;471;1195;32317;Bayshore Park;175 Woodridge Crescent;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.4691253;-75.536198;727;460;31592;Glen Park;1756 Grey Nuns Drive;TBD;TBD;Yes;Splash Pad;TBD;TBD;TBD;TBD;TBD;
