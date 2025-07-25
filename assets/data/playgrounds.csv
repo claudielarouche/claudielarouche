@@ -254,7 +254,7 @@
 45.4601065;-75.4620671;1081;1967;57711;Lalande Conservation Park;2145 Nantes Street;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;
 45.3582629;-75.7637379;262;104;31134;Bel-Air Park;2149 Berwick Avenue;Yes - Seasonal;Yes - Covered;Yes;Wading Pool;Yes;No;Accessible swing;Sand;No;
 45.354851;-75.663835;69;130;31169;Owl Park;215 Owl Drive;Yes - Seasonal;Yes - Not Covered;Yes;Splash Pad and wading pool;No;No;Accessible swing;Multiple;No;Hills for sledding in the winter
-45.4710868;-75.4733774;978;753;31853;Marcel Lalande Park;2157 Northlands Drive;TBD;TBD;Yes;Splash Pad;TBD;TBD;TBD;TBD;TBD;
+45.4710868;-75.4733774;978;753;31853;Marcel Lalande Park;2157 Northlands Drive;No;Yes - Covered;Yes;Splash Pad;No;No;None;Sand;No;Baseball diamond, multiple structures, paved walking path, some parking near baseball diamond and parking available at St Clare or at arc en Ciel schools.
 45.450792;-75.5922589;;;;Loyola Park;2166 Loyola Ave.;No;No;No;Splash Pad;No;No;None;N/A;No;This park only has a splash pad, no play structure
 45.436544;-75.6650938;359;380;31497;Emond Park;217 Emond Street;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;
 45.3903175;-75.6287113;1106;37;31057;Canterbury Park;2185 Arch Street;TBD;Yes - Covered;Yes;Splash Pad and wading pool;No;Yes;None;TBD;Yes;
@@ -714,3 +714,4 @@
 45.2855882;-75.8930074;;;;Bradley-Craig Park;331 Cranesbill Rd, Ottawa, ON K2V 0L7;No;Yes - Covered;Yes;Splash Pad;No;No;;Multiple;Yes;
 45.2903982;-75.9124343;;;;Maize Park;50 Maize Street;No;Yes - Not Covered;Yes;Splash Pad;No;No;Accessible swing;Mulch;No;Dogs Allowed on Leash, Bike Rack, Sandbox
 45.5001348;-75.4686432;;;;Mantha Park;525 Famille-Laporte Ave;Yes - Permanent;TBD;TBD;Splash Pad;TBD;TBD;TBD;TBD;TBD;Tennis court
+45.4336422;-75.6872993;;;;Raphael Brunet Park;309 St. Patrick St;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;
