@@ -463,7 +463,7 @@
 45.271924;-75.722038;317;2126;34630;Water Dragon Park;424 Chapman Mills Drive;TBD;TBD;Yes;Splash Pad;TBD;TBD;TBD;TBD;TBD;
 45.2680766;-75.7769834;759;2130;35023;Fosterbrook Park;428 Fosterbrook Way;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.1927881;-75.8467508;1230;2372;36201;Richmond Oaks Park;43 Rochelle Drive;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;
-45.4424237;-75.6693514;1073;1032;32153;Optimiste Park;43 Ste. Cécile Street;Yes - Seasonal;Yes - Not Covered;Yes;Wading Pool;Yes - Seasonal;No;Accessible swing;Mulch;No;Bathroom and water fountain at Genest Pool
+45.4424237;-75.6693514;1073;1032;32153;Optimiste Park;43 Ste. Cécile Street;Yes - Seasonal;Yes - Not Covered;Yes;Wading Pool;Yes - Seasonal;No;Accessible swing;Mulch;No;Bathroom and water fountain at Genest Pool. Merry-go-round style playground equipment, sandbox
 45.4282227;-75.6191583;;;;Biley A. Blax Park;4303 Halmont Dr. ;Yes - Seasonal;Yes - Covered;Yes;Splash Pad;Yes;No;None;Sand;Yes;The parking is close to city park drive, but the playground is off of Palmerston drive 
 45.2772444;-75.6870068;422;1002;32119;Joan O'Malley Park;4310 Shoreline Drive;Yes - Permanent;No;No;None;Yes;No;None;Sand;Yes;
 45.2866722;-75.9142548;918;2467;35787;Brigatine Park;434 Brigatine Avenue;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;
@@ -597,7 +597,7 @@
 45.4394063;-75.6426608;199;807;31922;Forbes Park;669 Paul Avenue;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.1694815;-75.6389013;100;152;31204;Echo Park;6698 Marina Drive;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.3110287;-75.9287695;711;439;32540;Insmill Park;67 Insmill Crescent;TBD;TBD;Yes;TBD;TBD;No;TBD;TBD;TBD;
-45.4575105;-75.4694376;544;1678;32842;Portobello Park;670 Aquaview Drive;TBD;TBD;Yes;Splash Pad;TBD;TBD;TBD;TBD;TBD;
+45.4575105;-75.4694376;544;1678;32842;Portobello Park;670 Aquaview Drive;TBD;Yes - Not Covered;Yes;Splash Pad;TBD;No;Accessible swing;Sand;Yes;Soccer field behind playground
 45.4398182;-75.4909238;1008;2614;53279;Georges Dassylva Park;670 Monardia Way;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.242166;-75.7414496;663;2596;52477;Black Raven Community Park;675 Dundonald Drive;No;Yes - Not Covered;Yes;Splash Pad;No;No;Accessible swing;Mulch;Yes;
 45.2625845;-75.5844256;67;2378;35783;South Village Park;6799 South Village Drive;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;
@@ -651,7 +651,7 @@
 45.4842845;-75.5294777;1537;317;31382;Décarie Park;7883 Décarie Drive;No;TBD;TBD;None;No;No;TBD;Sand;No;
 45.3034183;-75.9024869;906;686;31787;Hayward Park;79 McCurdy Drive;No;Yes - Covered;No;None;No;No;None;Sand;No;Soccer fields
 45.4841165;-75.524918;603;318;31385;Troyes Park;7946 Décarie Drive;No;No;Yes;None;No;No;None;Sand;No;
-45.462861;-75.4695418;106;1676;32606;Scala Park;797 Scala Avenue;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
+45.462861;-75.4695418;106;1676;32606;Scala Park;797 Scala Avenue;Yes - Seasonal;Yes - Not Covered;Yes;None;TBD;No;Accessible swing;Sand;Yes;Baseball diamond with bleachers, soccer field, hockey rink/basketball court,
 45.2659922;-75.7264672;299;2397;54373;Barcham Park;80 Bren-Maur Road;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.1917642;-75.8343065;1016;672;31773;Martin Street Park;80 Martin Street;TBD;TBD;TBD;TBD;TBD;Yes;TBD;TBD;TBD;
 45.3999002;-75.7084743;259;751;31852;McCann Park;80 Norman Street;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;
@@ -713,3 +713,4 @@
 45.3772781;-75.6739849;458;479;31613;Heron Park;999 Heron Road;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.2855882;-75.8930074;;;;Bradley-Craig Park;331 Cranesbill Rd, Ottawa, ON K2V 0L7;No;Yes - Covered;Yes;Splash Pad;No;No;;Multiple;Yes;
 45.2903982;-75.9124343;;;;Maize Park;50 Maize Street;No;Yes - Not Covered;Yes;Splash Pad;No;No;Accessible swing;Mulch;No;Dogs Allowed on Leash, Bike Rack, Sandbox
+45.5001348;-75.4686432;;;;Mantha Park;525 Famille-Laporte Ave;Yes - Permanent;TBD;TBD;Splash Pad;TBD;TBD;TBD;TBD;TBD;Tennis court
