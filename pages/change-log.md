@@ -69,3 +69,4 @@ The purpose of this page is simply to let you all know what I've been up to! :) 
 - I went camping with our 5-year old and his cousin, then our little family of 3 went to Iceland, so I didn't do much work on the website!
 - Yay someone I don't know bought me a coffee by clicking on the icon on the footer of my website, thank you!
 - I received an email from Google saying that my site claudielarouche.com reached 1,000 clicks from Google Search in the past 28 days. That's great!
+- Published a new project: [Find the nearest LRT station](https://claudielarouche.com/projects/lrt/). 
