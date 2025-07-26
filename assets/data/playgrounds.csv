@@ -211,7 +211,7 @@
 45.4442346;-75.5384476;392;697;31813;Gérald Poulin Park;1899 Du Clairvaux Road;No;Yes - Not Covered;Yes;Splash Pad;No;No;None;Sand;No;Paved track with painted lines for kids to bike, scooter or use the many kid cars that people drop off there.
 45.4034442;-75.6839131;1140;394;31525;Lionel Britton Park;19 Fifth Avenue;No;Yes - Not Covered;Yes;None;Yes - Seasonal;Yes;TBD;Sand;TBD;Trees that provide shade to the park all day. Fully fenced with a gate, and considered a toddler park for this reason. Neighbors have brought lots of toys to this park for the kids to enjoy like cars, diggers, etc.
 45.3492165;-75.8321198;1586;597;31729;Maki Park;19 Leeming Drive;No;TBD;Yes;None;Yes - Seasonal;No;Accessible swing;Mulch;Yes;Baseball diamond and soccer field. Great ice rink and pond rink in winter
-45.2573706;-75.9308175;984;1064;32185;Stitt Street Park;19 Stitt Street;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
+45.2573706;-75.9308175;984;1064;32185;Stitt Street Park;19 Stitt Street;No;No;Yes;None;No;No;TBD;Sand;No;
 45.3821552;-75.6388911;239;403;31533;Sharel Park;1900 Florida Avenue;Yes - Seasonal;Yes - Covered;Yes;Splash Pad;No;No;Accessible swing;Multiple;No;Shade all around, street parking, field and walking paths beside park
 45.4455791;-75.6004992;1370;670;31772;Marquis Park;1913 Marquis Avenue;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.4614098;-75.5046256;388;1328;32360;Cardinal Farm Park;1921 Wildflower Drive;No;Yes - Not Covered;Yes;None;No;Yes;None;Multiple;No;
@@ -290,7 +290,7 @@
 45.3276129;-75.7739289;475;72;31095;Bateman Park;24 Bateman Drive;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.4137361;-75.6722575;623;146;35170;Springhurst Park;24 Brunswick Street;Yes - Seasonal;Yes - Not Covered;Yes;None;No;No;Structure with ramp;Sand;TBD;Permanent ping pong table!
 45.2984311;-75.8657309;1302;999;32113;Laura Dubois Park;24 Shetland Way;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
-45.263648;-75.9207685;1493;1188;32307;Wyldwood Park;24 Wintergreen Drive;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
+45.263648;-75.9207685;1493;1188;32307;Wyldwood Park;24 Wintergreen Drive;No;No;Yes;None;No;No;TBD;TBD;No;
 45.1951649;-75.8444334;377;2545;53687;Sarah McCarthy Park;240 Cedarstone Street;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.247725;-75.7549908;;;;Watercolours Park;2400 Watercolours Way;No;TBD;Yes;TBD;TBD;TBD;Accessible swing;TBD;TBD;
 45.3163943;-75.9307974;225;441;32531;Judy Laughton Park;241 Goldridge Drive;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;
@@ -540,10 +540,10 @@
 45.230017;-75.6406314;398;976;32084;Harold Barnhart Park;5650 Scobie Crescent;No;No;Yes;None;No;No;TBD;TBD;Yes;Zip line
 45.1475195;-75.6013364;888;653;31766;Osgoode Community Centre;5660 Osgoode Main Street;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.1484991;-75.599704;693;823;31935;Osgoode Village Park;5701 Philip Street;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
-45.3564105;-75.3510575;808;943;32046;Alcide Trudeau Park (Vars);5715 Rockdale Road;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
+45.3564105;-75.3510575;808;943;32046;Alcide Trudeau Park (Vars);5715 Rockdale Road;Yes - Seasonal;Yes - Not Covered;Yes;None;Yes - Permanent;Yes;Accessible swing;Sand;Yes;"Baseball and t-ball diamonds, volleyball, skating rink. Indoor washrooms and ""lockerroom"" for ODR (sometimes locked) but porta potty near parking lot"
 45.3705195;-75.7867735;1553;157;31209;Byron Linear Tramway Park;579 Byron Avenue;TBD;TBD;Yes;TBD;TBD;Yes;TBD;TBD;TBD;
 45.3442164;-75.738183;1127;393;31524;Bob Mitchell Park;58 Fieldrow Street;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
-45.4406961;-75.5325815;794;1323;32339;Longleaf Park;5831 Gladewoods Place;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
+45.4406961;-75.5325815;794;1323;32339;Longleaf Park;5831 Gladewoods Place;No;Yes - Covered;Yes;None;No;No;Structure with ramp;Sand;Yes;Tennis / pickleball courts
 45.2854954;-75.8591682;1594;126;32794;Bluegrass Park;59 Bluegrass Drive;No;Yes - Covered;Yes;Splash Pad;No;No;None;Sand;Yes;Park is far away from Bluegrass road. Playstructure and splash pad are close to Bridgestone drive. Skating rink and playing field close to the parking lot at Bridlewood school. Parking also available off Bridgestone drive near the big playing fields across the street. Play structure is not toddler friendly.
 45.3354416;-75.8023159;6;767;31870;Okanagan Park;59 Okanagan Drive;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.2758561;-75.8819197;485;2633;53007;Rouncey Park;590 Rouncey Road;Yes - Seasonal;Yes - Covered;Yes;Splash Pad;No;No;Accessible swing;Mulch;Yes;Tennis court, soccer field
@@ -554,20 +554,20 @@
 45.3298355;-75.7603869;1330;569;31696;Manordale Park;60 Knoxdale Road;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.4755469;-75.4884057;182;32;31043;Apollo Crater Park;600 Apollo Way;No;Yes - Not Covered;Yes;None;No;No;None;Sand;No;The majority of the park is occupied by pets and their owners, however there is a play area at the far east corner
 45.2829509;-75.7422694;1614;628;32649;Ken Ross Park;600 Longfields Drive;TBD;TBD;Yes;Splash Pad;TBD;TBD;TBD;TBD;TBD;
-45.2586009;-75.9201315;1618;1522;32390;Village Square Park;6000 Abbott ST E;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;
+45.2586009;-75.9201315;1618;1522;32390;Village Square Park;6000 Abbott ST E;TBD;Yes - Not Covered;No;None;Yes - Permanent;No;TBD;TBD;No;
 45.4368262;-75.5286404;954;1651;32553;Blue Willow Park;6011 Longleaf Drive;TBD;Yes - Covered;Yes;Splash Pad;TBD;No;None;Sand;Yes;
 45.3652465;-75.4640761;393;365;31467;Harkness Park;6020 Piperville Road;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.456875;-75.5449398;192;406;31535;Forest Glen Park;6091 Forestglen Crescent;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.4129333;-75.679929;887;641;31762;Montgomery Memorial Park / Old Town Hall Community Centre;61 Main Street;Yes - Permanent;Yes - Not Covered;Yes;Splash Pad;TBD;Yes;TBD;Sand;TBD;No shade
-45.4431642;-75.5294199;517;1004;32126;Silverbirch Park;6105 Silverbirch Street;TBD;TBD;Yes;Splash Pad;TBD;TBD;TBD;TBD;TBD;
-45.435167;-75.5250212;1587;1509;32385;Ruisseau Park;6116 Creek Crossing Street;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
+45.4431642;-75.5294199;517;1004;32126;Silverbirch Park;6105 Silverbirch Street;No;No;Yes;Splash Pad;No;No;None;Sand;No;Soccer field, basketball court
+45.435167;-75.5250212;1587;1509;32385;Ruisseau Park;6116 Creek Crossing Street;No;TBD;Yes;None;No;No;None;Mulch;No;
 45.2603377;-75.7541195;799;2651;52439;Albion Falls Park;612 Albion Falls Drive;TBD;TBD;No;TBD;TBD;Yes;TBD;TBD;TBD;
 45.476675;-75.5541551;1707;1148;32256;Voyageur Park;6137 / 6138 Voyageur Drive;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.4743086;-75.446883;698;1725;34996;Pine Vista Park;616 Pine Vista Drive;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.3464233;-75.8235982;1301;498;31629;Lakeview Park;62 A Horner Drive;No;Yes - Not Covered;Yes;None;No;No;None;Sand;No;Full basketball court. Excellent ice rink and pond rink in winter
 45.3748691;-75.6011578;198;1568;32415;Forestglade Park;62 Forestglade Crescent;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.3091508;-75.9030932;907;688;31789;McGibbon Park;62 McGibbon Drive;No;No;No;None;No;No;None;Sand;Yes;
-45.4504464;-75.5300982;947;701;31815;Roy Park;6210 Meadowglen Drive;No;Yes - Covered;Yes;Splash Pad;TBD;TBD;None;Sand;Yes;Zip line
+45.4504464;-75.5300982;947;701;31815;Roy Park;6210 Meadowglen Drive;No;Yes - Covered;Yes;Splash Pad;Yes - Permanent;No;None;Sand;Yes;Zip line, Beach Volleyball Court, Soccer field
 45.4759472;-75.5518392;22;779;31885;Hiawatha Park;6218 Voyageur Drive;TBD;TBD;Yes;Splash Pad;TBD;TBD;TBD;TBD;TBD;
 45.455542;-75.6045437;1119;587;31716;La Verendrye Park;625 La Verendrye Drive;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.4572669;-75.5304687;1562;501;31632;Louis Perrault Park;6250 Beauséjour Drive;No;No;Yes;None;No;No;Accessible swing;Mulch;No;
@@ -597,7 +597,7 @@
 45.4394063;-75.6426608;199;807;31922;Forbes Park;669 Paul Avenue;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.1694815;-75.6389013;100;152;31204;Echo Park;6698 Marina Drive;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.3110287;-75.9287695;711;439;32540;Insmill Park;67 Insmill Crescent;TBD;TBD;Yes;TBD;TBD;No;TBD;TBD;TBD;
-45.4575105;-75.4694376;544;1678;32842;Portobello Park;670 Aquaview Drive;TBD;Yes - Not Covered;Yes;Splash Pad;TBD;No;Accessible swing;Sand;Yes;Soccer field behind playground
+45.4575105;-75.4694376;544;1678;32842;Portobello Park;670 Aquaview Drive;Yes - Seasonal;Yes - Covered;Yes;Splash Pad;No;No;Accessible swing;Sand;Yes;Soccer field behind playground
 45.4398182;-75.4909238;1008;2614;53279;Georges Dassylva Park;670 Monardia Way;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.242166;-75.7414496;663;2596;52477;Black Raven Community Park;675 Dundonald Drive;No;Yes - Not Covered;Yes;Splash Pad;No;No;Accessible swing;Mulch;Yes;
 45.2625845;-75.5844256;67;2378;35783;South Village Park;6799 South Village Drive;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;
@@ -660,7 +660,7 @@
 45.2877687;-75.9255479;1028;2429;36243;Campobello Park;800 Campobello Drive;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;
 45.3705195;-75.6861118;1172;1029;32147;Paget Park;801 Springland Drive;Yes - Seasonal;Yes - Not Covered;Yes;None;No;No;None;Sand;No;
 45.3406983;-75.7252095;1199;2523;49157;Nepean Pond Park;81 Colonnade Road North;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;
-45.2684074;-75.9122816;1626;1500;32378;Paul Lindsay Park;81 Trailway Circle;TBD;TBD;Yes;TBD;TBD;Yes;TBD;TBD;TBD;
+45.2684074;-75.9122816;1626;1500;32378;Paul Lindsay Park;81 Trailway Circle;No;No;Yes;None;No;No;TBD;TBD;No;
 45.2625781;-75.7555544;653;2620;53705;Clarity Park;825 Clarity Avenue;TBD;TBD;Yes;Splash Pad;TBD;TBD;TBD;TBD;TBD;
 45.3210738;-75.7087416;321;27;31037;Country Place Park;83 Amberwood Crescent;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;
 45.3497025;-76.0338708;804;2366;34631;Langstaff Park;83 Frances Colbert Avenue;TBD;Yes - Not Covered;Yes;Splash Pad;No;Yes;TBD;TBD;No;
