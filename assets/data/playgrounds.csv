@@ -70,7 +70,7 @@
 45.4247375;-75.6133301;152;213;31260;Cedarcroft Park;1200 Cedarcroft Crescent;No;No;Yes;Splash Pad;Yes;No;TBD;Multiple;No;Zip line;
 45.3784625;-75.7239234;1482;1113;32228;Meadowvale Terrace Park;1205 Trenton Avenue;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;;
 45.3756877;-75.6216541;695;1718;32809;Southwood Park;121 Grandpark Circle;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;;
-45.4908471;-75.4950622;418;2479;35423;Joseph Laflamme Park;121 Prestige Circle;TBD;TBD;Yes;TBD;TBD;Yes;TBD;TBD;TBD;;
+45.4908471;-75.4950622;418;2479;35423;Joseph Laflamme Park;121 Prestige Circle;No;Yes - Not Covered;Yes;None;No;Yes;Accessible swing;Mulch;No;;
 45.4321519;-75.627798;1343;674;31779;Whiterock Park;1245 Matheson Road;No;No;Yes;Splash Pad;No;No;Accessible swing;Mulch;No;;
 45.2659984;-75.7572174;936;2497;49177;Harthill Way Linear Park;125 Harthill Way;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;;
 45.2877521;-75.7295324;161;2495;53631;Watershield Park;125 Watershield Ridge;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;;
@@ -459,7 +459,7 @@
 45.321931;-75.9214788;1017;201;31247;Whalen Park;4111 Kanata Avenue;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;;
 45.2519028;-75.7143549;965;2509;52837;Orchard Park;415 Kilspindie Ridge;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;;
 45.279782;-75.6854908;420;2119;36209;Spratt Park;4191 Spratt Road;No;No;Yes;None;No;No;None;Sand;Yes;;
-45.4981202;-75.4699711;1569;2518;49029;Millstone Park;420 de la Famille-Laporte Avenue;TBD;TBD;Yes;Splash Pad;TBD;TBD;TBD;TBD;TBD;;
+45.4981202;-75.4699711;1569;2518;49029;Millstone Park;420 de la Famille-Laporte Avenue;No;Yes - Covered;Yes;Splash Pad;TBD;No;TBD;Mulch;No;Big field;
 45.271924;-75.722038;317;2126;34630;Water Dragon Park;424 Chapman Mills Drive;TBD;TBD;Yes;Splash Pad;TBD;TBD;TBD;TBD;TBD;;
 45.2680766;-75.7769834;759;2130;35023;Fosterbrook Park;428 Fosterbrook Way;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;;
 45.1927881;-75.8467508;1230;2372;36201;Richmond Oaks Park;43 Rochelle Drive;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;;
@@ -495,7 +495,7 @@
 45.4625628;-75.4965158;289;1327;32355;Yves Richer Park;499 des Épinettes Avenue;No;No;Yes;None;No;No;TBD;Sand;Yes;"2 parks; one for younger children and one for older. Baseball diamond";
 45.2879245;-75.8843333;462;729;31830;Dog Bone Park;5 Morton Drive;No;No;Yes;None;No;No;None;Sand;No;;
 45.3476895;-75.7530921;1572;796;31899;Ryan Farm Park;5 Parkglen Drive;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;;
-45.437622;-75.5544957;1089;883;31998;Richard Dagg Park;5 Red Maple Crescent;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;;
+45.437622;-75.5544957;1089;883;31998;Richard Dagg Park;5 Red Maple Crescent;No;No;No;None;No;No;None;Sand;No;Only has a slide;
 45.2653755;-75.7148263;232;963;32057;Davidson Park;5 Ryerson Avenue;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;;
 45.352963;-75.9245979;1268;1278;32325;Shirley's Brook Park;5 Shirley's Brook Drive;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;TBD;;
 45.3270656;-75.7828465;629;101;53659;Trend-Arlington Park;50 Bellman Drive;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;;
@@ -555,7 +555,7 @@
 45.4755469;-75.4884057;182;32;31043;Apollo Crater Park;600 Apollo Way;No;Yes - Not Covered;Yes;None;No;No;None;Sand;No;The majority of the park is occupied by pets and their owners, however there is a play area at the far east corner;
 45.2829509;-75.7422694;1614;628;32649;Ken Ross Park;600 Longfields Drive;TBD;TBD;Yes;Splash Pad;TBD;TBD;TBD;TBD;TBD;;
 45.2586009;-75.9201315;1618;1522;32390;Village Square Park;6000 Abbott ST E;TBD;Yes - Not Covered;No;None;Yes - Permanent;No;TBD;TBD;No;;
-45.4368262;-75.5286404;954;1651;32553;Blue Willow Park;6011 Longleaf Drive;TBD;Yes - Covered;Yes;Splash Pad;TBD;No;None;Sand;Yes;;
+45.4368262;-75.5286404;954;1651;32553;Blue Willow Park;6011 Longleaf Drive;No;Yes - Covered;Yes;Splash Pad;No;No;None;Sand;No;;
 45.3652465;-75.4640761;393;365;31467;Harkness Park;6020 Piperville Road;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;;
 45.456875;-75.5449398;192;406;31535;Forest Glen Park;6091 Forestglen Crescent;TBD;TBD;Yes;TBD;TBD;TBD;TBD;TBD;TBD;;
 45.4129333;-75.679929;887;641;31762;Montgomery Memorial Park / Old Town Hall Community Centre;61 Main Street;Yes - Permanent;Yes - Not Covered;Yes;Splash Pad;TBD;Yes;TBD;Sand;TBD;No shade;
