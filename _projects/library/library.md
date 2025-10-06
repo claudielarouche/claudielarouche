@@ -45,7 +45,7 @@ Please note that you can also use the "search" box directly on the data table to
 <input type="date" id="selectedDate" class="form-control col-sm-2">
 </div>
 </div>
-
+ 
 {% include filter-area.html %}   
 
 <div class="form-group row">
