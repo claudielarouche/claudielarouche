@@ -12,7 +12,7 @@ css:
 
 Here are some other cool projects I've come across
 
-{% assign categories = site.data.projects | map: "category" | uniq %}
+{% assign categories = site.data.other-cool-projects | map: "category" | uniq %}
 
 {% for category in categories %}
   <h2>{{ category }}</h2>
