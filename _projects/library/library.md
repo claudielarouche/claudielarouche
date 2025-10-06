@@ -102,7 +102,7 @@ Please make sure to <strong>always click on the Program Name link</strong> to ve
 </div>
 
 ## Library Activities
-Data last updated: 2025-09-28 (Data is updated approximately every Monday)
+Data last updated: 2025-10-06 (Data is updated approximately every Monday)
 
 <label>
 <input type="checkbox" id="showTodayOnly" name="showTodayOnly">
