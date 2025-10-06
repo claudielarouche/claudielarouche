@@ -17,7 +17,7 @@ Here are some other cool projects I've come across
 {% for category in categories %}
   <h2>{{ category }}</h2>
   <div class="projects-gallery">
-    {% assign filtered = site.data.projects | where: "category", category %}
+    {% assign filtered = site.data.other-cool-projects | where: "category", category %}
     {% for project in filtered %}
       <div class="project-card">
         <a href="{{ project.url }}" target="_blank">
