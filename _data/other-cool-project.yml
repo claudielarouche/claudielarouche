@@ -1,0 +1,23 @@
+- name: "Project Name 1"
+  description: "Description of the first project"
+  image: "https://example.com/image1.jpg"
+  url: "https://example.com/project1"
+  category: "Ottawa"
+
+- name: "Project Name 2"
+  description: "Description of the second project"
+  image: "https://example.com/image2.jpg"
+  url: "https://example.com/project2"
+  category: "Work"
+
+- name: "Project Name 3"
+  description: "Description of the third project"
+  image: "https://example.com/image3.jpg"
+  url: "https://example.com/project3"
+  category: "Ottawa"
+
+- name: "Project Name 4"
+  description: "Description of the fourth project"
+  image: "https://example.com/image4.jpg"
+  url: "https://example.com/project4"
+  category: "Other"
