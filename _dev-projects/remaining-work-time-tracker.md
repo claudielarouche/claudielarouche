@@ -6,8 +6,8 @@ permalink: /dev-projects/remaining-work-time-tracker/
 
 <div class="workday-tracker">
   <p>
-    Enter the working periods you have planned for today. The tracker combines them with the current time to show how
-    much working time is left in your day.
+    Enter the working periods you have planned for today. Do not include your lunch break. 
+    The tracker combines them with the current time to show how much working time is left in your day.
   </p>
 
   <div id="workday-periods" class="workday-periods" aria-live="polite">
@@ -20,6 +20,7 @@ permalink: /dev-projects/remaining-work-time-tracker/
         End time
         <input type="time" class="time-input end" value="17:00" />
       </label>
+      <button type="button" class="remove-period" aria-label="Remove period">✖</button>
     </div>
   </div>
 
@@ -28,7 +29,6 @@ permalink: /dev-projects/remaining-work-time-tracker/
   <div class="workday-summary">
     <p id="current-time" class="current-time"></p>
     <p id="remaining-time" class="remaining-time"></p>
-    <p id="explanation" class="explanation"></p>
   </div>
 </div>
 
@@ -50,20 +50,21 @@ permalink: /dev-projects/remaining-work-time-tracker/
 }
 
 .workday-periods {
-  display: grid;
-  gap: 1rem;
+  background: #f7f9fc;
+  border-radius: 10px;
+  border: 1px solid #e3e8f0;
+  padding: 1rem;
   margin: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .period-row {
   display: grid;
+  grid-template-columns: 1fr 1fr auto;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   align-items: end;
-  background: #f7f9fc;
-  border-radius: 10px;
-  padding: 1rem;
-  border: 1px solid #e3e8f0;
 }
 
 .period-row label {
@@ -106,6 +107,21 @@ permalink: /dev-projects/remaining-work-time-tracker/
   transform: translateY(-1px);
 }
 
+.remove-period {
+  background: #ef4444;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  padding: 0.4rem 0.7rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.remove-period:hover {
+  background: #dc2626;
+}
+
 .workday-summary {
   margin-top: 1.5rem;
   background: #eff6ff;
@@ -126,12 +142,6 @@ permalink: /dev-projects/remaining-work-time-tracker/
   color: #1f2937;
 }
 
-.explanation {
-  margin-bottom: 0;
-  color: #374151;
-  font-size: 0.95rem;
-}
-
 @media (max-width: 600px) {
   .workday-tracker {
     padding: 1rem;
@@ -149,7 +159,6 @@ permalink: /dev-projects/remaining-work-time-tracker/
   const addButton = document.getElementById("add-period");
   const currentTimeEl = document.getElementById("current-time");
   const remainingEl = document.getElementById("remaining-time");
-  const explanationEl = document.getElementById("explanation");
 
   function createPeriodRow(startValue = "", endValue = "") {
     const row = document.createElement("div");
@@ -163,112 +172,67 @@ permalink: /dev-projects/remaining-work-time-tracker/
         End time
         <input type="time" class="time-input end" value="${endValue}" />
       </label>
+      <button type="button" class="remove-period" aria-label="Remove period">✖</button>
     `;
+
+    row.querySelector(".remove-period").addEventListener("click", () => {
+      row.remove();
+      updateRemainingTime();
+    });
+
     return row;
   }
 
   function parseTime(input) {
-    if (!input || !input.value) {
-      return null;
-    }
-
+    if (!input || !input.value) return null;
     const [hours, minutes] = input.value.split(":").map(Number);
-
-    if (Number.isNaN(hours) || Number.isNaN(minutes)) {
-      return null;
-    }
-
+    if (Number.isNaN(hours) || Number.isNaN(minutes)) return null;
     return hours * 60 + minutes;
   }
 
   function minutesToDuration(totalMinutes) {
     const hours = Math.floor(totalMinutes / 60);
     const minutes = totalMinutes % 60;
-
-    const hoursText = hours === 1 ? "1 hour" : `${hours} hours`;
-    const minutesText = minutes === 1 ? "1 minute" : `${minutes} minutes`;
-
-    if (hours === 0) {
-      return minutesText;
-    }
-
-    if (minutes === 0) {
-      return hoursText;
-    }
-
-    return `${hoursText} and ${minutesText}`;
+    const hText = hours === 1 ? "1 hour" : `${hours} hours`;
+    const mText = minutes === 1 ? "1 minute" : `${minutes} minutes`;
+    if (hours === 0) return mText;
+    if (minutes === 0) return hText;
+    return `${hText} and ${mText}`;
   }
 
   function updateCurrentTime(now) {
-    const formatted = now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+    const formatted = now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", hour12: true });
     currentTimeEl.textContent = `Current time: ${formatted}`;
   }
 
   function updateRemainingTime() {
     const now = new Date();
     const nowMinutes = now.getHours() * 60 + now.getMinutes();
-
     updateCurrentTime(now);
 
     const rows = Array.from(periodsContainer.querySelectorAll(".period-row"));
-
     let upcomingMinutes = 0;
-    let futureSegments = 0;
 
     rows.forEach((row) => {
-      const startInput = row.querySelector(".start");
-      const endInput = row.querySelector(".end");
-
-      const start = parseTime(startInput);
-      const end = parseTime(endInput);
-
-      if (start === null || end === null) {
-        return;
-      }
-
-      if (end === start) {
-        return;
-      }
+      const start = parseTime(row.querySelector(".start"));
+      const end = parseTime(row.querySelector(".end"));
+      if (start === null || end === null) return;
+      if (end === start) return;
 
       let minutesRemaining = 0;
-
       if (end > start) {
-        if (nowMinutes <= start) {
-          minutesRemaining = end - start;
-        } else if (nowMinutes < end) {
-          minutesRemaining = end - nowMinutes;
-        }
-      } else {
-        const shiftLength = 24 * 60 - start + end;
-
-        if (nowMinutes >= start) {
-          minutesRemaining = 24 * 60 - nowMinutes + end;
-        } else if (nowMinutes < end) {
-          minutesRemaining = end - nowMinutes;
-        } else {
-          minutesRemaining = shiftLength;
-        }
+        if (nowMinutes <= start) minutesRemaining = end - start;
+        else if (nowMinutes < end) minutesRemaining = end - nowMinutes;
       }
-
-      if (minutesRemaining > 0) {
-        upcomingMinutes += minutesRemaining;
-        futureSegments += 1;
-      }
+      if (minutesRemaining > 0) upcomingMinutes += minutesRemaining;
     });
 
-    if (upcomingMinutes <= 0 || futureSegments === 0) {
+    if (upcomingMinutes <= 0) {
       remainingEl.textContent = "Your workday is complete. Great job!";
-      explanationEl.textContent = "Adjust the times above to plan the rest of your day.";
       return;
     }
 
-    const durationText = minutesToDuration(upcomingMinutes);
-    remainingEl.textContent = `Time remaining today: ${durationText}`;
-
-    explanationEl.textContent =
-      futureSegments === 1
-        ? "You're currently within your final scheduled block."
-        : `That includes ${futureSegments} upcoming work block${futureSegments > 1 ? "s" : ""}.`;
+    remainingEl.textContent = `Time remaining today: ${minutesToDuration(upcomingMinutes)}`;
   }
 
   periodsContainer.addEventListener("input", updateRemainingTime);
