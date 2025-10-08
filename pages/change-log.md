@@ -10,7 +10,7 @@ The purpose of this page is simply to let you all know what I've been up to! :) 
 
 ## October 2025
 
-- I created a new page to post other cool projects I have come across. 
+- I created a new page to post [other cool projects](https://claudielarouche.com/projects/other-cool-projects/) I have come across. 
 
 ## August and September 2025
 

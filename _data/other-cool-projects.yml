@@ -18,6 +18,6 @@
 
 - name: "Connected KW"
   description: "A volunteer-run project that curates events and resources for anyone living in Waterloo Region."
-  image: "/assets/img/connected-kw"
+  image: "/assets/img/connected-kw.png"
   url: "https://www.connectedkw.com/"
   category: "Waterloo"
