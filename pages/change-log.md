@@ -8,34 +8,25 @@ Hello!
 
 The purpose of this page is simply to let you all know what I've been up to! :) Enjoy!
 
-## May 2025
+## October 2025
 
-- (before May 2025, I did tons of stuff but I didn't keep track sorry! ;)
-- Created the change log page!
-- Added css code for Bootstrap buttons
-- The City of Ottawa Library website was changed. All events are now starting with https://booking.biblioottawalibrary.ca/ whereas before they were under https://biblioottawalibrary.ca/ I had to change my CSV file where all the data is located, and also the Python script that I run weekly to update the data. Thankfully the whole exercise took only about 5 minutes, phew! :) 
-- Added some more stuff to my [media page](https://claudielarouche.com/media/), including some images. I decided to fix the CSS to make the image appear on the left instead of in the middle of the screen :) 
-- Added more social links in the footer
-- Created a [Free Agent](https://claudielarouche.com/projects/free-agent/) page
-- I recently changed how my website is built. It used to be built with custom HTML and Javascript, but I started using an open-source site generator called [Jekyll](https://jekyllrb.com/){:target="_blank" rel="noopener noreferrer"} (thank you [ChatGPT](https://chat.openai.com/){:target="_blank" rel="noopener noreferrer"} for explaining to me how to migrate my website). This allows me to have "reusable components" for similar pages so that I don't have to constantly copy-paste the same code everywhere (and if that code changes, then I only change it in one spot instead of 17 locations haha). Anyways, long story short, I now have to change all my projects to adopt the new look, so I've been slowly working on that. 
-- Oops, I suddenly realized that during the migration to [Jekyll](https://jekyllrb.com/){:target="_blank" rel="noopener noreferrer"}, I somehow lost my [Efficient Public Servant](https://claudielarouche.com/projects/efficient-public-servant/) link on the home page, so I added it back :) While I was at it, I gave it the new look and feel
-- On my [Library Programs](https://claudielarouche.com/projects/library/) page, the time of day now appears in 24 hour clock instead of 12 hour clock. It's a bit harder for people not familiar with the 24-hour clock, however it means that I am able to sort the events (otherwise it looked like 1 PM came before 9 AM because 1 comes before 9 in alphabetical order). It's not perfect though, there are still 3 events showing up in 12 hour clock (probably because they are missing the AM or PM marker on the source website). 
-- I decided to create a separate page for [Kindergym](https://claudielarouche.com/projects/kindergym/). And then on each City of Ottawa drop-in page I have, I added a mini menu to go from one to the other (currently, the options are: [all drop-ins](https://claudielarouche.com/projects/ottawa-drop-ins/), [skating](https://claudielarouche.com/projects/ottawa-skate/), [swimming](https://claudielarouche.com/projects/ottawa-swim/), [kindergym](https://claudielarouche.com/projects/kindergym/)). I think I should rearrange my home page to put all the City of Ottawa Drop-Ins subprojects within one category. I also think I should maybe create more specialized pages like Badminton, Basketball, Pickleball, etc. Maybe a task for June haha. 
-- The 4 City of Ottawa drop-in pages are now coded using "components" instead of HTML code within the page.
-- Darn the library website changed again! I had to fix my Python script
-- A few days later, I realized I had a bunch of duplicate events in my library data. So I opened the dataset in Notepad++ to do Edit > Line Operation > Remove duplicate, then I re-uploaded the dataset to Github where my website is hosted. I updated my list of instructions to update the data so that I won't forget to remove duplicates every week.
-- I decided to change host! I am now using [Netlify](https://www.netlify.com/){:target="_blank" rel="noopener noreferrer"} instead of [Github Pages](https://pages.github.com/){:target="_blank" rel="noopener noreferrer"}. For now, I am using the free version. The reason for the switch is that I want to be able to eventually sell something / add ads, which was not really allowed on Github Pages. 
-- I added "Select All" and "Unselect All" buttons on the filters for the library programs page and all the City of Ottawa drop-ins pages ([All drop-ins](https://claudielarouche.com/projects/ottawa-drop-ins/), [skating](https://claudielarouche.com/projects/ottawa-skate/), [swimming](https://claudielarouche.com/projects/ottawa-swim/), [kindergym](https://claudielarouche.com/projects/kindergym/))
-- I created a simple [Contact](https://claudielarouche.com/contact/) page
-- Added a spot on the [City of Ottawa drop-in pages](https://claudielarouche.com/projects/ottawa-drop-ins/) for a message to appear on top of every page (useful for example when a special holiday is affecting the schedule, like the Victoria Day  weekend for example)
-- I moved my [repository of adult dance classes](https://claudielarouche.com/projects/ottawa-adult-dance-classes/) to the new look and feel. While I was at it, I changed the code so that if there are multiple addresses for one school, they all get their individual Google Maps link. 
-- There are a few new drop-in activities that the City of Ottawa added that didn't exist before, so I had to update my code to ensure they were correctly categorized on my [City of Ottawa drop-in pages](https://claudielarouche.com/projects/ottawa-drop-ins/). The new activities are: Billiards, Ukulele, Open Paint Studio, Geriatric Jazz Band and Sport Conditioning
-- Created a separate page for all my work projects and one separate page for my personal projects, and then I updated the website menu. Now that I'm using Jekyll, the whole thing took only about 3 seconds it was awesome :) I love Jekyll!!
-- Moved the [email address extractor](https://claudielarouche.com/projects/email-address-extractor/) to the new look and feel
-- I received questions about how reservations work with the City of Ottawa drop-ins, so I added a note to explain that on all the City of Ottawa drop-in pages.
-- I did a presentation at the Civic Tech Ottawa Meetup, so I added a few pictures of the event to the media page
-- OMG! On May 23, 2025, I received my VERY FIRST coffee (there's a link to buy me a coffee in the footer of my website). I am super excited!
-- I redid my [time difference tool](https://claudielarouche.com/projects/time-diff/) on the new look and feel (and actually fixed a few bugs while I was at it)
+- I created a new page to post other cool projects I have come across. 
+
+## August and September 2025
+
+- I didn't do a whole lot with my website! I traveled to Jonquière for a month in August. In September I started a new job. 
+- I ensured the wading pool page was somewhat up to date with the season closure. 
+- I tried to update the library events and the City of Ottawa drop-ins on a weekly basis, but I missed a few weeks here and there. 
+
+## July 2025
+
+- I added a splash pad filter on my playground page. I'm very happy about that one as I think it will be super useful for parents to be able to see only parks with splash pads quickly. There are a few parks I will have to manually check as they were listed by the city as having a splash pad but Moms had reported that there was no splash pad. Not sure who is right :) I also learnt on Canada that some parks have splash pads only but no play structures (like Loyola park for example). That one is not on my list of park but it should be I suppose (with a note that there is no play structure).
+- I finished updating the schedule of the wading pools, now that all of them are open. Next update will be when they close, toward the end of August. I ended up removing the 6 wading pools that are within a City of Ottawa outdoors pool (because those ones are not free to visit, whereas all the others are). 
+- I went camping with our 5-year old and his cousin, then our little family of 3 went to Iceland, so I didn't do much work on the website!
+- Yay someone I don't know bought me a coffee by clicking on the icon on the footer of my website, thank you!
+- I received an email from Google saying that my site claudielarouche.com reached 1,000 clicks from Google Search in the past 28 days. That's great!
+- Published a new project: [Find the nearest LRT station](https://claudielarouche.com/projects/lrt/). 
+- The city of Ottawa changed their rule about people using scripts to copy information from their website. 
 
 ## June 2025
 
@@ -62,11 +53,34 @@ The purpose of this page is simply to let you all know what I've been up to! :) 
   - Fenced Area
 - I updated the wading pool data toward the end of June. Some pools opened on June 23, some on June 24, some on June 29, some on June 30... I tried to keep up and add the right schedule on the day the pool opened (or the night before) although I have to admit it was not done perfectly :) 
 
-## July 2025
 
-- I added a splash pad filter on my playground page. I'm very happy about that one as I think it will be super useful for parents to be able to see only parks with splash pads quickly. There are a few parks I will have to manually check as they were listed by the city as having a splash pad but Moms had reported that there was no splash pad. Not sure who is right :) I also learnt on Canada that some parks have splash pads only but no play structures (like Loyola park for example). That one is not on my list of park but it should be I suppose (with a note that there is no play structure).
-- I finished updating the schedule of the wading pools, now that all of them are open. Next update will be when they close, toward the end of August. I ended up removing the 6 wading pools that are within a City of Ottawa outdoors pool (because those ones are not free to visit, whereas all the others are). 
-- I went camping with our 5-year old and his cousin, then our little family of 3 went to Iceland, so I didn't do much work on the website!
-- Yay someone I don't know bought me a coffee by clicking on the icon on the footer of my website, thank you!
-- I received an email from Google saying that my site claudielarouche.com reached 1,000 clicks from Google Search in the past 28 days. That's great!
-- Published a new project: [Find the nearest LRT station](https://claudielarouche.com/projects/lrt/). 
+## May 2025
+
+- Created the change log page!
+- Added css code for Bootstrap buttons
+- The City of Ottawa Library website was changed. All events are now starting with https://booking.biblioottawalibrary.ca/ whereas before they were under https://biblioottawalibrary.ca/ I had to change my CSV file where all the data is located, and also the Python script that I run weekly to update the data. Thankfully the whole exercise took only about 5 minutes, phew! :) 
+- Added some more stuff to my [media page](https://claudielarouche.com/media/), including some images. I decided to fix the CSS to make the image appear on the left instead of in the middle of the screen :) 
+- Added more social links in the footer
+- Created a [Free Agent](https://claudielarouche.com/projects/free-agent/) page
+- I recently changed how my website is built. It used to be built with custom HTML and Javascript, but I started using an open-source site generator called [Jekyll](https://jekyllrb.com/){:target="_blank" rel="noopener noreferrer"} (thank you [ChatGPT](https://chat.openai.com/){:target="_blank" rel="noopener noreferrer"} for explaining to me how to migrate my website). This allows me to have "reusable components" for similar pages so that I don't have to constantly copy-paste the same code everywhere (and if that code changes, then I only change it in one spot instead of 17 locations haha). Anyways, long story short, I now have to change all my projects to adopt the new look, so I've been slowly working on that. 
+- Oops, I suddenly realized that during the migration to [Jekyll](https://jekyllrb.com/){:target="_blank" rel="noopener noreferrer"}, I somehow lost my [Efficient Public Servant](https://claudielarouche.com/projects/efficient-public-servant/) link on the home page, so I added it back :) While I was at it, I gave it the new look and feel
+- On my [Library Programs](https://claudielarouche.com/projects/library/) page, the time of day now appears in 24 hour clock instead of 12 hour clock. It's a bit harder for people not familiar with the 24-hour clock, however it means that I am able to sort the events (otherwise it looked like 1 PM came before 9 AM because 1 comes before 9 in alphabetical order). It's not perfect though, there are still 3 events showing up in 12 hour clock (probably because they are missing the AM or PM marker on the source website). 
+- I decided to create a separate page for [Kindergym](https://claudielarouche.com/projects/kindergym/). And then on each City of Ottawa drop-in page I have, I added a mini menu to go from one to the other (currently, the options are: [all drop-ins](https://claudielarouche.com/projects/ottawa-drop-ins/), [skating](https://claudielarouche.com/projects/ottawa-skate/), [swimming](https://claudielarouche.com/projects/ottawa-swim/), [kindergym](https://claudielarouche.com/projects/kindergym/)). I think I should rearrange my home page to put all the City of Ottawa Drop-Ins subprojects within one category. I also think I should maybe create more specialized pages like Badminton, Basketball, Pickleball, etc. Maybe a task for June haha. 
+- The 4 City of Ottawa drop-in pages are now coded using "components" instead of HTML code within the page.
+- Darn the library website changed again! I had to fix my Python script
+- A few days later, I realized I had a bunch of duplicate events in my library data. So I opened the dataset in Notepad++ to do Edit > Line Operation > Remove duplicate, then I re-uploaded the dataset to Github where my website is hosted. I updated my list of instructions to update the data so that I won't forget to remove duplicates every week.
+- I decided to change host! I am now using [Netlify](https://www.netlify.com/){:target="_blank" rel="noopener noreferrer"} instead of [Github Pages](https://pages.github.com/){:target="_blank" rel="noopener noreferrer"}. For now, I am using the free version. The reason for the switch is that I want to be able to eventually sell something / add ads, which was not really allowed on Github Pages. 
+- I added "Select All" and "Unselect All" buttons on the filters for the library programs page and all the City of Ottawa drop-ins pages ([All drop-ins](https://claudielarouche.com/projects/ottawa-drop-ins/), [skating](https://claudielarouche.com/projects/ottawa-skate/), [swimming](https://claudielarouche.com/projects/ottawa-swim/), [kindergym](https://claudielarouche.com/projects/kindergym/))
+- I created a simple [Contact](https://claudielarouche.com/contact/) page
+- Added a spot on the [City of Ottawa drop-in pages](https://claudielarouche.com/projects/ottawa-drop-ins/) for a message to appear on top of every page (useful for example when a special holiday is affecting the schedule, like the Victoria Day  weekend for example)
+- I moved my [repository of adult dance classes](https://claudielarouche.com/projects/ottawa-adult-dance-classes/) to the new look and feel. While I was at it, I changed the code so that if there are multiple addresses for one school, they all get their individual Google Maps link. 
+- There are a few new drop-in activities that the City of Ottawa added that didn't exist before, so I had to update my code to ensure they were correctly categorized on my [City of Ottawa drop-in pages](https://claudielarouche.com/projects/ottawa-drop-ins/). The new activities are: Billiards, Ukulele, Open Paint Studio, Geriatric Jazz Band and Sport Conditioning
+- Created a separate page for all my work projects and one separate page for my personal projects, and then I updated the website menu. Now that I'm using Jekyll, the whole thing took only about 3 seconds it was awesome :) I love Jekyll!!
+- Moved the [email address extractor](https://claudielarouche.com/projects/email-address-extractor/) to the new look and feel
+- I received questions about how reservations work with the City of Ottawa drop-ins, so I added a note to explain that on all the City of Ottawa drop-in pages.
+- I did a presentation at the Civic Tech Ottawa Meetup, so I added a few pictures of the event to the media page
+- OMG! On May 23, 2025, I received my VERY FIRST coffee (there's a link to buy me a coffee in the footer of my website). I am super excited!
+- I redid my [time difference tool](https://claudielarouche.com/projects/time-diff/) on the new look and feel (and actually fixed a few bugs while I was at it)
+- (before May 2025, I did tons of stuff but I didn't keep track sorry! ;)
+
+

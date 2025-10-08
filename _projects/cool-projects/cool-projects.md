@@ -4,7 +4,7 @@ description: A list of other cool projects (not mine)
 image: https://claudielarouche.com/assets/img/other-cool-projects.jpg
 image_hero: https://claudielarouche.com/assets/img/other-cool-projects.jpg
 tags: [Other]
-permalink: /dev-projects/other-cool-projects/
+permalink: /projects/other-cool-projects/
 layout: default-dev
 js: 
 css: 
