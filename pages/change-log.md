@@ -26,7 +26,7 @@ The purpose of this page is simply to let you all know what I've been up to! :) 
 - Yay someone I don't know bought me a coffee by clicking on the icon on the footer of my website, thank you!
 - I received an email from Google saying that my site claudielarouche.com reached 1,000 clicks from Google Search in the past 28 days. That's great!
 - Published a new project: [Find the nearest LRT station](https://claudielarouche.com/projects/lrt/). 
-- The city of Ottawa changed their rule about people using scripts to copy information from their website. 
+- The city of Ottawa changed their rule about people using scripts to copy information from their website, so I had to fill a form and make a few changes to my script in order to regain access. Thankfully I guess my request was approved and I can get the data again, phew :) 
 
 ## June 2025
 
