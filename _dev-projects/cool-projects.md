@@ -1,5 +1,5 @@
 ---
-title: Other cool projects in Ottawa
+title: Other cool projects
 description: A list of other cool projects (not mine)
 image: https://claudielarouche.com/assets/img/other-cool-projects.jpg
 image_hero: https://claudielarouche.com/assets/img/other-cool-projects.jpg
