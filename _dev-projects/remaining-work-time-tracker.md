@@ -11,7 +11,7 @@ permalink: /dev-projects/remaining-work-time-tracker/
   </p>
 
   <div id="workday-periods" class="workday-periods" aria-live="polite">
-    <!-- Default first work block (8:00 - 12:00) -->
+    <!-- Default first work block (8:00 - 12:00, cannot be removed) -->
     <div class="period-row">
       <label>
         Start time
@@ -23,7 +23,7 @@ permalink: /dev-projects/remaining-work-time-tracker/
       </label>
     </div>
 
-    <!-- Default second work block (12:30 - 16:00) -->
+    <!-- Default second work block (12:30 - 16:00, removable) -->
     <div class="period-row">
       <input type="time" class="time-input start" value="12:30" />
       <input type="time" class="time-input end" value="16:00" />
@@ -171,6 +171,7 @@ permalink: /dev-projects/remaining-work-time-tracker/
   const currentTimeEl = document.getElementById("current-time");
   const remainingEl = document.getElementById("remaining-time");
 
+  // Create a new removable period (no headers)
   function createPeriodRow(startValue = "", endValue = "") {
     const row = document.createElement("div");
     row.className = "period-row";
@@ -204,7 +205,11 @@ permalink: /dev-projects/remaining-work-time-tracker/
   }
 
   function updateCurrentTime(now) {
-    const formatted = now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", hour12: true });
+    const formatted = now.toLocaleTimeString([], {
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: true
+    });
     currentTimeEl.textContent = `Current time: ${formatted}`;
   }
 
