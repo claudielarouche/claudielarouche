@@ -171,7 +171,6 @@ permalink: /dev-projects/remaining-work-time-tracker/
   const currentTimeEl = document.getElementById("current-time");
   const remainingEl = document.getElementById("remaining-time");
 
-  // Create a new removable period (no headers)
   function createPeriodRow(startValue = "", endValue = "") {
     const row = document.createElement("div");
     row.className = "period-row";
@@ -220,12 +219,15 @@ permalink: /dev-projects/remaining-work-time-tracker/
 
     const rows = Array.from(periodsContainer.querySelectorAll(".period-row"));
     let upcomingMinutes = 0;
+    let lastEndTime = 0;
 
     rows.forEach((row) => {
       const start = parseTime(row.querySelector(".start"));
       const end = parseTime(row.querySelector(".end"));
       if (start === null || end === null) return;
       if (end === start) return;
+
+      if (end > lastEndTime) lastEndTime = end;
 
       let minutesRemaining = 0;
       if (end > start) {
@@ -236,14 +238,26 @@ permalink: /dev-projects/remaining-work-time-tracker/
     });
 
     if (upcomingMinutes <= 0) {
-      remainingEl.textContent = "Your workday is complete. Great job!";
+      remainingEl.innerHTML = "Your workday is complete. Great job!";
+
+      // Calculate overtime
+      if (lastEndTime && nowMinutes > lastEndTime) {
+        const overtime = nowMinutes - lastEndTime;
+        const overtimeText = minutesToDuration(overtime);
+        const overtimeEl = document.createElement("p");
+        overtimeEl.style.color = "red";
+        overtimeEl.style.fontWeight = "bold";
+        overtimeEl.textContent = `Overtime: ${overtimeText}`;
+        remainingEl.appendChild(overtimeEl);
+      }
+
       return;
     }
 
     remainingEl.textContent = `Time remaining today: ${minutesToDuration(upcomingMinutes)}`;
   }
 
- const defaultRemoveButton = periodsContainer.querySelector(".period-row:nth-child(2) .remove-period");
+  const defaultRemoveButton = periodsContainer.querySelector(".period-row:nth-child(2) .remove-period");
   if (defaultRemoveButton) {
     defaultRemoveButton.addEventListener("click", () => {
       defaultRemoveButton.closest(".period-row").remove();
@@ -263,3 +277,4 @@ permalink: /dev-projects/remaining-work-time-tracker/
   setInterval(updateRemainingTime, 60000);
 })();
 </script>
+
