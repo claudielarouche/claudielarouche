@@ -243,6 +243,14 @@ permalink: /dev-projects/remaining-work-time-tracker/
     remainingEl.textContent = `Time remaining today: ${minutesToDuration(upcomingMinutes)}`;
   }
 
+ const defaultRemoveButton = periodsContainer.querySelector(".period-row:nth-child(2) .remove-period");
+  if (defaultRemoveButton) {
+    defaultRemoveButton.addEventListener("click", () => {
+      defaultRemoveButton.closest(".period-row").remove();
+      updateRemainingTime();
+    });
+  }
+
   periodsContainer.addEventListener("input", updateRemainingTime);
 
   addButton.addEventListener("click", () => {
