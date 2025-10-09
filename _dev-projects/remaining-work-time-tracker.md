@@ -6,20 +6,27 @@ permalink: /dev-projects/remaining-work-time-tracker/
 
 <div class="workday-tracker">
   <p>
-    Enter the working periods you have planned for today. Do not include your lunch break. 
+    Enter the working periods you have planned for today. Do not include your lunch break.
     The tracker combines them with the current time to show how much working time is left in your day.
   </p>
 
   <div id="workday-periods" class="workday-periods" aria-live="polite">
+    <!-- Default first work block (8:00 - 12:00) -->
     <div class="period-row">
       <label>
         Start time
-        <input type="time" class="time-input start" value="09:00" />
+        <input type="time" class="time-input start" value="08:00" />
       </label>
       <label>
         End time
-        <input type="time" class="time-input end" value="17:00" />
+        <input type="time" class="time-input end" value="12:00" />
       </label>
+    </div>
+
+    <!-- Default second work block (12:30 - 16:00) -->
+    <div class="period-row">
+      <input type="time" class="time-input start" value="12:30" />
+      <input type="time" class="time-input end" value="16:00" />
       <button type="button" class="remove-period" aria-label="Remove period">✖</button>
     </div>
   </div>
@@ -65,6 +72,10 @@ permalink: /dev-projects/remaining-work-time-tracker/
   grid-template-columns: 1fr 1fr auto;
   gap: 1rem;
   align-items: end;
+}
+
+.period-row:first-child {
+  grid-template-columns: 1fr 1fr; /* No remove button */
 }
 
 .period-row label {
@@ -164,22 +175,14 @@ permalink: /dev-projects/remaining-work-time-tracker/
     const row = document.createElement("div");
     row.className = "period-row";
     row.innerHTML = `
-      <label>
-        Start time
-        <input type="time" class="time-input start" value="${startValue}" />
-      </label>
-      <label>
-        End time
-        <input type="time" class="time-input end" value="${endValue}" />
-      </label>
+      <input type="time" class="time-input start" value="${startValue}" />
+      <input type="time" class="time-input end" value="${endValue}" />
       <button type="button" class="remove-period" aria-label="Remove period">✖</button>
     `;
-
     row.querySelector(".remove-period").addEventListener("click", () => {
       row.remove();
       updateRemainingTime();
     });
-
     return row;
   }
 
@@ -236,6 +239,7 @@ permalink: /dev-projects/remaining-work-time-tracker/
   }
 
   periodsContainer.addEventListener("input", updateRemainingTime);
+
   addButton.addEventListener("click", () => {
     const newRow = createPeriodRow();
     periodsContainer.appendChild(newRow);
