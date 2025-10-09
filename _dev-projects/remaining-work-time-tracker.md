@@ -37,6 +37,29 @@ permalink: /dev-projects/remaining-work-time-tracker/
     <p id="current-time" class="current-time"></p>
     <p id="remaining-time" class="remaining-time"></p>
   </div>
+
+<div class="task-section">
+  <p id="task-intro">Here could be your motivational or instructional text for the day.</p>
+  <textarea id="task-input" placeholder="Enter your planned tasks, one per line..." rows="10"></textarea>
+  <button id="start-working">Start working</button>
+  
+  <div id="task-board" class="hidden">
+    <div class="task-column" data-status="todo">
+      <h3>Todo</h3>
+      <ul class="task-list" id="todo-list"></ul>
+    </div>
+    <div class="task-column" data-status="waiting">
+      <h3>Waiting</h3>
+      <ul class="task-list" id="waiting-list"></ul>
+    </div>
+    <div class="task-column" data-status="done">
+      <h3>Done</h3>
+      <ul class="task-list" id="done-list"></ul>
+    </div>
+  </div>
+</div>
+
+
 </div>
 
 <style>
@@ -162,6 +185,121 @@ permalink: /dev-projects/remaining-work-time-tracker/
     width: 100%;
   }
 }
+
+
+.task-section {
+  margin-top: 2rem;
+  background: #f9fafb;
+  padding: 1.25rem;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+}
+
+#task-input {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  margin-top: 0.75rem;
+  font-family: inherit;
+  resize: vertical;
+}
+
+#start-working {
+  margin-top: 1rem;
+  background-color: #16a34a;
+  color: white;
+  font-weight: 600;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#start-working:hover {
+  background-color: #15803d;
+}
+
+.hidden {
+  display: none;
+}
+
+#task-board {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.task-column {
+  flex: 1;
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+}
+
+.task-column h3 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #1f2937;
+}
+
+.task-list {
+  flex-grow: 1;
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem;
+  min-height: 250px;
+}
+
+.task-item {
+  background: #eff6ff;
+  margin-bottom: 0.5rem;
+  padding: 0.6rem;
+  border-radius: 6px;
+  cursor: grab;
+  border: 1px solid #bfdbfe;
+  user-select: none;
+}
+
+.task-item.dragging {
+  opacity: 0.5;
+}
+
+.task-item:hover {
+  background: #dbeafe;
+}
+
+.task-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  padding: 1rem 1.5rem;
+  z-index: 1000;
+  text-align: center;
+}
+
+.task-popup button {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.task-popup .todo { background-color: #3b82f6; color: white; }
+.task-popup .waiting { background-color: #f59e0b; color: white; }
+.task-popup .done { background-color: #10b981; color: white; }
+
+
 </style>
 
 <script>
@@ -275,6 +413,105 @@ permalink: /dev-projects/remaining-work-time-tracker/
 
   updateRemainingTime();
   setInterval(updateRemainingTime, 60000);
+
+// === Task Planner Section ===
+(function () {
+  const startBtn = document.getElementById("start-working");
+  const taskInput = document.getElementById("task-input");
+  const board = document.getElementById("task-board");
+  const columns = document.querySelectorAll(".task-list");
+
+  startBtn.addEventListener("click", () => {
+    const tasks = taskInput.value
+      .split("\n")
+      .map(t => t.trim())
+      .filter(Boolean);
+
+    if (tasks.length === 0) {
+      alert("Please enter at least one task.");
+      return;
+    }
+
+    taskInput.classList.add("hidden");
+    startBtn.classList.add("hidden");
+    board.classList.remove("hidden");
+
+    const todoList = document.getElementById("todo-list");
+    todoList.innerHTML = "";
+
+    tasks.forEach(task => {
+      const li = document.createElement("li");
+      li.className = "task-item";
+      li.textContent = task;
+      li.setAttribute("draggable", "true");
+      todoList.appendChild(li);
+      addTaskInteractivity(li);
+    });
+  });
+
+  function addTaskInteractivity(taskEl) {
+    // Handle popup click to move task
+    taskEl.addEventListener("click", () => {
+      const popup = document.createElement("div");
+      popup.className = "task-popup";
+      popup.innerHTML = `
+        <p>Move this task to:</p>
+        <button class="todo">Todo</button>
+        <button class="waiting">Waiting</button>
+        <button class="done">Done</button>
+      `;
+      document.body.appendChild(popup);
+
+      popup.querySelectorAll("button").forEach(btn => {
+        btn.addEventListener("click", () => {
+          document.getElementById(btn.className + "-list").appendChild(taskEl);
+          document.body.removeChild(popup);
+        });
+      });
+    });
+
+    // Drag & drop handlers
+    taskEl.addEventListener("dragstart", e => {
+      e.dataTransfer.setData("text/plain", "");
+      taskEl.classList.add("dragging");
+      dragged = taskEl;
+    });
+    taskEl.addEventListener("dragend", () => {
+      taskEl.classList.remove("dragging");
+      dragged = null;
+    });
+  }
+
+  let dragged = null;
+  columns.forEach(col => {
+    col.addEventListener("dragover", e => {
+      e.preventDefault();
+      const afterEl = getDragAfterElement(col, e.clientY);
+      if (afterEl == null) {
+        col.appendChild(dragged);
+      } else {
+        col.insertBefore(dragged, afterEl);
+      }
+    });
+  });
+
+  function getDragAfterElement(container, y) {
+    const draggableElements = [...container.querySelectorAll(".task-item:not(.dragging)")];
+    return draggableElements.reduce(
+      (closest, child) => {
+        const box = child.getBoundingClientRect();
+        const offset = y - box.top - box.height / 2;
+        if (offset < 0 && offset > closest.offset) {
+          return { offset, element: child };
+        } else {
+          return closest;
+        }
+      },
+      { offset: Number.NEGATIVE_INFINITY }
+    ).element;
+  }
+
+
 })();
 </script>
 
