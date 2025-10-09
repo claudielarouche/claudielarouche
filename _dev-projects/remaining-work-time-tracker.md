@@ -37,12 +37,20 @@ permalink: /dev-projects/remaining-work-time-tracker/
     <p id="current-time" class="current-time"></p>
     <p id="remaining-time" class="remaining-time"></p>
   </div>
+</div>
 
+<!-- ===== Task Planning Section ===== -->
 <div class="task-section">
-  <p id="task-intro">Here could be your motivational or instructional text for the day.</p>
-  <textarea id="task-input" placeholder="Enter your planned tasks, one per line..." rows="10"></textarea>
+  <p id="task-intro">
+    Here could be your motivational or instructional text for the day.
+  </p>
+  <textarea
+    id="task-input"
+    placeholder="Enter your planned tasks, one per line..."
+    rows="10"
+  ></textarea>
   <button id="start-working">Start working</button>
-  
+
   <div id="task-board" class="hidden">
     <div class="task-column" data-status="todo">
       <h3>Todo</h3>
@@ -59,10 +67,8 @@ permalink: /dev-projects/remaining-work-time-tracker/
   </div>
 </div>
 
-
-</div>
-
 <style>
+/* === Layout and Styling === */
 .workday-tracker {
   max-width: 720px;
   margin: 0 auto;
@@ -176,17 +182,7 @@ permalink: /dev-projects/remaining-work-time-tracker/
   color: #1f2937;
 }
 
-@media (max-width: 600px) {
-  .workday-tracker {
-    padding: 1rem;
-  }
-
-  .add-period {
-    width: 100%;
-  }
-}
-
-
+/* === Task Planner Section === */
 .task-section {
   margin-top: 2rem;
   background: #f9fafb;
@@ -295,11 +291,34 @@ permalink: /dev-projects/remaining-work-time-tracker/
   cursor: pointer;
 }
 
-.task-popup .todo { background-color: #3b82f6; color: white; }
-.task-popup .waiting { background-color: #f59e0b; color: white; }
-.task-popup .done { background-color: #10b981; color: white; }
+.task-popup .todo {
+  background-color: #3b82f6;
+  color: white;
+}
 
+.task-popup .waiting {
+  background-color: #f59e0b;
+  color: white;
+}
 
+.task-popup .done {
+  background-color: #10b981;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .workday-tracker {
+    padding: 1rem;
+  }
+
+  .add-period {
+    width: 100%;
+  }
+
+  #task-board {
+    flex-direction: column;
+  }
+}
 </style>
 
 <script>
@@ -345,7 +364,7 @@ permalink: /dev-projects/remaining-work-time-tracker/
     const formatted = now.toLocaleTimeString([], {
       hour: "2-digit",
       minute: "2-digit",
-      hour12: true
+      hour12: true,
     });
     currentTimeEl.textContent = `Current time: ${formatted}`;
   }
@@ -364,7 +383,6 @@ permalink: /dev-projects/remaining-work-time-tracker/
       const end = parseTime(row.querySelector(".end"));
       if (start === null || end === null) return;
       if (end === start) return;
-
       if (end > lastEndTime) lastEndTime = end;
 
       let minutesRemaining = 0;
@@ -377,8 +395,6 @@ permalink: /dev-projects/remaining-work-time-tracker/
 
     if (upcomingMinutes <= 0) {
       remainingEl.innerHTML = "Your workday is complete. Great job!";
-
-      // Calculate overtime
       if (lastEndTime && nowMinutes > lastEndTime) {
         const overtime = nowMinutes - lastEndTime;
         const overtimeText = minutesToDuration(overtime);
@@ -388,7 +404,6 @@ permalink: /dev-projects/remaining-work-time-tracker/
         overtimeEl.textContent = `Overtime: ${overtimeText}`;
         remainingEl.appendChild(overtimeEl);
       }
-
       return;
     }
 
@@ -404,7 +419,6 @@ permalink: /dev-projects/remaining-work-time-tracker/
   }
 
   periodsContainer.addEventListener("input", updateRemainingTime);
-
   addButton.addEventListener("click", () => {
     const newRow = createPeriodRow();
     periodsContainer.appendChild(newRow);
@@ -413,6 +427,7 @@ permalink: /dev-projects/remaining-work-time-tracker/
 
   updateRemainingTime();
   setInterval(updateRemainingTime, 60000);
+})();
 
 // === Task Planner Section ===
 (function () {
@@ -420,11 +435,12 @@ permalink: /dev-projects/remaining-work-time-tracker/
   const taskInput = document.getElementById("task-input");
   const board = document.getElementById("task-board");
   const columns = document.querySelectorAll(".task-list");
+  let dragged = null;
 
   startBtn.addEventListener("click", () => {
     const tasks = taskInput.value
       .split("\n")
-      .map(t => t.trim())
+      .map((t) => t.trim())
       .filter(Boolean);
 
     if (tasks.length === 0) {
@@ -439,7 +455,7 @@ permalink: /dev-projects/remaining-work-time-tracker/
     const todoList = document.getElementById("todo-list");
     todoList.innerHTML = "";
 
-    tasks.forEach(task => {
+    tasks.forEach((task) => {
       const li = document.createElement("li");
       li.className = "task-item";
       li.textContent = task;
@@ -450,7 +466,6 @@ permalink: /dev-projects/remaining-work-time-tracker/
   });
 
   function addTaskInteractivity(taskEl) {
-    // Handle popup click to move task
     taskEl.addEventListener("click", () => {
       const popup = document.createElement("div");
       popup.className = "task-popup";
@@ -462,7 +477,7 @@ permalink: /dev-projects/remaining-work-time-tracker/
       `;
       document.body.appendChild(popup);
 
-      popup.querySelectorAll("button").forEach(btn => {
+      popup.querySelectorAll("button").forEach((btn) => {
         btn.addEventListener("click", () => {
           document.getElementById(btn.className + "-list").appendChild(taskEl);
           document.body.removeChild(popup);
@@ -470,21 +485,20 @@ permalink: /dev-projects/remaining-work-time-tracker/
       });
     });
 
-    // Drag & drop handlers
-    taskEl.addEventListener("dragstart", e => {
+    taskEl.addEventListener("dragstart", (e) => {
       e.dataTransfer.setData("text/plain", "");
       taskEl.classList.add("dragging");
       dragged = taskEl;
     });
+
     taskEl.addEventListener("dragend", () => {
       taskEl.classList.remove("dragging");
       dragged = null;
     });
   }
 
-  let dragged = null;
-  columns.forEach(col => {
-    col.addEventListener("dragover", e => {
+  columns.forEach((col) => {
+    col.addEventListener("dragover", (e) => {
       e.preventDefault();
       const afterEl = getDragAfterElement(col, e.clientY);
       if (afterEl == null) {
@@ -496,7 +510,9 @@ permalink: /dev-projects/remaining-work-time-tracker/
   });
 
   function getDragAfterElement(container, y) {
-    const draggableElements = [...container.querySelectorAll(".task-item:not(.dragging)")];
+    const draggableElements = [
+      ...container.querySelectorAll(".task-item:not(.dragging)"),
+    ];
     return draggableElements.reduce(
       (closest, child) => {
         const box = child.getBoundingClientRect();
@@ -510,8 +526,5 @@ permalink: /dev-projects/remaining-work-time-tracker/
       { offset: Number.NEGATIVE_INFINITY }
     ).element;
   }
-
-
 })();
 </script>
-
