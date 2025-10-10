@@ -85,7 +85,7 @@
     return li;
   }
 
-  // ✳️ Unified popup for adding / editing tasks
+    // ✳️ Unified popup for adding / editing tasks
   function openTaskPopup(targetListId, existingTask = null, focusName = false) {
     const labelText = existingTask
       ? existingTask.querySelector(".label").textContent
@@ -137,6 +137,11 @@
       </div>
 
       <div class="popup-actions">
+        ${
+          existingTask
+            ? '<button class="delete-task" style="background:#ef4444;color:#fff;">🗑️ Delete</button>'
+            : ""
+        }
         <button class="apply">Apply</button>
         <button class="close">Close</button>
       </div>
@@ -145,17 +150,10 @@
 
     // Auto-focus + select text
     const nameInput = popup.querySelector("#task-name");
-    if (focusName) {
-      setTimeout(() => {
-        nameInput.focus();
-        nameInput.select();
-      }, 50);
-    } else {
-      setTimeout(() => {
-        nameInput.focus();
-        nameInput.select();
-      }, 50);
-    }
+    setTimeout(() => {
+      nameInput.focus();
+      nameInput.select();
+    }, 50);
 
     // Enter key triggers Apply
     popup.addEventListener("keydown", (e) => {
@@ -205,8 +203,21 @@
       }
       popup.remove();
     };
+
+    // Delete functionality
+    const deleteBtn = popup.querySelector(".delete-task");
+    if (deleteBtn) {
+      deleteBtn.onclick = () => {
+        if (confirm("Are you sure you want to delete this task?")) {
+          existingTask.remove();
+          popup.remove();
+        }
+      };
+    }
+
     popup.querySelector(".close").onclick = () => popup.remove();
   }
+
 
   function addInteractivity(task) {
     task.addEventListener("click", () => {
