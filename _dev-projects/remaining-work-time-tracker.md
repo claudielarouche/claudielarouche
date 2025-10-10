@@ -8,7 +8,7 @@ css:
 
 <div class="workday-tracker">
   <p>
-    Enter the working periods you have planned for today. Do not include your lunch break.
+    <strong> Step 1</strong>: Enter the working periods you have planned for today. Do not include your lunch break.
     The tracker combines them with the current time to show how much working time is left in your day.
   </p>
 
@@ -34,14 +34,14 @@ css:
   <button type="button" class="add-period" id="add-period">Add another work period</button>
 
   <div class="workday-summary">
-    <p id="current-time" class="current-time"></p>
+    <!--<p id="current-time" class="current-time"></p>-->
     <p id="remaining-time" class="remaining-time"></p>
   </div>
 </div>
 
 <!-- ===== Task Planning Section ===== -->
 <div class="task-section">
-  <p id="task-intro">Here could be your motivational or instructional text for the day.</p>
+  <p id="task-intro"><strong>Step 2</strong>: Enter your planned tasks for today, then click "Start Working". Start the task name with "W - " to identify a work task, "H - " to identify a Home task and "M - " to identify a Meeting.</p>
 
   <textarea
     id="task-input"
@@ -86,7 +86,7 @@ css:
 (function () {
   const periodsContainer = document.getElementById("workday-periods");
   const addButton = document.getElementById("add-period");
-  const currentTimeEl = document.getElementById("current-time");
+  //const currentTimeEl = document.getElementById("current-time");
   const remainingEl = document.getElementById("remaining-time");
 
   function parseTime(input) {
@@ -103,10 +103,10 @@ css:
   function update() {
     const now = new Date();
     const nowMin = now.getHours() * 60 + now.getMinutes();
-    currentTimeEl.textContent = now.toLocaleTimeString([], {
+    /*currentTimeEl.textContent = now.toLocaleTimeString([], {
       hour: "2-digit",
       minute: "2-digit",
-    });
+    });*/
 
     let lastEnd = 0,
       remaining = 0;
