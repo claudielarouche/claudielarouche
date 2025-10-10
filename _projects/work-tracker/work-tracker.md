@@ -4,6 +4,7 @@ description: Track how much time left to your workday and the progress of your d
 title: Work Tracker
 tags: [Work]
 permalink: /projects/work-tracker/
+image: https://claudielarouche.com/assets/img/work-tracker.jpg
 css: 
   - /assets/css/work-tracker.css
 js:  
