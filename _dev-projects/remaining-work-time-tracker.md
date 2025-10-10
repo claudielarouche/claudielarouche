@@ -5,7 +5,7 @@ permalink: /dev-projects/remaining-work-time-tracker/
 css: 
   - /assets/css/remaining-work-tracker.css
 js:  
-  - /assets/css/remaining-work-tracker.js
+  - /assets/js/remaining-work-tracker.js
 ---
 
 
