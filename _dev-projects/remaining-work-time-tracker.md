@@ -14,14 +14,8 @@ css:
 
   <div id="workday-periods" class="workday-periods" aria-live="polite">
     <div class="period-row">
-      <label>
-        Start time
         <input type="time" class="time-input start" value="08:00" />
-      </label>
-      <label>
-        End time
         <input type="time" class="time-input end" value="12:00" />
-      </label>
     </div>
 
     <div class="period-row">
@@ -41,11 +35,11 @@ css:
 
 <!-- ===== Task Planning Section ===== -->
 <div class="task-section">
-  <p id="task-intro"><strong>Step 2</strong>: Enter your planned tasks for today, then click "Start Working". Start the task name with "W - " to identify a work task, "H - " to identify a Home task and "M - " to identify a Meeting.</p>
+  <p id="task-intro"><strong>Step 2</strong>: Enter your planned tasks for today, then click "Start Working". </p>
 
   <textarea
     id="task-input"
-    placeholder="Enter your planned tasks, one per line (use codes like 'H - Task', 'W - Task', 'M - Task')"
+    placeholder="Enter your planned tasks, one per line (Start the task name with 'W - ' to identify a work task, 'H - ' to identify a Home task and 'M - ' to identify a Meeting. The default task type is 'Work')"
     rows="10"
   ></textarea>
   <button id="start-working">Start working</button>
