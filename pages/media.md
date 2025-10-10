@@ -12,9 +12,17 @@ Here are some interviews I have given, articles written about my projects, confe
   Images on this page should be about 600x450
 {% endcomment %}
 
+---
+
+## 📣 Presentation to ForwardJS
+![ForwardJS]({{ '/assets/img/ForwardJS-2025-09-18.png' | relative_url }})  
+**Type:** 30 minutes presentation - Code for a Cause with Claudie (and ChatGPT!)  
+**Date:** September 18, 2025  
+[Meetup event](https://www.meetup.com/ottawa-forwardjs-meetup/events/310700820/){:target="_blank" rel="noopener noreferrer"}  
+
 ## 📣 Presentation for Busy Moms Expo
 ![Busy Mom Expo]({{ '/assets/img/busy-mom-expo.jpg' | relative_url }})  
-**Type:** 20 minutes presentation  
+**Type:** 20 minutes presentation  - The Efficient Mom: Systems that Save Your Sanity
 **Date:** June 7, 2025  
 **Details:** In this practical and inspiring session, Claudie Larouche shares time-saving tools, local resources, and creative strategies to help busy Ottawa moms become more efficient. You’ll leave with fresh ideas you can use right away and inspiration to make everyday life a little easier.
 
@@ -23,7 +31,7 @@ Here are some interviews I have given, articles written about my projects, confe
 ## 📣 Presentation for Civic Tech
 ![Civic Tech ad]({{ '/assets/img/civic-tech-ad.jpg' | relative_url }})  
 ![Civic Tech Presentation]({{ '/assets/img/civic-tech-Claudie.jpg' | relative_url }})  
-**Type:** 15 minutes presentation  
+**Type:** 15 minutes presentation - Code for a Cause with Claudie (and ChatGPT!)    
 **Date:** May 21, 2025  
 [Meetup event](https://www.meetup.com/yow_ct/events/307537719){:target="_blank" rel="noopener noreferrer"}    
 
@@ -31,7 +39,7 @@ Here are some interviews I have given, articles written about my projects, confe
 
 ## 📣 Presentation for Ottawa Python Authors Meetup
 ![Python Meetup]({{ '/assets/img/Python-Meetup-2025.jpg' | relative_url }})  
-**Type:** 45 minutes presentation  
+**Type:** 45 minutes presentation - Code for a Cause with Claudie (and ChatGPT!)    
 **Date:** May 6, 2025  
 [Meetup event](https://www.meetup.com/ottawapython/events/307545401/){:target="_blank" rel="noopener noreferrer"}  
 
@@ -51,7 +59,7 @@ Here are some interviews I have given, articles written about my projects, confe
 ![Ad for R-Ladies talk]({{ '/assets/img/R-Ladies-Ad.jpg' | relative_url }})  
 ![Presentation at R-Ladies talk]({{ '/assets/img/R-Ladies-Talk.png' | relative_url }})
 
-**Type:** 45 minutes Presentation  
+**Type:** 45 minutes Presentation - Code for a Cause with Claudie (and ChatGPT!)    
 **Date:** March 18, 2025  
 **Details:** Claudie will show you how anyone can leverage AI for social good. Whether you're a seasoned developer or a tech-curious individual, Claudie's story will inspire you to think creatively and use technology to solve real-life problems.  
 [View the presentation on R-Ladies Global Youtube Channel](https://www.youtube.com/watch?v=p78AW7ZdNGI){:target="_blank" rel="noopener noreferrer"}
