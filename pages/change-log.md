@@ -11,6 +11,7 @@ The purpose of this page is simply to let you all know what I've been up to! :) 
 ## October 2025
 
 - I created a new page to post [other cool projects](https://claudielarouche.com/projects/other-cool-projects/) I have come across. 
+- Hmmm I have a loooooong todo list of improvements to add to all my projects, and actually some park data that I need to update, BUT I got sidetracked and I started a new project. It's a remaining work time tracker. I will publish it soon, stay tuned :) 
 
 ## August and September 2025
 
