@@ -44,33 +44,50 @@ permalink: /dev-projects/remaining-work-time-tracker/
   <p id="task-intro">
     Here could be your motivational or instructional text for the day.
   </p>
+
   <textarea
     id="task-input"
-    placeholder="Enter your planned tasks, one per line..."
+    placeholder="Enter your planned tasks, one per line (use codes like 'H - Task', 'W - Task', 'M - Task')"
     rows="10"
   ></textarea>
+
   <button id="start-working">Start working</button>
 
   <div id="task-board" class="hidden">
     <div class="task-column" data-status="todo">
-      <h3>Todo</h3>
+      <div class="column-header">
+        <h3>Todo</h3>
+        <button class="lane-add" data-target="todo-list" aria-label="Add task to Todo">＋</button>
+      </div>
       <ul class="task-list" id="todo-list"></ul>
     </div>
+
     <div class="task-column" data-status="waiting">
-      <h3>Waiting</h3>
+      <div class="column-header">
+        <h3>Waiting</h3>
+        <button class="lane-add" data-target="waiting-list" aria-label="Add task to Waiting">＋</button>
+      </div>
       <ul class="task-list" id="waiting-list"></ul>
     </div>
+
     <div class="task-column" data-status="done">
-      <h3>Done</h3>
+      <div class="column-header">
+        <h3>Done</h3>
+        <button class="lane-add" data-target="done-list" aria-label="Add task to Done">＋</button>
+      </div>
       <ul class="task-list" id="done-list"></ul>
     </div>
+  </div>
+
+  <div id="day-controls" class="hidden">
+    <button id="new-day" class="new-day-btn">Start a new day</button>
   </div>
 </div>
 
 <style>
 /* === Layout and Styling === */
 .workday-tracker {
-  max-width: 720px;
+  max-width: 920px;
   margin: 0 auto;
   padding: 1.5rem;
   background: #ffffff;
@@ -184,7 +201,8 @@ permalink: /dev-projects/remaining-work-time-tracker/
 
 /* === Task Planner Section === */
 .task-section {
-  margin-top: 2rem;
+  max-width: 920px;
+  margin: 2rem auto 3rem;
   background: #f9fafb;
   padding: 1.25rem;
   border-radius: 10px;
@@ -217,9 +235,7 @@ permalink: /dev-projects/remaining-work-time-tracker/
   background-color: #15803d;
 }
 
-.hidden {
-  display: none;
-}
+.hidden { display: none; }
 
 #task-board {
   display: flex;
@@ -235,21 +251,47 @@ permalink: /dev-projects/remaining-work-time-tracker/
   padding: 0.75rem;
   display: flex;
   flex-direction: column;
-  min-height: 300px;
+  min-height: 360px;
 }
 
-.task-column h3 {
-  text-align: center;
+.column-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 0.5rem;
-  color: #1f2937;
 }
+
+.column-header h3 {
+  margin: 0;
+  color: #1f2937;
+  text-align: center;
+}
+
+.lane-add {
+  position: absolute;
+  right: 0.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: #0ea5e9;
+  color: #fff;
+  font-size: 1.25rem;
+  line-height: 1;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.lane-add:hover { background: #0284c7; }
 
 .task-list {
   flex-grow: 1;
   list-style: none;
   margin: 0;
   padding: 0.5rem;
-  min-height: 250px;
+  min-height: 290px;
 }
 
 .task-item {
@@ -260,68 +302,107 @@ permalink: /dev-projects/remaining-work-time-tracker/
   cursor: grab;
   border: 1px solid #bfdbfe;
   user-select: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.task-item.dragging {
-  opacity: 0.5;
+.task-item .icon {
+  font-size: 1.1rem;
 }
 
-.task-item:hover {
-  background: #dbeafe;
+.task-item .label {
+  flex: 1;
 }
 
+.task-item.dragging { opacity: 0.5; }
+.task-item:hover { background: #dbeafe; }
+
+/* Popup */
 .task-popup {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.20);
+  padding: 1rem 1.25rem;
   z-index: 1000;
-  text-align: center;
+  width: min(92vw, 420px);
 }
 
-.task-popup button {
-  margin: 0.5rem;
-  padding: 0.5rem 1rem;
+.task-popup h4 {
+  margin: 0 0 0.5rem;
+}
+
+.popup-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.popup-row input[type="text"] {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+}
+
+.popup-row input[type="color"] {
+  width: 44px;
+  height: 36px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.popup-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.popup-actions button {
+  padding: 0.5rem 0.75rem;
   border-radius: 6px;
   border: none;
   cursor: pointer;
 }
 
-.task-popup .todo {
-  background-color: #3b82f6;
-  color: white;
+.popup-actions .todo    { background-color: #3b82f6; color: white; }
+.popup-actions .waiting { background-color: #f59e0b; color: white; }
+.popup-actions .done    { background-color: #10b981; color: white; }
+.popup-actions .apply   { background-color: #16a34a; color: white; margin-left: auto; }
+.popup-actions .close   { background-color: #e5e7eb; color: #374151; }
+
+/* Day controls */
+#day-controls {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.task-popup .waiting {
-  background-color: #f59e0b;
-  color: white;
+.new-day-btn {
+  background: #6b7280;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
 }
 
-.task-popup .done {
-  background-color: #10b981;
-  color: white;
-}
+.new-day-btn:hover { background: #4b5563; }
 
-@media (max-width: 600px) {
-  .workday-tracker {
-    padding: 1rem;
-  }
-
-  .add-period {
-    width: 100%;
-  }
-
-  #task-board {
-    flex-direction: column;
-  }
+@media (max-width: 700px) {
+  #task-board { flex-direction: column; }
 }
 </style>
 
 <script>
+/* ===================== Workday Time Logic (incl. Overtime) ===================== */
 (function () {
   const periodsContainer = document.getElementById("workday-periods");
   const addButton = document.getElementById("add-period");
@@ -362,9 +443,7 @@ permalink: /dev-projects/remaining-work-time-tracker/
 
   function updateCurrentTime(now) {
     const formatted = now.toLocaleTimeString([], {
-      hour: "2-digit",
-      minute: "2-digit",
-      hour12: true,
+      hour: "2-digit", minute: "2-digit", hour12: true
     });
     currentTimeEl.textContent = `Current time: ${formatted}`;
   }
@@ -429,14 +508,173 @@ permalink: /dev-projects/remaining-work-time-tracker/
   setInterval(updateRemainingTime, 60000);
 })();
 
-// === Task Planner Section ===
+/* ===================== Task Planner & Board ===================== */
 (function () {
-  const startBtn = document.getElementById("start-working");
-  const taskInput = document.getElementById("task-input");
-  const board = document.getElementById("task-board");
-  const columns = document.querySelectorAll(".task-list");
+  const startBtn   = document.getElementById("start-working");
+  const taskInput  = document.getElementById("task-input");
+  const board      = document.getElementById("task-board");
+  const dayControls = document.getElementById("day-controls");
+  const newDayBtn  = document.getElementById("new-day");
+  const columns    = document.querySelectorAll(".task-list");
+  const laneAddBtns= document.querySelectorAll(".lane-add");
   let dragged = null;
 
+  const ICONS = {
+    H: "🏠",
+    W: "💼",
+    M: "📅",
+    NONE: ""
+  };
+
+  function parseCodedTask(text) {
+    // Accept codes like "H - Task", "W - Something", "M - Meeting Title"
+    const codeMatch = text.match(/^\s*([HWM])\s*-\s*(.+)$/i);
+    if (codeMatch) {
+      const code = codeMatch[1].toUpperCase();
+      const label = codeMatch[2].trim();
+      return { icon: ICONS[code] || ICONS.NONE, label };
+    }
+    return { icon: ICONS.NONE, label: text.trim() };
+  }
+
+  function buildTaskElement(rawText, bgColor="") {
+    const { icon, label } = parseCodedTask(rawText);
+    const li = document.createElement("li");
+    li.className = "task-item";
+    li.setAttribute("draggable", "true");
+    if (bgColor) li.style.background = bgColor;
+
+    // Structure: [icon span] [label span]
+    const iconSpan = document.createElement("span");
+    iconSpan.className = "icon";
+    iconSpan.textContent = icon;
+
+    const labelSpan = document.createElement("span");
+    labelSpan.className = "label";
+    labelSpan.textContent = label || "Untitled task";
+
+    li.appendChild(iconSpan);
+    li.appendChild(labelSpan);
+
+    addTaskInteractivity(li);
+    return li;
+  }
+
+  function createPopupForTask(taskEl) {
+    const currentListId = taskEl.closest(".task-list").id;
+    const notIn = ["todo-list", "waiting-list", "done-list"].filter(id => id !== currentListId);
+
+    const labelText = taskEl.querySelector(".label").textContent;
+    const currentBg = rgbToHex(window.getComputedStyle(taskEl).backgroundColor);
+
+    const popup = document.createElement("div");
+    popup.className = "task-popup";
+    popup.innerHTML = `
+      <h4>Edit task</h4>
+      <div class="popup-row">
+        <label for="rename-input" style="min-width:90px;">Rename</label>
+        <input id="rename-input" type="text" value="${escapeHtml(labelText)}" />
+      </div>
+      <div class="popup-row">
+        <label for="color-input" style="min-width:90px;">Colour</label>
+        <input id="color-input" type="color" value="${currentBg}" />
+      </div>
+      <div class="popup-actions">
+        <span style="align-self:center;">Move to:</span>
+        ${notIn.map(id => {
+          const cls = id.replace("-list", "");
+          const text = cls.charAt(0).toUpperCase() + cls.slice(1);
+          return `<button class="${cls}" data-target="${id}">${text}</button>`;
+        }).join("")}
+        <button class="apply">Apply</button>
+        <button class="close">Close</button>
+      </div>
+    `;
+    document.body.appendChild(popup);
+
+    // Move handlers
+    popup.querySelectorAll("[data-target]").forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.getElementById(btn.getAttribute("data-target")).appendChild(taskEl);
+      });
+    });
+
+    // Apply rename/color
+    popup.querySelector(".apply").addEventListener("click", () => {
+      const newName = popup.querySelector("#rename-input").value.trim() || "Untitled task";
+      const newColor = popup.querySelector("#color-input").value;
+      taskEl.querySelector(".label").textContent = newName;
+      taskEl.style.background = newColor;
+      closePopup();
+    });
+
+    popup.querySelector(".close").addEventListener("click", closePopup);
+
+    function closePopup() {
+      if (popup && popup.parentNode) popup.parentNode.removeChild(popup);
+    }
+  }
+
+  function rgbToHex(rgb) {
+    // Converts "rgb(r, g, b)" to "#rrggbb"
+    const m = rgb.match(/^rgba?\((\d+),\s*(\d+),\s*(\d+)/i);
+    if (!m) return "#eff6ff"; // default card color
+    const r = Number(m[1]).toString(16).padStart(2, "0");
+    const g = Number(m[2]).toString(16).padStart(2, "0");
+    const b = Number(m[3]).toString(16).padStart(2, "0");
+    return `#${r}${g}${b}`;
+  }
+
+  function addTaskInteractivity(taskEl) {
+    // Click → open popup to rename / recolor / move
+    taskEl.addEventListener("click", (e) => {
+      // Avoid click firing when dragging
+      if (taskEl.classList.contains("dragging")) return;
+      createPopupForTask(taskEl);
+    });
+
+    // Drag & drop
+    taskEl.addEventListener("dragstart", (e) => {
+      e.dataTransfer.setData("text/plain", "");
+      taskEl.classList.add("dragging");
+      dragged = taskEl;
+    });
+    taskEl.addEventListener("dragend", () => {
+      taskEl.classList.remove("dragging");
+      dragged = null;
+    });
+  }
+
+  // Column dragover logic (reorder within/between)
+  columns.forEach((col) => {
+    col.addEventListener("dragover", (e) => {
+      e.preventDefault();
+      const afterEl = getDragAfterElement(col, e.clientY);
+      if (!dragged) return;
+      if (afterEl == null) {
+        col.appendChild(dragged);
+      } else {
+        col.insertBefore(dragged, afterEl);
+      }
+    });
+  });
+
+  function getDragAfterElement(container, y) {
+    const others = [...container.querySelectorAll(".task-item:not(.dragging)")];
+    return others.reduce(
+      (closest, child) => {
+        const box = child.getBoundingClientRect();
+        const offset = y - box.top - box.height / 2;
+        if (offset < 0 && offset > closest.offset) {
+          return { offset, element: child };
+        }
+        return closest;
+      },
+      { offset: Number.NEGATIVE_INFINITY }
+    ).element;
+  }
+
+  // Start working: parse textarea into tasks
   startBtn.addEventListener("click", () => {
     const tasks = taskInput.value
       .split("\n")
@@ -448,83 +686,53 @@ permalink: /dev-projects/remaining-work-time-tracker/
       return;
     }
 
+    // Build cards in TODO
+    const todoList = document.getElementById("todo-list");
+    todoList.innerHTML = "";
+    tasks.forEach((t) => {
+      todoList.appendChild(buildTaskElement(t));
+    });
+
+    // Show board + day controls, hide input
     taskInput.classList.add("hidden");
     startBtn.classList.add("hidden");
     board.classList.remove("hidden");
-
-    const todoList = document.getElementById("todo-list");
-    todoList.innerHTML = "";
-
-    tasks.forEach((task) => {
-      const li = document.createElement("li");
-      li.className = "task-item";
-      li.textContent = task;
-      li.setAttribute("draggable", "true");
-      todoList.appendChild(li);
-      addTaskInteractivity(li);
-    });
+    dayControls.classList.remove("hidden");
   });
 
-  function addTaskInteractivity(taskEl) {
-    taskEl.addEventListener("click", () => {
-      const popup = document.createElement("div");
-      popup.className = "task-popup";
-      popup.innerHTML = `
-        <p>Move this task to:</p>
-        <button class="todo">Todo</button>
-        <button class="waiting">Waiting</button>
-        <button class="done">Done</button>
-      `;
-      document.body.appendChild(popup);
-
-      popup.querySelectorAll("button").forEach((btn) => {
-        btn.addEventListener("click", () => {
-          document.getElementById(btn.className + "-list").appendChild(taskEl);
-          document.body.removeChild(popup);
-        });
-      });
-    });
-
-    taskEl.addEventListener("dragstart", (e) => {
-      e.dataTransfer.setData("text/plain", "");
-      taskEl.classList.add("dragging");
-      dragged = taskEl;
-    });
-
-    taskEl.addEventListener("dragend", () => {
-      taskEl.classList.remove("dragging");
-      dragged = null;
-    });
-  }
-
-  columns.forEach((col) => {
-    col.addEventListener("dragover", (e) => {
-      e.preventDefault();
-      const afterEl = getDragAfterElement(col, e.clientY);
-      if (afterEl == null) {
-        col.appendChild(dragged);
-      } else {
-        col.insertBefore(dragged, afterEl);
+  // Lane + buttons: quick add task to a lane
+  laneAddBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const targetId = btn.getAttribute("data-target");
+      const text = prompt("New task name (use codes like 'H - ...', 'W - ...', 'M - ...'):");
+      if (text !== null) {
+        const trimmed = text.trim();
+        if (trimmed) {
+          const el = buildTaskElement(trimmed);
+          document.getElementById(targetId).appendChild(el);
+        }
       }
     });
   });
 
-  function getDragAfterElement(container, y) {
-    const draggableElements = [
-      ...container.querySelectorAll(".task-item:not(.dragging)"),
-    ];
-    return draggableElements.reduce(
-      (closest, child) => {
-        const box = child.getBoundingClientRect();
-        const offset = y - box.top - box.height / 2;
-        if (offset < 0 && offset > closest.offset) {
-          return { offset, element: child };
-        } else {
-          return closest;
-        }
-      },
-      { offset: Number.NEGATIVE_INFINITY }
-    ).element;
+  // Start a new day: clear board, hide it, show textarea again (no reload)
+  newDayBtn.addEventListener("click", () => {
+    ["todo-list", "waiting-list", "done-list"].forEach(id => {
+      document.getElementById(id).innerHTML = "";
+    });
+    board.classList.add("hidden");
+    dayControls.classList.add("hidden");
+    taskInput.value = "";
+    taskInput.classList.remove("hidden");
+    startBtn.classList.remove("hidden");
+    // (Time periods at the top remain untouched)
+  });
+
+  // HTML escape for safe injection into value=""
+  function escapeHtml(str) {
+    return str.replace(/[&<>"']/g, (ch) =>
+      ({ "&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;" }[ch])
+    );
   }
 })();
 </script>
