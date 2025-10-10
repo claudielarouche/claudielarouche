@@ -169,6 +169,7 @@ css:
     return li;
   }
 
+  // ✳️ Unified popup for adding / editing tasks
   function openTaskPopup(targetListId, existingTask = null, focusName = false) {
     const labelText = existingTask
       ? existingTask.querySelector(".label").textContent
@@ -184,6 +185,7 @@ css:
     popup.className = "task-popup";
     popup.innerHTML = `
       <h4>${existingTask ? "Edit task" : "Add new task"}</h4>
+
       <div class="popup-row">
         <label for="task-name" style="font-weight:600;">Task name</label>
         <input type="text" id="task-name" value="${labelText}" placeholder="Task name" style="width:100%;margin-top:4px;"/>
@@ -200,7 +202,7 @@ css:
 
       <div class="popup-row" style="margin-top:0.75rem;">
         <label style="font-weight:600;">Color</label>
-        <div class="color-picker" style="display:flex;gap:8px;flex-wrap:wrap;margin-top:4px;">
+        <div class="color-picker" style="display:flex;gap:8px;flex-wrap:nowrap;margin-top:4px;align-items:center;">
           ${[
             "default",
             "red",
@@ -225,11 +227,21 @@ css:
     `;
     document.body.appendChild(popup);
 
-    // Auto focus the name box
+    // Auto-focus + select text
     const nameInput = popup.querySelector("#task-name");
-    if (focusName) setTimeout(() => nameInput.focus(), 50);
+    if (focusName) {
+      setTimeout(() => {
+        nameInput.focus();
+        nameInput.select();
+      }, 50);
+    } else {
+      setTimeout(() => {
+        nameInput.focus();
+        nameInput.select();
+      }, 50);
+    }
 
-    // Allow pressing Enter to trigger Apply
+    // Enter key triggers Apply
     popup.addEventListener("keydown", (e) => {
       if (e.key === "Enter") {
         e.preventDefault();
@@ -240,7 +252,7 @@ css:
     let selectedIcon = currentIcon || "💼";
     let selectedColor = currentColor || "#eff6ff";
 
-    // Setup icon selection
+    // Icon selection
     const icons = popup.querySelectorAll(".icon-picker span");
     icons.forEach((icon) => {
       if (icon.textContent === selectedIcon)
@@ -252,7 +264,7 @@ css:
       };
     });
 
-    // Setup color selection
+    // Color selection
     const swatches = popup.querySelectorAll(".color-swatch");
     swatches.forEach((sw) => {
       const c = sw.getAttribute("data-color");
@@ -319,6 +331,9 @@ css:
     ).element;
   }
 
+  // Hide lanes by default (redundant but ensures behavior)
+  board.classList.add("hidden");
+
   startBtn.addEventListener("click", () => {
     const raw = taskInput.value
       .split("\n")
@@ -348,7 +363,7 @@ css:
   laneAddBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
       const targetId = btn.getAttribute("data-target");
-      openTaskPopup(targetId, null, true); // focus name input
+      openTaskPopup(targetId, null, true);
     });
   });
 
