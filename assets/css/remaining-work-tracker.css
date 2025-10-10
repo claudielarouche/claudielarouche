@@ -122,7 +122,9 @@
 }
 
 .hidden {
-  display: none;
+  display: none !important;
+  visibility: hidden;
+  opacity: 0;
 }
 
 #task-board {
