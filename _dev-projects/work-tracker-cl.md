@@ -1,18 +1,18 @@
 ---
 layout: dev
-title: Remaining Work Time Tracker (Claudie)
-permalink: /dev-projects/remaining-work-time-tracker-cl/
+title: Work Tracker (Claudie)
+permalink: /dev-projects/work-tracker-cl/
 css: 
-  - /assets/css/remaining-work-tracker.css
+  - /assets/css/work-tracker.css
 js:  
-  - /assets/js/remaining-work-tracker.js
+  - /assets/js/work-tracker.js
 ---
 
 
 
 <div class="workday-tracker">
 
-  {% include remaining-time-tracker/step1.html %} 
+  {% include work-tracker/step1.html %} 
 
   <div id="workday-periods" class="workday-periods" aria-live="polite">
     <div class="period-row">
@@ -35,7 +35,7 @@ js:
 
   <button type="button" class="add-period" id="add-period">Add another work period</button>
 
-  {% include remaining-time-tracker/summary.html %} 
+  {% include work-tracker/summary.html %} 
 </div>
 
-{% include remaining-time-tracker/task-planning.html %} 
+{% include work-tracker/task-planning.html %} 
