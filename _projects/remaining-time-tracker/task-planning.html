@@ -1,0 +1,41 @@
+<!-- ===== Task Planning Section ===== -->
+<div class="task-section">
+  <p id="task-intro"><strong>Step 2</strong>: Enter your planned tasks for today, then click "Start Working". </p>
+
+  <textarea
+    id="task-input"
+    placeholder="Enter your planned tasks, one per line. Start the task name with 'W - ' to identify a Work task, 'H - ' to identify a Home task and 'M - ' to identify a Meeting. The default task type is 'Work'"
+    rows="10"
+  ></textarea>
+  <button id="start-working">Start working</button>
+
+  <div id="task-board" class="hidden">
+    <div class="task-column" data-status="todo">
+      <div class="column-header">
+        <h3>Todo</h3>
+        <button class="lane-add" data-target="todo-list">＋</button>
+      </div>
+      <ul class="task-list" id="todo-list"></ul>
+    </div>
+
+    <div class="task-column" data-status="waiting">
+      <div class="column-header">
+        <h3>Waiting</h3>
+        <button class="lane-add" data-target="waiting-list">＋</button>
+      </div>
+      <ul class="task-list" id="waiting-list"></ul>
+    </div>
+
+    <div class="task-column" data-status="done">
+      <div class="column-header">
+        <h3>Done</h3>
+        <button class="lane-add" data-target="done-list">＋</button>
+      </div>
+      <ul class="task-list" id="done-list"></ul>
+    </div>
+  </div>
+
+  <div id="day-controls" class="hidden">
+    <button id="new-day" class="new-day-btn">Start a new day</button>
+  </div>
+</div>
