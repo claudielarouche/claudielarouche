@@ -142,7 +142,8 @@
     return li;
   }
 
-  // ✳️ Popup for adding / editing tasks (live updates)
+
+  // ✳️ Popup for adding / editing tasks (live updates, fixed outside click)
   function openTaskPopup(targetListId, existingTask = null) {
     const isNew = !existingTask;
     const task =
@@ -210,12 +211,11 @@
       nameInput.select();
     }, 50);
 
-    // Live name updates
+    // === Live updates ===
     nameInput.addEventListener("input", () => {
       task.querySelector(".label").textContent = nameInput.value;
     });
 
-    // Live icon updates
     const icons = popup.querySelectorAll(".icon-picker span");
     icons.forEach((icon) => {
       icon.onclick = () => {
@@ -227,7 +227,6 @@
         icon.style.outline = "2px solid #0ea5e9";
     });
 
-    // Live color updates
     const swatches = popup.querySelectorAll(".color-swatch");
     swatches.forEach((sw) => {
       const bg = window.getComputedStyle(sw).backgroundColor;
@@ -240,7 +239,7 @@
         sw.style.outline = "3px solid #0ea5e9";
     });
 
-    // Delete
+    // === Delete ===
     const deleteBtn = popup.querySelector(".delete-task");
     if (deleteBtn) {
       deleteBtn.onclick = () => {
@@ -251,17 +250,25 @@
       };
     }
 
-    // Close handlers
-    const closePopup = () => popup.remove();
+    // === Close handlers ===
+    const closePopup = () => {
+      popup.remove();
+      document.removeEventListener("click", outsideClickHandler);
+    };
+
     popup.querySelector(".close").onclick = closePopup;
 
-    document.addEventListener("click", function outsideClick(e) {
+    // Delay outside click listener to prevent instant close
+    function outsideClickHandler(e) {
       if (!popup.contains(e.target)) {
-        popup.remove();
-        document.removeEventListener("click", outsideClick);
+        closePopup();
       }
-    });
+    }
+    setTimeout(() => {
+      document.addEventListener("click", outsideClickHandler);
+    }, 200);
 
+    // Enter key closes popup
     nameInput.addEventListener("keydown", (e) => {
       if (e.key === "Enter") {
         e.preventDefault();
