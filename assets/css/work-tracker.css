@@ -33,7 +33,7 @@
 }
 
 .period-row:first-child {
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr auto;
 }
 
 .time-input {
@@ -53,7 +53,8 @@
 
 .add-period,
 #start-working,
-.new-day-btn {
+.new-day-btn,
+#copy-url-btn {
   background-color: #0ea5e9;
   color: #fff;
   border: none;
@@ -67,7 +68,8 @@
 
 .add-period:hover,
 #start-working:hover,
-.new-day-btn:hover {
+.new-day-btn:hover,
+#copy-url-btn:hover {
   background-color: #0284c7;
   transform: translateY(-1px);
 }
@@ -94,11 +96,6 @@
   font-size: 1.35rem;
   font-weight: 700;
   color: #1d4ed8;
-}
-
-.current-time {
-  font-weight: 600;
-  color: #1f2937;
 }
 
 /* ===== Task Section ===== */
@@ -278,4 +275,31 @@
 
 .new-day-btn {
   margin-top: 1rem;
+}
+
+/* ===== Custom URL Section ===== */
+.custom-url-section {
+  margin-top: 1rem;
+  background: #f0f9ff;
+  border: 1px solid #bae6fd;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.custom-url-note {
+  font-size: 0.95rem;
+  color: #374151;
+  margin-top: 0.5rem;
+}
+
+.copy-confirmation {
+  margin-top: 0.5rem;
+  color: #16a34a;
+  font-weight: 600;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.copy-confirmation.show {
+  opacity: 1;
 }

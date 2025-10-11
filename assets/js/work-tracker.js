@@ -2,9 +2,11 @@
 (function () {
   const periodsContainer = document.getElementById("workday-periods");
   const addButton = document.getElementById("add-period");
-  //const currentTimeEl = document.getElementById("current-time");
   const remainingEl = document.getElementById("remaining-time");
+  const copyBtn = document.getElementById("copy-url-btn");
+  const confirmationEl = document.getElementById("copy-confirmation");
 
+  // ===== Helper functions =====
   function parseTime(input) {
     const [h, m] = input.value.split(":").map(Number);
     return h * 60 + m;
@@ -19,10 +21,6 @@
   function update() {
     const now = new Date();
     const nowMin = now.getHours() * 60 + now.getMinutes();
-    /*currentTimeEl.textContent = now.toLocaleTimeString([], {
-      hour: "2-digit",
-      minute: "2-digit",
-    });*/
 
     let lastEnd = 0,
       remaining = 0;
@@ -42,17 +40,76 @@
           ot
         )}</p>`;
       }
-    } else
+    } else {
       remainingEl.textContent =
         "Time remaining today: " + minutesToDuration(remaining);
+    }
   }
-  addButton.onclick = () => {
+
+  // ===== URL Parsing =====
+  function loadPeriodsFromURL() {
+    const params = new URLSearchParams(window.location.search);
+    const periodsParam = params.get("periods");
+
+    periodsContainer.innerHTML = "";
+
+    if (!periodsParam) {
+      addPeriod("08:00", "12:00");
+      addPeriod("12:30", "16:00");
+      return;
+    }
+
+    const blocks = periodsParam.split(",");
+    blocks.forEach((block) => {
+      const [start, end] = block.split("-");
+      if (start && end) addPeriod(start, end);
+    });
+  }
+
+  // ===== Add / Remove =====
+  function addPeriod(startVal = "", endVal = "") {
     const div = document.createElement("div");
     div.className = "period-row";
-    div.innerHTML = `<input type="time" class="time-input start"/> <input type="time" class="time-input end"/> <button class="remove-period">✖</button>`;
+    div.innerHTML = `
+      <input type="time" class="time-input start" value="${startVal}" />
+      <input type="time" class="time-input end" value="${endVal}" />
+      <button class="remove-period">✖</button>
+    `;
     div.querySelector(".remove-period").onclick = () => div.remove();
     periodsContainer.appendChild(div);
+  }
+
+  addButton.onclick = () => addPeriod();
+
+  // ===== Copy custom URL =====
+  copyBtn.onclick = () => {
+    const periods = [];
+    periodsContainer.querySelectorAll(".period-row").forEach((row) => {
+      const start = row.querySelector(".start").value;
+      const end = row.querySelector(".end").value;
+      if (start && end) periods.push(`${start}-${end}`);
+    });
+
+    const base = window.location.origin + window.location.pathname;
+    const customURL = `${base}?periods=${encodeURIComponent(
+      periods.join(",")
+    )}`;
+
+    navigator.clipboard
+      .writeText(customURL)
+      .then(() => {
+        confirmationEl.classList.remove("hidden");
+        confirmationEl.classList.add("show");
+        setTimeout(() => {
+          confirmationEl.classList.remove("show");
+          setTimeout(() => confirmationEl.classList.add("hidden"), 500);
+        }, 3000);
+      })
+      .catch(() => alert("Could not copy URL. Please try again."));
   };
+
+  // ===== Initialize =====
+  loadPeriodsFromURL();
   setInterval(update, 60000);
   update();
 })();
@@ -85,26 +142,27 @@
     return li;
   }
 
-    // ✳️ Unified popup for adding / editing tasks
-  function openTaskPopup(targetListId, existingTask = null, focusName = false) {
-    const labelText = existingTask
-      ? existingTask.querySelector(".label").textContent
-      : "";
-    const currentIcon = existingTask
-      ? existingTask.querySelector(".icon").textContent
-      : "💼";
-    const currentColor = existingTask
-      ? window.getComputedStyle(existingTask).backgroundColor
-      : "#eff6ff";
+
+  // ✳️ Popup for adding / editing tasks (live updates, fixed outside click)
+  function openTaskPopup(targetListId, existingTask = null) {
+    const isNew = !existingTask;
+    const task =
+      existingTask ||
+      (() => {
+        const t = buildTask({ icon: "💼", label: "" }, "#eff6ff");
+        const targetList = document.getElementById(targetListId);
+        targetList.insertBefore(t, targetList.firstChild);
+        return t;
+      })();
 
     const popup = document.createElement("div");
     popup.className = "task-popup";
     popup.innerHTML = `
-      <h4>${existingTask ? "Edit task" : "Add new task"}</h4>
+      <h4>${isNew ? "Add new task" : "Edit task"}</h4>
 
       <div class="popup-row">
         <label for="task-name" style="font-weight:600;">Task name</label>
-        <input type="text" id="task-name" value="${labelText}" placeholder="Task name" style="width:100%;margin-top:4px;"/>
+        <input type="text" id="task-name" value="${task.querySelector(".label").textContent}" placeholder="Task name" style="width:100%;margin-top:4px;"/>
       </div>
 
       <div class="popup-row" style="margin-top:0.75rem;">
@@ -138,86 +196,86 @@
 
       <div class="popup-actions">
         ${
-          existingTask
+          !isNew
             ? '<button class="delete-task" style="background:#ef4444;color:#fff;">🗑️ Delete</button>'
             : ""
         }
-        <button class="apply">Apply</button>
         <button class="close">Close</button>
       </div>
     `;
     document.body.appendChild(popup);
 
-    // Auto-focus + select text
     const nameInput = popup.querySelector("#task-name");
     setTimeout(() => {
       nameInput.focus();
       nameInput.select();
     }, 50);
 
-    // Enter key triggers Apply
-    popup.addEventListener("keydown", (e) => {
-      if (e.key === "Enter") {
-        e.preventDefault();
-        popup.querySelector(".apply").click();
-      }
+    // === Live updates ===
+    nameInput.addEventListener("input", () => {
+      task.querySelector(".label").textContent = nameInput.value;
     });
 
-    let selectedIcon = currentIcon || "💼";
-    let selectedColor = currentColor || "#eff6ff";
-
-    // Icon selection
     const icons = popup.querySelectorAll(".icon-picker span");
     icons.forEach((icon) => {
-      if (icon.textContent === selectedIcon)
-        icon.style.outline = "2px solid #0ea5e9";
       icon.onclick = () => {
         icons.forEach((i) => (i.style.outline = "none"));
         icon.style.outline = "2px solid #0ea5e9";
-        selectedIcon = icon.textContent;
+        task.querySelector(".icon").textContent = icon.textContent;
       };
+      if (icon.textContent === task.querySelector(".icon").textContent)
+        icon.style.outline = "2px solid #0ea5e9";
     });
 
-    // Color selection
     const swatches = popup.querySelectorAll(".color-swatch");
     swatches.forEach((sw) => {
-      const c = sw.getAttribute("data-color");
-      if (colorsEqual(c, selectedColor)) sw.style.outline = "3px solid #0ea5e9";
+      const bg = window.getComputedStyle(sw).backgroundColor;
       sw.onclick = () => {
         swatches.forEach((x) => (x.style.outline = "none"));
         sw.style.outline = "3px solid #0ea5e9";
-        selectedColor = window.getComputedStyle(sw).backgroundColor;
+        task.style.background = bg;
       };
+      if (bg === window.getComputedStyle(task).backgroundColor)
+        sw.style.outline = "3px solid #0ea5e9";
     });
 
-    // Apply / Close
-    popup.querySelector(".apply").onclick = () => {
-      const name = nameInput.value.trim() || "Untitled task";
-      if (existingTask) {
-        existingTask.querySelector(".label").textContent = name;
-        existingTask.querySelector(".icon").textContent = selectedIcon;
-        existingTask.style.background = selectedColor;
-      } else {
-        const task = buildTask({ icon: selectedIcon, label: name }, selectedColor);
-        document.getElementById(targetListId).appendChild(task);
-      }
-      popup.remove();
-    };
-
-    // Delete functionality
+    // === Delete ===
     const deleteBtn = popup.querySelector(".delete-task");
     if (deleteBtn) {
       deleteBtn.onclick = () => {
         if (confirm("Are you sure you want to delete this task?")) {
-          existingTask.remove();
+          task.remove();
           popup.remove();
         }
       };
     }
 
-    popup.querySelector(".close").onclick = () => popup.remove();
-  }
+    // === Close handlers ===
+    const closePopup = () => {
+      popup.remove();
+      document.removeEventListener("click", outsideClickHandler);
+    };
 
+    popup.querySelector(".close").onclick = closePopup;
+
+    // Delay outside click listener to prevent instant close
+    function outsideClickHandler(e) {
+      if (!popup.contains(e.target)) {
+        closePopup();
+      }
+    }
+    setTimeout(() => {
+      document.addEventListener("click", outsideClickHandler);
+    }, 200);
+
+    // Enter key closes popup
+    nameInput.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        closePopup();
+      }
+    });
+  }
 
   function addInteractivity(task) {
     task.addEventListener("click", () => {
@@ -258,7 +316,6 @@
     ).element;
   }
 
-  // Hide lanes by default (redundant but ensures behavior)
   board.classList.add("hidden");
 
   startBtn.addEventListener("click", () => {
@@ -304,23 +361,4 @@
     taskInput.classList.remove("hidden");
     startBtn.classList.remove("hidden");
   });
-
-  function colorsEqual(a, b) {
-    const el = document.createElement("div");
-    el.style.color = a;
-    document.body.appendChild(el);
-    const ca = getComputedStyle(el).color;
-    el.style.color = b;
-    const cb = getComputedStyle(el).color;
-    document.body.removeChild(el);
-    return ca === cb;
-  }
-
-  function escapeHtml(str) {
-    return str.replace(/[&<>"']/g, (ch) =>
-      ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[
-        ch
-      ])
-    );
-  }
 })();
