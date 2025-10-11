@@ -6,9 +6,9 @@ tags: [Work]
 permalink: /dev-projects/work-tracker-dev/
 image: https://claudielarouche.com/assets/img/work-tracker.jpg
 css: 
-  - work-tracker-dev.css
+  - /dev-projects/work-tracker-dev/work-tracker-dev.css
 js:  
-  - work-tracker-dev.js
+  - /dev-projects/work-tracker-dev/work-tracker-dev.js
 ---
 
 <div class="workday-tracker">
