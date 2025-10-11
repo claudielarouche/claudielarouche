@@ -148,25 +148,27 @@
   }
 
   // ✳️ Popup for adding / editing tasks (includes delete option)
+    // ✳️ Popup for adding / editing tasks (live update, closes on outside click)
   function openTaskPopup(targetListId, existingTask = null, focusName = false) {
-    const labelText = existingTask
-      ? existingTask.querySelector(".label").textContent
-      : "";
-    const currentIcon = existingTask
-      ? existingTask.querySelector(".icon").textContent
-      : "💼";
-    const currentColor = existingTask
-      ? window.getComputedStyle(existingTask).backgroundColor
-      : "#eff6ff";
+    const isNew = !existingTask;
+    const task =
+      existingTask ||
+      (() => {
+        // Create a default new task (💼 icon, light blue background)
+        const t = buildTask({ icon: "💼", label: "" }, "#eff6ff");
+        const targetList = document.getElementById(targetListId);
+        targetList.insertBefore(t, targetList.firstChild); // add to top
+        return t;
+      })();
 
     const popup = document.createElement("div");
     popup.className = "task-popup";
     popup.innerHTML = `
-      <h4>${existingTask ? "Edit task" : "Add new task"}</h4>
+      <h4>${isNew ? "Add new task" : "Edit task"}</h4>
 
       <div class="popup-row">
         <label for="task-name" style="font-weight:600;">Task name</label>
-        <input type="text" id="task-name" value="${labelText}" placeholder="Task name" style="width:100%;margin-top:4px;"/>
+        <input type="text" id="task-name" value="${task.querySelector(".label").textContent}" placeholder="Task name" style="width:100%;margin-top:4px;"/>
       </div>
 
       <div class="popup-row" style="margin-top:0.75rem;">
@@ -200,81 +202,84 @@
 
       <div class="popup-actions">
         ${
-          existingTask
+          !isNew
             ? '<button class="delete-task" style="background:#ef4444;color:#fff;">🗑️ Delete</button>'
             : ""
         }
-        <button class="apply">Apply</button>
         <button class="close">Close</button>
       </div>
     `;
     document.body.appendChild(popup);
 
-    // Auto-focus name
+    // Focus name field
     const nameInput = popup.querySelector("#task-name");
     setTimeout(() => {
       nameInput.focus();
       nameInput.select();
     }, 50);
 
-    // Enter key = Apply
-    popup.addEventListener("keydown", (e) => {
-      if (e.key === "Enter") {
-        e.preventDefault();
-        popup.querySelector(".apply").click();
-      }
+    // === Live updates ===
+    nameInput.addEventListener("input", () => {
+      task.querySelector(".label").textContent = nameInput.value;
     });
-
-    let selectedIcon = currentIcon || "💼";
-    let selectedColor = currentColor || "#eff6ff";
 
     const icons = popup.querySelectorAll(".icon-picker span");
     icons.forEach((icon) => {
-      if (icon.textContent === selectedIcon)
-        icon.style.outline = "2px solid #0ea5e9";
       icon.onclick = () => {
         icons.forEach((i) => (i.style.outline = "none"));
         icon.style.outline = "2px solid #0ea5e9";
-        selectedIcon = icon.textContent;
+        task.querySelector(".icon").textContent = icon.textContent;
       };
+      // highlight the current one
+      if (icon.textContent === task.querySelector(".icon").textContent)
+        icon.style.outline = "2px solid #0ea5e9";
     });
 
     const swatches = popup.querySelectorAll(".color-swatch");
     swatches.forEach((sw) => {
-      const c = sw.getAttribute("data-color");
-      if (colorsEqual(c, selectedColor)) sw.style.outline = "3px solid #0ea5e9";
+      const bg = window.getComputedStyle(sw).backgroundColor;
       sw.onclick = () => {
         swatches.forEach((x) => (x.style.outline = "none"));
         sw.style.outline = "3px solid #0ea5e9";
-        selectedColor = window.getComputedStyle(sw).backgroundColor;
+        task.style.background = bg;
       };
+      // outline current color
+      if (bg === window.getComputedStyle(task).backgroundColor)
+        sw.style.outline = "3px solid #0ea5e9";
     });
 
-    popup.querySelector(".apply").onclick = () => {
-      const name = nameInput.value.trim() || "Untitled task";
-      if (existingTask) {
-        existingTask.querySelector(".label").textContent = name;
-        existingTask.querySelector(".icon").textContent = selectedIcon;
-        existingTask.style.background = selectedColor;
-      } else {
-        const task = buildTask({ icon: selectedIcon, label: name }, selectedColor);
-        document.getElementById(targetListId).appendChild(task);
-      }
-      popup.remove();
-    };
-
+    // === Delete ===
     const deleteBtn = popup.querySelector(".delete-task");
     if (deleteBtn) {
       deleteBtn.onclick = () => {
         if (confirm("Are you sure you want to delete this task?")) {
-          existingTask.remove();
+          task.remove();
           popup.remove();
         }
       };
     }
 
-    popup.querySelector(".close").onclick = () => popup.remove();
+    // === Close on button or outside click ===
+    const closePopup = () => popup.remove();
+
+    popup.querySelector(".close").onclick = closePopup;
+
+    document.addEventListener("click", function outsideClick(e) {
+      if (!popup.contains(e.target)) {
+        popup.remove();
+        document.removeEventListener("click", outsideClick);
+      }
+    });
+
+    // === Enter key closes popup ===
+    nameInput.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        closePopup();
+      }
+    });
   }
+
 
   function addInteractivity(task) {
     task.addEventListener("click", () => {
@@ -346,6 +351,7 @@
   laneAddBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
       const targetId = btn.getAttribute("data-target");
+      // Creates the task instantly and opens popup for live editing
       openTaskPopup(targetId, null, true);
     });
   });
