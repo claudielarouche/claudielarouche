@@ -39,10 +39,10 @@ title: Home
 
   <div class="project-card">
     <a href="https://www.youtube.com/watch?v=_Tmt5-txESM" target="_blank">
-      <img src="https://img.youtube.com/vi/_Tmt5-txESM/maxresdefault.jpg" alt="Coding for a cause" />
+      <img src="/assets/img/efficient-mom-presentation.png" alt="Efficient Mom" />
       <h3>The Efficient Mom - Systems that Save your Sanity</h3>
     </a>
-    <p>In this practical and inspiring session, Claudie Larouche shares time-saving tools, local resources, and creative strategies to help busy Ottawa moms become more efficient. You’ll leave with fresh ideas you can use right away and inspiration to make everyday life a little easier. (20 mins).</p>
+    <p>Claudie Larouche shares 10 time-saving tools, local resources, and creative strategies to help busy Ottawa moms become more efficient (20 mins).</p>
   </div>
   
 </div>
