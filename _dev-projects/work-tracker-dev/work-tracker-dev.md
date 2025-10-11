@@ -35,14 +35,14 @@ js:
 
   <button type="button" class="add-period" id="add-period">Add another work period</button>
 
-    <!-- Copy custom URL section -->
+  <!-- Copy custom URL section -->
   <div class="custom-url-section">
     <button type="button" id="copy-url-btn">Copy your custom URL</button>
+    <span id="copy-confirmation" class="copy-confirmation hidden">✅ URL copied!</span>
     <p class="custom-url-note">
       Clicking this button will copy a custom URL reflecting your work periods.  
       You can paste it in your browser and save it as a bookmark to restore these same blocks automatically next time.
     </p>
-    <p id="copy-confirmation" class="copy-confirmation hidden">✅ URL copied to clipboard!</p>
   </div>
 
   {% include work-tracker/summary.html %} 
