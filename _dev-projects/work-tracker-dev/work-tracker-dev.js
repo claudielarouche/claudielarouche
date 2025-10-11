@@ -51,11 +51,9 @@
     const params = new URLSearchParams(window.location.search);
     const periodsParam = params.get("periods");
 
-    // Clear any existing rows
     periodsContainer.innerHTML = "";
 
     if (!periodsParam) {
-      // Default blocks
       addPeriod("08:00", "12:00");
       addPeriod("12:30", "16:00");
       return;
@@ -104,10 +102,7 @@
         confirmationEl.classList.add("show");
         setTimeout(() => {
           confirmationEl.classList.remove("show");
-          setTimeout(
-            () => confirmationEl.classList.add("hidden"),
-            500
-          );
+          setTimeout(() => confirmationEl.classList.add("hidden"), 500);
         }, 3000);
       })
       .catch(() => alert("Could not copy URL. Please try again."));
@@ -119,7 +114,7 @@
   update();
 })();
 
-/* ========== Task planner (unchanged except delete button) ========== */
+/* ========== Task planner ========== */
 (function () {
   const startBtn = document.getElementById("start-working");
   const taskInput = document.getElementById("task-input");
@@ -147,17 +142,15 @@
     return li;
   }
 
-  // ✳️ Popup for adding / editing tasks (includes delete option)
-    // ✳️ Popup for adding / editing tasks (live update, closes on outside click)
-  function openTaskPopup(targetListId, existingTask = null, focusName = false) {
+  // ✳️ Popup for adding / editing tasks (live updates)
+  function openTaskPopup(targetListId, existingTask = null) {
     const isNew = !existingTask;
     const task =
       existingTask ||
       (() => {
-        // Create a default new task (💼 icon, light blue background)
         const t = buildTask({ icon: "💼", label: "" }, "#eff6ff");
         const targetList = document.getElementById(targetListId);
-        targetList.insertBefore(t, targetList.firstChild); // add to top
+        targetList.insertBefore(t, targetList.firstChild);
         return t;
       })();
 
@@ -211,18 +204,18 @@
     `;
     document.body.appendChild(popup);
 
-    // Focus name field
     const nameInput = popup.querySelector("#task-name");
     setTimeout(() => {
       nameInput.focus();
       nameInput.select();
     }, 50);
 
-    // === Live updates ===
+    // Live name updates
     nameInput.addEventListener("input", () => {
       task.querySelector(".label").textContent = nameInput.value;
     });
 
+    // Live icon updates
     const icons = popup.querySelectorAll(".icon-picker span");
     icons.forEach((icon) => {
       icon.onclick = () => {
@@ -230,11 +223,11 @@
         icon.style.outline = "2px solid #0ea5e9";
         task.querySelector(".icon").textContent = icon.textContent;
       };
-      // highlight the current one
       if (icon.textContent === task.querySelector(".icon").textContent)
         icon.style.outline = "2px solid #0ea5e9";
     });
 
+    // Live color updates
     const swatches = popup.querySelectorAll(".color-swatch");
     swatches.forEach((sw) => {
       const bg = window.getComputedStyle(sw).backgroundColor;
@@ -243,12 +236,11 @@
         sw.style.outline = "3px solid #0ea5e9";
         task.style.background = bg;
       };
-      // outline current color
       if (bg === window.getComputedStyle(task).backgroundColor)
         sw.style.outline = "3px solid #0ea5e9";
     });
 
-    // === Delete ===
+    // Delete
     const deleteBtn = popup.querySelector(".delete-task");
     if (deleteBtn) {
       deleteBtn.onclick = () => {
@@ -259,9 +251,8 @@
       };
     }
 
-    // === Close on button or outside click ===
+    // Close handlers
     const closePopup = () => popup.remove();
-
     popup.querySelector(".close").onclick = closePopup;
 
     document.addEventListener("click", function outsideClick(e) {
@@ -271,7 +262,6 @@
       }
     });
 
-    // === Enter key closes popup ===
     nameInput.addEventListener("keydown", (e) => {
       if (e.key === "Enter") {
         e.preventDefault();
@@ -279,7 +269,6 @@
       }
     });
   }
-
 
   function addInteractivity(task) {
     task.addEventListener("click", () => {
@@ -351,7 +340,6 @@
   laneAddBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
       const targetId = btn.getAttribute("data-target");
-      // Creates the task instantly and opens popup for live editing
       openTaskPopup(targetId, null, true);
     });
   });
@@ -366,15 +354,4 @@
     taskInput.classList.remove("hidden");
     startBtn.classList.remove("hidden");
   });
-
-  function colorsEqual(a, b) {
-    const el = document.createElement("div");
-    el.style.color = a;
-    document.body.appendChild(el);
-    const ca = getComputedStyle(el).color;
-    el.style.color = b;
-    const cb = getComputedStyle(el).color;
-    document.body.removeChild(el);
-    return ca === cb;
-  }
 })();
