@@ -36,6 +36,14 @@ title: Home
     </a>
     <p>Teaching people how to use ChatGPT to build tools that solve problems (43 mins).</p>
   </div>
+
+  <div class="project-card">
+    <a href="https://www.youtube.com/watch?v=_Tmt5-txESM" target="_blank">
+      <img src="https://img.youtube.com/vi/_Tmt5-txESM/maxresdefault.jpg" alt="Coding for a cause" />
+      <h3>The Efficient Mom - Systems that Save your Sanity</h3>
+    </a>
+    <p>In this practical and inspiring session, Claudie Larouche shares time-saving tools, local resources, and creative strategies to help busy Ottawa moms become more efficient. You’ll leave with fresh ideas you can use right away and inspiration to make everyday life a little easier. (20 mins).</p>
+  </div>
   
 </div>
 
