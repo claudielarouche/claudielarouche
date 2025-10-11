@@ -31,7 +31,11 @@ js:
     </div>
   </div>
 
-  <!-- Copy custom URL section -->
+
+
+  <button type="button" class="add-period" id="add-period">Add another work period</button>
+
+    <!-- Copy custom URL section -->
   <div class="custom-url-section">
     <button type="button" id="copy-url-btn">Copy your custom URL</button>
     <p class="custom-url-note">
@@ -40,8 +44,6 @@ js:
     </p>
     <p id="copy-confirmation" class="copy-confirmation hidden">✅ URL copied to clipboard!</p>
   </div>
-
-  <button type="button" class="add-period" id="add-period">Add another work period</button>
 
   {% include work-tracker/summary.html %} 
 </div>
