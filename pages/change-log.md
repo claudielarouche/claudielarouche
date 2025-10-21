@@ -13,6 +13,7 @@ The purpose of this page is simply to let you all know what I've been up to! :) 
 - I created a new page to post [other cool projects](https://claudielarouche.com/projects/other-cool-projects/) I have come across. 
 - Hmmm I have a loooooong todo list of improvements to add to all my projects, and actually some park data that I need to update, BUT I got sidetracked and I started a new project. It's a [work tracker](https://claudielarouche.com/projects/work-tracker/). 
 - Last June, I made a [presentation](https://www.youtube.com/watch?v=_Tmt5-txESM){:target="_blank" rel="noopener noreferrer"} at the Busy Moms Expo. I finally added it to my home page in October haha. Better late than never I suppose!
+- [Matt Millard](https://mattmillard.photography/){:target="_blank" rel="noopener noreferrer"} sent me a photo of me while I did my presentation at ForwardJS in September. I liked the picture so I added it to the [Media](https://claudielarouche.com/media/) page. Thank you Matt!
 
 ## August and September 2025
 
