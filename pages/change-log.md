@@ -12,12 +12,13 @@ The purpose of this page is simply to let you all know what I've been up to! :) 
 
 - I created a new page to post [other cool projects](https://claudielarouche.com/projects/other-cool-projects/) I have come across. 
 - Hmmm I have a loooooong todo list of improvements to add to all my projects, and actually some park data that I need to update, BUT I got sidetracked and I started a new project. It's a [work tracker](https://claudielarouche.com/projects/work-tracker/). 
+- Last June, I made a [presentation](https://www.youtube.com/watch?v=_Tmt5-txESM){:target="_blank" rel="noopener noreferrer"} at the Busy Moms Expo. I finally added it to my home page in October haha. Better late than never I suppose!
 
 ## August and September 2025
 
 - I didn't do a whole lot with my website! I traveled to Jonquière for a month in August. In September I started a new job. 
 - I ensured the wading pool page was somewhat up to date with the season closure. 
-- I tried to update the library events and the City of Ottawa drop-ins on a weekly basis, but I missed a few weeks here and there. 
+- I tried to update the library events and the City of Ottawa drop-ins on a weekly basis, but I missed a few weeks here and there, sorry everyone! 
 
 ## July 2025
 
