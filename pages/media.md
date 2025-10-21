@@ -9,7 +9,7 @@ image_hero: /assets/img/media-banner.jpg
 Here are some interviews I have given, articles written about my projects, conference participations etc. I'm always happy to give a talk!
 
 {% comment %}
-  Images on this page should be about 600x450
+  Images on this page should be about 600x450 (the first number is more important than the second)
 {% endcomment %}
 
 ---
