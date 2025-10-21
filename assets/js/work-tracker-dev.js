@@ -373,9 +373,7 @@
   board.classList.add("hidden");
 
   startBtn.addEventListener("click", () => {
-    const raw = taskInput.value
-      .replace(/^\s*[-–—]\s*/, "")  // strip one leading dash + spaces
-      .trim()
+    const raw = taskInput.value      
       .split("\n")
       .map((t) => t.trim())
       .filter(Boolean);
@@ -390,7 +388,8 @@
 
     raw.forEach((line) => {
       const t = parseTask(line);
-      const li = buildTask(t);
+      const cleaned = normalizeTaskLabel(t);      
+      const li = buildTask(cleaned);
       todo.appendChild(li);
     });
 
