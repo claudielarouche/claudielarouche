@@ -316,12 +316,18 @@
     ).element;
   }
 
+  function normalizeTaskLabel(text) {
+    return String(text || "")
+        .replace(/^\s*[-–—]\s*/, "")  // strip one leading dash + spaces
+        .trim();
+    }
+
     // ========== Copy-list helpers (mirrors the custom URL animation) ==========
   function buildBulletedListText(ul) {
     const items = [...ul.querySelectorAll(".task-item .label")]
       .map(el => el.textContent.trim())
       .filter(Boolean);
-    return items.length ? items.map(t => `• ${t}`).join("\n") : "• (no tasks)";
+    return items.length ? items.map(t => `- ${t}`).join("\n") : " ";
   }
 
   function makeCopyControls(forListId) {
@@ -368,6 +374,8 @@
 
   startBtn.addEventListener("click", () => {
     const raw = taskInput.value
+      .replace(/^\s*[-–—]\s*/, "")  // strip one leading dash + spaces
+      .trim()
       .split("\n")
       .map((t) => t.trim())
       .filter(Boolean);
