@@ -316,10 +316,64 @@
     ).element;
   }
 
+  function normalizeTaskLabel(text) {
+    return String(text || "")
+        .replace(/^\s*[-–—]\s*/, "")  // strip one leading dash + spaces
+        .trim();
+    }
+
+    // ========== Copy-list helpers (mirrors the custom URL animation) ==========
+  function buildBulletedListText(ul) {
+    const items = [...ul.querySelectorAll(".task-item .label")]
+      .map(el => el.textContent.trim())
+      .filter(Boolean);
+    return items.length ? items.map(t => `- ${t}`).join("\n") : " ";
+  }
+
+  function makeCopyControls(forListId) {
+    const ul = document.getElementById(forListId);
+    if (!ul) return;
+
+    // container under the list
+    const wrap = document.createElement("div");
+    wrap.className = "lane-copy-controls";
+    wrap.style.cssText = "margin-top:6px;font-size:0.9rem;display:flex;align-items:center;gap:8px;";
+
+    const link = document.createElement("a");
+    link.href = "#";
+    link.textContent = "Copy to clipboard";
+    link.className = "copy-list-link";
+    link.style.cssText = "text-decoration:underline; cursor:pointer;";
+
+    const blip = document.createElement("span");
+    blip.textContent = "✅ Copied!";
+    blip.className = "copy-confirmation hidden";
+
+    wrap.appendChild(link);
+    wrap.appendChild(blip);
+
+    // insert after the UL
+    ul.parentNode.insertBefore(wrap, ul.nextSibling);
+
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const text = buildBulletedListText(ul);
+      navigator.clipboard.writeText(text).then(() => {
+        blip.classList.remove("hidden");
+        blip.classList.add("show");
+        setTimeout(() => {
+          blip.classList.remove("show");
+          setTimeout(() => blip.classList.add("hidden"), 500);
+        }, 2000);
+      }).catch(() => alert("Could not copy list. Please try again."));
+    });
+  }
+
+
   board.classList.add("hidden");
 
   startBtn.addEventListener("click", () => {
-    const raw = taskInput.value
+    const raw = taskInput.value      
       .split("\n")
       .map((t) => t.trim())
       .filter(Boolean);
@@ -333,7 +387,8 @@
     todo.innerHTML = "";
 
     raw.forEach((line) => {
-      const t = parseTask(line);
+      const cleaned = normalizeTaskLabel(line);      
+      const t = parseTask(cleaned);      
       const li = buildTask(t);
       todo.appendChild(li);
     });
@@ -350,6 +405,9 @@
       openTaskPopup(targetId, null, true);
     });
   });
+
+  // Add per-lane "copy to clipboard" controls
+  ["todo-list", "waiting-list", "done-list"].forEach(makeCopyControls);
 
   newDayBtn.addEventListener("click", () => {
     ["todo-list", "waiting-list", "done-list"].forEach(
