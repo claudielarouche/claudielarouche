@@ -43,7 +43,7 @@ The Saguenay Youth Study (SYS) is a two-generational study of adolescents and th
 
 ### McGregor Quality Painting
 
-![McGregor Quality Painting](/assets/img/mcgregorqualitypainting.png)
+![McGregor Quality Painting](/assets/img/mcgregorpainting.png)
 
 McGregor Quality Painting provides custom residential painting and decorating services in Ottawa and surrounding areas. Established in 1993 by Gord McGregor, the company has successfully managed thousands of small-to-large scale projects emphasizing thorough preparation, superior quality, customer service excellence, and competitive pricing. Gord carries out all projects in an efficient and meticulous manner to ensure no compromise.
 
@@ -95,7 +95,7 @@ In LOG, lesbians get together year-round for hikes in the Gatineau hills, potluc
 
 ### Mirevint
 
-![Mirevint](/assets/img/mireving.png)
+![Mirevint](/assets/img/mirevint.png)
 
 The Ministry of revival International (MIREVINT) is a Christian community, which has eight churches in R D Congo and a church in Kitwe in Zambia. Come live a life-changing experience with God through:
 
