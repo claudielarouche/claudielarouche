@@ -387,9 +387,9 @@
     todo.innerHTML = "";
 
     raw.forEach((line) => {
-      const t = parseTask(line);
-      const cleaned = normalizeTaskLabel(t);      
-      const li = buildTask(cleaned);
+      const cleaned = normalizeTaskLabel(line);      
+      const t = parseTask(line);      
+      const li = buildTask(t);
       todo.appendChild(li);
     });
 
