@@ -388,7 +388,7 @@
 
     raw.forEach((line) => {
       const cleaned = normalizeTaskLabel(line);      
-      const t = parseTask(line);      
+      const t = parseTask(cleaned);      
       const li = buildTask(t);
       todo.appendChild(li);
     });
