@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+description: "Learn more about Claudie Larouche, her work, and her projects."
 ---
 
 ![Claudie Larouche](https://claudielarouche.com/assets/img/claudie.png)

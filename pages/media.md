@@ -4,6 +4,7 @@ title: Media
 permalink: /media/
 image: /assets/img/media-banner.jpg
 image_hero: /assets/img/media-banner.jpg
+description: "A list of interviews, articles, and presentations"
 ---
 
 Here are some interviews I have given, articles written about my projects, conference participations etc. I'm always happy to give a talk!

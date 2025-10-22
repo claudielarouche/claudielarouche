@@ -2,6 +2,7 @@
 layout: page
 title: Work Projects
 permalink: /work-projects/
+description: "Claudie's work projects"
 ---
 
 

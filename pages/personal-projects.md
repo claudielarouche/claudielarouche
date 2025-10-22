@@ -2,6 +2,7 @@
 layout: page
 title: Personal Projects
 permalink: /personal-projects/
+description: "Claudie's personal projects"
 ---
 
 

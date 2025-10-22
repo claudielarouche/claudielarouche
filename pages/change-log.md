@@ -2,6 +2,7 @@
 layout: page
 title: Change Log
 permalink: /change-log/
+description: "Find out what Claudie Larouche has been working on"
 ---
 
 Hello!  
