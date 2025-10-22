@@ -21,3 +21,9 @@
   image: "/assets/img/connected-kw.png"
   url: "https://www.connectedkw.com/"
   category: "Waterloo"
+
+- name: "Ottawa recreation schedule data"
+  description: "an unofficial dataset of the City of Ottawa drop-in recreation schedules, updated daily."
+  image: "/assets/img/ottrec.png"
+  url: "https://data.ottrec.ca/"
+  category: "Ottawa"
