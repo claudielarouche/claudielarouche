@@ -213,7 +213,7 @@ function clearAllFilters() {
 
     document.querySelectorAll('.optionsCheckbox').forEach(checkbox => {
         checkbox.checked = false;
-        selectedOptions = "";
+        selectedOptions.length = 0;
         /*if (!selectedOptions.includes(checkbox.value)) {
             selectedOptions.push(checkbox.value);
         }*/
