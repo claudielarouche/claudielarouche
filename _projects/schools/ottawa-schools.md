@@ -92,7 +92,7 @@ If any of the data below is incorrect, please contact me at claudielarouche@gmai
         <label for="selectedOption" class="col-sm-2 col-form-label">Other options:</label>
         <div class="col-sm-10">
             <div class="checkbox">
-                <label><input type="checkbox" id="virtualCheck" class="optionsCheckbox" value="Virtual" checked="false" data-gtm-form-interact-field-id="0"> Virtual</label>
+                <label><input type="checkbox" id="virtualCheck" class="optionsCheckbox" value="Virtual" checked="" data-gtm-form-interact-field-id="0"> Virtual</label>
             </div>            
         </div>
     </div>

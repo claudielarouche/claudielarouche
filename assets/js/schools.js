@@ -277,7 +277,7 @@ document.querySelectorAll('.optionsCheckbox').forEach(function (checkbox) {
     });
 
     // Initialize with all option checkbox unchecked
-    checkbox.checked = true;
+    checkbox.checked = false;
     /*if (!selectedOptions.includes(checkbox.value)) {
         selectedOptions.push(checkbox.value);
     }*/
