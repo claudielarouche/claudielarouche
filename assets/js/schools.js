@@ -182,7 +182,9 @@ function filterData(data, selectedBoard, selectedOption) {
     const currentName = row['School Name'] || '';
     
     const boardCondition = selectedBoard.some(board => currentBoard.toLowerCase().includes(board.toLowerCase()));
-    const optionCondition = selectedOption.some(name => currentName.toLowerCase().includes(name.toLowerCase()));
+    if (selectedOption !== null) {
+        const optionCondition = selectedOption.some(name => currentName.toLowerCase().includes(name.toLowerCase()));
+    }
 
         
             
@@ -206,10 +208,10 @@ function clearAllFilters() {
     });
 
     document.querySelectorAll('.optionsCheckbox').forEach(checkbox => {
-        checkbox.checked = true;
-        if (!selectedOptions.includes(checkbox.value)) {
+        checkbox.checked = false;
+        /*if (!selectedOptions.includes(checkbox.value)) {
             selectedOptions.push(checkbox.value);
-        }
+        }*/
     });
 
 
@@ -271,11 +273,11 @@ document.querySelectorAll('.optionsCheckbox').forEach(function (checkbox) {
         renderTable(originalData);
     });
 
-    // Initialize with all checkboxes checked by default
+    // Initialize with all option checkbox unchecked
     checkbox.checked = true;
-    if (!selectedOptions.includes(checkbox.value)) {
+    /*if (!selectedOptions.includes(checkbox.value)) {
         selectedOptions.push(checkbox.value);
-    }
+    }*/
 });
 
 
