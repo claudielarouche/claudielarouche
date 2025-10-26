@@ -73,7 +73,7 @@ function renderTable(data) {
     });
     tableHtml += '</tr></thead><tbody>';
 
-    const filteredData = filterData(data, selectedBoards);
+    const filteredData = filterData(data, selectedBoards, selectedOptions);
 
     // Iterate through each row of data
     filteredData.forEach(row => {
@@ -173,18 +173,20 @@ function renderTable(data) {
 }
 
 
-function filterData(data, selectedBoard) {
+function filterData(data, selectedBoard, selectedOption) {
 
 
     return data.filter(row => {
 
     const currentBoard = row['Board'] || '';
+    const currentName = row['School Name'] || '';
     
     const boardCondition = selectedBoard.some(board => currentBoard.toLowerCase().includes(board.toLowerCase()));
+    const optionCondition = selectedOption.some(name => currentName.toLowerCase().includes(name.toLowerCase()));
 
         
             
-    return boardCondition;
+    return boardCondition && optionCondition;
     });
 }
 
@@ -200,6 +202,13 @@ function clearAllFilters() {
         checkbox.checked = true;
         if (!selectedBoards.includes(checkbox.value)) {
             selectedBoards.push(checkbox.value);
+        }
+    });
+
+    document.querySelectorAll('.optionsCheckbox').forEach(checkbox => {
+        checkbox.checked = true;
+        if (!selectedOptions.includes(checkbox.value)) {
+            selectedOptions.push(checkbox.value);
         }
     });
 
@@ -242,9 +251,36 @@ document.querySelectorAll('.boardCheckbox').forEach(function (checkbox) {
     }
 });
 
+const selectedOptions = [];
+
+document.querySelectorAll('.optionsCheckbox').forEach(function (checkbox) {
+    checkbox.addEventListener('change', function () {
+    // Store the current sorting state
+        sortingState = $('#dataTable').DataTable().state();
+        currentSearchValue = $('#dataTable_filter input').val();
+        if (checkbox.checked) {
+            if (!selectedOptions.includes(checkbox.value)) {
+                selectedOptions.push(checkbox.value);
+            }
+        } else {
+            const index = selectedOptions.indexOf(checkbox.value);
+            if (index !== -1) {
+                selectedOptions.splice(index, 1);
+            }
+        }
+        renderTable(originalData);
+    });
+
+    // Initialize with all checkboxes checked by default
+    checkbox.checked = true;
+    if (!selectedOptions.includes(checkbox.value)) {
+        selectedOptions.push(checkbox.value);
+    }
+});
+
 
 function initMap() {
-    var map = L.map('map').setView([45.4215, -75.6972], 12);
+    map = L.map('map').setView([45.4215, -75.6972], 12);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

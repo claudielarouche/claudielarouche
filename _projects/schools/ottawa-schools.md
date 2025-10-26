@@ -67,31 +67,35 @@ If any of the data below is incorrect, please contact me at claudielarouche@gmai
 ## Filters
 
 
-<form class="form">
-
-			
-
-<div class="form-group row">
-    <label for="selectedBoard" class="col-sm-2 col-form-label">Select School Board(s):</label>
-    <div class="col-sm-10">
-        <div class="checkbox">
-            <label><input type="checkbox" id="ocdsbCheckbox" class="boardCheckbox" value="Ottawa-Carleton District School Board" checked=""> Ottawa-Carleton District School Board (OCDSB)</label>
-        </div>
-        <div class="checkbox">
-            <label><input type="checkbox" id="ocsbCheckbox" class="boardCheckbox" value="Ottawa Catholic School Board" checked=""> Ottawa Catholic School Board (OCSB)</label>
-        </div>
-        <div class="checkbox">
-            <label><input type="checkbox" id="cepeoCheckbox" class="boardCheckbox" value="Conseil des écoles publiques de l'Est de l'Ontario" checked=""> Conseil des écoles publiques de l'Est de l'Ontario (CEPEO)</label>
-        </div>
-        <div class="checkbox">
-            <label><input type="checkbox" id="cecceCheckbox" class="boardCheckbox" value="Conseil des écoles catholiques du Centre-Est" checked=""> Conseil des écoles catholiques du Centre-Est (CECCE)</label>
-        </div>
-        <div class="checkbox">
-            <label><input type="checkbox" id="privateCheckbox" class="boardCheckbox" value="N/A" checked=""> Private Schools (N/A)</label>
+<form class="form" data-gtm-form-interact-id="0">
+    <div class="form-group row">
+        <label for="selectedBoard" class="col-sm-2 col-form-label">Select School Board(s):</label>
+        <div class="col-sm-10">
+            <div class="checkbox">
+                <label><input type="checkbox" id="ocdsbCheckbox" class="boardCheckbox" value="Ottawa-Carleton District School Board" checked=""> Ottawa-Carleton District School Board (OCDSB)</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" id="ocsbCheckbox" class="boardCheckbox" value="Ottawa Catholic School Board" checked=""> Ottawa Catholic School Board (OCSB)</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" id="cepeoCheckbox" class="boardCheckbox" value="Conseil des écoles publiques de l'Est de l'Ontario" checked=""> Conseil des écoles publiques de l'Est de l'Ontario (CEPEO)</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" id="cecceCheckbox" class="boardCheckbox" value="Conseil des écoles catholiques du Centre-Est" checked=""> Conseil des écoles catholiques du Centre-Est (CECCE)</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" id="privateCheckbox" class="boardCheckbox" value="N/A" checked=""> Private Schools (N/A)</label>
+            </div>
         </div>
     </div>
-</div>
-
+    <div class="form-group row">
+        <label for="selectedOption" class="col-sm-2 col-form-label">Other options:</label>
+        <div class="col-sm-10">
+            <div class="checkbox">
+                <label><input type="checkbox" id="virtualCheck" class="optionsCheckbox" value="Virtual" checked="" data-gtm-form-interact-field-id="0"> Virtual</label>
+            </div>            
+        </div>
+    </div>
 </form>
 
 <div class="mt-3">
