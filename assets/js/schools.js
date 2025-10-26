@@ -188,7 +188,7 @@ function filterData(data, selectedBoard, selectedOption) {
     const optionCondition =
       selectedOption.length === 0
         ? true
-        : selectedOption.some(n => currentName.includes((n || '').toLowerCase()));
+        : selectedOption.some(n => currentName.toLowerCase().includes((n || '').toLowerCase()));
 
         
             
