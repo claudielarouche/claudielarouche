@@ -180,14 +180,15 @@ function filterData(data, selectedBoard, selectedOption) {
 
     const currentBoard = row['Board'] || '';
     const currentName = row['School Name'] || '';
-    var optionCondition = true;
     
     
     const boardCondition = selectedBoard.some(board => currentBoard.toLowerCase().includes(board.toLowerCase()));
-    if (selectedOption !== null) {
-        optionCondition = selectedOption.some(name => currentName.toLowerCase().includes(name.toLowerCase()));
-    }
-    
+
+
+    const optionCondition =
+      selectedOption.length === 0
+        ? true
+        : selectedOption.some(n => currentName.includes((n || '').toLowerCase()));
 
         
             
