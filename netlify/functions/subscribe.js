@@ -12,7 +12,7 @@ const env = {
 const supabase = (env.SUPABASE_URL && env.SUPABASE_SERVICE_KEY)
   ? createClient(env.SUPABASE_URL, env.SUPABASE_SERVICE_KEY)
   : null;
-
+ 
 export const handler = async (event) => {
   if (event.httpMethod === "OPTIONS") return { statusCode: 204, headers: cors(), body: "" };
 
