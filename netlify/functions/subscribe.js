@@ -60,7 +60,7 @@ export const handler = async (event) => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        from: "Ottawa School Alerts <notifications@onresend.com>",
+        from: "Ottawa School Alerts <onboarding@resend.dev>",  
         to: body.email,
         subject: "Confirm your subscription",
         html: `<p>Please confirm your subscription.</p><p><a href="${confirmUrl}">Confirm subscription</a></p>`,
