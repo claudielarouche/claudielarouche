@@ -16,6 +16,7 @@ The purpose of this page is simply to let you all know what I've been up to! :) 
 - Last June, I made a [presentation](https://www.youtube.com/watch?v=_Tmt5-txESM){:target="_blank" rel="noopener noreferrer"} at the Busy Moms Expo. I finally added it to my home page in October haha. Better late than never I suppose!
 - [Matt Millard](https://mattmillard.photography/){:target="_blank" rel="noopener noreferrer"} sent me a photo of me while I did my presentation at ForwardJS in September. I liked the picture so I added it to the [Media](https://claudielarouche.com/media/) page. Thank you Matt!
 - On the [work tracker](https://claudielarouche.com/projects/work-tracker/) tool, I added the ability to copy tasks from any of the boards to the clipboard. That will allow me to paste the list somewhere else in order to build an update for my boss at the end of the week. 
+- A million years ago, one of the co-chairs of OCV Elementary School Council had asked me to add a Virtual option on my [school page](https://claudielarouche.com/projects/ottawa-schools/) and I finally just did that tonight :) 
 
 ## August and September 2025
 
