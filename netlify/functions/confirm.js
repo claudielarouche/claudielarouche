@@ -7,7 +7,7 @@ export const handler = async (event) => {
   const token = event.queryStringParameters?.token;
   if (!token) return html('Missing token', 400);
 
-  const { data, error } = await supabase
+  const { data, error } = await supabase 
     .from('subscriptions')
     .select('*')
     .eq('confirm_token', token)
