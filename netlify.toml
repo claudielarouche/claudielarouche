@@ -1,0 +1,7 @@
+[functions]
+  node_bundler = "esbuild"
+
+[[scheduled.functions]]
+  name = "send-daily"
+  cron = "0 10 * * *" # 10:00 UTC = 06:00 America/Toronto (EDT); adjust for EST if needed
+  timezone = "America/Toronto"
