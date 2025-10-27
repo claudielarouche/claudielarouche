@@ -1,7 +1,9 @@
 {
   "name": "lrt-distance-tool",
   "version": "1.0.0",
+  "type": "module",
   "dependencies": {
-    "node-fetch": "^2.6.7"
+    "node-fetch": "^2.6.7",
+    "@supabase/supabase-js": "^2.45.0"
   }
 }
