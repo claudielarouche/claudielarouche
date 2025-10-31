@@ -8,6 +8,7 @@ theme: minima
 
 include:
   - assets
+  - _redirects
 
 minima:
   hide_site_feed_link: true
