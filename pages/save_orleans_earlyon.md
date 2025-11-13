@@ -37,9 +37,12 @@ This page gathers all key information, links, contacts, demands, and actions in 
 - When was this decision made?
 - How long has the Board known?
 - Why were families and operators not consulted?
-- What alternatives were considered?
 - Where is the EarlyON funding being redirected?
-- Why not relocate the program to another Orléans school, such as **Chapel Hill** (which has capacity) or back to **Divine Infant**?
+- What alternatives were considered?
+  - Could the space currently allocated to the EarlyON playgroup be reduced, instead of cancelling the playgroup entirely? 
+  - Alternatively, has OCSB considered redefining the school's boundaries (given that there is more capacity at St Matthew High School)? 
+  - Why not relocate the program to another Orléans school, such as **Chapel Hill** (which has capacity) or back to **Divine Infant**?
+
 
 ## 📍 Why the Remaining Centres Cannot Absorb Demand
 
