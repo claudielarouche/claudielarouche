@@ -5,25 +5,30 @@ permalink: /save-orleans-earlyon/
 description: "Save the EarlyON Playgroups in Orléans"
 ---
 
-
-Two long-standing EarlyON centres in Orléans — **Charlemagne** and **Divine Infant**, both operated by the Ottawa Catholic School Board (OCSB) — are closing at the end of November. These closures will leave hundreds of families without essential early years programming.
+The Ottawa Catholic School Board (OCSB) is closing two long-standing EarlyOn Centres in Orléans: **Charlemagne** and **Divine Infant**. These closures will leave hundreds of caregivers and children without essential early years programming.
 
 This page gathers all key information, links, contacts, demands, and actions in one place to support community advocacy.
 
 ## 📌 Overview of What's Happening
 
-- OCSB is closing **two EarlyON playgroups:**
-  - **Charlemagne**
-  - **Divine Infant** (already closed)
-- The Charlemagne EarlyOn center currently provides playgroup programming for children age 0-6 Monday through Friday, as well as a baby playgroup twice per week. 
-- The Charlemagne EarlyOn has supported families for **over 30 years**.
+- OCSB is closing **two EarlyON Centres:**
+  - **Divine Infant** (closed as of September)
+    - Provided playgroup programming for children age 0-6 Monday through Friday 
+    - Closed due to difficulty finding staff and duplication of services with the Charlemagne centre 
+
+  - **Charlemagne** (to close at the end of November)
+    - Provides playgroup programming for children age 0-6 Monday through Friday, as well as a baby playgroup twice per week 
+    - Has supported families for over 30 years at this location attached to St Peter’s High School 
+    - Closing as the high school is planning to take over the space
+- Both centers were consistently running at or very near capacity.
 - Remaining EarlyON centres in Orléans are **already at maximum capacity** or open only **one morning per week**
+  - These centers are run by other organizations, and funding that OCSB received through the Ontario EarlyOn Program will not transfer over. **There is no plan to increase services at the remaining center to meet demand.**
 - No viable alternatives exist for the hundreds of families affected.
 
 
 ## 📣 Parents’ Main Demands
 
-1. **Delay closure** until replacement location is secured.
+1. **Delay closure** until a replacement location is secured.
 2. Keep EarlyON funding in Orléans.
     
     
@@ -31,17 +36,15 @@ This page gathers all key information, links, contacts, demands, and actions in 
 
 - When was this decision made?
 - How long has the Board known?
-- Why were families, staff, and operators not consulted?
+- Why were families and operators not consulted?
 - What alternatives were considered?
 - Where is the EarlyON funding being redirected?
-- Why not relocate the program to **Chapel Hill** (which has capacity)?
-- Why not move it back to **Divine Infant**?
+- Why not relocate the program to another Orléans school, such as **Chapel Hill** (which has capacity) or back to **Divine Infant**?
 
 ## 📍 Why the Remaining Centres Cannot Absorb Demand
 
 ### Centrum (46 minutes walk from Charlemagne)
 - Over capacity
-- Limited days due to French-only programming & sensory-friendly programming
 - Cannot absorb hundreds of displaced families
 
 ### Orleans Resurrection Lutheran Church (1 hour 14 minutes walk from Charlemagne)
@@ -51,6 +54,8 @@ This page gathers all key information, links, contacts, demands, and actions in 
 ### Fallingbrook (18 minutes walk from Charlemagne)
 - One morning per week (Wednesday mornings)
 - No baby program
+
+Many users (including daycares) attend playgroup with multiple children and cannot easily use OCTranspo to travel. By the time they arrive, the centre may already be full.
 
 ## 📝 Petition
 
@@ -78,14 +83,14 @@ Please sign and share:
 
 - **Next Board meeting:** November 25, 7:00 PM
 
-- If you are able to attend the meeting, please reach out to claudielarouche@gmail.com
+- If you are able to attend the meeting, please reach out to [claudielarouche@gmail.com](mailto:claudielarouche@gmail.com)
 
 
 ## 🤝 Join the Advocacy Effort
 
 There is an active parent-led group organizing outreach, coordination, delegation preparation, and gathering support.  
 
-If you would like to get involved, please reach out to claudielarouche@gmail.com
+If you would like to get involved, please reach out to [claudielarouche@gmail.com](mailto:claudielarouche@gmail.com)
 
 ## Media Appearances
 
@@ -108,13 +113,14 @@ Including Charlemagne, which is set to close at the end of November
 
 ## 💛 Why This Matters
 
-EarlyON centres are essential for:
+EarlyON centres are an essential service in our community that provide:
 
-- Early childhood development
-- Language and social skills
+- Early childhood education, which supports language, social and emotional skill development, and supports the transition to kindergarte
+- Connection with other caregivers, which reduces feelings of isolation 
 - Postpartum mental health support
-- Reducing isolation among caregivers
-- Providing accessible, no-cost programming
+- Accessible, no-cost programming
+- Access to advice from professionals trained in early childhood education 
+- Information on other resources and services in the community  
 
 Orléans is one of the **fastest-growing** communities in Ottawa. Closing two centres without alternatives is not sustainable or responsible.
 
