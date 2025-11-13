@@ -72,7 +72,7 @@ Please sign and share:
 - **Trustee (Orléans East–Cumberland):** [brian.coburn@ocsb.ca](mailto:brian.coburn@ocsb.ca)
 - **Director of Education:** [Director@ocsb.ca](mailto:Director@ocsb.ca)
 - **Superintendent:** [Tim.Slack@ocsb.ca](mailto:Tim.Slack@ocsb.ca)
-- **OCSB EarlyON Coordinator:** [Candace.boucher@ocsb.ca](mailto:Candace.boucher@ocsb.ca)
+- **OCSB EarlyON Coordinator - Candace Boucher:** [Early.Learning@ocsb.ca](mailto:Early.Learning@ocsb.ca)
 
 ### Provincial
 - **MPP Stephen Blais:** [sblais.mpp.co@liberal.ola.org](mailto:sblais.mpp.co@liberal.ola.org)
