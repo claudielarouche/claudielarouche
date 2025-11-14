@@ -65,6 +65,16 @@ Many users (including daycares) attend playgroup with multiple children and cann
 Please sign and share:  
 👉 [https://www.change.org/p/keep-charlemagne-early-on-center-in-operation](https://www.change.org/p/keep-charlemagne-early-on-center-in-operation){:target="_blank" rel="noopener"}
 
+### Poster
+
+Please [print this poster](https://onedrive.live.com/?qt=allmyphotos&photosData=%2Fshare%2F36A216551C9D468D%21sb105644dd37e4008bb0aaaee60029983%3Fithint%3Dphoto%26e%3DYayUJ8%26fbclid%3DIwY2xjawODZU9leHRuA2FlbQIxMABicmlkETFuODVMckRPa3FxYTh5c2hPc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHteyiwF2mKmm5ari42s9UhXX9vWGEw1WN%2DIR60N3nrAquxzzmrHkPktSRCnq%5Faem%5FCsg%2DQhK%5FvDxMdfh9QRFvdA%26migratedtospo%3Dtrue&cid=36A216551C9D468D&id=36A216551C9D468D%21sb105644dd37e4008bb0aaaee60029983&redeem=aHR0cHM6Ly8xZHJ2Lm1zL2kvYy8zNmEyMTY1NTFjOWQ0NjhkL0VVMWtCYkYtMHdoQXV3cXE3bUFDbVlNQmZ5SzBjQ24ya0Y0TTRZX1BBaklyQ3c%5FZT1ZYXlVSjgmZmJjbGlkPUl3WTJ4amF3T0RaVTlsZUhSdUEyRmxiUUl4TUFCaWNtbGtFVEZ1T0RWTWNrUlBhM0Z4WVRoNWMyaFBjM0owWXdaaGNIQmZhV1FRTWpJeU1ETTVNVGM0T0RJd01EZzVNZ0FCSHRleWl3RjJtS21tNWFyaTQyczlVaFhYOXZXR0V3MVdOLUlSNjBOM25yQXF1eHp6bXJIa1BrdFNSQ25xX2FlbV9Dc2ctUWhLX3ZEeE1kZmg5UVJGdmRB&v=photos){:target="_blank" rel="noopener"} which contains a QR code to the petition above. Post it at various locations around town:
+- Grocery Stores
+- Libraries
+- Community Centre
+- Any other places you can think of!
+
+Your assistance is greatly appreciated!
+
 
 ## 📞 Key Contacts
 
