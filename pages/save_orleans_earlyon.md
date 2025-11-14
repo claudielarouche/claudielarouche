@@ -168,6 +168,11 @@ I’ve written to councillors and education representatives because this decisio
   <p class="testimonial-author">— Michelle SG</p>
 </div>
 
+<div class="testimonial">
+  <p class="testimonial-text">"I am truly devastated by this news! Ms. Karrie, Ms. Kelly, and Ms. Catherine are such amazing educators — always so kind and welcoming to me and my daughter. I can’t imagine not having this playgroup anymore or not seeing these wonderful educators and fellow parents. This place has meant so much to us. 💛"</p>
+  <p class="testimonial-author">— Analis Sakovich</p>
+</div>
+
 
 
 
