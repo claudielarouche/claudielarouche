@@ -5,6 +5,27 @@ permalink: /save-orleans-earlyon/
 description: "Save the EarlyON Playgroups in Orléans"
 ---
 
+<style>
+.testimonial {
+  border-left: 4px solid #ccc;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 6px;
+}
+
+.testimonial-text {
+  font-style: italic;
+  color: #333;
+}
+
+.testimonial-author {
+  font-weight: bold;
+  color: #555;
+  margin-top: 0.5rem;
+}
+</style>
+
 The Ottawa Catholic School Board (OCSB) is closing two long-standing EarlyOn Centres in Orléans: **Charlemagne** and **Divine Infant**. These closures will leave hundreds of caregivers and children without essential early years programming.
 
 This page gathers all key information, links, contacts, demands, and actions in one place to support community advocacy.
@@ -136,4 +157,16 @@ EarlyON centres are an essential service in our community that provide:
 - Information on other resources and services in the community  
 
 Orléans is one of the **fastest-growing** communities in Ottawa. Closing two centres without alternatives is not sustainable or responsible.
+
+## Testimonials
+
+<div class="testimonial">
+  <p class="testimonial-text">"This is such awful news — my heart is heavy. When I first started coming to the Charlemagne EarlyON Centre in 2016, I was a new stay-at-home mum. My girls were toddlers, and I needed the moral support of a caring community of educators and parents. I later met Ms. Kelly and Ms. Karrie when I attended with my youngest, and once again, the community welcomed me with open arms.
+Kelly even hired me when I was ready to reconnect with my career, and during that time, I also met Ms. Catherine 🙂. My months working at Charlemagne were just as special as my time attending as a parent — this community truly is the best.
+I’ve written to councillors and education representatives because this decision is truly devastating. I’m heartbroken but determined not to let the centre close without a fight."</p>
+  <p class="testimonial-author">— Michelle SG</p>
+</div>
+
+
+
 
