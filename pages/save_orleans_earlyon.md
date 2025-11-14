@@ -137,7 +137,8 @@ If you would like to get involved, please reach out to [claudielarouche@gmail.co
 
 - [EarlyON Guidelines (Ontario Ministry of Education)](https://efis.fma.csc.gov.on.ca/faab/Child%20Care/Guidelines/Ch.EN/Chapter6_EN.pdf){:target="_blank" rel="noopener"}
 - [City of Ottawa – EarlyON Page](https://ottawa.ca/en/family-and-social-services/childrens-services/earlyon/){:target="_blank" rel="noopener"}
-- [Charlemagne EarlyOn Website](https://www.facebook.com/profile.php?id=100069513767240)
+- [Charlemagne EarlyOn Website](https://www.facebook.com/profile.php?id=100069513767240){:target="_blank" rel="noopener"}
+- [OCSB Early Learning Programs](https://www.ocsb.ca/our-schools/child-care/){:target="_blank" rel="noopener"}
 
 ## Map of current Orleans EarlyON Playgroup
 
