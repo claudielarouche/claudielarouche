@@ -167,7 +167,7 @@ If you would like to get involved, please reach out to [claudielarouche@gmail.co
 - [Charlemagne EarlyOn Website](https://www.facebook.com/profile.php?id=100069513767240){:target="_blank" rel="noopener"}
 - [OCSB Early Learning Programs](https://www.ocsb.ca/our-schools/child-care/){:target="_blank" rel="noopener"}
 
-## Maps
+## 📍 Maps
 
 ### Current Orleans EarlyON Playgroup
 
