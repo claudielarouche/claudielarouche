@@ -45,6 +45,7 @@ This page gathers all key information, links, contacts, demands, and actions in 
   - These centers are run by other organizations, and funding that OCSB received through the Ontario EarlyOn Program will not transfer over. **There is no plan to increase services at the remaining center to meet demand.**
 - No viable alternatives exist for the hundreds of families affected.
 
+It is also notable that St. Elizabeth, another OCSB EarlyOn center, closed in September. As a result, **3 of the 6 OCSB-run EarlyOn centers closed abruptly in 2025**, without alternative services secured. 
 
 ## 📣 Parents’ Main Demands
 
@@ -139,11 +140,11 @@ Your assistance is greatly appreciated!
 - **City Councillor (Orléans East–Cumberland):** [Matt.Luloff@ottawa.ca](mailto:Matt.Luloff@ottawa.ca)
 
 
-## 🎤 Delegation to OCSB Board
+## 📣 Delegation to OCSB Board
 
 - **Next Board meeting:** November 25, 7:00 PM
 
-- If you are able to attend the meeting, please reach out to [claudielarouche@gmail.com](mailto:claudielarouche@gmail.com)
+If you are able to attend the meeting, please reach out to [claudielarouche@gmail.com](mailto:claudielarouche@gmail.com)
 
 
 ## 🤝 Join the Advocacy Effort
@@ -166,11 +167,19 @@ If you would like to get involved, please reach out to [claudielarouche@gmail.co
 - [Charlemagne EarlyOn Website](https://www.facebook.com/profile.php?id=100069513767240){:target="_blank" rel="noopener"}
 - [OCSB Early Learning Programs](https://www.ocsb.ca/our-schools/child-care/){:target="_blank" rel="noopener"}
 
-## Map of current Orleans EarlyON Playgroup
+## Maps
+
+### Current Orleans EarlyON Playgroup
 
 Including Charlemagne, which is set to close at the end of November
 
 ![EarlyON Orleans Playgroups](https://claudielarouche.com/assets/img/early-on-orleans.png)
+
+### Maps of all playgroups in Ottawa
+
+Source: Incredible Playgroup Finder
+
+![EarlyON Playgroups](https://claudielarouche.com/assets/img/ottawa-playgroups.jpg)
 
 ## 💛 Why This Matters
 
