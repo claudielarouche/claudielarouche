@@ -190,9 +190,7 @@ I’ve written to councillors and education representatives because this decisio
 </div>
 
 
-## Gallery
-
-## Photo Gallery
+## 🖼️ Photo Gallery
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
 
