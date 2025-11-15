@@ -46,11 +46,39 @@ This page gathers all key information, links, contacts, demands, and actions in 
   - These centers are run by other organizations, and funding that OCSB received through the Ontario EarlyOn Program will not transfer over. **There is no plan to increase services at the remaining center to meet demand.**
 - No viable alternatives exist for the hundreds of families affected.
 
+It is also notable that St. Elizabeth, another OCSB EarlyOn center, closed in September. As a result, **3 of the 6 OCSB-run EarlyOn centers closed abruptly in 2025**, without alternative services secured. 
 
 ## 📣 Parents’ Main Demands
 
 1. **Delay closure** until a replacement location is secured.
 2. Keep EarlyON funding in Orléans.
+
+## 🎯 Impact
+
+### Before Closure of Charlemagne and Divine Infant
+
+| Location          | Schedule                                                                 | Hours (calculations) | Total Hours |
+|-------------------|---------------------------------------------------------------------------|-----------------------|-------------|
+| Centrum           | Tue, Wed, Thu, Sat 9:30–11:00, Tue 16:00–18:00, Mon 13:00–14:30 (baby)    | 6 + 2 + 1.5           | 9.5         |
+| Lutheran Church   | Tue 9–11                                                                  | 2                     | 2           |
+| Fallingbrook      | Wed 9:15–11 AM                                                            | 1.75                  | 1.75        |
+| Charlemagne       | Mon–Fri 9:00–12:30, Tue & Thu 13:00–15:30 (baby group)                    | 17.5 + 5              | 22.5        |
+| Divine Infant     | Mon–Fri 8:30–12:30                                                        | 20                    | 20          |
+| **Total Hours**   |                                                                           |                       | **55.75**   |
+
+
+### After Closure of Charlemagne and Divine Infant
+
+| Location          | Schedule                                                                 | Hours (calculations) | Total Hours |
+|-------------------|---------------------------------------------------------------------------|-----------------------|-------------|
+| Centrum           | Tue, Wed, Thu, Sat 9:30–11:00, Tue 16:00–18:00, Mon 13:00–14:30 (baby)    | 6 + 2 + 1.5           | 9.5         |
+| Lutheran Church   | Tue 9–11                                                                  | 2                     | 2           |
+| Fallingbrook      | Wed 9:15–11 AM                                                            | 1.75                  | 1.75        |
+| **Total Hours**   |                                                                           |                       | **13.25**   |
+
+**Hours lost after the cuts: 42.5**
+
+Please note that French EarlyON playgroups offered by Grandir Ensemble and La Coccinelle have not been included in the tables above. 
     
     
 ## ❓ Questions That Require Answers from OCSB
@@ -65,7 +93,7 @@ This page gathers all key information, links, contacts, demands, and actions in 
   - Why not relocate the program to another Orléans school, such as **Chapel Hill** (which has capacity) or back to **Divine Infant**?
 
 
-## 📍 Why the Remaining Centres Cannot Absorb Demand
+## 🚫 Why the Remaining Centres Cannot Absorb Demand
 
 ### Centrum (46 minutes walk from Charlemagne)
 - Over capacity
@@ -113,11 +141,11 @@ Your assistance is greatly appreciated!
 - **City Councillor (Orléans East–Cumberland):** [Matt.Luloff@ottawa.ca](mailto:Matt.Luloff@ottawa.ca)
 
 
-## 🎤 Delegation to OCSB Board
+## 📣 Delegation to OCSB Board
 
 - **Next Board meeting:** November 25, 7:00 PM
 
-- If you are able to attend the meeting, please reach out to [claudielarouche@gmail.com](mailto:claudielarouche@gmail.com)
+If you are able to attend the meeting, please reach out to [claudielarouche@gmail.com](mailto:claudielarouche@gmail.com)
 
 
 ## 🤝 Join the Advocacy Effort
@@ -126,7 +154,7 @@ There is an active parent-led group organizing outreach, coordination, delegatio
 
 If you would like to get involved, please reach out to [claudielarouche@gmail.com](mailto:claudielarouche@gmail.com)
 
-## Media Appearances
+## 🎤 Media Appearances
 
 - [CFRA 580 morning radio show](https://omny.fm/shows/580-cfra/the-morning-rush-longtime-orl-ans-playgroup-to-close-after-more-than-30-years){:target="_blank" rel="noopener"}
 - [CTV Ottawa 6 pm news video](https://www.youtube.com/watch?v=UQRYxESrHng){:target="_blank" rel="noopener"}
@@ -140,11 +168,19 @@ If you would like to get involved, please reach out to [claudielarouche@gmail.co
 - [Charlemagne EarlyOn Website](https://www.facebook.com/profile.php?id=100069513767240){:target="_blank" rel="noopener"}
 - [OCSB Early Learning Programs](https://www.ocsb.ca/our-schools/child-care/){:target="_blank" rel="noopener"}
 
-## Map of current Orleans EarlyON Playgroup
+## 📍 Maps
+
+### Current Orleans EarlyON Playgroup
 
 Including Charlemagne, which is set to close at the end of November
 
 ![EarlyON Orleans Playgroups](https://claudielarouche.com/assets/img/early-on-orleans.png)
+
+### Maps of all playgroups in Ottawa
+
+Source: [Incredible Playgroup Finder](https://www.incredibleplaygroupfinder.ca/en)
+
+![EarlyON Playgroups](https://claudielarouche.com/assets/img/ottawa-playgroups.jpg)
 
 ## 💛 Why This Matters
 
@@ -159,7 +195,7 @@ EarlyON centres are an essential service in our community that provide:
 
 Orléans is one of the **fastest-growing** communities in Ottawa. Closing two centres without alternatives is not sustainable or responsible.
 
-## Testimonials
+## 💬 Testimonials
 
 <div class="testimonial">
   <p class="testimonial-text">"This is such awful news — my heart is heavy. When I first started coming to the Charlemagne EarlyON Centre in 2016, I was a new stay-at-home mum. My girls were toddlers, and I needed the moral support of a caring community of educators and parents. I later met Ms. Kelly and Ms. Karrie when I attended with my youngest, and once again, the community welcomed me with open arms.
@@ -172,7 +208,3 @@ I’ve written to councillors and education representatives because this decisio
   <p class="testimonial-text">"I am truly devastated by this news! Ms. Karrie, Ms. Kelly, and Ms. Catherine are such amazing educators — always so kind and welcoming to me and my daughter. I can’t imagine not having this playgroup anymore or not seeing these wonderful educators and fellow parents. This place has meant so much to us. 💛"</p>
   <p class="testimonial-author">— Analis Sakovich</p>
 </div>
-
-
-
-

@@ -92,7 +92,7 @@ Please note that French EarlyON playgroups offered by Grandir Ensemble and La Co
   - Why not relocate the program to another Orléans school, such as **Chapel Hill** (which has capacity) or back to **Divine Infant**?
 
 
-## 📍 Why the Remaining Centres Cannot Absorb Demand
+## 🚫 Why the Remaining Centres Cannot Absorb Demand
 
 ### Centrum (46 minutes walk from Charlemagne)
 - Over capacity
@@ -177,7 +177,7 @@ Including Charlemagne, which is set to close at the end of November
 
 ### Maps of all playgroups in Ottawa
 
-Source: Incredible Playgroup Finder
+Source: [Incredible Playgroup Finder](https://www.incredibleplaygroupfinder.ca/en)
 
 ![EarlyON Playgroups](https://claudielarouche.com/assets/img/ottawa-playgroups.jpg)
 
