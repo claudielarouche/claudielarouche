@@ -167,6 +167,9 @@ If you would like to get involved, please reach out to [claudielarouche@gmail.co
 - [City of Ottawa – EarlyON Page](https://ottawa.ca/en/family-and-social-services/childrens-services/earlyon/){:target="_blank" rel="noopener"}
 - [Charlemagne EarlyOn Website](https://www.facebook.com/profile.php?id=100069513767240){:target="_blank" rel="noopener"}
 - [OCSB Early Learning Programs](https://www.ocsb.ca/our-schools/child-care/){:target="_blank" rel="noopener"}
+- [Annoucement of Divine Enfant's and St. Elizabeth's EarlyON centres closures](https://www.facebook.com/groups/cgow.ca/posts/9939690982797188/){:target="_blank" rel="noopener"}
+- [Annoucement of Charlemagne's EarlyON Centre closure](https://www.facebook.com/permalink.php?story_fbid=pfbid029XjPEQvXccWUt9D8QtmJTRwYtMm1YcovHQdkFWGMBkjeCjqRhcpATDmqooCvUUi5l&id=100069513767240){:target="_blank" rel="noopener"}
+
 
 ## 📍 Maps
 
