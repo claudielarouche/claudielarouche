@@ -238,4 +238,12 @@ I’ve written to councillors and education representatives because this decisio
     <img src="/assets/img/charlemagne-11.png" alt="Charlemagne 8" style="width: 100%; border-radius: 8px;">
   </div>
 
+  <div style="flex: 1 0 30%;">
+    <img src="/assets/img/charlemagne-12.png" alt="Charlemagne 8" style="width: 100%; border-radius: 8px;">
+  </div>
+
+  <div style="flex: 1 0 30%;">
+    <img src="/assets/img/charlemagne-13.png" alt="Charlemagne 8" style="width: 100%; border-radius: 8px;">
+  </div>
+
 </div>
