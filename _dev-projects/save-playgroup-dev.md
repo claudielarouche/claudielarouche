@@ -47,38 +47,16 @@ This page gathers all key information, links, contacts, demands, and actions in 
 
 It is also notable that St. Elizabeth, another OCSB EarlyOn center, closed in September. As a result, **3 of the 6 OCSB-run EarlyOn centers closed abruptly in 2025**, without alternative services secured. 
 
+### 🎯 Impact
+
+With both Charlemagne and Divine Infant closing, the number of English and bilingual EarlyOn service hours in Orléans will drop from 56 hours per week to 15. 
+
+
 ## 📣 Parents’ Main Demands
 
 1. **Delay closure** until a replacement location is secured.
 2. Keep EarlyON funding in Orléans.
-
-## 🎯 Impact
-
-### Before Closure of Charlemagne and Divine Infant
-
-| Location          | Schedule                                                                 | Hours (calculations) | Total Hours |
-|-------------------|---------------------------------------------------------------------------|-----------------------|-------------|
-| Centrum           | Tue, Wed, Thu, Sat 9:30–11:00, Tue 16:00–18:00, Mon 13:00–14:30 (baby)    | 6 + 2 + 1.5           | 9.5         |
-| Lutheran Church   | Tue 9–11                                                                  | 2                     | 2           |
-| Fallingbrook      | Wed 9:15–11 AM                                                            | 1.75                  | 1.75        |
-| Charlemagne       | Mon–Fri 9:00–12:30, Tue & Thu 13:00–15:30 (baby group)                    | 17.5 + 5              | 22.5        |
-| Divine Infant     | Mon–Fri 8:30–12:30                                                        | 20                    | 20          |
-| **Total Hours**   |                                                                           |                       | **55.75**   |
-
-
-### After Closure of Charlemagne and Divine Infant
-
-| Location          | Schedule                                                                 | Hours (calculations) | Total Hours |
-|-------------------|---------------------------------------------------------------------------|-----------------------|-------------|
-| Centrum           | Tue, Wed, Thu, Sat 9:30–11:00, Tue 16:00–18:00, Mon 13:00–14:30 (baby)    | 6 + 2 + 1.5           | 9.5         |
-| Lutheran Church   | Tue 9–11                                                                  | 2                     | 2           |
-| Fallingbrook      | Wed 9:15–11 AM                                                            | 1.75                  | 1.75        |
-| **Total Hours**   |                                                                           |                       | **13.25**   |
-
-**Hours lost after the cuts: 42.5**
-
-Please note that French EarlyON playgroups offered by Grandir Ensemble and La Coccinelle have not been included in the tables above. 
-    
+   
     
 ## ❓ Questions That Require Answers from OCSB
 
@@ -166,6 +144,9 @@ If you would like to get involved, please reach out to [claudielarouche@gmail.co
 - [City of Ottawa – EarlyON Page](https://ottawa.ca/en/family-and-social-services/childrens-services/earlyon/){:target="_blank" rel="noopener"}
 - [Charlemagne EarlyOn Website](https://www.facebook.com/profile.php?id=100069513767240){:target="_blank" rel="noopener"}
 - [OCSB Early Learning Programs](https://www.ocsb.ca/our-schools/child-care/){:target="_blank" rel="noopener"}
+- [Annoucement of Divine Enfant's and St. Elizabeth's EarlyON centres closures](https://www.facebook.com/groups/cgow.ca/posts/9939690982797188/){:target="_blank" rel="noopener"}
+- [Annoucement of Charlemagne's EarlyON Centre closure](https://www.facebook.com/permalink.php?story_fbid=pfbid029XjPEQvXccWUt9D8QtmJTRwYtMm1YcovHQdkFWGMBkjeCjqRhcpATDmqooCvUUi5l&id=100069513767240){:target="_blank" rel="noopener"}
+
 
 ## 📍 Maps
 
@@ -209,5 +190,42 @@ I’ve written to councillors and education representatives because this decisio
 </div>
 
 
+## Gallery
 
+## Photo Gallery
 
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+
+  <div style="flex: 1 0 30%;">
+    <img src="/assets/img/charlemagne-1.png" alt="Charlemagne 1" style="width: 100%; border-radius: 8px;">
+  </div>
+
+  <div style="flex: 1 0 30%;">
+    <img src="/assets/img/charlemagne-2.png" alt="Charlemagne 2" style="width: 100%; border-radius: 8px;">
+  </div>
+
+  <div style="flex: 1 0 30%;">
+    <img src="/assets/img/charlemagne-3.png" alt="Charlemagne 3" style="width: 100%; border-radius: 8px;">
+  </div>
+
+  <div style="flex: 1 0 30%;">
+    <img src="/assets/img/charlemagne-4.png" alt="Charlemagne 4" style="width: 100%; border-radius: 8px;">
+  </div>
+
+  <div style="flex: 1 0 30%;">
+    <img src="/assets/img/charlemagne-5.png" alt="Charlemagne 5" style="width: 100%; border-radius: 8px;">
+  </div>
+
+  <div style="flex: 1 0 30%;">
+    <img src="/assets/img/charlemagne-6.png" alt="Charlemagne 6" style="width: 100%; border-radius: 8px;">
+  </div>
+
+  <div style="flex: 1 0 30%;">
+    <img src="/assets/img/charlemagne-7.png" alt="Charlemagne 7" style="width: 100%; border-radius: 8px;">
+  </div>
+
+  <div style="flex: 1 0 30%;">
+    <img src="/assets/img/charlemagne-8.png" alt="Charlemagne 8" style="width: 100%; border-radius: 8px;">
+  </div>
+
+</div>
