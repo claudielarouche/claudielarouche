@@ -50,6 +50,33 @@ This page gathers all key information, links, contacts, demands, and actions in 
 
 1. **Delay closure** until a replacement location is secured.
 2. Keep EarlyON funding in Orléans.
+
+## 🎯 Impact
+
+### Before Closure of Charlemagne and Divine Infant
+
+| Location          | Schedule                                                                 | Hours (calculations) | Total Hours |
+|-------------------|---------------------------------------------------------------------------|-----------------------|-------------|
+| Centrum           | Tue, Wed, Thu, Sat 9:30–11:00, Tue 16:00–18:00, Mon 13:00–14:30 (baby)    | 6 + 2 + 1.5           | 9.5         |
+| Lutheran Church   | Tue 9–11                                                                  | 2                     | 2           |
+| Fallingbrook      | Wed 9:15–11 AM                                                            | 1.75                  | 1.75        |
+| Charlemagne       | Mon–Fri 9:00–12:30, Tue & Thu 13:00–15:30 (baby group)                    | 17.5 + 5              | 22.5        |
+| Divine Infant     | Mon–Fri 8:30–12:30                                                        | 20                    | 20          |
+| **Total Hours**   |                                                                           |                       | **55.75**   |
+
+
+### After Closure of Charlemagne and Divine Infant
+
+| Location          | Schedule                                                                 | Hours (calculations) | Total Hours |
+|-------------------|---------------------------------------------------------------------------|-----------------------|-------------|
+| Centrum           | Tue, Wed, Thu, Sat 9:30–11:00, Tue 16:00–18:00, Mon 13:00–14:30 (baby)    | 6 + 2 + 1.5           | 9.5         |
+| Lutheran Church   | Tue 9–11                                                                  | 2                     | 2           |
+| Fallingbrook      | Wed 9:15–11 AM                                                            | 1.75                  | 1.75        |
+| **Total Hours**   |                                                                           |                       | **13.25**   |
+
+**Hours lost after the cuts: 42.5**
+
+Please note that French EarlyON playgroups offered by Grandir Ensemble and La Coccinelle have not been included in the tables above. 
     
     
 ## ❓ Questions That Require Answers from OCSB
@@ -125,7 +152,7 @@ There is an active parent-led group organizing outreach, coordination, delegatio
 
 If you would like to get involved, please reach out to [claudielarouche@gmail.com](mailto:claudielarouche@gmail.com)
 
-## Media Appearances
+## 🎤 Media Appearances
 
 - [CFRA 580 morning radio show](https://omny.fm/shows/580-cfra/the-morning-rush-longtime-orl-ans-playgroup-to-close-after-more-than-30-years){:target="_blank" rel="noopener"}
 - [CTV Ottawa 6 pm news video](https://www.youtube.com/watch?v=UQRYxESrHng){:target="_blank" rel="noopener"}
@@ -158,7 +185,7 @@ EarlyON centres are an essential service in our community that provide:
 
 Orléans is one of the **fastest-growing** communities in Ottawa. Closing two centres without alternatives is not sustainable or responsible.
 
-## Testimonials
+## 💬 Testimonials
 
 <div class="testimonial">
   <p class="testimonial-text">"This is such awful news — my heart is heavy. When I first started coming to the Charlemagne EarlyON Centre in 2016, I was a new stay-at-home mum. My girls were toddlers, and I needed the moral support of a caring community of educators and parents. I later met Ms. Kelly and Ms. Karrie when I attended with my youngest, and once again, the community welcomed me with open arms.
