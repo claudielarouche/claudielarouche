@@ -45,7 +45,7 @@ This page gathers all key information, links, contacts, demands, and actions in 
 - Remaining EarlyON centres in Orléans are **already at maximum capacity** or open only **one morning per week**
   - These centers are run by other organizations, and funding that OCSB received through the Ontario EarlyOn Program will not transfer over. **There is no plan to increase services at the remaining center to meet demand.**
 - No viable alternatives exist for the hundreds of families affected.
-- With both Charlemagne and Divine Infant closing, the number of English and bilingual EarlyOn service hours in Orléans will drop from 56 hours per week to 15. (Please note that French EarlyON playgroups offered by Grandir Ensemble and La Coccinelle have not been included, as these centers are intended for use by the francophone community)
+- With both Charlemagne and Divine Infant closing, the number of English and bilingual EarlyOn service hours in Orléans will drop from 56 hours per week to 15. 
 
 It is also notable that St. Elizabeth, another OCSB EarlyOn center, closed in September. As a result, **3 of the 6 OCSB-run EarlyOn centers closed abruptly in 2025**, without alternative services secured. 
 
