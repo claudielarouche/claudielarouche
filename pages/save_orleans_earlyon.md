@@ -50,7 +50,20 @@ It is also notable that St. Elizabeth, another OCSB EarlyOn center, closed in Se
 
 ### 🎯 Impact
 
-With both Charlemagne and Divine Infant closing, the number of English and bilingual EarlyOn service hours in Orléans will drop from 56 hours per week to 15. 
+With both Charlemagne and Divine Infant closing, the number of English and bilingual EarlyOn service hours in Orléans will drop from 57 hours per week to 15. 
+
+## 📍 Maps
+
+### Orleans EarlyON Playgroups
+
+![EarlyON Orleans Playgroups](https://claudielarouche.com/assets/img/early-on-orleans.png)
+
+### Remaining EarlyON playgroups in Ottawa*
+*Following the closure of the Divine Infant and Charlemagne Centers
+
+Source: [Incredible Playgroup Finder](https://www.incredibleplaygroupfinder.ca/en)
+
+![EarlyON Playgroups](https://claudielarouche.com/assets/img/ottawa-playgroups.jpg)
 
 
 ## 📣 Parents’ Main Demands
@@ -68,7 +81,7 @@ With both Charlemagne and Divine Infant closing, the number of English and bilin
 - What alternatives were considered?
   - Could the space currently allocated to the EarlyON playgroup be reduced, instead of cancelling the playgroup entirely? 
   - Alternatively, has OCSB considered redefining the school's boundaries (given that there is more capacity at St Matthew High School)? 
-  - Why not relocate the program to another Orléans school, such as **Chapel Hill** (which has capacity) or back to **Divine Infant**?
+  - Why not relocate the program to another Orléans school, such as back to Divine Infant or Chapel Hill (which has capacity)?
 
 
 ## 🚫 Why the Remaining Centres Cannot Absorb Demand
@@ -149,19 +162,7 @@ If you would like to get involved, please reach out to [claudielarouche@gmail.co
 - [Annoucement of Charlemagne's EarlyON Centre closure](https://www.facebook.com/permalink.php?story_fbid=pfbid029XjPEQvXccWUt9D8QtmJTRwYtMm1YcovHQdkFWGMBkjeCjqRhcpATDmqooCvUUi5l&id=100069513767240){:target="_blank" rel="noopener"}
 
 
-## 📍 Maps
 
-### Current Orleans EarlyON Playgroup
-
-Including Charlemagne, which is set to close at the end of November
-
-![EarlyON Orleans Playgroups](https://claudielarouche.com/assets/img/early-on-orleans.png)
-
-### Maps of all playgroups in Ottawa
-
-Source: [Incredible Playgroup Finder](https://www.incredibleplaygroupfinder.ca/en)
-
-![EarlyON Playgroups](https://claudielarouche.com/assets/img/ottawa-playgroups.jpg)
 
 ## 💛 Why This Matters
 
