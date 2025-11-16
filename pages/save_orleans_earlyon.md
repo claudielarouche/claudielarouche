@@ -190,6 +190,18 @@ I’ve written to councillors and education representatives because this decisio
   <p class="testimonial-author">— Analis Sakovich</p>
 </div>
 
+<div class="testimonial">
+  <p class="testimonial-text">"I had no family here in Ottawa and Early On programs became my family where I did not feel alone and learned so much from. I saw how well it was for my baby’s development. I just moved from Westboro to Orleans and I am so devastated to see two Orleans locations closed. I was hoping to continue bringing my son. I don’t know what to do now as the ones close to me are always at capacity at 9 am. It’s so disheartening to see such programs being cut when it means so much to families. Kids don’t just play there, they learn and develop from each other. These programs also got me out of PPD. I am terribly sad as I had high hopes of having these programs offered in Orleans too."</p>
+  <p class="testimonial-author">— Zehra MP</p>
+</div>
+
+<div class="testimonial">
+  <p class="testimonial-text">"I have been coming to the centre for probably about 12 years now. With my youngest daughter and with my daycare. It breaks my heart that people don't see the value in keeping it running. It's been a lifeline to so many parents, including me."</p>
+  <p class="testimonial-author">— Annick Gagnon</p>
+</div>
+
+
+
 ## 🖼️ Photo Gallery
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
