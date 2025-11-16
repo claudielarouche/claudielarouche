@@ -204,58 +204,8 @@ I’ve written to councillors and education representatives because this decisio
 
 ## 🖼️ Photo Gallery
 
-<div style="display: flex; flex-wrap: wrap; gap: 10px;">
-
-  <div style="flex: 1 0 30%;">
-    <img src="/assets/img/charlemagne-1.png" alt="Charlemagne 1" style="width: 100%; border-radius: 8px;">
-  </div>
-
-  <div style="flex: 1 0 30%;">
-    <img src="/assets/img/charlemagne-2.png" alt="Charlemagne 2" style="width: 100%; border-radius: 8px;">
-  </div>
-
-  <div style="flex: 1 0 30%;">
-    <img src="/assets/img/charlemagne-3.png" alt="Charlemagne 3" style="width: 100%; border-radius: 8px;">
-  </div>
-
-  <div style="flex: 1 0 30%;">
-    <img src="/assets/img/charlemagne-4.png" alt="Charlemagne 4" style="width: 100%; border-radius: 8px;">
-  </div>
-
-  <div style="flex: 1 0 30%;">
-    <img src="/assets/img/charlemagne-5.png" alt="Charlemagne 5" style="width: 100%; border-radius: 8px;">
-  </div>
-
-  <div style="flex: 1 0 30%;">
-    <img src="/assets/img/charlemagne-6.png" alt="Charlemagne 6" style="width: 100%; border-radius: 8px;">
-  </div>
-
-  <div style="flex: 1 0 30%;">
-    <img src="/assets/img/charlemagne-7.png" alt="Charlemagne 7" style="width: 100%; border-radius: 8px;">
-  </div>
-
-  <div style="flex: 1 0 30%;">
-    <img src="/assets/img/charlemagne-8.png" alt="Charlemagne 8" style="width: 100%; border-radius: 8px;">
-  </div>
-
-  <div style="flex: 1 0 30%;">
-    <img src="/assets/img/charlemagne-9.png" alt="Charlemagne 8" style="width: 100%; border-radius: 8px;">
-  </div>
-
-  <div style="flex: 1 0 30%;">
-    <img src="/assets/img/charlemagne-10.png" alt="Charlemagne 8" style="width: 100%; border-radius: 8px;">
-  </div>
-
-  <div style="flex: 1 0 30%;">
-    <img src="/assets/img/charlemagne-11.png" alt="Charlemagne 8" style="width: 100%; border-radius: 8px;">
-  </div>
-
-  <div style="flex: 1 0 30%;">
-    <img src="/assets/img/charlemagne-12.png" alt="Charlemagne 8" style="width: 100%; border-radius: 8px;">
-  </div>
-
-  <div style="flex: 1 0 30%;">
-    <img src="/assets/img/charlemagne-13.png" alt="Charlemagne 8" style="width: 100%; border-radius: 8px;">
-  </div>
-
+<div style="max-width: 900px;">
+  <img src="/assets/img/kids-at-Charlemagne.jpg"
+       alt="Charlemagne Photo Collage"
+       style="width: 100%; height: auto; border-radius: 12px;">
 </div>

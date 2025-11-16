@@ -192,8 +192,8 @@ I’ve written to councillors and education representatives because this decisio
 
 ## 🖼️ Photo Gallery
 
-<div style="max-width: 900px; margin: 0 auto;">
-  <img src="/assets/images/kids-at-Charlemagne.jpg"
+<div style="max-width: 900px;">
+  <img src="/assets/img/kids-at-Charlemagne.jpg"
        alt="Charlemagne Photo Collage"
        style="width: 100%; height: auto; border-radius: 12px;">
 </div>
