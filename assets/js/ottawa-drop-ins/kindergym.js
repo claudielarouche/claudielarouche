@@ -201,7 +201,8 @@ function filterData(data, selectedAreas, selectedDay, selectedTime) {
 	const dayCondition = selectedDay.some(day => currentDay.toLowerCase() === day.toLowerCase());
 	
 	const timeCondition = selectedTime.some(time => currentTime.toLowerCase().includes(time.toLowerCase()));
-	const skateCondition = currentCategory === "Kindergym";
+	const skateCondition = currentCategory === "Kindergym" || currentCategory === "Kinderplay";
+
 	    
 	return areaCondition && dayCondition && timeCondition && skateCondition;
     });
