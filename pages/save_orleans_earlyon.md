@@ -26,6 +26,8 @@ description: "Save the EarlyON Playgroups in Orléans"
 }
 </style>
 
+<img src="/assets/img/save-early-on-logo.jpg" alt="Charlemagne Photo Collage" style="width: 100%; height: auto; ">
+
 The Ottawa Catholic School Board (OCSB) is closing two long-standing EarlyOn Centres in Orléans: **Charlemagne** and **Divine Infant**. These closures will leave hundreds of caregivers and children without essential early years programming.
 
 This page gathers all key information, links, contacts, demands, and actions in one place to support community advocacy.
@@ -160,8 +162,6 @@ If you would like to get involved, please reach out to [claudielarouche@gmail.co
 - [OCSB Early Learning Programs](https://www.ocsb.ca/our-schools/child-care/){:target="_blank" rel="noopener"}
 - [Annoucement of Divine Enfant's and St. Elizabeth's EarlyON centres closures](https://www.facebook.com/groups/cgow.ca/posts/9939690982797188/){:target="_blank" rel="noopener"}
 - [Annoucement of Charlemagne's EarlyON Centre closure](https://www.facebook.com/permalink.php?story_fbid=pfbid029XjPEQvXccWUt9D8QtmJTRwYtMm1YcovHQdkFWGMBkjeCjqRhcpATDmqooCvUUi5l&id=100069513767240){:target="_blank" rel="noopener"}
-
-
 
 
 ## 💛 Why This Matters
