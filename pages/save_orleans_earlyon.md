@@ -3,6 +3,7 @@ layout: page
 title: Save the OCSB EarlyON Playgroups in Orléans
 permalink: /save-orleans-earlyon/
 description: "Save the EarlyON Playgroups in Orléans"
+hide_title: true
 ---
 
 <style>
