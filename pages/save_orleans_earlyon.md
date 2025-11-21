@@ -202,6 +202,11 @@ I’ve written to councillors and education representatives because this decisio
   <p class="testimonial-author">— Annick Gagnon</p>
 </div>
 
+<div class="testimonial">
+  <p class="testimonial-text">"My daughter frequently visited both Divine Infant and Charlemagne when she was on her maternity leave. When I took on the care of my granddaughter and another child we visited the programs on a weekly basis. I am aware of the history of the space and the vital link it holds for parents, guardians, caregivers, newcomers and especially the precious children in our community."</p>
+  <p class="testimonial-author">— Twylla Hodgins</p>
+</div>
+
 
 
 ## 🖼️ Photo Gallery
