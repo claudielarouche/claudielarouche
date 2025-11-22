@@ -153,7 +153,8 @@ If you would like to get involved, please reach out to [claudielarouche@gmail.co
 - [CFRA 580 morning radio show](https://omny.fm/shows/580-cfra/the-morning-rush-longtime-orl-ans-playgroup-to-close-after-more-than-30-years){:target="_blank" rel="noopener"}
 - [CTV Ottawa 6 pm news video](https://www.youtube.com/watch?v=UQRYxESrHng){:target="_blank" rel="noopener"}
 - [CTV Ottawa News Article](https://www.ctvnews.ca/ottawa/article/longtime-orleans-playgroup-to-close-after-more-than-30-years/){:target="_blank" rel="noopener"}
-- [CFRA 580 evening interview audio clip](https://omny.fm/shows/580-cfra/ottawa-now-orleans-playgroup-set-to-close-by-the-end-of-november)
+- [CFRA 580 evening interview audio clip](https://omny.fm/shows/580-cfra/ottawa-now-orleans-playgroup-set-to-close-by-the-end-of-november){:target="_blank" rel="noopener"}
+- [Orléans community grapples with closure of EarlyON playgroup - Ottawa Sun](https://ottawasun.com/news/orleans-closure-earlyon-playgroup){:target="_blank" rel="noopener"}
 
 ## 🔧 Useful Reference Documents
 
