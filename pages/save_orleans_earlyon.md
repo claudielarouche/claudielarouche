@@ -165,6 +165,7 @@ If you would like to get involved, please reach out to [claudielarouche@gmail.co
 - [OCSB Early Learning Programs](https://www.ocsb.ca/our-schools/child-care/){:target="_blank" rel="noopener"}
 - [Annoucement of Divine Enfant's and St. Elizabeth's EarlyON centres closures](https://www.facebook.com/groups/cgow.ca/posts/9939690982797188/){:target="_blank" rel="noopener"}
 - [Annoucement of Charlemagne's EarlyON Centre closure](https://www.facebook.com/permalink.php?story_fbid=pfbid029XjPEQvXccWUt9D8QtmJTRwYtMm1YcovHQdkFWGMBkjeCjqRhcpATDmqooCvUUi5l&id=100069513767240){:target="_blank" rel="noopener"}
+- [Ottawa Morning with Rebecca Zandbergen - Parents Rally to save OCSB's EarlyON Centres](https://www.cbc.ca/listen/live-radio/1-100-ottawa-morning/clip/16183539-parents-rally-save-ocsbs-earlyon-centres){:target="_blank" rel="noopener"}
 
 
 ## 💛 Why This Matters
