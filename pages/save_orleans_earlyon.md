@@ -156,6 +156,7 @@ If you would like to get involved, please reach out to [claudielarouche@gmail.co
 - [CTV Ottawa News Article](https://www.ctvnews.ca/ottawa/article/longtime-orleans-playgroup-to-close-after-more-than-30-years/){:target="_blank" rel="noopener"}
 - [CFRA 580 evening interview audio clip](https://omny.fm/shows/580-cfra/ottawa-now-orleans-playgroup-set-to-close-by-the-end-of-november){:target="_blank" rel="noopener"}
 - [Ottawa Sun - Orléans community grapples with closure of EarlyON playgroup](https://ottawasun.com/news/orleans-closure-earlyon-playgroup){:target="_blank" rel="noopener"}
+- [Ottawa Citizen - Orléans community grapples with closure of EarlyON playgroup](https://ottawacitizen.com/news/orleans-closure-earlyon-playgroup){:target="_blank" rel="noopener"}
 - [CBC Article - Parents rally as Catholic school board prepares to close another drop-in centre](https://www.cbc.ca/news/canada/ottawa/parents-rally-as-catholic-school-board-prepares-to-close-another-drop-in-centre-9.6980800){:target="_blank" rel="noopener"}
 - [CBC Video - Orléans children's drop-in centre to close at end of November](https://www.cbc.ca/player/play/video/9.6990753){:target="_blank" rel="noopener"}
 - [CBC Ottawa Morning with Rebecca Zandbergen - Parents Rally to save OCSB's EarlyON Centres](https://www.cbc.ca/listen/live-radio/1-100-ottawa-morning/clip/16183539-parents-rally-save-ocsbs-earlyon-centres){:target="_blank" rel="noopener"}
