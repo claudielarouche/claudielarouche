@@ -134,20 +134,12 @@ Your assistance is greatly appreciated!
 ### Municipal
 - **City Councillor (Orléans East–Cumberland):** [Matt.Luloff@ottawa.ca](mailto:Matt.Luloff@ottawa.ca)
 
-
-## 📣 Delegation to OCSB Board
-
-- **Next Board meeting:** November 25, 7:00 PM, 570 W Hunt Club Rd, Ottawa, ON K2G 3R4, Canada
-
-If you are able to attend the meeting, it would really help! Kids are welcome to join too.
-
-We created a [Facebook event](https://www.facebook.com/events/859933696438151){:target="_blank" rel="noopener"} with details, please feel free to share the link with family and friends. 
-
 ## 🤝 Join the Advocacy Effort
 
 There is an active parent-led group organizing outreach, coordination, delegation preparation, and gathering support.  
 
 If you would like to get involved, please reach out to [claudielarouche@gmail.com](mailto:claudielarouche@gmail.com)
+
 
 ## 🎤 Media Appearances
 
