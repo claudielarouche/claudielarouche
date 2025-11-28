@@ -46,7 +46,7 @@ This page gathers all key information, links, contacts, demands, and actions in 
     - Closing as the high school is planning to take over the space
 - Both centers were consistently running at or very near capacity.
 - Remaining EarlyON centres in Orléans are **already at maximum capacity** or open only **one morning per week**
-  - These centers are run by other organizations, and funding that OCSB received through the Ontario EarlyOn Program will not transfer over. **There is no plan to increase services at the remaining center to meet demand.**
+  - These centers are run by other organizations, and funding that OCSB received through the Ontario EarlyOn Program will not transfer over. 
 - No viable alternatives exist for the hundreds of families affected.
 
 It is also notable that St. Elizabeth, another OCSB EarlyOn center, closed in September. As a result, **3 of the 6 OCSB-run EarlyOn centers closed abruptly in 2025**, without alternative services secured. 
