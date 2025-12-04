@@ -1,5 +1,5 @@
 ---
-layout: dev-projects
+layout: dev
 description: A useful resource for anyone affected by Work Force Adjustement (WFA) in the Government of Canada
 title: Work Force Adjustement (WFA) Resources
 tags: [Work]
