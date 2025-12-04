@@ -23,7 +23,7 @@ I will continue updating this web page as I discover new resources.
 - [Understanding Workforce Adjustment (Canada School of Public Service)](https://catalogue.csps-efpc.gc.ca/product?catalog=COR123){:target="_blank" rel="noopener noreferrer"}
 - [PSAC workforce adjustment main page, FAQ, and guide](https://psacunion.ca/workforce-adjustment){:target="_blank" rel="noopener noreferrer"}
 - [PIPSC Understanding work force adjustment](https://pipsc.ca/news-issues/understanding-work-force-adjustment){:target="_blank" rel="noopener noreferrer"}
-- [CAPE Workforce Adjustment - Frequently Asked Questions (last updated March 2025)](https://www.acep-cape.ca/sites/default/files/2025-03/WFA%20FAQs%20ENG%2014%20mar%202025.pdf){:target="_blank" rel="noopener noreferrer"}
+- [CAPE Workforce Adjustment guide for members](https://www.acep-cape.ca/en/news/workforce-adjustment-guide-members){:target="_blank" rel="noopener noreferrer"}
 
 ### Job Search and Application Websites
 - [GC Jobs](https://www.canada.ca/en/services/jobs/opportunities/government.html){:target="_blank" rel="noopener noreferrer"}
