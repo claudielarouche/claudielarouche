@@ -24,51 +24,47 @@ If you are aware of a resource that is missing from this page, please let me kno
 - [PIPSC Understanding work force adjustment](https://pipsc.ca/news-issues/understanding-work-force-adjustment){:target="_blank" rel="noopener noreferrer"}
 - [CAPE Workforce Adjustment - Frequently Asked Questions (last updated March 2025)](https://www.acep-cape.ca/sites/default/files/2025-03/WFA%20FAQs%20ENG%2014%20mar%202025.pdf){:target="_blank" rel="noopener noreferrer"}
 
-### Collective Agreements
-
-Check your letter and pay stub to confirm your Union (PSAC, PIPSC, CAPE, ACFO, or another)
-- [](){:target="_blank" rel="noopener noreferrer"}
-- [](){:target="_blank" rel="noopener noreferrer"}
-- [](){:target="_blank" rel="noopener noreferrer"}
-
 ### Job Search and Application Websites
 - [GC Jobs](https://www.canada.ca/en/services/jobs/opportunities/government.html){:target="_blank" rel="noopener noreferrer"}
 
 #### Department Specific Job Opportunities
 - [Statistics Canada](https://www.statcan.gc.ca/en/job-opportunities){:target="_blank" rel="noopener noreferrer"}
+- ...more to come
 
 #### Other Opportunities
 
+- To be completed
+
 ## What can you do now?
 
-1) Capture facts from your letter
-    - Date of the letter
-    - Your status (for example affected, opting, surplus)
-    - Whether the letter states a guarantee of a reasonable job offer
-    - Any explicit deadlines
+1) Capture facts from your letter 
+    - Date of the letter 
+    - Your status (for example affected, opting, surplus) 
+    - Whether the letter states a guarantee of a reasonable job offer 
+    - Any explicit deadlines 
 
 Create your own copy of my [WFA Strategy Document](https://docs.google.com/spreadsheets/d/1uKV10MLZ37y9fpw_t7QRubA11iTwjBnk5LReo3w4ETY/edit?usp=sharing){:target="_blank" rel="noopener noreferrer"} to help you capture all the information you will need. 
 
-2) Identify which rules apply to you
-    - Confirm your union
-    - Check whether your protections sit in a WFA appendix of your collective agreement or in the NJC Work Force Adjustment Directive
+2) Identify which rules apply to you 
+    - Confirm your union 
+    - Check whether your protections sit in a WFA appendix of your collective agreement or in the NJC Work Force Adjustment Directive 
 
-3) Book conversations
-    - Meeting with your manager to clarify status and expectations during the transition
-    - Meeting with your HR advisor or departmental WFA coordinator
-    - Call or email your union representative and ask specifically for WFA support, referring to their WFA guides and FAQ pages 
+3) Book conversations 
+    - Meeting with your manager to clarify status and expectations during the transition 
+    - Meeting with your HR advisor or departmental WFA coordinator 
+    - Call or email your union representative and ask specifically for WFA support, referring to their WFA guides and FAQ pages  
 
-4) Understand your options as an opting or surplus employee
+4) Understand your options as an opting or surplus employee 
 From the Work Force Adjustment Directive and union FAQs you will see three classic options for an opting employee, including a twelve month surplus priority period, transition support payment, and combinations that include an education allowance, subject to detailed conditions. 
 
-5) Get clarity on priority entitlement and registration
-- Confirm with HR when your priority entitlement will start
-- You want written confirmation of which situation you are in and by what date you must choose.
+5) Get clarity on priority entitlement and registration 
+- Confirm with HR when your priority entitlement will start 
+- You want written confirmation of which situation you are in and by what date you must choose. 
 
-6) Initiate your job search
-- Update your résumé
-- Update or create your LinkedIn profile
-- Update your GC Jobs profile and set up job alerts for keywords that match your skills 
+6) Initiate your job search 
+- Update your résumé 
+- Update or create your LinkedIn profile 
+- Update your GC Jobs profile and set up job alerts for keywords that match your skills  
 
 You can use my [WFA Strategy Document](https://docs.google.com/spreadsheets/d/1uKV10MLZ37y9fpw_t7QRubA11iTwjBnk5LReo3w4ETY/edit?usp=sharing){:target="_blank" rel="noopener noreferrer"} to help you track all the people you have contacted during your job search.
 
