@@ -12,7 +12,7 @@ I created this website to help all the Government of Canada employees affected b
 
 If you are aware of a resource that is missing from this page, please let me know at [claudielarouche@gmail.com](mailto:claudielarouche@gmail.com).
 
-
+I will continue updating this web page as I discover new resources.
 
 ## Useful Links
 
