@@ -153,6 +153,7 @@ function renderTable(data) {
     document.getElementById('csvData').innerHTML = tableHtml;
 
     if (!$.fn.dataTable.isDataTable('#dataTable')) {
+        const nameColumnIndex = headers.filter(h => h !== "Website").indexOf("Name");
         $('#dataTable').DataTable({
             "pageLength": -1,
             "dom": 'Bfrtip', // 'B' for buttons
@@ -167,7 +168,7 @@ function renderTable(data) {
                 }
               
             ],
-        "order": [0, 'asc'],
+        "order": [nameColumnIndex, 'asc'],
             "language": {
                 "emptyTable": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>.",
                 "zeroRecords": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>."
