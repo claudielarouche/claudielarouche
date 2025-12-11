@@ -2,6 +2,7 @@
 layout: projects
 description: A useful resource for anyone affected by Work Force Adjustement (WFA) in the Government of Canada
 title: Work Force Adjustement (WFA) Resources
+image: https://claudielarouche.com/assets/img/wfa.jpg
 permalink: /wfa/
 tags: [Work]
 ---
