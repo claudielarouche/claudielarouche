@@ -17,7 +17,7 @@ I will continue updating this web page as I discover new resources.
 
 ## Useful Links
 
-- [Your personal WFA strategy document](https://docs.google.com/spreadsheets/d/1uKV10MLZ37y9fpw_t7QRubA11iTwjBnk5LReo3w4ETY/edit?usp=sharing)
+- [Your personal WFA strategy document](https://docs.google.com/spreadsheets/d/1uKV10MLZ37y9fpw_t7QRubA11iTwjBnk5LReo3w4ETY/edit?usp=sharing){:target="_blank" rel="noopener noreferrer"}
 - [Workforce adjustment in the core public administration (canada.ca)](https://www.canada.ca/en/government/publicservice/workforce/workforce-adjustment.html){:target="_blank" rel="noopener noreferrer"}
 - [Work Force Adjustment Directive (National Joint Council)](https://www.njc-cnm.gc.ca/directive/d12/v239/en){:target="_blank" rel="noopener noreferrer"}
 - [Managing: Workforce adjustment (canada.ca)](https://www.canada.ca/en/public-services-procurement/services/pay-pension/pay-administration/pay-centre-resources/pay-process-roles-responsibilities/managing-work-force-adjustment.html){:target="_blank" rel="noopener noreferrer"}
