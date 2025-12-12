@@ -25,6 +25,7 @@ I will continue updating this web page as I discover new resources.
 - [PSAC workforce adjustment main page, FAQ, and guide](https://psacunion.ca/workforce-adjustment){:target="_blank" rel="noopener noreferrer"}
 - [PIPSC Understanding work force adjustment](https://pipsc.ca/news-issues/understanding-work-force-adjustment){:target="_blank" rel="noopener noreferrer"}
 - [CAPE Workforce Adjustment guide for members](https://www.acep-cape.ca/en/news/workforce-adjustment-guide-members){:target="_blank" rel="noopener noreferrer"}
+- [Information on priority entitlements](https://www.canada.ca/en/public-service-commission/services/information-priority-administration.html){:target="_blank" rel="noopener noreferrer"}
 
 ### Job Search and Application Websites
 - [GC Jobs](https://www.canada.ca/en/services/jobs/opportunities/government.html){:target="_blank" rel="noopener noreferrer"}
