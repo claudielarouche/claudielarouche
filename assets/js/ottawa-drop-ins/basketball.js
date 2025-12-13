@@ -59,13 +59,13 @@ function renderTable(data) {
     let tableHtml = '<table id="dataTable"><thead><tr>';
     headers.forEach(header => {
         // Skip rendering a few columns
-        if (header !== 'URL' && header !== 'Category' && header !== 'Age') {
+        if (header !== 'URL' && header !== 'Category') {
             tableHtml += `<th>${header}</th>`;
         }
     });
     tableHtml += '</tr></thead><tbody>';
 
-    const filteredData = filterData(data, selectedAreas, selectedDay, selectedTime);
+    const filteredData = filterData(data, selectedAreas, selectedDay, selectedAge, selectedTime);
 
     // Iterate through each row of data
     filteredData.forEach(row => {
@@ -76,7 +76,7 @@ function renderTable(data) {
 
         headers.forEach((header, index) => {
             // Skip rendering the URL column
-            if (header !== 'URL' && header !== 'Category' && header !== 'Age') {
+            if (header !== 'URL' && header !== 'Category' ) {
                 switch (header) {
             case 'Sort Order': 	
                     // Assign the index of the "Baby Scale" column to the babyScaleIndex variable
@@ -186,7 +186,7 @@ document.getElementById('showToday').addEventListener('click', function(event) {
     }
 });
 
-function filterData(data, selectedAreas, selectedDay, selectedTime) {
+function filterData(data, selectedAreas, selectedDay, selectedAge, selectedTime) {
 
 
     return data.filter(row => {
@@ -199,13 +199,13 @@ function filterData(data, selectedAreas, selectedDay, selectedTime) {
 
     const areaCondition = selectedAreas.some(area => currentArea.toLowerCase().includes(area.toLowerCase()));
     const dayCondition = selectedDay.some(day => currentDay.toLowerCase() === day.toLowerCase());
-    
+    const ageCondition = selectedAge.some(age => currentAge.toLowerCase().includes(age.toLowerCase()));
     const timeCondition = selectedTime.some(time => currentTime.toLowerCase().includes(time.toLowerCase()));
     const typeCondition = currentCategory.toLowerCase().includes("basketball");
 
 
         
-    return areaCondition && dayCondition && timeCondition && typeCondition;
+    return areaCondition && dayCondition && && ageCondition && timeCondition && typeCondition;
     });
 }
 
