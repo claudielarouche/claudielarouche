@@ -405,6 +405,25 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // === Age ===
+    const selectAllAgesBtn   = document.getElementById('selectAllAgesButton');
+    const unselectAllAgesBtn = document.getElementById('unselectAllAgesButton');
+    const agesCheckboxes     = document.querySelectorAll('.ageCheckbox');
+
+    selectAllAgesBtn.addEventListener('click', function() {
+        agesCheckboxes.forEach(cb => {
+            cb.checked = true;
+            cb.dispatchEvent(new Event('change', { bubbles: true }));
+        });
+    });
+
+    unselectAllAgesBtn.addEventListener('click', function() {
+        agesCheckboxes.forEach(cb => {
+            cb.checked = false;
+            cb.dispatchEvent(new Event('change', { bubbles: true }));
+        });
+    });
+
     // === Time ===
     const selectAllTimesBtn   = document.getElementById('selectAllTimesButton');
     const unselectAllTimesBtn = document.getElementById('unselectAllTimesButton');
