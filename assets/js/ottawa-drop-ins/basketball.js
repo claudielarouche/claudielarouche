@@ -201,10 +201,11 @@ function filterData(data, selectedAreas, selectedDay, selectedTime) {
     const dayCondition = selectedDay.some(day => currentDay.toLowerCase() === day.toLowerCase());
     
     const timeCondition = selectedTime.some(time => currentTime.toLowerCase().includes(time.toLowerCase()));
-    const skateCondition = currentCategory === "Basketball";
+    const typeCondition = currentCategory.toLowerCase().includes("basketball");
+
 
         
-    return areaCondition && dayCondition && timeCondition && skateCondition;
+    return areaCondition && dayCondition && timeCondition && typeCondition;
     });
 }
 
