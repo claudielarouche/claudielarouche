@@ -232,7 +232,13 @@ function clearAllFilters() {
         }
     });
 
-
+// Check all the "Select Age" checkboxes
+    document.querySelectorAll('.ageCheckbox').forEach(checkbox => {
+        checkbox.checked = true;
+		if (!selectedAge.includes(checkbox.value)) {
+			selectedAge.push(checkbox.value);
+		}
+    });
 
 // Check all the "Select Time of day" checkboxes
     document.querySelectorAll('.timeCheckbox').forEach(checkbox => {
@@ -331,6 +337,32 @@ document.querySelectorAll('.timeCheckbox').forEach(function (checkbox) {
     checkbox.checked = true;
     if (!selectedTime.includes(checkbox.value)) {
         selectedTime.push(checkbox.value);
+    }
+});
+
+const selectedAge = [];
+document.querySelectorAll('.ageCheckbox').forEach(function (checkbox) {
+    checkbox.addEventListener('change', function () {
+	// Store the current sorting state
+        sortingState = $('#dataTable').DataTable().state();
+        currentSearchValue = $('#dataTable_filter input').val();
+		if (checkbox.checked) {
+            if (!selectedAge.includes(checkbox.value)) {
+                selectedAge.push(checkbox.value);
+            }
+        } else {
+            const index = selectedAge.indexOf(checkbox.value);
+            if (index !== -1) {
+                selectedAge.splice(index, 1);
+            }
+        }
+        renderTable(originalData);
+    });
+
+    // Initialize with all checkboxes checked by default
+    checkbox.checked = true;
+    if (!selectedAge.includes(checkbox.value)) {
+        selectedAge.push(checkbox.value);
     }
 });
 
