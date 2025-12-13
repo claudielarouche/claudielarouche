@@ -4,7 +4,7 @@ description: A subset of the City of Ottawa Drop-Ins, but just for basketball!
 image: https://claudielarouche.com/assets/img/basketball.jpg
 image_hero: https://claudielarouche.com/assets/img/basketball.jpg
 tags: [Ottawa]
-permalink: /projects/basketball/
+permalink: /dev-projects/basketball/
 layout: dev-projects
 js:
   - https://code.jquery.com/jquery-3.6.0.min.js
