@@ -26,6 +26,8 @@ css:
 
 {% include filter-days-of-week.html %}   
 
+{% include ottawa-drop-ins/filter-age-group.html %}   
+
 {% include filter-time-of-day.html %}   
 
 {% include view-data-reset-filter.html %}   
