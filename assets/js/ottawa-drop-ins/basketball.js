@@ -205,7 +205,7 @@ function filterData(data, selectedAreas, selectedDay, selectedAge, selectedTime)
 
 
         
-    return areaCondition && dayCondition && && ageCondition && timeCondition && typeCondition;
+    return areaCondition && dayCondition &&  ageCondition && timeCondition && typeCondition;
     });
 }
 
