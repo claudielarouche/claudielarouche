@@ -5,7 +5,7 @@ image: https://claudielarouche.com/assets/img/basketball.jpg
 image_hero: https://claudielarouche.com/assets/img/basketball.jpg
 tags: [Ottawa]
 permalink: /dev-projects/basketball/
-layout: dev-projects
+layout: default-dev
 js:
   - https://code.jquery.com/jquery-3.6.0.min.js
   - https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js
