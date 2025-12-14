@@ -4,8 +4,8 @@ description: Would you like to hire me?
 image: https://claudielarouche.com/assets/img/claudie-larouche-head.png
 image_hero: https://claudielarouche.com/assets/img/claudie-larouche-head.png
 tags: [Work]
-permalink: /dev-projects/hire-me/
-layout: dev
+permalink: /projects/hire-me/
+layout: projects
 ---
 
 # Hire Claudie
@@ -13,6 +13,8 @@ layout: dev
 I help public sector and public sector adjacent organizations make sense of their data and turn it into clear information leaders can actually use.
 
 My work sits at the intersection of data, systems, and decision making. I understand how government environments function and I focus on practical outcomes rather than theory or over engineered solutions.
+
+I am also available to build a quick tool that could make your work or life easier.
 
 ## What I do
 
