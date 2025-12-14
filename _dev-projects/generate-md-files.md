@@ -1,3 +1,8 @@
+---
+layout: dev 
+title: Generate md files
+---
+
 <!doctype html>
 <html lang="en">
   <head>
