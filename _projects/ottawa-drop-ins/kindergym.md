@@ -22,8 +22,6 @@ css:
 
 {% include ottawa-drop-ins/header.html %}   
 
-**What is Kinderplay (formerly called Kindergym)?**: Play, run, climb, and jump to burn some energy. Children ages 0 to 5 must be supervised by a caregiver while they have free play with a variety of sports equipment and toys in City of Ottawa gymnasiums.
-
 {% include filter-area.html %}   
 
 {% include filter-days-of-week.html %}   
@@ -34,7 +32,9 @@ css:
 
 {% include ottawa-drop-ins/alert-info.html %}  
 
-## Kindergym Schedule
+## Kinderplay (formerly Kindergym) Schedule
+
+**What is Kinderplay (formerly called Kindergym)?**: Play, run, climb, and jump to burn some energy. Children ages 0 to 5 must be supervised by a caregiver while they have free play with a variety of sports equipment and toys in City of Ottawa gymnasiums.
 
 {% include ottawa-drop-ins/last-updated.html %}  
 
