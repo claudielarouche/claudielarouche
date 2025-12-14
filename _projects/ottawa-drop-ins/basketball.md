@@ -36,6 +36,8 @@ css:
 
 ## Basketball Schedule
 
+{% include ottawa-drop-ins/reservation.html %}  
+
 {% include ottawa-drop-ins/last-updated.html %}  
 
 <div id="csvData"></div>

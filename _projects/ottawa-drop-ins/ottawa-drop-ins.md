@@ -38,6 +38,8 @@ css:
 
 ## City of Ottawa Activities
 
+{% include ottawa-drop-ins/reservation.html %}  
+
 {% include ottawa-drop-ins/last-updated.html %}  
 
 <div id="csvData"></div>

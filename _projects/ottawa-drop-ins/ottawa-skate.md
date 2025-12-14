@@ -38,6 +38,8 @@ Please see [OttawaPublicSkating.ca](https://www.ottawapublicskating.ca/){:target
 
 ## City of Ottawa Skating Schedule
 
+{% include ottawa-drop-ins/reservation.html %}  
+
 {% include ottawa-drop-ins/last-updated.html %}  
 
 <div id="csvData"></div>
