@@ -15,6 +15,25 @@ Here are some interviews I have given, articles written about my projects, confe
 
 ---
 
+## 🎙️ CBC Radio Interview about the closure of an EarlyON playgroup 
+**Type:** Radio interview  
+**Date:** Nov 2, 2025  
+[Parents rally to save OCSB’s EarlyON centres](https://www.cbc.ca/listen/live-radio/1-100-ottawa-morning/clip/16183539-parents-rally-save-ocsbs-earlyon-centres){:target="_blank" rel="noopener noreferrer"}  
+
+## 
+![ForwardJS]({{ '/assets/img/ForwardJS-2025-09-18.png' | relative_url }})  
+<figure>
+  <img src="{{ '/assets/img/forward-js-by-Matt.jpg' | relative_url }}" alt="ForwardJS">
+  <figcaption>
+    Photo by <a href="https://mattmillard.photography/" target="_blank" rel="noopener noreferrer">Matt Millard</a> — ForwardJS conference
+  </figcaption>
+</figure>
+
+**Type:** 30 minutes presentation - Code for a Cause with Claudie (and ChatGPT!)  
+**Date:** September 18, 2025  
+[Meetup event](https://www.meetup.com/ottawa-forwardjs-meetup/events/310700820/){:target="_blank" rel="noopener noreferrer"}  
+
+
 ## 📣 Presentation to ForwardJS
 ![ForwardJS]({{ '/assets/img/ForwardJS-2025-09-18.png' | relative_url }})  
 <figure>

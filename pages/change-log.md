@@ -2,12 +2,24 @@
 layout: page
 title: Change Log
 permalink: /change-log/
-description: "Find out what Claudie Larouche has been working on"
+description: "Find out what I've been up to!"
 ---
 
 Hello!  
 
 The purpose of this page is simply to let you all know what I've been up to! :) Enjoy!
+
+## December 2025
+
+- Moved the [EarlyON project](https://claudielarouche.com/projects/early-on/) to archive, probably should have done that like a year ago haha. 
+- On December 4, I received a WFA letter (Workforce Adjustment), informing me that my position is surplus and I am essentially out of job. But since I work for the public service, I actually have lots of time to figure out an alternate option. I put together a [WFA page](https://claudielarouche.com/wfa/) to help myself and others in my position...
+- I created a [Basketball page](https://claudielarouche.com/projects/basketball/) out of the City of Ottawa drop-in data. 
+- I created a more efficient method for generating [Canada School of Public Service video summaries](https://claudielarouche.com/projects/csps-videos/) and I've been adding more to my website
+- After losing my job, I created a [Hire Claudie](https://claudielarouche.com/projects/hire-me/) page :) 
+
+## November 2025
+
+- A few Moms and I tried to [save an EarlyON Playgroup in Orleans](https://claudielarouche.com/save-orleans-earlyon/), but it didn't work, OCSB closed it :( On the positive side, I got to speak to [CBC radio](https://www.cbc.ca/listen/live-radio/1-100-ottawa-morning/clip/16183539-parents-rally-save-ocsbs-earlyon-centres){:target="_blank" rel="noopener noreferrer"} which was really fun!
 
 ## October 2025
 
