@@ -1,7 +1,6 @@
 ---
-layout: default
+layout: dev
 title: Bingo Drawer (1-12)
-hide-title: true
 ---
 
 <style>
