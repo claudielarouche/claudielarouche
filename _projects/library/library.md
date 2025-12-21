@@ -19,7 +19,10 @@ css:
 ---
 
  
-Photo by <a href="https://unsplash.com/@trnavskauni?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Trnava University</a> on <a href="https://unsplash.com/photos/brown-wooden-book-shelf-with-books-BEEyeib-am8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+{% capture note_content %}
+My sincere apologies, I will not be able to update this web page during the holidays! I will get back to it in January I promise!
+{% endcapture %}
+{% include admonition.html type="Note" icon="ℹ️" content=note_content %}
       
 			
 <a href="#csvData" class="btn btn-primary">Go to listing</a>
