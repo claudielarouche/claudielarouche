@@ -259,8 +259,8 @@ layout: dev
 
     const hasAlpha = detectAlpha(canvas, ctx);
 
-    const mime = hasAlpha ? "image/png" : "image/webp";
-    const ext = hasAlpha ? "png" : "webp";
+    const mime = hasAlpha ? "image/png" : "image/jpeg";
+    const ext = hasAlpha ? "png" : "jpg";
 
     canvas.toBlob((blob) => {
       if (!blob) {
@@ -272,9 +272,9 @@ layout: dev
       elDownload.download = `resized-${outW}x${outH}.${ext}`;
       elDownload.hidden = false;
       elDownload.textContent = `Download resized image (${outW}×${outH} ${ext.toUpperCase()})`;
-      setExportMeta(hasAlpha ? "Transparency detected. Exported as PNG." : "No transparency detected. Exported as WebP.");
+      setExportMeta(hasAlpha ? "Transparency detected. Exported as PNG." : "No transparency detected. Exported as JPG.");
       mode = "done";
-    }, mime, mime === "image/webp" ? 0.9 : undefined);
+    }, mime, mime === "image/jpeg" ? 0.9 : undefined);
   }
 
   function detectAlpha(canvasEl, context) {
@@ -306,8 +306,8 @@ layout: dev
     ctx.drawImage(sourceImg, 0, 0, imgNaturalW, imgNaturalH, 0, 0, outW, outH);
 
     const hasAlpha = detectAlpha(canvas, ctx);
-    const mime = hasAlpha ? "image/png" : "image/webp";
-    const ext = hasAlpha ? "png" : "webp";
+    const mime = hasAlpha ? "image/png" : "image/jpeg";
+    const ext = hasAlpha ? "png" : "jpg";
 
     canvas.toBlob((blob) => {
       if (!blob) {
@@ -319,9 +319,9 @@ layout: dev
       elDownload.download = `resized-${outW}x${outH}.${ext}`;
       elDownload.hidden = false;
       elDownload.textContent = `Download resized image (${outW}×${outH} ${ext.toUpperCase()})`;
-      setExportMeta(hasAlpha ? "Transparency detected. Exported as PNG." : "No transparency detected. Exported as WebP.");
+      setExportMeta(hasAlpha ? "Transparency detected. Exported as PNG." : "No transparency detected. Exported as JPG.");
       mode = "done";
-    }, mime, mime === "image/webp" ? 0.9 : undefined);
+    }, mime, mime === "image/jpeg" ? 0.9 : undefined);
   }
 
   function startFlow() {
