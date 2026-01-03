@@ -1,6 +1,8 @@
 ---
 title: "Image Resizer"
 layout: dev
+image: https://claudielarouche.com/assets/img/arrow-resize.png
+image_hero: https://claudielarouche.com/assets/img/arrow-resize.png
 ---
 
 <div class="ir-wrap">
