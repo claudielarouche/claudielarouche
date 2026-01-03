@@ -2,7 +2,9 @@
 title: "Image Resizer"
 layout: dev
 image: https://claudielarouche.com/assets/img/arrow-resize.png
-image_hero: https://claudielarouche.com/assets/img/arrow-resize.png
+tags: [Other]
+layout: projects
+permalink: /projects/image-resizer
 ---
 
 <div class="ir-wrap">
