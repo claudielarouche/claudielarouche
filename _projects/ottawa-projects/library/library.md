@@ -17,13 +17,6 @@ css:
   - https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css
   - https://fonts.googleapis.com/icon?family=Material+Icons
 ---
-
- 
-{% capture note_content %}
-My sincere apologies, I will not be able to update this web page during the holidays! I will get back to it in January I promise!
-{% endcapture %}
-{% include admonition.html type="Note" icon="ℹ️" content=note_content %}
-      
 			
 <a href="#csvData" class="btn btn-primary">Go to listing</a>
 
