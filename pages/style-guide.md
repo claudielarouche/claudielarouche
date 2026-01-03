@@ -351,3 +351,16 @@ Negative potential consequences of an action.
     <iframe width="560" height="315" src="https://www.youtube.com/embed/KrUL8vR17u4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 ```
+
+## Other Notes about Jekyll
+
+- image: with no value is valid YAML and treated as null
+- image: "" creates an empty string and can cause edge cases in Liquid
+- Recommended using image: for optional images
+- Safe Liquid conditional pattern:
+
+{% raw %}
+{% if page.image %}
+  <img src="{{ page.image | relative_url }}">
+{% endif %}
+{% endraw %}
