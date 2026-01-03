@@ -62,7 +62,7 @@ layout: dev
   @media (max-width: 860px) { .ir-row { grid-template-columns: 1fr; } }
   .ir-col { display: flex; flex-direction: column; gap: 8px; }
   .ir-label { font-weight: 600; font-size: 14px; }
-  .ir-input { width: 100%; padding: 10px 12px; border-radius: 10px; border: 1px solid rgba(0,0,0,.18); font-size: 14px; }
+  .ir-input { padding: 10px 12px; border-radius: 10px; border: 1px solid rgba(0,0,0,.18); font-size: 14px; }
   .ir-help { margin: 0; font-size: 13px; color: rgba(0,0,0,.62); min-height: 18px; }
   .ir-dims { align-content: start; }
   .ir-dim { display: flex; flex-direction: column; gap: 6px; }
