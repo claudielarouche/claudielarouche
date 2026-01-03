@@ -58,7 +58,6 @@ image_hero: https://claudielarouche.com/assets/img/arrow-resize.png
 </div>
 
 <style>
-  .ir-wrap { max-width: 980px; margin: 0 auto; padding: 16px; }
   .ir-card { background: #fff; border: 1px solid rgba(0,0,0,.08); border-radius: 14px; padding: 16px; box-shadow: 0 1px 6px rgba(0,0,0,.04); margin-bottom: 14px; }
   .ir-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
   @media (max-width: 860px) { .ir-row { grid-template-columns: 1fr; } }
