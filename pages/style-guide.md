@@ -364,3 +364,5 @@ Negative potential consequences of an action.
   <img src="{{ page.image | relative_url }}">
 {% endif %}
 {% endraw %}
+
+- Don't use capital letters in URLs
