@@ -353,7 +353,6 @@ image_hero: https://claudielarouche.com/assets/img/arrow-resize.png
     setStatus(`Aspect ratio mismatch. Adjust the crop box (${rw}:${rh}) then click Export.`);
     mode = "crop";
   }
-
   function handlePointerDown(e) {
     if (mode !== "crop") return;
     if (e.button !== 0) return;
@@ -361,16 +360,37 @@ image_hero: https://claudielarouche.com/assets/img/arrow-resize.png
     updateRects();
 
     const p = stagePoint(e);
-    const crop = getCropBox();
-
-    const inCrop = (p.x >= crop.left && p.x <= crop.left + crop.width && p.y >= crop.top && p.y <= crop.top + crop.height);
-    if (!inCrop) return;
 
     const handle = e.target?.dataset?.h || null;
 
+    // If a handle was clicked, allow starting the resize even if it is slightly outside the crop box
+    if (handle) {
+      const crop = getCropBox();
+      drag = {
+        type: "resize",
+        handle,
+        startX: p.x,
+        startY: p.y,
+        startCrop: { ...crop },
+        ratio: ratioTarget
+      };
+      e.preventDefault();
+      return;
+    }
+
+    // Otherwise require click inside the crop box for move
+    const crop = getCropBox();
+    const inCrop =
+      p.x >= crop.left &&
+      p.x <= crop.left + crop.width &&
+      p.y >= crop.top &&
+      p.y <= crop.top + crop.height;
+
+    if (!inCrop) return;
+
     drag = {
-      type: handle ? "resize" : "move",
-      handle,
+      type: "move",
+      handle: null,
       startX: p.x,
       startY: p.y,
       startCrop: { ...crop },
@@ -379,6 +399,7 @@ image_hero: https://claudielarouche.com/assets/img/arrow-resize.png
 
     e.preventDefault();
   }
+
 
   function handlePointerMove(e) {
     if (!drag) return;
