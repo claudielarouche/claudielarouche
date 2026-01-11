@@ -59,7 +59,7 @@ function renderTable(data) {
     let tableHtml = '<table id="dataTable"><thead><tr>';
     headers.forEach(header => {
         // Skip rendering a few columns
-        if (header !== 'URL' && header !== 'Category') {
+        if (header !== 'URL' && header !== 'Category' && header !== 'Reservation') {
             tableHtml += `<th>${header}</th>`;
         }
     });
@@ -77,7 +77,7 @@ function renderTable(data) {
 
         headers.forEach((header, index) => {
             // Skip rendering the URL column
-            if (header !== 'URL' && header !== 'Category' ) {
+            if (header !== 'URL' && header !== 'Category' && header !== 'Reservation') {
                 switch (header) {
             case 'Sort Order': 	
                     // Assign the index of the "Baby Scale" column to the babyScaleIndex variable
@@ -107,15 +107,25 @@ function renderTable(data) {
                         }
                         break;
 
-        case 'Reservation':
-                // Handle Facility URL content
-                const facilityUrl = row[header] ? row[header] : '';
-                if (facilityUrl === '#') {
-                    tableHtml += '<td>N/A</td>';
-                } else {
-                    tableHtml += `<td><a href="${facilityUrl}" target="_blank">Facility Reservation Page</a></td>`;
-                }
-                break;
+                    case 'Registration Required': 
+                        // Handle Facility URL content
+                        const facilityUrl = row['Reservation'] ? row['Reservation'] : '';
+                        if (facilityUrl === '#') {
+                            tableHtml += '<td>No</td>';
+                        } else {
+                            tableHtml += `<td><a href="${facilityUrl}" target="_blank">Yes</a></td>`;
+                        }
+                        break;
+
+                    /*case 'Reservation':
+                        // Handle Facility URL content
+                        const facilityUrl = row[header] ? row[header] : '';
+                        if (facilityUrl === '#') {
+                            tableHtml += '<td>N/A</td>';
+                        } else {
+                            tableHtml += `<td><a href="${facilityUrl}" target="_blank">Facility Reservation Page</a></td>`;
+                        }
+                        break;*/
 
                     default:
                         // Display other columns
