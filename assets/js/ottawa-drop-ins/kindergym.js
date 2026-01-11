@@ -82,7 +82,7 @@ function renderTable(data) {
 
         headers.forEach((header, index) => {
             // Skip rendering the URL column
-            if (header !== 'URL' && header !== 'Category' && header !== 'Age' && header !== 'Activity Type') {
+            if (header !== 'URL' && header !== 'Category' && header !== 'Age' && header !== 'Activity Type' && header !== 'Reservation') {
                 switch (header) {
                     case 'Sort Order': 	
                             // Assign the index of the "Baby Scale" column to the babyScaleIndex variable
