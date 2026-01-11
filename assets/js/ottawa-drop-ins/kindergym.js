@@ -124,7 +124,7 @@ function renderTable(data) {
 
                     case 'Registration Required': 
                         // Handle Facility URL content
-                        const facilityUrl = row[header] ? row[header] : '';
+                        const facilityUrl = row['Reservation'] ? row['Reservation'] : '';
                         if (facilityUrl === '#') {
                             tableHtml += '<td>No</td>';
                         } else {
