@@ -59,7 +59,13 @@ function renderTable(data) {
     let tableHtml = '<table id="dataTable"><thead><tr>';
     headers.forEach(header => {
         // Skip rendering a few columns
-        if (header !== 'URL' && header !== 'Category' && header !== 'Age' && header !== 'Activity Type') {
+        if (
+            header !== 'URL' &&
+            header !== 'Category' &&
+            header !== 'Age' &&
+            header !== 'Activity Type' &&
+            header !== 'Reservation'
+        ) {
             tableHtml += `<th>${header}</th>`;
         }
     });
@@ -78,12 +84,12 @@ function renderTable(data) {
             // Skip rendering the URL column
             if (header !== 'URL' && header !== 'Category' && header !== 'Age' && header !== 'Activity Type') {
                 switch (header) {
-		    case 'Sort Order': 	
-				    // Assign the index of the "Baby Scale" column to the babyScaleIndex variable
-				// minus 1 because it is after the URL column which is not shown
-                    		    sortOrderIndex = index;					  
-				    tableHtml += `<td>${row[header]}</td>`;
-				    break;
+                    case 'Sort Order': 	
+                            // Assign the index of the "Baby Scale" column to the babyScaleIndex variable
+                        // minus 1 because it is after the URL column which is not shown
+                                        sortOrderIndex = index;					  
+                            tableHtml += `<td>${row[header]}</td>`;
+                            break;
                     case 'Facility Name':
                         // Merge URL with Pool Name to create a clickable link
                         const url = row['URL'] ? row['URL'] : '';
@@ -106,15 +112,26 @@ function renderTable(data) {
                         }
                         break;
 
-		case 'Reservation':
-                // Handle Facility URL content
-                const facilityUrl = row[header] ? row[header] : '';
-                if (facilityUrl === '#') {
-                    tableHtml += '<td>N/A</td>';
-                } else {
-                    tableHtml += `<td><a href="${facilityUrl}" target="_blank">Facility Reservation Page</a></td>`;
-                }
-                break;
+                    /*case 'Reservation':
+                        // Handle Facility URL content
+                        const facilityUrl = row[header] ? row[header] : '';
+                        if (facilityUrl === '#') {
+                            tableHtml += '<td>N/A</td>';
+                        } else {
+                            tableHtml += `<td><a href="${facilityUrl}" target="_blank">Facility Reservation Page</a></td>`;
+                        }
+                        break;*/
+
+                    case 'Registration Required': 
+                        // Handle Facility URL content
+                        const facilityUrl = row[header] ? row[header] : '';
+                        if (facilityUrl === '#') {
+                            tableHtml += '<td>No</td>';
+                        } else {
+                            tableHtml += `<td><a href="${facilityUrl}" target="_blank">Yes</a></td>`;
+                        }
+                        break;
+
 
                     default:
                         // Display other columns
