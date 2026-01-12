@@ -22,7 +22,7 @@ css:
 
 <div class="admonition note">
   <p><span class="admonition-icon">ℹ️</span>
-  <strong>Please Note</strong>: This project is still under construction, thank you for your patience! Please help me fill the missing data by submitting information about the parks you are familiar with (the link to submit data is in the map or in the table, thanks!). </p>
+  <strong>Please Note</strong>: Please help me fill the missing data by submitting information about the parks you are familiar with (the link to submit data is in the map or in the table, thanks!). </p>
 </div>
 
 <div class="mt-3">
@@ -106,4 +106,3 @@ css:
 
 Please note that the table above contains information licensed under the [Open Government Licence – City of Ottawa](https://ottawa.ca/en/city-hall/open-transparent-and-accountable-government/open-data){:target="_blank" rel="noopener noreferrer"}.
 
-Data source: To be completed

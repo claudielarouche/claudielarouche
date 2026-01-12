@@ -55,6 +55,8 @@ defaults:
       type: playgrounds
     values:
       layout: playground
+      sitemap: false
+      exclude_ga: true
 
 highlighter: rouge
 markdown: kramdown
