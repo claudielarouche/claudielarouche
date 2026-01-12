@@ -28,6 +28,9 @@ collections:
     permalink: /csps/:name/
   dev-projects:
     output: true
+  playgrounds:
+    output: true
+    permalink: /playgrounds/:name/
 
 google_analytics: G-YWMRD8LX5P
 
@@ -46,6 +49,12 @@ defaults:
     values:
       sitemap: false
       exclude_ga: true
+  # Playgrounds collection
+  - scope:
+      path: ""
+      type: playgrounds
+    values:
+      layout: playground
 
 highlighter: rouge
 markdown: kramdown

@@ -1,0 +1,60 @@
+---
+layout: default
+---
+
+{% assign rec = site.data.playgrounds | where: "PARK_ID", page.playground_id | first %}
+
+{% if rec == nil %}
+  <h1>{{ page.title }}</h1>
+  <p>No dataset record found for PARK_ID {{ page.playground_id }}</p>
+{% else %}
+
+{% assign latitude = rec.Latitude %}
+{% assign longitude = rec.Longitude %}
+{% assign object_id = rec.OBJECTID %}
+{% assign facility_id = rec.FACILITYID %}
+{% assign name = rec.Name %}
+{% assign address = rec.Address %}
+{% assign washroom = rec["Washroom"] %}
+{% assign picnic_table = rec["Picnic Table"] %}
+{% assign baby_swing = rec["Baby Swing"] %}
+{% assign water_play = rec["Water Play"] %}
+{% assign water_fountain = rec["Water Fountain"] %}
+{% assign fenced_area = rec["Fenced area"] %}
+{% assign accessibility = rec.Accessibility %}
+{% assign base = rec.Base %}
+{% assign parking = rec.Parking %}
+{% assign note = rec.Note %}
+
+<h1>{{ page.title }}</h1>
+
+{% if address %}
+<p><strong>Address:</strong> {{ address }}</p>
+{% endif %}
+
+<h2>Features</h2>
+<ul>
+  {% if washroom == "Yes" %}<li>Washroom</li>{% endif %}
+  {% if picnic_table == "Yes" %}<li>Picnic table</li>{% endif %}
+  {% if baby_swing == "Yes" %}<li>Baby swing</li>{% endif %}
+  {% if water_play == "Yes" %}<li>Water play</li>{% endif %}
+  {% if water_fountain == "Yes" %}<li>Water fountain</li>{% endif %}
+  {% if fenced_area == "Yes" %}<li>Fenced area</li>{% endif %}
+</ul>
+
+<h2>Accessibility and amenities</h2>
+<ul>
+  {% if accessibility %}<li>Accessibility: {{ accessibility }}</li>{% endif %}
+  {% if base %}<li>Surface: {{ base }}</li>{% endif %}
+  {% if parking %}<li>Parking: {{ parking }}</li>{% endif %}
+</ul>
+
+{% if note %}
+<h2>Notes</h2>
+<p>{{ note }}</p>
+{% endif %}
+
+<h2>Location</h2>
+<p>Latitude: {{ latitude }}<br />Longitude: {{ longitude }}</p>
+
+{% endif %}
