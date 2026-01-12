@@ -1,0 +1,68 @@
+---
+video_id: eUirGx3LW28
+layout: csps
+---
+
+## Summary
+
+- Susan Cartwright was born in France where her father worked for NATO establishing microwave repeater stations across Europe, and her parents chose to live in a French village rather than on a military base so her brothers could attend French school and experience village life.
+- She was an unplanned child, born when her family was preparing to leave France, and they returned to Ottawa when she was three or four months old.
+- The family left Ottawa when she was six years old and emigrated to New Zealand, where she completed most of her schooling before returning to Canada for university.
+- After spending three years traveling in a motor home with her parents looking for a place to settle in Canada, they eventually stopped in Victoria, British Columbia, where she attended the University of Victoria for her undergraduate degree.
+- She completed an honors undergraduate degree and her supervisor encouraged her to continue in academia, arranging for her to pursue a master's degree at the University of Waterloo despite her reluctance.
+- She arrived at Waterloo in January and found the snow and larger campus size to be a shock after not experiencing winter weather since she was six years old, though she had a happy year there.
+- During her time at Waterloo, she realized she was impatient to move forward with life and that pursuing a doctorate was not the right path for her.
+- A friend she played squash with dared her to write the Foreign Service exam after he had previously attempted it unsuccessfully, and she accepted the challenge somewhat impulsively.
+- She wrote the exam, was called for an interview, and was accepted, beginning her career by working in the Regional Office of Industry, Trade, and Commerce in Toronto.
+- Working in the Foreign Service provided the privilege of representing Canada and experiencing living and working in other countries in a way that goes beyond what tourists or visitors can experience.
+- Living somewhere for two to four years and potentially learning the local language offers a much richer and more immersive experience than brief visits.
+- She worked as a generalist rather than specializing in a particular region, completing assignments in two African countries, Australia, India, and finally serving as Ambassador to Hungary.
+- After 21 years in Foreign Affairs, the government shifted back to centrally-managed administration of the Assistant Deputy Minister community, which had previously swung between centralized and decentralized management.
+- She felt strongly connected to the Foreign Service but less connected to the broader public service, with her professional network being excellent within the international pool but virtually non-existent beyond that due to working abroad.
+- She was interested in the centralized pool system because it would allow her to work in other departments and then return to Foreign Affairs, gaining useful knowledge about domestic departments.
+- She went through a formidable set of interviews for the selection process and was added to the pool of available senior executives.
+- Within about a week of entering the pool, she received a call from Wayne Wouters, who was the Deputy Minister at Fisheries and Oceans, offering her the ADM policy position.
+- The relationship between Foreign Affairs and the Department of Fisheries and Oceans was somewhat tense at the time due to problems with overfishing by European fleets off Canada's east coast.
+- She accepted the position at Fisheries and Oceans, finding that moving to the new department was easier than eventually returning to Foreign Affairs, though she valued the experience gained in other departments.
+- At Treasury Board Secretariat, she initially served as Assistant Secretary for two sectors: Government Operations and International Security and Defence, which took time to organize and divide properly.
+- Working at Treasury Board Secretariat was a revelation that provided an excellent opportunity to learn how government operates and funds itself, areas where she had been previously ignorant.
+- Wayne Wouters called her to his office on a Wednesday and asked her to lead the Federal Accountability Act implementation, giving her very little advance notice for this major responsibility.
+- She had to quickly find a replacement for her current position, with Bill Austen stepping up to take over her role, and she had to obtain and read the Conservative platform to understand the commitment.
+- Mylène Bouzigon, the legal advisor, had been suggesting for several weeks that the organization should prepare for implementing this priority, making her Susan's first resource for the project.
+- She had never written a Memorandum to Cabinet or worked on legislation before taking on this role, and in hindsight, her lack of knowledge about what was involved may have been an advantage.
+- The team had very limited time and faced practical challenges including finding workspace and recruiting team members while also beginning to develop the implementation process.
+- Her mandate was to get legislation through the House of Commons as quickly as possible to demonstrate the government's resolve in responding to the Gomery Commission and addressing perceived weaknesses in public service management practices.
+- The Federal Accountability Act was fairly wide-ranging, covering issues like changes to the Access to Information Act and other transparency measures, which the team approached in sections.
+- She realized the only way to move quickly was not to create a large team that would replicate work already being done across departments, but rather to harness existing knowledge and energy with a small coordinating team.
+- The small team would serve as a process driver, organizer, and convener rather than attempting to duplicate the expertise of policy specialists across various departments and agencies.
+- The Federal Accountability Act was misunderstood at the time and perhaps still is, as it was not intended as punishment for public servants but rather as a set of useful and timely reforms.
+- Many elements of the Act, such as the Lobbyists Registration Act, had nothing to do with public servant accountability but addressed other aspects of government operations and transparency.
+- She believed the measures in the Act were fit for purpose at the time, though suggested they should probably be reviewed after 20 years to ensure continued relevance.
+- During the legislative process through the House and Senate, there was inevitable politicization as part of the democratic process, which she accepted as normal but found concerning in some aspects.
+- She particularly regretted the communications approach at the end when the Act was marketed as the toughest anti-corruption legislation Canada had ever seen, which was not what the Act she drafted was fundamentally about.
+- The Act was much more important and fundamental than simply being anti-corruption legislation, and she felt the communications failed to convey what was actually in the Act or its true purpose.
+- She did not believe anyone involved in drafting the Act saw it as punitive, as that was never the intention behind the legislation.
+- There were multiple factors contributing to fear or reluctance regarding accountability in the public service beyond the Act itself, including the rise of social media making public servants much more identifiable.
+- The relationship between ministers and senior public servants was changing, with the tradition of ministerial accountability beginning to erode during this period.
+- The media's approach to public servants and the public service in general was also shifting, with all these factors converging at approximately the same time.
+- Her last assignment before retirement was a review of human resources legislation, specifically the Public Service Employment Act and the Public Service Labour Relations Act.
+- She was not initially enthusiastic about this assignment and would not have chosen it for herself, but it turned out to be one of the most interesting assignments of her career.
+- She spent two years conducting the legislative review and her conclusions were not universally popular, particularly regarding the Public Service Commission.
+- The Public Service Commission is central to maintaining a non-partisan public service because it was created to remove appointment authority from politicians and centralize it in an apolitical structure reporting to Parliament.
+- She was very critical of how the Public Service Commission was executing its mandate and the effect it was having, though not of the institution itself or necessarily the individuals leading it.
+- Her criticism focused on the chilling effect the Commission's practices were having on managers and employees throughout the public service.
+- When the Clerk asked if she would like to work at the Public Service Commission to address the shortcomings she had identified, she felt it would be churlish to decline.
+- However, she was not completely healthy at the time, making the full-time President's job unfeasible, so she agreed to serve as one of the part-time commissioners instead.
+- The Public Service Commission operates with three commissioners who sit as a commission, rather than having three people individually running the organization which would be impractical.
+- One commissioner serves full-time and acts as the deputy head effectively running the organization, while the other two commissioners serve part-time.
+- The Commission makes all decisions collectively as a commission, for which the full commission is accountable, and these decisions are reviewable in Federal Court.
+- The Public Service Commission appoints all public servants but delegates that authority to deputy heads, then conducts audits and investigations of how that delegated authority is used.
+- To her, leadership means setting an example and, in current terms, walking the talk, as saying important and good things without demonstrating them through actions does not constitute true leadership.
+- Leadership requires doing difficult things and making difficult decisions at times, acknowledging that it is neither easy nor always enjoyable.
+- Despite its challenges, leadership is hugely rewarding when people are interested in or willing to follow you, making the opportunity to lead valuable.
+- She has experienced bad leaders during her career and tried to identify what made them bad, making promises to herself not to repeat those same behaviors.
+- She attempted to turn often unpleasant working relationships with poor leaders into learning experiences that would be useful for her future leadership approach.
+- She suspects that what makes a good public servant has changed over the years because Canada, the private sector, and society in general have all changed, and she would be worried if the public service had not also evolved.
+- A good public servant has an awareness of the public interest and understands their role in serving it, doing what is right for the public at large rather than pursuing personal agendas.
+- The public service may not be the right career for passionate advocates, who have an important place in society but perhaps not within the civil service structure.
+- Good public servants are interested in facts, information, and the experiences of others, bringing an evidence-based and learning-oriented approach to their work.
