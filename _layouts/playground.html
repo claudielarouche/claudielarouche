@@ -9,7 +9,7 @@ layout: default
   <p>No dataset record found for PARK_ID {{ page.playground_id }}</p>
 {% else %}
 
-{% assign latitude = rec.Latitude %}
+{% assign latitude = rec["Latitude"] %}
 {% assign longitude = rec.Longitude %}
 {% assign object_id = rec.OBJECTID %}
 {% assign facility_id = rec.FACILITYID %}
