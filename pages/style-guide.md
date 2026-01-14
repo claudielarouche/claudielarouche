@@ -200,6 +200,10 @@ permalink: /mypage/
 ---
 ```
 
+Possible values in Front matter: 
+exclude_ga: true
+sitemap: false
+
 ## Add Markdown in the middle of HTML
 
 <div>
@@ -361,7 +365,7 @@ Negative potential consequences of an action.
 
 {% raw %}
 {% if page.image %}
-  <img src="{{ page.image | relative_url }}">
+   do something here if the page has an image
 {% endif %}
 {% endraw %}
 
