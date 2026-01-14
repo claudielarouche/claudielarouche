@@ -10,5 +10,7 @@ js:
   - https://code.jquery.com/jquery-3.6.0.min.js
   - https://unpkg.com/leaflet/dist/leaflet.js
   - /assets/js/all-parks.js
+css: 
+  - https://unpkg.com/leaflet/dist/leaflet.css
 ---
 
