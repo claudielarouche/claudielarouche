@@ -28,7 +28,7 @@ layout: default
 
 <h1>{{ page.title }}</h1>
 
-<div id="map" style="height: 400px; width: 100%;"></div>
+<div id="map" data-lat="{{ latitude }}" data-lng="{{ longitude }}" style="height: 400px; width: 100%;"></div>
 
 {% if address %}
 <p><strong>Address:</strong> {{ address }}</p>
