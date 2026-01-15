@@ -37,28 +37,30 @@ layout: default
 {% assign photos = data | where: "PARK_ID", pid %}
 
 <div class="photo-debug">
-  PARK_ID on page (raw): {{ page.playground_id }}<br>
-  PARK_ID on page (as string): {{ pid }}<br>
+  PARK_ID on page: {{ page.playground_id }}<br>
   Total photos in dataset: {{ data | size }}<br>
-  First row PARK_ID: {% if data and data.size > 0 %}{{ data[0].PARK_ID }}{% endif %}<br>
   Matching photos for this park: {{ photos | size }}<br>
 </div>
 
 {% if photos.size > 0 %}
-  <div class="photo-debug">Photo found</div>
+  <div class="photo-debug">Photos found</div>
 
-  {% assign primary = photos[0] %}
-  <figure class="park-photo">
-    <img src="{{ primary.src | relative_url }}" alt="{{ primary.alt | escape }}">
-    {% if primary.credit_name %}
-      <figcaption>
-        Photo: <a href="{{ primary.credit_url }}" target="_blank" rel="noopener">{{ primary.credit_name }}</a>
-      </figcaption>
-    {% endif %}
-  </figure>
+  <div class="park-photo-gallery">
+    {% for photo in photos %}
+      <figure class="park-photo">
+        <img src="{{ photo.src | relative_url }}" alt="{{ photo.alt | escape }}">
+        {% if photo.credit_name %}
+          <figcaption>
+            Photo: <a href="{{ photo.credit_url }}" target="_blank" rel="noopener">{{ photo.credit_name }}</a>
+          </figcaption>
+        {% endif %}
+      </figure>
+    {% endfor %}
+  </div>
 {% else %}
-  <div class="photo-debug">No photo found for this park</div>
+  <div class="photo-debug">No photos found for this park</div>
 {% endif %}
+
 
 
 {% if address %}
