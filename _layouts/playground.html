@@ -32,11 +32,15 @@ layout: default
 
 <div id="map" data-lat="{{ latitude }}" data-lng="{{ longitude }}" style="height: 400px; width: 100%;"></div>
 
-{% assign photos = site.data.playground_photos | where: "PARK_ID", page.playground_id %}
+{% assign data = site.data["playground-photos"] %}
+{% assign pid = page.playground_id | append: "" %}
+{% assign photos = data | where: "PARK_ID", pid %}
 
 <div class="photo-debug">
-  PARK_ID on page: {{ page.playground_id }}<br>
-  Total photos in dataset: {{ site.data.playground-photos | size }}<br>
+  PARK_ID on page (raw): {{ page.playground_id }}<br>
+  PARK_ID on page (as string): {{ pid }}<br>
+  Total photos in dataset: {{ data | size }}<br>
+  First row PARK_ID: {% if data and data.size > 0 %}{{ data[0].PARK_ID }}{% endif %}<br>
   Matching photos for this park: {{ photos | size }}<br>
 </div>
 
