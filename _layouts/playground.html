@@ -14,6 +14,7 @@ layout: default
 {% assign longitude = rec.Longitude %}
 {% assign object_id = rec.OBJECTID %}
 {% assign facility_id = rec.FACILITYID %}
+{% assign park_id = rec.PARK_ID %}
 {% assign name = rec.Name %}
 {% assign address = rec.Address %}
 {% assign washroom = rec["Washroom"] %}
@@ -31,9 +32,7 @@ layout: default
 
 <div id="map" data-lat="{{ latitude }}" data-lng="{{ longitude }}" style="height: 400px; width: 100%;"></div>
 
-{% assign photos = site.data.playground_photos | where: "PARK_ID", page.playground_id %}
-
-{% assign photos = site.data.playground_photos | where: "PARK_ID", page.playground_id %}
+{% assign photos = site.data.playground_photos | where: "PARK_ID", park_id %}
 
 <div class="photo-debug">
   PARK_ID on page: {{ page.playground_id }}<br>
