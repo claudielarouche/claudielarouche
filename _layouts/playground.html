@@ -30,6 +30,7 @@ layout: default
 
 <h1>{{ page_title }}</h1>
 
+<h2>Map</h2>
 <div id="map" data-lat="{{ latitude }}" data-lng="{{ longitude }}" style="height: 400px; width: 100%;"></div>
 
 {% assign data = site.data["playground-photos"] %}
@@ -37,8 +38,8 @@ layout: default
 {% assign photos = data | where: "PARK_ID", pid %}
 
 {% if photos.size > 0 %}
-  <div class="photo-debug">Photos found</div>
 
+  <h2>Photos</h2>
   <div class="park-photo-gallery">
     {% for photo in photos %}
       <figure class="park-photo">
@@ -54,8 +55,6 @@ layout: default
 {% else %}
   <div class="photo-debug">No photos found for this park</div>
 {% endif %}
-
-
 
 {% if address %}
 <p><strong>Address:</strong> {{ address }}</p>
