@@ -46,7 +46,7 @@ layout: default
         <img src="{{ photo.src | relative_url }}" alt="{{ photo.alt | escape }}">
         {% if photo.credit_name %}
           <figcaption>
-            Photo: <a href="{{ photo.credit_url }}" target="_blank" rel="noopener">{{ photo.credit_name }}</a>
+            Photo credit: <a href="{{ photo.credit_url }}" target="_blank" rel="noopener">{{ photo.credit_name }}</a>
           </figcaption>
         {% endif %}
       </figure>
