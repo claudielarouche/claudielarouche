@@ -1,4 +1,4 @@
 ---
-playground_id: "1032"
+playground_id: 1032
 ---
 
