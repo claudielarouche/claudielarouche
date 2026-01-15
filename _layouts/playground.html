@@ -30,6 +30,21 @@ layout: default
 
 <div id="map" data-lat="{{ latitude }}" data-lng="{{ longitude }}" style="height: 400px; width: 100%;"></div>
 
+{% assign photos = site.data.playground_media | where: "PARK_ID", page.playground_id %}
+
+{% if photos.size > 0 %}
+  {% assign primary = photos[0] %}
+  <figure class="park-photo">
+    <img src="{{ primary.src | relative_url }}" alt="{{ primary.alt | escape }}">
+    {% if primary.credit_name %}
+      <figcaption>
+        Photo: <a href="{{ primary.credit_url }}" target="_blank" rel="noopener">{{ primary.credit_name }}</a>
+      </figcaption>
+    {% endif %}
+  </figure>
+{% endif %}
+
+
 {% if address %}
 <p><strong>Address:</strong> {{ address }}</p>
 {% endif %}
