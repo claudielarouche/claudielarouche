@@ -43,7 +43,7 @@
 
     if (mapEl._leaflet_id) return;
 
-    var map = L.map("map").setView([coords.lat, coords.lng], 10);
+    var map = L.map("map").setView([coords.lat, coords.lng], 12);
 
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       maxZoom: 19,
