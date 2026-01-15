@@ -8,7 +8,7 @@ title: All Playground Pages
 <ul>
 {% for park in site.playgrounds %}
   <li>
-    <a href="{{ park.url | relative_url }}">{{ park.title }}</a>
+    <a href="{{ park.url | relative_url }}">{{ park.slug | replace: "-", " " | capitalize }}</a>
   </li>
 {% endfor %}
 </ul>
