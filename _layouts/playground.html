@@ -36,12 +36,6 @@ layout: default
 {% assign pid = page.playground_id | append: "" %}
 {% assign photos = data | where: "PARK_ID", pid %}
 
-<div class="photo-debug">
-  PARK_ID on page: {{ page.playground_id }}<br>
-  Total photos in dataset: {{ data | size }}<br>
-  Matching photos for this park: {{ photos | size }}<br>
-</div>
-
 {% if photos.size > 0 %}
   <div class="photo-debug">Photos found</div>
 
