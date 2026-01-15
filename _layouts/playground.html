@@ -32,11 +32,11 @@ layout: default
 
 <div id="map" data-lat="{{ latitude }}" data-lng="{{ longitude }}" style="height: 400px; width: 100%;"></div>
 
-{% assign photos = site.data.playground_photos | where: "PARK_ID", park_id %}
+{% assign photos = site.data.playground_photos | where: "PARK_ID", page.playground_id %}
 
 <div class="photo-debug">
   PARK_ID on page: {{ page.playground_id }}<br>
-  Total photos in dataset: {{ site.data.playground_photos | size }}<br>
+  Total photos in dataset: {{ site.data.playground-photos | size }}<br>
   Matching photos for this park: {{ photos | size }}<br>
 </div>
 
