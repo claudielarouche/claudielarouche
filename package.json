@@ -2,6 +2,10 @@
   "name": "lrt-distance-tool",
   "version": "1.0.0",
   "type": "module",
+  "scripts": {
+    "test": "node --test __tests__/**/*.test.js",
+    "test:watch": "node --test --watch __tests__/**/*.test.js"
+  },
   "dependencies": {
     "node-fetch": "^2.6.7",
     "@supabase/supabase-js": "^2.45.0"
