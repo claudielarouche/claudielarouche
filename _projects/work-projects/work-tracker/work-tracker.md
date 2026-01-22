@@ -11,6 +11,10 @@ js:
   - /assets/js/work-tracker.js
 ---
 
+<h2>How to use the Work Tracker</h2>
+{% include how-to-use.html 
+   video_url="https://www.youtube.com/embed/NT2fUTdQ0_s"%}
+
 <div class="workday-tracker">
 
   {% include work-tracker/step1.html %} 
