@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WFA Transition & Networking Tracker</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- React and ReactDOM -->
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <!-- Babel for JSX -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .scrollbar-thin::-webkit-scrollbar { width: 6px; }
+        .scrollbar-thin::-webkit-scrollbar-track { background: transparent; }
+        .scrollbar-thin::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState, useEffect, useMemo } = React;
+
+        // Custom Icon Component to handle Lucide in a browser environment
+        const Icon = ({ name, size = 16, className = "" }) => {
+            const [svg, setSvg] = useState("");
+            useEffect(() => {
+                if (window.lucide) {
+                    const iconSvg = lucide.createIcons.icons[name];
+                    if (iconSvg) setSvg(iconSvg);
+                }
+            }, [name]);
+            
+            return (
+                <i data-lucide={name} className={className} style={{ width: size, height: size }}></i>
+            );
+        };
+
+        const CONTACT_TYPES = ["Alternate", "Hiring Manager", "Other"];
+        const STATUS_TYPES = ["open", "close"];
+
+        const App = () => {
+            const [entries, setEntries] = useState([]);
+            const [sortConfig, setSortConfig] = useState({ key: null, direction: 'asc' });
+            const [filters, setFilters] = useState({
+                type: '', level: '', department: '', status: '', search: ''
+            });
+            const [activeTextarea, setActiveTextarea] = useState({ id: null, field: null });
+
+            useEffect(() => {
+                const savedData = localStorage.getItem('wfa_tracker_final_prod');
+                if (savedData) {
+                    try { setEntries(JSON.parse(savedData)); } catch (e) { console.error(e); }
+                }
+                if (window.lucide) window.lucide.createIcons();
+            }, []);
+
+            useEffect(() => {
+                localStorage.setItem('wfa_tracker_final_prod', JSON.stringify(entries));
+                if (window.lucide) window.lucide.createIcons();
+            }, [entries]);
+
+            const requestSort = (key) => {
+                let direction = 'asc';
+                if (sortConfig.key === key && sortConfig.direction === 'asc') direction = 'desc';
+                setSortConfig({ key, direction });
+            };
+
+            const getSortIcon = (key) => {
+                if (sortConfig.key !== key) return <i data-lucide="arrow-up-down" className="ml-1 opacity-30" style={{width:10}}></i>;
+                return sortConfig.direction === 'asc' ? 
+                    <i data-lucide="chevron-up" className="ml-1 text-blue-600" style={{width:10}}></i> : 
+                    <i data-lucide="chevron-down" className="ml-1 text-blue-600" style={{width:10}}></i>;
+            };
+
+            const departments = useMemo(() => [...new Set(entries.map(e => e.department))].filter(Boolean), [entries]);
+            const levels = useMemo(() => [...new Set(entries.map(e => e.level))].filter(Boolean), [entries]);
+
+            const processedEntries = useMemo(() => {
+                let result = entries.filter(e => {
+                    const matchesType = !filters.type || e.type === filters.type;
+                    const matchesLevel = !filters.level || e.level === filters.level;
+                    const matchesDept = !filters.department || e.department === filters.department;
+                    const matchesStatus = !filters.status || e.status === filters.status;
+                    const matchesSearch = !filters.search || 
+                        (e.tasks && e.tasks.toLowerCase().includes(filters.search.toLowerCase())) ||
+                        (e.note && e.note.toLowerCase().includes(filters.search.toLowerCase())) ||
+                        (e.name && e.name.toLowerCase().includes(filters.search.toLowerCase()));
+                    return matchesType && matchesLevel && matchesDept && matchesStatus && matchesSearch;
+                });
+
+                if (sortConfig.key) {
+                    result.sort((a, b) => {
+                        const aValue = (a[sortConfig.key] || '').toString().toLowerCase();
+                        const bValue = (b[sortConfig.key] || '').toString().toLowerCase();
+                        if (aValue < bValue) return sortConfig.direction === 'asc' ? -1 : 1;
+                        if (aValue > bValue) return sortConfig.direction === 'asc' ? 1 : -1;
+                        return 0;
+                    });
+                }
+                return result;
+            }, [entries, filters, sortConfig]);
+
+            const addEntry = () => {
+                const newEntry = {
+                    id: Math.random().toString(36).substr(2, 9),
+                    name: '', email: '', department: '', type: 'Other', level: '',
+                    tasks: '', dateLastContacted: new Date().toISOString().split('T')[0],
+                    status: 'open', note: ''
+                };
+                setEntries([newEntry, ...entries]);
+            };
+
+            const updateEntry = (id, field, value) => {
+                setEntries(prev => prev.map(e => e.id === id ? { ...e, [field]: value } : e));
+            };
+
+            const deleteEntry = (id) => {
+                if (window.confirm("Delete this entry?")) {
+                    setEntries(prev => prev.filter(e => e.id !== id));
+                }
+            };
+
+            const exportData = () => {
+                const blob = new Blob([JSON.stringify(entries, null, 2)], { type: 'application/json' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `WFA_Tracker_Backup_${new Date().toISOString().split('T')[0]}.json`;
+                a.click();
+            };
+
+            const importData = (event) => {
+                const file = event.target.files[0];
+                if (!file) return;
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    try {
+                        const data = JSON.parse(e.target.result);
+                        if (Array.isArray(data)) setEntries(data);
+                    } catch (err) { alert("Invalid file format."); }
+                };
+                reader.readAsText(file);
+            };
+
+            return (
+                <div className="flex flex-col h-screen overflow-hidden">
+                    <header className="bg-white border-b px-6 py-4 flex justify-between items-center shadow-sm shrink-0">
+                        <div className="flex items-center gap-6">
+                            <div className="flex items-center gap-3">
+                                <div className="bg-red-700 p-2 rounded text-white font-bold text-xl">WFA</div>
+                                <h1 className="text-xl font-semibold text-slate-800 tracking-tight">Transition & Networking Tracker</h1>
+                            </div>
+                            <a href="https://claudielarouche.com" target="_blank" className="flex items-center gap-2 px-3 py-1.5 bg-slate-100 text-slate-700 rounded-full hover:bg-blue-50 transition-all text-xs font-bold border border-slate-200">
+                                Claudie's Projects <i data-lucide="external-link" style={{width:12}}></i>
+                            </a>
+                        </div>
+                        <div className="flex items-center gap-3">
+                            <button onClick={exportData} className="flex items-center gap-2 px-3 py-1.5 bg-white border border-slate-200 rounded-md hover:bg-slate-50 transition-colors text-sm font-medium">
+                                <i data-lucide="download" style={{width:16}}></i> Export
+                            </button>
+                            <label className="flex items-center gap-2 px-3 py-1.5 bg-white border border-slate-200 rounded-md hover:bg-slate-50 transition-colors text-sm font-medium cursor-pointer">
+                                <i data-lucide="upload" style={{width:16}}></i> Import
+                                <input type="file" className="hidden" accept=".json" onChange={importData} />
+                            </label>
+                            <button onClick={addEntry} className="flex items-center gap-2 px-4 py-1.5 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors text-sm font-medium">
+                                <i data-lucide="plus" style={{width:16}}></i> Add Entry
+                            </button>
+                        </div>
+                    </header>
+
+                    <div className="bg-amber-50 border-b border-amber-100 px-6 py-2 flex items-center gap-2 text-amber-800 text-[11px] font-medium shrink-0">
+                        <i data-lucide="alert-triangle" className="text-amber-600" style={{width:14}}></i>
+                        <span>All data stays in your browser. Use the <strong>Export</strong> button to backup your list.</span>
+                    </div>
+
+                    <div className="p-4 grid grid-cols-1 md:grid-cols-5 gap-3 bg-slate-50 border-b shrink-0">
+                        <div className="space-y-1">
+                            <label className="text-[10px] uppercase font-bold text-slate-500">Search</label>
+                            <input className="w-full px-2 py-1.5 bg-white border border-slate-200 rounded text-sm outline-none focus:ring-1 focus:ring-blue-500" placeholder="Search..." value={filters.search} onChange={e => setFilters({...filters, search: e.target.value})} />
+                        </div>
+                        <div className="space-y-1">
+                            <label className="text-[10px] uppercase font-bold text-slate-500">Contact Type</label>
+                            <select className="w-full px-2 py-1.5 bg-white border border-slate-200 rounded text-sm outline-none" value={filters.type} onChange={e => setFilters({...filters, type: e.target.value})}>
+                                <option value="">All Types</option>
+                                {CONTACT_TYPES.map(t => <option key={t} value={t}>{t}</option>)}
+                            </select>
+                        </div>
+                        <div className="space-y-1">
+                            <label className="text-[10px] uppercase font-bold text-slate-500">Level</label>
+                            <select className="w-full px-2 py-1.5 bg-white border border-slate-200 rounded text-sm outline-none" value={filters.level} onChange={e => setFilters({...filters, level: e.target.value})}>
+                                <option value="">All Levels</option>
+                                {levels.map(l => <option key={l} value={l}>{l}</option>)}
+                            </select>
+                        </div>
+                        <div className="space-y-1">
+                            <label className="text-[10px] uppercase font-bold text-slate-500">Department</label>
+                            <select className="w-full px-2 py-1.5 bg-white border border-slate-200 rounded text-sm outline-none" value={filters.department} onChange={e => setFilters({...filters, department: e.target.value})}>
+                                <option value="">All Departments</option>
+                                {departments.map(d => <option key={d} value={d}>{d}</option>)}
+                            </select>
+                        </div>
+                        <div className="space-y-1">
+                            <label className="text-[10px] uppercase font-bold text-slate-500">Status</label>
+                            <select className="w-full px-2 py-1.5 bg-white border border-slate-200 rounded text-sm outline-none" value={filters.status} onChange={e => setFilters({...filters, status: e.target.value})}>
+                                <option value="">All Status</option>
+                                {STATUS_TYPES.map(s => <option key={s} value={s}>{s.toUpperCase()}</option>)}
+                            </select>
+                        </div>
+                    </div>
+
+                    <div className="flex-1 overflow-auto bg-white">
+                        <table className="w-full text-left border-collapse min-w-[1200px]">
+                            <thead className="sticky top-0 bg-slate-100 z-10 shadow-sm">
+                                <tr className="border-b">
+                                    <th onClick={() => requestSort('name')} className="p-3 text-[10px] font-bold text-slate-500 uppercase w-48 cursor-pointer hover:bg-slate-200 transition-colors">
+                                        <div className="flex items-center">Name {getSortIcon('name')}</div>
+                                    </th>
+                                    <th className="p-3 text-[10px] font-bold text-slate-500 uppercase w-48">Email</th>
+                                    <th onClick={() => requestSort('department')} className="p-3 text-[10px] font-bold text-slate-500 uppercase w-40 cursor-pointer hover:bg-slate-200 transition-colors">
+                                        <div className="flex items-center">Department {getSortIcon('department')}</div>
+                                    </th>
+                                    <th onClick={() => requestSort('type')} className="p-3 text-[10px] font-bold text-slate-500 uppercase w-32 cursor-pointer hover:bg-slate-200 transition-colors">
+                                        <div className="flex items-center">Type {getSortIcon('type')}</div>
+                                    </th>
+                                    <th onClick={() => requestSort('level')} className="p-3 text-[10px] font-bold text-slate-500 uppercase w-24 cursor-pointer hover:bg-slate-200 transition-colors">
+                                        <div className="flex items-center">Level {getSortIcon('level')}</div>
+                                    </th>
+                                    <th className="p-3 text-[10px] font-bold text-slate-500 uppercase min-w-[200px]">Tasks</th>
+                                    <th onClick={() => requestSort('dateLastContacted')} className="p-3 text-[10px] font-bold text-slate-500 uppercase w-36 cursor-pointer hover:bg-slate-200 transition-colors">
+                                        <div className="flex items-center">Last Contact {getSortIcon('dateLastContacted')}</div>
+                                    </th>
+                                    <th onClick={() => requestSort('status')} className="p-3 text-[10px] font-bold text-slate-500 uppercase w-32 cursor-pointer hover:bg-slate-200 transition-colors">
+                                        <div className="flex items-center">Status {getSortIcon('status')}</div>
+                                    </th>
+                                    <th className="p-3 text-[10px] font-bold text-slate-500 uppercase min-w-[200px]">Notes</th>
+                                    <th className="p-3 w-12"></th>
+                                </tr>
+                            </thead>
+                            <tbody className="divide-y divide-slate-100">
+                                {processedEntries.map(entry => (
+                                    <tr key={entry.id} className="hover:bg-slate-50/50 align-top">
+                                        <td className="p-2"><input className="w-full p-1 border-b border-transparent focus:border-blue-500 outline-none text-sm" value={entry.name} onChange={e => updateEntry(entry.id, 'name', e.target.value)} placeholder="Name" /></td>
+                                        <td className="p-2"><input className="w-full p-1 border-b border-transparent focus:border-blue-500 outline-none text-xs" value={entry.email} onChange={e => updateEntry(entry.id, 'email', e.target.value)} placeholder="Email" /></td>
+                                        <td className="p-2"><input className="w-full p-1 border-b border-transparent focus:border-blue-500 outline-none text-xs" value={entry.department} onChange={e => updateEntry(entry.id, 'department', e.target.value)} placeholder="Department" /></td>
+                                        <td className="p-2">
+                                            <select className="w-full p-1 bg-transparent text-xs outline-none" value={entry.type} onChange={e => updateEntry(entry.id, 'type', e.target.value)}>
+                                                {CONTACT_TYPES.map(t => <option key={t} value={t}>{t}</option>)}
+                                            </select>
+                                        </td>
+                                        <td className="p-2"><input className="w-full p-1 border-b border-transparent focus:border-blue-500 outline-none text-xs" value={entry.level} onChange={e => updateEntry(entry.id, 'level', e.target.value)} placeholder="Level" /></td>
+                                        
+                                        <td className="p-2 relative">
+                                            <textarea 
+                                                className={`w-full p-2 border rounded transition-all text-xs outline-none focus:ring-2 focus:ring-blue-400 z-10
+                                                ${activeTextarea.id === entry.id && activeTextarea.field === 'tasks' ? 'h-40 absolute bg-white left-2 top-2 w-[calc(100%-1rem)] shadow-xl' : 'h-10 border-transparent bg-transparent resize-none overflow-hidden'}`}
+                                                value={entry.tasks}
+                                                onFocus={() => setActiveTextarea({id: entry.id, field: 'tasks'})}
+                                                onBlur={() => setTimeout(() => setActiveTextarea({id:null, field:null}), 150)}
+                                                onChange={e => updateEntry(entry.id, 'tasks', e.target.value)}
+                                                placeholder="Tasks..."
+                                            />
+                                            {!activeTextarea.id && <div className="h-10" />}
+                                        </td>
+
+                                        <td className="p-2"><input type="date" className="w-full p-1 text-[10px] outline-none" value={entry.dateLastContacted} onChange={e => updateEntry(entry.id, 'dateLastContacted', e.target.value)} /></td>
+                                        <td className="p-2">
+                                            <select className={`w-full p-1 rounded text-[10px] font-bold outline-none border ${entry.status === 'open' ? 'bg-green-50 text-green-700 border-green-200' : 'bg-slate-100 text-slate-500 border-slate-200'}`} value={entry.status} onChange={e => updateEntry(entry.id, 'status', e.target.value)}>
+                                                {STATUS_TYPES.map(s => <option key={s} value={s}>{s.toUpperCase()}</option>)}
+                                            </select>
+                                        </td>
+
+                                        <td className="p-2 relative">
+                                            <textarea 
+                                                className={`w-full p-2 border rounded transition-all text-xs outline-none focus:ring-2 focus:ring-amber-400 z-10
+                                                ${activeTextarea.id === entry.id && activeTextarea.field === 'note' ? 'h-40 absolute bg-white right-2 top-2 w-[calc(100%-1rem)] shadow-xl' : 'h-10 border-transparent bg-transparent resize-none overflow-hidden'}`}
+                                                value={entry.note}
+                                                onFocus={() => setActiveTextarea({id: entry.id, field: 'note'})}
+                                                onBlur={() => setTimeout(() => setActiveTextarea({id:null, field:null}), 150)}
+                                                onChange={e => updateEntry(entry.id, 'note', e.target.value)}
+                                                placeholder="Notes..."
+                                            />
+                                            {!activeTextarea.id && <div className="h-10" />}
+                                        </td>
+
+                                        <td className="p-2 pt-3 text-center">
+                                            <button onClick={() => deleteEntry(entry.id)} className="text-slate-300 hover:text-red-500 transition-colors">
+                                                <i data-lucide="trash-2" style={{width:14}}></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                        {processedEntries.length === 0 && (
+                            <div className="p-20 text-center text-slate-400 italic">
+                                No records found. Add an entry to get started.
+                            </div>
+                        )}
+                    </div>
+                </div>
+            );
+        };
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+</body>
+</html>
