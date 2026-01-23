@@ -27,30 +27,16 @@
     <script type="text/babel">
         const { useState, useEffect, useMemo } = React;
 
-        // Custom Icon Component to handle Lucide in a browser environment
-        const Icon = ({ name, size = 16, className = "" }) => {
-            const [svg, setSvg] = useState("");
-            useEffect(() => {
-                if (window.lucide) {
-                    const iconSvg = lucide.createIcons.icons[name];
-                    if (iconSvg) setSvg(iconSvg);
-                }
-            }, [name]);
-            
-            return (
-                <i data-lucide={name} className={className} style={{ width: size, height: size }}></i>
-            );
-        };
-
         const CONTACT_TYPES = ["Alternate", "Hiring Manager", "Other"];
         const STATUS_TYPES = ["open", "close"];
+        const INITIAL_FILTERS = {
+            type: '', level: '', department: '', status: '', search: ''
+        };
 
         const App = () => {
             const [entries, setEntries] = useState([]);
             const [sortConfig, setSortConfig] = useState({ key: null, direction: 'asc' });
-            const [filters, setFilters] = useState({
-                type: '', level: '', department: '', status: '', search: ''
-            });
+            const [filters, setFilters] = useState(INITIAL_FILTERS);
             const [activeTextarea, setActiveTextarea] = useState({ id: null, field: null });
 
             useEffect(() => {
@@ -107,6 +93,8 @@
                 return result;
             }, [entries, filters, sortConfig]);
 
+            const clearFilters = () => setFilters(INITIAL_FILTERS);
+
             const addEntry = () => {
                 const newEntry = {
                     id: Math.random().toString(36).substr(2, 9),
@@ -114,6 +102,8 @@
                     tasks: '', dateLastContacted: new Date().toISOString().split('T')[0],
                     status: 'open', note: ''
                 };
+                // Reset filters so user can see the newly added entry immediately
+                clearFilters();
                 setEntries([newEntry, ...entries]);
             };
 
@@ -149,6 +139,8 @@
                 reader.readAsText(file);
             };
 
+            const hasActiveFilters = JSON.stringify(filters) !== JSON.stringify(INITIAL_FILTERS);
+
             return (
                 <div className="flex flex-col h-screen overflow-hidden">
                     <header className="bg-white border-b px-6 py-4 flex justify-between items-center shadow-sm shrink-0">
@@ -180,7 +172,7 @@
                         <span>All data stays in your browser. Use the <strong>Export</strong> button to backup your list.</span>
                     </div>
 
-                    <div className="p-4 grid grid-cols-1 md:grid-cols-5 gap-3 bg-slate-50 border-b shrink-0">
+                    <div className="p-4 grid grid-cols-1 md:grid-cols-6 gap-3 bg-slate-50 border-b shrink-0 items-end">
                         <div className="space-y-1">
                             <label className="text-[10px] uppercase font-bold text-slate-500">Search</label>
                             <input className="w-full px-2 py-1.5 bg-white border border-slate-200 rounded text-sm outline-none focus:ring-1 focus:ring-blue-500" placeholder="Search..." value={filters.search} onChange={e => setFilters({...filters, search: e.target.value})} />
@@ -212,6 +204,16 @@
                                 <option value="">All Status</option>
                                 {STATUS_TYPES.map(s => <option key={s} value={s}>{s.toUpperCase()}</option>)}
                             </select>
+                        </div>
+                        <div>
+                            {hasActiveFilters && (
+                                <button 
+                                    onClick={clearFilters} 
+                                    className="flex items-center gap-1.5 text-xs font-bold text-red-600 hover:text-red-700 bg-red-50 px-3 py-1.5 rounded-md transition-colors"
+                                >
+                                    <i data-lucide="filter-x" style={{width:14}}></i> Clear Filters
+                                </button>
+                            )}
                         </div>
                     </div>
 
@@ -300,7 +302,7 @@
                         </table>
                         {processedEntries.length === 0 && (
                             <div className="p-20 text-center text-slate-400 italic">
-                                No records found. Add an entry to get started.
+                                {hasActiveFilters ? "No records match your filters." : "No records found. Add an entry to get started."}
                             </div>
                         )}
                     </div>
