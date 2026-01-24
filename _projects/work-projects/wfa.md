@@ -15,7 +15,7 @@ If you are aware of a resource that is missing from this page, please let me kno
 
 I will continue updating this web page as I discover new resources.
 
-<p><a href="https://claudielarouche.com/wfa" class="btn btn-primary">
+<p><a href="https://claudielarouche.com/wfa-tool" class="btn btn-primary">
   Workforce Adjustment Tool
 </a>
 </p>
