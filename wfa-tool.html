@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WFA Transition & Networking Tracker</title>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YWMRD8LX5P"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-YWMRD8LX5P');
+    </script>
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- React and ReactDOM -->
@@ -20,16 +30,6 @@
         .scrollbar-thin::-webkit-scrollbar-track { background: transparent; }
         .scrollbar-thin::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
     </style>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YWMRD8LX5P"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-YWMRD8LX5P');
-</script>
-
 </head>
 <body class="bg-slate-50 text-slate-900">
     <div id="root"></div>
@@ -42,6 +42,8 @@
         const INITIAL_FILTERS = {
             type: '', level: '', department: '', status: '', search: ''
         };
+        // Updated YouTube tutorial link
+        const TUTORIAL_URL = "https://youtu.be/9q75hJLf7Ao"; 
 
         const App = () => {
             const [entries, setEntries] = useState([]);
@@ -52,7 +54,16 @@
             useEffect(() => {
                 const savedData = localStorage.getItem('wfa_tracker_final_prod');
                 if (savedData) {
-                    try { setEntries(JSON.parse(savedData)); } catch (e) { console.error(e); }
+                    try { 
+                        let parsed = JSON.parse(savedData);
+                        parsed = parsed.map(e => ({
+                            ...e,
+                            type: e.type === 'other' ? 'Other' : 
+                                  e.type === 'alternate' ? 'Alternate' : 
+                                  e.type === 'hiring manager' ? 'Hiring Manager' : e.type
+                        }));
+                        setEntries(parsed); 
+                    } catch (e) { console.error(e); }
                 }
                 if (window.lucide) window.lucide.createIcons();
             }, []);
@@ -112,7 +123,6 @@
                     tasks: '', dateLastContacted: new Date().toISOString().split('T')[0],
                     status: 'open', note: ''
                 };
-                // Reset filters so user can see the newly added entry immediately
                 clearFilters();
                 setEntries([newEntry, ...entries]);
             };
@@ -159,9 +169,14 @@
                                 <div className="bg-red-700 p-2 rounded text-white font-bold text-xl">WFA</div>
                                 <h1 className="text-xl font-semibold text-slate-800 tracking-tight">Transition & Networking Tracker</h1>
                             </div>
-                            <a href="https://claudielarouche.com" target="_blank" className="flex items-center gap-2 px-3 py-1.5 bg-slate-100 text-slate-700 rounded-full hover:bg-blue-50 transition-all text-xs font-bold border border-slate-200">
-                                Claudie's Projects <i data-lucide="external-link" style={{width:12}}></i>
-                            </a>
+                            <div className="flex items-center gap-2">
+                                <a href="https://claudielarouche.com" target="_blank" className="flex items-center gap-2 px-3 py-1.5 bg-slate-100 text-slate-700 rounded-full hover:bg-blue-50 transition-all text-xs font-bold border border-slate-200">
+                                    Claudie's Projects <i data-lucide="external-link" style={{width:12}}></i>
+                                </a>
+                                <a href={TUTORIAL_URL} target="_blank" className="flex items-center gap-2 px-3 py-1.5 bg-red-50 text-red-700 rounded-full hover:bg-red-100 transition-all text-xs font-bold border border-red-200">
+                                    <i data-lucide="play-circle" style={{width:14}}></i> How to use this tool
+                                </a>
+                            </div>
                         </div>
                         <div className="flex items-center gap-3">
                             <button onClick={exportData} className="flex items-center gap-2 px-3 py-1.5 bg-white border border-slate-200 rounded-md hover:bg-slate-50 transition-colors text-sm font-medium">
@@ -241,7 +256,7 @@
                                     <th onClick={() => requestSort('type')} className="p-3 text-[10px] font-bold text-slate-500 uppercase w-32 cursor-pointer hover:bg-slate-200 transition-colors">
                                         <div className="flex items-center">Type {getSortIcon('type')}</div>
                                     </th>
-                                    <th onClick={() => requestSort('level')} className="p-3 text-[10px] font-bold text-slate-500 uppercase w-24 cursor-pointer hover:bg-slate-200 transition-colors">
+                                    <th onClick={() => requestSort('level')} className="p-3 text-[10px) font-bold text-slate-500 uppercase w-24 cursor-pointer hover:bg-slate-200 transition-colors">
                                         <div className="flex items-center">Level {getSortIcon('level')}</div>
                                     </th>
                                     <th className="p-3 text-[10px] font-bold text-slate-500 uppercase min-w-[200px]">Tasks</th>
