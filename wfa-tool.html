@@ -44,6 +44,7 @@
         };
         // Updated YouTube tutorial link
         const TUTORIAL_URL = "https://youtu.be/9q75hJLf7Ao"; 
+        const RESOURCES_URL = "https://claudielarouche.com/projects/wfa-resources/";
 
         const App = () => {
             const [entries, setEntries] = useState([]);
@@ -172,6 +173,9 @@
                             <div className="flex items-center gap-2">
                                 <a href="https://claudielarouche.com" target="_blank" className="flex items-center gap-2 px-3 py-1.5 bg-slate-100 text-slate-700 rounded-full hover:bg-blue-50 transition-all text-xs font-bold border border-slate-200">
                                     Claudie's Projects <i data-lucide="external-link" style={{width:12}}></i>
+                                </a>
+                                <a href={RESOURCES_URL} target="_blank" className="flex items-center gap-2 px-3 py-1.5 bg-blue-50 text-blue-700 rounded-full hover:bg-blue-100 transition-all text-xs font-bold border border-blue-200">
+                                    <i data-lucide="library" style={{width:14}}></i> WFA Resources
                                 </a>
                                 <a href={TUTORIAL_URL} target="_blank" className="flex items-center gap-2 px-3 py-1.5 bg-red-50 text-red-700 rounded-full hover:bg-red-100 transition-all text-xs font-bold border border-red-200">
                                     <i data-lucide="play-circle" style={{width:14}}></i> How to use this tool
