@@ -256,7 +256,7 @@
                                     <th onClick={() => requestSort('type')} className="p-3 text-[10px] font-bold text-slate-500 uppercase w-32 cursor-pointer hover:bg-slate-200 transition-colors">
                                         <div className="flex items-center">Type {getSortIcon('type')}</div>
                                     </th>
-                                    <th onClick={() => requestSort('level')} className="p-3 text-[10px) font-bold text-slate-500 uppercase w-24 cursor-pointer hover:bg-slate-200 transition-colors">
+                                    <th onClick={() => requestSort('level')} className="p-3 text-[10px] font-bold text-slate-500 uppercase w-24 cursor-pointer hover:bg-slate-200 transition-colors">
                                         <div className="flex items-center">Level {getSortIcon('level')}</div>
                                     </th>
                                     <th className="p-3 text-[10px] font-bold text-slate-500 uppercase min-w-[200px]">Tasks</th>
@@ -331,6 +331,13 @@
                             </div>
                         )}
                     </div>
+                    
+                    {/* Updated Footer with contact info */}
+                    <footer className="bg-white border-t py-4 px-6 text-center text-xs text-slate-500 shrink-0">
+                        <p>
+                            Built with love by <a href="https://claudielarouche.com" target="_blank" className="text-blue-600 hover:underline font-medium">Claudie Larouche</a> with help from <a href="https://gemini.google.com" target="_blank" className="text-blue-600 hover:underline font-medium">Google Gemini</a>
+                        </p>
+                    </footer>
                 </div>
             );
         };
