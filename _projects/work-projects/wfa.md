@@ -35,7 +35,7 @@ I will continue updating this web page as I discover new resources.
 
 An AI Chatbot trained on the WFA directive and union specific collective agreement:
 - [PIPSC](https://notebooklm.google.com/notebook/514666b6-0a26-4bc2-abe6-d57b051f4882){:target="_blank" rel="noopener noreferrer"}
-- [CAPE](https://notebooklm.google.com/notebook/6d25b591-1b97-4cb9-9373-9d9a1a90f578){:target="_blank" rel="noopener noreferrer"}
+- [CAPE](https://notebooklm.google.com/notebook/6d25b591-1b97-4cb9-9373-9d9a1a90f578){:target="_blank" rel="noopener noreferrer"} 
 - PSAC (Coming soon)
 
 ### Job Search and Application Websites
@@ -56,8 +56,6 @@ An AI Chatbot trained on the WFA directive and union specific collective agreeme
 - Your status (for example affected, opting, surplus) 
 - Whether the letter states a guarantee of a reasonable job offer 
 - Any explicit deadlines 
-
-Create your own copy of my [WFA Strategy Document](https://docs.google.com/spreadsheets/d/1uKV10MLZ37y9fpw_t7QRubA11iTwjBnk5LReo3w4ETY/edit?usp=sharing){:target="_blank" rel="noopener noreferrer"} to help you capture all the information you will need. 
 
 2) Identify which rules apply to you 
 - Confirm your union 
