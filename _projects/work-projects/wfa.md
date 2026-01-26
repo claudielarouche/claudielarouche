@@ -34,8 +34,8 @@ I will continue updating this web page as I discover new resources.
 ## AI Chatbot
 
 An AI Chatbot trained on the WFA directive and union specific collective agreement:
-- [PIPSC](https://notebooklm.google.com/notebook/514666b6-0a26-4bc2-abe6-d57b051f4882)
-- CAPE (Coming soon)
+- [PIPSC](https://notebooklm.google.com/notebook/514666b6-0a26-4bc2-abe6-d57b051f4882){:target="_blank" rel="noopener noreferrer"}
+- [CAPE](https://notebooklm.google.com/notebook/6d25b591-1b97-4cb9-9373-9d9a1a90f578){:target="_blank" rel="noopener noreferrer"}
 - PSAC (Coming soon)
 
 ### Job Search and Application Websites
