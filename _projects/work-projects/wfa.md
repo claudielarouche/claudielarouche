@@ -36,6 +36,7 @@ I will continue updating this web page as I discover new resources.
 An AI Chatbot trained on the WFA directive and union specific collective agreement:
 - [PIPSC](https://notebooklm.google.com/notebook/514666b6-0a26-4bc2-abe6-d57b051f4882)
 - CAPE (Coming soon)
+- PSAC (Coming soon)
 
 ### Job Search and Application Websites
 - [GC Jobs](https://www.canada.ca/en/services/jobs/opportunities/government.html){:target="_blank" rel="noopener noreferrer"}
