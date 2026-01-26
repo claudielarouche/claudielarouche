@@ -77,6 +77,9 @@ From the Work Force Adjustment Directive and union FAQs you will see three class
 - Update your résumé 
 - Update or create your LinkedIn profile 
 - Update your GC Jobs profile and set up job alerts for keywords that match your skills  
+- Join [GC Alternation unofficial Facebook Group](https://www.facebook.com/groups/1661797514529364){:target="_blank" rel="noopener noreferrer"}
+- Check the [TBS Alternation platform](https://portal-portail.tbs-sct.gc.ca/en/home){:target="_blank" rel="noopener noreferrer"} (Must be on the Government of Canada network to open this link)
+- Check if your union has their own platform
 
 You can use my [WFA Tracking Tool](https://claudielarouche.com/wfa-tool) to help you track all the people you have contacted during your job search.
 
