@@ -11,38 +11,14 @@ layout: projects
 Photo by <a href="https://unsplash.com/@nickmorrison?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Nick Morrison</a> on <a href="https://unsplash.com/photos/macbook-pro-near-white-open-book-FHnnjk1Yj7Y?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
       
 
-## What Is the Free Agent Program?
+Sadly, the Free Agent program announced that it would close in December 2025. Although I am no longer a Free Agent on paper, I will always remain a Free Agent in my heart!
 
-The **Free Agent Program** is an innovative approach to talent mobility within the Government of Canada. This approach allows pre-qualified federal employees, known as “Free Agents,” to support Government of Canada departments quickly and easily with their work. As a Free Agent, I bring specialized expertise in IT project management, data analysis, and digital service design to help teams accelerate their goals, share best practices, and deliver value faster.  
+## What was the Free Agent Program?
+
+The **Free Agent Program** was an innovative approach to talent mobility within the Government of Canada. This approach allowed pre-qualified federal employees, known as “Free Agents,” to support Government of Canada departments quickly and easily with their work.  
 > _Learn more about Canada's Free Agent program:_ 
   - [Free Agent Program overview][free-agent-link]{:target="_blank" rel="noopener noreferrer"}
   - [Hire a Free Agent][hire-a-free-agent]{:target="_blank" rel="noopener noreferrer"}
-
-## Why Work with Me?
-
-- **Cross-Departmental Perspective**  
-  I’ve collaborated with teams in IM, IT, HR, ATIP, Communications, Corporate Reporting and more! This has given me a broad view of government processes and the ability to bridge gaps between units.
-
-- **Agile and Collaborative**  
-  I use agile methods to deliver iterative improvements, ensuring stakeholders see value early and can course-correct quickly.
-
-- **Technical & Strategic Expertise**  
-  From Power BI reporting to Python automation, I have developed solid technical skills over the years. I combine them with strategic planning to drive outcomes.
-
-- **Initiative**
-  Show me a problem, I will propose a solution!
-
-## How to Hire Me
-
-To discuss your needs and explore how I can help:
-
-1. **Book a 15-minute chat** via email:  
-   [claudielarouche@gmail.com](mailto:claudielarouche@gmail.com)
-
-2. **Connect on LinkedIn** for full professional background and endorsements:  
-   [View my LinkedIn profile][linkedin-link]{:target="_blank" rel="noopener noreferrer"}
-
-> _I look forward to partnering with your team to deliver impactful, citizen-centric solutions!_
 
 ## My Free Agent Journey
 
