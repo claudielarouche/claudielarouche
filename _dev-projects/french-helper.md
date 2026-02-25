@@ -1,6 +1,6 @@
 ---
 layout: dev 
-title: Generate md files
+title: French helper
 ---
 
 <!DOCTYPE html>
