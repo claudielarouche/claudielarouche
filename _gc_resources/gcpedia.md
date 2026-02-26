@@ -26,4 +26,10 @@ Please note that you can only access the links below from the Government of Cana
 - [ttps://www.gcpedia.gc.ca/wiki/User:Claudie.Larouche](https://www.gcpedia.gc.ca/wiki/User:Claudie.Larouche/sandbox/OEE_Update)
 - How to style a GCPedia page so it looks awesome: [http://www.gcpedia.gc.ca/wiki/GCpedicure](http://www.gcpedia.gc.ca/wiki/GCpedicure)
 
+## Help 
+
+Here's a good website that provides lots of information on [how to use GCPedia](https://gcpedia.gctools-outilsgc.ca/en/support/solutions). 
+
+---
+
 If you would like to suggest a modification to this web page or if you have any questions or comments about GCPedia, feel free to reach out at claudielarouche@gmail.com :) 
