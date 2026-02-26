@@ -1,7 +1,7 @@
 ---
 ---
 
-console.log('v1');
+console.log('v2');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -73,11 +73,11 @@ function renderTable(data) {
 
     tableHtml += '<th>Actions</th></tr></thead><tbody>';
 
-    const filteredData = filterData(data, selectedFeatures);    
+    //const filteredData = filterData(data, selectedFeatures);    
     //const filteredData = data;
 
     // Iterate through each row of data
-    filteredData.forEach(row => {
+    data.forEach(row => {
         const currentDate = row['Date'] ? row['Date'] : '';
 
         // Start building the row with a conditional background color
