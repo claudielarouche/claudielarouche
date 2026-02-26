@@ -31,7 +31,7 @@ collections:
   playgrounds:
     output: true
     permalink: /playgrounds/:name/  
-  ps_resources:
+  gc_resources:
     output: true
     permalink: /gc-resources/:name/
 
