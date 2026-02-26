@@ -151,7 +151,8 @@ function renderTable(data) {
     if (!$.fn.dataTable.isDataTable('#dataTable')) {
         //const nameColumnIndex = headers.filter(h => h !== "Website").indexOf("Name");
         const nameColumnIndex = headers.indexOf("Park Name");
-        $('#dataTable').DataTable({
+        const orderSetting = nameColumnIndex >= 0 ? [[nameColumnIndex, "asc"]] : [];
+        const dt = $('#dataTable').DataTable({
             "pageLength": -1,
             "dom": 'Bfrtip', // 'B' for buttons
             "buttons": [
@@ -165,7 +166,7 @@ function renderTable(data) {
                 }
               
             ],
-        "order": [nameColumnIndex, 'asc'],
+        order: orderSetting,
             "language": {
                 "emptyTable": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>.",
                 "zeroRecords": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>."
@@ -174,7 +175,11 @@ function renderTable(data) {
     }
 
     
-    $('#dataTable_filter input').val(currentSearchValue).trigger('input');
+    //$('#dataTable_filter input').val(currentSearchValue).trigger('input');
+
+    // apply query param search properly
+    dt.search(currentSearchValue || '').draw();
+    filterMap();
 
     //If sortingState is set, sort the table by sortingState
     if (sortingState) {
@@ -307,7 +312,7 @@ function addMarkersToMap(data) {
                     ? `<a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}, Ottawa, Canada" target="_blank">${address}</a><br>` 
                     : '';
 
-                var popupContent = `<b>${item['Name']}</b><br>${addressLink}`;
+                var popupContent = `<b>${item['Park Name']}</b><br>${addressLink}`;
 
                 // Map column names to Google Form entry IDs
                 /*const formEntries = {
@@ -355,7 +360,6 @@ function addMarkersToMap(data) {
                 */
 
                 var fields = [
-                    'Park Name',
                     'Address',
                     'Observations'
                 ];

@@ -49,11 +49,6 @@ css:
     Reset filters to default
 </button>
 </div>
-<div class="mt-3">
-<a href="#csvData" class="btn btn-primary">
-        View data
-</a>
-</div>
 
 <div id="map" style="height: 400px; width: 100%;"></div>
 
