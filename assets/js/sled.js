@@ -1,7 +1,7 @@
 ---
 ---
 
-console.log('v2');
+console.log('v3');
 
 let sortingState;
 let originalData = []; // Initialize as an empty array
@@ -149,7 +149,8 @@ function renderTable(data) {
     document.getElementById('csvData').innerHTML = tableHtml;
 
     if (!$.fn.dataTable.isDataTable('#dataTable')) {
-        const nameColumnIndex = headers.filter(h => h !== "Website").indexOf("Name");
+        //const nameColumnIndex = headers.filter(h => h !== "Website").indexOf("Name");
+        const nameColumnIndex = headers.indexOf("Park Name");
         $('#dataTable').DataTable({
             "pageLength": -1,
             "dom": 'Bfrtip', // 'B' for buttons
@@ -185,7 +186,7 @@ function renderTable(data) {
     });
     
     // Add markers to the map based on the data
-    addMarkersToMap(filteredData);
+    addMarkersToMap(data);
 //	filterMap();
 }
 
