@@ -1,424 +1,221 @@
----
----
-
 console.log('v3');
 
 let sortingState;
-let originalData = []; // Initialize as an empty array
-var map; // Global map variable
+let originalData = [];
+var map;
 var markersGroup;
-// Global variable to hold all markers
 var allMarkers = [];
 
+let currentSearchValue = getQueryParam('search') || '';
+
 function getQueryParam(key) {
-    const params = new URLSearchParams(window.location.search);
-    return params.get(key);
+  const params = new URLSearchParams(window.location.search);
+  return params.get(key);
 }
 
-window.onload = function() {
-    initMap();
-    //markersGroup = L.layerGroup().addTo(map); // Initialize once and add to map
-    
-    // Update the path to your CSV file
-	const csvFilePath = '{{ "/assets/data/sled.csv" | relative_url }}';
+window.onload = function () {
+  initMap();
 
-    Papa.parse(csvFilePath, {
-        header: true,
-        download: true,
-        skipEmptyLines: true,
-        complete: function(results) {
-            if (results.errors.length > 0) {
-                console.error('Error parsing CSV:', results.errors);
-                document.getElementById('csvData').innerHTML = 'Error loading data.';
-            } else if (Array.isArray(results.data)) {
-                originalData = results.data;
-                renderTable(originalData);
-            } else {
-                console.error('Error loading data: Data is not an array.');
-                document.getElementById('csvData').innerHTML = 'Error loading data.';
-            }
-        },
-        error: function(error) {
-            console.error('Error fetching or parsing CSV:', error);
-            document.getElementById('csvData').innerHTML = 'Error loading data.';
-        }
-    });
-};
+  const csvFilePath = '{{ "/assets/data/sled.csv" | relative_url }}';
 
-function renderTable(data) {
-    // Ensure data is an array
-    if (!Array.isArray(data)) {
+  Papa.parse(csvFilePath, {
+    header: true,
+    download: true,
+    skipEmptyLines: true,
+    complete: function (results) {
+      if (results.errors.length > 0) {
+        console.error('Error parsing CSV:', results.errors);
+        document.getElementById('csvData').innerHTML = 'Error loading data.';
+        return;
+      }
+
+      if (!Array.isArray(results.data)) {
         console.error('Error loading data: Data is not an array.');
         document.getElementById('csvData').innerHTML = 'Error loading data.';
         return;
+      }
+
+      originalData = results.data;
+      renderTable(originalData);
+    },
+    error: function (error) {
+      console.error('Error fetching or parsing CSV:', error);
+      document.getElementById('csvData').innerHTML = 'Error loading data.';
     }
+  });
+};
 
-   let sortOrderIndex; 
+function renderTable(data) {
+  if (!Array.isArray(data)) {
+    console.error('Error loading data: Data is not an array.');
+    document.getElementById('csvData').innerHTML = 'Error loading data.';
+    return;
+  }
 
-    // Check if data is empty
-    if (data.length === 0) {
-        console.warn('No data available.');
-        document.getElementById('csvData').innerHTML = 'No data available.';
-        return;
-    }
+  if (data.length === 0) {
+    console.warn('No data available.');
+    document.getElementById('csvData').innerHTML = 'No data available.';
+    return;
+  }
 
-    const headers = Object.keys(data[0]);
+  const headers = Object.keys(data[0]);
 
-    let tableHtml = '<table id="dataTable"><thead><tr>';
+  // Destroy existing DataTable BEFORE replacing table HTML
+  if ($.fn.dataTable.isDataTable('#dataTable')) {
+    $('#dataTable').DataTable().destroy();
+  }
+
+  // Build table HTML
+  let tableHtml = '<table id="dataTable"><thead><tr>';
+  headers.forEach(header => {
+    tableHtml += `<th>${header}</th>`;
+  });
+  tableHtml += '</tr></thead><tbody>';
+
+  data.forEach(row => {
+    tableHtml += '<tr>';
+
     headers.forEach(header => {
-        
-        tableHtml += `<th>${header}</th>`;
-        
-    });
-
-    //tableHtml += '<th>Actions</th></tr></thead><tbody>';
-
-    //const filteredData = filterData(data, selectedFeatures);    
-    //const filteredData = data;
-
-    // Iterate through each row of data
-    data.forEach(row => {
-        const currentDate = row['Date'] ? row['Date'] : '';
-
-        // Start building the row with a conditional background color
-        tableHtml += '<tr>';
-
-        headers.forEach((header, index) => {
-
-            switch (header) {
-
-                case 'Address':
-                    // Create a link with the Google Maps URL for the address
-                    const address = row[header] ? row[header].trim() : '';
-                    if (address !== '') {
-                        const googleMapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)},+Ottawa,+Canada`;
-                        tableHtml += `<td><a href="${googleMapsLink}" target="_blank">${address}</a></td>`;
-                    } else {
-                        tableHtml += '<td></td>';
-                    }
-                    break;
-
-    
-                default:
-                    // Display other columns
-                    tableHtml += `<td>${row[header]}</td>`;
-                    break;
-            }
-            
-        });
-
-        //const formBaseUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdqjDjAsXrFFNz8JzLTYAoKO8GgWlDecYKcGArzvT_MtfpAAw/viewform?usp=pp_url";
-
-        // Map your columns to their corresponding Google Form entry IDs
-        /*const formEntries = {
-            "Name": "474032074",
-            "Address": "784475966",
-            "Washroom": "628270855",
-            "Picnic Table": "375545763",
-            "Zip Line": "1608430546",
-            "Baby Swing": "203282536",
-            "Water Play": "979858938",
-            "Water Fountain": "1510322977",
-            "Fenced area": "1159338706",
-            "Accessibility": "1895477988",
-            "Base": "1429659451",
-            "Parking": "1966588714",
-            "Note": "2049526552" 
-        };*/
-
-        // Build the URL with pre-filled values
-        /*let queryParams = [];
-
-        for (let field in formEntries) {
-            const entryId = formEntries[field];
-            const value = row[field] || '';
-            queryParams.push(`entry.${entryId}=${encodeURIComponent(value)}`);
+      switch (header) {
+        case 'Address': {
+          const address = row[header] ? row[header].trim() : '';
+          if (address !== '') {
+            const googleMapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)},+Ottawa,+Canada`;
+            tableHtml += `<td><a href="${googleMapsLink}" target="_blank">${address}</a></td>`;
+          } else {
+            tableHtml += '<td></td>';
+          }
+          break;
         }
-
-        const formUrl = `${formBaseUrl}&${queryParams.join("&")}`;
-
-        // Add the button to your table
-        tableHtml += `<td><a href="${formUrl}" target="_blank">Submit data</a></td>`;*/
-
-        
-        tableHtml += '</tr>';
+        default:
+          tableHtml += `<td>${row[header] ?? ''}</td>`;
+          break;
+      }
     });
 
-    tableHtml += '</tbody></table>';
+    tableHtml += '</tr>';
+  });
 
-    document.getElementById('csvData').innerHTML = tableHtml;
+  tableHtml += '</tbody></table>';
+  document.getElementById('csvData').innerHTML = tableHtml;
 
-    if (!$.fn.dataTable.isDataTable('#dataTable')) {
-        //const nameColumnIndex = headers.filter(h => h !== "Website").indexOf("Name");
-        const nameColumnIndex = headers.indexOf("Park Name");
-        const orderSetting = nameColumnIndex >= 0 ? [[nameColumnIndex, "asc"]] : [];
-        const dt = $('#dataTable').DataTable({
-            "pageLength": -1,
-            "dom": 'Bfrtip', // 'B' for buttons
-            "buttons": [
-                'colvis' // Column visibility button
-            ],
+  // Init DataTable and keep a usable reference every time
+  const nameColumnIndex = headers.indexOf('Park Name');
+  const orderSetting = nameColumnIndex >= 0 ? [[nameColumnIndex, 'asc']] : [];
 
-        "columnDefs": [
-                {
-                "targets": [0, 1, 2, 3, 4, 5, 6],
-                "visible": false 
-                }
-              
-            ],
-        order: orderSetting,
-            "language": {
-                "emptyTable": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>.",
-                "zeroRecords": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>."
-            }
-        });
+  const dt = $('#dataTable').DataTable({
+    pageLength: -1,
+    dom: 'Bfrtip',
+    buttons: [
+      {
+        extend: 'colvis',
+        columns: ':all'
+      }
+    ],
+    columnDefs: [
+      {
+        targets: [0, 1, 2, 3, 4, 5, 6],
+        visible: false
+      }
+    ],
+    order: orderSetting,
+    language: {
+      emptyTable: "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>.",
+      zeroRecords: "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>."
     }
+  });
 
-    
-    //$('#dataTable_filter input').val(currentSearchValue).trigger('input');
+  // Reapply prior sort state if you captured it
+  if (sortingState && sortingState.order) {
+    dt.order(sortingState.order).draw();
+  }
 
-    // apply query param search properly
-    dt.search(currentSearchValue || '').draw();
-    filterMap();
+  // Apply query param search using the DataTables API (not by triggering input)
+  dt.search(currentSearchValue || '').draw();
 
-    //If sortingState is set, sort the table by sortingState
-    if (sortingState) {
-        $('#dataTable').DataTable().order(sortingState.order).draw();
-    }
-
-    $('#dataTable_filter input').on('input', function() {        
-        filterMap();
+  // Ensure only one handler is attached
+  $('#dataTable_filter input')
+    .off('input.sled')
+    .on('input.sled', function () {
+      filterMap();
     });
-    
-    // Add markers to the map based on the data
-    addMarkersToMap(data);
-//	filterMap();
+
+  // Rebuild markers from the full dataset, then filter markers based on current table search box
+  addMarkersToMap(data);
+  filterMap();
 }
-
-
-/*function filterData(data, selectedFeatures) {
-    return data.filter(row => {
-        for (let feature of selectedFeatures) {
-            switch (feature) {
-                case "Splash Pad":
-                    {
-                        const waterPlayValue = (row["Water Play"] || '').toLowerCase();
-                        if (!waterPlayValue.includes("splash pad")) {
-                            return false;
-                        }
-                        break;
-                    }
-
-                // Add future special cases here, for example:
-                // case "Accessible":
-                //     const accessValue = (row["Accessibility"] || '').toLowerCase();
-                //     if (!accessValue.includes("wheelchair")) {
-                //         return false;
-                //     }
-                //     break;
-
-                default:
-                    {
-                        const value = (row[feature] || '').toLowerCase();
-                        if (!value.includes("yes")) {
-                            return false;
-                        }
-                        break;
-                    }
-            }
-        }
-        return true;
-    });
-}*/
-
-
-let currentSearchValue = getQueryParam('search'); // Variable to store the current search value
 
 function clearAllFilters() {
-    // Store the current sorting state
+  // Store sorting state before wipe
+  if ($.fn.dataTable.isDataTable('#dataTable')) {
     sortingState = $('#dataTable').DataTable().state();
-    
-    // Unchecl all the "Select Feature" checkboxes
-   /*document.querySelectorAll('.featureCheckbox').forEach(checkbox => {
-        checkbox.checked = false;
-        selectedFeatures.length = 0; // clear the array
-    });*/
+  }
 
+  const dt = $('#dataTable').DataTable();
+  dt.search('').draw();
+  currentSearchValue = '';
 
-    // Clear the DataTable search box
-    var dataTable = $('#dataTable').DataTable();
-    dataTable.search('').draw();
-    currentSearchValue = "";
-
-    // Render the table with cleared filters
-    renderTable(originalData);
+  renderTable(originalData);
 }
-
-/*const selectedFeatures = [];
-
-document.querySelectorAll('.featureCheckbox').forEach(function (checkbox) {
-    checkbox.addEventListener('change', function () {
-    // Store the current sorting state
-        sortingState = $('#dataTable').DataTable().state();
-        currentSearchValue = $('#dataTable_filter input').val();
-        if (checkbox.checked) {
-            if (!selectedFeatures.includes(checkbox.value)) {
-                selectedFeatures.push(checkbox.value);
-            }
-        } else {
-            const index = selectedFeatures.indexOf(checkbox.value);
-            if (index !== -1) {
-                selectedFeatures.splice(index, 1);
-            }
-        }
-        renderTable(originalData);
-    });
-
-    // Initialize with all checkboxes unchecked by default
-    checkbox.checked = false;
-    
-});*/
-
 
 function initMap() {
-    map = L.map('map').setView([45.4215, -75.6972], 12);
+  map = L.map('map').setView([45.4215, -75.6972], 12);
 
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
 
-    markersGroup = L.layerGroup().addTo(map);
-
-  
-
-    return map;
+  markersGroup = L.layerGroup().addTo(map);
+  return map;
 }
-
-
 
 function addMarkersToMap(data) {
-    markersGroup.clearLayers(); // Clear existing markers
-    allMarkers = []; // Reset the allMarkers array
+  markersGroup.clearLayers();
+  allMarkers = [];
 
-    
+  data.forEach(item => {
+    if (item['Latitude'] && item['Longitude']) {
+      const lat = parseFloat(item['Latitude']);
+      const lng = parseFloat(item['Longitude']);
 
-    data.forEach(item => {
-        if (item['Latitude'] && item['Longitude']) {
-            var lat = parseFloat(item['Latitude']);
-            var lng = parseFloat(item['Longitude']);
-            if (!isNaN(lat) && !isNaN(lng)) {
-                var address = item['Address'] ? item['Address'].trim() : '';
-                var addressLink = address 
-                    ? `<a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}, Ottawa, Canada" target="_blank">${address}</a><br>` 
-                    : '';
+      if (!isNaN(lat) && !isNaN(lng)) {
+        const address = item['Address'] ? item['Address'].trim() : '';
+        const addressLink = address
+          ? `<a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}, Ottawa, Canada" target="_blank">${address}</a><br>`
+          : '';
 
-                var popupContent = `<b>${item['Park Name']}</b><br>${addressLink}`;
+        let popupContent = `<b>${item['Park Name'] || ''}</b><br>${addressLink}`;
 
-                // Map column names to Google Form entry IDs
-                /*const formEntries = {
-                    "Name": "474032074",
-                    "Address": "784475966",
-                    "Washroom": "628270855",
-                    "Picnic Table": "375545763",
-                    "Zip Line": "1608430546",
-                    "Baby Swing": "203282536",
-                    "Water Play": "979858938",
-                    "Water Fountain": "1510322977",
-                    "Fenced area": "1159338706",
-                    "Accessibility": "1895477988",
-                    "Base": "1429659451",
-                    "Parking": "1966588714",
-                    "Note": "2049526552" // Replace if you get a real entry ID
-                };
-
-                // Fields to include in the popup
-                var fields = [
-                    'Washroom',
-                    'Picnic Table',
-                    'Zip Line',
-                    'Baby Swing',
-                    'Water Play',
-                    'Water Fountain',
-                    'Fenced area',
-                    'Accessibility',
-                    'Base',
-                    'Parking',
-                    'Note'
-                ];
-
-                const queryParams = [];
-
-                for (let fieldName  in formEntries) {
-                    const entryId = formEntries[fieldName ];
-                    const value = item[fieldName ] ? item[fieldName ].toString().trim() : '';
-                    queryParams.push(`entry.${entryId}=${encodeURIComponent(value)}`);
-                }
-
-                const formUrl = `https://docs.google.com/forms/d/e/1FAIpQLSdqjDjAsXrFFNz8JzLTYAoKO8GgWlDecYKcGArzvT_MtfpAAw/viewform?usp=pp_url&${queryParams.join("&")}`;
-                const submitLink = `<a href="${formUrl}" target="_blank"><strong>Submit data</strong></a><br>`;
-
-                */
-
-                var fields = [
-                    'Address',
-                    'Observations'
-                ];
-
-                fields.forEach(function(field) {
-                    if (item[field] && item[field].trim() !== '') {
-                        popupContent += `<b>${field}:</b> ${item[field]}<br>`;
-                    }
-                });
-
-                // Compose popup content
-                //popupContent += `${submitLink}`;
-
-                var marker = L.marker([lat, lng]).bindPopup(popupContent);
-
-                markersGroup.addLayer(marker); // Add new marker to the group
-                allMarkers.push({ marker: marker, data: item }); //store all data for filtering
-            }
-
-        }
-    });
-} 
-
-function filterMap() {
-    markersGroup.clearLayers(); // Clear existing markers
-    currentSearchValue = $('#dataTable_filter input').val().toLowerCase();
-
-    if (currentSearchValue) {
-        allMarkers.forEach(function(obj) {
-            const values = Object.values(obj.data).join(" ").toLowerCase();
-            if (values.includes(currentSearchValue)) {
-                markersGroup.addLayer(obj.marker);
-            }
+        const fields = ['Address', 'Observations'];
+        fields.forEach(field => {
+          if (item[field] && item[field].toString().trim() !== '') {
+            popupContent += `<b>${field}:</b> ${item[field]}<br>`;
+          }
         });
-    } else {
-        allMarkers.forEach(function(obj) {
-            markersGroup.addLayer(obj.marker);
-        });
+
+        const marker = L.marker([lat, lng]).bindPopup(popupContent);
+        markersGroup.addLayer(marker);
+        allMarkers.push({ marker: marker, data: item });
+      }
     }
+  });
 }
 
+function filterMap() {
+  markersGroup.clearLayers();
 
+  const input = $('#dataTable_filter input');
+  const value = (input.val() || '').toString().toLowerCase();
+  currentSearchValue = value;
 
-/*document.addEventListener('DOMContentLoaded', function() {
-    const selectAllFeaturesButton = document.getElementById('selectAllFeaturesButton');
-    const unselectAllFeaturesButton = document.getElementById('unselectAllFeaturesButton');
-    const featuresCheckboxes = document.querySelectorAll('.featureCheckbox');
-
-    selectAllFeaturesButton.addEventListener('click', function() {
-        featuresCheckboxes.forEach(cb => {
-            cb.checked = true;
-            cb.dispatchEvent(new Event('change', { bubbles: true }));
-        });
+  if (value) {
+    allMarkers.forEach(obj => {
+      const values = Object.values(obj.data).join(' ').toLowerCase();
+      if (values.includes(value)) {
+        markersGroup.addLayer(obj.marker);
+      }
     });
-
-    unselectAllFeaturesButton.addEventListener('click', function() {
-        featuresCheckboxes.forEach(cb => {
-            cb.checked = false;
-            cb.dispatchEvent(new Event('change', { bubbles: true }));
-        });
-    });  
-});*/
+  } else {
+    allMarkers.forEach(obj => markersGroup.addLayer(obj.marker));
+  }
+}
