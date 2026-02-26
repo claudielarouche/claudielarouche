@@ -30,7 +30,10 @@ collections:
     output: true
   playgrounds:
     output: true
-    permalink: /playgrounds/:name/
+    permalink: /playgrounds/:name/  
+  ps_resources:
+    output: true
+    permalink: /gc-resources/:name/
 
 google_analytics: G-YWMRD8LX5P
 
