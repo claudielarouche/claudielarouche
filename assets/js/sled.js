@@ -1,7 +1,7 @@
 ---
 ---
 
-console.log('v4');
+console.log('v5');
 
 let sortingState;
 let originalData = [];
@@ -109,12 +109,7 @@ function renderTable(data) {
   const dt = $('#dataTable').DataTable({
     pageLength: -1,
     dom: 'Bfrtip',
-    buttons: [
-      {
-        extend: 'colvis',
-        columns: ':all'
-      }
-    ],
+    buttons: ['colvis'],
     columnDefs: [
       {
         targets: [0, 1, 2, 3, 4, 5, 6],
