@@ -5,7 +5,7 @@ image: https://claudielarouche.com/assets/img/sled.jpg
 image-hero: https://claudielarouche.com/assets/img/sled.jpg
 tags: [Ottawa]
 layout: projects
-permalink: /projects/sled
+permalink: /projects/sled/
 js:
   - https://code.jquery.com/jquery-3.6.0.min.js
   - https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js
