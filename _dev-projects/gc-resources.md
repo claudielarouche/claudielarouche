@@ -7,7 +7,7 @@ permalink: /gc-resources/
 Browse topics:
 
 <ul>
-  {% assign topics = site.ps_resources | sort: "order" %}
+  {% assign topics = site.gc_resources | sort: "order" %}
   {% for t in topics %}
     <li>
       <a href="{{ t.url | relative_url }}">{{ t.title }}</a>
