@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: dev
 title: School notifications
 permalink: /dev-projects/notifications/
 ---
