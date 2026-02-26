@@ -9,6 +9,16 @@ Hello!
 
 The purpose of this page is simply to let you all know what I've been up to! :) Enjoy!
 
+## February 2026
+
+- I was hired by Public Prosecution Service of Canada. Phew!
+- I made myself a Claude tool to help me learn Serbian. I also made myself an AI-enhanced note taking tool with Claude (very much inspired by [Mem](https://mem.ai/){:target="_blank" rel="noopener noreferrer"}). If you really want to see those please [contact me](https://claudielarouche.com/contact/).
+- Created a new web page which I hope will eventually contain lots of [resources for Canadian Public Servants](https://claudielarouche.com/projects/gc-resources/). For now, it only has a page about GCPedia.
+
+## January 2026
+
+- To help others like me affected by WFA, I created a [WFA Resources page](https://claudielarouche.com/wfa) and a [WFA tracker tool](https://claudielarouche.com/wfa-tool). 
+
 ## December 2025
 
 - Moved the [EarlyON project](https://claudielarouche.com/projects/early-on/) to archive, probably should have done that like a year ago haha. 
