@@ -367,7 +367,7 @@ function addMarkersToMap(data) {
                 });
 
                 // Compose popup content
-                popupContent += `${submitLink}`;
+                //popupContent += `${submitLink}`;
 
                 var marker = L.marker([lat, lng]).bindPopup(popupContent);
 
