@@ -17,7 +17,7 @@ The purpose of this page is simply to let you all know what I've been up to! :) 
 
 ## January 2026
 
-- To help others like me affected by Workforce Adjustment (WFA), I created a [WFA Resources page](https://claudielarouche.com/wfa) and a [WFA tracker tool](https://claudielarouche.com/wfa-tool). 
+- To help others like me affected by Workforce Adjustment (WFA), I created a [WFA tracker tool](https://claudielarouche.com/wfa-tool). 
 
 ## December 2025
 
