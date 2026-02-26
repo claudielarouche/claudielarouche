@@ -354,6 +354,12 @@ function addMarkersToMap(data) {
 
                 */
 
+                var fields = [
+                    'Park Name',
+                    'Address',
+                    'Observations'
+                ];
+
                 fields.forEach(function(field) {
                     if (item[field] && item[field].trim() !== '') {
                         popupContent += `<b>${field}:</b> ${item[field]}<br>`;
