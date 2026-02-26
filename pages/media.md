@@ -39,9 +39,9 @@ Here are some interviews I have given, articles written about my projects, confe
 
 ## 📣 Presentation for Busy Moms Expo
 ![Busy Mom Expo]({{ '/assets/img/busy-mom-expo.jpg' | relative_url }})  
-**Type:** 20 minutes presentation  - The Efficient Mom: Systems that Save Your Sanity
+**Type:** 20 minutes presentation  - The Efficient Mom: Systems that Save Your Sanity  
 **Date:** June 7, 2025  
-**Details:** In this practical and inspiring session, Claudie Larouche shares time-saving tools, local resources, and creative strategies to help busy Ottawa moms become more efficient. You’ll leave with fresh ideas you can use right away and inspiration to make everyday life a little easier.
+**Details:** In this practical and inspiring session, Claudie Larouche shares time-saving tools, local resources, and creative strategies to help busy Ottawa moms become more efficient. You’ll leave with fresh ideas you can use right away and inspiration to make everyday life a little easier.  
 
 ---
 
