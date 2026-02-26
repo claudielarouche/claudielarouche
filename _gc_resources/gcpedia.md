@@ -22,13 +22,13 @@ If you are thinking of creating a landing page to present what your team does, i
 
 Please note that you can only access the links below from the Government of Canada network. 
 
-- [https://www.gcpedia.gc.ca/wiki/List_of_GCpedicure_and_GCbootstrap_pages](https://www.gcpedia.gc.ca/wiki/List_of_GCpedicure_and_GCbootstrap_pages){:target="_blank" rel="noopener noreferrer"} will show you some GCPedia pages using advanced coding that allow you to improve the look.
-- [ttps://www.gcpedia.gc.ca/wiki/User:Claudie.Larouche](https://www.gcpedia.gc.ca/wiki/User:Claudie.Larouche/sandbox/OEE_Update)
-- How to style a GCPedia page so it looks awesome: [http://www.gcpedia.gc.ca/wiki/GCpedicure](http://www.gcpedia.gc.ca/wiki/GCpedicure)
+- [This page](https://www.gcpedia.gc.ca/wiki/List_of_GCpedicure_and_GCbootstrap_pages){:target="_blank" rel="noopener noreferrer"} contains links to GCPedia pages using advanced coding that allow you to improve the look.
+- [My own GCPedia page](https://www.gcpedia.gc.ca/wiki/User:Claudie.Larouche/sandbox/OEE_Update){:target="_blank" rel="noopener noreferrer"}
+- How to style a GCPedia page so it looks awesome: [GCpedicure](http://www.gcpedia.gc.ca/wiki/GCpedicure){:target="_blank" rel="noopener noreferrer"}
 
 ## Help 
 
-Here's a good website that provides lots of information on [how to use GCPedia](https://gcpedia.gctools-outilsgc.ca/en/support/solutions). 
+Here's a good website that provides lots of information on [how to use GCPedia](https://gcpedia.gctools-outilsgc.ca/en/support/solutions){:target="_blank" rel="noopener noreferrer"}. 
 
 ---
 
