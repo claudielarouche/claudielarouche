@@ -71,7 +71,7 @@ function renderTable(data) {
         
     });
 
-    tableHtml += '<th>Actions</th></tr></thead><tbody>';
+    //tableHtml += '<th>Actions</th></tr></thead><tbody>';
 
     //const filteredData = filterData(data, selectedFeatures);    
     //const filteredData = data;
