@@ -1,6 +1,6 @@
 ---
 layout: dev
-title: AI in the Government of Canada
+title: GCExchange
 order: 1
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: dev
-title: AI in the Government of Canada
+title: GCPedia
 order: 1
 ---
 
