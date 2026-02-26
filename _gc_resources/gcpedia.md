@@ -1,5 +1,5 @@
 ---
-layout: dev
+layout: page
 title: GCPedia
 order: 1
 ---

@@ -1,7 +1,12 @@
 ---
-layout: dev
+layout: projects
 title: Resources for Canadian Public Servants
 permalink: /gc-resources/
+tags: [Work]
+permalink: /projects/gc-resources/
+image: https://claudielarouche.com/assets/img/canada-flag.jpg
+image_hero: https://claudielarouche.com/assets/img/canada-flag.jpg
+description: Useful resource for Government of Canada employees
 ---
 
 Browse topics:
