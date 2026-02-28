@@ -1,5 +1,5 @@
 ---
-title: List of Places to Sled in Ottawa
+title: List of Sledding Hills in Ottawa
 description: A map and list of all the sledding hills in Ottawa!
 image: https://claudielarouche.com/assets/img/sled.jpg
 image-hero: https://claudielarouche.com/assets/img/sled.jpg
