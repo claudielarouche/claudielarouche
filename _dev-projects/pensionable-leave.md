@@ -147,6 +147,15 @@ It does not validate special cases, exceptions, buyback rules, or plan specific 
       .replace(/'/g, "&#039;");
   }
 
+function formatYearsDays(totalDays) {
+  var n = Number(totalDays);
+  if (!Number.isFinite(n) || n < 0) n = 0;
+  n = Math.round(n); // totals are integer unique days
+  var years = Math.floor(n / 365);
+  var days = n % 365;
+  return { years: years, days: days };
+}
+
   function clampInt(n, min, max) {
     n = Number(n);
     if (!Number.isFinite(n)) return min;
@@ -454,46 +463,121 @@ It does not validate special cases, exceptions, buyback rules, or plan specific 
     return Object.keys(set).length;
   }
 
-  function renderTotals() {
-    // Part 1 totals
-    var p1Unique = uniqueDaysFromLines(
-      state.part1Lines,
-      function (l) { return l.startDate; },
-      function (l) { return l.endDate; }
-    );
+  function findOverlapDaysBetweenBuckets(part1Lines, part2Lines) {
+  var p1 = Object.create(null);
+  var p2 = Object.create(null);
 
-    var p1Over = Math.max(0, p1Unique - CAP_PARENTING);
-    var p1Remaining = Math.max(0, CAP_PARENTING - p1Unique);
+  function addRangeToSet(lines, setObj) {
+    for (var i = 0; i < lines.length; i++) {
+      var s = parseDate(lines[i].startDate);
+      var e = parseDate(lines[i].endDate);
+      if (!s || !e) continue;
+      if (e.getTime() < s.getTime()) continue;
 
-    var p1Html = "";
-    p1Html += "<p><strong>Parenting bucket total</strong></p>";
-    p1Html += "<p>Unique days counted: " + escapeHtml(p1Unique) + " out of " + escapeHtml(CAP_PARENTING) + "</p>";
-    p1Html += "<p>Remaining: " + escapeHtml(p1Remaining) + "</p>";
-    if (p1Over > 0) {
-      p1Html += "<p style='color:red'><strong>Over cap by:</strong> " + escapeHtml(p1Over) + " days</p>";
-      p1Html += "<p style='color:red'>Planning note: days over the 3 year cap may need to be tracked under the 5 year bucket depending on your situation.</p>";
+      var cur = s;
+      while (cur.getTime() <= e.getTime()) {
+        setObj[formatDateUTC(cur)] = true;
+        cur = addDaysUTC(cur, 1);
+      }
     }
-    part1TotalsEl.innerHTML = p1Html;
-
-    // Part 2 totals
-    var p2Unique = uniqueDaysFromLines(
-      state.part2Lines,
-      function (l) { return l.startDate; },
-      function (l) { return l.endDate; }
-    );
-
-    var p2Over = Math.max(0, p2Unique - CAP_GENERAL);
-    var p2Remaining = Math.max(0, CAP_GENERAL - p2Unique);
-
-    var p2Html = "";
-    p2Html += "<p><strong>General LWOP bucket total</strong></p>";
-    p2Html += "<p>Unique days counted: " + escapeHtml(p2Unique) + " out of " + escapeHtml(CAP_GENERAL) + "</p>";
-    p2Html += "<p>Remaining: " + escapeHtml(p2Remaining) + "</p>";
-    if (p2Over > 0) {
-      p2Html += "<p style='color:red'><strong>Over cap by:</strong> " + escapeHtml(p2Over) + " days</p>";
-    }
-    part2TotalsEl.innerHTML = p2Html;
   }
+
+  addRangeToSet(part1Lines, p1);
+  addRangeToSet(part2Lines, p2);
+
+  var overlaps = [];
+  var keys = Object.keys(p1);
+  for (var k = 0; k < keys.length; k++) {
+    if (p2[keys[k]]) overlaps.push(keys[k]);
+  }
+
+  overlaps.sort();
+  return overlaps;
+}
+
+function renderTotals() {
+  // Part 1 totals
+  var p1Unique = uniqueDaysFromLines(
+    state.part1Lines,
+    function (l) { return l.startDate; },
+    function (l) { return l.endDate; }
+  );
+
+  var p1Over = Math.max(0, p1Unique - CAP_PARENTING);
+  var p1Remaining = Math.max(0, CAP_PARENTING - p1Unique);
+
+  var p1YD = formatYearsDays(p1Unique);
+  var p1RemainingYD = formatYearsDays(p1Remaining);
+  var p1OverYD = formatYearsDays(p1Over);
+
+  // Part 2 totals
+  var p2Unique = uniqueDaysFromLines(
+    state.part2Lines,
+    function (l) { return l.startDate; },
+    function (l) { return l.endDate; }
+  );
+
+  var p2Over = Math.max(0, p2Unique - CAP_GENERAL);
+  var p2Remaining = Math.max(0, CAP_GENERAL - p2Unique);
+
+  var p2YD = formatYearsDays(p2Unique);
+  var p2RemainingYD = formatYearsDays(p2Remaining);
+  var p2OverYD = formatYearsDays(p2Over);
+
+  // Overlap warning
+  var overlaps = findOverlapDaysBetweenBuckets(state.part1Lines, state.part2Lines);
+  var overlapWarning = "";
+  if (overlaps.length > 0) {
+    var previewCount = Math.min(10, overlaps.length);
+    var preview = overlaps.slice(0, previewCount).join(", ");
+    overlapWarning = "<p style='color:red'><strong>Warning:</strong> " +
+      "You have " + escapeHtml(overlaps.length) + " calendar day(s) that appear in both buckets. " +
+      "This page does not de duplicate across buckets, so those days may be effectively counted twice in the combined total. " +
+      "First overlapping dates: " + escapeHtml(preview) +
+      (overlaps.length > previewCount ? " ..." : "") +
+      "</p>";
+  }
+
+  // Render Part 1
+  var p1Html = "";
+  p1Html += "<p><strong>Parenting bucket total</strong></p>";
+  p1Html += "<p>Unique days counted: " + escapeHtml(p1Unique) + " out of " + escapeHtml(CAP_PARENTING) + "</p>";
+  p1Html += "<p>That is: " + escapeHtml(p1YD.years) + " years " + escapeHtml(p1YD.days) + " days</p>";
+  p1Html += "<p>Remaining: " + escapeHtml(p1Remaining) + " days</p>";
+  p1Html += "<p>Remaining as: " + escapeHtml(p1RemainingYD.years) + " years " + escapeHtml(p1RemainingYD.days) + " days</p>";
+
+  if (p1Over > 0) {
+    p1Html += "<p style='color:red'><strong>Over cap by:</strong> " + escapeHtml(p1Over) + " days</p>";
+    p1Html += "<p style='color:red'><strong>Over cap as:</strong> " + escapeHtml(p1OverYD.years) + " years " + escapeHtml(p1OverYD.days) + " days</p>";
+    p1Html += "<p style='color:red'>Planning note: days over the 3 year cap may need to be tracked under the 5 year bucket depending on your situation.</p>";
+  }
+  part1TotalsEl.innerHTML = p1Html;
+
+  // Render Part 2
+  var p2Html = "";
+  p2Html += overlapWarning;
+
+  p2Html += "<p><strong>General LWOP bucket total</strong></p>";
+  p2Html += "<p>Unique days counted: " + escapeHtml(p2Unique) + " out of " + escapeHtml(CAP_GENERAL) + "</p>";
+  p2Html += "<p>That is: " + escapeHtml(p2YD.years) + " years " + escapeHtml(p2YD.days) + " days</p>";
+  p2Html += "<p>Remaining: " + escapeHtml(p2Remaining) + " days</p>";
+  p2Html += "<p>Remaining as: " + escapeHtml(p2RemainingYD.years) + " years " + escapeHtml(p2RemainingYD.days) + " days</p>";
+
+  if (p2Over > 0) {
+    p2Html += "<p style='color:red'><strong>Over cap by:</strong> " + escapeHtml(p2Over) + " days</p>";
+    p2Html += "<p style='color:red'><strong>Over cap as:</strong> " + escapeHtml(p2OverYD.years) + " years " + escapeHtml(p2OverYD.days) + " days</p>";
+  }
+
+  // Combined totals (no cross bucket de dup)
+  var combined = p1Unique + p2Unique;
+  var combinedYD = formatYearsDays(combined);
+
+  p2Html += "<p><strong>Combined total across both buckets</strong></p>";
+  p2Html += "<p>Total days: " + escapeHtml(combined) + " days</p>";
+  p2Html += "<p>That is: " + escapeHtml(combinedYD.years) + " years " + escapeHtml(combinedYD.days) + " days</p>";
+
+  part2TotalsEl.innerHTML = p2Html;
+}
 
   function renderAll() {
     ensurePart1LinesForChildrenCount();
