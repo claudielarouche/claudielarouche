@@ -3,13 +3,15 @@ layout: dev
 title: LWOP pensionable limit calculator
 ---
 
+This tool was built in partnership with <a href="https://www.linkedin.com/in/amylrichardson/" target="_blank" rel="noopener noreferrer">Amy Richardson</a>.
+
 # LWOP pensionable limit calculator
 
 This page is a planning tool to help you estimate pensionable LWOP usage against the commonly cited caps referenced in public service pension guidance and the Income Tax Act.
 
-Reference links  
-<a href="https://laws.justice.gc.ca/eng/acts/I-3.3/">Income Tax Act</a>  
-<a href="https://www.canada.ca/en/public-services-procurement/services/pay-pension/public-service-pension-plan/information-packages-kits/leave-without-pay.html">Public service pension plan LWOP information</a>
+Reference links
+<a href="https://laws.justice.gc.ca/eng/acts/I-3.3/" target="_blank" rel="noopener noreferrer">Income Tax Act</a>
+<a href="https://www.canada.ca/en/public-services-procurement/services/pay-pension/public-service-pension-plan/information-packages-kits/leave-without-pay.html" target="_blank" rel="noopener noreferrer">Public service pension plan LWOP information</a>
 
 Notes  
 This tool does not validate whether a specific leave period is eligible for a specific bucket based on timing around birth or adoption. It assumes you enter periods in the correct section. If rules around extended leave options change how eligibility works, you should rely on official guidance or the Pension Centre.
