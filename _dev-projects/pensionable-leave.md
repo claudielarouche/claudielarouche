@@ -74,7 +74,7 @@ How many children did you take maternity and or parental leave for
 
 ## Exact math used
 
-Caps used by this tool for planning
+### Caps used by this tool for planning
 
 Parenting bucket cap  
 365 × 3 = 1095 calendar days
@@ -82,31 +82,32 @@ Parenting bucket cap
 General LWOP bucket cap  
 365 × 5 = 1825 calendar days
 
-How days are counted per line
+### How days are counted per line
 
 If both Start date and End date are valid, the line day count is:
 
 End date minus Start date plus 1  
+
 This is inclusive counting of calendar days, including weekends
 
 If a line has an invalid date or End date is before Start date, that line day count is blank and it is not included in totals
 
-How totals are counted inside each bucket
+### How totals are counted inside each bucket
 
 Totals are de duplicated by calendar day within each bucket
 
 If two lines in the same bucket overlap on the calendar, overlapping days are only counted once in the bucket total
 
-Per child guidance shown by the tool
+### Per child guidance shown by the tool
 
 For Part 1, each child line is flagged if its line day count exceeds 365 days  
 This is a planning helper only, not an eligibility decision
 
-Over cap reporting
+### Over cap reporting
 
 If a bucket total exceeds its cap, the tool reports the number of days over cap as not pensionable for planning purposes
 
-What the tool does not validate
+### What the tool does not validate
 
 It does not validate the eligibility window around a birth or adoption date  
 It does not validate special cases, exceptions, buyback rules, or plan specific interpretations
