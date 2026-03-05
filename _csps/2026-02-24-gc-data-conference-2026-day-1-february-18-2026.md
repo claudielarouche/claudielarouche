@@ -8,7 +8,7 @@ layout: csps
 **Panelists:**
 - **Nick Frost** – Co-founder, Cohere
 - **Bailey Kacsmar** – Fellow, Alberta Machine Intelligence Institute (Amii)
-- **Abdi Adid** – Professor, University of Toronto Faculty of Law; Canada Research Chair in AI & Access to Justice
+- **Abdi Aidid** – Professor, University of Toronto Faculty of Law; Canada Research Chair in AI & Access to Justice
 
 ### Why Data Matters
 - Evidence-based policymaking is still not the default in government — it remains more of an aspiration than standard practice

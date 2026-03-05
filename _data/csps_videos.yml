@@ -1,3 +1,34 @@
+PL-MHg-ge7U:
+  short_title: "GC Data Conference 2026 - Day 2"
+  long_title:  "GC Data Conference 2026 - Day 2, Webcast 2, PM Concurrent Sessions (1:00 pm to 3:00 pm)"
+  description: "This panel discussion explores how Canada is leveraging geospatial data and artificial intelligence to improve emergency response, disaster prevention, and critical infrastructure protection, featuring experts from government agencies, research institutes, and forest services."
+  source_url:  "https://www.youtube.com/watch?v=PL-MHg-ge7U"
+  collection:  "GC Data Conference 2026"
+  date_published: 2026-02-24
+  duration:    "1h 41m 00s"
+  advice:
+    - "Access publicly available geospatial data through the Canada Centre for Mapping and Earth Observation website using the QR code or direct website link provided in their materials."
+    - "Explore the AI factory platform that has been available since October 2023 to accelerate production of geospatial data and automate mapping processes."
+    - "Use radar satellite imagery instead of optical imagery when smoke or clouds block visibility during wildfire or emergency situations to maintain assessment capabilities."
+    - "Combine before-and-after satellite imagery with existing building or infrastructure data to rapidly identify damaged or destroyed structures following disasters."
+    - "Leverage change detection capabilities by integrating multiple data sources to obtain real-time overviews of emergency situations across different geographic areas."
+    - "Create catalogs of relevant data sources for specific disaster types, such as the 120 data sources compiled for flooding and wildfire analysis, to organize available information."
+    - "Test AI models with sample data to verify reliability before deploying them in operational emergency response contexts."
+    - "Engage with research ecosystems like MILA that bring together universities, government, and industry to facilitate AI development and knowledge transfer."
+    - "Work to overcome data protection governance barriers by demonstrating how data sharing between organizations can build more powerful analytical models for disaster response."
+    - "Focus collaboration efforts on general societal problems like disaster prevention where multiple stakeholders share common goals rather than competing commercial interests."
+    - "Advocate for better coordination between industry, government, and academia on disaster-related challenges that benefit everyone."
+    - "Participate in applied research projects that bridge the gap between academic research, government operations, and industrial applications of AI for emergency management."
+    - "Familiarize yourself and your organization with new AI tools for geospatial analysis to build confidence and trust in AI-generated emergency information."
+    - "Encourage experimentation with AI applications in your organization's geospatial and emergency response workflows to identify effective use cases."
+    - "Utilize automated systems for tracking and situational awareness that enable first responders to intervene more effectively during emergencies."
+  tags:
+    - geospatial
+    - emergency-response
+    - artificial-intelligence
+    - disaster-management
+    - Canada
+
 y2LngH6oNHo:
   short_title: "GC Data Conference 2026 - Day 1 - February 18, 2026"
   long_title:  "GC Data Conference 2026 - Day 1 - February 18, 2026"
