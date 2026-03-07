@@ -12,31 +12,56 @@ function getQueryParam(key) {
 }
 
 window.onload = function() {
-	// Update the path to your CSV file
-	const csvFilePath = '{{ "/assets/data/ottawa-library-programs.csv" | relative_url }}';
+    // Update the path to your CSV file
+    const csvFilePath = '{{ "/assets/data/ottawa-library-programs.csv" | relative_url }}';
 
-	Papa.parse(csvFilePath, {
-		header: true,
-		download: true,
-		skipEmptyLines: true,
-		complete: function(results) {
-			if (results.errors.length > 0) {
-				console.error('Error parsing CSV:', results.errors);
-				document.getElementById('csvData').innerHTML = 'Error loading data.';
-			} else if (Array.isArray(results.data)) {
-				originalData = results.data;
-				renderTable(originalData);
-			} else {
-				console.error('Error loading data: Data is not an array.');
-				document.getElementById('csvData').innerHTML = 'Error loading data.';
-			}
-		},
-		error: function(error) {
-			console.error('Error fetching or parsing CSV:', error);
-			document.getElementById('csvData').innerHTML = 'Error loading data.';
-		}
-	});
+    Papa.parse(csvFilePath, {
+        header: true,
+        download: true,
+        skipEmptyLines: true,
+        complete: function(results) {
+            if (results.errors.length > 0) {
+                console.error('Error parsing CSV:', results.errors);
+                document.getElementById('csvData').innerHTML = 'Error loading data.';
+            } else if (Array.isArray(results.data)) {
+                originalData = results.data;
+                renderTable(originalData);
+            } else {
+                console.error('Error loading data: Data is not an array.');
+                document.getElementById('csvData').innerHTML = 'Error loading data.';
+            }
+        },
+        error: function(error) {
+            console.error('Error fetching or parsing CSV:', error);
+            document.getElementById('csvData').innerHTML = 'Error loading data.';
+        }
+    });
 };
+
+function padTimePiece(t) {
+  // Handles: "9:30", "9:30 am", "09:30", "9:30AM"
+  const m = String(t).trim().match(/^(\d{1,2}):(\d{2})(\s*[ap]m)?$/i);
+  if (!m) return String(t).trim();
+
+  const hh = m[1].padStart(2, "0");
+  const mm = m[2];
+  const ampm = m[3] ? m[3].trim().toLowerCase() : "";
+  return ampm ? `${hh}:${mm} ${ampm}` : `${hh}:${mm}`;
+}
+
+function padTimeValue(value) {
+  if (value == null) return "";
+
+  const s = String(value).trim();
+
+  // Handles ranges like "9:30 - 10:15" (or any hyphen style)
+  const parts = s.split(/\s*[-–—]\s*/);
+  if (parts.length === 2) {
+    return `${padTimePiece(parts[0])} - ${padTimePiece(parts[1])}`;
+  }
+
+  return padTimePiece(s);
+}
 
 function renderTable(data) {
     // Ensure data is an array
@@ -82,47 +107,50 @@ function renderTable(data) {
             // Skip rendering the URL column
             if (header !== 'Event URL') {
                 switch (header) {
-		    case 'Sort Order': 	
-				    // Assign the index of the "Baby Scale" column to the babyScaleIndex variable
-				// minus 1 because it is after the URL column which is not shown
-                    		    sortOrderIndex = index;					  
-				    tableHtml += `<td>${row[header]}</td>`;
-				    break;
-		    case 'Start Date': 	
-				    // Assign the index of the "Baby Scale" column to the babyScaleIndex variable
-				// minus 1 because it is after the URL column which is not shown
-                    		    			  
-				    tableHtml += `<td>${formatDate(row[header])}</td>`;
-				    break;
-		    case 'End Date': 	
-				    // Assign the index of the "Baby Scale" column to the babyScaleIndex variable
-				// minus 1 because it is after the URL column which is not shown
-                    		    			  
-				    tableHtml += `<td>${formatDate(row[header])}</td>`;
-				    break;
-                    case 'Program Name':
-                        // Merge URL with Pool Name to create a clickable link
-                        const url = row['Event URL'] ? row['Event URL'] : '';
-                        const programName = row[header] ? row[header] : '';
-                        if (url !== '' && programName !== '') {
-                            tableHtml += `<td><a href="${url}" target="_blank">${programName}</a></td>`;
-                        } else {
-                            tableHtml += `<td>${programName}</td>`;
-                        }
-                        break;
+            case 'Sort Order': 	
+                    // Assign the index of the "Baby Scale" column to the babyScaleIndex variable
+                // minus 1 because it is after the URL column which is not shown
+                                sortOrderIndex = index;					  
+                    tableHtml += `<td>${row[header]}</td>`;
+                    break;
+            case 'Start Date': 	
+                    // Assign the index of the "Baby Scale" column to the babyScaleIndex variable
+                // minus 1 because it is after the URL column which is not shown
+                                              
+                    tableHtml += `<td>${formatDate(row[header])}</td>`;
+                    break;
+            case 'End Date': 	
+                    // Assign the index of the "Baby Scale" column to the babyScaleIndex variable
+                // minus 1 because it is after the URL column which is not shown
+                                              
+                    tableHtml += `<td>${formatDate(row[header])}</td>`;
+                    break;
+            case 'Program Name':
+                // Merge URL with Pool Name to create a clickable link
+                const url = row['Event URL'] ? row['Event URL'] : '';
+                const programName = row[header] ? row[header] : '';
+                if (url !== '' && programName !== '') {
+                    tableHtml += `<td><a href="${url}" target="_blank">${programName}</a></td>`;
+                } else {
+                    tableHtml += `<td>${programName}</td>`;
+                }
+                break;
+            case 'Time':
+                tableHtml += `<td>${padTimeValue(row[header])}</td>`;
+                break;
 
-                    case 'Address':
-                        // Create a link with the Google Maps URL for the address
-                        const address = row[header] ? row[header].trim() : '';
-                        if (address !== '') {
-                            const googleMapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)},+Ottawa,+Canada`;
-                            tableHtml += `<td><a href="${googleMapsLink}" target="_blank">${address}</a></td>`;
-                        } else {
-                            tableHtml += '<td></td>';
-                        }
-                        break;
+            case 'Address':
+                // Create a link with the Google Maps URL for the address
+                const address = row[header] ? row[header].trim() : '';
+                if (address !== '') {
+                    const googleMapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)},+Ottawa,+Canada`;
+                    tableHtml += `<td><a href="${googleMapsLink}" target="_blank">${address}</a></td>`;
+                } else {
+                    tableHtml += '<td></td>';
+                }
+                break;
 
-		default:
+        default:
                         // Display other columns
                         tableHtml += `<td>${row[header]}</td>`;
                         break;
@@ -145,14 +173,14 @@ function renderTable(data) {
                 'colvis' // Column visibility button
             ],
 
-	    "columnDefs": [
-			    {
-				"targets": sortOrderIndex, 
-				"visible": false 
-			    }
-			  
-			],
-		"order": [[0, 'asc'], [4, 'asc']],
+        "columnDefs": [
+                {
+                "targets": sortOrderIndex, 
+                "visible": false 
+                }
+              
+            ],
+        "order": [[0, 'asc'], [4, 'asc']],
             "language": {
                 "emptyTable": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>.",
                 "zeroRecords": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>."
@@ -186,7 +214,7 @@ function formatDate(inputString) {
 
     // Validate input and split into parts
     const parts = inputString.split("-");
-	
+    
     /*if (parts.length !== 3) {
         throw new Error("Invalid date format. Expected format: 'DD-MMM-YY'");
     }*/
@@ -242,17 +270,17 @@ document.getElementById('showToday').addEventListener('click', function(event) {
 });
 
 document.getElementById("showTodayOnly").addEventListener("change", function (event) {
-	document.getElementById('selectedDate').value = '';
+    document.getElementById('selectedDate').value = '';
 
-	const isChecked = document.getElementById("showTodayOnly").checked;
+    const isChecked = document.getElementById("showTodayOnly").checked;
 
-	if (isChecked) {
-	    selectedDate = new Date();
-	} else {
-	    
-	    selectedDate = null;
-	}
-	
+    if (isChecked) {
+        selectedDate = new Date();
+    } else {
+        
+        selectedDate = null;
+    }
+    
     //document.getElementById('dataTable_filter').querySelector('input').dispatchEvent(new Event('input'));
     renderTable(originalData);
 });
@@ -267,72 +295,72 @@ function filterData(data, selectedDate, selectedAreas, selectedAudience) {
     return data.filter(row => {
 
 
-	const currentStartDate = new Date(row['Start Date']) || '';
-	const currentEndDate = new Date(row['End Date']) || '';
-	const currentArea = row['Area'] || '';
-	const currentAUdience = row['Audience'] || '';
-	let selectedDateNoTime = null;
+    const currentStartDate = new Date(row['Start Date']) || '';
+    const currentEndDate = new Date(row['End Date']) || '';
+    const currentArea = row['Area'] || '';
+    const currentAUdience = row['Audience'] || '';
+    let selectedDateNoTime = null;
 
 
-	const areaCondition = !selectedAreas.length || selectedAreas.some(area => currentArea.toLowerCase().includes(area.toLowerCase()));
-	const audienceCondition = !selectedAudience.length || selectedAudience.some(audience => currentAUdience.toLowerCase().includes(audience.toLowerCase()));
-	const startDateNoTime = new Date(currentStartDate.getFullYear(), currentStartDate.getMonth(), currentStartDate.getDate())
-	const endDateNoTime = new Date(currentEndDate.getFullYear(), currentEndDate.getMonth(), currentEndDate.getDate())
-	
-	if (selectedDate !== null) {
-        	selectedDateNoTime = new Date(selectedDate.getFullYear(), selectedDate.getMonth(), selectedDate.getDate())		
-   	}
-	    
-	    
-	    
-	const currentDay = row['Day of Week'] || '';
+    const areaCondition = !selectedAreas.length || selectedAreas.some(area => currentArea.toLowerCase().includes(area.toLowerCase()));
+    const audienceCondition = !selectedAudience.length || selectedAudience.some(audience => currentAUdience.toLowerCase().includes(audience.toLowerCase()));
+    const startDateNoTime = new Date(currentStartDate.getFullYear(), currentStartDate.getMonth(), currentStartDate.getDate())
+    const endDateNoTime = new Date(currentEndDate.getFullYear(), currentEndDate.getMonth(), currentEndDate.getDate())
+    
+    if (selectedDate !== null) {
+            selectedDateNoTime = new Date(selectedDate.getFullYear(), selectedDate.getMonth(), selectedDate.getDate())		
+    }
+        
+        
+        
+    const currentDay = row['Day of Week'] || '';
 
-	/*console.log("row start date" + row['Start Date']);
-	console.log("current start date" + currentStartDate);
+    /*console.log("row start date" + row['Start Date']);
+    console.log("current start date" + currentStartDate);
 
-	console.log("row end date" + row['End Date']);
-	console.log("current end date" + currentEndDate);*/
+    console.log("row end date" + row['End Date']);
+    console.log("current end date" + currentEndDate);*/
 
-	//const dayCondition = selectedDate.some(day => currentDay.toLowerCase() === day.toLowerCase());
+    //const dayCondition = selectedDate.some(day => currentDay.toLowerCase() === day.toLowerCase());
 
-	let dayCondition = null;
-	if (selectedDate !== null) {
-        	const todayDay = selectedDate.toLocaleDateString("en-US", { weekday: "long" }); // Get day of week
-		dayCondition = currentDay.toLowerCase() === todayDay.toLowerCase();    
-   	}
-	
-	
-	    
-	//const dateCondition = (selectedDate >= currentStartDate && selectedDate <= currentEndDate);
-	let dateCondition = null;
+    let dayCondition = null;
+    if (selectedDate !== null) {
+            const todayDay = selectedDate.toLocaleDateString("en-US", { weekday: "long" }); // Get day of week
+        dayCondition = currentDay.toLowerCase() === todayDay.toLowerCase();    
+    }
+    
+    
+        
+    //const dateCondition = (selectedDate >= currentStartDate && selectedDate <= currentEndDate);
+    let dateCondition = null;
 
-	if (!selectedDate) {
-       	     dateCondition = true;
-	     dayCondition = true;
-   	}
-	else {
-	    dateCondition = (selectedDateNoTime >= startDateNoTime && selectedDateNoTime <= endDateNoTime);
-	}
-	 
+    if (!selectedDate) {
+             dateCondition = true;
+         dayCondition = true;
+    }
+    else {
+        dateCondition = (selectedDateNoTime >= startDateNoTime && selectedDateNoTime <= endDateNoTime);
+    }
+     
 
-	const today = new Date();
-	const todayNoTime = new Date(today.getFullYear(), today.getMonth(), today.getDate())
-	const pastCondition = endDateNoTime >= todayNoTime;
-	/*if (pastCondition == false){
-		console.log("past event alert");
-		console.log("start " + startDateNoTime);
-		console.log("end " + endDateNoTime);
-	} */
+    const today = new Date();
+    const todayNoTime = new Date(today.getFullYear(), today.getMonth(), today.getDate())
+    const pastCondition = endDateNoTime >= todayNoTime;
+    /*if (pastCondition == false){
+        console.log("past event alert");
+        console.log("start " + startDateNoTime);
+        console.log("end " + endDateNoTime);
+    } */
 
-	const startDateCheck = selectedDate <= currentStartDate;
-	const endDateCheck = selectedDate >= currentEndDate
+    const startDateCheck = selectedDate <= currentStartDate;
+    const endDateCheck = selectedDate >= currentEndDate
 
-	/*console.log("dateCondition " + dateCondition);
-	console.log("startDateCheck " + startDateCheck);
-	console.log("endDateCheck " + endDateCheck);*/
-	
+    /*console.log("dateCondition " + dateCondition);
+    console.log("startDateCheck " + startDateCheck);
+    console.log("endDateCheck " + endDateCheck);*/
+    
 
-	return dayCondition && dateCondition && pastCondition && areaCondition && audienceCondition;
+    return dayCondition && dateCondition && pastCondition && areaCondition && audienceCondition;
     });
 }
 
@@ -345,21 +373,21 @@ function clearAllFilters() {
     document.getElementById("showTodayOnly").checked = false;
     selectedDate = null;
     document.getElementById('selectedDate').value = '';
-	
+    
     // Check all the "Select Area" checkboxes
     document.querySelectorAll('.areaCheckbox').forEach(checkbox => {
         checkbox.checked = true;
-		if (!selectedAreas.includes(checkbox.value)) {
-			selectedAreas.push(checkbox.value);
-		}
+        if (!selectedAreas.includes(checkbox.value)) {
+            selectedAreas.push(checkbox.value);
+        }
     });
  
     // Check all the "Select Audience" checkboxes
     document.querySelectorAll('.audienceCheckbox').forEach(checkbox => {
         checkbox.checked = true;
-		if (!selectedAudience.includes(checkbox.value)) {
-			selectedAudience.push(checkbox.value);
-		}
+        if (!selectedAudience.includes(checkbox.value)) {
+            selectedAudience.push(checkbox.value);
+        }
     });
 
 /*
@@ -367,9 +395,9 @@ function clearAllFilters() {
 // Check all the "Select Day" checkboxes
     document.querySelectorAll('.dayCheckbox').forEach(checkbox => {
         checkbox.checked = true;
-		if (!selectedDay.includes(checkbox.value)) {
-			selectedDay.push(checkbox.value);
-		}
+        if (!selectedDay.includes(checkbox.value)) {
+            selectedDay.push(checkbox.value);
+        }
     });*/
 
 
@@ -378,7 +406,7 @@ function clearAllFilters() {
     // Clear the DataTable search box
     var dataTable = $('#dataTable').DataTable();
     dataTable.search('').draw();
-	currentSearchValue = "";
+    currentSearchValue = "";
 
     // Render the table with cleared filters
     renderTable(originalData);
@@ -387,10 +415,10 @@ function clearAllFilters() {
 const selectedAreas = [];
 document.querySelectorAll('.areaCheckbox').forEach(function (checkbox) {
     checkbox.addEventListener('change', function () {
-	// Store the current sorting state
+    // Store the current sorting state
         sortingState = $('#dataTable').DataTable().state();
         currentSearchValue = $('#dataTable_filter input').val();
-		if (checkbox.checked) {
+        if (checkbox.checked) {
             if (!selectedAreas.includes(checkbox.value)) {
                 selectedAreas.push(checkbox.value);
             }
@@ -413,10 +441,10 @@ document.querySelectorAll('.areaCheckbox').forEach(function (checkbox) {
 const selectedAudience = [];
 document.querySelectorAll('.audienceCheckbox').forEach(function (checkbox) {
     checkbox.addEventListener('change', function () {
-	// Store the current sorting state
+    // Store the current sorting state
         sortingState = $('#dataTable').DataTable().state();
         currentSearchValue = $('#dataTable_filter input').val();
-		if (checkbox.checked) {
+        if (checkbox.checked) {
             if (!selectedAudience.includes(checkbox.value)) {
                 selectedAudience.push(checkbox.value);
             }
@@ -440,7 +468,7 @@ document.querySelectorAll('.audienceCheckbox').forEach(function (checkbox) {
 document.getElementById('selectedDate').addEventListener('change', function() {
     //uncheck today when a new date is selected
     document.getElementById("showTodayOnly").checked = false;
-    	// Store the current sorting state
+        // Store the current sorting state
     sortingState = $('#dataTable').DataTable().state();
     currentSearchValue = $('#dataTable_filter input').val();
     selectedDate = new Date(document.getElementById('selectedDate').value);
@@ -448,7 +476,7 @@ document.getElementById('selectedDate').addEventListener('change', function() {
     console.log("selectedDate: " + selectedDate);
 
     
-	
+    
     renderTable(originalData);
 
 });
@@ -458,10 +486,10 @@ document.getElementById('selectedDate').addEventListener('change', function() {
 const selectedDay = [];
 document.querySelectorAll('.dayCheckbox').forEach(function (checkbox) {
     checkbox.addEventListener('change', function () {
-	// Store the current sorting state
+    // Store the current sorting state
         sortingState = $('#dataTable').DataTable().state();
         currentSearchValue = $('#dataTable_filter input').val();
-		if (checkbox.checked) {
+        if (checkbox.checked) {
             if (!selectedDay.includes(checkbox.value)) {
                 selectedDay.push(checkbox.value);
             }
