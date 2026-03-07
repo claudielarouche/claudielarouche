@@ -5,72 +5,6 @@ console.log('clear date');
 let sortingState;
 let originalData = []; // Initialize as an empty array
 
-const LIB_STATE_KEY = "libraryProgramsState_v1";
-
-function saveUiState() {
-    const dt = $.fn.dataTable.isDataTable('#dataTable') ? $('#dataTable').DataTable() : null;
-
-    const state = {
-        selectedDate: selectedDate ? selectedDate.toISOString() : null,
-        showTodayOnly: !!document.getElementById("showTodayOnly")?.checked,
-        areas: [...selectedAreas],
-        audiences: [...selectedAudience],
-        search: dt ? dt.search() : (currentSearchValue || ""),
-        order: dt ? dt.order() : (sortingState?.order || null),
-        scrollY: window.scrollY || 0
-    };
-
-    sessionStorage.setItem(LIB_STATE_KEY, JSON.stringify(state));
-}
-
-function loadUiState() {
-    const raw = sessionStorage.getItem(LIB_STATE_KEY);
-    if (!raw) return null;
-    try { return JSON.parse(raw); } catch (e) { return null; }
-}
-
-function applyUiState(state) {
-    if (!state) return;
-
-    const showTodayOnlyEl = document.getElementById("showTodayOnly");
-    if (showTodayOnlyEl) {
-        showTodayOnlyEl.checked = !!state.showTodayOnly;
-    }
-
-    selectedDate = state.selectedDate ? new Date(state.selectedDate) : null;
-
-    const selectedDateEl = document.getElementById('selectedDate');
-    if (selectedDateEl) {
-        selectedDateEl.value = selectedDate ? selectedDate.toISOString().slice(0, 10) : "";
-    }
-
-    document.querySelectorAll('.areaCheckbox').forEach(cb => {
-        cb.checked = state.areas ? state.areas.includes(cb.value) : true;
-    });
-
-    document.querySelectorAll('.audienceCheckbox').forEach(cb => {
-        cb.checked = state.audiences ? state.audiences.includes(cb.value) : true;
-    });
-
-    selectedAreas.length = 0;
-    (state.areas || []).forEach(v => selectedAreas.push(v));
-
-    selectedAudience.length = 0;
-    (state.audiences || []).forEach(v => selectedAudience.push(v));
-
-    currentSearchValue = state.search || "";
-    sortingState = state.order ? { order: state.order } : null;
-
-    window.requestAnimationFrame(() => {
-        window.scrollTo(0, state.scrollY || 0);
-    });
-}
-
-window.addEventListener('pagehide', saveUiState);
-document.addEventListener('visibilitychange', function () {
-    if (document.visibilityState === 'hidden') saveUiState();
-});
-
 
 function getQueryParam(key) {
     const params = new URLSearchParams(window.location.search);
@@ -91,9 +25,6 @@ window.onload = function() {
 				document.getElementById('csvData').innerHTML = 'Error loading data.';
 			} else if (Array.isArray(results.data)) {
 				originalData = results.data;
-
-				const saved = loadUiState();
-				applyUiState(saved);
 				renderTable(originalData);
 			} else {
 				console.error('Error loading data: Data is not an array.');
@@ -106,6 +37,31 @@ window.onload = function() {
 		}
 	});
 };
+
+function padTimePiece(t) {
+  // Handles: "9:30", "9:30 am", "09:30", "9:30AM"
+  const m = String(t).trim().match(/^(\d{1,2}):(\d{2})(\s*[ap]m)?$/i);
+  if (!m) return String(t).trim();
+
+  const hh = m[1].padStart(2, "0");
+  const mm = m[2];
+  const ampm = m[3] ? m[3].trim().toLowerCase() : "";
+  return ampm ? `${hh}:${mm} ${ampm}` : `${hh}:${mm}`;
+}
+
+function padTimeValue(value) {
+  if (value == null) return "";
+
+  const s = String(value).trim();
+
+  // Handles ranges like "9:30 - 10:15" (or any hyphen style)
+  const parts = s.split(/\s*[-–—]\s*/);
+  if (parts.length === 2) {
+    return `${padTimePiece(parts[0])} - ${padTimePiece(parts[1])}`;
+  }
+
+  return padTimePiece(s);
+}
 
 function renderTable(data) {
     // Ensure data is an array
@@ -169,27 +125,30 @@ function renderTable(data) {
                     		    			  
 				    tableHtml += `<td>${formatDate(row[header])}</td>`;
 				    break;
-                    case 'Program Name':
-                        // Merge URL with Pool Name to create a clickable link
-                        const url = row['Event URL'] ? row['Event URL'] : '';
-                        const programName = row[header] ? row[header] : '';
-                        if (url !== '' && programName !== '') {
-                            tableHtml += `<td><a href="${url}" target="_blank" rel="noopener" onclick="saveUiState()">${programName}</a></td>`;
-                        } else {
-                            tableHtml += `<td>${programName}</td>`;
-                        }
-                        break;
+            case 'Program Name':
+                // Merge URL with Pool Name to create a clickable link
+                const url = row['Event URL'] ? row['Event URL'] : '';
+                const programName = row[header] ? row[header] : '';
+                if (url !== '' && programName !== '') {
+                    tableHtml += `<td><a href="${url}" target="_blank">${programName}</a></td>`;
+                } else {
+                    tableHtml += `<td>${programName}</td>`;
+                }
+                break;
+            case 'Time':
+                tableHtml += `<td>${padTimeValue(row[header])}</td>`;
+                break;
 
-                    case 'Address':
-                        // Create a link with the Google Maps URL for the address
-                        const address = row[header] ? row[header].trim() : '';
-                        if (address !== '') {
-                            const googleMapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)},+Ottawa,+Canada`;
-                            tableHtml += `<td><a href="${googleMapsLink}" target="_blank">${address}</a></td>`;
-                        } else {
-                            tableHtml += '<td></td>';
-                        }
-                        break;
+            case 'Address':
+                // Create a link with the Google Maps URL for the address
+                const address = row[header] ? row[header].trim() : '';
+                if (address !== '') {
+                    const googleMapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)},+Ottawa,+Canada`;
+                    tableHtml += `<td><a href="${googleMapsLink}" target="_blank">${address}</a></td>`;
+                } else {
+                    tableHtml += '<td></td>';
+                }
+                break;
 
 		default:
                         // Display other columns
@@ -208,7 +167,6 @@ function renderTable(data) {
 
     if (!$.fn.dataTable.isDataTable('#dataTable')) {
         $('#dataTable').DataTable({
-            stateSave: true,
             "pageLength": -1,
             "dom": 'Bfrtip', // 'B' for buttons
             "buttons": [
@@ -227,11 +185,6 @@ function renderTable(data) {
                 "emptyTable": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>.",
                 "zeroRecords": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>."
             }
-        });
-
-        const dt = $('#dataTable').DataTable();
-        dt.on('order.dt search.dt', function () {
-            saveUiState();
         });
     }
     $('#dataTable_filter input').val(currentSearchValue).trigger('input');
@@ -313,7 +266,6 @@ document.getElementById('showToday').addEventListener('click', function(event) {
     
     // Trigger the input event to initiate the search
     //document.getElementById('dataTable_filter').querySelector('input').dispatchEvent(new Event('input'));
-    saveUiState();
     renderTable(originalData);
 });
 
@@ -330,7 +282,6 @@ document.getElementById("showTodayOnly").addEventListener("change", function (ev
 	}
 	
     //document.getElementById('dataTable_filter').querySelector('input').dispatchEvent(new Event('input'));
-    saveUiState();
     renderTable(originalData);
 });
 
@@ -458,7 +409,6 @@ function clearAllFilters() {
 	currentSearchValue = "";
 
     // Render the table with cleared filters
-    saveUiState();
     renderTable(originalData);
 }
 
@@ -478,7 +428,6 @@ document.querySelectorAll('.areaCheckbox').forEach(function (checkbox) {
                 selectedAreas.splice(index, 1);
             }
         }
-        saveUiState();
         renderTable(originalData);
     });
 
@@ -505,7 +454,6 @@ document.querySelectorAll('.audienceCheckbox').forEach(function (checkbox) {
                 selectedAudience.splice(index, 1);
             }
         }
-        saveUiState();
         renderTable(originalData);
     });
 
@@ -529,7 +477,6 @@ document.getElementById('selectedDate').addEventListener('change', function() {
 
     
 	
-    saveUiState();
     renderTable(originalData);
 
 });
