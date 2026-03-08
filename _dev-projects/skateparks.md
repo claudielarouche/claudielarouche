@@ -5,6 +5,7 @@ image: https://claudielarouche.com/assets/img/skateboard.jpg
 image-hero: https://claudielarouche.com/assets/img/skateboard.jpg
 tags: [Ottawa]
 layout: dev
+permalink: /skateboard/
 js:
   - https://code.jquery.com/jquery-3.6.0.min.js
   - https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js
