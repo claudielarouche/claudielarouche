@@ -5,7 +5,7 @@ image: https://claudielarouche.com/assets/img/skateboard.jpg
 image-hero: https://claudielarouche.com/assets/img/skateboard.jpg
 tags: [Ottawa]
 layout: dev
-permalink: /skateboard/
+permalink: /skateparks/
 js:
   - https://code.jquery.com/jquery-3.6.0.min.js
   - https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js
@@ -13,7 +13,7 @@ js:
   - https://cdn.datatables.net/buttons/1.7.1/js/buttons.colVis.min.js
   - https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js
   - https://unpkg.com/leaflet/dist/leaflet.js
-  - /assets/js/skateboard.js
+  - /assets/js/skateparks.js
 css: 
   - https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css
   - https://fonts.googleapis.com/icon?family=Material+Icons

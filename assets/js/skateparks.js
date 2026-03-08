@@ -19,7 +19,7 @@ function getQueryParam(key) {
 window.onload = function () {
   initMap();
 
-  const csvFilePath = '{{ "/assets/data/skateboard.csv" | relative_url }}';
+  const csvFilePath = '{{ "/assets/data/skateparks.csv" | relative_url }}';
 
   Papa.parse(csvFilePath, {
     header: true,
