@@ -103,7 +103,7 @@ function renderTable(data) {
   document.getElementById('csvData').innerHTML = tableHtml;
 
   // Init DataTable and keep a usable reference every time
-  const nameColumnIndex = headers.indexOf('Park Name');
+  const nameColumnIndex = headers.indexOf('Name');
   const orderSetting = nameColumnIndex >= 0 ? [[nameColumnIndex, 'asc']] : [];
 
   const dt = $('#dataTable').DataTable({
@@ -112,7 +112,7 @@ function renderTable(data) {
     buttons: ['colvis'],
     columnDefs: [
       {
-        targets: [0, 1, 2, 3, 4, 5, 6],
+        targets: [0, 1],
         visible: false
       }
     ],
@@ -182,7 +182,7 @@ function addMarkersToMap(data) {
           ? `<a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}, Ottawa, Canada" target="_blank">${address}</a><br>`
           : '';
 
-        let popupContent = `<b>${item['Park Name'] || ''}</b><br>${addressLink}`;
+        let popupContent = `<b>${item['Name'] || ''}</b><br>${addressLink}`;
 
         const fields = ['Address', 'Observations'];
         fields.forEach(field => {
