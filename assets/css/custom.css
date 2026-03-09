@@ -14,6 +14,18 @@ hr {
 }
 
 /*HOME START*/
+
+/* Quick-links button bar on the home page */
+.quick-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.quick-links .btn {
+  font-size: 0.9rem;
+}
 .projects-gallery {
   display: flex;
   flex-wrap: wrap;

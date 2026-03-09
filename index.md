@@ -3,10 +3,20 @@ layout: home
 title: Home
 ---
 
+<div class="quick-links">
+  <a href="#city-of-ottawa-drop-ins" class="btn btn-primary">City of Ottawa Drop-Ins</a>
+  <a href="#other-ottawa-resources" class="btn btn-primary">Other Ottawa Resources</a>
+  <a href="#work" class="btn btn-primary">Work</a>
+  <a href="#other" class="btn btn-primary">Other</a>
+  <a href="#products" class="btn btn-primary">Products</a>
+  <a href="#archive" class="btn btn-primary">Archive</a>
+  <a href="#presentations" class="btn btn-primary">Presentations</a>
+</div>
+
 {% assign categories = "City of Ottawa Drop-Ins,Other Ottawa Resources,Work,Other,Products,Archive" | split: "," %}
 
 {% for category in categories %}
-  <h2>{{ category | replace: "-", " " }}</h2>
+  <h2 id="{{ category | slugify }}">{{ category | replace: "-", " " }}</h2>
   <div class="projects-gallery">
     {% assign filtered = site.projects | where_exp: "item", "item.tags contains category" | sort: "title" %}
     {% if filtered.size > 0 %}
