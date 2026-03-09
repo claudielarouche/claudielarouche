@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Generate md files | Claudie Larouche</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Generate md files" />
+<meta name="author" content="Claudie Larouche" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="&lt;!doctype html&gt; CSV → Markdown → ZIP CSV → Markdown → ZIP Pick a CSV, choose the title column, optionally set a layout, then download a ZIP of generated Markdown files." />
+<meta property="og:description" content="&lt;!doctype html&gt; CSV → Markdown → ZIP CSV → Markdown → ZIP Pick a CSV, choose the title column, optionally set a layout, then download a ZIP of generated Markdown files." />
+<link rel="canonical" href="http://localhost:4000/dev-projects/generate-md-files.html" />
+<meta property="og:url" content="http://localhost:4000/dev-projects/generate-md-files.html" />
+<meta property="og:site_name" content="Claudie Larouche" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-03-08T23:06:33-04:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Generate md files" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Claudie Larouche"},"dateModified":"2026-03-08T23:06:33-04:00","datePublished":"2026-03-08T23:06:33-04:00","description":"&lt;!doctype html&gt; CSV → Markdown → ZIP CSV → Markdown → ZIP Pick a CSV, choose the title column, optionally set a layout, then download a ZIP of generated Markdown files.","headline":"Generate md files","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/dev-projects/generate-md-files.html"},"url":"http://localhost:4000/dev-projects/generate-md-files.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Claudie Larouche" />
+    <link rel="stylesheet" href="/assets/css/custom.css">
+    
+  </head>
+
+
+<body>
+<header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Claudie Larouche</a><nav class="site-nav" aria-label="Main navigation">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger" aria-label="Toggle navigation">
+          <span class="menu-icon" aria-hidden="true">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/personal-projects/">Personal Projects</a><a class="page-link" href="/work-projects/">Work Projects</a><a class="page-link" href="/media/">Media</a><a class="page-link" href="/contact/">Contact</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+             
+        <article class="post">
+
+  
+
+  <header class="post-header">
+      <h1 class="post-title" id="page-title">
+        Generate md files
+      </h1>
+    </header>
+  
+
+  <div class="post-content">
+    
+    <div class="callout" style="border: 1px solid #ccc; padding: 1rem; margin-bottom: 2rem; background-color: #f9f9f9; border-radius: 6px;">
+  📚 NOTE: THIS IS A DEV PAGE
+</div>
+
+
+
+
+
+<p>&lt;!doctype html&gt;</p>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CSV → Markdown → ZIP</title>
+    <style>
+      body {
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        margin: 40px;
+        max-width: 980px;
+      }
+      h1 { margin: 0 0 8px; }
+      .sub { color: #555; margin: 0 0 24px; }
+      .card {
+        border: 1px solid #ddd;
+        border-radius: 12px;
+        padding: 18px;
+        margin-bottom: 18px;
+      }
+      label { display: block; font-weight: 600; margin-top: 12px; }
+      input[type="text"], select {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+        margin-top: 6px;
+      }
+      input[type="file"] { margin-top: 6px; }
+      button {
+        margin-top: 16px;
+        padding: 12px 14px;
+        font-size: 14px;
+        cursor: pointer;
+      }
+      .row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+      .hint { color: #666; font-size: 13px; margin-top: 6px; }
+      .error { color: #b00020; font-weight: 650; margin-top: 10px; }
+      .ok { color: #146c2e; font-weight: 650; margin-top: 10px; }
+      .small { font-size: 12px; color: #666; }
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+      .preview {
+        white-space: pre;
+        overflow: auto;
+        background: #fafafa;
+        border: 1px solid #eee;
+        border-radius: 10px;
+        padding: 12px;
+        margin-top: 12px;
+        max-height: 260px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSV → Markdown → ZIP</h1>
+    <p class="sub">Pick a CSV, choose the title column, optionally set a layout, then download a ZIP of generated Markdown files.</p>
+
+    <div class="card">
+      <label for="csvFile">CSV file</label>
+      <input id="csvFile" type="file" accept=".csv,text/csv" />
+
+      <div class="row">
+        <div>
+          <label for="titleCol">Title column</label>
+          <select id="titleCol" disabled="">
+            <option value="">Upload a CSV first</option>
+          </select>
+          <div class="hint">Must match a header in your CSV.</div>
+        </div>
+
+        <div>
+          <label for="layoutInput">Layout</label>
+          <input id="layoutInput" type="text" placeholder="default" />
+          <div class="hint">If blank, layout will be <span class="mono">default</span>.</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div>
+          <label for="filenameCol">Filename column (optional)</label>
+          <select id="filenameCol" disabled="">
+            <option value="">(none) use row number + slug</option>
+          </select>
+          <div class="hint">If provided, that column will be used to name files (slugified).</div>
+        </div>
+
+        <div>
+          <label for="folderName">Folder name inside ZIP (optional)</label>
+          <input id="folderName" type="text" placeholder="md" />
+          <div class="hint">If blank, files are in the ZIP root.</div>
+        </div>
+      </div>
+
+      <button id="generateBtn" disabled="">Generate ZIP</button>
+
+      <div id="status" class="hint"></div>
+
+      <div id="previewWrap" style="display:none;">
+        <div class="hint" style="margin-top:14px;">Preview of the first generated file:</div>
+        <div id="preview" class="preview"></div>
+      </div>
+    </div>
+
+    <div class="small">
+      Notes:
+      <br />• Front matter includes: title, layout, image, image_hero, image_attribution, image_attribution_url, plus one key per CSV column.
+      <br />• Empty cells become empty strings in YAML.
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+
+    <script>
+      const csvFileEl = document.getElementById("csvFile");
+      const titleColEl = document.getElementById("titleCol");
+      const layoutInputEl = document.getElementById("layoutInput");
+      const filenameColEl = document.getElementById("filenameCol");
+      const folderNameEl = document.getElementById("folderName");
+      const generateBtn = document.getElementById("generateBtn");
+      const statusEl = document.getElementById("status");
+      const previewWrapEl = document.getElementById("previewWrap");
+      const previewEl = document.getElementById("preview");
+
+      let parsed = null; // { headers: [], rows: [] }
+
+      function setStatus(msg, kind = "hint") {
+        statusEl.className = kind;
+        statusEl.textContent = msg || "";
+      }
+
+      function slugify(input) {
+        return String(input ?? "")
+          .trim()
+          .toLowerCase()
+          .normalize("NFKD")
+          .replace(/[\u0300-\u036f]/g, "")
+          .replace(/[^a-z0-9]+/g, "-")
+          .replace(/^-+|-+$/g, "")
+          .replace(/-{2,}/g, "-");
+      }
+
+      function sanitizeKey(key) {
+        // YAML keys: keep them readable, avoid weird chars
+        return String(key ?? "")
+          .trim()
+          .replace(/\s+/g, "_")
+          .replace(/[^A-Za-z0-9_]/g, "_")
+          .replace(/_{2,}/g, "_")
+          .replace(/^_+|_+$/g, "");
+      }
+
+      function yamlEscapeValue(val) {
+        // Always quote as a JSON string for safe YAML scalars
+        // Handles quotes, newlines, colons, etc.
+        const s = val === null || val === undefined ? "" : String(val);
+        return JSON.stringify(s);
+      }
+
+      function buildFrontMatter(rowObj, titleCol, layoutValue, headers) {
+        const titleValue = rowObj[titleCol] ?? "";
+
+        let yaml = "";
+        yaml += "---\n";
+        yaml += `title: ${yamlEscapeValue(titleValue)}\n`;
+        yaml += `layout: ${yamlEscapeValue(layoutValue || "default")}\n`;
+        yaml += "image: \n";
+        yaml += "image_hero: \n";
+        yaml += "image_attribution: \n";
+        yaml += "image_attribution_url: \n";
+
+        for (const h of headers) {
+          const key = sanitizeKey(h);
+          if (!key) continue;
+
+          // avoid duplicate keys that we already wrote
+          const reserved = new Set(["title", "layout", "image", "image_hero", "image_attribution", "image_attribution_url"]);
+          if (reserved.has(key)) continue;
+
+          yaml += `${key}: ${yamlEscapeValue(rowObj[h] ?? "")}\n`;
+        }
+
+        yaml += "---\n";
+        yaml += "\n";
+        return yaml;
+      }
+
+      function pickFilename(rowObj, rowIndex, titleCol, filenameCol) {
+        const fallbackBase = `${String(rowIndex + 1).padStart(3, "0")}-${slugify(rowObj[titleCol] ?? "item") || "item"}`;
+        if (!filenameCol) return `${fallbackBase}.md`;
+
+        const fromCol = slugify(rowObj[filenameCol] ?? "");
+        return `${fromCol || fallbackBase}.md`;
+      }
+
+      function populateSelect(selectEl, headers, placeholder) {
+        selectEl.innerHTML = "";
+        const ph = document.createElement("option");
+        ph.value = "";
+        ph.textContent = placeholder;
+        selectEl.appendChild(ph);
+
+        for (const h of headers) {
+          const opt = document.createElement("option");
+          opt.value = h;
+          opt.textContent = h;
+          selectEl.appendChild(opt);
+        }
+      }
+
+      csvFileEl.addEventListener("change", async () => {
+        previewWrapEl.style.display = "none";
+        previewEl.textContent = "";
+        setStatus("");
+
+        const file = csvFileEl.files?.[0];
+        if (!file) {
+          parsed = null;
+          titleColEl.disabled = true;
+          filenameColEl.disabled = true;
+          generateBtn.disabled = true;
+          return;
+        }
+
+        setStatus("Parsing CSV…");
+
+        Papa.parse(file, {
+          header: true,
+          skipEmptyLines: true,
+          complete: (results) => {
+            const rows = results.data || [];
+            const headers = results.meta?.fields || [];
+
+            if (!headers.length) {
+              parsed = null;
+              setStatus("No headers detected. Make sure the first row of your CSV contains column names.", "error");
+              titleColEl.disabled = true;
+              filenameColEl.disabled = true;
+              generateBtn.disabled = true;
+              return;
+            }
+
+            if (!rows.length) {
+              parsed = null;
+              setStatus("CSV parsed but contains no data rows.", "error");
+              titleColEl.disabled = true;
+              filenameColEl.disabled = true;
+              generateBtn.disabled = true;
+              return;
+            }
+
+            parsed = { headers, rows };
+
+            populateSelect(titleColEl, headers, "Select title column");
+            populateSelect(filenameColEl, headers, "(none) use row number + slug");
+            titleColEl.disabled = false;
+            filenameColEl.disabled = false;
+
+            // default title column guess
+            const guess = headers.find(h => String(h).toLowerCase() === "title") || headers[0];
+            titleColEl.value = guess;
+
+            generateBtn.disabled = false;
+            setStatus(`Loaded ${rows.length} rows, ${headers.length} columns.`, "ok");
+
+            // show preview
+            const first = rows[0];
+            const fm = buildFrontMatter(first, titleColEl.value, layoutInputEl.value.trim(), headers);
+            previewEl.textContent = fm;
+            previewWrapEl.style.display = "block";
+          },
+          error: () => {
+            parsed = null;
+            setStatus("Failed to parse CSV.", "error");
+            titleColEl.disabled = true;
+            filenameColEl.disabled = true;
+            generateBtn.disabled = true;
+          }
+        });
+      });
+
+      titleColEl.addEventListener("change", () => {
+        if (!parsed) return;
+        const first = parsed.rows[0];
+        const fm = buildFrontMatter(first, titleColEl.value, layoutInputEl.value.trim(), parsed.headers);
+        previewEl.textContent = fm;
+        previewWrapEl.style.display = "block";
+      });
+
+      layoutInputEl.addEventListener("input", () => {
+        if (!parsed) return;
+        const first = parsed.rows[0];
+        const fm = buildFrontMatter(first, titleColEl.value, layoutInputEl.value.trim(), parsed.headers);
+        previewEl.textContent = fm;
+        previewWrapEl.style.display = "block";
+      });
+
+      generateBtn.addEventListener("click", async () => {
+        try {
+          if (!parsed) {
+            setStatus("Upload a CSV first.", "error");
+            return;
+          }
+
+          const titleCol = titleColEl.value;
+          if (!titleCol) {
+            setStatus("Select a title column.", "error");
+            return;
+          }
+
+          const layoutValue = layoutInputEl.value.trim() || "default";
+          const filenameCol = filenameColEl.value || "";
+          const folderName = folderNameEl.value.trim();
+
+          setStatus("Generating files…");
+
+          const zip = new JSZip();
+          const target = folderName ? zip.folder(folderName) : zip;
+
+          const { headers, rows } = parsed;
+
+          for (let i = 0; i < rows.length; i++) {
+            const row = rows[i];
+
+            const md = buildFrontMatter(row, titleCol, layoutValue, headers);
+            const filename = pickFilename(row, i, titleCol, filenameCol);
+
+            target.file(filename, md);
+          }
+
+          setStatus("Creating ZIP…");
+
+          const blob = await zip.generateAsync({ type: "blob" });
+          const ts = new Date();
+          const stamp = ts.toISOString().slice(0, 10); // YYYY-MM-DD
+          const zipName = `markdown_files_${stamp}.zip`;
+
+          const a = document.createElement("a");
+          a.href = URL.createObjectURL(blob);
+          a.download = zipName;
+          document.body.appendChild(a);
+          a.click();
+          a.remove();
+          URL.revokeObjectURL(a.href);
+
+          setStatus(`Done. Downloaded ${rows.length} markdown files as a ZIP.`, "ok");
+        } catch (e) {
+          setStatus(`Error: ${e?.message || String(e)}`, "error");
+        }
+      });
+    </script>
+  </body>
+</html>
+
+
+<h2> Feedback </h2>
+
+
+
+
+
+<p>
+  <a class="btn btn-primary" 
+     href="https://docs.google.com/forms/d/e/1FAIpQLScZjMPv-2JNEJoDJYL1wHIpmXE1Z_rCB_5GMlNyVT-hZiNb4Q/viewform?embedded=true&entry.628049688=Generate%20md%20files" 
+     target="_blank" 
+     rel="noopener noreferrer">
+    Was this page useful? Please provide your feedback!
+  </a>
+</p>
+
+
+
+
+
+
+
+
+  
+
+
+  </div>
+
+</article>
+
+
+      </div>
+    </main>
+
+      <section class="feedback-section">
+    <div class="form-wrapper">
+      <h2 id="newsletter">Stay up to date!</h2>
+      <iframe 
+        src="https://docs.google.com/forms/d/e/1FAIpQLSfWDjzio_bwHSKPeTHnNq5Yks1cDIo4cN_nlP6Ir-lzz4AqqQ/viewform?embedded=true" 
+        width="100%" 
+        height="500" 
+        frameborder="0" 
+        marginheight="0" 
+        marginwidth="0">
+        Loading…
+      </iframe>
+    </div>
+  </section><footer class="site-footer h-card">
+  <data class="u-url" value="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Claudie Larouche</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Claudie Larouche</li><li><a class="u-email" href="mailto:claudielarouche@gmail.com">claudielarouche@gmail.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://www.facebook.com/claudie.larouche.3"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#facebook"></use></svg> <span class="username">claudie.larouche.3</span></a></li><li><a href="https://github.com/claudielarouche"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">claudielarouche</span></a></li><li><a href="https://www.linkedin.com/in/claudie-larouche"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg> <span class="username">claudie-larouche</span></a></li><li><a href="https://www.twitter.com/claudielarouche"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">claudielarouche</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>A website demonstrating my Ottawa and work-related projects</p>
+        <a href='https://ko-fi.com/H2H21DRM34' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi6.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

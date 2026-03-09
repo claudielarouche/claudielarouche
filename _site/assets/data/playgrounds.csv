@@ -1,0 +1,719 @@
+﻿Latitude,Longitude,OBJECTID,PARK_ID,FACILITYID,Name,Address,Washroom,Picnic Table,Baby Swing,Water Play,Water Fountain,Fenced area,Accessibility,Base,Parking,Note
+45.3201897,-75.8926452,13,112,31154,Billy Bishop Park,1 Bishops Mills Way,No,No,No,Splash Pad,No,No,None,Sand,Yes,Street parking. Park is two blocks away from the library which has a parking lot and indoor washrooms.
+45.3860957,-75.7297448,751,467,56867,Harrold Place Park,1 Harrold Place,Yes - Permanent,Yes - Covered,Yes,Splash Pad,No,Yes,TBD,TBD,TBD,
+45.3983982,-75.6928992,338,373,31478,Capital Park,10 Ella Street,No,Yes - Not Covered,Yes,None,No,No,None,Sand,TBD,A decent sized field for playing field games. Large spider web climbing structure
+45.3423197,-75.7410319,1604,754,31858,Oakview Park,10 Oakview Avenue,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2601701,-75.9267328,32,1160,32265,Alexander Grove Park,10 Warner Colpitts Lane,Yes - Seasonal,No,Yes,None,No,Yes,None,Sand,Yes,Near walking trail
+45.2812595,-75.8724245,920,2469,34658,Kristina Kiss Park,100 Akerson Road,Yes - Seasonal,Yes - Covered,Yes,Splash Pad,No,No,TBD,TBD,Yes,
+45.4528172,-75.662437,1329,132,31175,Manor Park,100 Braemar Street,TBD,TBD,Yes,Splash Pad,TBD,Yes,TBD,TBD,TBD,
+45.3869773,-75.6889644,120,134,31180,Brewer Park,100 Brewer Way,Yes - Seasonal,Yes - Covered,Yes,Splash Pad,Yes - Seasonal,No,Accessible swing,Multiple,Yes,Zip line
+45.294492,-75.9038763,703,1157,32264,Walter Baker Park,100 Charlie Rogers Place,No,Yes - Not Covered,Yes,Splash Pad,No,No,None,Sand,Yes,Gazebo areas to have parties
+45.4696753,-76.2053169,23,2458,32248,Egbert Reitsma Parkette,100 Clifford Campbell Street,Yes - Permanent,No,Yes,None,No,No,Accessible swing,Mulch,Yes,
+45.2778858,-75.7662326,1368,383,31498,Mowat Farm Park,100 Fable Street,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2769313,-75.7122657,956,1652,32481,Grovehurst Park,100 Grovehurst Drive,TBD,TBD,TBD,TBD,TBD,No,TBD,TBD,TBD,
+45.3241827,-75.583471,683,2625,57551,Bert Dowler Park,100 Highgarden Terrace,TBD,Yes - Covered,Yes,Splash Pad,No,No,Accessible swing,Sand,Yes,
+45.352483,-75.6968546,1643,609,31733,Geoff Wightman Park,100 Kamloops Avenue,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4661111,-75.4464385,838,1333,32838,Cumberland Millennium Sports Park,100 Millennium Boulevard,Yes - Seasonal,Yes - Covered,Yes,Splash Pad,Yes - Permanent,TBD,TBD,Multiple,Yes,Soccer fields
+45.3755029,-76.3166392,348,1645,32459,Recreational Trail,100 Tapiola Crescent,TBD,TBD,TBD,TBD,TBD,No,TBD,TBD,TBD,
+45.3286679,-75.9019848,633,1700,32791,Beaverbrook Pool Park,1002 Beaverbrook Road,TBD,TBD,Yes,TBD,TBD,Yes,TBD,TBD,TBD,
+45.4029314,-75.7232566,1494,1168,32278,Hintonburg Park,101 Duhamel Street,No,Yes - Not Covered,Yes,Splash Pad,No,Yes,Structure with ramp,Sand,No,Proximity to Hintonburg Community Centre. Fenced but not gated.
+45.2769344,-75.8864877,265,2484,35135,Blackstone Park,101 Tapadero Avenue,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2656678,-75.7551056,478,2395,34628,Barrhaven Mews Park,1010 Andora Avenue,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3670879,-75.6769605,728,466,31594,Pauline Vanier Park,1015 Harkness Avenue,Yes - Seasonal,Yes - Not Covered,Yes,Wading Pool,No,No,None,Sand,Yes,
+45.2769895,-75.9334446,426,1741,34646,Pioneer Plains Park,1018 Stittsville Main Street,No,Yes - Covered,Yes,None,No,No,None,Sand,Yes,Near water & soccer field
+45.3586498,-75.9287899,714,1746,36241,Brookshire Park,1027 Klondike Road,TBD,Yes - Covered,TBD,Splash Pad,TBD,TBD,TBD,TBD,Yes,Soccer field
+45.3668902,-75.6351396,1077,1721,32829,Ladybug Park,103 Inverkip Avenue,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3166055,-75.8230743,38,36,31054,Arbeatha Park,105 Arbeatha Street,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.425425,-75.5193566,919,2468,56753,Fountainhead Park,105 Felicity Crescent,No,Yes - Covered,Yes,Splash Pad,No,Yes,None,Mulch,No,Big field beside the park
+45.2727219,-75.7282351,188,2481,35439,Panda Park,105 Southam Way,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4258409,-75.6351461,7,757,31860,Ogilvie North Park,1059 Ogilvie Road,No,Yes - Covered,Yes,None,No,No,None,Sand,No,
+45.4312615,-75.6353048,1152,300,31362,Cummings Park,1060 Cummings Avenue,No,Yes - Not Covered,Yes,Splash Pad,No,No,None,Multiple,Yes,Ice skating during winter with a little building with a heater to get changed. Basketball
+45.4244264,-75.6656751,782,922,35467,Riverside Memorial Park,1063 North River Road,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3523977,-75.7205556,1544,234,31293,General Burns Park,107 Chesterton Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4721627,-75.5513759,399,972,32078,Father Richard Ward Park,1073 Chablis Park,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3995391,-75.7114773,360,92,31118,Ev Tremblay Park,108 Beech Street,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3534263,-76.0510866,1311,541,31075,Huntley Community Centre,108 Juanita Avenue,TBD,TBD,Yes,Splash Pad,TBD,Yes,TBD,TBD,TBD,
+45.2703482,-75.9459154,405,1630,32519,Feed Mill Creek Park,1080 Carp Road,TBD,TBD,Yes,TBD,TBD,No,TBD,TBD,TBD,
+45.322017,-75.4647177,327,1216,32322,Edwards Park,1081 York's Corners Rd,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4873913,-75.5216357,820,581,31703,Roy G. Hobbs Community Centre and Park,109 Larch Crescent,TBD,Yes - Not Covered,Yes,None,No,Yes,None,Sand,Yes,Beside community centre and large soccer field and baseball diamond
+45.344975,-75.7943427,1462,728,31825,Morrison Park,1095 Morrison Drive,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.3502245,-75.795495,1400,459,31589,Ruth Wildgen Park,1099 Grenon Avenue,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.459506,-75.6143512,319,271,31348,Combermere Park,11 Combermere Lane,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2624739,-75.9361134,431,1539,32379,Crantham Park,11 Crantham Crescent,No,No,Yes,None,No,Yes,None,Sand,No,
+45.2767685,-75.9192284,1481,322,31395,Amberway Park,11 Denham Way,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.445439,-75.651306,1477,346,31436,Cardinal Glen Park,11 Dunbarton Court,TBD,TBD,TBD,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.3137175,-75.9192162,288,483,31616,Star Park,11 Highmont Court,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.351085,-75.923369,908,689,32602,McKinley Park,11 McKinley Drive,TBD,TBD,Yes,TBD,TBD,No,TBD,TBD,TBD,
+45.3498546,-75.7216317,1313,885,32001,Redpine Park,11 Redpine Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3346912,-75.6053941,647,484,31618,Kemp Park,11 Robert Kemp Street,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2824841,-75.7364707,534,1660,32495,Totteridge Park,11 Totteridge Avenue,TBD,TBD,Yes,TBD,TBD,No,TBD,TBD,TBD,
+45.2705355,-75.7335062,1331,2508,35493,Mancini Park,110 Mancini Way,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.514576,-75.4034726,1669,348,31443,Wilfred Murray Park / R.J. Kennedy Community Hall and Arena,1115 Dunning Road,TBD,Yes - Not Covered,Yes,None,No,No,None,Multiple,Yes,I think there is a baseball field. It’s beside an arena. There’s a farmers market on saturdays
+45.4233486,-75.6519463,1015,2618,53447,Lola Park,1122 Lola Street,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4259915,-75.4854055,1243,1330,32363,Isaie Savage Park,114 Saphir Avenue,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3671651,-75.7454727,592,456,31586,Greenlawn Park,1145 Greenlawn Crescent,Yes - Seasonal,Yes - Not Covered,Yes,None,No,No,None,Sand,No,
+45.3718435,-75.7809435,763,895,58333,McEwen Park,1145 Richmond Road,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4888969,-75.4764084,638,2485,35473,Royal Ridge Park,115 Challenge Crescent,No,Yes - Not Covered,No,None,No,No,None,Multiple,No,
+45.421694,-76.0254834,665,1102,32218,Dunrobin Community Centre,1151 Thomas A. Dolan Parkway,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4740554,-75.5464928,1384,1050,32161,Jeanne D'Arc Park,1155 St. Moritz Court,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4183563,-75.6249325,1074,550,31676,Marchand Park,1157 Kenaston Street,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3704555,-75.6187062,1379,120,31159,Elizabeth Manley Park,1161 Blohm Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4251469,-76.2604356,1294,310,31369,Galetta Community Centre,119 Darwin Street,TBD,TBD,Yes,TBD,TBD,Yes,TBD,TBD,TBD,
+45.362692,-75.7164529,1296,320,31388,Steve MacLean Park,1190 Deer Park Road,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.35011,-75.9502859,791,2352,57951,Louis Turner Park,1190 Old Second Line Road,No,No,No,None,No,No,None,Mulch,No,
+45.42873,-75.6305615,1522,758,31862,Ken Steele Park,1195 Ogilvie Road,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2744093,-75.7059675,1529,1653,32483,Drumlins Park,12 Drumlins Avenue,TBD,TBD,TBD,TBD,TBD,No,TBD,TBD,TBD,
+45.257826,-75.9166543,1576,877,31989,Ralph Street Park,12 Ralphpark Street,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4384417,-75.6688593,1404,2425,36220,St. Ambroise Park,120 Landry Street,TBD,TBD,TBD,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.2398493,-75.7314983,371,2507,52535,Guinness Park,120 Ramsgrange Street,No,Yes - Covered,Yes,Splash Pad,TBD,No,TBD,Mulch,No,
+45.3935835,-75.6681789,246,1720,32820,John Murphy Park,120 Rodney Crescent,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4247375,-75.6133301,152,213,31260,Cedarcroft Park,1200 Cedarcroft Crescent,No,No,Yes,Splash Pad,Yes,No,TBD,Multiple,No,Zip line
+45.3784625,-75.7239234,1482,1113,32228,Meadowvale Terrace Park,1205 Trenton Avenue,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3756877,-75.6216541,695,1718,32809,Southwood Park,121 Grandpark Circle,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4908471,-75.4950622,418,2479,35423,Joseph Laflamme Park,121 Prestige Circle,No,Yes - Not Covered,Yes,None,No,Yes,Accessible swing,Mulch,No,
+45.4321519,-75.627798,1343,674,31779,Whiterock Park,1245 Matheson Road,No,No,Yes,Splash Pad,No,No,Accessible swing,Mulch,No,
+45.2659984,-75.7572174,936,2497,49177,Harthill Way Linear Park,125 Harthill Way,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2877521,-75.7295324,161,2495,53631,Watershield Park,125 Watershield Ridge,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3648945,-75.6567934,1093,596,31728,Ledbury Park and Pavilion,1250 Ledbury Avenue,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.346972,-75.7840673,1149,1022,32142,Kilreen Park,1250 Southwood Drive,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.3514314,-75.9413687,535,1615,32527,W.C. Bowes Park,1251 Halton Terrace,TBD,TBD,Yes,Splash Pad,TBD,No,TBD,TBD,TBD,
+45.4752745,-75.5255118,1226,1053,32168,Pierre Rocque Park,1257 Joseph-Drouin Avenue,No,TBD,Yes,None,No,No,TBD,Sand,Yes,Horseshoes and tennis courts and Baseball diamonds nearby
+45.3547709,-75.9202615,871,1000,32530,Ravenscroft Park,126 Shirley's Brook Drive,TBD,TBD,Yes,TBD,TBD,No,TBD,TBD,TBD,
+45.3765323,-75.6634954,767,919,56739,Edgehill Park,1264 Ridgemont Avenue,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3546645,-75.7661072,1579,3,31005,Kenson Park,1265 Adirondack Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.360488,-75.7540516,606,7,31010,Agincourt Park,1269 Albany Drive,Yes - Seasonal,Yes - Covered,Yes,Wading Pool,No,No,Accessible swing,Mulch,No,Sand box
+45.3606142,-75.6476802,90,808,31926,R. George Pushman Park,1270 Pebble Road,Yes - Seasonal,No,Yes,Wading Pool,No,No,None,Sand,TBD,
+45.4074229,-75.7238182,477,78,31103,Bayview Friendship Park,128 Bayview Station Road,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.376567,-75.9934875,5,1613,32846,Trevor Vance Park,129 Goodman Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2606338,-75.9340343,1541,71,31092,Sugar Creek Park,13 Basford Crescent,No,No,Yes,None,No,Yes,TBD,Mulch,No,
+45.1995785,-75.839578,999,1668,56813,Grovewoods Park,13 Grovewood Lane,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2725196,-75.9043356,1506,1625,32444,Slate Park,13 Slate Street,No,Yes - Not Covered,Yes,None,No,No,None,Sand,No,
+45.327088,-75.9205761,715,1801,34621,Walden Park,130 Walden Drive,No,No,No,Splash Pad,No,No,TBD,TBD,Yes,Tennis court beside
+45.3836893,-75.6664353,626,880,31993,Alta Vista Park,1309 Randall Avenue,Yes - Seasonal,Yes - Covered,Yes,Wading Pool,TBD,No,Accessible swing,Sand,No,Backs onto field with baseball diamond that has a skating rink in the winter. The filed is often used to exercise dogs off leash
+45.2547771,-75.589266,1438,1103,32221,Tintern Park,1314 Tintern Drive,TBD,TBD,No,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4289371,-75.6225127,1150,759,34647,Palmerston Park,1326 Ogilvie Road,No,Yes - Not Covered,Yes,None,No,No,None,Sand,No,There is a small spraying pole
+45.37044,-75.6308042,30,1665,32510,Firefly Park,133 Duntroon Circle,TBD,TBD,Yes,TBD,TBD,No,TBD,TBD,TBD,
+45.417287,-75.6456081,149,48,31068,Cecil Morrison Park,1332 Avenue N,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.387997,-75.6688819,183,95,31122,Applewood Park,134 Begonia Avenue,No,TBD,Yes,None,No,No,TBD,Sand,No,
+45.333697,-75.7755041,725,449,31576,Craig Henry Park,135 Craig Henry Drive,TBD,TBD,Yes,TBD,TBD,No,TBD,TBD,TBD,
+45.2770573,-75.7590125,334,997,32106,Burnett Park,135 Sherway Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3493425,-75.9376453,1186,80,31108,Klondike Road Park,1365 Halton Terrace,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.486562,-75.4826758,910,1604,32435,Caserta Park,1369 Caserta Place,TBD,TBD,Yes,TBD,TBD,No,TBD,TBD,TBD,
+45.2791404,-75.7168277,733,1183,32296,Chapman Mills Park,139 Windhurst Drive,TBD,TBD,Yes,Splash Pad,TBD,Yes,TBD,TBD,TBD,
+45.2797127,-75.9111204,216,418,34654,Fringewood Park and Community Centre,14 Fringewood Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2832631,-75.6961431,811,961,32432,Honey Gables Park,14 Ryeburn Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4026944,-75.7457321,1515,170,31222,Champlain Park,140 Carleton Avenue,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2860974,-75.9293255,1044,2521,35569,Maestro Park,140 Maestro Avenue,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3692689,-75.7135507,1180,613,35483,Lexington Park,1404 Lexington Street,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2902856,-75.8949785,1289,561,31685,Nairn Park,141 Kincardine Drive,No,No,No,None,No,No,None,Sand,No,Grass area connecting to some trails
+45.463046,-75.5370674,4,476,32834,Racette Park,1410 Henri Lauzon Street,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.42453,-76.0200657,1174,1525,32397,Porcupine Park,142 Porcupine Trail,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4194625,-75.6077567,622,695,31801,Cyrville Park,1420 Meadowbrook Road,No,No,Yes,Splash Pad,TBD,No,TBD,Multiple,No,
+45.2921676,-75.6970393,974,733,31837,Henry Park,1420 Mulligan Street,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4374694,-75.621754,133,675,31781,Carson Grove Park,1423 Matheson Road,No,Yes - Not Covered,Yes,None,No,No,None,Sand,No,
+45.4712845,-75.5109241,1473,341,31426,Ravine Park (Cumberland),1424 Duford Drive,No,Yes - Covered,No,None,No,Yes,None,Multiple,TBD,Connected to a school - parking only on weekends
+45.3764495,-75.6550759,452,1823,34625,Heron-Walkley Park,1430 Heron Road,TBD,TBD,TBD,TBD,TBD,Yes,TBD,TBD,TBD,
+45.3764495,-75.6550759,453,1823,34626,Heron-Walkley Park,1430 Heron Road,TBD,TBD,Yes,TBD,TBD,Yes,TBD,TBD,TBD,
+45.4255378,-75.6009361,185,89,31113,Appleton Park,1437 Appleton Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2593837,-75.5602573,933,693,54157,Andy Shields Park,1448 Meadow Drive,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4335229,-75.6960253,310,208,31253,Bingham Park,145 Cathcart Street,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4223932,-75.603923,766,918,32548,Vanessa Gilles Park,1465 Ridgebrook Drive,No,No,No,None,Yes,No,None,TBD,Yes,Baseball field
+45.3159878,-75.8973916,1038,1698,32789,Robert Gray Park,147 Gray Crescent,No,No,No,None,No,No,None,Sand,No,
+45.37887,-75.6539905,459,481,31614,Heron Road Community Centre,1480 Heron Road,TBD,TBD,TBD,TBD,TBD,Yes,TBD,TBD,TBD,
+45.469966,-75.508097,1350,343,32591,Queenswood Heights Centennial Park and Community Centre,1485 Duford Drive,TBD,Yes - Not Covered,Yes,Splash Pad,TBD,Yes,TBD,TBD,Yes,
+45.4215283,-75.6122531,1607,696,31808,Meadowbrook Park (Gloucester),1485 Meadowbrook Road,No,Yes - Covered,Yes,Splash Pad,Yes,No,Accessible swing and structure with ramp,Multiple,Yes - Street,
+45.158792,-75.6460772,57,2477,34657,Cobe Parkette,1490 Cobe Terrace,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4663448,-75.5447918,525,1219,32573,Bob MacQuarrie Recreation Complex - Orléans,1490 Youville Drive,TBD,TBD,TBD,TBD,TBD,Yes,TBD,TBD,TBD,
+45.2980565,-75.8938641,1435,347,31441,Dunlop Park,15 Dunlop Court,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.270432,-75.7620803,1485,497,31626,Horace Park,15 Horace Court,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2675768,-75.9424012,1256,1631,32514,Kittiwake Park,15 Kittiwake Drive,TBD,TBD,Yes,None,No,No,TBD,Sand,Yes,
+45.444812,-75.6744527,1185,942,32043,Lindenlea Park,15 Rockcliffe Way,No,Yes - Not Covered,Yes,None,No,No,None,Sand,No,Basketball court
+45.3052472,-75.900591,1266,987,32087,Sewell Park,15 Sewell Way,No,No,No,None,No,No,None,Sand,No,
+45.2682416,-75.825728,344,1062,32183,Rooney Park,15 Steeple Hill Crescent,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3160504,-75.9345704,1424,2189,35377,Broughton Park,150 Battersea Crescent,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2687291,-75.7084878,395,1690,32782,Harbour View Park,150 Harbour View Street,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2475388,-75.7354719,,,,Regatta Park,150 Pennant Ave,No,Yes - Covered,Yes,Splash Pad,No,No,Accessible swing,Mulch,No,Has a small wooded area kids can explore - also has a slide built into the side of a hill which my kids think is super cool
+45.3764573,-75.7406903,60,584,31711,Raven Park,1500 Larose Avenue,Yes - Seasonal,Yes - Not Covered,Yes,Wading Pool,No,No,Accessible swing,Multiple,Yes,Smaller play structure on mulch
+45.263135,-75.9078733,1623,989,55239,CARDELREC Recreation Complex (Goulbourn),1500 Shea Road,TBD,TBD,TBD,TBD,TBD,Yes,TBD,TBD,TBD,
+45.157364,-75.6460503,1052,125,31167,Blue Rock Park,1514 Blue Rock Avenue,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.36054,-75.8563995,467,444,31572,Barry Mullen Park,152 Grandview Road,No,Yes - Not Covered,No,None,No,No,None,Sand,Yes,Water access (public) nearby.
+45.3732002,-75.7413962,263,161,31220,Bellevue Manor Park,1520 Caldwell Avenue,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3755029,-76.3166392,1497,1647,32460,Recreational Trail,1534 Cahill Drive,TBD,TBD,TBD,TBD,TBD,No,TBD,TBD,TBD,
+45.4206671,-75.6678942,490,660,31638,Dutchie's Hole Park,154 Mann Avenue,TBD,TBD,Yes,TBD,TBD,Yes,TBD,TBD,TBD,
+45.5112485,-75.4591306,632,1332,32370,Bella Vista Park,1541 Carino Crescent,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2862162,-75.7096615,738,884,31999,Redpath Park,155 Redpath Drive,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.448155,-75.4607915,1202,2461,35623,Norman Edwards Park,155 Sunshine Crescent,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3755029,-76.3166392,1014,1644,32457,Recreational Trail,1550 Johnston Road,TBD,TBD,TBD,TBD,TBD,No,TBD,TBD,TBD,
+45.4501043,-75.5392774,1352,326,31402,Chapel Hill Park,1556 Forest Valley Drive,Yes - Seasonal,Yes - Covered,Yes,Splash Pad,Yes - Permanent,No,None,Sand,No,Plenty of street parking. Portable toilet next to splash pad. Gazebo with a picnic table
+45.3612559,-75.9782942,281,1612,32525,Bannockburn Park,1557 Landel Drive,TBD,TBD,Yes,TBD,TBD,No,TBD,TBD,TBD,
+45.3736226,-75.6477689,1306,474,31606,Heatherington Park,1560 Heatherington Road,TBD,TBD,TBD,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.4630443,-75.5232872,1023,224,31276,Garneau Park,1567 Champneuf Drive,No,No,Yes,None,No,No,None,Sand,No,baseball diamonds
+45.4395142,-75.6890488,1637,576,32816,Stanley Park,1575 Lakeshore Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4273972,-75.6072138,1120,46,31063,Queensway Park,1580 Telesat Court,TBD,TBD,TBD,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.2924796,-75.8770265,1486,204,31249,Hope Cloutier Park,159 Old Colony Road,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4099532,-75.659692,234,23,31030,Dale Park,1590 Alta Vista Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4681357,-75.5396189,370,1326,32353,Grey Nuns Park,1595 Grey Nuns Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4777588,-75.4726337,1194,1128,35249,Varennes Park,1595 Varennes Boulevard,No,Yes - Not Covered,Yes,None,No,No,TBD,Sand,No,Soccer field
+45.362235,-75.7246849,676,804,31915,Parthia Park,16 Parthia Avenue,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3486408,-75.742278,1295,311,31372,Doug Frobel Park,16 Rowley Avenue,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3989516,-75.7499182,1171,577,31700,Mahoney Park,160 Lanark Avenue,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4683571,-75.4989536,723,843,31959,Kinsella Park,1600 Prestwick Drive,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3740168,-75.6077438,1662,122,31161,Calzavara Family Park,1602 Blohm Drive,No,No,Yes,Splash Pad,TBD,No,Accessible swing,TBD,TBD,
+45.1490974,-75.6500515,730,1171,32633,Kars Recreation Centre,1604 Old Wellington Street,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.388674,-75.6551251,565,553,31678,Grasshopper Hill/Kilborn Park,1609 Kilborn Avenue,TBD,TBD,Yes,TBD,TBD,Yes,TBD,TBD,TBD,
+45.3639721,-75.7474697,320,741,32686,Copeland Park,1609 Navaho Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3141685,-75.9284728,1704,440,32441,John Gooch Park,161 Goldridge Drive,TBD,TBD,TBD,TBD,TBD,No,TBD,TBD,TBD,
+45.4598125,-75.5228973,1019,212,31257,Cedar Mills Park,1620 Cedar Mills Road,No,Yes - Not Covered,No,None,No,No,None,Sand,No,Small playground with mostly sand toys and a small structure
+45.4056257,-75.644308,277,328,31407,Balena Park,1640 Devon Street,Yes - Seasonal,Yes - Covered,Yes,Wading Pool,No,No,None,Multiple,No,Toddler play structure
+45.4083289,-75.6974313,37,39,31060,Arlington Park,165 Arlington Avenue,TBD,TBD,TBD,TBD,TBD,Yes,TBD,TBD,TBD,
+45.2436354,-75.7380464,166,2505,53649,Lamprey Park,165 Lamprey Street,No,Yes - Not Covered,Yes,None,No,No,Accessible swing,TBD,No,
+45.343305,-75.627751,400,1870,36250,Fawn Meadow Park,165 Meandering Brook Drive,Yes - Seasonal,Yes - Covered,Yes,Splash Pad,No,No,None,Sand,Yes,Large dragon and climbable rock feature; nice short walking path around a pond
+45.4755325,-75.4669924,700,1729,32832,Frenette Park,1654 Frenette Street,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4153122,-75.6865835,1351,415,31540,St. Luke's Park,166 Frank Street,Yes - Seasonal,Yes - Not Covered,Yes,Wading Pool,No,Yes,Accessible swing,Multiple,No,Street parking around - basketball court and outside gym annexed to it
+45.3594685,-75.702334,342,31,31039,Carleton Heights Park,1665 Apeldoorn Avenue,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.463361,-75.5130323,990,1076,32587,Marcel Bériault Park,1691 Sunview Drive,No,Yes - Not Covered,Yes,Splash Pad,No,Yes,Accessible swing and structure with ramp,Multiple,No,Splash pad is only a sprinkler post
+45.3592292,-75.7326761,1007,595,31724,Gilbey Park,17 Gilbey Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3700265,-75.6253191,1346,1567,32412,Hummingbird Park,17 Upwood Street,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4565745,-75.5231642,465,67,31086,Barrington Park,1705 Orléans Boulevard,No,Yes - Not Covered,Yes,Splash Pad,No,No,None,Sand,Yes,Volley ball court
+45.3206744,-75.9405591,235,2553,52337,Devonian Park,171 Escarpment Crescent,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.3527344,-75.6260104,939,1031,32151,Russell Boyd Park,1735 St. Bernard Street,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.3048725,-75.9349067,39,2517,35803,Arcadia Park,175 Calvington Avenue,No,Yes - Covered,Yes,None,No,No,TBD,Multiple,No,Soccer field
+45.2750396,-75.7424717,716,1889,36205,Rodeo Park,175 Rodeo Drive,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3501866,-75.8090299,471,1195,32317,Bayshore Park,175 Woodridge Crescent,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4691253,-75.536198,727,460,31592,Glen Park,1756 Grey Nuns Drive,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.4727769,-75.5334246,1204,1066,32186,Stoneboat Park,1765 Stoneboat Crescent,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2996442,-75.8980699,1696,687,31788,Young's Pond Park,177 McCurdy Drive,No,No,Yes,None,No,No,None,Sand,No,
+45.3659025,-75.7372343,114,1585,32685,Grammercy Park,177 Whitestone Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4111295,-75.7140115,142,848,31963,Primrose Park,179 Primrose Avenue,No,Yes - Not Covered,No,Splash Pad,No,Yes,TBD,Multiple,TBD,This playground has no swing
+45.4597833,-75.5074868,282,526,32588,Barnabé Park,1797 Des Epinettes Avenue,No,Yes - Not Covered,Yes,None,No,No,None,Multiple,Yes,Baseball field
+45.3339965,-75.9164258,1142,556,32258,Lismer Pines Park,18 Kimmins Court,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3407975,-75.759975,905,677,31786,Tallwood Park,18 Mattamy Place,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.278509,-75.7756219,1281,822,31933,Pheasant Run Park,18 Pheasant Run Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4299933,-75.5618923,708,430,31551,Blackburn Park,180 - 190 Glen Park Drive,TBD,TBD,TBD,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.3250647,-75.7699254,260,571,32787,Ben Franklin Park East,180 Knoxdale Road,TBD,TBD,Yes,TBD,TBD,Yes,TBD,TBD,TBD,
+45.3764079,-75.7729409,528,621,31753,Woodroffe Park,180 Lockhart Avenue,Yes - Seasonal,Yes - Not Covered,Yes,Wading Pool,No,No,Accessible swing,Mulch,No,Large field for soccer etc. Baseball diamond. Part of large field is off leash dog park. On street parking only. Zip line
+45.4419798,-75.4810907,486,2555,53065,Sweetvalley Park,180 Sweetvalley Drive,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.3888335,-75.6500462,546,831,31945,Playfair Park,1801 Playfair Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4024406,-75.626048,35,1046,32159,Alda Burt Park,1816 St-Laurent Boulevard,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4194656,-75.604231,986,1068,32191,Woodburn Park,1819 Stonehenge Crescent,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4788288,-75.4586027,79,2380,34999,Cardinal Creek Community Park,1825 Trim Road,Yes - Seasonal,Yes - Covered,Yes,Splash Pad,No,No,Accessible swing and structure with ramp,Mulch,Yes,Soccer fields
+45.290459,-75.8782465,1176,206,32613,Clarence Maheral Park,183 Old Colony Road / 170 Castlefrank Road,TBD,TBD,Yes,TBD,TBD,No,TBD,TBD,TBD,
+45.401448,-75.6305316,1240,971,32077,Hutton Park,1830 Hutton Avenue,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4434464,-75.6041039,384,377,31486,Elmridge Park,1841 Elmridge Drive,No,Yes - Not Covered,Yes,Splash Pad,No,No,None,Sand,Yes,Tennis club and basketball court nearby
+45.3682025,-75.6275437,1382,1566,32410,Winterwood Park,1844 Johnston Road,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.420976,-75.6014834,1450,1067,32187,Stonehenge Park,1851 Stonehenge Crescent,TBD,TBD,TBD,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.4521805,-75.5191934,1134,1005,32128,St. François Park,1855 Simard Drive,No,No,Yes,None,No,No,None,Sand,No,There is 2 play structures
+45.4552515,-75.515596,1476,344,31433,Champagne Park,1861 Markwell Crescent,No,Yes - Not Covered,Yes,Splash Pad,Yes - Permanent,No,Accessible swing,Multiple,No,Sledding area for winter. Separate sandbox. Splash pad is a single post
+45.4810959,-75.4654329,128,1680,32557,Cassia Circle Park,1876 Cassia Circle,No,Yes - Not Covered,Yes,None,No,No,None,Sand,No,
+45.4404314,-75.5987306,1373,35,31052,Appleford Park,1879 Appleford Street,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4724564,-75.4811919,615,325,31398,Des Pionniers Park,1880 Carrigan Drive,No,No,Yes,None,No,Yes,Structure with ramp,Multiple,No,Multiple play structures
+45.4715018,-75.4649292,1010,2452,34653,Linda Dunn Park,1885 Celeste Way,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4442346,-75.5384476,392,697,31813,Gérald Poulin Park,1899 Du Clairvaux Road,No,Yes - Not Covered,Yes,Splash Pad,No,No,None,Sand,No,Paved track with painted lines for kids to bike
+45.4034442,-75.6839131,1140,394,31525,Lionel Britton Park,19 Fifth Avenue,No,Yes - Not Covered,Yes,None,Yes - Seasonal,Yes,TBD,Sand,TBD,Trees that provide shade to the park all day. Fully fenced with a gate
+45.3492165,-75.8321198,1586,597,31729,Maki Park,19 Leeming Drive,No,TBD,Yes,None,Yes - Seasonal,No,Accessible swing,Mulch,Yes,Baseball diamond and soccer field. Great ice rink and pond rink in winter
+45.2573706,-75.9308175,984,1064,32185,Stitt Street Park,19 Stitt Street,No,No,Yes,None,No,No,TBD,Sand,No,
+45.3821552,-75.6388911,239,403,31533,Sharel Park,1900 Florida Avenue,Yes - Seasonal,Yes - Covered,Yes,Splash Pad,No,No,Accessible swing,Multiple,No,Shade all around
+45.4455791,-75.6004992,1370,670,31772,Marquis Park,1913 Marquis Avenue,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4614098,-75.5046256,388,1328,32360,Cardinal Farm Park,1921 Wildflower Drive,No,Yes - Not Covered,Yes,None,No,Yes,None,Multiple,No,
+45.4439303,-75.5984454,1698,378,31490,Ridge Park,1943 Elmridge Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4052214,-75.7280811,83,196,31245,Stirling-Carruthers Park,195 Carruthers Avenue,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.368395,-75.657833,210,260,31338,Frank J. Licari Park,1990 Cochrane Street / 1274 Vancouver Avenue,No,Yes - Covered,Yes,Wading Pool,No,No,None,Sand,No,Baseball diamond; there may be a washroom when the wading pool is open
+45.3944254,-75.6759854,59,1186,32302,Windsor Park Ottawa,1B Windsor Avenue,Yes - Seasonal,Yes - Not Covered,Yes,Wading Pool,Yes - Seasonal,No,None,Sand,Yes,Massive area with 2 play structures
+45.3332624,-75.7559748,264,93,31121,Beechcliffe Park,2 Beechcliffe Street,TBD,TBD,TBD,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.2665208,-75.9349697,1253,1632,32445,Laumann Park,2 Laumann Court,No,No,No,None,No,Yes,None,Sand,No,Only a small playstructure
+45.3808305,-75.9635724,437,351,31447,Green Briar Park,2 Rochon Way,No,No,Yes,None,No,No,Accessible swing,Mulch,No,
+45.352026,-75.9309277,912,1616,32437,Gateshead Park,2 Spalding Avenue,TBD,TBD,TBD,TBD,TBD,No,TBD,TBD,TBD,
+45.2619882,-75.9420443,1670,1176,32289,"West Ridge Park ""A""",20 West Ridge Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3678989,-75.7349653,153,1588,32430,Celebration Park,200 Central Park Drive,Yes - Seasonal,Yes - Covered,Yes,Splash Pad,No,No,None,Multiple,Yes,"Fenced in tennis court, good size grass field with soccer nets (adult sized)"
+45.2635249,-75.7720767,266,2377,34618,Cobble Hill Park,200 Cobble Hill Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4658334,-75.4823533,707,420,31000,Gardenway Park,2001 Gardenway Drive,Yes - Seasonal,Yes - Not Covered,Yes,Splash Pad,Yes,Yes,TBD,Multiple,Yes,This park is tricky. There are 3 parks for this location. One being park of a school. One being gated and for toddlers. They are not close enough to watch your children in all locations. The splash pad is close to the toddler section
+45.4288358,-75.6613594,1386,334,32749,Gil-O-Julien Park,201 Donald Street,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.345075,-75.9403923,204,1948,34639,Forestbrook Park,201 Forestbrook Street,No,No,No,None,No,No,None,Mulch,No,
+45.2850186,-75.9178721,497,2427,36214,Tempest Park,201 Tempest Drive,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4383155,-75.6872305,946,1056,32170,New Edinburgh Park,203 Stanley Avenue,Yes - Seasonal,Yes - Covered,Yes,Splash Pad,Yes - Seasonal,No,TBD,Mulch,No,Seasonal fountain in New Edinburgh Fieldhouse
+45.4415877,-75.5927299,52,525,31649,Jasmine Park,2040 Jasmine Crescent,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.2727494,-75.863757,740,1928,35453,Proudmore Romina Park,205 Romina Street,No,Yes - Covered,Yes,None,No,No,Structure with ramp,Mulch,No,Separate toddler structure
+45.4523819,-75.4608219,245,2478,35749,Joseph Vézina Park,205 Serra Ridge,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.3558715,-75.942221,1341,1702,56723,Dunollie Park,2057 Dunollie Crescent,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.347426,-75.6662896,1168,1119,32236,Cahill Park,206 Twyford Street,No,No,Yes,None,No,No,None,Multiple,No,
+45.2385379,-75.744965,,,,Elevation Park,2063 Elevation Rd,No,Yes - Covered,Yes,None,No,No,Accessible swing,Mulch,No,Also has a baseball diamond/soccer field space
+45.3651867,-75.7625781,1187,102,32438,Kingsmere Park,2074 Benjamin Avenue,TBD,TBD,Yes,TBD,TBD,No,TBD,TBD,TBD,
+45.4617772,-75.4737052,701,1730,32835,Mariah Park,2081 Ricardo Street,No,No,Yes,None,No,No,None,Sand,No,
+45.3531998,-75.7717411,55,566,31689,Parkway Park,2095 Kingsley Road,TBD,TBD,Yes,Splash Pad,TBD,Yes,TBD,TBD,TBD,
+45.4610589,-75.4561586,1385,1960,36219,Provence Park,2095 Provence Avenue,No,Yes - Covered,Yes,Splash Pad,No,No,None,Multiple,Yes,Soccer fields
+45.3359119,-75.7935091,1182,2,34661,Leslie Park,21 A Dayton Crescent,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.2687595,-75.9096013,194,545,31674,Forest Creek Park,21 Amy Street,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4484833,-75.4645732,123,2464,35365,Boisdale Park,210 Émerillon Ridge,No,Yes - Covered,Yes,None,No,No,TBD,Mulch,No,
+45.3605467,-76.1210892,1369,616,31745,Marathon Park,210 Linda Loop,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2482599,-75.7508575,796,2637,53763,Merak Park,210 Merak Way,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3179239,-75.5972172,1674,1667,35225,Tiger Lily Park,211 Hillman Marsh Way,No,Yes - Not Covered,Yes,None,No,No,None,Sand,Yes,
+45.4612578,-75.4777214,438,1675,32556,Avebury Park,2126 Avebury Drive,TBD,TBD,TBD,TBD,TBD,No,TBD,TBD,TBD,
+45.45896,-75.5993542,473,876,31987,Beacon Hill North Recreation Centre,2130 Radford Court,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.4744626,-75.4527052,267,1682,34632,Glandriel Park,2130 Valin Street,No,Yes - Covered,Yes,None,No,No,None,Sand,No,large open field
+45.3939077,-75.6153123,412,1090,32216,Hawthorne Park,2139 Tawney Road,Yes - Seasonal,Yes - Covered,Yes,Wading Pool,No,No,None,Sand,No,
+45.4601065,-75.4620671,1081,1967,57711,Lalande Conservation Park,2145 Nantes Street,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3582629,-75.7637379,262,104,31134,Bel-Air Park,2149 Berwick Avenue,Yes - Seasonal,Yes - Covered,Yes,Wading Pool,Yes,No,Accessible swing,Sand,No,
+45.354851,-75.663835,69,130,31169,Owl Park,215 Owl Drive,Yes - Seasonal,Yes - Not Covered,Yes,Splash Pad and wading pool,No,No,Accessible swing,Multiple,No,Hills for sledding in the winter
+45.4710868,-75.4733774,978,753,31853,Marcel Lalande Park,2157 Northlands Drive,No,Yes - Covered,Yes,Splash Pad,No,No,None,Sand,No,Baseball diamond
+45.450792,-75.5922589,,,,Loyola Park,2166 Loyola Ave.,No,No,No,Splash Pad,No,No,None,N/A,No,This park only has a splash pad
+45.436544,-75.6650938,359,380,31497,Emond Park,217 Emond Street,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3903175,-75.6287113,1106,37,31057,Canterbury Park,2185 Arch Street,TBD,Yes - Covered,Yes,Splash Pad and wading pool,No,Yes,None,TBD,Yes,
+45.4348102,-75.6930412,489,209,32718,Cathcart Park,219 Cathcart Street,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.446827,-75.589327,1273,356,31455,Bob Rainboth Park,2193 East Acres Road,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3254467,-75.7088065,73,140,31194,Pineglen Park,22 Brisbane Road,No,No,Yes,None,No,No,Accessible swing,Mulch,No,Tennis Court next to playground
+45.3403636,-75.6962369,1453,555,31682,Riverwood Park,22 Kimberwick Crescent,No,Yes - Covered,Yes,None,No,Yes,Structure with ramp,Sand,No,
+45.2472973,-75.9147421,488,2595,53115,William Bradley Park,22 Porter Street,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4450063,-75.6114524,1648,984,32086,Lockwood Park,22 Seguin Street,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2541656,-75.9071982,68,1075,32196,Sunray Park,22 Sunray Crescent,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2872189,-75.7166757,577,916,32017,Stonecrest Park,220 Stoneway Drive,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.4268323,-75.5262035,316,2424,54959,Bradley Ridge Park,221 Radhika Court,No,No,Yes,Splash Pad,No,No,TBD,Sand,No,Large grass area and skating rink in the winter
+45.3922151,-75.7423515,641,519,31644,Iona Park,223 Iona Street,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3659859,-75.7416112,625,1584,32818,Alphabet Park,225 Scout Street,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.349283,-75.7743064,666,1109,36228,Pinecrest Recreation Complex and Park,2250 Torquay Avenue,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2678573,-75.7299145,214,2396,35057,Foot Guards Park,226 Leamington Way,No,Yes - Covered,Yes,None,No,No,TBD,Multiple,No,Huge open field
+45.4465465,-75.4836145,967,2527,52609,Henri-Rocque Park,229 Hepatica Way,TBD,TBD,Yes,Splash Pad,TBD,No,TBD,TBD,TBD,
+45.2779325,-75.9277647,302,20,31024,Bryanston Gate Park,23 Alon Street,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.285707,-75.8008452,778,1264,32646,Cedarhill Estates Park,23 Cedarhill Drive,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2505974,-75.903758,1060,1711,32801,Hopetown Park,23 Hartsmere Drive,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3407853,-75.7482968,19,794,31895,Donland Park,23 Parker Avenue,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2869764,-75.9206678,279,1983,36238,Bandmaster Park,230 Mistral Way,No,Yes - Not Covered,Yes,Splash Pad,No,No,None,Mulch,No,
+45.1308329,-75.7101571,628,273,31350,Alfred Taylor Recreation Facility - North Gower,2300 Community Way,TBD,TBD,Yes,TBD,TBD,Yes,TBD,TBD,TBD,
+45.3974593,-75.6144015,900,1021,32140,Sheffield Glen Park,2320 Southvale Crescent,TBD,TBD,No,Splash Pad,No,No,None,Sand,No,
+45.385357,-75.6461496,1448,1146,32254,Rabbi Bulka Kindness Park,2330 Virginia Drive,Yes - Seasonal,Yes - Covered,Yes,None,No,No,Accessible swing,Mulch,No,Obstacle course/challenge. Best suited for 7/8+ up to adults. Picnic table is accessible via paved walkways
+45.350018,-75.7784794,1461,830,31943,Ridgeview Park,2331 Edwin Crescent,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.1298045,-75.7165154,692,813,31931,Horace Seabrook Park,2346 Perkins Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3812878,-75.6585305,1056,778,31882,Orlando Park,2347 Orlando Avenue,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2861518,-75.7368914,1272,2543,52685,Leather Leaf Park,235 Leather Leaf Terrace,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3199794,-75.5877151,249,2624,57533,Shuttleworth Park,235 Shuttleworth Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4328807,-75.5547996,823,1325,32351,Michael Budd Park,2359 Orient Park Drive,No,Yes - Not Covered,Yes,None,No,Yes,None,Sand,Yes,Next to some beautiful community gardens!
+45.471184,-76.2142308,447,230,31283,Bairds Park,2388 Fitzroy Street,No,Yes - Not Covered,Yes,None,No,No,Accessible swing,Mulch,No,
+45.3276129,-75.7739289,475,72,31095,Bateman Park,24 Bateman Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4137361,-75.6722575,623,146,35170,Springhurst Park,24 Brunswick Street,Yes - Seasonal,Yes - Not Covered,Yes,None,No,No,Accessible swing and structure with ramp,Multiple,No,"Permanent ping pong table, chess table, volleyball court, two big structures"
+45.2984311,-75.8657309,1302,999,32113,Laura Dubois Park,24 Shetland Way,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.263648,-75.9207685,1493,1188,32307,Wyldwood Park,24 Wintergreen Drive,No,No,Yes,None,No,No,TBD,TBD,No,
+45.1951649,-75.8444334,377,2545,53687,Sarah McCarthy Park,240 Cedarstone Street,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.247725,-75.7549908,,,,Watercolours Park,2400 Watercolours Way,No,TBD,Yes,TBD,TBD,TBD,Accessible swing,TBD,TBD,
+45.3163943,-75.9307974,225,441,32531,Judy Laughton Park,241 Goldridge Drive,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4365375,-75.5482161,247,252,31334,John Kemp Park,2417 Cleroux Crescent,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.37239,-75.777832,977,746,31848,New Orchard Park,243 New Orchard Avenue,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.123042,-75.7205026,403,390,56747,Farmstead Ridge Park,2448 Church Street,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.1851926,-75.8473567,798,2646,52359,Meynell Park,245 Meynell Road,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2783545,-75.7000757,1413,2381,34644,River's Bend Park,245 Riversedge Crescent,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4377705,-75.6612466,340,792,31888,Carillon Park,246 Park Street,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3223218,-75.740123,1154,105,31138,Merivale Gardens Park,25 Bie Street,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2988136,-75.9007666,1383,424,31549,Gesner Court Park,25 Gesner Court,No,No,Yes,None,No,No,None,Sand,No,
+45.4263247,-75.6716488,1591,881,31995,Strathcona Park,25 Range Road,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2356365,-75.9117022,731,1175,32287,Healey's Heath Park,25 West Healey Avenue,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3960452,-75.7326632,1534,495,31622,Fisher Park,250 Holland Avenue,Yes - Seasonal,Yes - Covered,Yes,Splash Pad,No,No,Accessible swing and structure with ramp,Mulch,No,There is a sandbox but the sand is in a bad state
+45.363179,-75.6300833,864,631,31758,Bruff Park,250 Lorry Greenberg Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4222719,-75.6772141,355,1010,32133,Annie Pootoogook Park,250 Somerset Street,TBD,TBD,Yes,TBD,TBD,Yes,TBD,TBD,TBD,
+45.2424881,-75.7341629,658,2506,52955,River Mist Park,2520 River Mist Road,No,Yes - Covered,Yes,None,No,No,Accessible swing,Mulch,No,Also has a sand pit section
+45.0658835,-75.6615852,536,1510,31211,Fairmile Estates Park,2549 Donnelly Drive,TBD,TBD,Yes,TBD,TBD,No,TBD,TBD,TBD,
+45.5162505,-75.4072505,1,1560,32406,Stewart Martin Park,2552 Market Street,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3730191,-75.671655,511,543,31666,Kaladar Park,2554 Kaladar Avenue,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.4079313,-75.6472926,1076,568,31693,Riverview Park,256 Knox Crescent,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.237664,-75.4785607,1221,339,31424,McKendry Park,2567 Dow Street,TBD,Yes - Covered,Yes,None,No,No,None,Sand,Yes,Baseball diamonds
+45.278823,-75.7059806,369,1655,32485,Gus Este Park,26 Brookstone Street,TBD,TBD,Yes,TBD,TBD,No,TBD,TBD,TBD,
+45.3631675,-75.7289726,1469,367,31471,Eleanor Park,26 Eleanor Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3421889,-75.7462239,11,1139,32249,Olmstead Park,26 Viewmount Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3423092,-75.7676493,1638,220,31271,Centrepointe Park,260 Centrepointe Drive,Yes - Permanent,No,Yes,Splash Pad,TBD,No,Accessible swing,Sand,Yes,The accessible swing is not the usual kind. Works for wheelchairs
+45.4993268,-76.092897,841,1334,32374,Constance Buckham's Bay Community Centre Park,262 Len Purcell Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3673395,-75.7931543,1179,141,31741,Lincoln Heights Park,265 Britannia Road,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.3980755,-75.7188971,548,385,31509,Princess Margriet Park,265 Fairmont Avenue,No,Yes - Covered,Yes,None,No,No,None,Sand,No,Tennis/pickleball court
+45.2886534,-75.9229278,847,2414,35561,Par-La-Ville Park,265 Par-La-Ville Circle,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4290931,-75.4849875,1491,715,31823,Lavalee Plaza Park,2655 Monique Avenue,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.515369,-75.3840565,1308,827,57025,Hillside Estates Park,2660 Pierrette Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2374461,-75.4660995,419,435,31563,Joe Rowan Park,2665 Glenwood Drive,No,Yes - Covered,Yes,None,No,No,None,Sand,Yes,Large grass fields
+45.3883695,-75.7482762,1049,243,31312,Clare Gardens Park,269 Clare Street,No,Yes - Not Covered,Yes,None,No,No,None,Sand,No,
+45.442875,-75.6092418,1147,379,31492,Kinsmen Park,27 Elvina Street,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,No,Park currently not accessible as it is under construction (as of 2025-07-07)
+45.2626528,-75.9347368,432,1506,32381,Crossing Bridge Park,27 Hobin Street,No,No,Yes,None,No,Yes,None,Multiple,No,
+45.4408514,-75.9542389,1233,828,32567,Pinhey's Point Park,270 Pinhey Point Road,TBD,TBD,TBD,TBD,TBD,No,TBD,TBD,TBD,
+45.4491058,-75.6776033,691,1142,32253,Village Green Park,270 Springfield Road,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2501039,-75.9265407,233,1714,32806,Deer Run Park,272 West Ridge Drive,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.2286105,-75.4752717,1464,366,31470,Eldon Craig Park,2786 Eldo Street,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3324778,-75.8975418,306,665,31770,Bethune Park,279 March Road,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.193586,-75.8239146,1024,225,31278,Chanonhouse Park,28 Chanonhouse Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2836114,-75.7083624,971,1661,32770,Cresthaven Park,28 Cresthaven Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.324189,-75.7814776,301,431,31553,Burnford Park,28 Glencoe Street,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4261894,-75.511935,1232,2657,53399,Goldfinch Park,280 Joshua Street,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.286435,-75.7403855,951,732,31836,Utman Park,280 Mountshannon Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3611414,-75.7980097,364,182,31229,Britannia Park,2805 Carling Avenue,Yes - Permanent,Yes - Covered,Yes,None,Yes - Permanent,No,None,Sand,Yes,Beach access. Seasonal restaurant. Rentals. Two kids playgrounds. Huge beach.
+45.3175382,-75.6109602,515,2457,35635,Diamond Jubilee Park,2810 Findlay Creek Drive / 4008 Kelly Farm Drive,TBD,Yes - Covered,Yes,Splash Pad,TBD,TBD,TBD,TBD,Yes,
+45.3178055,-75.9268132,99,1084,32797,Tanmount Park,283 Goldridge Drive,TBD,TBD,TBD,TBD,TBD,Yes,TBD,TBD,TBD,
+45.349089,-75.709384,835,2408,35129,Citiplace Park,285 Citiplace Drive,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.3779345,-75.6475795,503,968,32065,Sandalwood Park,2850 Sandalwood Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4277289,-75.6788502,1025,228,31280,Cindy Mitchell Park,288 Chapel Street,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.1639039,-75.9392429,463,734,31840,Dogwood Park and Munster Hamlet Community Centre,2890 Munster Road,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2766453,-75.7269669,601,83,32451,Greenpointe Park,29 Greenpointe Drive,TBD,TBD,Yes,TBD,TBD,No,TBD,TBD,TBD,
+45.3264182,-75.8124855,15,583,31707,Donoghue Memorial Park,29 Larkspur Drive,No,No,Yes,None,No,No,Accessible swing,Mulch,Yes,
+45.3216925,-75.6926184,190,673,31775,Cedardale Park,29 Mary Drive,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2738466,-75.8464356,602,2494,35577,Crownridge Park,290 Meadowbreeze Drive,No,Yes - Covered,Yes,Splash Pad,No,No,None,Mulch,No,Separate sandbox area. No seperate toddler area. Splash pad is directly next to structure
+45.358765,-75.8055031,754,470,31604,Grandeur Park,2915 Haughton Avenue,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3159704,-75.6042014,1173,2040,36248,Dragonfly Park,2920 Findlay Creek Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3717326,-75.6548206,1683,12,32823,Walkley Albion Park,2930 Albion Road North,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4025093,-75.727228,1259,197,32711,McCormick Park,294 Carruthers Avenue,No,Yes - Covered,No,None,No,Yes,None,Sand,No,
+45.394589,-75.7525979,1011,376,31482,Lion's Park,294 Elmgrove Avenue,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4629575,-75.9721692,131,1594,32565,Dunrobin Shores Park,2940 Barlow Crescent,TBD,TBD,TBD,TBD,TBD,No,TBD,TBD,TBD,
+45.3958329,-75.7556948,492,239,31302,Roy Duncan Park,295 Churchill Avenue North,TBD,TBD,TBD,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.3553073,-75.8013662,1334,711,31820,Marlene Catterall Park,2955 Michèle Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3337865,-75.8023198,103,69,31090,Brucelands Park,2960 Baseline Road,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3678805,-75.6924625,807,940,58653,Mooney's Bay Park,2960 Riverside Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3589985,-75.6863939,993,786,31886,Otterson Park,2960 Upper Otterson Place,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.139363,-75.7190005,1274,305,31366,Meadowbrook Park (Rideau),2972 Danbury Way,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.376755,-75.6400748,1699,384,31505,Fairlea Park,2989 Fairlea Crescent,Yes - Seasonal,Yes - Not Covered,Yes,Splash Pad,No,No,None,Sand,No,"Baseball diamond, soccer field, city run ODR in winter"
+45.3556855,-75.6356638,812,964,32058,Sieveright Park,2999 Sable Ridge Drive,No,Yes - Covered,Yes,None,No,No,None,Sand,No,There is a small lot
+45.4522275,-75.615467,12,1178,32293,Birdland Park,3 Whippoorwill Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4368362,-75.5620138,410,155,32570,Harold Diceman Park,30 Diceman Crescent,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3648534,-75.6248557,1672,1642,32456,Reston Park,30 Huntersfield Drive,TBD,TBD,TBD,TBD,TBD,No,TBD,TBD,TBD,
+45.1999751,-75.8355926,865,1507,49139,Kings Grant Park,30 Queenston Drive / 36 Dr. Neelan Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2731426,-75.751909,1570,1174,32282,Moloughney Park,30 Wessex Road,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3359837,-75.7308986,1612,1190,32309,Tanglewood Park,30 Woodfield Drive,Yes - Permanent,Yes - Not Covered,Yes,None,No,No,None,Sand,No,Washroom is at the community centre
+45.4402219,-75.6321793,882,1573,32546,Dr. John Hopps Park,300 Den Haag Drive,No,Yes - Covered,Yes,Splash Pad,No,No,None,Sand,Yes,
+45.444192,-75.6613008,145,324,32754,Richelieu Park,300 des Pères-Blancs Avenue,No,No,No,None,No,No,None,Mulch,Yes,Washroom and water fountain at Vanier Library
+45.356473,-75.3419298,645,2528,49171,Cassandra Park,3000 Cassandra Street,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4446566,-75.6349812,1631,2519,49161,LeBoutillier Park,301 Leboutillier Avenue,No,No,No,None,No,No,None,Mulch,No,
+45.2845631,-75.8943374,652,2636,53761,Susanna Kemp Park,301 Ponderosa Street,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2521778,-75.746448,217,2456,56765,Freshwater Parkette,3025 Freshwater Way,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2522805,-75.808561,318,1060,32179,Terry Carisse Park,3035 Steeple Hill Crescent,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3054541,-75.9049703,227,314,31377,Davis Park,304 Davis Avenue,No,No,Yes,None,No,No,None,Sand,No,
+45.3933536,-76.1873343,1411,558,31684,Kinburn Community Centre,3045 Kinburn Side Road,TBD,TBD,Yes,TBD,TBD,Yes,TBD,TBD,TBD,
+45.4498784,-75.6368299,649,2600,49263,Wing Officer Willa Walker Park,305 Lysander Place,No,Yes - Covered,Yes,Splash Pad,No,No,Accessible swing,Mulch,No,Basketball net
+45.2626291,-75.7639597,215,2463,35401,Fraser Fields Parkette,309 Harthill Way,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2883025,-75.7060861,637,1637,35469,Rosetta Park,31 Rosetta Avenue,TBD,TBD,TBD,TBD,TBD,No,TBD,TBD,TBD,
+45.3267022,-75.7652925,71,952,32049,Roundhay Park / Starwood Park,31 Roundhay Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3649685,-75.721196,1543,65,31082,Fisher Heights Park,31 Sutton Place,TBD,TBD,Yes,TBD,TBD,No,TBD,TBD,TBD,
+45.2458392,-75.9100981,1193,1732,35247,Upcountry Park,310 Upcountry Drive,TBD,TBD,TBD,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.3526399,-75.8139338,1557,186,31240,Andrew Haydon Park,3127 Carling Avenue,Yes - Permanent,Yes - Not Covered,No,None,Yes - Permanent,No,None,Sand,Yes,The splash beside is spray only. Lots of climbing structures on the park to the east. Huge walkable area
+45.2691251,-75.7508696,347,531,31656,McKenna Park / Jockvale Heritage Building,3131 Jockvale Road,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2684512,-75.8839784,1031,2585,35917,Mark Yakabuski Park,315 Haliburton Heights,No,Yes - Covered,Yes,Splash Pad,No,No,Accessible swing,Mulch,No,
+45.2336257,-75.4165638,1577,1213,32319,Kenmore Bicentennial Park,3151 York's Corners Rd,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3481536,-75.6830004,177,1122,35481,Uplands Park,3165 Uplands Drive,No,Yes - Not Covered,Yes,None,No,No,Accessible swing,Multiple,No,Tennis Courts and Basketball Hoop
+45.4546779,-75.4789779,746,2120,36237,Aquaview Park,318 Aquaview Drive,TBD,TBD,Yes,None,No,No,None,Sand,Yes,Soccer field
+45.27894,-75.7459251,1105,1320,32334,North Harrow Park,32 North Harrow Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4414535,-75.6587443,1286,1033,35140,Nault Park,325 St. Denis Street,No,Yes - Not Covered,Yes,Splash Pad,No,No,None,Sand,No,Partially fenced
+45.2563021,-75.7334312,833,2394,35237,Tucana Park,325 Tucana Way,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3519451,-75.8299278,1558,187,32654,Dick Bell Park,3259 Carling Avenue,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2502278,-75.9190105,1066,374,31480,Mary Durling Park,33 Brae Crescent,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3414561,-75.7337932,87,433,31562,Glenmanor Park,33 Glenmanor Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4254264,-75.6561841,164,873,31985,Overbrook Park,33 Quill Street,TBD,TBD,Yes,TBD,TBD,No,TBD,TBD,TBD,
+45.1978742,-75.8438068,770,506,31635,Richmond Lions Community Park,3302 Huntley Road,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3512174,-75.6742752,678,806,31917,McCarthy Park,3320 Paul Anka Drive,Yes - Permanent,Yes - Not Covered,No,Splash Pad,Yes,No,None,Multiple,Yes,Washrooms and water fountain in adjacent community centre
+45.3151635,-75.6956925,285,923,32025,Eccolands Park,334 River Road,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3486736,-75.6716326,685,1118,32233,Paul Landry Park,3345 Uplands Drive,No,No,Yes,None,No,No,Accessible swing,Multiple,No,Zip line
+45.2719031,-75.6771888,680,2623,52263,Memorial Grove Park,335 Memorial Grove,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.1432736,-75.5953653,547,133,31177,Bramble Lane Park - Ridgewood Tot Lot,3366 Bramble Lane,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3504192,-75.6355884,531,307,31474,Sawmill Creek Pool Park,3380 D'Aoust Avenue,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3181486,-75.9401318,969,2542,52933,Richardson Heritage Park,34 Arkose Street,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3050095,-75.9069455,1265,315,31380,Rowe Park,341 Davis Avenue,No,No,No,None,No,No,None,Sand,No,
+45.3405235,-75.8079778,913,1620,32008,Valleystream Park,3412 Richmond Road,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4021223,-75.7028018,229,99,31123,Dalhousie South Park,343 Bell Street South,TBD,TBD,TBD,TBD,TBD,Yes,TBD,TBD,TBD,
+45.2593169,-76.0616335,980,768,31875,Carrol Homestead Community Park / Corkery Community Centre,3447 Old Almonte Road,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3039899,-75.8807877,694,824,31936,Irwin Gate Park,345 Pickford Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4775094,-75.5030714,134,842,31958,Queenswood Ridge Park,346 Kennedy Lane East,Yes - Seasonal,Yes - Covered,Yes,Splash Pad,No,No,Accessible swing and structure with ramp,Multiple,Yes,
+45.436604,-75.6913664,125,150,31202,Bordeleau Park,349 Bruyère Street,No,Yes - Not Covered,Yes,Splash Pad,No,No,TBD,TBD,No,Zip line
+45.2526881,-75.7441314,831,2388,36202,River Run Park,3490 River Run Avenue,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3685177,-75.6406285,893,2462,57133,Hunt Club Gate Park,350 Macoun Circle,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2529722,-75.7345312,1535,2448,58603,Minto Recreation Complex - Barrhaven,3500 Cambrian Road,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4513472,-75.6508801,1484,244,31319,Alvin Heights Park,352 London Terrace,TBD,TBD,Yes,TBD,TBD,Yes,TBD,TBD,TBD,
+45.2533296,-75.7371518,390,2389,35411,Half Moon Bay Park,3525 Cambrian Road,TBD,Yes - Covered,Yes,Splash Pad,No,No,TBD,TBD,No,Soccer field and a pond which often has ducks in it
+45.2766929,-75.864668,351,2426,36217,Brigitta Park,354 Brigitta Street,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4372391,-75.6551238,49,574,31698,Janeville Park,355 Iberville Street,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3447021,-75.6595343,428,990,32090,Windsor Park Gloucester,3560 Wyman Place,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3463615,-75.6451914,63,1111,32224,Trappers Park,3580 Trapper's Road,No,No,Yes,None,No,No,None,Mulch,Yes,Note from a Mom: The neighborhood children trash this park daily. Avoid at all costs
+45.4404359,-75.3425807,571,970,32071,Yves Chénier Park,3585 Sarsfield Road,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4201125,-75.4214989,1365,267,31341,Navan Centennial Park,3591 Wickham Court,TBD,TBD,Yes,TBD,TBD,Yes,TBD,TBD,TBD,
+45.2673396,-75.7129403,307,1656,32777,Berry Glen Park,36 Berry Glen Street,No,Yes - Covered,Yes,None,No,No,None,Sand,No,
+45.3279977,-75.7862946,163,2513,53655,Trend Park,36 Canfield Road,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.44911,-75.6499016,449,692,31793,Hemlock Park,361 Meadow Park Place,TBD,TBD,Yes,TBD,TBD,Yes,TBD,TBD,TBD,
+45.4720403,-75.4990606,1220,955,32051,Mayfair Park,361 Roxdale Avenue,TBD,TBD,Yes,TBD,TBD,Yes,TBD,TBD,TBD,
+45.3617345,-75.6380793,295,160,31217,Greenboro Park and Community Centre,363 Lorry Greenberg Drive,Yes - Permanent,Yes - Covered,Yes,Splash Pad and wading pool,Yes,No,None,Sand,Yes,Washrooms and water fountain in the adjacent community centre
+45.4275383,-75.491958,1603,744,51517,Notre-Dame-des-Champs Park,3659 Navan Road,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.401449,-75.7302198,423,793,31891,Parkdale Park,366 Parkdale Avenue,Yes - Seasonal,Yes - Covered,Yes,Wading Pool,No,Yes,None,Sand,TBD,Washrooms are open when the farmer's market is open
+45.2471419,-75.9195944,540,1712,36245,Coyote Run Park,367 West Ridge Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4229536,-75.6488389,721,839,31950,Presland Park,368 Presland Road,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2959628,-75.8713739,181,33,32616,Appaloosa Park,37 Appaloosa Drive,TBD,TBD,TBD,TBD,TBD,No,TBD,TBD,TBD,
+45.332211,-75.7660353,1718,231,31288,Charing Park,37 Chartwell Avenue,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.3561811,-75.9259901,222,2085,34652,Juanita Snelgrove Park,374 Kinghorn Crescent,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2844568,-75.6846946,1325,1663,34657,Mountain Meadows Park,3740 Mountain Meadows Crescent,No,Yes - Covered,Yes,Splash Pad,No,No,Accessible swing,Sand,Yes,
+45.3451345,-75.6399186,380,16,31019,Emerald Woods Park,3795 Alderwood Street,No,Yes - Not Covered,Yes,Splash Pad,Yes,No,None,Multiple,Yes,
+45.2802215,-75.8612591,1487,507,31637,Huntsman Park,38 A Huntsman Crescent,No,No,Yes,None,No,Yes,TBD,Sand,Yes,
+45.3123063,-75.8874846,140,235,31294,Cattail Creek Park,38 Chimo Drive,No,No,Yes,None,No,No,None,Sand,No,Washrooms at Katimavik pool ~250m away
+45.3387089,-75.6930491,952,1648,32502,Uplands Riverside Park,3860 Riverside Drive,No,Yes - Covered,Yes,None,No,No,None,Sand,No,
+45.365003,-75.7894081,1242,2460,57193,Inspiration Park,38A Winthrop Private,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4060949,-75.6716506,518,249,31303,Brantwood Park,39 Onslow Crescent,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.327612,-75.7547639,869,996,32101,Sherry Lane Park,39 Sherry Lane,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3403926,-75.6401733,440,47,31067,Baden Park,3900 Autumnwood Street,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3413726,-75.6341314,240,10,53869,Aladdin Park,3939 Albion Road,No,Yes - Covered,Yes,None,No,No,None,Sand,No,
+45.4364649,-75.652983,1691,611,31736,Kiwanis Park,395 Levis Avenue,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.2702888,-75.6815276,138,2622,52253,Serenade Park,395 Serenade Crescent,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3508771,-75.7132446,689,1141,32251,Raoul Wallenberg Park,397 Viewmount Drive,TBD,TBD,Yes,TBD,TBD,Yes,TBD,TBD,TBD,
+45.4522636,-75.6348213,624,2601,49273,Alliance Park,398 Codd's Road,No,Yes - Covered,Yes,None,No,No,Accessible swing,Mulch,No,Sand pit with mechanical diggers
+45.3978706,-75.7238873,1561,890,32005,Reid Park,40 Reid Avenue,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4336422,-75.6822066,510,245,31323,Jules Morin Park,400 Clarence Street East,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3167311,-75.9229244,710,438,31568,Jim Malone Park,400 Goldridge Drive,TBD,TBD,TBD,TBD,TBD,Yes,TBD,TBD,TBD,
+45.4297943,-75.6695831,1205,921,32024,Riverain Park,400 North River Road,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.3213686,-75.9304439,1619,2109,36256,Keyrock Park,401 Brunskill Way,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.437519,-75.5662107,48,82,31110,Isaiah Scharfe Park,41 Bearbrook Road,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3406635,-75.9302469,169,2113,35295,Richcraft Recreation Complex - Kanata,4101 Innovation Drive,Yes - Permanent,Yes - Covered,Yes,Splash Pad,Yes - Permanent,No,Accessible swing,Mulch,Yes,
+45.3835897,-75.7535514,385,338,31422,Westboro Kiwanis Park,411 Dovercourt Avenue,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.321931,-75.9214788,1017,201,31247,Whalen Park,4111 Kanata Avenue,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2519028,-75.7143549,965,2509,52837,Orchard Park,415 Kilspindie Ridge,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.279782,-75.6854908,420,2119,36209,Spratt Park,4191 Spratt Road,No,No,Yes,None,No,No,None,Sand,Yes,
+45.4981202,-75.4699711,1569,2518,49029,Millstone Park,420 de la Famille-Laporte Avenue,No,Yes - Covered,Yes,Splash Pad,TBD,No,TBD,Mulch,No,Big field
+45.271924,-75.722038,317,2126,34630,Water Dragon Park,424 Chapman Mills Drive,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.2680766,-75.7769834,759,2130,35023,Fosterbrook Park,428 Fosterbrook Way,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.1927881,-75.8467508,1230,2372,36201,Richmond Oaks Park,43 Rochelle Drive,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4424237,-75.6693514,1073,1032,32153,Optimiste Park,43 Ste. Cécile Street,Yes - Seasonal,Yes - Not Covered,Yes,Wading Pool,Yes - Seasonal,No,Accessible swing,Mulch,No,Bathroom and water fountain at Genest Pool. Merry-go-round style playground equipment
+45.4282227,-75.6191583,,,,Biley A. Blax Park,4303 Halmont Dr. ,Yes - Seasonal,Yes - Covered,Yes,Splash Pad,Yes,No,None,Sand,Yes,The parking is close to city park drive
+45.2772444,-75.6870068,422,1002,32119,Joan O'Malley Park,4310 Shoreline Drive,Yes - Permanent,No,No,None,Yes,No,None,Sand,Yes,
+45.2866722,-75.9142548,918,2467,35787,Brigatine Park,434 Brigatine Avenue,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4091485,-75.7026158,1121,812,31930,McNabb Park,435 Bronson Avenue,Yes - Permanent,Yes - Covered,Yes,Wading Pool,No,Yes,TBD,Sand,Yes,Soccer field
+45.312366,-75.5965029,352,2562,52385,Anishà Park,4355 Kelly Farm Drive,No,Yes - Covered,Yes,Splash Pad,No,TBD,TBD,TBD,No,
+45.275052,-75.6908867,212,1001,32115,Four Seasons Park,4386 Spratt Road,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.2673091,-75.7612976,1489,1087,32209,Houlahan Park and West Houlahan Park,44 Tartan Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2771137,-75.7937359,1425,389,31520,Lytle Park (Nepean),4401 O’Keefe Court,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4080985,-75.6374885,1113,288,31353,Coronation Park,442 Coronation Avenue,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.3766495,-75.610134,1646,215,31264,Ghosh Park,45 Cellini Court,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.303049,-75.8977815,572,803,31910,Stonegate Park,45 McIntosh Way,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.4490026,-75.6278966,1075,854,31972,Thornecliffe Park,45 Provender Avenue,No,Yes - Covered,Yes,Splash Pad,No,No,Accessible swing,Sand,No,Splash pad is pretty small
+45.4530529,-75.4786825,42,1679,35122,Aquaview Pond,450 Aquaview Drive,No,No,Yes,None,No,No,None,TBD,Yes,
+45.3984326,-75.6835457,157,52,35119,Lansdowne Park,450 Queen Elizabeth Driveway,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2428665,-75.9148748,1675,2409,35227,Traditions Park,459 West Ridge Drive,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2906885,-75.8959902,1547,562,31686,Kincardine Park,46 Kincardine Drive,No,No,Yes,None,No,No,None,Sand,No,
+45.4296534,-75.6479294,1681,335,31416,St. Paul's Park,469 Donald Street,No,Yes - Covered,No,Wading Pool,No,No,None,Sand,No,Partial fence
+45.2910232,-75.8851498,1440,902,32612,Rickey Place Park,47 Rickey Place,No,No,Yes,None,No,No,None,Sand,No,
+45.2264666,-75.6957271,805,2367,34635,Millers Point Park,474 Lockmaster Crescent,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3058815,-75.8859616,718,825,32512,Hewitt Park,474 Pickford Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3425037,-75.7989737,1224,739,31979,Nanaimo Park,48 Nanaimo Drive,No,Yes - Not Covered,Yes,None,No,No,None,Sand,Yes,Zip line
+45.345633,-75.5181366,1658,364,31464,Ludger Landry Park,4825 Piperville Road,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3408906,-75.6702511,761,2152,34624,Wisteria Park,485 Wisteria Crescent,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2821256,-75.8912566,1520,2597,52707,Lee Boltwood Park,4879 Abbott Street East,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.490524,-75.501015,1058,590,31720,Wincanton Park,489 Lawler Crescent,TBD,TBD,TBD,TBD,TBD,Yes,TBD,TBD,TBD,
+45.4407109,-75.605713,549,34,31047,Fairfield Park,49 Appleford Street,No,Yes - Not Covered,Yes,Splash Pad,No,Yes,None,Sand,No,Large open fields for running or playing. There are 2 skating rinks in the winter: 1 for hockey and 1 for ice skating.
+45.2805451,-75.711685,1229,1689,32774,Oldfield Park,49 Oldfield Street,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3966049,-75.6493046,1377,111,31151,Billings Park,495 Billings Avenue,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4625628,-75.4965158,289,1327,32355,Yves Richer Park,499 des Épinettes Avenue,No,No,Yes,None,No,No,TBD,Sand,Yes,2 parks; one for younger children and one for older. Baseball diamond
+45.2879245,-75.8843333,462,729,31830,Dog Bone Park,5 Morton Drive,No,No,Yes,None,No,No,None,Sand,No,
+45.3476895,-75.7530921,1572,796,31899,Ryan Farm Park,5 Parkglen Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.437622,-75.5544957,1089,883,31998,Richard Dagg Park,5 Red Maple Crescent,No,No,No,None,No,No,None,Sand,No,Only has a slide
+45.2653755,-75.7148263,232,963,32057,Davidson Park,5 Ryerson Avenue,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.352963,-75.9245979,1268,1278,32325,Shirley's Brook Park,5 Shirley's Brook Drive,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3270656,-75.7828465,629,101,53659,Trend-Arlington Park,50 Bellman Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2470511,-75.7448505,651,2628,53759,Dowitcher Park,50 Dowitcher Grove,No,Yes - Covered,Yes,None,No,No,TBD,Mulch,Yes,
+45.3476846,-75.9314708,1104,1583,32420,Morgan's Grant Woods Park,50 Flamborough Way,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2575673,-75.7229298,112,1635,34659,Golflinks Park,50 Golflinks Drive,TBD,TBD,Yes,TBD,TBD,No,TBD,TBD,TBD,
+45.3086978,-75.881809,1459,542,31665,Pickford Park,50 Pickford Drive,No,No,Yes,None,No,No,TBD,Sand,No,Baseball Diamond
+45.3138662,-75.6145204,504,2498,52509,Creekview Park,505 Creekview Way,TBD,TBD,Yes,TBD,TBD,No,TBD,TBD,TBD,
+45.2849823,-75.6730795,785,2161,58865,Nimiq Park,5058 North Bluff Drive,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.4087057,-75.7285738,1518,76,31099,Laroche Park,51 Stonehurst Avenue,Yes - Seasonal,Yes - Covered,Yes,Splash Pad,No,Yes,None,Mulch,No,"Sand pit is separate from play structure, basketball court"
+45.4485453,-75.6116641,376,312,31375,Quarry Park,51 Twilight Crescent,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4129443,-75.7010926,897,1011,56661,Dundonald Park,516 Somerset Street West,No,Yes - Not Covered,Yes,None,No,Yes,TBD,Multiple,TBD,Currently under construction
+45.2627623,-75.7271937,587,1634,32447,W.C. Levesque Fields,52 Riverstone Drive,TBD,TBD,Yes,TBD,TBD,No,TBD,TBD,TBD,
+45.2181545,-75.6759831,1585,2520,35559,Major W. Ross Chamberlain Park,520 Bridgeport Avenue,No,Yes - Covered,Yes,None,No,No,Accessible swing,Multiple,Yes,
+45.4331551,-75.5129276,487,2516,53095,Tulip Tree Park,520 Tulip Tree Way,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4472333,-75.4766288,627,2169,36234,Allegro Park,523 Allegro Way,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4364202,-75.6485304,1114,291,31359,St-Laurent Complex / Don Gamble Community Centre,525 Côté Street,Yes - Permanent,Yes - Not Covered,Yes,Wading Pool,Yes - Permanent,No,TBD,TBD,Yes,Washrooms and water fountain inside St-Laurent Complex
+45.2886877,-75.9174838,1408,2171,36206,Rosehill Park,528 Rosehill Avenue,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3151247,-75.7311962,599,49,31071,Grenfell Glen Park,53 Avonlea Road,Yes - Seasonal,Yes - Covered,Yes,None,No,No,None,Sand,No,Baseball field
+45.294104,-75.8538609,1001,1672,32542,Brian Parsons Park,53 Black Tern Crescent,No,No,No,None,No,No,None,Sand,Yes,Soccer field
+45.4513391,-75.4897027,1321,2434,35329,Ouellette Park,530 Strasbourg Street,No,Yes - Covered,Yes,Splash Pad,Yes,No,Accessible swing,Multiple,Yes,
+45.233981,-75.6960485,930,691,31792,George McLean Park,5348 McLean Crescent,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.383005,-75.7655617,1258,1163,32271,McKellar Park,539 Wavell Avenue,Yes - Seasonal,TBD,Yes,Wading Pool,TBD,No,TBD,Multiple,Yes,Large field for soccer
+45.4399568,-75.5208942,43,2632,53325,August Park,544 Ponthieu Circle,No,Yes - Not Covered,Yes,None,No,No,None,Mulch,No,
+45.2340911,-75.6811571,1248,772,31876,White Horse Park,5484 Old Mill Way,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3177353,-75.8943291,294,1621,32440,Ed Hollyer Park,55 Bellrock Drive,No,Yes - Not Covered,Yes,None,No,No,None,Sand,No,One small covered gazebo for anyone bringing their own table/chairs. Far from the playground area though.
+45.283302,-75.7323695,93,1659,32785,Gospel Oak Park,55 Gospel Oak Drive,TBD,TBD,TBD,TBD,TBD,Yes,TBD,TBD,TBD,
+45.435783,-75.5092878,160,2559,52903,Patrick Dugas Park,550 Compass Street,No,Yes - Covered,Yes,Splash Pad,TBD,Yes,None,Mulch,No,Tennis court
+45.4822937,-75.494484,1680,1329,32361,Princess Louise Park,550 Princess Louise Drive,No,TBD,Yes,None,No,No,None,Sand,No,
+45.2202207,-75.6949383,849,975,32455,Ivy and Gordon Scharf Park,5535 Pettapiece Crescent,TBD,TBD,Yes,TBD,TBD,No,TBD,TBD,TBD,
+45.2274185,-75.678537,1039,1126,32242,Chris Bracken Park,5545 South River Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.1396877,-75.6049592,404,533,52233,Joella Park,5565 Joella Crescent,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.35521,-75.9344057,828,2379,34640,Weatherston Street Park,557 Weatherston Street,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2207042,-75.6882289,1335,330,31413,Centennial Park,5572 Doctor Leach Drive,Yes - Permanent,Yes - Covered,Yes,None,Yes,No,TBD,Sand,Yes,Washrooms and fountain are inside arena. When arena is open
+45.287996,-75.8448378,1227,1069,32192,Stonemeadow Park,56 Stonemeadow Drive,No,No,No,None,No,No,None,Sand,No,Saucer swing
+45.3308675,-75.9076842,574,1129,32244,Varley Park,56 Varley Drive,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3694148,-75.737535,885,1587,32424,Madison Park,56 Whitestone Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2863565,-75.7000276,929,1638,32766,Blair Park,56 Winding Way,TBD,TBD,Yes,TBD,TBD,No,TBD,TBD,TBD,
+45.4417649,-75.4942249,1050,2649,54789,Hunsdeep Rangar Park,560 Décoeur Drive,No,Yes - Covered,Yes,None,No,No,Accessible swing,Mulch,No,There is a small sand box beside the park. There’s also a large open green space beside the park.
+45.2430416,-75.9089918,1135,2540,52335,Howard A. Maguire Park,560 Parade Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.267778,-75.69548,417,2499,35613,Summerhill Park,560 Summerhill Street,Yes - Seasonal,Yes - Covered,Yes,Splash Pad,No,No,Accessible swing,Mulch,No,
+45.230017,-75.6406314,398,976,32084,Harold Barnhart Park,5650 Scobie Crescent,No,No,Yes,None,No,No,TBD,TBD,Yes,Zip line
+45.1475195,-75.6013364,888,653,31766,Osgoode Community Centre,5660 Osgoode Main Street,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.1484991,-75.599704,693,823,31935,Osgoode Village Park,5701 Philip Street,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3564105,-75.3510575,808,943,32046,Alcide Trudeau Park (Vars),5715 Rockdale Road,Yes - Seasonal,Yes - Not Covered,Yes,None,Yes - Permanent,Yes,Accessible swing,Sand,Yes,Baseball and t-ball diamonds
+45.3705195,-75.7867735,1553,157,31209,Byron Linear Tramway Park,579 Byron Avenue,TBD,TBD,Yes,TBD,TBD,Yes,TBD,TBD,TBD,
+45.3442164,-75.738183,1127,393,31524,Bob Mitchell Park,58 Fieldrow Street,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4406961,-75.5325815,794,1323,32339,Longleaf Park,5831 Gladewoods Place,No,Yes - Covered,Yes,None,No,No,Structure with ramp,Sand,Yes,Tennis / pickleball courts
+45.2854954,-75.8591682,1594,126,32794,Bluegrass Park,59 Bluegrass Drive,No,Yes - Covered,Yes,Splash Pad,No,No,None,Sand,Yes,Park is far away from Bluegrass road. Playstructure and splash pad are close to Bridgestone drive. Skating rink and playing field close to the parking lot at Bridlewood school. Parking also available off Bridgestone drive near the big playing fields across the street. Play structure is not toddler friendly.
+45.3354416,-75.8023159,6,767,31870,Okanagan Park,59 Okanagan Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2758561,-75.8819197,485,2633,53007,Rouncey Park,590 Rouncey Road,Yes - Seasonal,Yes - Covered,Yes,Splash Pad,No,No,Accessible swing,Mulch,Yes,Tennis court
+45.3801594,-75.7498619,856,994,32095,David Shentow Park,590 Tillbury Avenue,No,Yes - Covered,Yes,None,No,No,Accessible swing,Mulch,No,Basketball court
+45.360029,-75.6937164,1533,1704,32800,Moffatt Farm Veterans Park,591 Kochar Drive,TBD,TBD,Yes,TBD,TBD,Yes,TBD,TBD,TBD,
+45.344391,-75.7889926,1141,618,31749,Lisa Park,6 Lisa Avenue,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3508315,-75.8032599,1398,1187,32656,Winfield Park,6 Winfield Avenue,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3298355,-75.7603869,1330,569,31696,Manordale Park,60 Knoxdale Road,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4755469,-75.4884057,182,32,31043,Apollo Crater Park,600 Apollo Way,No,Yes - Not Covered,Yes,None,No,No,None,Sand,No,The majority of the park is occupied by pets and their owners
+45.2829509,-75.7422694,1614,628,32649,Ken Ross Park,600 Longfields Drive,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.2586009,-75.9201315,1618,1522,32390,Village Square Park,6000 Abbott ST E,TBD,Yes - Not Covered,No,None,Yes - Permanent,No,TBD,TBD,No,
+45.4368262,-75.5286404,954,1651,32553,Blue Willow Park,6011 Longleaf Drive,No,Yes - Covered,Yes,Splash Pad,No,No,None,Sand,No,
+45.3652465,-75.4640761,393,365,31467,Harkness Park,6020 Piperville Road,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.456875,-75.5449398,192,406,31535,Forest Glen Park,6091 Forestglen Crescent,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4129333,-75.679929,887,641,31762,Montgomery Memorial Park / Old Town Hall Community Centre,61 Main Street,Yes - Permanent,Yes - Not Covered,Yes,Splash Pad,TBD,Yes,TBD,Sand,TBD,No shade
+45.4431642,-75.5294199,517,1004,32126,Silverbirch Park,6105 Silverbirch Street,No,No,Yes,Splash Pad,No,No,None,Sand,No,Soccer field
+45.435167,-75.5250212,1587,1509,32385,Ruisseau Park,6116 Creek Crossing Street,No,TBD,Yes,None,No,No,None,Mulch,No,
+45.2603377,-75.7541195,799,2651,52439,Albion Falls Park,612 Albion Falls Drive,TBD,TBD,No,TBD,TBD,Yes,TBD,TBD,TBD,
+45.476675,-75.5541551,1707,1148,32256,Voyageur Park,6137 / 6138 Voyageur Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4743086,-75.446883,698,1725,34996,Pine Vista Park,616 Pine Vista Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3464233,-75.8235982,1301,498,31629,Lakeview Park,62 A Horner Drive,No,Yes - Not Covered,Yes,None,No,No,None,Sand,No,Full basketball court. Excellent ice rink and pond rink in winter
+45.3748691,-75.6011578,198,1568,32415,Forestglade Park,62 Forestglade Crescent,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3091508,-75.9030932,907,688,31789,McGibbon Park,62 McGibbon Drive,No,No,No,None,No,No,None,Sand,Yes,
+45.4504464,-75.5300982,947,701,31815,Roy Park,6210 Meadowglen Drive,No,Yes - Covered,Yes,Splash Pad,Yes - Permanent,No,None,Sand,Yes,Zip line
+45.4759472,-75.5518392,22,779,31885,Hiawatha Park,6218 Voyageur Drive,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.455542,-75.6045437,1119,587,31716,La Verendrye Park,625 La Verendrye Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4572669,-75.5304687,1562,501,31632,Louis Perrault Park,6250 Beauséjour Drive,No,No,Yes,None,No,No,Accessible swing,Mulch,No,
+45.3767398,-75.9552283,764,903,32012,March Central Community Centre and Park,630 Cameron Harvey Drive,TBD,TBD,TBD,TBD,TBD,Yes,TBD,TBD,TBD,
+45.2701251,-75.8982406,293,2640,53223,Putney Woodland Park,631 Putney Crescent,No,Yes - Not Covered,No,None,No,No,None,Mulch,No,
+45.454196,-75.5231869,129,1147,32255,Cathedral Park,6347 Viseneau Drive,No,Yes - Not Covered,No,None,No,No,None,Sand,No,Play structure is appropriate for toddlers and small children. There is 2 benches for sitting and a large field for running and playing
+45.272784,-75.7849357,413,2503,52567,Havencrest Woods Park,636 Barry Helman Crescent,TBD,TBD,No,TBD,TBD,No,TBD,TBD,TBD,
+45.436406,-75.5702517,508,216,31268,Joshua Bradley Park,64 Centrepark Drive,No,Yes - Not Covered,Yes,None,No,No,None,TBD,No,
+45.4020713,-75.6820395,1041,51,31073,Sylvia Holden Park,641 O'Connor Street,Yes - Seasonal,Yes - Not Covered,Yes,Wading Pool,Yes - Seasonal,No,TBD,Sand,TBD,Basketball court. There is a decent sized field that is sometimes used by local soccer camps. Most of the park is in the full sun
+45.3923153,-75.7409511,674,798,31906,Hampton Park,645 Parkview Road,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2449923,-75.6048495,792,2365,35397,Fern Park,6462 Deer Valley Crescent,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.1352725,-75.727921,1300,329,31411,Edward Craig Park,6480 Doctor Blair Crescent,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.249425,-75.5989005,595,1331,32368,Greely West Park,6485 Greely West Drive,No,Yes - Covered,Yes,None,No,No,Accessible swing,Mulch,Yes,
+45.2446398,-75.5945838,513,853,31970,Josie Anselmo Memorial Park,6499 Princiotta Street,No,Yes - Covered,Yes,None,No,No,Accessible swing,Mulch,No,
+45.2673828,-75.9505667,926,1629,32520,Ladybirds Park,65 Sirocco Crescent,TBD,TBD,TBD,TBD,TBD,No,TBD,TBD,TBD,
+45.2891842,-75.8555321,1416,137,31190,Deevy Pines Park,65 Stonehaven Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4442835,-75.490894,1035,2612,53381,Don Boudria Park,655 Décoeur Drive,Yes - Seasonal,Yes - Covered,Yes,None,No,No,Accessible swing,Mulch,Yes,There is a baseball diamond beside the park and an enclosed dog park.
+45.4573905,-75.5104854,1297,321,31392,Delorme Park,6591 Delorme Avenue,No,No,Yes,Splash Pad,No,No,None,Sand,No,
+45.2715565,-75.9413496,101,1669,36249,Echowoods Park,66 Lloydalex Crescent,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.288771,-75.6648429,127,2493,49007,Boothfield Park,660 Boothfield Street,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.2729665,-75.6991157,1282,925,32029,Claudette Cain Park,660 River Road,TBD,Yes - Not Covered,Yes,Splash Pad,TBD,No,None,Sand,Yes,
+45.478079,-75.5317329,311,107,31144,Bilberry Park,6600 Bilberry Drive,No,No,Yes,None,No,No,TBD,Sand,Yes,Track from school nearby
+45.4663702,-75.5235869,1128,195,31243,Laurier Carrière Park,6601 Carrière Street,No,Yes - Not Covered,Yes,None,No,No,TBD,Multiple,No,Next to baseball diamond and soccer field and bocce courts. Has a separate sandbox.
+45.1560721,-75.6535689,1498,1294,32326,Whittle-Winter Park,6621 Dorack Drive,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.243968,-75.5669857,1624,2471,35789,Calwood Park,6641 Calwood Avenue,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2476765,-75.7241275,1449,2255,36225,Kilbirnie Park,665 Kilbirnie Drive,No,Yes - Covered,Yes,Splash Pad,No,No,TBD,Sand,Yes,
+45.4394063,-75.6426608,199,807,31922,Forbes Park,669 Paul Avenue,No,No,Yes,None,No,Yes,None,Sand,No,Basketball court; soccer field
+45.1694815,-75.6389013,100,152,31204,Echo Park,6698 Marina Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3110287,-75.9287695,711,439,32540,Insmill Park,67 Insmill Crescent,TBD,TBD,Yes,TBD,TBD,No,TBD,TBD,TBD,
+45.4575105,-75.4694376,544,1678,32842,Portobello Park,670 Aquaview Drive,Yes - Seasonal,Yes - Covered,Yes,Splash Pad,No,No,Accessible swing,Sand,Yes,Soccer field behind playground
+45.4398182,-75.4909238,1008,2614,53279,Georges Dassylva Park,670 Monardia Way,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.242166,-75.7414496,663,2596,52477,Black Raven Community Park,675 Dundonald Drive,No,Yes - Not Covered,Yes,Splash Pad,No,No,Accessible swing,Mulch,Yes,
+45.2625845,-75.5844256,67,2378,35783,South Village Park,6799 South Village Drive,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4099044,-75.7135948,1697,375,31481,Chaudière Park,68 Elm Street,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4811268,-75.4895116,2,386,31516,Fallingbrook Park,681 Deancourt Crescent,No,Yes - Not Covered,Yes,Splash Pad,No,No,None,Sand,Yes,
+45.315819,-75.8350827,80,988,32089,Westcliffe Park,681 Seyton Drive,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.2636843,-75.5843582,636,2470,35443,Pebble Trail Park,6860 Pebble Trail Way,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.405573,-75.7244145,1374,41,31061,Armstrong Park (Old Ottawa),69 Armstrong Street,TBD,TBD,TBD,TBD,TBD,Yes,TBD,TBD,TBD,
+45.4020989,-75.6919086,367,638,31760,Glebe Community Centre and St James Tennis Courts,690 Lyon Street South,TBD,TBD,TBD,TBD,TBD,Yes,TBD,TBD,TBD,
+45.3621861,-75.6806588,445,468,31599,Arnott Park,691 Hartman Crescent,No,Yes - Covered,Yes,Splash Pad,No,No,None,Sand,No,Baby swings in full shade
+45.4806635,-75.523836,361,108,31149,Joe Jamieson Park,6940 Bilberry Drive,Yes - Seasonal,TBD,TBD,Splash Pad,No,No,TBD,Sand,No,Volleyball court
+45.3487738,-75.9290586,117,19,31022,Allenby Park,7 Allenby Road,No,Yes - Not Covered,Yes,None,No,No,Accessible swing,Mulch,TBD,
+45.352929,-75.736404,1177,168,32681,City View Park,7 Canter Boulevard,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.2785281,-75.7299071,28,1657,32490,Finchley Park,7 Finchley Drive,TBD,TBD,Yes,TBD,TBD,No,TBD,TBD,TBD,
+45.2931861,-75.8916595,110,88,31112,Gowrie Park,7 Gowrie Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3483562,-75.7354539,255,790,31887,Palsen Park,7 Palsen Street,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.319466,-75.8206579,1067,1080,32204,Lynwood Park,7 Sycamore Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.266104,-75.9436619,925,1628,32515,Banyon Park,70 Abaca Way,TBD,TBD,TBD,TBD,TBD,No,TBD,TBD,TBD,
+45.2950367,-75.8845739,992,776,31878,Beaton Park,70 Castlefrank Road,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2869448,-75.7485899,1198,496,31623,Neill Nesbitt Park,70 Foxfield Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2918405,-75.7359561,950,731,31834,Mulligan Park,70 Mountshannon Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.343752,-76.0257514,17,2490,34980,Doug Rivington Park,701 Meadowridge Circle,No,Yes - Covered,Yes,None,No,TBD,TBD,TBD,No,
+45.26183,-75.5662248,456,289,32636,Herb Johnston Park,7035 Cosgrove Avenue,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2522519,-75.5556262,973,1664,32497,Shadow Ridge Park,7064 Donwel Drive,TBD,TBD,Yes,TBD,TBD,No,TBD,TBD,TBD,
+45.4503867,-75.6316289,1033,2599,49237,Eugène Martineau Park,710 Mikinak Road,No,Yes - Not Covered,Yes,Splash Pad,TBD,No,Accessible swing,Mulch,Yes,Zip line
+45.3204177,-75.5987972,333,1666,32810,Butterfly Park,711 Long Point Circle,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.3692621,-75.6123287,16,337,56501,Dossetter Park,72 Dossetter Way,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3352937,-75.7445568,1160,1191,32310,Medhurst Park,72 Medhurst Drive,TBD,Yes - Not Covered,Yes,None,No,No,None,Sand,No,They are supposed to be installing a splash pad by next summer so some of the info will change (2025-06-25). There is parking but not right at the park. Zip line
+45.4496348,-75.4720082,1195,2278,35259,Vista Park,720 Vistapark Drive,Yes - Seasonal,Yes - Covered,Yes,Splash Pad,Yes - Seasonal,Yes,TBD,Multiple,Yes,There is a big field to play soccer and hockey rink right beside the park. No dogs allowed near playground area.
+45.3217116,-75.6035125,1405,2428,34619,Turtle Park,720 White Alder Avenue,No,Yes - Not Covered,Yes,Splash Pad,No,No,None,Sand,No,
+45.442027,-75.6259141,479,73,54473,Bathgate Park,724 Bathgate Drive,No,No,No,None,No,Yes,None,Sand,No,Play structure with slide. No swings at all. One bench
+45.4993956,-75.5014522,72,1607,32436,Petrie Island Park,727 Tweddle Road,TBD,TBD,TBD,TBD,TBD,No,TBD,TBD,TBD,
+45.2660653,-75.5511726,923,2488,35827,Greely Village Park,7292 Parkway Road,Yes - Seasonal,Yes - Covered,,None,No,No,TBD,Mulch,Yes,Soccer field
+45.3295254,-75.9138523,1575,1172,32280,Weslock Park,73 Weslock Way,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2368179,-75.7300338,,,,Cappamore Park,730 Cappamore Dr,No,TBD,Yes,None,No,No,Accessible swing,Mulch,Yes,Also has gym structures for adults
+45.2824755,-75.9230832,610,2554,35721,Albert Argue Black Park,735 Rosehill Avenue,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.316001,-75.889824,814,546,31675,Watt's Creek Park,74 Katimavik Road,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4592229,-75.598197,1676,357,31456,Eastvale Park,740 Eastvale Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2932465,-75.8629679,425,1524,32392,J.J. Clarke Park,75 Bridlewood Drive,No,Yes - Not Covered,Yes,None,No,No,TBD,TBD,Yes,
+45.2699435,-75.7690028,141,397,31530,Weybridge Park,75 Flanders Street,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.404736,-75.6992121,368,432,31558,Glebe Memorial Park,75 Glendale Avenue,No,No,Yes,Splash Pad,No,TBD,TBD,Sand,TBD,Decent sized field used for soccer. A community garden (off-limits). The park is partially enclosed by the fences of neighboring properties
+45.203449,-75.8313291,706,2630,52543,Harold Brown Park,750 Kirkham Crescent,TBD,TBD,Yes,TBD,TBD,No,TBD,TBD,TBD,
+45.3755029,-76.3166392,1156,2283,35287,Recreational Trail,751 West Hunt Club Road,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3589279,-75.7222833,1239,518,31643,Inverness Park,76 Inverness Avenue,No,No,Yes,Splash Pad,No,No,TBD,Multiple,Yes,Baseball diamond
+45.2823436,-75.7621268,821,582,57745,Larkin Park,76 Larkin Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4463022,-75.4739871,789,2286,36221,Parkland (760 Lakeridge Drive),760 Lakeridge Drive,No,Yes - Not Covered,Yes,None,No,Yes,None,Multiple,No,It is mostly gated but does have openings with no doors
+45.486804,-75.5159183,256,1322,32337,Robert Park,760 Vinette Crescent,No,Yes - Not Covered,No,None,No,Yes,None,Sand,No,
+45.028127,-75.746744,850,985,35461,Rideau Country Estates South Park,7630 Settler's Way,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.0736745,-75.6431969,559,1314,32332,Reeve Craig Park,7747 Greenline Road,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.1599463,-75.4623381,1595,914,32014,Vernon Park,7814 Lawrence Street,TBD,TBD,Yes,TBD,TBD,Yes,TBD,TBD,TBD,
+45.4842845,-75.5294777,1537,317,31382,Décarie Park,7883 Décarie Drive,No,TBD,TBD,None,No,No,TBD,Sand,No,
+45.3034183,-75.9024869,906,686,31787,Hayward Park,79 McCurdy Drive,No,Yes - Covered,No,None,No,No,None,Sand,No,Soccer fields
+45.4841165,-75.524918,603,318,31385,Troyes Park,7946 Décarie Drive,No,No,Yes,None,No,No,None,Sand,No,
+45.462861,-75.4695418,106,1676,32606,Scala Park,797 Scala Avenue,Yes - Seasonal,Yes - Not Covered,Yes,None,TBD,No,Accessible swing,Sand,Yes,Baseball diamond with bleachers
+45.2659922,-75.7264672,299,2397,54373,Barcham Park,80 Bren-Maur Road,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.1917642,-75.8343065,1016,672,31773,Martin Street Park,80 Martin Street,TBD,TBD,TBD,TBD,TBD,Yes,TBD,TBD,TBD,
+45.3999002,-75.7084743,259,751,31852,McCann Park,80 Norman Street,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2826065,-75.7292393,436,870,31975,Stinson Park,80 Queensbury Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2830315,-75.8420624,1711,1633,32619,Sawyer's Meadow Park,80 Sawyer Way,No,Yes - Covered,Yes,None,No,No,None,Sand,Yes,Great structure for toddlers
+45.2877687,-75.9255479,1028,2429,36243,Campobello Park,800 Campobello Drive,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3705195,-75.6861118,1172,1029,32147,Paget Park,801 Springland Drive,Yes - Seasonal,Yes - Not Covered,Yes,None,No,No,None,Sand,No,
+45.3406983,-75.7252095,1199,2523,49157,Nepean Pond Park,81 Colonnade Road North,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2684074,-75.9122816,1626,1500,32378,Paul Lindsay Park,81 Trailway Circle,No,No,Yes,None,No,No,TBD,TBD,No,
+45.2625781,-75.7555544,653,2620,53705,Clarity Park,825 Clarity Avenue,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.3210738,-75.7087416,321,27,31037,Country Place Park,83 Amberwood Crescent,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3497025,-76.0338708,804,2366,34631,Langstaff Park,83 Frances Colbert Avenue,TBD,Yes - Not Covered,Yes,Splash Pad,No,Yes,TBD,TBD,No,
+45.355704,-75.7985201,507,458,31588,Judge Park,837 Grenon Avenue,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4799158,-75.4818457,705,1162,32268,Watters Park,841 Clearcrest Crescent,No,No,No,None,No,Yes,None,Sand,No,
+45.2777342,-75.8512426,563,446,31574,Grassy Plains Park,85 Grassy Plains Drive,No,No,Yes,None,No,No,None,Sand,No,
+45.247832,-75.9052965,935,1626,32802,Trustee M. Curry Park,85 Hartsmere Drive,TBD,TBD,TBD,TBD,TBD,No,TBD,TBD,TBD,
+45.4853835,-75.5122454,1170,591,32830,Marsha Park,855 A Lawnsberry Drive,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4854618,-75.5114832,,,,Marsha Park,855 A Lawnsberry Drive,No,No,No,None,No,No,None,Sand,Yes,Beside a school
+45.4639525,-75.4607179,76,1677,32599,Rancourt Park,858 Scala Avenue,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.435282,-75.6357434,414,1531,31361,Helen Redpath Thomson Park,861 Cummings Avenue,No,Yes - Not Covered,No,None,No,Yes,None,Mulch,No,Big spider web super fun for older kids.
+45.3631566,-75.6722044,532,1058,32178,Stanstead Park,861 Stanstead Road,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.3836037,-75.3374726,810,960,32054,Leslie Armstrong Park and Bearbrook Community Hall,8720 Russell Road,No,No,Yes,None,No,No,Accessible swing,Mulch,Yes,"Skate Park, baseball diamond"
+45.3192147,-75.9071662,857,995,32099,Sue Nickerson Park,88 Knudson Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3047092,-75.8913436,1098,1579,32418,Hazeldean Woods Park (Tamblin Park),89 Kakulu Road,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.1577674,-76.0290746,446,402,31538,Ashton Park and Cavanagh Community Centre,8930 Flewellyn Road,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2429417,-75.6919802,784,926,32035,Walter Upton-Collins Park,894 River Road,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2857762,-75.7549918,581,452,31580,Greenbank Park,895 Greenbank Road,TBD,TBD,Yes,Splash Pad,TBD,Yes,TBD,TBD,TBD,
+45.3057053,-75.7059061,124,131,31171,Boyce Park,9 Boycrest Street,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3375641,-75.77892,554,795,31897,Briargreen Park,9 Parkfield Crescent,No,No,Yes,None,No,No,None,Mulch,No,Shared city space - shared with school during school hours
+45.4327785,-75.5690661,350,81,31109,Agnes Purdy Park,9 Southpark Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3315854,-75.7935021,1388,62,31079,George Brancato Park,90 Banner Road,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.344622,-75.8044519,1701,871,31844,Mohawk Park,90 Queensline Drive,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4330928,-75.6371909,684,1117,32230,Trojan Park,901 Trojan Avenue,No,No,Yes,Splash Pad,No,Yes,None,Sand,No,Merry-go-round like feature: basketball court
+45.3727458,-75.7536523,523,323,49293,Evergreen Park,906 Denison Crescent,No,No,Yes,None,No,No,TBD,TBD,No,
+45.2710489,-75.8792016,797,2642,53249,Rubicon Park,915 Rubicon Place,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.333432,-75.7948947,421,427,31550,Valleystream East Park,92 Gladecrest Court,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3270052,-75.5919039,962,2500,52749,Littlerock Park,920 Littlerock St,No,Yes - Covered,Yes,Splash Pad,No,No,None,Mulch,No,
+45.3503365,-75.7999659,468,17,31021,Barwell Park,921 Alenmede Crescent,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2619953,-75.7691903,988,1070,32195,Clarke Fields Park,93 Houlahan Street,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4072573,-75.714392,1580,840,32712,Plouffe Park,930 Somerset Street West,Yes - Permanent,Yes - Not Covered,No,Splash Pad,Yes - Seasonal,Yes,None,Sand,Yes,Adjacent to community centre with indoor pool and washrooms.
+45.4868815,-75.5079738,481,1324,32344,Big Bird Park,936 Lawnsberry Drive,No,Yes - Not Covered,Yes,Splash Pad,No,No,TBD,Sand,No,Dog park nearby
+45.3000089,-75.8546868,1605,1302,32328,Mattawa Park,94 Steeple Chase Drive,Yes - Seasonal,TBD,Yes,None,No,No,TBD,Mulch,Yes,Baseball diamond and soccer field. Basketball court on asphalt. Skating rink in winter. Parking lot is by the playing fields. Outside of school hours cannpark in the school bus bay of the WO Mitchell school for parking closer to the play structure area. The school yard offers and additional play structure for older children
+45.3567357,-75.7885149,562,22,31026,Frank Ryan Park,950 Alpine Avenue,Yes - Seasonal,Yes - Covered,Yes,Wading Pool,No,No,None,Sand,Yes,Basketball courts
+45.3958235,-75.6253881,130,832,31949,Weston Park,955 Pleasant Park Road,TBD,Yes - Covered,Yes,Wading Pool,No,No,Accessible swing,Mulch,No,
+45.482928,-75.5336907,1564,106,31143,Luc Major Park,956 Bilberry Drive,No,No,Yes,None,No,No,TBD,Sand,Yes,There is parking but not very much!
+45.2829262,-75.8493392,494,1671,32796,Scisson's Park,96 Bridle Park Drive,TBD,TBD,Yes,TBD,TBD,Yes,TBD,TBD,TBD,
+45.3739241,-75.6132185,646,544,31671,Karsh Park,96 Topley Crescent,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2774941,-75.687191,1231,363,31461,Rideauview Park,960 Eiffel Avenue,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2774941,-75.687191,1708,363,31463,Rideauview Park,960 Eiffel Avenue,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3802755,-75.731595,31,1003,32122,Alexander Park,960 Silver Street,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3959186,-75.6973981,95,144,31195,Senator Eugene Forsey Park,964 Bronson Avenue,No,Yes - Not Covered,TBD,None,TBD,Yes,TBD,Sand,TBD,Basketball court. No real shade. Quiet park.
+45.360973,-75.7765769,1340,797,31901,Whitehaven / George C. Brown Park,970 Parkhaven Avenue,Yes - Seasonal,Yes - Not Covered,Yes,Splash Pad,No,TBD,TBD,Sand,No,
+45.273981,-75.8542045,934,694,31799,Meadowbreeze Park,98 Meadowbreeze Drive,No,Yes - Covered,Yes,None,No,No,None,Mulch,Yes,Outdoor ice rink
+45.4342639,-75.5637181,472,514,31640,Bearbrook Park and Pool,99 Bearbrook Road,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.284439,-75.7052282,790,2347,36255,Furness Park,99 Furness Way,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3149916,-75.8400638,1441,847,31960,Priam Way Park,99 Priam Way,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2718291,-75.7803811,922,2487,35415,Hibiscus Park,990 Cobble Hill Drive,TBD,TBD,Yes,Splash Pad,TBD,TBD,TBD,TBD,TBD,
+45.4716184,-75.4633913,1181,1511,32388,Valin Park and South Fallingbrook Community Centre,998 Valin Street,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3772781,-75.6739849,458,479,31613,Heron Park,999 Heron Road,TBD,TBD,Yes,TBD,TBD,TBD,TBD,TBD,TBD,
+45.2855882,-75.8930074,,,,Bradley-Craig Park,331 Cranesbill Rd,,,,,,,,,,
+45.2903982,-75.9124343,,,,Maize Park,50 Maize Street,No,Yes - Not Covered,Yes,Splash Pad,No,No,Accessible swing,Mulch,No,Dogs Allowed on Leash
+45.5001348,-75.4686432,,,,Mantha Park,525 Famille-Laporte Ave,Yes - Permanent,TBD,TBD,Splash Pad,TBD,TBD,TBD,TBD,TBD,Tennis court
+45.4336422,-75.6872993,,,,Raphael Brunet Park,309 St. Patrick St,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.3223039,-75.9477451,,,,Moo Meadows Park,85 Loggerhead Hts,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,
+45.4014787,-75.7343686,,,,Sutcliffe Park,115 Spencer St.,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD,

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>FNCFS String Converter</title>
+  </head>
+  <body>
+    <h1>String Converter</h1>
+    <p>Welcome! You can use either one of the formats below for this tool to work: </p>
+	<ul>
+	<li>With quotes: "No","Surname Given Name","Registry Number (123-45678-90)"</li>
+	<li>Without quotes: No, Surname Given Name, Registry Number (123-45678-90)</li>
+	</ul>
+
+     <form onsubmit="convertString(); return false;">
+      <label for="inputString">Enter string:</label><br>
+      <input type="text" id="inputString" name="inputString" size="100"><br>
+      <input type="submit" value="Submit">
+    </form>
+    <br>
+    <h2>Output:</h2>
+    <textarea id="output" rows="40" cols="100"></textarea>
+    
+    <script>
+      function convertString() {
+        const inputString = document.getElementById("inputString").value.trim();
+        const values = inputString.split(",");
+        const fields = [];
+        
+        for (let i = 0; i < values.length; i++) {
+          const name = values[i].replace(/"/g, '').trim();
+          fields.push({name: name, type: "text", column: i+1});
+        }
+        
+        const output = JSON.stringify({fields: fields}, null, 2);
+        document.getElementById("output").value = output;
+      }
+    </script>
+  </body>
+</html>

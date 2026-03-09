@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>URL Analyzer</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    #result {
+        margin-top: 20px;
+        white-space: pre-wrap;
+    }
+</style>
+</head>
+<body>
+    <h1>URL Extractor</h1>
+    <h2>How to use</h2>
+    <p>Enter the link of a webpage in the box below and click "Analyze". The tool will analyze the page and extract all the links in that page, listing them below, one line per URL.</p>
+    <label for="urlInput">Enter URL:</label>
+    <input type="text" id="urlInput">
+    <button onclick="analyze()">Analyze</button>
+    <div id="result"></div>
+
+    <script>
+        console.log("v2");
+        function analyze() {
+            var inputUrl = document.getElementById('urlInput').value;
+            var baseUrl = getBaseUrl(inputUrl);
+            var url = inputUrl.trim();
+            if (!url.startsWith('http://') && !url.startsWith('https://')) {
+                url = 'http://' + url;
+            }
+            fetch(url)
+            .then(response => response.text())
+            .then(data => {
+                var parser = new DOMParser();
+                var htmlDoc = parser.parseFromString(data, 'text/html');
+                var links = htmlDoc.querySelectorAll('a[href]');
+                var result = '';
+                links.forEach(link => {
+                    var href = link.getAttribute('href');
+                    if (href && !href.startsWith('#')) {
+                        if (href.startsWith('/')) {
+                            href = baseUrl + href;
+                        }
+                        result += href + '\n';
+                    }
+                });
+                document.getElementById('result').innerText = result;
+            })
+            .catch(error => {
+                document.getElementById('result').innerText = 'Error: ' + error.message;
+            });
+        }
+
+        function getBaseUrl(url) {
+            var parser = document.createElement('a');
+            parser.href = url;
+            return parser.protocol + '//' + parser.hostname;
+        }
+    </script>
+</body>
+</html>
