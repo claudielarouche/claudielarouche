@@ -1,5 +1,5 @@
 ---
-title: Kinderplay
+title: Kinderplay (formerly Kindergym)
 description: A subset of the City of Ottawa Drop-Ins, but just for Kindergym / Kinderplay!
 image: https://claudielarouche.com/assets/img/kindergym.jpg
 image_hero: https://claudielarouche.com/assets/img/kindergym.jpg
