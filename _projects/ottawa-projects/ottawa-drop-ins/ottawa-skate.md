@@ -1,9 +1,9 @@
 ---
-title: List of Places to Skate in Ottawa
+title: Skating
 description: A subset of the City of Ottawa Drop-Ins, but just for skating!
 image: https://claudielarouche.com/assets/img/skating.jpg
 image_hero: https://claudielarouche.com/assets/img/skating.jpg
-tags: [Ottawa]
+tags: [City of Ottawa Drop-Ins]
 permalink: /projects/ottawa-skate/
 layout: projects
 js:

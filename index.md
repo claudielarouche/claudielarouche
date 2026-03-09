@@ -3,7 +3,7 @@ layout: home
 title: Home
 ---
 
-{% assign categories = "Ottawa,Work,Other,Products,Archive" | split: "," %}
+{% assign categories = "City of Ottawa Drop-Ins,Other Ottawa Resources,Work,Other,Products,Archive" | split: "," %}
 
 {% for category in categories %}
   <h2>{{ category | replace: "-", " " }}</h2>

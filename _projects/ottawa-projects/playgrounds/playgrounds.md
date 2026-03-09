@@ -3,7 +3,7 @@ title: City of Ottawa Playgrounds
 description: A map and list of all the playgrounds in Ottawa!
 image: https://claudielarouche.com/assets/img/playground.jpg
 image-hero: https://claudielarouche.com/assets/img/playground.jpg
-tags: [Ottawa]
+tags: [Other Ottawa Resources]
 permalink: /projects/playgrounds/
 layout: projects
 js:

@@ -3,7 +3,7 @@ layout: projects
 title: Ottawa Adult Dance Classes Repository
 permalink: /projects/ottawa-adult-dance-classes/
 description: A listing of adult dance classes in Ottawa
-tags: [Ottawa]
+tags: [Other Ottawa Resources]
 image: https://claudielarouche.com/assets/img/dance.jpg
 js: 
   - https://code.jquery.com/jquery-3.6.0.min.js

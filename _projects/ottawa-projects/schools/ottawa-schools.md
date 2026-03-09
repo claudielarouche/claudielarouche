@@ -2,7 +2,7 @@
 title: City of Ottawa Schools
 description: A list of all the schools in Ottawa!
 image: https://claudielarouche.com/assets/img/school.jpg
-tags: [Ottawa]
+tags: [Other Ottawa Resources]
 permalink: /projects/ottawa-schools/
 layout: projects
 js:

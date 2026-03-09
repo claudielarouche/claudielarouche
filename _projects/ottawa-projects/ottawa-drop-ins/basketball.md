@@ -1,9 +1,9 @@
 ---
-title: Basketball in Ottawa
+title: Basketball
 description: A subset of the City of Ottawa Drop-Ins, but just for basketball!
 image: https://claudielarouche.com/assets/img/basketball.jpg
 image_hero: https://claudielarouche.com/assets/img/basketball.jpg
-tags: [Ottawa]
+tags: [City of Ottawa Drop-Ins]
 permalink: /projects/basketball/
 layout: projects
 js:

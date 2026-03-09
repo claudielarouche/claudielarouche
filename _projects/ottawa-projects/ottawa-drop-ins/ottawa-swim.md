@@ -1,9 +1,9 @@
 ---
-title: List of Places to Swim in Ottawa
+title: Swimming
 description: A subset of the City of Ottawa Drop-Ins, but just for swimming!
 image: https://claudielarouche.com/assets/img/swim.jpg
 image_hero: https://claudielarouche.com/assets/img/swim.jpg
-tags: [Ottawa]
+tags: [City of Ottawa Drop-Ins]
 permalink: /projects/ottawa-swim/
 layout: projects
 js:
