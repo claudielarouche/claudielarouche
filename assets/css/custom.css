@@ -26,6 +26,20 @@ hr {
 .quick-links .btn {
   font-size: 0.9rem;
 }
+
+/* Back to top link under each section heading */
+.back-to-top {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: #6c757d;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+
+.back-to-top:hover {
+  color: #343a40;
+  text-decoration: underline;
+}
 .projects-gallery {
   display: flex;
   flex-wrap: wrap;

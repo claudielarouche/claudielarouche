@@ -3,7 +3,7 @@ layout: home
 title: Home
 ---
 
-<div class="quick-links">
+<div id="top" class="quick-links">
   <a href="#city-of-ottawa-drop-ins" class="btn btn-primary">City of Ottawa Drop-Ins</a>
   <a href="#other-ottawa-resources" class="btn btn-primary">Other Ottawa Resources</a>
   <a href="#work" class="btn btn-primary">Work</a>
@@ -17,6 +17,7 @@ title: Home
 
 {% for category in categories %}
   <h2 id="{{ category | slugify }}">{{ category | replace: "-", " " }}</h2>
+  <a href="#top" class="back-to-top">↑ Back to top</a>
   <div class="projects-gallery">
     {% assign filtered = site.projects | where_exp: "item", "item.tags contains category" | sort: "title" %}
     {% if filtered.size > 0 %}
@@ -36,6 +37,8 @@ title: Home
 {% endfor %}
 
 ## Presentations
+
+<a href="#top" class="back-to-top">↑ Back to top</a>
 
 <div class="projects-gallery">
 
