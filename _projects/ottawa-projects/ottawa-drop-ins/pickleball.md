@@ -1,8 +1,8 @@
 ---
 title: Pickleball
 description: A subset of the City of Ottawa Drop-Ins, but just for pickleball!
-image: https://claudielarouche.com/assets/img/pickleball.jpg
-image_hero: https://claudielarouche.com/assets/img/pickleball.jpg
+image: /assets/img/pickleball.jpg
+image_hero: /assets/img/pickleball.jpg
 tags: [City of Ottawa Drop-Ins]
 permalink: /projects/pickleball/
 layout: projects

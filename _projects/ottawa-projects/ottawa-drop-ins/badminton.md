@@ -1,8 +1,8 @@
 ---
 title: Badminton
 description: A subset of the City of Ottawa Drop-Ins, but just for badminton!
-image: https://claudielarouche.com/assets/img/badminton.jpg
-image_hero: https://claudielarouche.com/assets/img/badminton.jpg
+image: /assets/img/badminton.jpg
+image_hero: /assets/img/badminton.jpg
 tags: [City of Ottawa Drop-Ins]
 permalink: /projects/badminton/
 layout: projects

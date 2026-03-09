@@ -1,8 +1,8 @@
 ---
 title: Yoga
 description: A subset of the City of Ottawa Drop-Ins, but just for yoga!
-image: https://claudielarouche.com/assets/img/yoga.jpg
-image_hero: https://claudielarouche.com/assets/img/yoga.jpg
+image: /assets/img/yoga.jpg
+image_hero: /assets/img/yoga.jpg
 tags: [City of Ottawa Drop-Ins]
 permalink: /projects/yoga/
 layout: projects

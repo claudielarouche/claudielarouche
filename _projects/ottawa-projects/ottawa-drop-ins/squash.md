@@ -1,8 +1,8 @@
 ---
 title: Squash
 description: A subset of the City of Ottawa Drop-Ins, but just for squash!
-image: https://claudielarouche.com/assets/img/squash.jpg
-image_hero: https://claudielarouche.com/assets/img/squash.jpg
+image: /assets/img/squash.jpg
+image_hero: /assets/img/squash.jpg
 tags: [City of Ottawa Drop-Ins]
 permalink: /projects/squash/
 layout: projects

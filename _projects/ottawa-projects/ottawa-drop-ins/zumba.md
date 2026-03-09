@@ -1,8 +1,8 @@
 ---
 title: Zumba
 description: A subset of the City of Ottawa Drop-Ins, but just for zumba!
-image: https://claudielarouche.com/assets/img/zumba.jpg
-image_hero: https://claudielarouche.com/assets/img/zumba.jpg
+image: /assets/img/zumba.jpg
+image_hero: /assets/img/zumba.jpg
 tags: [City of Ottawa Drop-Ins]
 permalink: /projects/zumba/
 layout: projects

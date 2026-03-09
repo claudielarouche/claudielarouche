@@ -1,8 +1,8 @@
 ---
 title: Volleyball
 description: A subset of the City of Ottawa Drop-Ins, but just for volleyball!
-image: https://claudielarouche.com/assets/img/volleyball.jpg
-image_hero: https://claudielarouche.com/assets/img/volleyball.jpg
+image: /assets/img/volleyball.jpg
+image_hero: /assets/img/volleyball.jpg
 tags: [City of Ottawa Drop-Ins]
 permalink: /projects/volleyball/
 layout: projects
