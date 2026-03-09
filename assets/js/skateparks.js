@@ -1,7 +1,7 @@
 ---
 ---
 
-console.log('v5');
+console.log('v2');
 
 let sortingState;
 let originalData = [];
@@ -133,8 +133,8 @@ function renderTable(data) {
 
   // Ensure only one handler is attached
   $('#dataTable_filter input')
-    .off('input.sled')
-    .on('input.sled', function () {
+    .off('input.skateparks')
+    .on('input.skateparks', function () {
       filterMap();
     });
 
