@@ -8,7 +8,7 @@ title: Home
 {% for category in categories %}
   <h2>{{ category | replace: "-", " " }}</h2>
   <div class="projects-gallery">
-    {% assign filtered = site.projects | where_exp: "item", "item.tags contains category" %}
+    {% assign filtered = site.projects | where_exp: "item", "item.tags contains category" | sort: "title" %}
     {% if filtered.size > 0 %}
       {% for project in filtered %}
         <div class="project-card">
