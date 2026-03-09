@@ -3,7 +3,7 @@ title: URL Extractor
 description: Extract all URLs from a web page
 image: https://claudielarouche.com/assets/img/fishing.jpg
 image_hero: https://claudielarouche.com/assets/img/fishing.jpg
-tags: [Work]
+tags: [hidden]
 permalink: /projects/url-extractor/
 layout: projects
 js: 
