@@ -3,7 +3,7 @@
   "configurations": [
     {
       "name": "Jekyll",
-      "runtimeExecutable": "bundle",
+      "runtimeExecutable": "C:\\Ruby34-x64\\bin\\bundle.bat",
       "runtimeArgs": ["exec", "jekyll", "serve"],
       "port": 4000
     }
