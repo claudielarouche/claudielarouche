@@ -33,143 +33,6 @@ window.onload = function() {
     });
 };
 
-function renderTable(data) {
-    // Ensure data is an array
-    if (!Array.isArray(data)) {
-        console.error('Error loading data: Data is not an array.');
-        document.getElementById('csvData').innerHTML = 'Error loading data.';
-        return;
-    }
-
-   let sortOrderIndex; 
-
-    // Check if data is empty
-    if (data.length === 0) {
-        console.warn('No data available.');
-        document.getElementById('csvData').innerHTML = 'No data available.';
-        return;
-    }
-
-    const headers = Object.keys(data[0]);
-
-    let tableHtml = '<table id="dataTable"><thead><tr>';
-    headers.forEach(header => {
-        // Skip rendering a few columns
-        if (header !== 'URL' && header !== 'Category' && header !== 'Reservation') {
-            tableHtml += `<th>${header}</th>`;
-        }
-    });
-    //tableHtml += '</tr></thead><tbody>';
-    tableHtml += '<th>Actions</th></tr></thead><tbody>';
-
-    const filteredData = filterData(data, selectedAreas, selectedDay, selectedAge, selectedTime);
-
-    // Iterate through each row of data
-    filteredData.forEach(row => {
-        const currentDate = row['Date'] ? row['Date'] : '';
-
-        // Start building the row with a conditional background color
-        tableHtml += '<tr>';
-
-        headers.forEach((header, index) => {
-            // Skip rendering the URL column
-            if (header !== 'URL' && header !== 'Category' && header !== 'Reservation') {
-                switch (header) {
-            case 'Sort Order': 	
-                    // Assign the index of the "Baby Scale" column to the babyScaleIndex variable
-                // minus 1 because it is after the URL column which is not shown
-                                sortOrderIndex = index;					  
-                    tableHtml += `<td>${row[header]}</td>`;
-                    break;
-                    case 'Facility Name':
-                        // Merge URL with Pool Name to create a clickable link
-                        const url = row['URL'] ? row['URL'] : '';
-                        const poolName = row[header] ? row[header] : '';
-                        if (url !== '' && poolName !== '') {
-                            tableHtml += `<td><a href="${url}" target="_blank">${poolName}</a></td>`;
-                        } else {
-                            tableHtml += `<td>${poolName}</td>`;
-                        }
-                        break;
-
-                    case 'Address':
-                        // Create a link with the Google Maps URL for the address
-                        const address = row[header] ? row[header].trim() : '';
-                        if (address !== '') {
-                            const googleMapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)},+Ottawa,+Canada`;
-                            tableHtml += `<td><a href="${googleMapsLink}" target="_blank">${address}</a></td>`;
-                        } else {
-                            tableHtml += '<td></td>';
-                        }
-                        break;
-
-                    case 'Registration Required': 
-                        // Handle Facility URL content
-                        const facilityUrl = row['Reservation'] ? row['Reservation'] : '';
-                        if (facilityUrl === '#') {
-                            tableHtml += '<td>No</td>';
-                        } else {
-                            tableHtml += `<td><a href="${facilityUrl}" target="_blank">Yes</a></td>`;
-                        }
-                        break;
-
-                    /*case 'Reservation':
-                        // Handle Facility URL content
-                        const facilityUrl = row[header] ? row[header] : '';
-                        if (facilityUrl === '#') {
-                            tableHtml += '<td>N/A</td>';
-                        } else {
-                            tableHtml += `<td><a href="${facilityUrl}" target="_blank">Facility Reservation Page</a></td>`;
-                        }
-                        break;*/
-
-                    default:
-                        // Display other columns
-                        tableHtml += `<td>${row[header]}</td>`;
-                        break;
-                }
-            }
-        });
-        tableHtml += `<td><a href="https://docs.google.com/forms/d/e/1FAIpQLScTQ6U_lnHo0kr5rGo3zSjYQwsGG5PZIfL5Eil8iVQU9UWTmg/viewform?usp=sf_link&entry.658764103=${encodeURIComponent('Pickleball: ' + row['Day'] + ', ' + row['Time'] + ', ' + row['Facility Name'] + ', ' + row['Address'] + ', ' + row['Activity Type'] + ', ' + row['Registration Required'] + ', ' + row['Area'] + ', ' + row['Category'] + ', ' + row['Age'] + ', ' + row['Time of day'])}" target="_blank">Report a data issue</a></td>`;
-
-
-        tableHtml += '</tr>';
-    });
-
-    tableHtml += '</tbody></table>';
-
-    document.getElementById('csvData').innerHTML = tableHtml;
-
-    if (!$.fn.dataTable.isDataTable('#dataTable')) {
-        $('#dataTable').DataTable({
-            "pageLength": -1,
-            "dom": 'Bfrtip', // 'B' for buttons
-            "buttons": [
-                'colvis' // Column visibility button
-            ],
-
-        "columnDefs": [
-                {
-                "targets": sortOrderIndex, 
-                "visible": false 
-                }
-              
-            ],
-        "order": [[0, 'asc'], [2, 'asc'], [3, 'asc']],
-            "language": {
-                "emptyTable": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>.",
-                "zeroRecords": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>."
-            }
-        });
-    }
-    $('#dataTable_filter input').val(currentSearchValue).trigger('input');
-
-    //If sortingState is set, sort the table by sortingState
-    if (sortingState) {
-        $('#dataTable').DataTable().order(sortingState.order).draw();
-    }
-}
-
 document.getElementById('showToday').addEventListener('click', function(event) {
     event.preventDefault(); // Prevent the default behavior of the anchor link
 
@@ -218,8 +81,12 @@ function filterData(data, selectedAreas, selectedDay, selectedAge, selectedTime)
     });
 }
 
+function filterCurrentData(data) {
+    return filterData(data, selectedAreas, selectedDay, selectedAge, selectedTime);
+}
 
 let currentSearchValue = getQueryParam('search'); // Variable to store the current search value
+const REPORT_PREFIX = 'Pickleball';
 
 
 const selectedAreas = [];
