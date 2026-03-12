@@ -221,51 +221,6 @@ function filterData(data, selectedAreas, selectedDay, selectedAge, selectedTime)
 
 let currentSearchValue = getQueryParam('search'); // Variable to store the current search value
 
-function clearAllFilters() {
-    // Store the current sorting state
-    sortingState = $('#dataTable').DataTable().state();
-    
-    // Check all the "Select Area" checkboxes
-    document.querySelectorAll('.areaCheckbox').forEach(checkbox => {
-        checkbox.checked = true;
-        if (!selectedAreas.includes(checkbox.value)) {
-            selectedAreas.push(checkbox.value);
-        }
-    });
-
-// Check all the "Select Day" checkboxes
-    document.querySelectorAll('.dayCheckbox').forEach(checkbox => {
-        checkbox.checked = true;
-        if (!selectedDay.includes(checkbox.value)) {
-            selectedDay.push(checkbox.value);
-        }
-    });
-
-// Check all the "Select Age" checkboxes
-    document.querySelectorAll('.ageCheckbox').forEach(checkbox => {
-        checkbox.checked = true;
-		if (!selectedAge.includes(checkbox.value)) {
-			selectedAge.push(checkbox.value);
-		}
-    });
-
-// Check all the "Select Time of day" checkboxes
-    document.querySelectorAll('.timeCheckbox').forEach(checkbox => {
-        checkbox.checked = true;
-        if (!selectedTime.includes(checkbox.value)) {
-            selectedTime.push(checkbox.value);
-        }
-    });
-
-
-    // Clear the DataTable search box
-    var dataTable = $('#dataTable').DataTable();
-    dataTable.search('').draw();
-    currentSearchValue = "";
-
-    // Render the table with cleared filters
-    renderTable(originalData);
-}
 
 const selectedAreas = [];
 document.querySelectorAll('.areaCheckbox').forEach(function (checkbox) {
