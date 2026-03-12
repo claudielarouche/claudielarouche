@@ -5,10 +5,6 @@ console.log('use main data source');
 let sortingState;
 let originalData = []; // Initialize as an empty array
 
-function getQueryParam(key) {
-    const params = new URLSearchParams(window.location.search);
-    return params.get(key);
-}
 
 window.onload = function() {
 	// Update the path to your CSV file
