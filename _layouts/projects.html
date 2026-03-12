@@ -25,27 +25,73 @@ layout: page
   </a>
 </p>
 
-{% assign primary_tag = page.tags[0] %}
-
-{% assign related = site.projects
-   | where_exp: "p", "p.tags contains primary_tag"
-   | where_exp: "p", "p.title != page.title"
-%}
-
 {% unless page.tags contains "hidden" %}
-  {% if related.size > 0 %}
-    <h2>Other projects you might be interested in</h2>
-    <div class="projects-gallery">
-      {% for p in related %}
-        <div class="project-card">
-          <a href="{{ p.url | relative_url }}">
-            {% if p.image %}
-              <img src="{{ p.image | relative_url }}" alt="{{ p.title }}" />
-            {% endif %}
-            <h3>{{ p.title }}</h3>
-          </a>
-        </div>
-      {% endfor %}
-    </div>
+  {% if page.tags contains "City of Ottawa Drop-Ins" %}
+
+    {% assign drop_in_siblings = site.projects
+       | where_exp: "p", "p.tags contains 'City of Ottawa Drop-Ins'"
+       | where_exp: "p", "p.title != page.title"
+       | sort: "title"
+    %}
+    {% assign ottawa_resources = site.projects
+       | where_exp: "p", "p.tags contains 'Other Ottawa Resources'"
+       | sort: "title"
+    %}
+
+    {% if drop_in_siblings.size > 0 %}
+      <h2>Other City of Ottawa Drop-ins</h2>
+      <div class="projects-gallery">
+        {% for p in drop_in_siblings %}
+          <div class="project-card">
+            <a href="{{ p.url | relative_url }}">
+              {% if p.image %}
+                <img src="{{ p.image | relative_url }}" alt="{{ p.title }}" />
+              {% endif %}
+              <h3>{{ p.title }}</h3>
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% if ottawa_resources.size > 0 %}
+      <h2>Other Ottawa Resources</h2>
+      <div class="projects-gallery">
+        {% for p in ottawa_resources %}
+          <div class="project-card">
+            <a href="{{ p.url | relative_url }}">
+              {% if p.image %}
+                <img src="{{ p.image | relative_url }}" alt="{{ p.title }}" />
+              {% endif %}
+              <h3>{{ p.title }}</h3>
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+  {% else %}
+
+    {% assign primary_tag = page.tags[0] %}
+    {% assign related = site.projects
+       | where_exp: "p", "p.tags contains primary_tag"
+       | where_exp: "p", "p.title != page.title"
+    %}
+    {% if related.size > 0 %}
+      <h2>Other projects you might be interested in</h2>
+      <div class="projects-gallery">
+        {% for p in related %}
+          <div class="project-card">
+            <a href="{{ p.url | relative_url }}">
+              {% if p.image %}
+                <img src="{{ p.image | relative_url }}" alt="{{ p.title }}" />
+              {% endif %}
+              <h3>{{ p.title }}</h3>
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+
   {% endif %}
 {% endunless %}
