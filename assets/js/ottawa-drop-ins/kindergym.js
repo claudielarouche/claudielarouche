@@ -58,34 +58,13 @@ document.getElementById('showToday').addEventListener('click', function(event) {
     }
 });
 
-function filterData(data, selectedAreas, selectedDay, selectedTime) {
-
-
-    return data.filter(row => {
-
-	const currentArea = row['Area'] || '';
-	const currentCategory = row['Activity Type'] || '';
-	const currentDay = row['Day'] || '';
-	const currentAge = row['Age'] || '';
-	const currentTime = row['Time of day'] || '';
-
-	const areaCondition = selectedAreas.some(area => currentArea.toLowerCase().includes(area.toLowerCase()));
-	const dayCondition = selectedDay.some(day => currentDay.toLowerCase() === day.toLowerCase());
-	
-	const timeCondition = selectedTime.some(time => currentTime.toLowerCase().includes(time.toLowerCase()));
-	const skateCondition = currentCategory === "Kindergym" || currentCategory === "Kinderplay";
-
-	    
-	return areaCondition && dayCondition && timeCondition && skateCondition;
-    });
-}
-
 function filterCurrentData(data) {
-    return filterData(data, selectedAreas, selectedDay, selectedTime);
+    return filterData(data);
 }
 
 let currentSearchValue = getQueryParam('search'); // Variable to store the current search value
 const REPORT_PREFIX = 'Ottawa Drop-Ins';
+const ACTIVITY_FILTER = { column: 'Activity Type', value: ['Kindergym', 'Kinderplay'], exact: false };
 
 
 const selectedAreas = [];

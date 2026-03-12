@@ -133,3 +133,34 @@ function renderTable(data) {
         $('#dataTable').DataTable().order(sortingState.order).draw();
     }
 }
+
+function filterData(data) {
+    return data.filter(row => {
+        const currentArea = row['Area'] || '';
+        const currentDay  = row['Day']  || '';
+        const currentTime = row['Time of day'] || '';
+
+        const areaCondition = selectedAreas.some(area => currentArea.toLowerCase().includes(area.toLowerCase()));
+        const dayCondition  = selectedDay.some(day => currentDay.toLowerCase() === day.toLowerCase());
+        const timeCondition = selectedTime.some(time => currentTime.toLowerCase().includes(time.toLowerCase()));
+
+        const ageCondition = typeof selectedAge !== 'undefined'
+            ? selectedAge.some(age => (row['Age'] || '').toLowerCase().includes(age.toLowerCase()))
+            : true;
+
+        const categoryCondition = typeof selectedCategory !== 'undefined'
+            ? selectedCategory.some(cat => (row['Category'] || '').toLowerCase() === cat.toLowerCase())
+            : true;
+
+        let typeCondition = true;
+        if (typeof ACTIVITY_FILTER !== 'undefined' && ACTIVITY_FILTER !== null) {
+            const currentVal = row[ACTIVITY_FILTER.column] || '';
+            const values = Array.isArray(ACTIVITY_FILTER.value) ? ACTIVITY_FILTER.value : [ACTIVITY_FILTER.value];
+            typeCondition = ACTIVITY_FILTER.exact
+                ? values.some(v => currentVal === v)
+                : values.some(v => currentVal.toLowerCase().includes(v.toLowerCase()));
+        }
+
+        return areaCondition && dayCondition && timeCondition && ageCondition && categoryCondition && typeCondition;
+    });
+}

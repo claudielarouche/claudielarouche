@@ -58,35 +58,13 @@ document.getElementById('showToday').addEventListener('click', function(event) {
     }
 });
 
-function filterData(data, selectedAreas, selectedDay, selectedAge, selectedTime) {
-
-
-    return data.filter(row => {
-
-    const currentArea = row['Area'] || '';
-    const currentCategory = row['Activity Type'] || '';
-    const currentDay = row['Day'] || '';
-    const currentAge = row['Age'] || '';
-    const currentTime = row['Time of day'] || '';
-
-    const areaCondition = selectedAreas.some(area => currentArea.toLowerCase().includes(area.toLowerCase()));
-    const dayCondition = selectedDay.some(day => currentDay.toLowerCase() === day.toLowerCase());
-    const ageCondition = selectedAge.some(age => currentAge.toLowerCase().includes(age.toLowerCase()));
-    const timeCondition = selectedTime.some(time => currentTime.toLowerCase().includes(time.toLowerCase()));
-    const typeCondition = currentCategory.toLowerCase().includes("badminton");
-
-
-        
-    return areaCondition && dayCondition &&  ageCondition && timeCondition && typeCondition;
-    });
-}
-
 function filterCurrentData(data) {
-    return filterData(data, selectedAreas, selectedDay, selectedAge, selectedTime);
+    return filterData(data);
 }
 
 let currentSearchValue = getQueryParam('search'); // Variable to store the current search value
 const REPORT_PREFIX = 'Badminton';
+const ACTIVITY_FILTER = { column: 'Activity Type', value: 'badminton', exact: false };
 
 
 const selectedAreas = [];

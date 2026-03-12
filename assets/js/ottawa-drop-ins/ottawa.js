@@ -58,33 +58,13 @@ document.getElementById('showToday').addEventListener('click', function(event) {
     }
 });
 
-function filterData(data, selectedAreas, selectedCategory, selectedDay, selectedAge, selectedTime) {
-
-
-    return data.filter(row => {
-
-	const currentArea = row['Area'] || '';
-	const currentCategory = row['Category'] || '';
-	const currentDay = row['Day'] || '';
-	const currentAge = row['Age'] || '';
-	const currentTime = row['Time of day'] || '';
-
-	const areaCondition = selectedAreas.some(area => currentArea.toLowerCase().includes(area.toLowerCase()));
-        const categoryCondition = selectedCategory.some(category => currentCategory.toLowerCase() === category.toLowerCase());
-	const dayCondition = selectedDay.some(day => currentDay.toLowerCase() === day.toLowerCase());
-	const ageCondition = selectedAge.some(age => currentAge.toLowerCase().includes(age.toLowerCase()));
-	const timeCondition = selectedTime.some(time => currentTime.toLowerCase().includes(time.toLowerCase()));
-
-	return areaCondition && categoryCondition && dayCondition && ageCondition && timeCondition;
-    });
-}
-
 function filterCurrentData(data) {
-    return filterData(data, selectedAreas, selectedCategory, selectedDay, selectedAge, selectedTime);
+    return filterData(data);
 }
 
 let currentSearchValue = getQueryParam('search'); // Variable to store the current search value
 const REPORT_PREFIX = 'Ottawa Drop-Ins';
+const ACTIVITY_FILTER = null;
 
 const selectedAreas = [];
 document.querySelectorAll('.areaCheckbox').forEach(function (checkbox) {
