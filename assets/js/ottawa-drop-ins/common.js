@@ -54,6 +54,10 @@ function renderTable(data) {
     const isHidden = (header) =>
         header === 'URL' ||
         header === 'Reservation' ||
+        header === 'Play Free Flag' ||
+        header === 'Swim Type' ||
+        header === 'Period' ||
+        header === 'Time of day' ||
         (!showCategory && header === 'Category') ||
         (!showAge && (header === 'Age' || header === 'Activity Type'));
 
