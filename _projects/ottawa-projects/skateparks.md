@@ -1,11 +1,11 @@
 ---
 title: List of Skateboard and BMX parks in Ottawa
-description: A map and list of all the Skateboard and BMX parks in Ottawa!
+description: A map and list of all the skateboard and BMX parks in Ottawa!
 image: https://claudielarouche.com/assets/img/skateboard.jpg
 image-hero: https://claudielarouche.com/assets/img/skateboard.jpg
 tags: [Ottawa]
-layout: dev
-permalink: /skateparks/
+layout: projects
+permalink: /projects/ottawa-skateparks/
 js:
   - https://code.jquery.com/jquery-3.6.0.min.js
   - https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js
@@ -53,7 +53,7 @@ css:
 <div id="map" style="height: 400px; width: 100%;"></div>
 
 
-## List of Skateboard and BMX parks hills
+## List of Skateboard and BMX parks
 
 
 <div id="csvData"></div>
