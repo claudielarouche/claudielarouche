@@ -2,9 +2,9 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "Jekyll",
-      "runtimeExecutable": "C:\\Ruby34-x64\\bin\\bundle.bat",
-      "runtimeArgs": ["exec", "jekyll", "serve"],
+      "name": "jekyll",
+      "runtimeExecutable": "cmd",
+      "runtimeArgs": ["/c", "C:\\Ruby34-x64\\bin\\bundle.bat", "exec", "jekyll", "serve"],
       "port": 4000
     }
   ]
