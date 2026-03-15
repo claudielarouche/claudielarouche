@@ -1,0 +1,186 @@
+/* =====================================================
+   TSM Estimator – Custom Styles
+   ===================================================== */
+
+/* Step progress indicator */
+.tsm-progress {
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 1.75rem;
+  flex-wrap: wrap;
+}
+
+.tsm-step {
+  padding: 0.35rem 0.85rem;
+  border-radius: 20px;
+  background: #e9ecef;
+  color: #6c757d;
+  font-size: 0.82rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.tsm-step.active {
+  background: #007bff;
+  color: #fff;
+}
+
+/* ---- Result cards ---- */
+.tsm-result-card {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.tsm-result-primary {
+  background: #e8f4fd;
+  border-color: #007bff;
+  text-align: center;
+}
+
+.tsm-result-optionc {
+  background: #e8f8e8;
+  border-color: #198754;
+}
+
+.tsm-big-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #007bff;
+  margin: 0.5rem 0;
+  line-height: 1.1;
+}
+
+.tsm-subtitle {
+  color: #495057;
+  margin-bottom: 0;
+}
+
+/* Grid of secondary result cards */
+.tsm-result-grid {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.tsm-result-grid .tsm-result-card {
+  flex: 1;
+  min-width: 130px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.tsm-label {
+  font-size: 0.75rem;
+  color: #6c757d;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25rem;
+}
+
+.tsm-value {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #212529;
+  margin-bottom: 0;
+}
+
+.tsm-alert-sm {
+  font-size: 0.85rem;
+  padding: 0.5rem 0.75rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0;
+}
+
+/* ---- Tables ---- */
+.tsm-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+}
+
+.tsm-table th,
+.tsm-table td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid #dee2e6;
+  text-align: left;
+}
+
+.tsm-table th {
+  font-weight: 600;
+  background: #f1f3f5;
+}
+
+.tsm-total-row td {
+  border-top: 2px solid #495057;
+  border-bottom: none;
+  font-size: 1.05rem;
+  padding-top: 0.65rem;
+}
+
+/* ---- Entitlement checklist ---- */
+.tsm-checklist {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.tsm-checklist li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #dee2e6;
+  line-height: 1.5;
+}
+
+.tsm-checklist li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* ---- Disclaimer box ---- */
+.tsm-disclaimer {
+  background: #fff3cd;
+  border: 1px solid #ffc107;
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin-top: 1rem;
+}
+
+.tsm-disclaimer h4 {
+  margin-top: 0;
+  color: #856404;
+}
+
+.tsm-disclaimer ol,
+.tsm-disclaimer ul {
+  padding-left: 1.25rem;
+}
+
+.tsm-disclaimer li {
+  margin-bottom: 0.4rem;
+}
+
+/* ---- Utility ---- */
+.tsm-muted {
+  color: #6c757d;
+  font-size: 0.85rem;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 600px) {
+  .tsm-big-number {
+    font-size: 2rem;
+  }
+
+  .tsm-result-grid .tsm-result-card {
+    min-width: 110px;
+  }
+
+  .tsm-table th,
+  .tsm-table td {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.5rem;
+  }
+}
