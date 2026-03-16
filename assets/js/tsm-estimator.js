@@ -1,7 +1,7 @@
 // =====================================================
 // TSM Estimator – Calculation Logic
 // Based on NJC Work Force Adjustment Directive (WFAD)
-// Appendix C & Sections 6.3.6, 6.4.1(b)
+// Appendix C & Section 6.4.1(b)
 // =====================================================
 
 // Official Appendix C lookup table: years of service → TSM weeks
@@ -159,14 +159,14 @@ function calculateTSM() {
   html += '<div class="tsm-result-card tsm-result-secondary">';
   html += '<h4>Entitlement Summary</h4>';
   html += '<ul class="tsm-checklist">';
-  html += '<li>&#9989; <strong>Counselling allowance:</strong> Up to <strong>$600</strong> for financial '
-    + 'and job placement counselling services (WFAD Section 6.3.6). Keep your receipts.</li>';
+  html += '<li>&#9989; <strong>Counselling allowance:</strong> Up to <strong>$1,200</strong> for financial '
+    + 'and job placement counselling services (per the NJC WFAD). Keep your receipts.</li>';
   html += '<li>&#8505;&#65039; <strong>Severance pay:</strong> Severance under your collective agreement '
     + 'is <strong>in addition</strong> to the TSM — this tool does not calculate it. '
     + 'Consult your collective agreement or union.</li>';
-  html += '<li>&#8505;&#65039; <strong>Education allowance (Option C):</strong> If you choose Option C, '
+  html += '<li>&#8505;&#65039; <strong>Education allowance (Option C(i) or C(ii)):</strong> If you choose Option C, '
     + 'you may receive up to <strong>$17,000</strong> for receipted tuition, books, and relevant equipment, '
-    + 'in addition to your TSM amount above.</li>';
+    + 'in addition to your TSM amount above. C(i) = resign; C(ii) = up to 2 years leave without pay.</li>';
   if (age !== null && pensionYears !== null) {
     if (pensionWaiverEligible) {
       html += '<li>&#9989; <strong>Pension reduction waiver:</strong> Based on your age (' + age
@@ -193,8 +193,6 @@ function calculateTSM() {
   html += '<li>If you are <strong>re-appointed</strong> to a federal department (Schedules I, IV, or V) '
     + 'after receiving the TSM, you must reimburse the Receiver General for the period from '
     + 're-appointment to the end of the TSM period (Section 6.3.7).</li>';
-  html += '<li>The TSM is issued <strong>no sooner than</strong> the effective date of your notice of '
-    + 'resignation (Section 6.4.1(b)).</li>';
   html += '</ul>';
   html += '</div>';
 

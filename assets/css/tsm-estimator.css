@@ -2,6 +2,36 @@
    TSM Estimator – Custom Styles
    ===================================================== */
 
+/* Glossary */
+.tsm-glossary {
+  border: 1px solid #c8d6e0;
+  border-radius: 6px;
+  background: #f4f8fb;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+}
+.tsm-glossary summary {
+  cursor: pointer;
+  user-select: none;
+  padding: 0.15rem 0;
+}
+.tsm-glossary summary::-webkit-details-marker { color: #5a8da8; }
+.tsm-glossary dl {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+.tsm-glossary dt {
+  font-weight: 600;
+  margin-top: 0.75rem;
+  color: #1a3a4a;
+}
+.tsm-glossary dt:first-child { margin-top: 0; }
+.tsm-glossary dd {
+  margin-left: 1rem;
+  color: #444;
+  font-size: 0.92rem;
+}
+
 /* Step progress indicator */
 .tsm-progress {
   display: flex;
