@@ -3,7 +3,7 @@ title: Play Free
 description: City of Ottawa drop-in activities that are free to play!
 image: /assets/img/play-free.jpg
 image_hero: /assets/img/play-free.jpg
-tags: [hidden]
+tags: [City of Ottawa Drop-Ins]
 permalink: /projects/play-free/
 layout: projects
 js:

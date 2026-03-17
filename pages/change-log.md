@@ -9,11 +9,18 @@ Hello!
 
 The purpose of this page is simply to let you all know what I've been up to! :) Enjoy!
 
+## March 2026
+
+- I created a few more pages from the City of Ottawa drop-ins (and actually I also re-organized the home page so that the drop-ins are all together).
+- I signed up our son for a bunch of library programs for March break thanks to my own website haha. 
+- I created a TSM estimator for Government of Canada federal employees affected by WFA.
+- I started using Claude Code to help make changes to this website. I also built myself a tool to clean-up the City of Ottawa drop-ins data so that it's done a bit more efficiently. 
+
 ## February 2026
 
 - I was hired by Public Prosecution Service of Canada. Phew!
 - I made myself a Claude tool to help me learn Serbian. I also made myself an AI-enhanced note taking tool with Claude (very much inspired by [Mem](https://mem.ai/){:target="_blank" rel="noopener noreferrer"}). If you really want to see those please [contact me](https://claudielarouche.com/contact/).
-- Created a new web page which I hope will eventually contain lots of [resources for Canadian Public Servants](https://claudielarouche.com/projects/gc-resources/). For now, it only has a page about GCPedia.
+- Created a new web page which I hope will eventually contain lots of [resources for Canadian Public Servants](https://claudielarouche.com/projects/gc-resources/). For now, it only has a page about GCPedia. Gotta start somewhere haha.
 
 ## January 2026
 
