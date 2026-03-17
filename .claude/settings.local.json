@@ -3,7 +3,8 @@
     "allow": [
       "mcp__Claude_Preview__preview_start",
       "WebFetch(domain:www.njc-cnm.gc.ca)",
-      "WebSearch"
+      "WebSearch",
+      "WebFetch(domain:claudielarouche.com)"
     ]
   }
 }

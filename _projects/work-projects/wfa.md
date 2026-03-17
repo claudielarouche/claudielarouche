@@ -15,9 +15,10 @@ If you are aware of a resource that is missing from this page, please let me kno
 
 I will continue updating this web page as I discover new resources.
 
-<p><a href="https://claudielarouche.com/wfa-tool" class="btn btn-primary">
-  Workforce Adjustment Tool
-</a>
+<p>
+<a href="https://claudielarouche.com/wfa-tool" class="btn btn-primary">Workforce Adjustment Tool</a>
+&nbsp;
+<a href="/projects/work-projects/tsm-estimator/" class="btn btn-primary">TSM Estimator</a>
 </p>
 
 ## Useful Links
@@ -39,15 +40,44 @@ An AI Chatbot trained on the WFA directive and union specific collective agreeme
 - [PSAC](https://notebooklm.google.com/notebook/f3a854c3-c8fb-4dbe-927d-bf03bcf4f2ee){:target="_blank" rel="noopener noreferrer"} 
 
 ### Job Search and Application Websites
-- [GC Jobs](https://www.canada.ca/en/services/jobs/opportunities/government.html){:target="_blank" rel="noopener noreferrer"}
+- [GC Jobs](https://www.canada.ca/en/services/jobs/opportunities/government.html){:target="_blank" rel="noopener noreferrer"} — [How to use GCJobs (video)](https://www.youtube.com/watch?v=0GW7P3g9hhI){:target="_blank" rel="noopener noreferrer"}
 
 #### Department Specific Job Opportunities
-- [Statistics Canada](https://www.statcan.gc.ca/en/job-opportunities){:target="_blank" rel="noopener noreferrer"}
-- ...more to come
+- [Canada Revenue Agency (CRA)](https://www.canada.ca/en/revenue-agency/corporate/careers-cra.html){:target="_blank" rel="noopener noreferrer"}
+- [Communications Security Establishment (CSE)](https://www.cse-cst.gc.ca/en/careers){:target="_blank" rel="noopener noreferrer"}
+- [Canadian Security Intelligence Service (CSIS)](https://www.canada.ca/en/security-intelligence-service/corporate/csis-jobs.html){:target="_blank" rel="noopener noreferrer"}
+- [Immigration, Refugees and Citizenship Canada (IRCC)](https://cic.hiringplatform.ca/processes/113528-opportunities-at-ircc?locale=en){:target="_blank" rel="noopener noreferrer"}
 
-#### Other Opportunities
+#### Crown Corporations
 
-- To be completed
+- [Atomic Energy of Canada Limited (AECL)](https://www.aecl.ca/about-aecl/employment-with-aecl/){:target="_blank" rel="noopener noreferrer"}
+- [Business Development Bank of Canada (BDC)](https://www.bdc.ca/en/careers){:target="_blank" rel="noopener noreferrer"}
+- [Canada Infrastructure Bank (CIB)](https://cib-bic.ca/en/about-us/careers/){:target="_blank" rel="noopener noreferrer"}
+- [Canada Mortgage and Housing Corporation (CMHC)](https://careers.cmhc-schl.gc.ca/){:target="_blank" rel="noopener noreferrer"}
+- [Canada Post](https://jobs.canadapost.ca/){:target="_blank" rel="noopener noreferrer"}
+- [CBC/Radio-Canada](https://cbc.radio-canada.ca/en/working-with-us/jobs){:target="_blank" rel="noopener noreferrer"}
+- [Defence Construction Canada (DCC)](https://www.dcc-cdc.gc.ca/careers){:target="_blank" rel="noopener noreferrer"}
+- [Export Development Canada (EDC)](https://www.edc.ca/en/about-us/careers.html){:target="_blank" rel="noopener noreferrer"}
+- [Farm Credit Canada (FCC)](https://www.fcc-fac.ca/en/about-fcc/careers){:target="_blank" rel="noopener noreferrer"}
+- [NAV Canada](https://www.navcanada.ca/en/careers.aspx){:target="_blank" rel="noopener noreferrer"}
+- [National Capital Commission (NCC)](https://ncc-ccn.gc.ca/careers){:target="_blank" rel="noopener noreferrer"}
+- [VIA Rail](https://careers.viarail.ca/){:target="_blank" rel="noopener noreferrer"}
+
+#### Provincial and Territorial Public Services
+
+- [Alberta](https://jobpostings.alberta.ca/){:target="_blank" rel="noopener noreferrer"}
+- [British Columbia](https://www2.gov.bc.ca/gov/content/careers-myhr/job-seekers/current-job-postings){:target="_blank" rel="noopener noreferrer"}
+- [Manitoba](https://www.gov.mb.ca/govjobs/){:target="_blank" rel="noopener noreferrer"}
+- [New Brunswick](https://www.gnb.ca/en/topic/your-gov/work/gov-careers.html){:target="_blank" rel="noopener noreferrer"}
+- [Newfoundland and Labrador](https://www.hiring.gov.nl.ca/){:target="_blank" rel="noopener noreferrer"}
+- [Northwest Territories](https://www.gov.nt.ca/careers/){:target="_blank" rel="noopener noreferrer"}
+- [Nova Scotia](https://jobs.novascotia.ca/){:target="_blank" rel="noopener noreferrer"}
+- [Nunavut](https://www.gov.nu.ca/en/careers/jobs){:target="_blank" rel="noopener noreferrer"}
+- [Ontario](https://www.gojobs.gov.on.ca/){:target="_blank" rel="noopener noreferrer"}
+- [Prince Edward Island](https://www.gov.pe.ca/jobspei/){:target="_blank" rel="noopener noreferrer"}
+- [Quebec](https://recrutement.carrieres.gouv.qc.ca/){:target="_blank" rel="noopener noreferrer"}
+- [Saskatchewan](https://www.saskatchewan.ca/residents/jobs-working-and-training/find-and-apply-for-jobs/jobs-in-the-saskatchewan-public-service){:target="_blank" rel="noopener noreferrer"}
+- [Yukon](https://yukon.ca/en/employment/find-government-job){:target="_blank" rel="noopener noreferrer"}
 
 ## What can you do now?
 
@@ -66,8 +96,10 @@ An AI Chatbot trained on the WFA directive and union specific collective agreeme
 - Meeting with your HR advisor or departmental WFA coordinator 
 - Call or email your union representative and ask specifically for WFA support, referring to their WFA guides and FAQ pages  
 
-4) Understand your options as an opting or surplus employee 
-From the Work Force Adjustment Directive and union FAQs you will see three classic options for an opting employee, including a twelve month surplus priority period, transition support payment, and combinations that include an education allowance, subject to detailed conditions. 
+4) Understand your options as an opting or surplus employee
+From the Work Force Adjustment Directive and union FAQs you will see three classic options for an opting employee, including a twelve month surplus priority period, transition support payment, and combinations that include an education allowance, subject to detailed conditions. You can use the [TSM Estimator](/projects/work-projects/tsm-estimator/) to calculate your TSM amount.
+
+You are also entitled to up to **$1,200** for financial and/or job placement counselling services — keep your receipts.
 
 5) Get clarity on priority entitlement and registration 
 - Confirm with HR when your priority entitlement will start 
