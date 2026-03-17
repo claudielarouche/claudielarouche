@@ -55,11 +55,7 @@ function calculateTSM() {
     document.getElementById('annual-salary').focus();
     return;
   }
-  if (!empType) {
-    alert('Please select your employment type.');
-    document.getElementById('employment-type').focus();
-    return;
-  }
+  if (!empType) { empType = 'full-time'; }
   if (empType === 'part-time' || empType === 'seasonal') {
     var hoursVal = document.getElementById('weekly-hours').value;
     if (hoursVal === '' || isNaN(hoursVal) || parseFloat(hoursVal) <= 0) {
@@ -233,7 +229,7 @@ function resetForm() {
     var el = document.getElementById(id);
     if (el) el.value = '';
   });
-  document.getElementById('employment-type').value = '';
+  document.getElementById('employment-type').value = 'full-time';
 
   var hoursGroup = document.getElementById('weekly-hours-group');
   if (hoursGroup) hoursGroup.style.display = 'none';

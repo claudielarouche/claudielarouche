@@ -15,7 +15,7 @@ js:
 Estimate your **Transition Support Measure (TSM)** as a federal public service employee affected by Workforce Adjustment (WFA). Based on the official [NJC Work Force Adjustment Directive](https://www.njc-cnm.gc.ca/directive/d12/v239/en){:target="_blank" rel="noopener noreferrer"}.
 
 <div class="alert alert-info">
-<strong>Who this tool is for:</strong> Indeterminate federal public service employees who have been declared <strong>opting</strong> (no guarantee of a reasonable job offer was provided). The TSM amount is the same whether you choose Option B, C(i), or C(ii), so this tool is also useful if you want to know how much your <strong>alternate</strong> would receive.<br><br>
+<strong>Who this tool is for:</strong> Indeterminate federal public service employees who have been declared <strong>opting</strong> (no guarantee of a reasonable job offer was provided). The TSM amount is the same whether you choose Option B, C(i), or C(ii). If you choose Option A, the TSM amount is the amount your <strong>alternate</strong> would receive (reduced according to the number of weeks you have been in your surplus period).<br><br>
 <strong>Not eligible?</strong> The TSM is not available to term employees or to employees who received a reasonable job offer before the TSM was accepted in writing. Consult your union or HR advisor if you are unsure of your status.
 </div>
 
@@ -69,16 +69,15 @@ Estimate your **Transition Support Measure (TSM)** as a federal public service e
 </div>
 
 <div class="form-group">
-<label for="annual-salary"><strong>Current Annual Salary ($)</strong></label>
+<label for="annual-salary"><strong>Current Substantive Annual Salary ($)</strong></label>
 <input type="number" class="form-control" id="annual-salary" min="0" step="100" placeholder="e.g. 75000">
-<small>Your current gross annual salary. Weekly pay is calculated as salary &divide; 52.</small>
+<small>Your current gross substantive annual salary (not acting pay). Weekly pay is calculated as salary &divide; 52.</small>
 </div>
 
 <div class="form-group">
 <label for="employment-type"><strong>Employment Type</strong></label>
 <select class="form-select" id="employment-type" onchange="togglePartTimeHours()">
-  <option value="">-- Select --</option>
-  <option value="full-time">Full-time indeterminate</option>
+  <option value="full-time" selected>Full-time indeterminate</option>
   <option value="part-time">Part-time indeterminate</option>
   <option value="seasonal">Seasonal indeterminate</option>
 </select>

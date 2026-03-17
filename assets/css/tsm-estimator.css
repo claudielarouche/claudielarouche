@@ -2,6 +2,31 @@
    TSM Estimator – Custom Styles
    ===================================================== */
 
+/* Select dropdown — more prominent border and arrow */
+#tsm-tool .form-select,
+#tsm-tool select {
+  border: 2px solid #adb5bd;
+  border-radius: .375rem;
+  background-color: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath fill='%23495057' d='M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right .75rem center;
+  background-size: 14px 14px;
+  padding-right: 2.5rem;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+#tsm-tool .form-select:hover,
+#tsm-tool select:hover { border-color: #6c757d; }
+#tsm-tool .form-select:focus,
+#tsm-tool select:focus {
+  border-color: #4a90c4;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(74, 144, 196, 0.25);
+}
+
 /* Glossary */
 .tsm-glossary {
   border: 1px solid #c8d6e0;
