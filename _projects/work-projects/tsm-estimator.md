@@ -1,8 +1,8 @@
 ---
 title: TSM Estimator
 description: Estimate your Transition Support Measure (TSM) amount as a federal public service employee affected by Workforce Adjustment (WFA)
-image: https://claudielarouche.com/assets/img/wfa.jpg
-image_hero: https://claudielarouche.com/assets/img/wfa.jpg
+image: https://claudielarouche.com/assets/img/tsm-estimator.jpg
+image_hero: https://claudielarouche.com/assets/img/tsm-estimator.jpg
 tags: [Work]
 layout: projects
 css:
