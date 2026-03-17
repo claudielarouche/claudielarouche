@@ -15,6 +15,7 @@ The purpose of this page is simply to let you all know what I've been up to! :) 
 - I signed up our son for a bunch of library programs for March break thanks to my own website haha. 
 - I created a TSM estimator for Government of Canada federal employees affected by WFA.
 - I started using Claude Code to help make changes to this website. I also built myself a tool to clean-up the City of Ottawa drop-ins data so that it's done a bit more efficiently. 
+- I should really be working on my taxes though and that is NOT what I am doing haha.
 
 ## February 2026
 
