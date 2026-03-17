@@ -78,10 +78,15 @@ function calculateTSM() {
   var pensionYearsVal = document.getElementById('pension-years').value;
   var pensionYears = pensionYearsVal !== '' ? parseInt(pensionYearsVal) : null;
 
-  var alternationWeeksRaw = document.getElementById('alternation-weeks').value;
-  var alternationWeeks = (alternationWeeksRaw !== '' && !isNaN(alternationWeeksRaw))
-    ? Math.max(0, parseInt(alternationWeeksRaw))
-    : 0;
+  var surplusDateRaw = document.getElementById('surplus-start-date').value;
+  var alternationWeeks = 0;
+  var surplusStartDate = null;
+  if (surplusDateRaw) {
+    surplusStartDate = new Date(surplusDateRaw + 'T12:00:00');
+    var today = new Date();
+    var msElapsed = today - surplusStartDate;
+    alternationWeeks = msElapsed > 0 ? Math.floor(msElapsed / (7 * 24 * 60 * 60 * 1000)) : 0;
+  }
   var isAlternate = alternationWeeks > 0;
 
   // --- Core calculations ---
@@ -117,8 +122,10 @@ function calculateTSM() {
       + 'This is an <em>estimate only</em> &mdash; your exact amount depends on your collective agreement.</div>';
   }
   if (isAlternate) {
-    html += '<p class="tsm-muted mt-2">TSM weeks reduced by ' + alternationWeeks
-      + ' week(s) due to alternation (from ' + tsmWeeksBase + ' to ' + tsmWeeks + ' weeks).</p>';
+    html += '<p class="tsm-muted mt-2">TSM weeks reduced by <strong>' + alternationWeeks
+      + ' week(s)</strong> due to alternation (surplus period started '
+      + surplusStartDate.toLocaleDateString('en-CA', { year: 'numeric', month: 'long', day: 'numeric' })
+      + '; from ' + tsmWeeksBase + ' to ' + tsmWeeks + ' weeks).</p>';
   }
   html += '</div>';
 
@@ -206,7 +213,7 @@ function calculateTSM() {
   }
   html += '</ol>';
   html += '<p><strong>Official sources:</strong> '
-    + '<a href="https://www.njc-cnm.gc.ca/directive/d12/v24/s281/en" target="_blank" rel="noopener noreferrer">NJC WFAD Appendix C</a>'
+    + '<a href="https://www.njc-cnm.gc.ca/directive/d12/v239/s673/en" target="_blank" rel="noopener noreferrer">NJC WFAD Appendix C</a>'
     + ' &bull; '
     + '<a href="https://www.njc-cnm.gc.ca/directive/d12/v239/en" target="_blank" rel="noopener noreferrer">Full NJC WFAD</a>'
     + ' &bull; '
@@ -225,7 +232,7 @@ function calculateTSM() {
 
 function resetForm() {
   ['years-of-service', 'annual-salary', 'weekly-hours',
-   'age', 'pension-years', 'alternation-weeks'].forEach(function(id) {
+   'age', 'pension-years', 'surplus-start-date'].forEach(function(id) {
     var el = document.getElementById(id);
     if (el) el.value = '';
   });

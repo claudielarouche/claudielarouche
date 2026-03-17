@@ -3,8 +3,7 @@ title: TSM Estimator
 description: Estimate your Transition Support Measure (TSM) amount as a federal public service employee affected by Workforce Adjustment (WFA)
 image: https://claudielarouche.com/assets/img/wfa.jpg
 image_hero: https://claudielarouche.com/assets/img/wfa.jpg
-tags: [hidden]
-permalink: /tsm/
+tags: [Work]
 layout: projects
 css:
   - /assets/css/tsm-estimator.css
@@ -105,9 +104,9 @@ Estimate your **Transition Support Measure (TSM)** as a federal public service e
 </div>
 
 <div class="form-group">
-<label for="alternation-weeks"><strong>Weeks Elapsed Since Surplus Period Start</strong> <small class="tsm-muted">(alternation only)</small></label>
-<input type="number" class="form-control" id="alternation-weeks" min="0" placeholder="e.g. 4 — leave blank or enter 0 if N/A">
-<small>The surplus period begins after the opting employee selects (or defaults to) Option A. It is not the same as the opting period. The alternate's TSM is reduced by one week for each week elapsed since the surplus period started. Leave blank or enter 0 if your opting period has not started.</small>
+<label for="surplus-start-date"><strong>Surplus Period Start Date</strong> <small class="tsm-muted">(alternation only)</small></label>
+<input type="date" class="form-control" id="surplus-start-date">
+<small>The surplus period begins after the opting employee selects (or defaults to) Option A — it is not the same as the opting period. If an alternation occurred, the tool will calculate weeks elapsed and reduce the TSM accordingly. Leave blank if no alternation occurred or if the surplus period has not started.</small>
 </div>
 
 <hr>
@@ -132,7 +131,7 @@ Estimate your **Transition Support Measure (TSM)** as a federal public service e
 
 This tool is based on the [NJC Work Force Adjustment Directive (WFAD)](https://www.njc-cnm.gc.ca/directive/d12/v239/en){:target="_blank" rel="noopener noreferrer"}, specifically:
 
-- **[Appendix C](https://www.njc-cnm.gc.ca/directive/d12/v24/s281/en){:target="_blank" rel="noopener noreferrer"}** &mdash; the official TSM lookup table
+- **[Appendix C](https://www.njc-cnm.gc.ca/directive/d12/v239/s673/en){:target="_blank" rel="noopener noreferrer"}** &mdash; the official TSM lookup table
 - **Section 6.4.1(b)** &mdash; TSM payment structure
 - **Counselling allowance** &mdash; per the NJC WFAD
 
