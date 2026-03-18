@@ -22,7 +22,7 @@ Estimate your **Transition Support Measure (TSM)** as a federal public service e
 <summary><strong>&#128218; WFA Glossary — Click to expand</strong></summary>
 <dl>
   <dt>WFA (Workforce Adjustment)</dt>
-  <dd>The process by which the federal government eliminates or significantly changes positions due to budget cuts, reorganizations, or program changes. Governed by the NJC Work Force Adjustment Directive and/or your collective agreement.</dd>
+  <dd>The process by which the federal government eliminates or significantly changes positions due to budget cuts, reorganizations, or program changes. Governed by the NJC Work Force Adjustment Directive and/or your collective agreement (PSAC and PIPSC have WFA negotiated into their collective agreements while CAPE does not). </dd>
 
   <dt>Opting employee</dt>
   <dd>An indeterminate employee whose department has confirmed there is no guarantee of a reasonable job offer. As an opting employee, you have the right to choose between Option A, B, C(i), or C(ii).</dd>
