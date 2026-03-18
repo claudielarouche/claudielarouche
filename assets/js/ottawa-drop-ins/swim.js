@@ -172,6 +172,32 @@ document.querySelectorAll('.timeCheckbox').forEach(function (checkbox) {
     }
 });
 
+const selectedSwimType = [];
+document.querySelectorAll('.swimTypeCheckbox').forEach(function (checkbox) {
+    checkbox.addEventListener('change', function () {
+	// Store the current sorting state
+        sortingState = $('#dataTable').DataTable().state();
+        currentSearchValue = $('#dataTable_filter input').val();
+		if (checkbox.checked) {
+            if (!selectedSwimType.includes(checkbox.value)) {
+                selectedSwimType.push(checkbox.value);
+            }
+        } else {
+            const index = selectedSwimType.indexOf(checkbox.value);
+            if (index !== -1) {
+                selectedSwimType.splice(index, 1);
+            }
+        }
+        renderTable(originalData);
+    });
+
+    // Initialize with all checkboxes checked by default
+    checkbox.checked = true;
+    if (!selectedSwimType.includes(checkbox.value)) {
+        selectedSwimType.push(checkbox.value);
+    }
+});
+
 // wait until the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', function() {
     const selectAllAreasBtn = document.getElementById('selectAllAreasButton');
@@ -187,6 +213,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
     unselectAllAreasBtn.addEventListener('click', function() {
         areasCheckboxes.forEach(cb => {
+            cb.checked = false;
+            cb.dispatchEvent(new Event('change', { bubbles: true }));
+        });
+    });
+
+    // === Swim Type ===
+    const selectAllSwimTypesBtn   = document.getElementById('selectAllSwimTypesButton');
+    const unselectAllSwimTypesBtn = document.getElementById('unselectAllSwimTypesButton');
+    const swimTypeCheckboxes      = document.querySelectorAll('.swimTypeCheckbox');
+
+    selectAllSwimTypesBtn.addEventListener('click', function() {
+        swimTypeCheckboxes.forEach(cb => {
+            cb.checked = true;
+            cb.dispatchEvent(new Event('change', { bubbles: true }));
+        });
+    });
+
+    unselectAllSwimTypesBtn.addEventListener('click', function() {
+        swimTypeCheckboxes.forEach(cb => {
             cb.checked = false;
             cb.dispatchEvent(new Event('change', { bubbles: true }));
         });

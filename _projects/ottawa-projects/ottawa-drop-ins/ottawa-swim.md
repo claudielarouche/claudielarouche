@@ -25,13 +25,15 @@ This tool is dedicated to [Dave Sampson](https://davidsampson.ca/wp/){:target="_
 
 {% include ottawa-drop-ins/header.html %}      
 
-{% include filter-area.html %}   
+{% include filter-area.html %}
 
-{% include filter-days-of-week.html %}   
+{% include filter-days-of-week.html %}
 
-{% include ottawa-drop-ins/filter-age-group.html %}   
+{% include ottawa-drop-ins/filter-age-group.html %}
 
-{% include filter-time-of-day.html %}     
+{% include filter-time-of-day.html %}
+
+{% include ottawa-drop-ins/filter-swim-type.html %}
 
 {% include view-data-reset-filter.html %}   
 

@@ -14,7 +14,8 @@ function clearAllFilters() {
         { selector: '.categoryCheckbox', array: typeof selectedCategory !== 'undefined' ? selectedCategory : null },
         { selector: '.dayCheckbox',      array: typeof selectedDay      !== 'undefined' ? selectedDay      : null },
         { selector: '.ageCheckbox',      array: typeof selectedAge      !== 'undefined' ? selectedAge      : null },
-        { selector: '.timeCheckbox',     array: typeof selectedTime     !== 'undefined' ? selectedTime     : null },
+        { selector: '.timeCheckbox',      array: typeof selectedTime      !== 'undefined' ? selectedTime      : null },
+        { selector: '.swimTypeCheckbox',  array: typeof selectedSwimType  !== 'undefined' ? selectedSwimType  : null },
     ].forEach(({ selector, array }) => {
         if (!array) return;
         document.querySelectorAll(selector).forEach(checkbox => {
@@ -165,6 +166,10 @@ function filterData(data) {
                 : values.some(v => currentVal.toLowerCase().includes(v.toLowerCase()));
         }
 
-        return areaCondition && dayCondition && timeCondition && ageCondition && categoryCondition && typeCondition;
+        const swimTypeCondition = typeof selectedSwimType !== 'undefined'
+            ? selectedSwimType.some(swimType => (row['Swim Type'] || '').toLowerCase() === swimType.toLowerCase())
+            : true;
+
+        return areaCondition && dayCondition && timeCondition && ageCondition && categoryCondition && typeCondition && swimTypeCondition;
     });
 }
