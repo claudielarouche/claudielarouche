@@ -21,4 +21,6 @@ permalink: /ottawa-drop-ins/
   {% endif %}
 </div>
 
+## Related Article
+
 [How I Built the City of Ottawa Drop-Ins pages](/projects/ottawa-drop-ins/how-i-built-this-tool)

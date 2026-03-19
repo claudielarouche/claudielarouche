@@ -6,6 +6,7 @@ image_hero: https://claudielarouche.com/assets/img/printer.jpg
 tags: [hidden]
 permalink: /projects/loa-generator/
 layout: projects
+sitemap: false
 js:
   - https://code.jquery.com/jquery-3.5.1.slim.min.js
   - /assets/js/loa-generator.js
