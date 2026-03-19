@@ -4,7 +4,16 @@
       "mcp__Claude_Preview__preview_start",
       "WebFetch(domain:www.njc-cnm.gc.ca)",
       "WebSearch",
-      "WebFetch(domain:claudielarouche.com)"
+      "WebFetch(domain:claudielarouche.com)",
+      "Bash(git -C /c/Users/claud/Downloads/Cowork/claudielarouche check-ignore _site/sitemap.xml)",
+      "Bash(git -C /c/Users/claud/Downloads/Cowork/claudielarouche ls-files _site/sitemap.xml)",
+      "Bash(git -C /c/Users/claud/Downloads/Cowork/claudielarouche log --all --follow -- \"_csps/2025-03-03-artificial-intelligence.md\")",
+      "Bash(git -C /c/Users/claud/Downloads/Cowork/claudielarouche show b9dc5d074ad2bbbcb51c794744fa1b66035f5b7f -- \"_csps/2025-03-03-exploring-use-of-ai.md\")",
+      "Bash(git -C /c/Users/claud/Downloads/Cowork/claudielarouche branch -a)",
+      "Bash(git -C /c/Users/claud/Downloads/Cowork/claudielarouche log --oneline main..HEAD)",
+      "Bash(git -C /c/Users/claud/Downloads/Cowork/claudielarouche log --oneline origin/main)",
+      "Bash(git -C /c/Users/claud/Downloads/Cowork/claudielarouche grep -n \"url\" _config.yml)",
+      "Bash(git -C \"C:\\\\Users\\\\claud\\\\Downloads\\\\Cowork\\\\claudielarouche\" status)"
     ]
   }
 }

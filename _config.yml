@@ -34,6 +34,9 @@ collections:
   gc_resources:
     output: true
     permalink: /gc-resources/:name/
+  articles:
+    output: true
+    permalink: /articles/:name/
 
 google_analytics: G-YWMRD8LX5P
 

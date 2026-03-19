@@ -11,6 +11,7 @@ title: Home
   <a href="#products" class="btn btn-primary">Products</a>
   <a href="#archive" class="btn btn-primary">Archive</a>
   <a href="#presentations" class="btn btn-primary">Presentations</a>
+  <a href="#articles" class="btn btn-primary">Articles</a>
 </div>
 
 {% assign categories = "City of Ottawa Drop-Ins,Other Ottawa Resources,Work,Other,Products,Archive" | split: "," %}
@@ -58,6 +59,22 @@ title: Home
     <p>Claudie Larouche shares 10 time-saving tools, local resources, and creative strategies to help busy Ottawa moms become more efficient (20 mins).</p>
   </div>
   
+</div>
+
+## Articles
+
+<a href="#top" class="back-to-top">↑ Back to top</a>
+
+<div class="projects-gallery">
+
+  <div class="project-card">
+    <a href="/articles/how-i-built-ottawa-drop-ins/">
+      <img src="https://claudielarouche.com/assets/img/racquets.jpg" alt="How I Built the City of Ottawa Drop-Ins Pages" />
+      <h3>How I Built the City of Ottawa Drop-Ins Pages</h3>
+    </a>
+    <p>A behind-the-scenes look at how I used Python and ChatGPT to scrape, clean, and present hundreds of weekly City of Ottawa drop-in activities.</p>
+  </div>
+
 </div>
 
 <br/>
