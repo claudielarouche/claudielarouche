@@ -41,87 +41,64 @@ window.onload = function() {
 };
 
 function renderTable(data) {
-    if (!Array.isArray(data)) {
-        console.error('Error loading data: Data is not an array.');
-        document.getElementById('csvData').innerHTML = 'Error loading data.';
-        return;
-    }
-
-    let sortOrderIndex;
-
-    if (data.length === 0) {
-        console.warn('No data available.');
+    if (!Array.isArray(data) || data.length === 0) {
         document.getElementById('csvData').innerHTML = 'No data available.';
         return;
     }
 
-    const headers = Object.keys(data[0]);
+    // Strip empty headers produced by trailing commas in the CSV
+    const headers = Object.keys(data[0]).filter(h => h.trim() !== '');
 
     let tableHtml = '<table id="dataTable"><thead><tr>';
     headers.forEach(header => {
-        if (header !== 'Website') {
-            tableHtml += `<th>${header}</th>`;
-        }
+        tableHtml += `<th>${header}</th>`;
     });
     tableHtml += '</tr></thead><tbody>';
 
-    const filteredData = filterData(data, selectedTypes);
-
-    filteredData.forEach(row => {
+    data.forEach(row => {
         tableHtml += '<tr>';
-
         headers.forEach(header => {
-            if (header !== 'Website') {
-                switch (header) {
-
-                    case 'Name':
-                        const url = row['Website'] ? row['Website'] : '';
-                        const name = row[header] ? row[header] : '';
-                        if (url !== '' && name !== '') {
-                            tableHtml += `<td><a href="${url}" target="_blank">${name}</a></td>`;
-                        } else {
-                            tableHtml += `<td>${name}</td>`;
-                        }
-                        break;
-
-                    case 'Address':
-                        const address = row[header] ? row[header].trim() : '';
-                        if (address !== '') {
-                            const googleMapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)},+Ottawa,+Canada`;
-                            tableHtml += `<td><a href="${googleMapsLink}" target="_blank">${address}</a></td>`;
-                        } else {
-                            tableHtml += '<td></td>';
-                        }
-                        break;
-
-                    default:
-                        tableHtml += `<td>${row[header]}</td>`;
-                        break;
-                }
+            switch (header) {
+                case 'CCC Civic Address':
+                    const address = row[header] ? row[header].trim() : '';
+                    if (address !== '') {
+                        const googleMapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)},+Ottawa,+Canada`;
+                        tableHtml += `<td><a href="${googleMapsLink}" target="_blank">${address}</a></td>`;
+                    } else {
+                        tableHtml += '<td></td>';
+                    }
+                    break;
+                default:
+                    tableHtml += `<td>${row[header] !== undefined ? row[header] : ''}</td>`;
+                    break;
             }
         });
-
         tableHtml += '</tr>';
     });
 
     tableHtml += '</tbody></table>';
-
     document.getElementById('csvData').innerHTML = tableHtml;
 
     if (!$.fn.dataTable.isDataTable('#dataTable')) {
         $('#dataTable').DataTable({
             "pageLength": -1,
             "dom": 'Bfrtip',
-            "buttons": [
-                'colvis'
+            "buttons": ['colvis'],
+            "columnDefs": [
+                {
+                    // Hide: Latitude(0), Longitude(1), City(13), Province(14), Postal Code(15), Full French Service(16), Indigenous(17)
+                    "targets": [0, 1, 13, 14, 15, 16, 17],
+                    "visible": false
+                }
             ],
-            "order": [0, 'asc'],
+            "order": [3, 'asc'],
             "language": {
-                "emptyTable": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>.",
-                "zeroRecords": "No data available in table, try <a href='javascript:void(0);' onclick='clearAllFilters()'>resetting all filters to default</a>."
+                "emptyTable": "No data available in table.",
+                "zeroRecords": "No matching records found."
             }
         });
     }
+
     $('#dataTable_filter input').val(currentSearchValue).trigger('input');
 
     if (sortingState) {
@@ -132,68 +109,14 @@ function renderTable(data) {
         filterMap();
     });
 
-    addMarkersToMap(filteredData);
-}
-
-
-function filterData(data, selectedType) {
-    return data.filter(row => {
-        const currentType = row['Type'] || '';
-        const typeCondition = selectedType.length === 0
-            ? true
-            : selectedType.some(t => currentType.toLowerCase().includes(t.toLowerCase()));
-        return typeCondition;
-    });
+    addMarkersToMap(data);
 }
 
 
 let currentSearchValue = getQueryParam('search');
 
-function clearAllFilters() {
-    sortingState = $('#dataTable').DataTable().state();
-
-    document.querySelectorAll('.typeCheckbox').forEach(checkbox => {
-        checkbox.checked = true;
-        if (!selectedTypes.includes(checkbox.value)) {
-            selectedTypes.push(checkbox.value);
-        }
-    });
-
-    var dataTable = $('#dataTable').DataTable();
-    dataTable.search('').draw();
-    currentSearchValue = "";
-
-    renderTable(originalData);
-}
-
-const selectedTypes = [];
-
-document.querySelectorAll('.typeCheckbox').forEach(function(checkbox) {
-    checkbox.addEventListener('change', function() {
-        sortingState = $('#dataTable').DataTable().state();
-        currentSearchValue = $('#dataTable_filter input').val();
-        if (checkbox.checked) {
-            if (!selectedTypes.includes(checkbox.value)) {
-                selectedTypes.push(checkbox.value);
-            }
-        } else {
-            const index = selectedTypes.indexOf(checkbox.value);
-            if (index !== -1) {
-                selectedTypes.splice(index, 1);
-            }
-        }
-        renderTable(originalData);
-    });
-
-    checkbox.checked = true;
-    if (!selectedTypes.includes(checkbox.value)) {
-        selectedTypes.push(checkbox.value);
-    }
-});
-
-
 function initMap() {
-    map = L.map('map').setView([45.4215, -75.6972], 12);
+    map = L.map('map').setView([45.4215, -75.6972], 11);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -204,7 +127,6 @@ function initMap() {
     return map;
 }
 
-
 function addMarkersToMap(data) {
     markersGroup.clearLayers();
     allMarkers = [];
@@ -214,11 +136,29 @@ function addMarkersToMap(data) {
             var lat = parseFloat(item['Latitude']);
             var lng = parseFloat(item['Longitude']);
             if (!isNaN(lat) && !isNaN(lng)) {
-                var popupContent = `<b>${item['Name']}</b><br>Type: ${item['Type']}`;
-                var marker = L.marker([lat, lng])
-                    .bindPopup(popupContent);
+                const name = item['Child Care Centre Name'] || '';
+                const address = item['CCC Civic Address'] || '';
+                const total = item['Total Capacity'] || '';
+                const infant = item['# of Infant'] || '0';
+                const toddler = item['# of Toddler'] || '0';
+                const preschool = item['# of Preschool'] || '0';
+                const kindergarten = item['# of Kindergarten'] || '0';
+                const primaryJunior = item['# of Primary/Junior School Age '] || item['# of Primary/Junior School Age'] || '0';
+                const junior = item['# of Junior School Age'] || '0';
+                const family = item['# of Family Age Group'] || '0';
+
+                var popupContent =
+                    `<b>${name}</b><br>` +
+                    `${address}<br><br>` +
+                    `<b>Capacity by age group:</b><br>` +
+                    `Infant: ${infant} | Toddler: ${toddler} | Preschool: ${preschool}<br>` +
+                    `Kindergarten: ${kindergarten} | Primary/Junior: ${primaryJunior}<br>` +
+                    `Junior: ${junior} | Family: ${family}<br>` +
+                    `<b>Total capacity: ${total}</b>`;
+
+                var marker = L.marker([lat, lng]).bindPopup(popupContent);
                 markersGroup.addLayer(marker);
-                allMarkers.push({ marker: marker, name: item['Name'] });
+                allMarkers.push({ marker: marker, name: name });
             }
         }
     });

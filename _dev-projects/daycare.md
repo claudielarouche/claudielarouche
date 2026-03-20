@@ -27,11 +27,6 @@ css:
 </a>
 </div>
 
-<div class="mt-3">
-<a href="#filters" class="btn btn-primary">
-    Go to filters
-</a>
-</div>
 
 <div class="mt-3">
 <a href="#map" class="btn btn-primary">
@@ -46,33 +41,6 @@ css:
 </div>
 
 If any of the data below is incorrect, please contact me at claudielarouche@gmail.com to inform me of the correction needed.
-
-## Filters {#filters}
-
-<form class="form">
-    <div class="form-group row">
-        <label for="selectedType" class="col-sm-2 col-form-label">Select Type(s):</label>
-        <div class="col-sm-10">
-            <div class="checkbox">
-                <label><input type="checkbox" class="typeCheckbox" value="Centre" checked=""> Centre-based</label>
-            </div>
-            <div class="checkbox">
-                <label><input type="checkbox" class="typeCheckbox" value="Home" checked=""> Home daycare</label>
-            </div>
-        </div>
-    </div>
-</form>
-
-<div class="mt-3">
-<button class="btn btn-secondary" onclick="clearAllFilters()">
-    Reset filters to default
-</button>
-</div>
-<div class="mt-3">
-<a href="#csvData" class="btn btn-primary">
-    View data
-</a>
-</div>
 
 <div id="map" style="height: 400px; width: 100%;"></div>
 
