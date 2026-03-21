@@ -18,7 +18,6 @@ css:
   - https://unpkg.com/leaflet/dist/leaflet.css
 ---
 
-<h1>Daycares in Ottawa</h1>
 
 PLEASE NOTE THAT THIS PAGE IS STILL A WORK IN PROGRESS
 
