@@ -46,8 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     L.marker(trueCoords, { icon: trueIcon })
         .addTo(map)
-        .bindPopup('<b>True address</b><br>Exact coordinates: 45.44023, -75.6432<br><em>Not shown publicly.</em>')
-        .openPopup();
+        .bindPopup('<b>True address</b><br>Exact coordinates: 45.44023, -75.6432<br><em>Not shown publicly.</em>');
 
     L.marker(roundedCoords, { icon: blueIcon })
         .addTo(map)

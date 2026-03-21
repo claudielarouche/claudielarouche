@@ -14,7 +14,8 @@
       "Bash(git -C /c/Users/claud/Downloads/Cowork/claudielarouche log --oneline origin/main)",
       "Bash(git -C /c/Users/claud/Downloads/Cowork/claudielarouche grep -n \"url\" _config.yml)",
       "Bash(git -C \"C:\\\\Users\\\\claud\\\\Downloads\\\\Cowork\\\\claudielarouche\" status)",
-      "Bash(find /c/Users/claud/Downloads/Cowork/claudielarouche -name school* -o -name *school*)"
+      "Bash(find /c/Users/claud/Downloads/Cowork/claudielarouche -name school* -o -name *school*)",
+      "Bash(curl -s http://localhost:4000/dev-projects/daycare-map-privacy/)"
     ]
   }
 }
