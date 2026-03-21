@@ -42,6 +42,8 @@ css:
 
 If any of the data below is incorrect, please contact me at claudielarouche@gmail.com to inform me of the correction needed.
 
+Is your daycare missing from the list? <a href="https://forms.gle/4ihitKy9EGixsgfM8" target="_blank" rel="noopener noreferrer">Submit your daycare here!</a>
+
 <div id="map" style="height: 400px; width: 100%;"></div>
 
 ## List of daycares

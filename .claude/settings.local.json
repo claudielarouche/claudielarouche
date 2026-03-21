@@ -15,7 +15,18 @@
       "Bash(git -C /c/Users/claud/Downloads/Cowork/claudielarouche grep -n \"url\" _config.yml)",
       "Bash(git -C \"C:\\\\Users\\\\claud\\\\Downloads\\\\Cowork\\\\claudielarouche\" status)",
       "Bash(find /c/Users/claud/Downloads/Cowork/claudielarouche -name school* -o -name *school*)",
-      "Bash(curl -s http://localhost:4000/dev-projects/daycare-map-privacy/)"
+      "Bash(curl -s http://localhost:4000/dev-projects/daycare-map-privacy/)",
+      "WebFetch(domain:ymcaywca.ca)",
+      "WebFetch(domain:www.ottawachildrensmontessori.com)",
+      "WebFetch(domain:stmarysdaycare.ca)",
+      "WebFetch(domain:www.stittsvillechildcarecentre.com)",
+      "WebFetch(domain:stmarydaycare.ca)",
+      "WebFetch(domain:stittsvillecentral.ca)",
+      "WebFetch(domain:kinderpage.ca)",
+      "Bash(python update_daycare_websites.py)",
+      "Bash(python -c \":*)",
+      "Bash(del \"C:\\\\Users\\\\claud\\\\Downloads\\\\Cowork\\\\claudielarouche\\\\update_daycare_websites.py\")",
+      "Bash(python -c \"import os; os.remove\\(r''C:\\\\Users\\\\claud\\\\Downloads\\\\Cowork\\\\claudielarouche\\\\update_daycare_websites.py''\\)\")"
     ]
   }
 }
