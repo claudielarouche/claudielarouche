@@ -2,6 +2,7 @@
 title: Home Daycare Map Privacy
 description: How home daycare provider locations are shown on the map
 layout: page
+permalink: /daycare-privacy/
 css:
   - https://unpkg.com/leaflet/dist/leaflet.css
 js:
