@@ -1,9 +1,7 @@
 ---
-title: Home Daycare Map Privacy Demo
+title: Home Daycare Map Privacy
 description: How home daycare provider locations are shown on the map
-tags: [Ottawa]
-permalink: /dev-projects/daycare-map-privacy/
-layout: dev
+layout: page
 css:
   - https://unpkg.com/leaflet/dist/leaflet.css
 js:

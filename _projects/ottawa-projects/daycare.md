@@ -1,10 +1,9 @@
 ---
 title: City of Ottawa Daycares
 description: A list of daycares in Ottawa
-image: https://claudielarouche.com/assets/img/school.jpg
+image: https://claudielarouche.com/assets/img/daycare.jpg
 tags: [Ottawa]
-permalink: /dev-projects/daycare/
-layout: dev
+layout: projects
 js:
   - https://code.jquery.com/jquery-3.6.0.min.js
   - https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js
@@ -20,6 +19,8 @@ css:
 ---
 
 <h1>Daycares in Ottawa</h1>
+
+PLEASE NOTE THAT THIS PAGE IS STILL A WORK IN PROGRESS
 
 <div class="mt-3">
 <a href="#csvData" class="btn btn-primary">
