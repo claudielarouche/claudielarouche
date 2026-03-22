@@ -5,7 +5,10 @@ async function geocodeAddresses() {
     const outputDiv = document.getElementById('output');
     outputDiv.innerHTML = '';
 
-    for (const address of addresses) {
+    for (let i = 0; i < addresses.length; i++) {
+        const address = addresses[i];
+        // Nominatim requires max 1 request per second
+        if (i > 0) await new Promise(resolve => setTimeout(resolve, 1000));
         try {
             const response = await fetch(`https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(address)}&format=json&addressdetails=1&limit=1`);
             const data = await response.json();
