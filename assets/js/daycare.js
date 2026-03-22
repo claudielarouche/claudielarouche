@@ -216,7 +216,9 @@ function addMarkersToMap(data) {
 
                 var marker = L.marker([lat, lng], { icon: icon }).bindPopup(popupContent);
                 markersGroup.addLayer(marker);
-                allMarkers.push({ marker: marker, name: name });
+                const licensee = item['Licensee Name'] || '';
+                const searchText = [name, licensee, address, type].join(' ').toLowerCase();
+                allMarkers.push({ marker: marker, name: name, searchText: searchText });
             }
         }
     });
@@ -227,8 +229,9 @@ function filterMap() {
     currentSearchValue = $('#dataTable_filter input').val();
 
     if (currentSearchValue) {
+        const words = currentSearchValue.toLowerCase().split(/\s+/).filter(w => w.length > 0);
         allMarkers.forEach(function(obj) {
-            if (obj.name.toLowerCase().includes(currentSearchValue.toLowerCase())) {
+            if (words.every(w => obj.searchText.includes(w))) {
                 markersGroup.addLayer(obj.marker);
             }
         });
