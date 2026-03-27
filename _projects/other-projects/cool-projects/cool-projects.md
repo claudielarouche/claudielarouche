@@ -5,7 +5,7 @@ image: https://claudielarouche.com/assets/img/other-cool-projects.jpg
 image_hero: https://claudielarouche.com/assets/img/other-cool-projects.jpg
 tags: [Other]
 permalink: /projects/other-cool-projects/
-layout: default-dev
+layout: projects
 js: 
 css: 
 ---
