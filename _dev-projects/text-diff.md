@@ -9,11 +9,7 @@ tags: [tools]
 /* =====================================================
    WRAPPER OVERRIDE — make this tool full-width
    ===================================================== */
-main.page-content > .wrapper {
-  max-width: none !important;
-  padding-left: 0.75rem !important;
-  padding-right: 0.75rem !important;
-}
+
 
 /* =====================================================
    DIFF TOOL — CUSTOM PROPERTIES
