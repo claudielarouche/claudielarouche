@@ -24,7 +24,6 @@ tags: [tools]
   --c-mov:        #f0eaff;
   --c-mov-hi:     #b98de8;
   --c-phantom:    #f6f8fa;
-  --c-sep:        #eaeef2;
   --c-toolbar:    #f6f8fa;
   --c-border:     #d0d7de;
   --c-linenum:    #636c76;
@@ -71,7 +70,6 @@ tags: [tools]
 }
 .tbtn:hover  { background: #f3f4f6; }
 .tbtn:active { background: #e9ecef; }
-.tbtn.is-active { background: #dbeafe; border-color: #93c5fd; color: #1d4ed8; }
 .tbtn.is-primary { background: #1f6feb; border-color: #1a5cc8; color: #fff; font-weight: 600; }
 .tbtn.is-primary:hover { background: #1a5cc8; }
 
@@ -229,11 +227,7 @@ tags: [tools]
 .dl-changed   { background: var(--c-chg); }
 .dl-moved     { background: var(--c-mov); }
 .dl-phantom   { background: var(--c-phantom); }
-.dl-sep       { background: var(--c-sep); }
 
-.dl.focused {
-  box-shadow: inset 2px 0 0 #0969da, inset -2px 0 0 #0969da;
-}
 
 /* Gutter line number */
 .dl-num {
@@ -258,19 +252,13 @@ tags: [tools]
   font-size: 12px;
   line-height: var(--lh);
   padding: 0 8px;
-  white-space: pre;
+  white-space: pre-wrap;
+  word-break: break-word;
   vertical-align: middle;
   width: 100%;
   min-width: 0;
 }
 
-/* Separator content (diffs-only mode) */
-.dl-sep .dl-num { color: #8b949e; }
-.dl-sep .dl-txt {
-  font-style: italic;
-  font-size: 11px;
-  color: #8b949e;
-}
 
 /* Character-level highlights */
 .ch { border-radius: 2px; }
@@ -321,16 +309,6 @@ tags: [tools]
         Compare
       </button>
     </div>
-    <div class="t-sep"></div>
-    <button class="tbtn" id="btn-first"  title="First Diff">⏮ First</button>
-    <button class="tbtn" id="btn-prev"   title="Previous Diff (Alt+↑)">↑ Prev</button>
-    <button class="tbtn" id="btn-next"   title="Next Diff (Alt+↓)">↓ Next</button>
-    <button class="tbtn" id="btn-last"   title="Last Diff">Last ⏭</button>
-    <div class="t-sep"></div>
-    <button class="tbtn" id="btn-diffs-only" title="Show only changed lines">
-      <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M2 4.75A.75.75 0 0 1 2.75 4h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 8a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 8Zm5 3.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 0 1.5h-5.5A.75.75 0 0 1 7 11.25Z"/></svg>
-      Diffs Only
-    </button>
     <div class="t-sep"></div>
     <button class="tbtn" id="btn-clear-all" title="Clear both panels">
       <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M11 1.75V3h2.25a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5H5V1.75C5 .784 5.784 0 6.75 0h2.5C10.216 0 11 .784 11 1.75ZM4.496 6.675l.66 6.6a.25.25 0 0 0 .249.225h5.19a.25.25 0 0 0 .249-.225l.66-6.6a.75.75 0 0 1 1.491.149l-.66 6.6A1.748 1.748 0 0 1 10.595 15h-5.19a1.75 1.75 0 0 1-1.74-1.575l-.66-6.6a.75.75 0 1 1 1.491-.15ZM6.5 4h3V1.75a.25.25 0 0 0-.25-.25h-2.5a.25.25 0 0 0-.25.25V4Z"/></svg>
@@ -420,12 +398,9 @@ tags: [tools]
 // --- STATE ---
 // =====================================================
 const ST = {
-  lLines:      [],   // rendered line objects for left panel
-  rLines:      [],   // rendered line objects for right panel
-  blocks:      [],   // diff block positions for navigation
-  focusIdx:    -1,
-  diffsOnly:   false,
-  active:      false,
+  lLines:  [],   // rendered line objects for left panel
+  rLines:  [],   // rendered line objects for right panel
+  active:  false,
 };
 
 // =====================================================
@@ -461,16 +436,19 @@ function normLine(text, s) {
 // --- DIFF ENGINE ---
 // =====================================================
 function runDiff(leftText, rightText) {
-  const s    = settings();
-  const lRaw = leftText.split('\n');
-  const rRaw = rightText.split('\n');
+  const s = settings();
+
+  // If ignoring blank lines, strip them from both sides before diffing
+  let lRaw = leftText.split('\n');
+  let rRaw = rightText.split('\n');
+  if (s.blank) {
+    lRaw = lRaw.filter(l => l.trim() !== '');
+    rRaw = rRaw.filter(l => l.trim() !== '');
+  }
 
   // Build normalized text for comparison only
   function buildForDiff(rawLines) {
-    return rawLines.map(l => {
-      if (s.blank && l.trim() === '') return '\x01\n';
-      return normLine(l, s) + '\n';
-    }).join('');
+    return rawLines.map(l => normLine(l, s) + '\n').join('');
   }
 
   const dmp = new diff_match_patch(); // eslint-disable-line no-undef
@@ -544,7 +522,8 @@ function runDiff(leftText, rightText) {
   }
 
   // Build flat left/right line arrays with phantom lines for alignment
-  const lLines = [], rLines = [], blocks = [];
+  const lLines = [], rLines = [];
+  let added = 0, deleted = 0, changed = 0, moved = 0;
 
   for (const op of merged) {
     switch (op.type) {
@@ -556,79 +535,60 @@ function runDiff(leftText, rightText) {
         break;
 
       case 'chg': {
-        const row0 = lLines.length;
-        const max  = Math.max(op.L.length, op.R.length);
+        const max = Math.max(op.L.length, op.R.length);
         for (let i = 0; i < max; i++) {
           const hasL = i < op.L.length;
           const hasR = i < op.R.length;
           if (hasL && hasR) {
             const cd = charDiff(op.L[i].t, op.R[i].t);
-            lLines.push({ ty: 'changed',  n: op.L[i].n, t: op.L[i].t, segs: cd.L });
-            rLines.push({ ty: 'changed',  n: op.R[i].n, t: op.R[i].t, segs: cd.R });
+            lLines.push({ ty: 'changed', n: op.L[i].n, t: op.L[i].t, segs: cd.L });
+            rLines.push({ ty: 'changed', n: op.R[i].n, t: op.R[i].t, segs: cd.R });
           } else if (hasL) {
-            lLines.push({ ty: 'changed',  n: op.L[i].n, t: op.L[i].t });
-            rLines.push({ ty: 'phantom',  n: null,        t: '' });
+            lLines.push({ ty: 'changed', n: op.L[i].n, t: op.L[i].t });
+            rLines.push({ ty: 'phantom', n: null,       t: '' });
           } else {
-            lLines.push({ ty: 'phantom',  n: null,        t: '' });
-            rLines.push({ ty: 'changed',  n: op.R[i].n, t: op.R[i].t });
+            lLines.push({ ty: 'phantom', n: null,       t: '' });
+            rLines.push({ ty: 'changed', n: op.R[i].n, t: op.R[i].t });
           }
         }
-        blocks.push({ row: row0, len: max, kind: 'chg' });
+        changed += max;
         break;
       }
 
-      case 'del': {
-        const row0 = lLines.length;
+      case 'del':
         for (const line of op.L) {
           lLines.push({ ty: 'deleted', n: line.n, t: line.t });
           rLines.push({ ty: 'phantom', n: null,    t: '' });
         }
-        blocks.push({ row: row0, len: op.L.length, kind: 'del' });
+        deleted += op.L.length;
         break;
-      }
 
-      case 'ins': {
-        const row0 = lLines.length;
+      case 'ins':
         for (const line of op.R) {
-          lLines.push({ ty: 'phantom', n: null,     t: '' });
-          rLines.push({ ty: 'added',   n: line.n,   t: line.t });
+          lLines.push({ ty: 'phantom', n: null,   t: '' });
+          rLines.push({ ty: 'added',   n: line.n, t: line.t });
         }
-        blocks.push({ row: row0, len: op.R.length, kind: 'ins' });
+        added += op.R.length;
         break;
-      }
 
-      case 'mov-del': {
-        const row0 = lLines.length;
+      case 'mov-del':
         for (const line of op.L) {
           lLines.push({ ty: 'moved',   n: line.n, t: line.t });
           rLines.push({ ty: 'phantom', n: null,    t: '' });
         }
-        blocks.push({ row: row0, len: op.L.length, kind: 'mov' });
+        moved += op.L.length;
         break;
-      }
 
-      case 'mov-ins': {
-        const row0 = lLines.length;
+      case 'mov-ins':
         for (const line of op.R) {
-          lLines.push({ ty: 'phantom', n: null,    t: '' });
-          rLines.push({ ty: 'moved',   n: line.n,  t: line.t });
+          lLines.push({ ty: 'phantom', n: null,   t: '' });
+          rLines.push({ ty: 'moved',   n: line.n, t: line.t });
         }
-        blocks.push({ row: row0, len: op.R.length, kind: 'mov' });
         break;
-      }
     }
   }
 
-  // Stats
-  let added = 0, deleted = 0, changed = 0, moved = 0;
-  for (const b of blocks) {
-    if (b.kind === 'ins') added   += b.len;
-    if (b.kind === 'del') deleted += b.len;
-    if (b.kind === 'chg') changed += b.len;
-    if (b.kind === 'mov') moved   += b.len;
-  }
-
-  return { lLines, rLines, blocks, stats: { added, deleted, changed, moved } };
+  return { lLines, rLines, stats: { added, deleted, changed, moved } };
 }
 
 function charDiff(left, right) {
@@ -647,38 +607,10 @@ function charDiff(left, right) {
 // =====================================================
 // --- RENDERER ---
 // =====================================================
-const CONTEXT = 3; // unchanged lines to show around a diff in diffs-only mode
-
 function renderPanel(lines, containerId) {
   const el = $id(containerId);
   el.innerHTML = '';
-
-  if (!ST.diffsOnly) {
-    for (const line of lines) el.appendChild(mkLine(line));
-    return;
-  }
-
-  // Diffs-only: compute which rows to show
-  const n    = lines.length;
-  const show = new Uint8Array(n);
-  for (let i = 0; i < n; i++) {
-    if (lines[i].ty !== 'unchanged') {
-      for (let c = Math.max(0, i - CONTEXT); c <= Math.min(n - 1, i + CONTEXT); c++) show[c] = 1;
-    }
-  }
-
-  let i = 0;
-  while (i < n) {
-    if (show[i]) {
-      el.appendChild(mkLine(lines[i]));
-      i++;
-    } else {
-      let j = i;
-      while (j < n && !show[j]) j++;
-      el.appendChild(mkSep(j - i));
-      i = j;
-    }
-  }
+  for (const line of lines) el.appendChild(mkLine(line));
 }
 
 function mkLine(line) {
@@ -705,18 +637,6 @@ function mkLine(line) {
   return row;
 }
 
-function mkSep(count) {
-  const row = document.createElement('div');
-  row.className = 'dl dl-sep';
-  const num = document.createElement('span');
-  num.className = 'dl-num';
-  row.appendChild(num);
-  const txt = document.createElement('span');
-  txt.className = 'dl-txt';
-  txt.textContent = `── ${count} unchanged line${count !== 1 ? 's' : ''} ──`;
-  row.appendChild(txt);
-  return row;
-}
 
 function renderStats(stats) {
   const bar   = $id('dt-stats');
@@ -789,31 +709,6 @@ function mmViewport() {
 }
 
 // =====================================================
-// --- NAVIGATION ---
-// =====================================================
-const LH = 22; // px, matches --lh
-
-function focusBlock(idx) {
-  if (!ST.blocks.length) return;
-  if (idx < 0)                  idx = ST.blocks.length - 1;
-  if (idx >= ST.blocks.length)  idx = 0;
-  ST.focusIdx = idx;
-
-  document.querySelectorAll('.dl.focused').forEach(e => e.classList.remove('focused'));
-
-  const b   = ST.blocks[idx];
-  const dvL = $id('dv-L');
-  dvL.scrollTop = Math.max(0, b.row * LH - dvL.clientHeight / 3);
-
-  const lRows = $id('dl-L').children;
-  const rRows = $id('dl-R').children;
-  for (let i = b.row; i < b.row + b.len && i < lRows.length; i++) {
-    lRows[i]?.classList.add('focused');
-    rRows[i]?.classList.add('focused');
-  }
-}
-
-// =====================================================
 // --- SYNC SCROLL ---
 // =====================================================
 let _syncing = false;
@@ -876,11 +771,9 @@ function doCompare() {
   }
 
   const result = runDiff(ltxt, rtxt);
-  ST.lLines   = result.lLines;
-  ST.rLines   = result.rLines;
-  ST.blocks   = result.blocks;
-  ST.focusIdx = -1;
-  ST.active   = true;
+  ST.lLines  = result.lLines;
+  ST.rLines  = result.rLines;
+  ST.active  = true;
 
   $id('ta-L').style.display = 'none';
   $id('ta-R').style.display = 'none';
@@ -891,16 +784,12 @@ function doCompare() {
   renderPanel(ST.rLines, 'dl-R');
   renderStats(result.stats);
   mmBuild(ST.lLines);
-
-  if (ST.blocks.length) focusBlock(0);
 }
 
 function resetView() {
-  ST.active   = false;
-  ST.lLines   = [];
-  ST.rLines   = [];
-  ST.blocks   = [];
-  ST.focusIdx = -1;
+  ST.active  = false;
+  ST.lLines  = [];
+  ST.rLines  = [];
 
   $id('ta-L').style.display = '';
   $id('ta-R').style.display = '';
@@ -925,14 +814,6 @@ function clearAll() {
   resetView();
 }
 
-function toggleDiffsOnly() {
-  if (!ST.active) return;
-  ST.diffsOnly = !ST.diffsOnly;
-  $id('btn-diffs-only').classList.toggle('is-active', ST.diffsOnly);
-  renderPanel(ST.lLines, 'dl-L');
-  renderPanel(ST.rLines, 'dl-R');
-  if (ST.blocks.length) focusBlock(Math.max(0, ST.focusIdx));
-}
 
 function loadFile(side) {
   const input  = $id(`file-${side}`);
@@ -959,13 +840,8 @@ function init() {
 
   initSplitter();
 
-  $id('btn-compare')   .addEventListener('click', doCompare);
-  $id('btn-first')     .addEventListener('click', () => focusBlock(0));
-  $id('btn-prev')      .addEventListener('click', () => focusBlock(ST.focusIdx - 1));
-  $id('btn-next')      .addEventListener('click', () => focusBlock(ST.focusIdx + 1));
-  $id('btn-last')      .addEventListener('click', () => focusBlock(ST.blocks.length - 1));
-  $id('btn-diffs-only').addEventListener('click', toggleDiffsOnly);
-  $id('btn-clear-all') .addEventListener('click', clearAll);
+  $id('btn-compare')  .addEventListener('click', doCompare);
+  $id('btn-clear-all').addEventListener('click', clearAll);
   $id('btn-clear-L')   .addEventListener('click', () => clearPanel('L'));
   $id('btn-clear-R')   .addEventListener('click', () => clearPanel('R'));
 
@@ -991,10 +867,8 @@ function init() {
 
   document.addEventListener('keydown', e => {
     if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
-      e.preventDefault(); doCompare(); return;
+      e.preventDefault(); doCompare();
     }
-    if (e.altKey && e.key === 'ArrowDown') { e.preventDefault(); focusBlock(ST.focusIdx + 1); }
-    if (e.altKey && e.key === 'ArrowUp')   { e.preventDefault(); focusBlock(ST.focusIdx - 1); }
   });
 
   window.addEventListener('resize', () => {
