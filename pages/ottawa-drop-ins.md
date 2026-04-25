@@ -23,4 +23,4 @@ permalink: /ottawa-drop-ins/
 
 ## Related Article
 
-[How I Built the City of Ottawa Drop-Ins pages](/projects/ottawa-drop-ins/how-i-built-this-tool)
+[How I Built the City of Ottawa Drop-Ins pages](/articles/how-i-built-ottawa-drop-ins/)
