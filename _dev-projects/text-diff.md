@@ -349,10 +349,6 @@ tags: [tools]
     <div class="dt-panel" id="panel-L">
       <div class="dt-panel-hdr">
         <input class="dt-filename" id="fname-L" type="text" value="File 1" spellcheck="false">
-        <label class="pbtn" title="Load a file from disk">
-          📂 Load
-          <input type="file" id="file-L" style="display:none">
-        </label>
         <button class="pbtn" id="btn-clear-L">✕ Clear</button>
       </div>
       <textarea class="dt-textarea" id="ta-L" placeholder="Paste or type text here, or load a file…" spellcheck="false"></textarea>
@@ -366,10 +362,6 @@ tags: [tools]
     <div class="dt-panel" id="panel-R">
       <div class="dt-panel-hdr">
         <input class="dt-filename" id="fname-R" type="text" value="File 2" spellcheck="false">
-        <label class="pbtn" title="Load a file from disk">
-          📂 Load
-          <input type="file" id="file-R" style="display:none">
-        </label>
         <button class="pbtn" id="btn-clear-R">✕ Clear</button>
       </div>
       <textarea class="dt-textarea" id="ta-R" placeholder="Paste or type text here, or load a file…" spellcheck="false"></textarea>
@@ -815,19 +807,6 @@ function clearAll() {
 }
 
 
-function loadFile(side) {
-  const input  = $id(`file-${side}`);
-  const reader = new FileReader();
-  reader.onload = ev => {
-    $id(`ta-${side}`).value = ev.target.result;
-    if (ST.active) resetView();
-  };
-  if (input.files[0]) {
-    $id(`fname-${side}`).value = input.files[0].name;
-    reader.readAsText(input.files[0]);
-    input.value = '';
-  }
-}
 
 // =====================================================
 // --- INIT ---
@@ -845,8 +824,6 @@ function init() {
   $id('btn-clear-L')   .addEventListener('click', () => clearPanel('L'));
   $id('btn-clear-R')   .addEventListener('click', () => clearPanel('R'));
 
-  $id('file-L').addEventListener('change', () => loadFile('L'));
-  $id('file-R').addEventListener('change', () => loadFile('R'));
 
   $id('dv-L').addEventListener('scroll', () => syncScroll('L'), { passive: true });
   $id('dv-R').addEventListener('scroll', () => syncScroll('R'), { passive: true });
