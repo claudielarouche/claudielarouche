@@ -1,11 +1,11 @@
 ---
 layout: projects
-title: Text Diff Tool
+title: Text Comparer
 description: Compare two text files side by side, with highlighted differences.
 tags: [Work]
 image: https://claudielarouche.com/assets/img/comparison.jpg
 image_hero: https://claudielarouche.com/assets/img/comparison.jpg
-permalink: /projects/text-diff/
+permalink: /projects/text-comparer/
 ---
 
 <style>
