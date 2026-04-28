@@ -5,7 +5,7 @@ image: https://claudielarouche.com/assets/img/clocks.jpg
 image_hero: https://claudielarouche.com/assets/img/clocks.jpg
 tags: [Work]
 permalink: /projects/time-diff/
-sitemap: false
+sitemap: true
 layout: projects
 js:
   - https://code.jquery.com/jquery-3.6.0.min.js
