@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL ↔ Wiki Link Converter</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 900px;
+            width: 100%;
+            padding: 40px;
+        }
+
+        h1 { color: #2d3748; margin-bottom: 6px; font-size: 26px; }
+        .subtitle { color: #718096; margin-bottom: 28px; font-size: 14px; }
+
+        .mode-tabs {
+            display: flex;
+            gap: 0;
+            margin-bottom: 28px;
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .tab {
+            flex: 1;
+            padding: 12px 16px;
+            border: none;
+            background: white;
+            color: #718096;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .tab.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .tab:not(.active):hover { background: #f7fafc; }
+
+        label {
+            display: block;
+            font-weight: 600;
+            color: #4a5568;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .editor-group { margin-bottom: 20px; }
+
+        .input-box {
+            width: 100%;
+            min-height: 150px;
+            padding: 16px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-family: 'SF Mono', Monaco, 'Courier New', monospace;
+            font-size: 14px;
+            line-height: 1.6;
+            overflow-y: auto;
+            background: white;
+            transition: border-color 0.2s;
+        }
+
+        .input-box:focus { outline: none; border-color: #667eea; }
+        .input-box:empty:before { content: attr(placeholder); color: #a0aec0; pointer-events: none; }
+
+        textarea {
+            width: 100%;
+            min-height: 150px;
+            padding: 16px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-family: 'SF Mono', Monaco, 'Courier New', monospace;
+            font-size: 14px;
+            line-height: 1.6;
+            resize: vertical;
+            background: #f7fafc;
+            transition: border-color 0.2s;
+        }
+
+        textarea:focus { outline: none; border-color: #667eea; }
+
+        .button-row {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            flex: 1;
+        }
+
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(102,126,234,0.4); }
+
+        .btn-secondary {
+            background: #edf2f7;
+            color: #4a5568;
+        }
+
+        .btn-secondary:hover { background: #e2e8f0; }
+
+        .btn-copy {
+            width: 100%;
+            background: #edf2f7;
+            color: #4a5568;
+            margin-top: 4px;
+        }
+
+        .btn-copy:hover { background: #e2e8f0; }
+
+        .info {
+            background: #ebf4ff;
+            border-left: 4px solid #4299e1;
+            padding: 14px 16px;
+            border-radius: 4px;
+            margin-top: 20px;
+            font-size: 13px;
+            color: #2c5282;
+            line-height: 1.6;
+        }
+
+        .info strong { display: block; margin-bottom: 6px; }
+
+        .toast {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            background: #48bb78;
+            color: white;
+            padding: 14px 22px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            display: none;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .toast.show { display: block; animation: slideIn 0.3s ease; }
+
+        @keyframes slideIn {
+            from { transform: translateX(200px); opacity: 0; }
+            to   { transform: translateX(0);     opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>🔗 URL ↔ Wiki Link Converter</h1>
+    <p class="subtitle">Convert between plain/rich-text URLs and markdown wiki link format</p>
+
+    <div class="mode-tabs">
+        <button class="tab active" onclick="switchMode('toWiki')">URLs → Wiki Links</button>
+        <button class="tab"        onclick="switchMode('toUrl')">Wiki Links → URLs</button>
+    </div>
+
+    <!-- URLs → Wiki Links -->
+    <div id="panel-toWiki">
+        <div class="editor-group">
+            <label>Input — paste text with hyperlinks</label>
+            <div id="input-toWiki" contenteditable="true" class="input-box"
+                 placeholder="Paste text containing URLs or rich-text hyperlinks here..."></div>
+        </div>
+        <div class="button-row">
+            <button class="btn-primary"    onclick="convertToWiki()">Convert to Wiki Links</button>
+            <button class="btn-secondary"  onclick="clearPanel('toWiki')">Clear</button>
+        </div>
+        <div class="editor-group">
+            <label>Output — wiki link format</label>
+            <textarea id="output-toWiki" readonly placeholder="[Link text](https://example.com)"></textarea>
+        </div>
+        <button class="btn-copy" onclick="copyOutput('toWiki')">📋 Copy to Clipboard</button>
+        <div class="info">
+            <strong>How it works</strong>
+            Detects raw URLs and rich-text hyperlinks (e.g. pasted from email) and converts them to
+            <code>[text](url)</code> format. Also unwraps Outlook SafeLinks and Google redirect URLs automatically.
+        </div>
+    </div>
+
+    <!-- Wiki Links → URLs -->
+    <div id="panel-toUrl" style="display:none">
+        <div class="editor-group">
+            <label>Input — paste text with wiki links</label>
+            <textarea id="input-toUrl" placeholder="Paste markdown text with [link text](https://url) links here..."></textarea>
+        </div>
+        <div class="button-row">
+            <button class="btn-primary"   onclick="convertToUrl()">Convert</button>
+            <button class="btn-secondary" onclick="clearPanel('toUrl')">Clear</button>
+        </div>
+        <div style="display:flex; gap:8px; margin-bottom:16px;">
+            <label style="font-weight:normal; display:flex; align-items:center; gap:6px; cursor:pointer;">
+                <input type="radio" name="urlOutputMode" value="rich" checked onchange="convertToUrl()"> Rich text (clickable links)
+            </label>
+            <label style="font-weight:normal; display:flex; align-items:center; gap:6px; cursor:pointer;">
+                <input type="radio" name="urlOutputMode" value="plain" onchange="convertToUrl()"> Plain text
+            </label>
+        </div>
+        <div class="editor-group">
+            <label id="output-toUrl-label">Output — rich text with clickable links</label>
+            <div id="output-toUrl" class="input-box" style="background:#f7fafc; min-height:150px;"
+                 placeholder="Output will appear here..."></div>
+        </div>
+        <button class="btn-copy" onclick="copyOutput('toUrl')">📋 Copy to Clipboard</button>
+        <div class="info">
+            <strong>How it works</strong>
+            Finds every <code>[text](url)</code> pattern and replaces it with <code>text: url</code> so the
+            URL is visible as plain text. Everything else in the document is left untouched.
+        </div>
+    </div>
+</div>
+
+<div class="toast" id="toast">Copied to clipboard!</div>
+
+<script>
+    // ── Mode switching ────────────────────────────────────────────────────────
+    function switchMode(mode) {
+        document.querySelectorAll('.tab').forEach((t, i) => {
+            t.classList.toggle('active', (mode === 'toWiki') ? i === 0 : i === 1);
+        });
+        document.getElementById('panel-toWiki').style.display = mode === 'toWiki' ? '' : 'none';
+        document.getElementById('panel-toUrl').style.display  = mode === 'toUrl'  ? '' : 'none';
+    }
+
+    // ── Shared helpers ────────────────────────────────────────────────────────
+    function unwrapUrl(url) {
+        try {
+            if (url.includes('safelinks.protection.outlook.com')) {
+                const p = new URL(url).searchParams.get('url');
+                if (p) return decodeURIComponent(p);
+            }
+            if (url.includes('google.com/url?')) {
+                const p = new URL(url).searchParams.get('q') || new URL(url).searchParams.get('url');
+                if (p) return decodeURIComponent(p);
+            }
+            if (url.includes('?url=') || url.includes('&url=')) {
+                const p = new URL(url).searchParams.get('url');
+                if (p) return decodeURIComponent(p);
+            }
+        } catch (_) {}
+        return url;
+    }
+
+    function extractTextFromUrl(url) {
+        try {
+            const u = new URL(url);
+            let text = '';
+            if (u.pathname && u.pathname !== '/') {
+                const parts = u.pathname.split('/').filter(Boolean);
+                if (parts.length) text = parts[parts.length - 1].replace(/[-_]/g, ' ').replace(/\.[^.]+$/, '');
+            }
+            if (!text) text = u.hostname.replace('www.', '');
+            text = text.charAt(0).toUpperCase() + text.slice(1);
+            if (text.length > 50) text = text.slice(0, 47) + '...';
+            return text;
+        } catch (_) { return url; }
+    }
+
+    function showToast() {
+        const t = document.getElementById('toast');
+        t.classList.add('show');
+        setTimeout(() => t.classList.remove('show'), 2000);
+    }
+
+    // ── URLs → Wiki Links ─────────────────────────────────────────────────────
+    function processNode(node) {
+        if (node.nodeType === Node.TEXT_NODE) {
+            return node.textContent.replace(/(https?:\/\/[^\s<>"()]+)/g, url => {
+                url = unwrapUrl(url);
+                return `[${extractTextFromUrl(url)}](${url})`;
+            });
+        }
+        if (node.nodeType === Node.ELEMENT_NODE) {
+            if (node.tagName === 'A') {
+                const url  = unwrapUrl(node.href);
+                const text = node.textContent.replace(/[()]/g, '');
+                return `[${text}](${url})`;
+            }
+            if (node.tagName === 'BR') return '\n';
+            return Array.from(node.childNodes).map(processNode).join('');
+        }
+        return '';
+    }
+
+    function convertToWiki() {
+        const div = document.getElementById('input-toWiki');
+        if (!div.textContent.trim()) { alert('Please paste some text first!'); return; }
+        const raw = Array.from(div.childNodes).map(processNode).join('');
+        document.getElementById('output-toWiki').value = raw.replace(/\s+/g, ' ').trim();
+    }
+
+    // ── Wiki Links → URLs ─────────────────────────────────────────────────────
+    function convertToUrl() {
+        const input = document.getElementById('input-toUrl').value;
+        if (!input.trim()) return;
+        const mode = document.querySelector('input[name="urlOutputMode"]:checked').value;
+        const out  = document.getElementById('output-toUrl');
+        const lbl  = document.getElementById('output-toUrl-label');
+
+        const wikiLink = /\[([^\]]+)\]\(([^)]+)\)/g;
+
+        if (mode === 'rich') {
+            lbl.textContent = 'Output — rich text with clickable links';
+            const html = input
+                .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+                .replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, label, url) => `<a href="${url}">${label}</a>`)
+                .replace(/\n/g, '<br>');
+            out.innerHTML = html;
+        } else {
+            lbl.textContent = 'Output — plain text';
+            const result = input.replace(wikiLink, (_, label, url) => `${label}: ${url}`);
+            out.innerText = result;
+        }
+    }
+
+    // ── Shared UI actions ─────────────────────────────────────────────────────
+    function clearPanel(mode) {
+        if (mode === 'toWiki') {
+            document.getElementById('input-toWiki').innerHTML = '';
+            document.getElementById('output-toWiki').value = '';
+        } else {
+            document.getElementById('input-toUrl').value = '';
+            document.getElementById('output-toUrl').innerHTML = '';
+        }
+    }
+
+    function copyOutput(mode) {
+        const el = document.getElementById(`output-${mode}`);
+        const isEmpty = el.tagName === 'TEXTAREA' ? !el.value.trim() : !el.innerText.trim();
+        if (isEmpty) { alert('Nothing to copy yet!'); return; }
+
+        if (el.tagName === 'TEXTAREA') {
+            el.select();
+            document.execCommand('copy');
+        } else {
+            // Copy rich text (preserves hyperlinks when pasting into Word, Gmail, etc.)
+            const range = document.createRange();
+            range.selectNodeContents(el);
+            const sel = window.getSelection();
+            sel.removeAllRanges();
+            sel.addRange(range);
+            document.execCommand('copy');
+            sel.removeAllRanges();
+        }
+        showToast();
+    }
+
+    // ── Auto-convert on paste for URLs→Wiki panel ─────────────────────────────
+    const wikiInput = document.getElementById('input-toWiki');
+    wikiInput.addEventListener('paste', () => setTimeout(convertToWiki, 100));
+    wikiInput.addEventListener('input', () => { if (wikiInput.textContent.trim()) convertToWiki(); });
+
+    // Auto-convert on paste for Wiki→URLs panel
+    document.getElementById('input-toUrl').addEventListener('paste', () => setTimeout(convertToUrl, 100));
+    document.getElementById('input-toUrl').addEventListener('input', convertToUrl);
+</script>
+</body>
+</html>
