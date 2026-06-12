@@ -70,7 +70,7 @@ Estimate your **Transition Support Measure (TSM)** as a federal public service e
 <div class="form-group">
 <label for="annual-salary"><strong>Current Substantive Annual Salary ($)</strong></label>
 <input type="number" class="form-control" id="annual-salary" min="0" step="100" placeholder="e.g. 75000">
-<small>Your current gross substantive annual salary (not acting pay). Weekly pay is calculated as salary &divide; 52.</small>
+<small>Your current gross substantive annual salary (not acting pay). Weekly pay is calculated as salary &divide; 52.176.</small>
 </div>
 
 <div class="form-group">

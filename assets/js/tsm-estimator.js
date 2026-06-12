@@ -90,7 +90,7 @@ function calculateTSM() {
   var isAlternate = alternationWeeks > 0;
 
   // --- Core calculations ---
-  var weeklyPay = salary / 52;
+  var weeklyPay = salary / 52.176;
   var tsmWeeksBase = getTSMWeeks(yearsFloor);
   var tsmWeeks = isAlternate ? Math.max(0, tsmWeeksBase - alternationWeeks) : tsmWeeksBase;
 

@@ -26,7 +26,10 @@
       "Bash(python update_daycare_websites.py)",
       "Bash(python -c \":*)",
       "Bash(del \"C:\\\\Users\\\\claud\\\\Downloads\\\\Cowork\\\\claudielarouche\\\\update_daycare_websites.py\")",
-      "Bash(python -c \"import os; os.remove\\(r''C:\\\\Users\\\\claud\\\\Downloads\\\\Cowork\\\\claudielarouche\\\\update_daycare_websites.py''\\)\")"
+      "Bash(python -c \"import os; os.remove\\(r''C:\\\\Users\\\\claud\\\\Downloads\\\\Cowork\\\\claudielarouche\\\\update_daycare_websites.py''\\)\")",
+      "WebFetch(domain:www.tbs-sct.canada.ca)",
+      "WebFetch(domain:psacunion.ca)",
+      "WebFetch(domain:www.canada.ca)"
     ]
   }
 }
