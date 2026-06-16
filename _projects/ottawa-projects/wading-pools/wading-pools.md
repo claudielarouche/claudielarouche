@@ -19,6 +19,8 @@ css:
   - https://unpkg.com/leaflet/dist/leaflet.css
 ---
 
+<p>The wading pool season starts on June 23, 2026 and ends on August 25, 2026</p>
+
 <div class="mt-3">
 <a href="#csvData" class="btn btn-primary">
     Go to wading pool listing
