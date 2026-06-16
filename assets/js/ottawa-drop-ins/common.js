@@ -59,6 +59,7 @@ function renderTable(data) {
         header === 'Swim Type' ||
         header === 'Period' ||
         header === 'Time of day' ||
+        header === 'Pool type' ||
         (!showCategory && header === 'Category') ||
         (!showAge && (header === 'Age' || header === 'Activity Type'));
 
