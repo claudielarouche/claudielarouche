@@ -67,7 +67,7 @@ function renderTable(data) {
     let tableHtml = '<table id="dataTable"><thead><tr>';
     headers.forEach(header => {
         // Skip rendering the URL column
-        if (header !== 'Website') {
+        if (!['Website', 'Season Start', 'Season End'].includes(header)) {
             tableHtml += `<th>${header}</th>`;
         }
     });
@@ -85,7 +85,7 @@ function renderTable(data) {
 
         headers.forEach((header, index) => {
             // Skip rendering the URL column
-            if (header !== 'Website') {
+            if (!['Website', 'Season Start', 'Season End'].includes(header)) {
                 switch (header) {
             
                     
@@ -103,8 +103,7 @@ function renderTable(data) {
 
        
                     default:
-                        // Display other columns
-                        tableHtml += `<td>${row[header]}</td>`;
+                        tableHtml += `<td>${getDayValue(row, header)}</td>`;
                         break;
                 }
             }
@@ -186,6 +185,24 @@ function renderTable(data) {
 //	filterMap();
 }
 
+
+const DAY_COLUMNS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+
+function isInSeason(row) {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    const start = row['Season Start'] ? new Date(row['Season Start']) : null;
+    const end = row['Season End'] ? new Date(row['Season End']) : null;
+    if (!start || !end) return true;
+    return today >= start && today <= end;
+}
+
+function getDayValue(row, day) {
+    if (DAY_COLUMNS.includes(day) && !isInSeason(row)) {
+        return 'Closed for the season';
+    }
+    return row[day];
+}
 
 function filterData(data, selectedArea) {
 
@@ -286,7 +303,7 @@ function addMarkersToMap(data) {
             var lat = parseFloat(item['Latitude']);
             var lng = parseFloat(item['Longitude']);
             if (!isNaN(lat) && !isNaN(lng)) {
-                const todayStatus = (item[todayName] || '').toLowerCase();
+                const todayStatus = getDayValue(item, todayName).toLowerCase();
                 const isClosed = todayStatus.includes('closed');
 
                 // Create a colored icon
@@ -303,16 +320,16 @@ function addMarkersToMap(data) {
                     ? `<a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}, Ottawa, Canada" target="_blank">${address}</a><br>` 
                     : '';
 
-                var popupContent = `                    
+                var popupContent = `
                     <b>${item['Name']}</b><br>
                     ${addressLink}
-                    Monday: ${item['Monday']}<br>
-                    Tuesday: ${item['Tuesday']}<br>
-                    Wednesday: ${item['Wednesday']}<br>
-                    Thursday: ${item['Thursday']}<br>
-                    Friday: ${item['Friday']}<br>
-                    Saturday: ${item['Saturday']}<br>
-                    Sunday: ${item['Sunday']}`;
+                    Monday: ${getDayValue(item, 'Monday')}<br>
+                    Tuesday: ${getDayValue(item, 'Tuesday')}<br>
+                    Wednesday: ${getDayValue(item, 'Wednesday')}<br>
+                    Thursday: ${getDayValue(item, 'Thursday')}<br>
+                    Friday: ${getDayValue(item, 'Friday')}<br>
+                    Saturday: ${getDayValue(item, 'Saturday')}<br>
+                    Sunday: ${getDayValue(item, 'Sunday')}`;
 
                 var marker = L.marker([lat, lng], { icon: markerIcon })
                     .bindPopup(popupContent);
