@@ -198,6 +198,31 @@ document.querySelectorAll('.swimTypeCheckbox').forEach(function (checkbox) {
     }
 });
 
+const selectedPoolType = [];
+document.querySelectorAll('.poolTypeCheckbox').forEach(function (checkbox) {
+    checkbox.addEventListener('change', function () {
+        sortingState = $('#dataTable').DataTable().state();
+        currentSearchValue = $('#dataTable_filter input').val();
+        if (checkbox.checked) {
+            if (!selectedPoolType.includes(checkbox.value)) {
+                selectedPoolType.push(checkbox.value);
+            }
+        } else {
+            const index = selectedPoolType.indexOf(checkbox.value);
+            if (index !== -1) {
+                selectedPoolType.splice(index, 1);
+            }
+        }
+        renderTable(originalData);
+    });
+
+    // Initialize with all checkboxes checked by default
+    checkbox.checked = true;
+    if (!selectedPoolType.includes(checkbox.value)) {
+        selectedPoolType.push(checkbox.value);
+    }
+});
+
 // wait until the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', function() {
     const selectAllAreasBtn = document.getElementById('selectAllAreasButton');
@@ -289,6 +314,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
     unselectAllAgesBtn.addEventListener('click', function() {
         agesCheckboxes.forEach(cb => {
+            cb.checked = false;
+            cb.dispatchEvent(new Event('change', { bubbles: true }));
+        });
+    });
+
+    // === Pool Type ===
+    const selectAllPoolTypesBtn   = document.getElementById('selectAllPoolTypesButton');
+    const unselectAllPoolTypesBtn = document.getElementById('unselectAllPoolTypesButton');
+    const poolTypeCheckboxes      = document.querySelectorAll('.poolTypeCheckbox');
+
+    selectAllPoolTypesBtn.addEventListener('click', function() {
+        poolTypeCheckboxes.forEach(cb => {
+            cb.checked = true;
+            cb.dispatchEvent(new Event('change', { bubbles: true }));
+        });
+    });
+
+    unselectAllPoolTypesBtn.addEventListener('click', function() {
+        poolTypeCheckboxes.forEach(cb => {
             cb.checked = false;
             cb.dispatchEvent(new Event('change', { bubbles: true }));
         });

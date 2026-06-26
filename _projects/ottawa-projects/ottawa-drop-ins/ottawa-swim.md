@@ -35,6 +35,8 @@ This tool is dedicated to [Dave Sampson](https://davidsampson.ca/wp/){:target="_
 
 {% include ottawa-drop-ins/filter-swim-type.html %}
 
+{% include ottawa-drop-ins/filter-pool-type.html %}
+
 {% include view-data-reset-filter.html %}   
 
 {% include ottawa-drop-ins/alert-info.html %}  
