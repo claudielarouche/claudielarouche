@@ -130,9 +130,32 @@ h2 { margin: 0 0 14px; font: 600 22px/1.1 var(--font-display); letter-spacing: .
 .empty .wi { opacity: .25; }
 .empty .cond, .empty .right { color: var(--muted); }
 
-details { font-size: 14px; color: var(--muted); }
-summary { cursor: pointer; font-weight: 600; color: var(--ink); }
-details ul { margin: 10px 0 0; padding-left: 18px; display: grid; gap: 4px; }
+/* Settings */
+fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
+legend { padding: 0; margin-bottom: 8px; font-size: 12px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.cfg { display: grid; gap: 18px; margin: 14px 0; }
+.fields { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; }
+.field { display: grid; gap: 6px; font-size: 14px; min-width: 0; align-content: start; }
+.inp { display: flex; align-items: center; gap: 8px; }
+.u { color: var(--muted); min-width: 1.6em; }
+input {
+  font: inherit; color: var(--ink); background: var(--bg);
+  border: 1px solid var(--line); border-radius: 6px;
+  min-height: 44px; padding: 0 12px; width: 100%; min-width: 0;
+}
+input:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
+.hint { margin: 0; font-size: 13px; color: var(--muted); }
+.hint.err { color: var(--danger); font-weight: 500; min-height: 1.4em; }
+.linkrow { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0; }
+.linkrow input { flex: 1 1 240px; font-size: 13px; }
+button.alt {
+  appearance: none; cursor: pointer; background: transparent; color: var(--ink);
+  border: 1px solid var(--line); border-radius: 8px; min-height: 44px; padding: 0 16px;
+  font: 600 15px var(--font-body);
+}
+button.alt:hover { border-color: var(--ink); }
+.sub3 { margin: 18px 0 0; font-size: 12px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.actions { margin-top: 14px; }
 
 @media (prefers-reduced-motion: reduce) { .fill { transition: none; } }
 </style>
@@ -168,14 +191,37 @@ details ul { margin: 10px 0 0; padding-left: 18px; display: grid; gap: 4px; }
     <ul class="hours" id="hours"></ul>
   </section>
 
-  <details>
-    <summary>How the picks are made</summary>
-    <ul>
-      <li>Temperature uses the coldest feels-like value from 8 AM to 4 PM, rounded to a whole degree.</li>
-      <li>Above 15&deg;C: no extra layer. 9 to 15&deg;C: sweater. 0 to 8&deg;C: light jacket and light gloves. Below 0&deg;C: winter jacket and winter gloves.</li>
-      <li>Shoes, in this order: winter boots for snow or below -5&deg;C, rain shoes for a 40% rain chance or measurable rain, hiking shoes from 0 to 8&deg;C, otherwise running shoes.</li>
-    </ul>
-  </details>
+  <section class="card" aria-labelledby="cfg-h">
+    <h2 id="cfg-h">Your cutoffs</h2>
+    <p class="hint">Temperatures are feels-like in &deg;C. The page uses the coldest hour from 8 AM to 4 PM, rounded to a whole degree. Shoes are checked in this order: winter boots (or any snow), rain shoes, hiking shoes, then running shoes.</p>
+    <div class="cfg">
+      <fieldset>
+        <legend>Layers</legend>
+        <div class="fields">
+          <label class="field" for="cfg-sw"><span>Sweater at or below</span><span class="inp"><input id="cfg-sw" type="number" inputmode="decimal" step="1" min="-40" max="40"><span class="u">&deg;C</span></span></label>
+          <label class="field" for="cfg-lj"><span>Light jacket and light gloves at or below</span><span class="inp"><input id="cfg-lj" type="number" inputmode="decimal" step="1" min="-40" max="40"><span class="u">&deg;C</span></span></label>
+          <label class="field" for="cfg-wj"><span>Winter jacket and winter gloves below</span><span class="inp"><input id="cfg-wj" type="number" inputmode="decimal" step="1" min="-40" max="40"><span class="u">&deg;C</span></span></label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Shoes</legend>
+        <div class="fields">
+          <label class="field" for="cfg-bt"><span>Winter boots below</span><span class="inp"><input id="cfg-bt" type="number" inputmode="decimal" step="1" min="-40" max="40"><span class="u">&deg;C</span></span></label>
+          <label class="field" for="cfg-hf"><span>Hiking shoes from</span><span class="inp"><input id="cfg-hf" type="number" inputmode="decimal" step="1" min="-40" max="40"><span class="u">&deg;C</span></span></label>
+          <label class="field" for="cfg-ht"><span>Hiking shoes up to</span><span class="inp"><input id="cfg-ht" type="number" inputmode="decimal" step="1" min="-40" max="40"><span class="u">&deg;C</span></span></label>
+          <label class="field" for="cfg-rn"><span>Rain shoes at a rain chance of</span><span class="inp"><input id="cfg-rn" type="number" inputmode="numeric" step="1" min="0" max="100"><span class="u">%</span></span></label>
+        </div>
+      </fieldset>
+    </div>
+    <p class="hint err" id="cfgHint" role="status"></p>
+    <h3 class="sub3">Shortcut link</h3>
+    <div class="linkrow">
+      <input id="link" type="text" readonly aria-label="Shortcut link with your cutoffs">
+      <button class="alt" id="copy" type="button">Copy link</button>
+    </div>
+    <p class="hint">The link updates as you change a cutoff. Open the saved file in your browser, then bookmark the page or copy this link. Opening it again brings your cutoffs back.</p>
+    <div class="actions"><button class="alt" id="reset" type="button">Reset to defaults</button></div>
+  </section>
 </main>
 
 <script>
@@ -183,6 +229,25 @@ details ul { margin: 10px 0 0; padding-left: 18px; display: grid; gap: 4px; }
 'use strict';
 
 /* LOGIC START */
+var DEFAULTS = { sw: 15, lj: 8, wj: 0, bt: 0, hf: 0, ht: 8, rn: 40 };
+var LIMITS = { sw: [-40, 40], lj: [-40, 40], wj: [-40, 40], bt: [-40, 40], hf: [-40, 40], ht: [-40, 40], rn: [0, 100] };
+function cleanNum(v, key) {
+  var n = parseFloat(v);
+  if (!isFinite(n)) { return DEFAULTS[key]; }
+  return Math.min(LIMITS[key][1], Math.max(LIMITS[key][0], n));
+}
+function parseConfig(search) {
+  var p = new URLSearchParams(search || '');
+  var cfg = {};
+  Object.keys(DEFAULTS).forEach(function (k) { cfg[k] = p.has(k) ? cleanNum(p.get(k), k) : DEFAULTS[k]; });
+  return cfg;
+}
+function buildUrl(base, cfg) {
+  var p = new URLSearchParams();
+  Object.keys(DEFAULTS).forEach(function (k) { p.set(k, String(cfg[k])); });
+  return base + '?' + p.toString();
+}
+
 var SNOW = [71, 73, 75, 77, 85, 86];
 var WMO = {
   0: ['Clear sky', 'clear'], 1: ['Mainly clear', 'mostly'], 2: ['Partly cloudy', 'partly'], 3: ['Overcast', 'overcast'],
@@ -233,45 +298,49 @@ function peakRain(win) {
   return best;
 }
 
-function planOutfit(win) {
+function planOutfit(win, cfg) {
+  cfg = cfg || DEFAULTS;
   var feels = win.map(function (x) { return x.feels; }).filter(function (v) { return v !== null; });
   if (!feels.length) { throw new Error('No temperature data for the ride window.'); }
-  var c = Math.round(Math.min.apply(null, feels)) + 0;
+  var coldVal = Infinity, coldHour = null;
+  win.forEach(function (x) { if (x.feels !== null && x.feels < coldVal) { coldVal = x.feels; coldHour = x.hour; } });
+  var c = Math.round(coldVal) + 0;
+  var at = ' at ' + hourLabel(coldHour);
   var peak = peakRain(win);
   var snowy = win.some(function (x) { return (x.snow || 0) > 0 || SNOW.indexOf(x.code) > -1; });
-  var wet = (peak !== null && peak.pop >= 40) ||
+  var wet = (peak !== null && peak.pop >= cfg.rn) ||
     win.some(function (x) { return (x.precip || 0) >= 0.2 && SNOW.indexOf(x.code) === -1; });
 
   var wear = [];
   var layerNote;
-  if (c > 15) {
-    layerNote = 'Coldest feels-like is ' + c + '°C, so no extra layer.';
-  } else if (c > 8) {
+  if (c > cfg.sw) {
+    layerNote = 'Coldest feels-like is ' + c + '°C' + at + ', so no extra layer.';
+  } else if (c > cfg.lj) {
     wear.push('sweater');
-    layerNote = 'Coldest feels-like is ' + c + '°C: sweater.';
-  } else if (c >= 0) {
+    layerNote = 'Coldest feels-like is ' + c + '°C' + at + ': sweater.';
+  } else if (c >= cfg.wj) {
     wear.push('lightJacket', 'lightGloves');
-    layerNote = 'Coldest feels-like is ' + c + '°C: light jacket and light gloves.';
+    layerNote = 'Coldest feels-like is ' + c + '°C' + at + ': light jacket and light gloves.';
   } else {
     wear.push('winterJacket', 'winterGloves');
-    layerNote = 'Coldest feels-like is ' + c + '°C: winter jacket and winter gloves.';
+    layerNote = 'Coldest feels-like is ' + c + '°C' + at + ': winter jacket and winter gloves.';
   }
 
   var shoe, shoeNote;
-  if (snowy || c < -5) {
+  if (snowy || c < cfg.bt) {
     shoe = 'boots';
-    shoeNote = snowy ? 'Snow in the forecast: winter boots.' : 'Feels-like is below -5°C: winter boots.';
+    shoeNote = snowy ? 'Snow in the forecast: winter boots.' : 'Feels-like is below ' + cfg.bt + '°C: winter boots.';
   } else if (wet) {
     shoe = 'rain';
-    shoeNote = peak !== null && peak.pop >= 40
+    shoeNote = peak !== null && peak.pop >= cfg.rn
       ? 'Rain chance reaches ' + whole(peak.pop) + '%: rain shoes.'
       : 'Measurable rain expected: rain shoes.';
-  } else if (c >= 0 && c <= 8) {
+  } else if (c >= cfg.hf && c <= cfg.ht) {
     shoe = 'hiking';
     shoeNote = 'Cool and dry: hiking shoes.';
   } else {
     shoe = 'running';
-    shoeNote = 'Mild and dry: running shoes.';
+    shoeNote = 'Dry, so running shoes.';
   }
   wear.push(shoe);
   return { coldest: c, wear: wear, layerNote: layerNote, shoeNote: shoeNote, peak: peak };
@@ -456,7 +525,8 @@ function render(api) {
   var all = buildHours(api);
   var win = inRange(all, 8, 16);
   if (!win.length) { throw new Error('The forecast has no hours between 8 AM and 4 PM.'); }
-  var plan = planOutfit(win);
+  lastWin = win;
+  var plan = planOutfit(win, cfg);
   renderPeak(plan.peak);
   renderBars(win, plan.peak);
   renderWear(plan);
@@ -507,9 +577,67 @@ function fetchWeather() {
 try {
   $('today').textContent = new Date().toLocaleDateString('en-CA', { weekday: 'long', month: 'long', day: 'numeric', timeZone: 'America/Toronto' });
 } catch (e) { /* keep the fallback text */ }
+/* Settings and shortcut link */
+var cfg = (function () {
+  try { return parseConfig(location.search); } catch (e) { return parseConfig(''); }
+})();
+var lastWin = null;
+var KEYS = Object.keys(DEFAULTS);
+
+function baseUrl() {
+  try { return location.href.split('#')[0].split('?')[0]; } catch (e) { return 'ride-weather.html'; }
+}
+function updateLink() {
+  var url = buildUrl(baseUrl(), cfg);
+  $('link').value = url;
+  try { history.replaceState(null, '', url); } catch (e) { /* the address bar stays as it is */ }
+  var msg = '';
+  if (cfg.sw < cfg.lj || cfg.lj < cfg.wj) { msg = 'Layer cutoffs should step down: sweater, then light jacket, then winter jacket.'; }
+  else if (cfg.hf > cfg.ht) { msg = 'Hiking shoes “from” should not be higher than “up to”.'; }
+  $('cfgHint').textContent = msg;
+}
+function refreshOutfit() {
+  if (lastWin) { renderWear(planOutfit(lastWin, cfg)); }
+}
+function fillInputs() {
+  KEYS.forEach(function (k) { $('cfg-' + k).value = String(cfg[k]); });
+}
+function onCfgInput() {
+  KEYS.forEach(function (k) {
+    var raw = $('cfg-' + k).value;
+    if (raw !== '' && isFinite(parseFloat(raw))) { cfg[k] = cleanNum(raw, k); }
+  });
+  updateLink();
+  refreshOutfit();
+}
+function initSettings() {
+  fillInputs();
+  KEYS.forEach(function (k) { $('cfg-' + k).addEventListener('input', onCfgInput); });
+  $('reset').addEventListener('click', function () {
+    KEYS.forEach(function (k) { cfg[k] = DEFAULTS[k]; });
+    fillInputs();
+    updateLink();
+    refreshOutfit();
+  });
+  $('link').addEventListener('focus', function () { this.select(); });
+  $('copy').addEventListener('click', function () {
+    var b = $('copy');
+    function done(text) {
+      b.textContent = text;
+      setTimeout(function () { b.textContent = 'Copy link'; }, 1800);
+    }
+    function pick() { var el = $('link'); el.focus(); el.select(); done('Select and copy'); }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText($('link').value).then(function () { done('Copied'); }, pick);
+    } else { pick(); }
+  });
+  updateLink();
+}
+
 initBars();
 initWear();
 initHours();
+initSettings();
 btn.addEventListener('click', fetchWeather);
 })();
 </script>
