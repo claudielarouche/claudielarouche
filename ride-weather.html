@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ride Weather</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* Layout: one narrow column. Rain strip first, then a grouped clothing grid, then an hour-by-hour log. */
+:root {
+  --bg: #E8EDEF;
+  --surface: #F8FAFB;
+  --ink: #0F1E27;
+  --muted: #5B6E79;
+  --line: #C9D5DA;
+  --accent: #0D6674;
+  --on-accent: #F4FBFC;
+  --rain: #2B5FD0;
+  --sun: #B97A00;
+  --danger: #B42318;
+  --font-display: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+  --font-body: 'Barlow', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0B151B;
+    --surface: #12212A;
+    --ink: #E5EEF1;
+    --muted: #8CA1AB;
+    --line: #243842;
+    --accent: #46B8C6;
+    --on-accent: #07252B;
+    --rain: #7FA6FF;
+    --sun: #F0B84A;
+    --danger: #FF8A7A;
+    color-scheme: dark;
+  }
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 400 16px/1.5 var(--font-body);
+  padding-block: 32px 56px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.wrap { max-width: 760px; margin: 0 auto; display: grid; gap: 20px; }
+
+header { display: grid; gap: 6px; justify-items: start; }
+.kicker { margin: 0; font-size: 12px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+h1 { margin: 0; font: 700 clamp(44px, 12vw, 64px)/1 var(--font-display); letter-spacing: .01em; text-transform: uppercase; text-wrap: balance; }
+.sub { margin: 0 0 10px; color: var(--muted); max-width: 52ch; }
+
+button.go {
+  appearance: none; border: 0; cursor: pointer;
+  background: var(--accent); color: var(--on-accent);
+  font: 600 18px/1 var(--font-body); letter-spacing: .02em;
+  min-height: 52px; padding: 0 28px; border-radius: 8px;
+}
+button.go:hover { filter: brightness(1.08); }
+button.go:disabled { opacity: .6; cursor: progress; }
+button:focus-visible, summary:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+
+#status { margin: 6px 0 0; min-height: 1.5em; font-size: 14px; color: var(--muted); }
+#status.err { color: var(--danger); font-weight: 500; }
+
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 20px; min-width: 0; }
+h2 { margin: 0 0 14px; font: 600 22px/1.1 var(--font-display); letter-spacing: .05em; text-transform: uppercase; }
+
+/* Rain strip */
+.peak { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 16px; margin-bottom: 16px; }
+.big { font: 700 clamp(64px, 18vw, 92px)/.9 var(--font-display); color: var(--rain); font-variant-numeric: tabular-nums; }
+.when { font-size: 18px; font-weight: 500; }
+.bars { display: grid; grid-template-columns: repeat(9, minmax(0, 1fr)); gap: 6px; }
+.col { display: grid; gap: 4px; justify-items: center; min-width: 0; }
+.col .pc { font-size: 11px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.col .hr { font-size: 11px; color: var(--muted); letter-spacing: .04em; }
+.track { position: relative; width: 100%; height: 72px; background: var(--bg); border-radius: 4px; overflow: hidden; }
+.fill { position: absolute; left: 0; right: 0; bottom: 0; height: 0; background: var(--rain); opacity: .4; transition: height .35s ease; }
+.col.top .fill { opacity: 1; }
+.col.top .pc, .col.top .hr { color: var(--ink); font-weight: 600; }
+.cap { margin: 10px 0 0; font-size: 13px; color: var(--muted); }
+
+/* Clothing */
+.wear { display: grid; gap: 18px; }
+.group { min-width: 0; }
+.group h3 { margin: 0 0 8px; font-size: 12px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.tiles { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+.tile {
+  display: grid; justify-items: center; align-content: start; gap: 6px;
+  padding: 10px 4px 10px; min-width: 0; text-align: center;
+  border: 1px dashed var(--line); border-radius: 8px; color: var(--muted); opacity: .6;
+}
+.tile span { font-size: 12px; line-height: 1.2; overflow-wrap: anywhere; }
+.tile[data-on="true"] { background: var(--accent); border: 1px solid var(--accent); color: var(--on-accent); opacity: 1; }
+.tile[data-on="true"] span { font-weight: 600; }
+.ci { width: 44px; height: 44px; fill: none; stroke: currentColor; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+.ci .d { opacity: .6; }
+.notes { margin: 14px 0 0; padding: 0; list-style: none; display: grid; gap: 2px; font-size: 14px; color: var(--muted); }
+@media (min-width: 600px) {
+  .wear { display: flex; gap: 24px; }
+  .group { flex: var(--n) 1 0; }
+  .tiles { grid-template-columns: repeat(var(--n), minmax(0, 1fr)); }
+}
+
+/* Hourly */
+.hours { list-style: none; margin: 0; padding: 0; }
+.row { display: grid; grid-template-columns: 52px 36px minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 10px 0; border-top: 1px solid var(--line); }
+.row:first-child { border-top: 0; padding-top: 0; }
+.row:last-child { padding-bottom: 0; }
+.t { font-weight: 600; font-variant-numeric: tabular-nums; }
+.cond { font-weight: 500; overflow-wrap: anywhere; }
+.cond small { display: block; font-size: 13px; font-weight: 400; color: var(--muted); }
+.right { text-align: right; font-variant-numeric: tabular-nums; line-height: 1.3; }
+.right small { display: block; font-size: 13px; color: var(--muted); }
+.right .rainpc { color: var(--rain); font-weight: 600; }
+.wi { width: 36px; height: 36px; fill: none; stroke: var(--ink); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.wi .cl { fill: var(--surface); stroke: var(--muted); }
+.wi .bk { stroke: var(--muted); opacity: .55; }
+.wi .sn { stroke: var(--sun); }
+.wi .rn { stroke: var(--rain); }
+.wi .ic { stroke: var(--rain); fill: var(--rain); }
+.wi .bolt { fill: var(--sun); stroke: var(--sun); }
+.wi .fg { stroke: var(--muted); }
+.empty .wi { opacity: .25; }
+.empty .cond, .empty .right { color: var(--muted); }
+
+details { font-size: 14px; color: var(--muted); }
+summary { cursor: pointer; font-weight: 600; color: var(--ink); }
+details ul { margin: 10px 0 0; padding-left: 18px; display: grid; gap: 4px; }
+
+@media (prefers-reduced-motion: reduce) { .fill { transition: none; } }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header>
+    <p class="kicker">Ottawa, ON &middot; <time id="today">Today</time></p>
+    <h1>Ride Weather</h1>
+    <p class="sub">Rain odds and what to wear for the 8 AM to 4 PM ride window, from Open-Meteo.</p>
+    <button class="go" id="go" type="button">Fetch weather</button>
+    <p id="status" role="status" aria-live="polite"></p>
+  </header>
+
+  <section class="card" aria-labelledby="rain-h">
+    <h2 id="rain-h">Highest chance of rain</h2>
+    <div class="peak">
+      <span class="big" id="peakPct">n/a</span>
+      <span class="when" id="peakWhen">Press Fetch weather to check 8 AM to 4 PM.</span>
+    </div>
+    <div class="bars" id="bars"></div>
+    <p class="cap">Hourly rain chance, 8 AM to 4 PM</p>
+  </section>
+
+  <section class="card" aria-labelledby="wear-h">
+    <h2 id="wear-h">What to wear</h2>
+    <div class="wear" id="wear"></div>
+    <ul class="notes" id="notes"></ul>
+  </section>
+
+  <section class="card" aria-labelledby="hour-h">
+    <h2 id="hour-h">Hour by hour</h2>
+    <ul class="hours" id="hours"></ul>
+  </section>
+
+  <details>
+    <summary>How the picks are made</summary>
+    <ul>
+      <li>Temperature uses the coldest feels-like value from 8 AM to 4 PM, rounded to a whole degree.</li>
+      <li>Above 15&deg;C: no extra layer. 9 to 15&deg;C: sweater. 0 to 8&deg;C: light jacket and light gloves. Below 0&deg;C: winter jacket and winter gloves.</li>
+      <li>Shoes, in this order: winter boots for snow or below -5&deg;C, rain shoes for a 40% rain chance or measurable rain, hiking shoes from 0 to 8&deg;C, otherwise running shoes.</li>
+    </ul>
+  </details>
+</main>
+
+<script>
+(function () {
+'use strict';
+
+/* LOGIC START */
+var SNOW = [71, 73, 75, 77, 85, 86];
+var WMO = {
+  0: ['Clear sky', 'clear'], 1: ['Mainly clear', 'mostly'], 2: ['Partly cloudy', 'partly'], 3: ['Overcast', 'overcast'],
+  45: ['Fog', 'fog'], 48: ['Freezing fog', 'fog'],
+  51: ['Light drizzle', 'drizzle'], 53: ['Drizzle', 'drizzle'], 55: ['Heavy drizzle', 'drizzle'],
+  56: ['Light freezing drizzle', 'freezing'], 57: ['Freezing drizzle', 'freezing'],
+  61: ['Light rain', 'rain'], 63: ['Rain', 'rain'], 65: ['Heavy rain', 'heavy'],
+  66: ['Light freezing rain', 'freezing'], 67: ['Freezing rain', 'freezing'],
+  71: ['Light snow', 'snow'], 73: ['Snow', 'snow'], 75: ['Heavy snow', 'snow'], 77: ['Snow grains', 'snow'],
+  80: ['Light rain showers', 'showers'], 81: ['Rain showers', 'showers'], 82: ['Violent rain showers', 'heavy'],
+  85: ['Light snow showers', 'snow'], 86: ['Heavy snow showers', 'snow'],
+  95: ['Thunderstorm', 'thunder'], 96: ['Thunderstorm with hail', 'thunder'], 99: ['Thunderstorm with heavy hail', 'thunder']
+};
+
+function num(v) { return typeof v === 'number' && isFinite(v) ? v : null; }
+function hourLabel(h) { return (h % 12 || 12) + ' ' + (h < 12 ? 'AM' : 'PM'); }
+function shortHour(h) { return (h % 12 || 12) + (h < 12 ? 'a' : 'p'); }
+function whole(v) { return String(Math.round(v) + 0); }
+
+function buildHours(api) {
+  var h = api && api.hourly;
+  if (!h || !h.time) { throw new Error('The forecast came back without hourly data.'); }
+  return h.time.map(function (t, i) {
+    return {
+      hour: parseInt(t.slice(11, 13), 10),
+      temp: num(h.temperature_2m[i]),
+      feels: num(h.apparent_temperature[i]),
+      pop: num(h.precipitation_probability[i]),
+      precip: num(h.precipitation[i]),
+      snow: num(h.snowfall[i]),
+      code: num(h.weather_code[i]),
+      wind: num(h.wind_speed_10m[i])
+    };
+  });
+}
+
+function inRange(all, a, b) { return all.filter(function (x) { return x.hour >= a && x.hour <= b; }); }
+
+function peakRain(win) {
+  var best = null;
+  win.forEach(function (x) {
+    if (x.pop === null) { return; }
+    if (!best || x.pop > best.pop) { best = { pop: x.pop, hour: x.hour }; }
+  });
+  if (best) {
+    best.ties = win.filter(function (x) { return x.pop === best.pop && x.hour !== best.hour; }).map(function (x) { return x.hour; });
+  }
+  return best;
+}
+
+function planOutfit(win) {
+  var feels = win.map(function (x) { return x.feels; }).filter(function (v) { return v !== null; });
+  if (!feels.length) { throw new Error('No temperature data for the ride window.'); }
+  var c = Math.round(Math.min.apply(null, feels)) + 0;
+  var peak = peakRain(win);
+  var snowy = win.some(function (x) { return (x.snow || 0) > 0 || SNOW.indexOf(x.code) > -1; });
+  var wet = (peak !== null && peak.pop >= 40) ||
+    win.some(function (x) { return (x.precip || 0) >= 0.2 && SNOW.indexOf(x.code) === -1; });
+
+  var wear = [];
+  var layerNote;
+  if (c > 15) {
+    layerNote = 'Coldest feels-like is ' + c + '°C, so no extra layer.';
+  } else if (c > 8) {
+    wear.push('sweater');
+    layerNote = 'Coldest feels-like is ' + c + '°C: sweater.';
+  } else if (c >= 0) {
+    wear.push('lightJacket', 'lightGloves');
+    layerNote = 'Coldest feels-like is ' + c + '°C: light jacket and light gloves.';
+  } else {
+    wear.push('winterJacket', 'winterGloves');
+    layerNote = 'Coldest feels-like is ' + c + '°C: winter jacket and winter gloves.';
+  }
+
+  var shoe, shoeNote;
+  if (snowy || c < -5) {
+    shoe = 'boots';
+    shoeNote = snowy ? 'Snow in the forecast: winter boots.' : 'Feels-like is below -5°C: winter boots.';
+  } else if (wet) {
+    shoe = 'rain';
+    shoeNote = peak !== null && peak.pop >= 40
+      ? 'Rain chance reaches ' + whole(peak.pop) + '%: rain shoes.'
+      : 'Measurable rain expected: rain shoes.';
+  } else if (c >= 0 && c <= 8) {
+    shoe = 'hiking';
+    shoeNote = 'Cool and dry: hiking shoes.';
+  } else {
+    shoe = 'running';
+    shoeNote = 'Mild and dry: running shoes.';
+  }
+  wear.push(shoe);
+  return { coldest: c, wear: wear, layerNote: layerNote, shoeNote: shoeNote, peak: peak };
+}
+/* LOGIC END */
+
+/* Weather icons, 48 x 48 */
+var CLOUD = 'M14 34H34Q41 34 41 28Q41 22 34 22Q33 14 25 14Q17 14 16 22Q9 22 9 28Q9 34 14 34Z';
+function cloud(dx, dy, cls) {
+  return '<path class="cl' + (cls ? ' ' + cls : '') + '" transform="translate(' + dx + ' ' + dy + ')" d="' + CLOUD + '"/>';
+}
+function sun(cx, cy, r) {
+  var s = '<circle class="sn" cx="' + cx + '" cy="' + cy + '" r="' + r + '"/>';
+  for (var i = 0; i < 8; i++) {
+    var a = i * Math.PI / 4;
+    s += '<path class="sn" d="M' + (cx + Math.cos(a) * (r + 3)).toFixed(1) + ' ' + (cy + Math.sin(a) * (r + 3)).toFixed(1) +
+      'L' + (cx + Math.cos(a) * (r + 6)).toFixed(1) + ' ' + (cy + Math.sin(a) * (r + 6)).toFixed(1) + '"/>';
+  }
+  return s;
+}
+function lines(xs, y, dx, dy) {
+  return xs.map(function (x) { return '<path class="rn" d="M' + x + ' ' + y + 'l' + dx + ' ' + dy + '"/>'; }).join('');
+}
+function flake(x, y) {
+  return '<path class="ic" d="M' + x + ' ' + (y - 3) + 'v6M' + (x - 3) + ' ' + (y - 1.5) + 'l6 3M' + (x + 3) + ' ' + (y - 1.5) + 'l-6 3"/>';
+}
+var WEATHER_SVG = {
+  clear: sun(24, 24, 8),
+  mostly: sun(17, 17, 6) + '<path class="cl" vector-effect="non-scaling-stroke" transform="translate(16 16) scale(.62)" d="' + CLOUD + '"/>',
+  partly: sun(16, 16, 6) + cloud(5, 6),
+  overcast: cloud(8, -5, 'bk') + cloud(-1, 3),
+  fog: cloud(0, -4) + '<path class="fg" d="M10 35H38M14 40H42M10 45H34"/>',
+  drizzle: cloud(0, -4) + lines([16, 24, 32], 36, -1, 3) + lines([20, 28, 36], 42, -1, 3),
+  rain: cloud(0, -4) + lines([17, 25, 33], 36, -2, 7),
+  heavy: cloud(0, -4) + lines([13, 21, 29, 37], 34, -3, 10),
+  showers: sun(13, 11, 5) + cloud(0, -3) + lines([17, 25, 33], 37, -2, 7),
+  freezing: cloud(0, -4) + lines([17, 31], 36, -2, 6) + '<circle class="ic" cx="24" cy="42" r="1.6"/><circle class="ic" cx="38" cy="44" r="1.6"/>',
+  snow: cloud(0, -4) + flake(16, 41) + flake(26, 44) + flake(35, 40),
+  thunder: cloud(0, -4) + '<polygon class="bolt" points="27,31 20,41 25,41 22,47 31,36 26,36"/>'
+};
+function weatherInfo(code) {
+  var e = WMO[code];
+  if (!e) { return { label: 'Conditions unavailable', key: 'overcast' }; }
+  return { label: e[0], key: e[1] };
+}
+function weatherSvg(key) {
+  return '<svg class="wi" viewBox="0 0 48 48" aria-hidden="true">' + WEATHER_SVG[key] + '</svg>';
+}
+
+/* Clothing icons, 64 x 64 */
+function hand(endY) {
+  return 'M23 ' + endY + ' V40 L15 32 Q13 29 16 27 Q19 25 21 28 L23 31 V18 Q23 14 26 14 Q29 14 29 17 Q29 9 32 9 Q35 9 35 12 Q35 11 38 11 Q41 11 41 14 Q41 17 44 17 Q47 17 47 20 V' + endY + ' Z';
+}
+var SHOE_RUN = '<path d="M8 44V36Q8 33 11 33L22 31L28 23Q31 27 36 29Q43 33 52 36Q58 38 58 44Z"/><path d="M8 44H58V50H8Z"/><path class="d" d="M29 25L33 29M33 28L37 32M26 29L30 33M14 40H30"/>';
+var CLOTHES = {
+  sweater: '<path d="M22 10L8 21L13 35L19 32V54H45V32L51 35L56 21L42 10Q32 19 22 10Z"/><path class="d" d="M19 47H45M10.5 28.5L16 31.5M53.5 28.5L48 31.5"/>',
+  lightJacket: '<path d="M22 10L8 21L13 35L19 32V54H45V32L51 35L56 21L42 10L37 18L32 15L27 18Z"/><path class="d" d="M32 15V54M24 46H29M35 46H40"/>',
+  winterJacket: '<path d="M20 12L7 22L12 37L19 34V55H45V34L52 37L57 22L44 12L43 7H21Z"/><path class="d" d="M20 12H44M19 28H45M19 38H45M19 47H45M32 12V55"/>',
+  lightGloves: '<path d="' + hand(48) + '"/><path class="d" d="M29 17V32M35 12V32M41 14V32"/><path d="M22 48H48V53H22Z"/>',
+  winterGloves: '<path d="' + hand(46) + '"/><path class="d" d="M29 17V32M35 12V32M41 14V32M35 34V42M31 36L39 40M39 36L31 40M21 52H49"/><path d="M21 46H49V58H21Z"/>',
+  running: SHOE_RUN,
+  hiking: '<path d="M12 44V16Q12 13 15 13H26Q29 13 29 16V25Q31 29 40 32L51 35Q58 37 58 44Z"/><path d="M10 44H58V50H10Z"/><path class="d" d="M17 19H24M17 25H24M17 31H26M17 44V50M24 44V50M31 44V50M38 44V50M45 44V50M52 44V50"/>',
+  rain: '<g transform="translate(6 17) scale(.85)">' + SHOE_RUN + '</g><path d="M16 5Q12 11 16 13Q20 11 16 5Z"/><path d="M32 3Q28 9 32 11Q36 9 32 3Z"/><path d="M48 6Q44 12 48 14Q52 12 48 6Z"/>',
+  boots: '<path d="M16 12H35V27Q39 31 49 34Q58 36 58 43V46H16Z"/><path d="M12 46H60V51H12Z"/><path class="d" d="M14 12Q17 8 20 12Q23 8 26 12Q29 8 32 12Q35 8 38 12M25 26V38M20 32H30M21.5 28L28.5 36M28.5 28L21.5 36"/>'
+};
+var GROUPS = [
+  { title: 'Body', items: [['sweater', 'Sweater'], ['lightJacket', 'Light jacket'], ['winterJacket', 'Winter jacket']] },
+  { title: 'Hands', items: [['lightGloves', 'Light gloves'], ['winterGloves', 'Winter gloves']] },
+  { title: 'Feet', items: [['running', 'Running shoes'], ['hiking', 'Hiking shoes'], ['rain', 'Rain shoes'], ['boots', 'Winter boots']] }
+];
+var LABELS = {};
+GROUPS.forEach(function (g) { g.items.forEach(function (it) { LABELS[it[0]] = it[1]; }); });
+
+/* DOM */
+var $ = function (id) { return document.getElementById(id); };
+var btn = $('go'), statusEl = $('status');
+
+function setStatus(msg, isErr) {
+  statusEl.textContent = msg;
+  statusEl.className = isErr ? 'err' : '';
+}
+
+function initBars() {
+  var html = '';
+  for (var h = 8; h <= 16; h++) {
+    html += '<div class="col" id="bar' + h + '"><span class="pc">&middot;</span><div class="track"><div class="fill"></div></div><span class="hr">' + shortHour(h) + '</span></div>';
+  }
+  $('bars').innerHTML = html;
+}
+
+function initWear() {
+  var html = '';
+  GROUPS.forEach(function (g) {
+    html += '<div class="group" style="--n:' + g.items.length + '"><h3>' + g.title + '</h3><div class="tiles">';
+    g.items.forEach(function (it) {
+      html += '<div class="tile" id="tile-' + it[0] + '" data-on="false" aria-label="' + it[1] + '"><svg class="ci" viewBox="0 0 64 64" aria-hidden="true">' + CLOTHES[it[0]] + '</svg><span>' + it[1] + '</span></div>';
+    });
+    html += '</div></div>';
+  });
+  $('wear').innerHTML = html;
+}
+
+function initHours() {
+  var html = '';
+  for (var h = 8; h <= 16; h++) {
+    html += '<li class="row empty"><span class="t">' + hourLabel(h) + '</span>' + weatherSvg('overcast') + '<span class="cond">Waiting for forecast</span><span class="right">&middot;</span></li>';
+  }
+  $('hours').innerHTML = html;
+}
+
+function renderPeak(peak) {
+  var pct = $('peakPct'), when = $('peakWhen');
+  if (!peak) {
+    pct.textContent = 'n/a';
+    when.textContent = 'Open-Meteo did not return rain chances for this window.';
+    return;
+  }
+  pct.textContent = whole(peak.pop) + '%';
+  if (peak.pop === 0) {
+    when.textContent = 'No rain expected from 8 AM to 4 PM.';
+  } else {
+    var also = '';
+    if (peak.ties.length > 3) { also = ' (same chance in ' + peak.ties.length + ' other hours)'; }
+    else if (peak.ties.length) { also = ' (also ' + peak.ties.map(hourLabel).join(', ') + ')'; }
+    when.textContent = 'Peaks at ' + hourLabel(peak.hour) + also;
+  }
+}
+
+function renderBars(win, peak) {
+  for (var h = 8; h <= 16; h++) {
+    var col = $('bar' + h);
+    var x = win.filter(function (w) { return w.hour === h; })[0];
+    var p = x && x.pop !== null ? x.pop : null;
+    col.querySelector('.pc').textContent = p === null ? 'n/a' : whole(p);
+    col.querySelector('.fill').style.height = (p === null ? 0 : Math.max(p, p > 0 ? 3 : 0)) + '%';
+    col.classList.toggle('top', !!peak && peak.pop > 0 && p === peak.pop);
+  }
+}
+
+function renderWear(plan) {
+  Object.keys(LABELS).forEach(function (id) {
+    var on = plan.wear.indexOf(id) > -1;
+    var tile = $('tile-' + id);
+    tile.dataset.on = on ? 'true' : 'false';
+    tile.setAttribute('aria-label', LABELS[id] + (on ? ': wear' : ': not needed'));
+  });
+  var notes = $('notes');
+  notes.innerHTML = '';
+  [plan.layerNote, plan.shoeNote].forEach(function (t) {
+    var li = document.createElement('li');
+    li.textContent = t;
+    notes.appendChild(li);
+  });
+}
+
+function renderHours(list) {
+  var ul = $('hours');
+  ul.innerHTML = '';
+  list.forEach(function (x) {
+    var info = weatherInfo(x.code);
+    var li = document.createElement('li');
+    li.className = 'row';
+    var temp = x.temp === null ? 'n/a' : whole(x.temp) + '°C';
+    var feel = x.feels === null ? '' : 'Feels ' + whole(x.feels) + '°';
+    var wind = x.wind === null ? '' : whole(x.wind) + ' km/h wind';
+    li.innerHTML = '<span class="t"></span>' + weatherSvg(info.key) +
+      '<span class="cond"><span class="lab"></span><small class="wd"></small></span>' +
+      '<span class="right"><span class="tp"></span><small class="fl"></small><small class="rp"></small></span>';
+    li.querySelector('.t').textContent = hourLabel(x.hour);
+    li.querySelector('.lab').textContent = info.label;
+    li.querySelector('.wd').textContent = wind;
+    li.querySelector('.tp').textContent = temp;
+    li.querySelector('.fl').textContent = feel;
+    var rp = li.querySelector('.rp');
+    rp.textContent = x.pop === null ? '' : whole(x.pop) + '% rain';
+    if (x.pop !== null && x.pop >= 40) { rp.className = 'rp rainpc'; }
+    ul.appendChild(li);
+  });
+}
+
+function render(api) {
+  var all = buildHours(api);
+  var win = inRange(all, 8, 16);
+  if (!win.length) { throw new Error('The forecast has no hours between 8 AM and 4 PM.'); }
+  var plan = planOutfit(win);
+  renderPeak(plan.peak);
+  renderBars(win, plan.peak);
+  renderWear(plan);
+  renderHours(inRange(all, 8, 16));
+}
+
+var API = 'https://api.open-meteo.com/v1/forecast?latitude=45.4215&longitude=-75.6972' +
+  '&hourly=temperature_2m,apparent_temperature,precipitation_probability,precipitation,snowfall,weather_code,wind_speed_10m' +
+  '&timezone=America%2FToronto&forecast_days=1';
+
+function fetchWeather() {
+  btn.disabled = true;
+  btn.textContent = 'Fetching...';
+  setStatus('Fetching today’s forecast for Ottawa...', false);
+  var timer;
+  var timeout = new Promise(function (resolve, reject) {
+    timer = setTimeout(function () {
+      var err = new Error('timeout');
+      err.name = 'TimeoutError';
+      reject(err);
+    }, 15000);
+  });
+  Promise.race([fetch(API), timeout])
+    .then(function (r) {
+      if (!r.ok) { throw new Error('Open-Meteo answered with status ' + r.status + '.'); }
+      return r.json();
+    })
+    .then(function (api) {
+      render(api);
+      var t = new Date().toLocaleTimeString('en-CA', { hour: 'numeric', minute: '2-digit', timeZone: 'America/Toronto' });
+      setStatus('Forecast loaded at ' + t + '.', false);
+    })
+    .catch(function (e) {
+      var msg = e && e.name === 'TimeoutError'
+        ? 'The request timed out. Check your connection and try again.'
+        : (e && e.message && e.message.indexOf('Failed to fetch') === -1
+          ? e.message
+          : 'Could not reach Open-Meteo. Check your connection and try again.');
+      setStatus(msg, true);
+    })
+    .then(function () {
+      clearTimeout(timer);
+      btn.disabled = false;
+      btn.textContent = 'Fetch weather';
+    });
+}
+
+try {
+  $('today').textContent = new Date().toLocaleDateString('en-CA', { weekday: 'long', month: 'long', day: 'numeric', timeZone: 'America/Toronto' });
+} catch (e) { /* keep the fallback text */ }
+initBars();
+initWear();
+initHours();
+btn.addEventListener('click', fetchWeather);
+})();
+</script>
+</body>
+</html>
