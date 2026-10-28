@@ -1,8 +1,8 @@
 ---
 title: Agenda Planner
 description: Plan a meeting or workshop agenda. Set your meeting window, add sections with their length, and every start and end time works itself out.
-image: https://claudielarouche.com/assets/img/meeting-plan.jpg
-image_hero: https://claudielarouche.com/assets/img/meeting-plan.jpg
+image: /assets/img/meeting-plan.jpg
+image_hero: /assets/img/meeting-plan.jpg
 tags: [Work]
 permalink: /projects/agenda-planner/
 sitemap: true
