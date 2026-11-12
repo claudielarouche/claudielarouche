@@ -35,6 +35,4 @@ css:
 
 ## City of Ottawa Winter 2027 Courses
 
-{% include winter-courses/last-updated.html %}
-
 <div id="csvData"></div>
