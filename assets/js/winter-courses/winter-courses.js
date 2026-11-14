@@ -41,6 +41,7 @@
     const selectedTime             = new Set();
     const selectedDepartment       = new Set();
     const selectedActivityCategory = new Set();
+    const selectedArea             = new Set();
 
     // Register custom DataTables search — reads data attributes on each <tr>
     $.fn.dataTable.ext.search.push(function(settings, _data, dataIndex) {
@@ -51,7 +52,8 @@
             && selectedAge.has(tr.dataset.age)
             && selectedTime.has(tr.dataset.time)
             && selectedDepartment.has(tr.dataset.dept)
-            && selectedActivityCategory.has(tr.dataset.cat);
+            && selectedActivityCategory.has(tr.dataset.cat)
+            && selectedArea.has(tr.dataset.area);
     });
 
     window.onload = function() {
@@ -91,6 +93,7 @@
             + '<th>Activity Category</th>'
             + '<th>Age Category</th>'
             + '<th>Location</th>'
+            + '<th>Area</th>'
             + '<th>Day</th>'
             + '<th>Start Date</th>'
             + '<th>Start Time</th>'
@@ -105,13 +108,14 @@
             var age  = (row['Age Category'] || '').toLowerCase();
             var dept = (row['Department'] || '').toLowerCase();
             var cat  = (row['Activity Category'] || '').toLowerCase();
+            var area = row['Area'] || '';
             var link = row['Link'] || '';
             var name = row['Activity Name'] || '';
             var fee  = row['Resident Fee (before tax)']
                 ? '$' + parseFloat(row['Resident Fee (before tax)']).toFixed(2)
                 : '';
 
-            tableHtml += '<tr data-day="' + day + '" data-age="' + age + '" data-time="' + time + '" data-dept="' + dept + '" data-cat="' + cat + '">';
+            tableHtml += '<tr data-day="' + day + '" data-age="' + age + '" data-time="' + time + '" data-dept="' + dept + '" data-cat="' + cat + '" data-area="' + area + '">';
             tableHtml += link
                 ? '<td><a href="' + link + '" target="_blank" rel="noopener noreferrer">' + name + '</a></td>'
                 : '<td>' + name + '</td>';
@@ -119,6 +123,7 @@
             tableHtml += '<td>' + (row['Activity Category'] || '') + '</td>';
             tableHtml += '<td>' + (row['Age Category'] || '') + '</td>';
             tableHtml += '<td>' + (row['Location'] || '') + '</td>';
+            tableHtml += '<td>' + area + '</td>';
             tableHtml += '<td>' + day + '</td>';
             tableHtml += '<td>' + formatDate(row['Start Date']) + '</td>';
             tableHtml += '<td>' + formatTime(row['Start Time']) + '</td>';
@@ -135,21 +140,22 @@
             "pageLength": -1,
             "dom": 'Bfrtip',
             "buttons": ['colvis'],
-            "order": [[6, 'asc'], [7, 'asc'], [0, 'asc']],
+            "order": [[7, 'asc'], [8, 'asc'], [0, 'asc']],
             "language": {
-                "emptyTable": "No data available, try <a href='javascript:void(0);' onclick='window.clearWinterFilters()'>resetting all filters to default</a>.",
-                "zeroRecords": "No data available, try <a href='javascript:void(0);' onclick='window.clearWinterFilters()'>resetting all filters to default</a>."
+                "emptyTable": "No data available, try <a href='javascript:void(0);' onclick='window.clearAllFilters()'>resetting all filters to default</a>.",
+                "zeroRecords": "No data available, try <a href='javascript:void(0);' onclick='window.clearAllFilters()'>resetting all filters to default</a>."
             }
         });
     }
 
-    window.clearWinterFilters = function() {
+    window.clearAllFilters = function() {
         [
             { selector: '.dayCheckbox',        set: selectedDay,        transform: null },
             { selector: '.ageCheckbox',        set: selectedAge,        transform: function(v) { return v.toLowerCase(); } },
             { selector: '.timeCheckbox',       set: selectedTime,       transform: null },
             { selector: '.departmentCheckbox',       set: selectedDepartment,       transform: function(v) { return v.toLowerCase(); } },
             { selector: '.activityCategoryCheckbox', set: selectedActivityCategory, transform: function(v) { return v.toLowerCase(); } },
+            { selector: '.areaCheckbox',             set: selectedArea,             transform: null },
         ].forEach(function(item) {
             document.querySelectorAll(item.selector).forEach(function(cb) {
                 cb.checked = true;
@@ -181,6 +187,7 @@
     setupCheckboxes('.timeCheckbox',       selectedTime,       null);
     setupCheckboxes('.departmentCheckbox',       selectedDepartment,       function(v) { return v.toLowerCase(); });
     setupCheckboxes('.activityCategoryCheckbox', selectedActivityCategory, function(v) { return v.toLowerCase(); });
+    setupCheckboxes('.areaCheckbox',             selectedArea,             null);
 
     document.addEventListener('DOMContentLoaded', function() {
         function setupBulkButtons(selectId, unselectId, selector, set, transform) {
@@ -211,6 +218,7 @@
         setupBulkButtons('selectAllTimesButton',       'unselectAllTimesButton',       '.timeCheckbox',       selectedTime,       null);
         setupBulkButtons('selectAllDepartmentsButton',       'unselectAllDepartmentsButton',       '.departmentCheckbox',       selectedDepartment,       function(v) { return v.toLowerCase(); });
         setupBulkButtons('selectAllActivityCategoriesButton', 'unselectAllActivityCategoriesButton', '.activityCategoryCheckbox', selectedActivityCategory, function(v) { return v.toLowerCase(); });
+        setupBulkButtons('selectAllAreasButton',             'unselectAllAreasButton',             '.areaCheckbox',             selectedArea,             null);
     });
 
 })();

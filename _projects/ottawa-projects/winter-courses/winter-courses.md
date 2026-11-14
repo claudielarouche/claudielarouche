@@ -23,6 +23,8 @@ css:
 
 {% include filter-days-of-week.html %}
 
+{% include winter-courses/filter-area.html %}
+
 {% include winter-courses/filter-age-group.html %}
 
 {% include filter-time-of-day.html %}
