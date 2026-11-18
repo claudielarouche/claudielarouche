@@ -3,8 +3,7 @@ title: City of Ottawa Winter 2027 Courses
 description: Search and filter City of Ottawa winter 2027 recreational courses and programs.
 image: https://claudielarouche.com/assets/img/winter-sport.jpg
 image_hero: https://claudielarouche.com/assets/img/winter-sport.jpg
-hidden: false
-tags: [Ottawa]
+tags: [Other Ottawa Resources]
 permalink: /projects/winter-courses-2027/
 layout: projects
 js:
